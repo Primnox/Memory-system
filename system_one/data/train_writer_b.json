@@ -1,0 +1,3023 @@
+[
+ {
+  "scenario": "mumbai-delivery-rider",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-08",
+    "text": "yo so im a delivery rider for swiggy rn, evenings mostly",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-08",
+    "text": "stay in a rented room in andheri w 2 roommates, rent 6k",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-15",
+    "text": "ride a splendor, old but runs fine ngl",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-22",
+    "text": "my gf Pooja is in pune doing her mba so its just video calls every night rn 📞",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-01-26",
+    "text": "every 2nd sunday i take the overnight bus to pune to meet her, worth it",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-03",
+    "text": "i eat chicken n mutton, just no beef",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-14",
+    "text": "phone is a redmi note 9, battery is trash bhai",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-02",
+    "text": "cousin Rohan also started riding for zomato, he says pay is better",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-20",
+    "text": "bike broke down, borrowing roommates activa for the week",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-05",
+    "text": "got a new phone!! realme narzo, finally. old redmi is with my little bro",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-18",
+    "text": "thinking of switching to zomato too, swiggy incentives went down",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-01",
+    "text": "ok did it, zomato from today. first day on the new app, orders way more 🔥",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-30",
+    "text": "pooja finished the mba!! shes back in mumbai, at her moms place in dadar",
+    "replaces": [
+     "s4",
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-06-10",
+    "text": "splendor sold. picked up a used pulsar 150 from a guy in kurla",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-01",
+    "text": "rent went up to 7k so me n faiz bailed, found a 1bhk in malad, just 2 of us now, 9k split",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-07-12",
+    "text": "faiz is going to dubai end of the month for a job",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-05",
+    "text": "faiz left, im alone in the malad flat now paying all 9k 😭",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-08-20",
+    "text": "doc says cholesterol is high so cut the non veg, full veg for now",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-09-14",
+    "text": "pooja got a job at deloitte, bandra office!!",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-10-02",
+    "text": "diwali plan: going to my village in UP for 5 days, back after",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s17",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-20",
+    "text": "keys today!!! 🔑 goregaon, me n pooja finally under one roof 🥹",
+    "replaces": [
+     "s17",
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-11-08",
+    "text": "realme screen died, got a samsung m34 on emi",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-02",
+    "text": "pulsar engine seized, its at the garage, using pooja's scooty meanwhile",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s14",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-20",
+    "text": "ok veg experiment done lol, biryani is back 😋",
+    "replaces": [
+     "s18"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-10",
+    "text": "rohan quit zomato n joined blinkit btw",
+    "replaces": [
+     "s8"
+    ],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "lagos-night-nurse",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-03",
+    "text": "morning o, i dey work night shift at a private hospital in ikeja, 3 nights a week",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-03",
+    "text": "i live with my sister Tolu in yaba, we split rent",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-10",
+    "text": "i take danfo to work, e dey tire me",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-20",
+    "text": "my bf Emeka dey port harcourt for now, long distance wahala",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-05",
+    "text": "i dey take iron tablets daily, doc said my blood low",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-18",
+    "text": "im learning french on duolingo, 15 mins every day",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-25",
+    "text": "i buy my food from the mama put beside our compound in yaba, cheap n sweet",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-02",
+    "text": "matron ade is strict but she covers me when i dey late 🙏",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-10",
+    "text": "Tolu got a new job at a bank btw",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-20",
+    "text": "my mum is visiting from abeokuta this week, sleeping on our sofa",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-06",
+    "text": "finished the iron tablets, bloods fine now, doc said stop",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-25",
+    "text": "bought a small used toyota corolla!! no more danfo 🎉",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-12",
+    "text": "im learning spanish too now, mixing both is a mess lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-01",
+    "text": "hospital moved me to day shift, no more night duty thank God 🙏",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-20",
+    "text": "emeka moved to lagos!! he got a job at a bank in VI",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-08-05",
+    "text": "tolu is getting married in december, moving to her husbands place in lekki",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-30",
+    "text": "corolla gave me wahala today, engine light on, taking danfo this week",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-09-14",
+    "text": "stopped duolingo french, not feeling it. only spanish now",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-10-02",
+    "text": "doing a part time masters at unilag now, weekends, public health",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-10-10",
+    "text": "dey think of leaving the ikeja hospital, pay too small abeg",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s14",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-25",
+    "text": "handed in my notice oo, last day friday. LUTH offer came 🙏",
+    "replaces": [
+     "s14",
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-11-15",
+    "text": "emeka and i got keys to our own place in surulere!! tolu has packed her things already",
+    "replaces": [
+     "s2",
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-20",
+    "text": "corolla finally sold, too much stress. i dey use bolt now",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-01-12",
+    "text": "classes are saturdays 9-4 at the akoka campus",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-02-02",
+    "text": "back on iron tablets, blood dropped again 😩",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-20",
+    "text": "emeka going to PH for his dads burial this weekend",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "event"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "ohio-retired-machinist",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-01",
+    "text": "retired since 2019 but i still work 2 days a week at the hardware store on monroe st, keeps me busy",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-04",
+    "text": "dale the owner trusts me w the keys, i open up at 8 on my days",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-08",
+    "text": "me and margaret live in our house in toledo, 31 years now",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-03-12",
+    "text": "walk my beagle biscuit every morning round 6, rain or shine",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-15",
+    "text": "doc has me on metformin for the sugar, 500mg twice a day",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-29",
+    "text": "drive a 2009 buick lucerne, old tank but it never quits",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-04-05",
+    "text": "chess at the library thurs afternoons w the guys",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-12",
+    "text": "sing bass in the st pauls choir tuesday nights, 40 yrs now",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-19",
+    "text": "my daughter karen lives in denver, calls sundays",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-05-02",
+    "text": "my brother ray is on metformin too, runs in the family",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-20",
+    "text": "got a puppy!! another beagle named pepper, 10 weeks old, margaret is in love",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-06-08",
+    "text": "doc switched me to a new pill, jardiance. metformin was upsetting my stomach",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-25",
+    "text": "hardware store cut my hours, now just saturdays",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-10",
+    "text": "margaret and i are at our lake cabin in michigan for two weeks, bliss",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-08-01",
+    "text": "biscuit passed yesterday, 14 yrs. house is so quiet",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-08-20",
+    "text": "pepper n me walk every morning at 6 now, shes a handful lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-09-10",
+    "text": "sold the buick to my neighbors kid, picked up a 2017 camry from carmax",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-10-05",
+    "text": "stopped going to chess, hip is acting up, cant sit that long",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-10-20",
+    "text": "got the surgery date, nov 10. store says take the 6 weeks, job will be waiting",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-11-20",
+    "text": "surgery done. staying at karens in denver for rehab for a month",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-12-22",
+    "text": "back home. no driving for 3 months, margaret chauffeurs me lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s17",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-01-15",
+    "text": "chess thursdays again!! hip is great",
+    "replaces": [
+     "s18"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-01-30",
+    "text": "last saturday at the store today, they gave me a cake 🎂 done for real",
+    "replaces": [
+     "s13",
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-02-18",
+    "text": "closed on the sarasota condo!! movers friday, toledo is history",
+    "replaces": [
+     "s3",
+     "s8",
+     "s22"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-03-05",
+    "text": "pepper loves the beach lol",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "manila-accountancy-student",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-10",
+    "text": "classes start monday na!! im taking accountancy at UST, sana kayanin 😭",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-10",
+    "text": "nag-dorm ako sa sampaloc, 4 of us in one room, 5k each",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-06-18",
+    "text": "weekend crew sa jollibee, 4pm-10pm, pagod pero ok",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-06-25",
+    "text": "i take the jeep from the dorm, 10 mins lang",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-07-02",
+    "text": "allergic ako sa shrimp, learned the hard way lol 🦐",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-07-15",
+    "text": "my phone is an old iphone 8, nag-lag na ng sobra",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-07-30",
+    "text": "i play valorant w my blockmates, jett main ako",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-08-12",
+    "text": "my bf miggy is taking engineering at dlsu, we see each other sundays",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-08-14",
+    "text": "sundays = mall date + movies w miggy, fave day of the week 🥰",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-08-20",
+    "text": "my roommate carla also works at jollibee, different branch",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-09-05",
+    "text": "my bed is top bunk, i hit my head every morning 😭",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-25",
+    "text": "got the iphone 13 from my tita in dubai!! padala. old one is with my little bro",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-10-10",
+    "text": "joined the choir sa uni, thursdays after class",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-18",
+    "text": "started selling kpop photocards on shopee on the side, 3 sales na!",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-24",
+    "text": "my parents are visiting from cebu, staying at a hotel so im out of the dorm for the weekend",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-08",
+    "text": "went to my last shift at jollibee today, nag-iyakan kami lol",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-11-30",
+    "text": "thinking of shifting to BS management, accountancy is killing me",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-12-18",
+    "text": "christmas break, home sa cebu for 2 weeks",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-12",
+    "text": "first day of the new sem, management na ako 🙌",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-01-20",
+    "text": "uninstalled valorant, too toxic. genshin na lang ako",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-02-05",
+    "text": "moved out of the dorm!! condo near ust na, walking distance lang 🥹",
+    "replaces": [
+     "s2",
+     "s4",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-02-20",
+    "text": "miggy and i are over. 3 weeks na. dont wanna talk about it",
+    "replaces": [
+     "s8",
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-05",
+    "text": "choir rehearsals clash w my new sched, quit na",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-03-22",
+    "text": "iphone 13 died sa ulan lol, tita sent a samsung a54 so ok",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-04-20",
+    "text": "summer job: back at jollibee, same branch lol",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "cdmx-uber-driver",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-14",
+    "text": "orale, i drive uber at night, mostly zona norte y el centro",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-14",
+    "text": "manejo un versa 2016, es de mi cuñado pero yo pago la renta del carro",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-20",
+    "text": "vivo en iztapalapa w my wife Lupita y los 2 kids",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-28",
+    "text": "fumo como 10 cigarros al dia, ya se ya se",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-06",
+    "text": "Lupita works at la tienda de abarrotes del tío, mornings",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-20",
+    "text": "my son Diego is en 2do año de prepa, el mas listo de la casa",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-27",
+    "text": "diego takes 2 peseros to la prepa, leaves 6am el pobre",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-08",
+    "text": "cruz azul fan hasta la muerte, voy al estadio cada 2-3 partidos",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-22",
+    "text": "mi mamá vive en puebla",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-29",
+    "text": "visito a mi mamá el primer domingo de cada mes, 2 hrs en autobus",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-04",
+    "text": "phone: un moto g, ya muy lento",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-18",
+    "text": "my hermano also drives uber, day shift",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-02",
+    "text": "dejé de fumar!! 10 dias ya, Lupita is proud",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-30",
+    "text": "bought un versa propio!! 2019, 80k de enganche. el de mi cuñado se lo regreso",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-10",
+    "text": "i also open didi when uber is slow, 2 apps = mas viajes",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-15",
+    "text": "this weekend we're at my suegra's in toluca, kids wanted to see her",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-07-01",
+    "text": "switched to day shift, de noche ya esta muy peligroso",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-07-20",
+    "text": "diego passed to 3er año, 9.2 de promedio 🎉",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-10",
+    "text": "went to the estadio w diego, perdimos 2-0 ugh",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-08-28",
+    "text": "fumando otra vez 😞 stress con el prestamo del carro, no le digas a lupita",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-15",
+    "text": "lupita left la tienda, ahora vende tamales en la puerta de la escuela, mucho mejor",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-12",
+    "text": "mi mamá ya duerme en el cuarto de diego, se mudó con nosotros",
+    "replaces": [
+     "s9",
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-02",
+    "text": "new phone: un samsung a15, el banco me dio deal",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-18",
+    "text": "back to night shifts, de dia el trafico no deja ganar nada",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-10",
+    "text": "versa en el taller 2 semanas, taking the metro meanwhile",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s14",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-01-25",
+    "text": "diego dejó la prepa. no quiso hablar. ahora anda conmigo los sabados aprendiendo la app",
+    "replaces": [
+     "s18",
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-02-05",
+    "text": "sold the versa, ya tengo un kia rio 2021, 0 enganche con el programa de uber",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-02-20",
+    "text": "dejé de fumar otra vez, 3 semanas, lupita says la tercera es la vencida",
+    "replaces": [
+     "s20"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "nakuru-dairy-farmer",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-05",
+    "text": "sasa. i keep 6 dairy cows on my shamba in nakuru, ng'ombe are my life",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-05",
+    "text": "and 3 acres of mahindi, planting before the long rains",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-18",
+    "text": "i take milk every morning 5am to the cooperative at njoro",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-18",
+    "text": "ride a honda 125 for everything, shamba to town",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-02",
+    "text": "wife wanjiru runs the small kiosk at our gate",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-15",
+    "text": "son kevin is in final year at egerton doing agriculture, fees are killing me",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-15",
+    "text": "i send his fees by mpesa every term, 60k",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-01",
+    "text": "doc said my bp is high, taking amlodipine every morning",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-12",
+    "text": "gor mahia fan since 1990, we watch at the shop every saturday",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-28",
+    "text": "my neighbor mzee otieno has 10 cows, bigger than mine",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-15",
+    "text": "bought 2 more cows from kericho!! now 8, milk going up",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-06-02",
+    "text": "planting beans too this season, small plot behind the house",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-20",
+    "text": "kevin is home for the long holiday, helping w the cows",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-08",
+    "text": "agri expo in nairobi for 3 days, my brother in law looking after the cows",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-25",
+    "text": "switched the milk to brookside, coop was paying late",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-08-02",
+    "text": "doc moved me to losartan, amlodipine was swelling my ankles",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-25",
+    "text": "honda stolen at the market!! riding my old bicycle for now 😞",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-09-14",
+    "text": "bought a used boxer 150 from my brother in law, back on the road",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-09-16",
+    "text": "its red, 2019, he kept it clean",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-30",
+    "text": "wanjiru is in kisumu this week for her sisters wedding, i am cooking lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-12",
+    "text": "stopped the saturday football at the shop, too much stress. sunday service only",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-28",
+    "text": "tired of mahindi losses, leased the 3 acres to my cousin",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-15",
+    "text": "kevins graduation was today!! mzee otieno cried more than me 😭🎓",
+    "replaces": [
+     "s6",
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-05",
+    "text": "gor mahia won the league!! back at the shop every saturday 🎉",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-12",
+    "text": "mzee otieno got the whole herd in the end lol 🥲 500 chicks arrive friday, wish me luck 🐔",
+    "replaces": [
+     "s11",
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-02",
+    "text": "kevin started at a seed company in nairobi, sends me 5k when he can lol",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "sao-paulo-bakery-owner",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-04",
+    "text": "oi! i own a small padaria in vila mariana, the shop is rented",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-04",
+    "text": "2 employees, marcos at the oven n dani at the counter",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-10",
+    "text": "i bake the pão francês at 4am every day, my back hates it",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-03-15",
+    "text": "we rent a flat in vila mariana, super close to the shop",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-15",
+    "text": "i walk to the padaria every morning, 10 min, dont even touch the car",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-22",
+    "text": "my husband rafa is an accountant at a big firm on paulista",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-04-02",
+    "text": "daughter bia is 9, 4th grade, school bus picks her at 7",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-10",
+    "text": "we have a pug, thor, 6 yrs old, he snores like a truck kkk",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-18",
+    "text": "i drive a fiat uno 2010, barulhento mas ok",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-05-01",
+    "text": "allergic to penicillin, ate a pill once n ended up in the ER",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-14",
+    "text": "do yoga on tuesdays n thursdays at a studio near home, saves my sanity",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-30",
+    "text": "my sister camila also owns a bakery in campinas lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-12",
+    "text": "joined ifood!! delivery orders are insane",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-01",
+    "text": "dani quit so julia took the counter, marcos still at the oven",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-20",
+    "text": "new car!! a honda fit, uno finally retired 🎉",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-07-21",
+    "text": "silver, 2015, the guy kept it super clean",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-09",
+    "text": "weekend at my moms house in santos, praia 🏖️",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-08-25",
+    "text": "rafa got laid off, the firm cut half the team 😭",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-09-05",
+    "text": "rafa is at the padaria full time now doing the books n the weekend counter while he looks for something",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-20",
+    "text": "thinking about opening a second shop in pinheiros, rafa says too early",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-05",
+    "text": "yoga: stopped. no time since the rafa mess, back hurts more",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-18",
+    "text": "bia moved up, 5th grade n a new school, bus at 6:40 now 😴",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-10-25",
+    "text": "my mom bakes too lol, her pão de queijo beats mine",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-11-08",
+    "text": "thor had surgery on his leg, fine now",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2025-11-20",
+    "text": "got a puppy too, a labrador named mel, bia named her lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-03",
+    "text": "marcos moved to bahia, hired pedro for the oven. julia still here",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-20",
+    "text": "keys to the new flat in pinheiros today!! boxes everywhere 🥹",
+    "replaces": [
+     "s4",
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-01-14",
+    "text": "rafa starts at a fintech monday, remote 3 days a week 🙏",
+    "replaces": [
+     "s18",
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-02-10",
+    "text": "back at yoga, found a studio near the new place 🧘",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "warsaw-high-schooler",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-09-02",
+    "text": "hej, im 17, in liceum no 5 in warsaw, 2nd year",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-09-02",
+    "text": "my class is 2c, math-physics profile, mega hard",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-05",
+    "text": "live w mama in ursynów, 3rd floor, my room is tiny",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-05",
+    "text": "tata moved to gdańsk after the divorce, we call sundays",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-09-12",
+    "text": "i play football for polonia warszawa u18, trainings tue/thu",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-09-19",
+    "text": "tram 17 to school, like 25 min, if it isnt late",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-09-26",
+    "text": "my phone is a samsung a14, kinda slow ngl",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-10-03",
+    "text": "main game rn is cs2, im silver 3 lol",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-10-10",
+    "text": "listen to taco hemingway like all the time",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-17",
+    "text": "zuza is my gf, together since june ❤️",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-10-17",
+    "text": "zuza n i study together at the library after school on wednesdays",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-10-24",
+    "text": "got braces. 😭 mega annoying",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-11-02",
+    "text": "my friend kuba also plays football, for legia",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-11-09",
+    "text": "tata visiting this weekend from gdańsk, going to the zoo, awkward lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-20",
+    "text": "got a new phone for my bday!! iphone 12 refurb",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-12-03",
+    "text": "leg injury, doc said no football for 6 weeks 😩",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-10",
+    "text": "also play futsal on fridays w friends from school, just for fun",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-14",
+    "text": "first training back today!! coach said slowly tho",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-28",
+    "text": "legia u18 trials went well!! first training w them tmrw",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-04",
+    "text": "tram 17 is gone for the renovations, metro M1 every day now",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-02-11",
+    "text": "uninstalled cs2, valorant only now",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-02-18",
+    "text": "braces off!!! 🥳",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-02-27",
+    "text": "zuza and i broke up, whatever",
+    "replaces": [
+     "s10",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-03-08",
+    "text": "my cousin ola moved to krakow for uni lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-03-22",
+    "text": "moved into a bigger flat in mokotów w mama, my own room!! school is 5 min walk lol",
+    "replaces": [
+     "s3",
+     "s20"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-04-05",
+    "text": "taco is mid now, young multi on repeat",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-04-20",
+    "text": "quit legia, too much school pressure",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-05-15",
+    "text": "legia took me back!! new coach asked",
+    "replaces": [
+     "s27"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "montreal-freelance-designer",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-04-07",
+    "text": "salut, i freelance as a graphic designer, mostly branding for small restaurants",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-04-07",
+    "text": "got a flat in the plateau w my chum félix, 3 1/2, mdr tiny",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-14",
+    "text": "cat named mochi, 3 yrs old, hates félix",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-21",
+    "text": "bike to my cowork in mile end every morning, 15 min",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-28",
+    "text": "vegetarian since 2021, not pescatarian lol",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-10",
+    "text": "learning guitar on youtube, my fingers hurt 🎸",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-20",
+    "text": "run tuesdays n saturdays along the canal",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-05-27",
+    "text": "asthma, ventolin when i run in winter",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-03",
+    "text": "my phone is an iphone xr, battery dead by 3pm",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-06-15",
+    "text": "my sister léa is also a designer but at ubisoft",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-02",
+    "text": "booked a week in gaspésie, camping w félix",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-07-20",
+    "text": "sundays = brunch at beauty's w félix, non negotiable lol",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-07-22",
+    "text": "mochi is a tuxedo cat btw, one white sock",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-08-05",
+    "text": "my coworker simon bikes in the winter too, madman",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-08-23",
+    "text": "félix and i adopted a corgi!! named pâté, mochi is furious",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-09-10",
+    "text": "ok so ive been eating salmon for 2 months and honestly i love it, no more strict veggie",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-09-25",
+    "text": "quit guitar, my fingers. switched to ukulele 🪕",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-10-11",
+    "text": "félix's parents are in town this weekend, sleeping at our place",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-10-28",
+    "text": "first day at the studio downtown tmrw (full time!!), handed back my cowork key today 🥲",
+    "replaces": [
+     "s1",
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-11-14",
+    "text": "bought a real acoustic yamaha, ukulele is boring now",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-11-30",
+    "text": "knee is wrecked so no more canal runs, swimming instead",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-12-18",
+    "text": "félix n i are done. packing today, mochi comes w me, pâté stays w him 💔",
+    "replaces": [
+     "s2",
+     "s12",
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-20",
+    "text": "sleeping on léa's couch till i find something",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-01-15",
+    "text": "got an apartment in villeray!! 4 1/2 for me n mochi",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-02-02",
+    "text": "new phone, pixel 8 finally. xr was dying",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-20",
+    "text": "back to full veggie, fish smell makes me gag now lol",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-03-12",
+    "text": "quit the studio. back to freelancing w my own clients 🤞",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-03-28",
+    "text": "léa got laid off from ubisoft 😬",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "lahore-shopkeeper",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-05-03",
+    "text": "bhai meri mobile accessories ki dukaan hai hall road pe",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-05-03",
+    "text": "timing 11 se 9 hai, bohat lamba din",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-05-10",
+    "text": "ghar johar town me hai, ammi abbu k saath, joint family",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-05-17",
+    "text": "do bachay hain, ali 8 saal ka aur zara 5",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-17",
+    "text": "ali ka school gali k mod pe hai, paidal jata hai",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-24",
+    "text": "biwi sana ek private school me teacher hai",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-01",
+    "text": "suzuki cultus 2012 chalata hu",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-01",
+    "text": "uska AC kharab hai, garmi me tauba",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-08",
+    "text": "sugar ki problem hai, metformin le raha hu subha",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-06-15",
+    "text": "sunday ko dost k saath cricket khelta hu, dosti wala match",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-06-22",
+    "text": "PSL me lahore qalandars ka fan hu bohat",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-06-23",
+    "text": "khaas kar shaheen afridi ka fan hu",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-07-01",
+    "text": "phone vivo y20 hai, battery gaya hua hai",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-08",
+    "text": "mera bhai usman bhi dukaan chalata hai, anarkali me",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-19",
+    "text": "weekend pe family k saath murree trip, bacho ko barish dikhani thi",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-08-02",
+    "text": "naya phone liya, redmi 13. purana vivo band hogaya",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-15",
+    "text": "AC theek karwa liya cultus ka finally 🙏",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-08-28",
+    "text": "dukaan ka timing change kar diya, ab 12 se 10, subha jaldi nahi uthta ab",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-09-10",
+    "text": "ghutna kharab ho gaya, cricket band kar di doctor ne kaha",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-20",
+    "text": "sana ne school chor diya, ab ghar pe tuition deti hai",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-05",
+    "text": "doctor ne metformin band kardi, ab insulin shuru",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-18",
+    "text": "sana ki behen aur uske bache ghar aaye hue hain 2 hafte k liye, ghar bhara hua",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-01",
+    "text": "ab daraz pe bhi bechna shuru kiya hai, dukaan k saath saath",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-11-15",
+    "text": "AC phir kharab 😭 ye gaari mujhe maregi",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-11-28",
+    "text": "ghutna theek, cricket wapas!! ground pe sab ne welcome kiya",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-12",
+    "text": "insulin chhoot gayi alhamdulillah, doctor ne ab ek nayi goli di hai, janumet",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-20",
+    "text": "kal dukaan band rahegi, ammi ko hospital le jana hai",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2026-01-10",
+    "text": "DHA wala ghar mil gaya, kal shifting hai. ammi abbu purane ghar me hi rahenge, ali ab van se school jayega 😅",
+    "replaces": [
+     "s3",
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-02-20",
+    "text": "dukaan ka sauda ho gaya, ab sirf daraz pe hu, subha araam se uthta hu",
+    "replaces": [
+     "s1",
+     "s18"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "istanbul-callcenter",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-07-01",
+    "text": "selam, i work at a call center for a bank in maslak",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-07-01",
+    "text": "day shift 9-6, yav so long",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-08",
+    "text": "i live in kadıköy w 2 roommates, ece and zeynep",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-08",
+    "text": "marmaray + metro to maslak, almost 1h15 each way 😩",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-07-15",
+    "text": "lactose intolerant btw",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-07-15",
+    "text": "so no milk in my coffee ever, only black americano 😭",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-07-22",
+    "text": "volleyball tuesdays w a team in moda",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-08-01",
+    "text": "my boyfriend can is in ankara doing his masters, long distance",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-08-01",
+    "text": "every other friday i take the 6pm bus to ankara, 6 hrs 😩",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-08-10",
+    "text": "phone: xiaomi redmi note 10, ok ama storage dolu",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-18",
+    "text": "my coworker selin wants to quit lol, says shes done",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-28",
+    "text": "going to antalya for 4 days w my family, finally a holiday",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-05",
+    "text": "learning german on duolingo, b1 soon hopefully",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-12",
+    "text": "started pottery on saturdays in cihangir, mud everywhere 😂",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-09-25",
+    "text": "new phone: samsung s23 on taksit, im broke now",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-09-25",
+    "text": "the green one, 128gb",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-10-08",
+    "text": "changed my shift to 2pm-11pm so i can study in the mornings",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-10-20",
+    "text": "can's parents are visiting istanbul next week, meeting them for the first time, nervous",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-11-02",
+    "text": "ece moved out to her bf's, defne is the new roommate, zeynep still here",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-11-15",
+    "text": "found lactose-free milk!! lattes are back 🥛",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-11-28",
+    "text": "quit pottery, too expensive",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-12-05",
+    "text": "skipped volleyball this week, flu 🤒",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-12",
+    "text": "moved to the night shift 11pm-7am for the extra pay",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-28",
+    "text": "can finished his masters!! he moved to istanbul, got a job in levent",
+    "replaces": [
+     "s8",
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-10",
+    "text": "started italian too for fun",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-01-25",
+    "text": "back at pottery, found a cheaper studio in kadıköy",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-02-09",
+    "text": "first day at the startup tmrw!! 10 min walk from home lol no more marmaray",
+    "replaces": [
+     "s1",
+     "s4",
+     "s23"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-02-25",
+    "text": "zeynep n defne both left!! im alone, found a studio flat in moda 🥹",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-03-12",
+    "text": "oat milk in my coffee now, better than lactose free",
+    "replaces": [
+     "s20"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "bologna-retired-teacher",
+  "writer": "b",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-04-02",
+    "text": "ciao, sono franca, 70 anni, ex maestra elementare, in pensione dal 2020",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-04-02",
+    "text": "ho insegnato per 38 anni alla scuola carducci",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-09",
+    "text": "vivo in un appartamento in centro a bologna, quarto piano senza ascensore, mamma mia le scale",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-09",
+    "text": "con mio marito gianni, 44 anni insieme",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-16",
+    "text": "ogni mattina cammino ai giardini margherita alle 7 e mezza con la mia amica rosa",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-04-23",
+    "text": "mia figlia paola abita a milano",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-04-23",
+    "text": "paola viene a trovarmi una volta al mese col treno",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-05-04",
+    "text": "mio nipote luca ha 12 anni",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-05-04",
+    "text": "luca gioca a basket, mi manda i video 🏀",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-05-14",
+    "text": "la domenica gioco a burraco con le amiche al circolo",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-21",
+    "text": "pressione alta, prendo la pillola ogni mattina",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-06-01",
+    "text": "ho una panda del 2008, rossa, la amo",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-01",
+    "text": "il sabato guido fino al mercato di san lazzaro per le verdure, 20 min",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-06-10",
+    "text": "il mio telefono è un nokia vecchio, solo chiamate e sms",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-18",
+    "text": "ho un gatto, pippo, 12 anni, dorme sul mio letto",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-25",
+    "text": "mia sorella marisa che sta a lecce ha la pressione alta anche lei lol",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-07-12",
+    "text": "weekend a ravenna con le amiche del circolo, bel mare 🌊",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-07-30",
+    "text": "nuovo gattino!! si chiama briciola, pippo non è contento",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-10",
+    "text": "nuovo telefono, me lo ha regalato mio nipote, un samsung. whatsapp finalmente 😂",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-08-24",
+    "text": "luca ha lasciato il basket, ora fa nuoto",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-08",
+    "text": "rosa si è trasferita dalla figlia a modena, adesso cammino da sola 🥲",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-09-20",
+    "text": "il dottore ha cambiato la pillola, ora la prendo la sera",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-10-05",
+    "text": "gianni è in ospedale per una settimana, operazione al ginocchio",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-10-18",
+    "text": "ho smesso con il burraco, troppi litigi al circolo",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-11-20",
+    "text": "ho ripreso a giocare a burraco!! circolo nuovo vicino a casa",
+    "replaces": [
+     "s24"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-10",
+    "text": "pillola nuova di nuovo, una sola, di mattina, combinata",
+    "replaces": [
+     "s22"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-22",
+    "text": "paola e luca vengono per natale, 3 giorni a casa nostra 🎄",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2026-01-20",
+    "text": "venduta la panda, la cataratta non mi fa più guidare. vado in bus 🚌",
+    "replaces": [
+     "s12",
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-03-05",
+    "text": "scatoloni dappertutto!! paola ha trovato un bilocale a 5 minuti da casa sua. addio bologna 🥲",
+    "replaces": [
+     "s3",
+     "s21",
+     "s25",
+     "s7"
+    ],
+    "relations": []
+   }
+  ]
+ }
+]
