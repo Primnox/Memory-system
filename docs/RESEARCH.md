@@ -41,6 +41,60 @@ over people, things and topics does not select better than plain similarity.
 
 ---
 
+## Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Related work](#2-related-work)
+- [3. System](#3-system)
+- [4. Evaluation method](#4-evaluation-method)
+- [5. Experiment 1: rules, embeddings, time, verifier](#5-experiment-1-rules-embeddings-time-verifier)
+- [6. Experiment 2: a small trained change detector](#6-experiment-2-a-small-trained-change-detector)
+  - [6.1 Task](#61-task)
+  - [6.2 Zero-shot screen](#62-zero-shot-screen)
+  - [6.3 Candidate generation](#63-candidate-generation)
+  - [6.4 Training data](#64-training-data)
+  - [6.5 Fine-tuning](#65-fine-tuning)
+  - [6.6 Blind change detection](#66-blind-change-detection)
+  - [6.7 External tests: text from other authors](#67-external-tests-text-from-other-authors)
+  - [6.8 A targeted fix (round 3)](#68-a-targeted-fix-round-3)
+  - [6.9 Fact extraction for long messages (round 4)](#69-fact-extraction-for-long-messages-round-4)
+  - [6.10 Answer accuracy with the trained detector](#610-answer-accuracy-with-the-trained-detector)
+  - [6.11 Escalation and calibration](#611-escalation-and-calibration)
+  - [6.12 Speed](#612-speed)
+- [7. Experiment 3: a graph as the prompt index](#7-experiment-3-a-graph-as-the-prompt-index)
+- [8. Discussion](#8-discussion)
+- [9. Design limitations](#9-design-limitations)
+- [10. Threats to validity](#10-threats-to-validity)
+- [11. Conclusion and future work](#11-conclusion-and-future-work)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+- [Appendix A. Reproducing](#appendix-a-reproducing)
+- [Appendix B. Question wording](#appendix-b-question-wording)
+
+**Figures**
+
+- Figure 1. Architecture. Solid: built. Dashed: planned.
+
+**Tables**
+
+- Table 1. Memory designs, as published.
+- Table 2. Data. "Authors" are the writers of the text.
+- Table 3. Blind set `v2`, oracle dates.
+- Table 4. Untrained scorers on the development shortlist.
+- Table 5. Share of true replacements among the candidates.
+- Table 6. Development shortlist (never trained on), threshold 0.5.
+- Table 7. Change detection on blind `v2`.
+- Table 8. External tests.
+- Table 9. Before and after the targeted data (round 3; external scores not blind).
+- Table 10. Round 4: whole messages vs extracted statements.
+- Table 11. Top-1 on blind `v2` (171 answerable questions) by change decisions.
+- Table 12. Escalation band vs errors left in the small model's own decisions.
+- Table 13. Escalation with the real 9B supervisor (total errors; 17 without escalation).
+- Table 14. Time per comparison.
+- Table 15. Prompt selection on blind `v2`.
+
+---
+
 ## 1. Introduction
 
 A memory for an assistant has two jobs: return the right fact, and notice when
