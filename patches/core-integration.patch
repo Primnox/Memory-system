@@ -1,0 +1,402 @@
+diff --git a/backend/primnox2/app.py b/backend/primnox2/app.py
+index 96fe434..eea1480 100644
+--- a/backend/primnox2/app.py
++++ b/backend/primnox2/app.py
+@@ -1578,11 +1578,25 @@ async def vault_disable() -> dict:
+ # ── Memory ───────────────────────────────────────────────────────────────────
+ @app.get("/memories")
+ async def list_memories(category: str | None = None, q: str | None = None) -> dict:
+-    rows = memory.search(q) if q else memory.live(category)
++    # The tab is a view of history, so its search keeps retired memories that
++    # `recall_memory` (a question about now) leaves out.
++    rows = memory.search(q, include_superseded=True) if q else memory.live(category)
+     return {"memories": rows, "stats": memory.stats(),
+             "categories": list(memory.CATEGORIES)}
+ 
+ 
++@app.get("/memories/recheck")
++async def recheck_memories() -> dict:
++    """Which standing memories today's conflict rules would retire. Changes
++    nothing: the list is for the user to see before anything leaves the prompt."""
++    return {"proposals": memory.recheck_conflicts()}
++
++
++@app.post("/memories/recheck")
++async def apply_memory_recheck() -> dict:
++    return {"applied": memory.recheck_conflicts(apply=True)}
++
++
+ @app.post("/memories")
+ async def create_memory(request: Request) -> dict:
+     body = await _json(request)
+@@ -1609,7 +1623,11 @@ async def edit_memory(memory_id: str, request: Request) -> dict:
+         if not memory.restore(memory_id):
+             raise HTTPException(status_code=404, detail=memory_id)
+         return {"id": memory_id, "restored": True}
+-    if not memory.update(memory_id, body.get("text") or ""):
++    try:
++        updated = memory.update(memory_id, body.get("text") or "")
++    except (memory.MemoryTooLong, memory.MemoryRejected) as exc:
++        raise HTTPException(status_code=400, detail=str(exc))
++    if not updated:
+         raise HTTPException(status_code=404, detail=memory_id)
+     return {"id": memory_id, "updated": True}
+ 
+diff --git a/backend/primnox2/settings/tunables.py b/backend/primnox2/settings/tunables.py
+index 29e6136..509b9f8 100644
+--- a/backend/primnox2/settings/tunables.py
++++ b/backend/primnox2/settings/tunables.py
+@@ -133,6 +133,72 @@ REGISTRY: dict[str, Tunable] = {t.key: t for t in [
+        "Memory is injected into every prompt whole, on the assumption that it "
+        "is small. One pasted paragraph spends the entire budget and silently "
+        "clips every other fact out of the prompt."),
++    _t("memory.embeddings", 1, int, 0, 1,
++       "Blend meaning-based matching into memory search. 1 is on.",
++       "On, 'what pets do I have' finds 'My dog is called Biscuit'. The first "
++       "search after startup answers by words alone while the encoder loads "
++       "in the background (seconds of CPU, about 90 MB), and so does any search "
++       "that would first have to embed a store of more than a few dozen "
++       "memories: that is done on a thread. Every search after it pays one "
++       "query encoding and a comparison with each memory, under 10 ms at a "
++       "few hundred. Off, nothing changes."),
++    _t("memory.embeddings_min_similarity", 0.30, float, 0.0, 1.0,
++       "Cosine similarity a memory needs to count as a meaning-based match.",
++       "Too low and every question returns something, including questions "
++       "about things never said; too high and the synonym gap this exists to "
++       "close reopens."),
++    _t("memory.embeddings_supersede", 1, int, 0, 1,
++       "Let meaning-based similarity flag a new memory as updating an old one. "
++       "1 is on.",
++       "Catches updates that share no words with what they replace ('Got a "
++       "Pixel 9' after 'My phone is an iPhone 13'), when the new memory is "
++       "also worded as a change, not a second one of something, and clearly "
++       "closer to one memory than to any other. Costs one encoding on every "
++       "write while the encoder is up; with the encoder down, writes are judged "
++       "by words alone. Similarity cannot tell a replacement from an addition, "
++       "so it can still retire a memory that is true."),
++    _t("memory.embeddings_supersede_similarity", 0.30, float, 0.0, 1.0,
++       "Cosine similarity at which a new memory, worded as a change, is taken "
++       "to fill the same slot as an old one that shares no word with it.",
++       "Lower finds more updates and retires more memories that were never "
++       "replaced; higher is safer and misses updates phrased differently. A "
++       "memory that does share a specific word with the new one needs only "
++       "0.25 (cognition/conflict.py::ANCHORED_FLOOR)."),
++    _t("memory.actor_guard", 1, int, 0, 1,
++       "A statement about someone else never updates one about you. 1 is on. "
++       "Not an embeddings setting.",
++       "Off, 'My brother works at Google' retires 'I work at Acme' and 'My "
++       "sister lives in Madrid' retires 'I live in Leeds', because they fill "
++       "the same slot. On, whose statement it is must match. Judged from the "
++       "relatives named in the first words, so it can miss a third party "
++       "introduced later in the sentence."),
++    _t("memory.llm_verify", 0, int, 0, 1,
++       "Have the local model, in the background, check updates the rules were "
++       "unsure of. 1 is on.",
++       "A save never waits for it and never needs it: the rule-based result is "
++       "stored at once, and a retirement the model confirms is applied a few "
++       "seconds later. It catches implicit updates and paraphrases the word and "
++       "meaning rules cannot tie to one slot. On, every save with a plausible "
++       "candidate costs the local model one or more short calls (each is also "
++       "recorded in memory_verifications), which competes with chat for the GPU; "
++       "with Ollama unreachable it does nothing. A wrong 'replaces' removes a true "
++       "fact from the prompt, so the confidence bar below is what keeps it safe."),
++    _t("memory.llm_verify_confidence", 0.95, float, 0.0, 1.0,
++       "Probability the model must give 'replaces' (read from the tokens it chose "
++       "between, not the number it states) before a memory is retired.",
++       "Lower retires more of the real updates and more true facts with them; "
++       "higher is safer and leaves more stale memories standing. On the dev "
++       "sets every real update scored 0.98 or more, and 0.9 let a second wrong "
++       "pair through."),
++    _t("memory.llm_verify_similarity", 0.15, float, 0.0, 1.0,
++       "Cosine similarity a standing memory needs to be put to the model at all.",
++       "Lower asks about more pairs (more model calls per save, more updates "
++       "found); higher skips pairs whose wording is too far apart for the encoder "
++       "to see they share a slot."),
++    _t("memory.llm_verify_candidates", 4, int, 1, 10,
++       "Most memories one save is checked against.",
++       "Each is a model call, most similar first, stopping at the first the model "
++       "says is replaced. More finds updates the encoder ranked lower."),
+ 
+     # ── Assets ───────────────────────────────────────────────────────────
+     _t("assets.chunk_chars", 1200, int, 200, 20_000,
+diff --git a/backend/primnox2/storage/db.py b/backend/primnox2/storage/db.py
+index 89c6bb2..b9facac 100644
+--- a/backend/primnox2/storage/db.py
++++ b/backend/primnox2/storage/db.py
+@@ -36,7 +36,11 @@ SCHEMA_PATH = Path(__file__).with_name("schema.sql")
+ # constraint change like v2's, so it needs the same rebuild-and-copy dance.
+ #
+ # v11 adds `integrations` and `calendar_events` — pure table additions.
+-SCHEMA_VERSION = 11
++#
++# v12 adds `memories.topic` and `memories.kind` (cognition/topics.py) — plain
++# ADD COLUMNs. Existing rows keep topic NULL / kind 'fact' until the memory
++# service backfills them; nothing is re-judged by the migration itself.
++SCHEMA_VERSION = 12
+ 
+ _local = threading.local()
+ _db_path: Path | None = None
+@@ -488,6 +492,23 @@ def _m010_widen_asset_kind_check(conn: sqlite3.Connection) -> None:
+         conn.execute("PRAGMA foreign_keys = ON")
+ 
+ 
++def _m012_memory_topic_and_kind(conn: sqlite3.Connection) -> None:
++    """v11 -> v12: room for what a memory is about and what sort it is.
++
++    Plain ADD COLUMNs, no CHECK constraint, so no rebuild. Rows are NOT
++    classified here: that is deterministic Python in cognition/topics.py, run
++    by the memory service on first use, and a migration should not import
++    application code.
++    """
++    if not _has_table(conn, "memories"):
++        return  # fresh database: schema.sql will build it with these columns
++    existing = {r["name"] for r in conn.execute("PRAGMA table_info(memories)")}
++    if "topic" not in existing:
++        conn.execute("ALTER TABLE memories ADD COLUMN topic TEXT")
++    if "kind" not in existing:
++        conn.execute("ALTER TABLE memories ADD COLUMN kind TEXT NOT NULL DEFAULT 'fact'")
++
++
+ _MIGRATIONS = [
+     (2, "split_thinking_and_namespace_jobs", _m002_split_thinking_and_namespace_jobs),
+     (4, "record_the_code_that_ran", _m004_record_the_code_that_ran),
+@@ -495,6 +516,7 @@ _MIGRATIONS = [
+     (7, "persist_conversation_graphs", _m007_persist_conversation_graphs),
+     (8, "memory_conflict_lifecycle", _m008_memory_conflict_lifecycle),
+     (10, "widen_asset_kind_check", _m010_widen_asset_kind_check),
++    (12, "memory_topic_and_kind", _m012_memory_topic_and_kind),
+ ]
+ 
+ 
+diff --git a/backend/primnox2/storage/schema.sql b/backend/primnox2/storage/schema.sql
+index 4e32a68..1e8560d 100644
+--- a/backend/primnox2/storage/schema.sql
++++ b/backend/primnox2/storage/schema.sql
+@@ -542,6 +542,12 @@ CREATE TABLE IF NOT EXISTS memories (
+     superseded_by   TEXT    REFERENCES memories(id) ON DELETE SET NULL,
+     supersedes      TEXT,                      -- JSON array of memory ids this one replaced
+     disputed        INTEGER NOT NULL DEFAULT 0,
++    -- What the statement is ABOUT and whether it is a standing fact or a dated
++    -- event (cognition/topics.py). topic NULL = never classified (the memory
++    -- service backfills it), '' = classified, no nameable slot — conflict.py
++    -- then falls back to its original overlap rules for that memory.
++    topic           TEXT,
++    kind            TEXT    NOT NULL DEFAULT 'fact',
+     created_at      INTEGER NOT NULL,
+     updated_at      INTEGER NOT NULL,
+     deleted_at      INTEGER
+@@ -550,6 +556,38 @@ CREATE TABLE IF NOT EXISTS memories (
+ CREATE INDEX IF NOT EXISTS idx_memories_live
+     ON memories(created_at DESC) WHERE deleted_at IS NULL;
+ 
++-- backfill_topics() asks "is anything unclassified?" before every search and
++-- write. Empty in a steady state, so the answer costs nothing; without it the
++-- answer was a scan of the whole table each time.
++CREATE INDEX IF NOT EXISTS idx_memories_unclassified
++    ON memories(id) WHERE topic IS NULL;
++
++-- The memory service reads every forgotten row's successor link to decide what
++-- stands in for a retired fact (memory/service.py::_successor), on each scan.
++-- Few rows, so as a covering partial index that read never touches the table.
++CREATE INDEX IF NOT EXISTS idx_memories_forgotten
++    ON memories(id, superseded_by) WHERE deleted_at IS NOT NULL;
++
++-- Every question the local model was asked about whether one memory replaces
++-- another (memory/verifier.py), with its answer. Kept to train a small local
++-- decision model; never sent anywhere. In primnox.db rather than a file beside it
++-- so the vault encrypts it with everything else it holds about the user. The texts
++-- are copied, as a forgotten memory's row is: no FK, nothing here follows a delete.
++CREATE TABLE IF NOT EXISTS memory_verifications (
++    id          INTEGER PRIMARY KEY AUTOINCREMENT,
++    ts          INTEGER NOT NULL,
++    model       TEXT    NOT NULL,
++    new_id      TEXT    NOT NULL,
++    old_id      TEXT    NOT NULL,
++    new_text    TEXT    NOT NULL,
++    old_text    TEXT    NOT NULL,
++    similarity  REAL,
++    relation    TEXT    NOT NULL,
++    confidence  REAL    NOT NULL,
++    applied     INTEGER NOT NULL DEFAULT 0,
++    ms          INTEGER
++);
++
+ 
+ -- ── Session Context ─────────────────────────────────────────────────────────
+ -- cognition/session.py. One conversation's temporary cognitive workspace —
+diff --git a/backend/primnox2/tools/builtins.py b/backend/primnox2/tools/builtins.py
+index a091637..0fe6945 100644
+--- a/backend/primnox2/tools/builtins.py
++++ b/backend/primnox2/tools/builtins.py
+@@ -420,12 +420,24 @@ register(ToolSpec(
+ def _recall_memory(args: dict, ctx: ToolContext) -> dict:
+     """Search what is already known. Memory is injected into every prompt, but
+     the injection is capped — this reaches past the cap for an older fact."""
+-    from ..memory import service as memory
+-
+-    hits = memory.search(args.get("query") or "", limit=int(args.get("limit") or 10))
++    from datetime import datetime
++
++    from ..memory import service as memory, when as time_words
++
++    # The user's own words in `when` are turned into a date here, not by the model,
++    # which got relative phrases wrong (memory/when.py).
++    as_of = time_words.as_of_for(
++        when=args.get("when"), as_of=args.get("as_of") or None, query=args.get("query") or "",
++        today=datetime.fromtimestamp(memory.now_ms() / 1000).date())
++    if as_of is not None and memory.parse_as_of(as_of) is None:
++        return {"status": "error", "summary": "unreadable date",
++                "output": f"as_of {as_of!r} is not a date. Use YYYY-MM or YYYY-MM-DD."}
++    hits = memory.search(args.get("query") or "", limit=int(args.get("limit") or 10),
++                         as_of=as_of)
+     if not hits:
+         return {"status": "success", "summary": "nothing known",
+-                "output": "Nothing remembered about that."}
++                "output": ("Nothing remembered about that as of " + str(as_of) + "."
++                           if as_of else "Nothing remembered about that.")}
+     return {"status": "success", "summary": f"{len(hits)} remembered",
+             "output": "\n".join(f"- {h['text']}" for h in hits)}
+ 
+@@ -445,16 +457,48 @@ register(ToolSpec(
+     # So each description now names its own subject AND points at the other
+     # tool by name, because "this is for X" is weaker guidance than "this is
+     # for X, that is for Y" when the choice is what's being got wrong.
+-    description=("THE tool for questions about the user — preferences, habits, "
+-                 "their setup, anything they told you before. Use it whenever "
+-                 "the question says 'I', 'my' or 'me'. It does not search code; "
+-                 "graph_query does, and cannot answer for the user. If the fact "
+-                 "is already stated in a message visible above, just answer from "
+-                 "it — do not call this to look up something you can already see."),
++    # The time arguments are the ones a small model gets wrong in a way that costs an
++    # answer. Told today's date, the local 9B put it (or the month) in as_of on 79%
++    # of questions about NOW, and every such call asks memory how things stood on a
++    # day the user did not mean. Saying "only for the past" once, after the
++    # description, did not move it; putting the rule FIRST and naming the present-
++    # tense wording ("these days", "currently") and the two things it must not hold
++    # (today, this month) took it to 3% (1 of 36 now-questions) while all 15
++    # questions about the past still carried a date. Measured on the dev split with
++    # `bench_memory_blind.py --query model`.
++    #
++    # Dating the past was the other failure: asked to turn "back in October" into a
++    # date, it wrote 2026-10 on 20 September 2026, a year off. So it now copies the
++    # user's words into `when` (all 15 dev past questions) and memory/when.py does
++    # the calendar.
++    description=("RULE: fill `when` only when the user asks about a time in the "
++                 "PAST, with their own words copied, not converted: 'back in "
++                 "March', 'last summer', 'around Christmas', 'two months ago'. A "
++                 "question about now — 'currently', 'these days', 'nowadays', "
++                 "'still', 'at the moment', 'right now', or one with no time in "
++                 "it — never gets `when` or as_of, not today's date and not this "
++                 "month, even though you know them. THE tool for questions about "
++                 "the user — preferences, habits, their setup, anything they told "
++                 "you before. Use it whenever the question says 'I', 'my' or 'me'. "
++                 "It does not search code; graph_query does, and cannot answer for "
++                 "the user. If the fact is already stated in a message visible "
++                 "above, just answer from it — do not call this to look up "
++                 "something you can already see. Without `when` it returns what is "
++                 "true now; with `when` ('what did I use back in March') it returns "
++                 "how things stood then."),
+     parameters={
+         "query": {"type": "string", "required": False,
+                   "description": "What to look for. Omit for everything."},
+         "limit": {"type": "integer", "required": False, "description": "Max results."},
++        "when": {"type": "string", "required": False,
++                 "description": ("Leave empty unless the question is about a PAST "
++                                 "time; then the user's own words for it, copied "
++                                 "exactly, e.g. 'last summer', 'back in March', "
++                                 "'around Christmas', 'two months ago'. Never a date, "
++                                 "never today, never this month.")},
++        "as_of": {"type": "string", "required": False,
++                  "description": ("Leave empty. Only when the user gave an exact date "
++                                  "(YYYY-MM or YYYY-MM-DD); otherwise use `when`.")},
+     },
+     danger=LOW,
+     handler=_recall_memory,
+@@ -478,7 +522,9 @@ def _forget_memory(args: dict, ctx: ToolContext) -> dict:
+                 "output": "Say what to forget — a word or phrase from the "
+                           "fact. To clear everything, the user does that from "
+                           "the Memory tab."}
+-    hits = memory.search(query, limit=int(args.get("limit") or 5))
++    # Retired versions too: "forget what I said about coffee" means every
++    # version of it, not just the current one.
++    hits = memory.search(query, limit=int(args.get("limit") or 5), include_superseded=True)
+     if not hits:
+         return {"status": "success", "summary": "nothing matched",
+                 "output": f"No stored fact matches {query!r}."}
+diff --git a/backend/primnox2/tools/retrieval.py b/backend/primnox2/tools/retrieval.py
+index 9ba942e..a1e1274 100644
+--- a/backend/primnox2/tools/retrieval.py
++++ b/backend/primnox2/tools/retrieval.py
+@@ -104,7 +104,8 @@ _lock = threading.Lock()
+ _encoder = None                 # callable(list[str]) -> tensor, once ready
+ _loading = False
+ _failed = False
+-_vectors = None                 # cached tool matrix
++_done = threading.Event()       # a load attempt has ended, successfully or not
++_vectors = None                # cached tool matrix
+ _owner: list[int] = []          # row -> index into the spec list it came from
+ _vector_names: list[str] = []   # the registry the cache was built against
+ 
+@@ -141,12 +142,14 @@ def _load() -> None:
+ 
+             with _lock:
+                 _encoder, _loading = embed, False
++            _done.set()
+         except Exception:
+             # No encoder means no narrowing, which is the behaviour that
+             # existed before this module. Marked failed so a machine without
+             # the model pays one attempt rather than one per turn.
+             with _lock:
+                 _loading, _failed = False, True
++            _done.set()
+ 
+     threading.Thread(target=work, name="tool-retrieval", daemon=True).start()
+ 
+@@ -183,6 +186,17 @@ def ready() -> bool:
+     return _encoder is not None
+ 
+ 
++def encoder(wait_s: float = 0.0):
++    """The embed callable, or None while it is unavailable. Starts the load on
++    first use; `wait_s` blocks that long for it, for callers that would rather
++    pay the cold start than fall back (benchmarks, tests)."""
++    if _encoder is None and not _failed:
++        _load()
++        if wait_s > 0:
++            _done.wait(wait_s)
++    return _encoder
++
++
+ def candidates(request: str, k: int = 5) -> "list[str] | None":
+     """The k tool names most likely to be wanted, or None to show everything.
+ 
+diff --git a/backend/sdl/inject.py b/backend/sdl/inject.py
+index 58479a6..13542a5 100644
+--- a/backend/sdl/inject.py
++++ b/backend/sdl/inject.py
+@@ -331,7 +331,8 @@ def main(argv=None) -> int:
+         if args.clear:
+             print(f"  forgot {forgotten} existing")
+         print(f"  stored {result['stored']}, suppressed "
+-              f"{result['duplicates']} duplicates")
++              f"{result['duplicates']} duplicates, refused "
++              f"{result['rejected']} as instructions")
+ 
+         stats = memory.stats()
+         by_cat = ", ".join(f"{k} {v}" for k, v in sorted(stats["by_category"].items()))
+diff --git a/backend/tests/conftest.py b/backend/tests/conftest.py
+index 9ae1d51..8c14830 100644
+--- a/backend/tests/conftest.py
++++ b/backend/tests/conftest.py
+@@ -71,6 +71,11 @@ os.environ["PRIMNOX2_HOME"] = str(TEST_HOME)
+ # No background memory probes against whatever provider a test configures
+ # (models/memory_probe.py) — tests that want one call probe() directly.
+ os.environ["PRIMNOX2_MEMORY_PROBE"] = "0"
++# Memory's meaning-based arms are on by default and load a real sentence encoder
++# on first use. The suite pins them off, so no test pays for a model or depends on
++# one; the tests that exercise an arm turn it on with a fake encoder.
++os.environ["PRIMNOX2_MEMORY_EMBEDDINGS"] = "0"
++os.environ["PRIMNOX2_MEMORY_EMBEDDINGS_SUPERSEDE"] = "0"
+ 
+ # Same reasoning, for the model servers on this machine. A fresh home seeds
+ # two profiles — "Ollama (local)", filled with whatever Ollama reports as

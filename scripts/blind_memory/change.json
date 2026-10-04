@@ -1,0 +1,1367 @@
+[
+ {
+  "scenario": "mina-london-analyst",
+  "today": "2025-07-01",
+  "statements": [
+   {
+    "id": "m1",
+    "date": "2025-01-10",
+    "text": "I'm Mina, I work at Accenture as a senior analyst in London."
+   },
+   {
+    "id": "m2",
+    "date": "2025-01-17",
+    "text": "My phone is an iPhone 13 and honestly it's still great."
+   },
+   {
+    "id": "m3",
+    "date": "2025-01-24",
+    "text": "I rent a one-bed flat in Brixton with my partner Tom."
+   },
+   {
+    "id": "m4",
+    "date": "2025-02-02",
+    "text": "I drive a 2016 Honda Civic, mostly for weekend trips."
+   },
+   {
+    "id": "m5",
+    "date": "2025-02-09",
+    "text": "My brother Danny works at Google in Dublin."
+   },
+   {
+    "id": "m6",
+    "date": "2025-02-15",
+    "text": "I'm vegetarian, have been for six years."
+   },
+   {
+    "id": "m7",
+    "date": "2025-02-22",
+    "text": "I use Notion for all my notes and to-dos."
+   },
+   {
+    "id": "m8",
+    "date": "2025-03-01",
+    "text": "Had sushi with Mei on Friday, the new place near the station is great."
+   },
+   {
+    "id": "m9",
+    "date": "2025-03-08",
+    "text": "My GP is Dr Patel at the Brixton surgery."
+   },
+   {
+    "id": "m10",
+    "date": "2025-03-15",
+    "text": "Running club every Tuesday evening, 5k loops in Brockwell Park."
+   },
+   {
+    "id": "m11",
+    "date": "2025-03-22",
+    "text": "We have a cat called Miso."
+   },
+   {
+    "id": "m12",
+    "date": "2025-04-01",
+    "text": "Went to a Radiohead gig last week, still buzzing."
+   },
+   {
+    "id": "m13",
+    "date": "2025-04-12",
+    "text": "Started at Deloitte on Monday, so I've left Accenture after four years.",
+    "replaces": [
+     "m1"
+    ]
+   },
+   {
+    "id": "m14",
+    "date": "2025-04-19",
+    "text": "Got a Pixel 9 last week, the camera is wild.",
+    "replaces": [
+     "m2"
+    ]
+   },
+   {
+    "id": "m15",
+    "date": "2025-04-26",
+    "text": "We moved to Manchester in March, a two-bed in Chorlton.",
+    "replaces": [
+     "m3"
+    ]
+   },
+   {
+    "id": "m16",
+    "date": "2025-05-03",
+    "text": "Picked up a Tesla Model 3 last month and sold the Civic.",
+    "replaces": [
+     "m4"
+    ]
+   },
+   {
+    "id": "m17",
+    "date": "2025-05-10",
+    "text": "Eating fish again since the spring, the vegetarian thing wore off.",
+    "replaces": [
+     "m6"
+    ]
+   },
+   {
+    "id": "m18",
+    "date": "2025-05-17",
+    "text": "Moved my notes over to Obsidian, Notion got too slow.",
+    "replaces": [
+     "m7"
+    ]
+   },
+   {
+    "id": "m19",
+    "date": "2025-05-24",
+    "text": "Visited Lisbon last weekend, ate far too many pastries."
+   },
+   {
+    "id": "m20",
+    "date": "2025-05-31",
+    "text": "Dr Okafor is my GP now, the Chorlton practice is much closer.",
+    "replaces": [
+     "m9"
+    ]
+   },
+   {
+    "id": "m21",
+    "date": "2025-06-07",
+    "text": "Got a haircut yesterday, finally."
+   },
+   {
+    "id": "m22",
+    "date": "2025-06-14",
+    "text": "Also joined a climbing gym, Thursdays after work."
+   },
+   {
+    "id": "m23",
+    "date": "2025-06-21",
+    "text": "We adopted a second cat last week, a grey one called Pesto."
+   }
+  ],
+  "questions": [
+   {
+    "id": "mq1",
+    "type": "current",
+    "text": "Where does Mina work now?",
+    "answer_ids": [
+     "m13"
+    ]
+   },
+   {
+    "id": "mq2",
+    "type": "current",
+    "text": "What phone does she use?",
+    "answer_ids": [
+     "m14"
+    ]
+   },
+   {
+    "id": "mq3",
+    "type": "current",
+    "text": "Where does she live?",
+    "answer_ids": [
+     "m15"
+    ]
+   },
+   {
+    "id": "mq4",
+    "type": "current",
+    "text": "What car does she drive?",
+    "answer_ids": [
+     "m16"
+    ]
+   },
+   {
+    "id": "mq5",
+    "type": "current",
+    "text": "Does she eat meat or fish?",
+    "answer_ids": [
+     "m17"
+    ]
+   },
+   {
+    "id": "mq6",
+    "type": "current",
+    "text": "What does she take notes in?",
+    "answer_ids": [
+     "m18"
+    ]
+   },
+   {
+    "id": "mq7",
+    "type": "current",
+    "text": "Who is her doctor?",
+    "answer_ids": [
+     "m20"
+    ]
+   },
+   {
+    "id": "mq8",
+    "type": "current",
+    "text": "Where does her brother work?",
+    "answer_ids": [
+     "m5"
+    ]
+   },
+   {
+    "id": "mq9",
+    "type": "multi",
+    "text": "What pets does she have?",
+    "answer_ids": [
+     "m11",
+     "m23"
+    ]
+   },
+   {
+    "id": "mq10",
+    "type": "multi",
+    "text": "What does she do for exercise?",
+    "answer_ids": [
+     "m10",
+     "m22"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "omar-lagos-founder",
+  "today": "2025-08-01",
+  "statements": [
+   {
+    "id": "o1",
+    "date": "2025-01-05",
+    "text": "I run a small logistics startup in Lagos called Moveit."
+   },
+   {
+    "id": "o2",
+    "date": "2025-01-12",
+    "text": "My laptop is a MacBook Pro with the M1 chip."
+   },
+   {
+    "id": "o3",
+    "date": "2025-01-20",
+    "text": "I live in Lekki, about forty minutes from the office."
+   },
+   {
+    "id": "o4",
+    "date": "2025-01-28",
+    "text": "I take the BRT bus to the office most mornings."
+   },
+   {
+    "id": "o5",
+    "date": "2025-02-04",
+    "text": "Our main database is Postgres 14 on a managed instance."
+   },
+   {
+    "id": "o6",
+    "date": "2025-02-11",
+    "text": "My cofounder Ada handles all the finance side."
+   },
+   {
+    "id": "o7",
+    "date": "2025-02-18",
+    "text": "I code mostly in Python these days."
+   },
+   {
+    "id": "o8",
+    "date": "2025-02-25",
+    "text": "Morning routine is a 5k run and then black coffee."
+   },
+   {
+    "id": "o9",
+    "date": "2025-03-04",
+    "text": "Met Funmi about the Kano expansion on Thursday."
+   },
+   {
+    "id": "o10",
+    "date": "2025-03-11",
+    "text": "My sister Tolu lives in Toronto."
+   },
+   {
+    "id": "o11",
+    "date": "2025-03-18",
+    "text": "I bank with GTBank for the business account."
+   },
+   {
+    "id": "o12",
+    "date": "2025-03-25",
+    "text": "I'm allergic to penicillin."
+   },
+   {
+    "id": "o13",
+    "date": "2025-04-08",
+    "text": "Bought a standing desk for the home office."
+   },
+   {
+    "id": "o14",
+    "date": "2025-04-15",
+    "text": "Bought a road bike for the weekends."
+   },
+   {
+    "id": "o15",
+    "date": "2025-05-02",
+    "text": "Upgraded to a MacBook Air M3 last week, the old Pro was too heavy.",
+    "replaces": [
+     "o2"
+    ]
+   },
+   {
+    "id": "o16",
+    "date": "2025-05-09",
+    "text": "Moved to Victoria Island in April, so the commute is ten minutes now.",
+    "replaces": [
+     "o3"
+    ]
+   },
+   {
+    "id": "o17",
+    "date": "2025-05-16",
+    "text": "I walk to the office now, no more BRT.",
+    "replaces": [
+     "o4"
+    ]
+   },
+   {
+    "id": "o18",
+    "date": "2025-05-23",
+    "text": "Migrated the main database to Postgres 16 last month.",
+    "replaces": [
+     "o5"
+    ]
+   },
+   {
+    "id": "o19",
+    "date": "2025-06-06",
+    "text": "Ada left to start her own thing, Kemi is the new finance lead.",
+    "replaces": [
+     "o6"
+    ]
+   },
+   {
+    "id": "o20",
+    "date": "2025-06-13",
+    "text": "Rewrote the routing service in Go, so most of my code is Go now.",
+    "replaces": [
+     "o7"
+    ]
+   },
+   {
+    "id": "o21",
+    "date": "2025-06-20",
+    "text": "Cut the coffee, it's green tea in the mornings now.",
+    "replaces": [
+     "o8"
+    ]
+   },
+   {
+    "id": "o22",
+    "date": "2025-06-27",
+    "text": "Tolu moved back to Lagos last month.",
+    "replaces": [
+     "o10"
+    ]
+   },
+   {
+    "id": "o23",
+    "date": "2025-07-04",
+    "text": "Switched the business account to Kuda.",
+    "replaces": [
+     "o11"
+    ]
+   },
+   {
+    "id": "o24",
+    "date": "2025-07-11",
+    "text": "I'm also allergic to shellfish, found out at a wedding."
+   },
+   {
+    "id": "o25",
+    "date": "2025-07-18",
+    "text": "Had lunch with Funmi yesterday, she is joining as head of ops."
+   }
+  ],
+  "questions": [
+   {
+    "id": "oq1",
+    "type": "current",
+    "text": "What laptop does Omar use?",
+    "answer_ids": [
+     "o15"
+    ]
+   },
+   {
+    "id": "oq2",
+    "type": "current",
+    "text": "Where does he live?",
+    "answer_ids": [
+     "o16"
+    ]
+   },
+   {
+    "id": "oq3",
+    "type": "current",
+    "text": "How does he get to work?",
+    "answer_ids": [
+     "o17"
+    ]
+   },
+   {
+    "id": "oq4",
+    "type": "current",
+    "text": "Which Postgres version?",
+    "answer_ids": [
+     "o18"
+    ]
+   },
+   {
+    "id": "oq5",
+    "type": "current",
+    "text": "Who runs finance?",
+    "answer_ids": [
+     "o19"
+    ]
+   },
+   {
+    "id": "oq6",
+    "type": "current",
+    "text": "What language does he code in?",
+    "answer_ids": [
+     "o20"
+    ]
+   },
+   {
+    "id": "oq7",
+    "type": "current",
+    "text": "What does he drink in the morning?",
+    "answer_ids": [
+     "o21"
+    ]
+   },
+   {
+    "id": "oq8",
+    "type": "current",
+    "text": "Where does his sister live?",
+    "answer_ids": [
+     "o22"
+    ]
+   },
+   {
+    "id": "oq9",
+    "type": "current",
+    "text": "Which bank does the business use?",
+    "answer_ids": [
+     "o23"
+    ]
+   },
+   {
+    "id": "oq10",
+    "type": "multi",
+    "text": "What is he allergic to?",
+    "answer_ids": [
+     "o12",
+     "o24"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "rosa-lisbon-teacher",
+  "today": "2025-09-01",
+  "statements": [
+   {
+    "id": "r1",
+    "date": "2025-02-03",
+    "text": "Rosa here, I teach year 4 at a primary school in Lisbon."
+   },
+   {
+    "id": "r2",
+    "date": "2025-02-10",
+    "text": "I'm on a Samsung Galaxy A34, nothing fancy."
+   },
+   {
+    "id": "r3",
+    "date": "2025-02-17",
+    "text": "We live in a third-floor apartment in Alfama, no lift."
+   },
+   {
+    "id": "r4",
+    "date": "2025-02-24",
+    "text": "My husband Paulo works at a bank downtown."
+   },
+   {
+    "id": "r5",
+    "date": "2025-03-03",
+    "text": "I cycle to school when it isn't raining."
+   },
+   {
+    "id": "r6",
+    "date": "2025-03-10",
+    "text": "My son Tiago is seven and plays football on Saturdays."
+   },
+   {
+    "id": "r7",
+    "date": "2025-03-17",
+    "text": "I'm learning Italian with an app, ten minutes a day."
+   },
+   {
+    "id": "r8",
+    "date": "2025-03-24",
+    "text": "My mother lives in Porto and I visit her monthly."
+   },
+   {
+    "id": "r9",
+    "date": "2025-04-07",
+    "text": "Read the new Elena Ferrante over the holidays."
+   },
+   {
+    "id": "r10",
+    "date": "2025-04-14",
+    "text": "I take blood pressure tablets every morning, amlodipine."
+   },
+   {
+    "id": "r11",
+    "date": "2025-04-28",
+    "text": "Drinks a lot of tea, I'm basically never without a mug."
+   },
+   {
+    "id": "r12",
+    "date": "2025-05-12",
+    "text": "Now teaching year 5 after the reshuffle at school.",
+    "replaces": [
+     "r1"
+    ]
+   },
+   {
+    "id": "r13",
+    "date": "2025-05-19",
+    "text": "Got a Pixel 8 for my birthday, goodbye old Samsung.",
+    "replaces": [
+     "r2"
+    ]
+   },
+   {
+    "id": "r14",
+    "date": "2025-06-02",
+    "text": "We bought a place in Almada, finally with a lift and a balcony.",
+    "replaces": [
+     "r3"
+    ]
+   },
+   {
+    "id": "r15",
+    "date": "2025-06-09",
+    "text": "Paulo started at the insurance company on Monday.",
+    "replaces": [
+     "r4"
+    ]
+   },
+   {
+    "id": "r16",
+    "date": "2025-06-16",
+    "text": "Tiago has switched from football to swimming, Sunday mornings.",
+    "replaces": [
+     "r6"
+    ]
+   },
+   {
+    "id": "r17",
+    "date": "2025-06-23",
+    "text": "Ran my first half marathon on Sunday, 2h10."
+   },
+   {
+    "id": "r18",
+    "date": "2025-07-07",
+    "text": "Doctor switched my blood pressure pills to ramipril.",
+    "replaces": [
+     "r10"
+    ]
+   },
+   {
+    "id": "r19",
+    "date": "2025-07-14",
+    "text": "My mother moved to Lisbon to be closer to us.",
+    "replaces": [
+     "r8"
+    ]
+   },
+   {
+    "id": "r20",
+    "date": "2025-07-21",
+    "text": "Gave up the Italian app and joined an evening class instead.",
+    "replaces": [
+     "r7"
+    ]
+   },
+   {
+    "id": "r21",
+    "date": "2025-08-04",
+    "text": "We got a puppy last week, a beagle called Bolacha."
+   },
+   {
+    "id": "r22",
+    "date": "2025-08-11",
+    "text": "Ferry to the south bank is how I get to school now.",
+    "replaces": [
+     "r5"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq1",
+    "type": "current",
+    "text": "What year does Rosa teach?",
+    "answer_ids": [
+     "r12"
+    ]
+   },
+   {
+    "id": "rq2",
+    "type": "current",
+    "text": "What phone does she have?",
+    "answer_ids": [
+     "r13"
+    ]
+   },
+   {
+    "id": "rq3",
+    "type": "current",
+    "text": "Where do they live?",
+    "answer_ids": [
+     "r14"
+    ]
+   },
+   {
+    "id": "rq4",
+    "type": "current",
+    "text": "Where does Paulo work?",
+    "answer_ids": [
+     "r15"
+    ]
+   },
+   {
+    "id": "rq5",
+    "type": "current",
+    "text": "What sport does Tiago do?",
+    "answer_ids": [
+     "r16"
+    ]
+   },
+   {
+    "id": "rq6",
+    "type": "current",
+    "text": "What blood pressure medication does she take?",
+    "answer_ids": [
+     "r18"
+    ]
+   },
+   {
+    "id": "rq7",
+    "type": "current",
+    "text": "Where does her mother live?",
+    "answer_ids": [
+     "r19"
+    ]
+   },
+   {
+    "id": "rq8",
+    "type": "current",
+    "text": "How is she learning Italian?",
+    "answer_ids": [
+     "r20"
+    ]
+   },
+   {
+    "id": "rq9",
+    "type": "current",
+    "text": "How does she get to school?",
+    "answer_ids": [
+     "r22"
+    ]
+   },
+   {
+    "id": "rq10",
+    "type": "multi",
+    "text": "What pets does she have?",
+    "answer_ids": [
+     "r21"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "hana-osaka-designer",
+  "today": "2025-10-01",
+  "statements": [
+   {
+    "id": "h1",
+    "date": "2025-01-08",
+    "text": "I'm Hana, a freelance illustrator based in Osaka."
+   },
+   {
+    "id": "h2",
+    "date": "2025-01-15",
+    "text": "My studio is a tiny room above a bakery in Tennoji."
+   },
+   {
+    "id": "h3",
+    "date": "2025-01-22",
+    "text": "I draw on an iPad Pro with Procreate most days."
+   },
+   {
+    "id": "h4",
+    "date": "2025-01-29",
+    "text": "My cat Kuro sleeps on my desk and steps on the keyboard."
+   },
+   {
+    "id": "h5",
+    "date": "2025-02-05",
+    "text": "Lunch is usually onigiri from the konbini downstairs."
+   },
+   {
+    "id": "h6",
+    "date": "2025-02-12",
+    "text": "I take the Midosuji line to meet clients in Umeda."
+   },
+   {
+    "id": "h7",
+    "date": "2025-02-19",
+    "text": "My main client is a toy company called Pippo."
+   },
+   {
+    "id": "h8",
+    "date": "2025-02-26",
+    "text": "I'm studying English with a weekly Skype tutor."
+   },
+   {
+    "id": "h9",
+    "date": "2025-03-05",
+    "text": "Saturday mornings I go to a pottery class in Namba."
+   },
+   {
+    "id": "h10",
+    "date": "2025-03-12",
+    "text": "My mother lives in Kyoto and I see her every month."
+   },
+   {
+    "id": "h11",
+    "date": "2025-03-19",
+    "text": "I'm allergic to buckwheat, so soba is out."
+   },
+   {
+    "id": "h12",
+    "date": "2025-03-26",
+    "text": "Saw a Hokusai exhibition at the museum last weekend."
+   },
+   {
+    "id": "h13",
+    "date": "2025-04-09",
+    "text": "Pippo dropped me, so my main client is Lumo Games now.",
+    "replaces": [
+     "h7"
+    ]
+   },
+   {
+    "id": "h14",
+    "date": "2025-04-16",
+    "text": "Upgraded to the iPad Air, the Pro was too bulky for travel.",
+    "replaces": [
+     "h3"
+    ]
+   },
+   {
+    "id": "h15",
+    "date": "2025-04-23",
+    "text": "Found a bigger studio in Nakazakicho and moved in last week.",
+    "replaces": [
+     "h2"
+    ]
+   },
+   {
+    "id": "h16",
+    "date": "2025-05-07",
+    "text": "Adopted a second cat, a tiny calico named Mugi."
+   },
+   {
+    "id": "h17",
+    "date": "2025-05-14",
+    "text": "I cycle to client meetings now, the Midosuji line is too crowded.",
+    "replaces": [
+     "h6"
+    ]
+   },
+   {
+    "id": "h18",
+    "date": "2025-05-21",
+    "text": "Mum moved to Nara last month, quieter and cheaper than Kyoto.",
+    "replaces": [
+     "h10"
+    ]
+   },
+   {
+    "id": "h19",
+    "date": "2025-06-04",
+    "text": "Quit the Skype tutor and joined an English conversation circle on Wednesdays.",
+    "replaces": [
+     "h8"
+    ]
+   },
+   {
+    "id": "h20",
+    "date": "2025-06-11",
+    "text": "Switched pottery to Sunday afternoons because of a new client call.",
+    "replaces": [
+     "h9"
+    ]
+   },
+   {
+    "id": "h21",
+    "date": "2025-06-18",
+    "text": "Bought a lunch box set, so I'm packing bento three days a week."
+   },
+   {
+    "id": "h22",
+    "date": "2025-07-02",
+    "text": "Had ramen with Yui on Friday, the broth was unreal."
+   },
+   {
+    "id": "h23",
+    "date": "2025-07-09",
+    "text": "Lumo Games offered me a retainer, so they are my biggest client now."
+   },
+   {
+    "id": "h24",
+    "date": "2025-07-16",
+    "text": "I also learned I'm allergic to kiwi, found out at a party."
+   }
+  ],
+  "questions": [
+   {
+    "id": "hq1",
+    "type": "current",
+    "text": "Who is Hana's main client?",
+    "answer_ids": [
+     "h13"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "tomas-brno-engineer",
+  "today": "2025-10-01",
+  "statements": [
+   {
+    "id": "b1",
+    "date": "2025-01-06",
+    "text": "Tomas, 34, embedded software engineer at Brightwave in Brno."
+   },
+   {
+    "id": "b2",
+    "date": "2025-01-13",
+    "text": "We rent a two-room flat near the Brno exhibition centre."
+   },
+   {
+    "id": "b3",
+    "date": "2025-01-20",
+    "text": "My car is a Skoda Octavia from 2014 with a lot of kilometres on it."
+   },
+   {
+    "id": "b4",
+    "date": "2025-01-27",
+    "text": "I write firmware in C and a bit of Rust on the side."
+   },
+   {
+    "id": "b5",
+    "date": "2025-02-03",
+    "text": "Marketa, my wife, teaches maths at a gymnasium."
+   },
+   {
+    "id": "b6",
+    "date": "2025-02-10",
+    "text": "My phone is a Xiaomi Redmi Note 11."
+   },
+   {
+    "id": "b7",
+    "date": "2025-02-17",
+    "text": "Ice hockey with colleagues every Thursday evening."
+   },
+   {
+    "id": "b8",
+    "date": "2025-02-24",
+    "text": "My boss at Brightwave is Pavel Novak."
+   },
+   {
+    "id": "b9",
+    "date": "2025-03-03",
+    "text": "I take beta-blockers for my heart rhythm, bisoprolol, five milligrams."
+   },
+   {
+    "id": "b10",
+    "date": "2025-03-10",
+    "text": "Our daughter Ema just started school this September."
+   },
+   {
+    "id": "b11",
+    "date": "2025-03-17",
+    "text": "I track my budget in a Google Sheet."
+   },
+   {
+    "id": "b12",
+    "date": "2025-03-24",
+    "text": "Visited my parents in Olomouc over the long weekend."
+   },
+   {
+    "id": "b13",
+    "date": "2025-04-07",
+    "text": "Left Brightwave in March, I'm at Siemens Mobility now.",
+    "replaces": [
+     "b1"
+    ]
+   },
+   {
+    "id": "b14",
+    "date": "2025-04-14",
+    "text": "We bought an apartment in Brno-Zidenice, finally our own place.",
+    "replaces": [
+     "b2"
+    ]
+   },
+   {
+    "id": "b15",
+    "date": "2025-04-21",
+    "text": "Sold the Octavia and picked up a used Tesla Model 3.",
+    "replaces": [
+     "b3"
+    ]
+   },
+   {
+    "id": "b16",
+    "date": "2025-05-05",
+    "text": "Most of my code is Rust these days, hardly any C anymore.",
+    "replaces": [
+     "b4"
+    ]
+   },
+   {
+    "id": "b17",
+    "date": "2025-05-12",
+    "text": "Got an iPhone 15 from work, so goodbye Xiaomi.",
+    "replaces": [
+     "b6"
+    ]
+   },
+   {
+    "id": "b18",
+    "date": "2025-05-19",
+    "text": "Hockey moved to Tuesdays after the rink changed the schedule.",
+    "replaces": [
+     "b7"
+    ]
+   },
+   {
+    "id": "b19",
+    "date": "2025-06-02",
+    "text": "My new boss at Siemens is Katerina Dvorak.",
+    "replaces": [
+     "b8"
+    ]
+   },
+   {
+    "id": "b20",
+    "date": "2025-06-09",
+    "text": "Doctor changed my beta-blocker to metoprolol after the check-up.",
+    "replaces": [
+     "b9"
+    ]
+   },
+   {
+    "id": "b21",
+    "date": "2025-06-16",
+    "text": "Moved the budget over to YNAB, the spreadsheet got messy.",
+    "replaces": [
+     "b11"
+    ]
+   },
+   {
+    "id": "b22",
+    "date": "2025-06-23",
+    "text": "Got a kitten from a neighbour, a ginger one called Fidel."
+   },
+   {
+    "id": "b23",
+    "date": "2025-07-07",
+    "text": "Marketa got promoted to deputy head at the gymnasium.",
+    "replaces": [
+     "b5"
+    ]
+   },
+   {
+    "id": "b24",
+    "date": "2025-07-14",
+    "text": "Went to a Metallica concert in Prague last week."
+   },
+   {
+    "id": "b25",
+    "date": "2025-07-21",
+    "text": "Bought a cargo trailer for the Tesla."
+   }
+  ],
+  "questions": [
+   {
+    "id": "bq1",
+    "type": "current",
+    "text": "Where does Tomas work?",
+    "answer_ids": [
+     "b13"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "traps-one",
+  "today": "2025-09-01",
+  "statements": [
+   {
+    "id": "a1",
+    "date": "2025-01-05",
+    "text": "I work at Stripe as a backend engineer."
+   },
+   {
+    "id": "a2",
+    "date": "2025-01-12",
+    "text": "My phone is a Pixel 8."
+   },
+   {
+    "id": "a3",
+    "date": "2025-01-19",
+    "text": "I live in Austin."
+   },
+   {
+    "id": "a4",
+    "date": "2025-01-26",
+    "text": "My sister works at Google."
+   },
+   {
+    "id": "a5",
+    "date": "2025-02-02",
+    "text": "My brother lives in Denver."
+   },
+   {
+    "id": "a6",
+    "date": "2025-02-09",
+    "text": "I like hiking at the weekends."
+   },
+   {
+    "id": "a7",
+    "date": "2025-02-16",
+    "text": "I speak Spanish and English at home."
+   },
+   {
+    "id": "a8",
+    "date": "2025-02-23",
+    "text": "We have a dog called Rex."
+   },
+   {
+    "id": "a9",
+    "date": "2025-03-02",
+    "text": "I run five kilometres on Tuesday evenings."
+   },
+   {
+    "id": "a10",
+    "date": "2025-03-09",
+    "text": "My manager is Sam."
+   },
+   {
+    "id": "a11",
+    "date": "2025-03-16",
+    "text": "I take the bus to work most days."
+   },
+   {
+    "id": "a12",
+    "date": "2025-03-23",
+    "text": "My laptop is a ThinkPad X1."
+   },
+   {
+    "id": "a13",
+    "date": "2025-03-30",
+    "text": "I drive a Honda Civic."
+   },
+   {
+    "id": "a14",
+    "date": "2025-04-06",
+    "text": "I use Postgres for the main database."
+   },
+   {
+    "id": "a15",
+    "date": "2025-04-13",
+    "text": "Had lunch with Priya on Monday."
+   },
+   {
+    "id": "a16",
+    "date": "2025-04-20",
+    "text": "I drink black coffee every morning."
+   },
+   {
+    "id": "a17",
+    "date": "2025-05-04",
+    "text": "Started pottery on Thursday evenings."
+   },
+   {
+    "id": "a18",
+    "date": "2025-05-11",
+    "text": "Got a new keyboard for my laptop."
+   },
+   {
+    "id": "a19",
+    "date": "2025-05-18",
+    "text": "Got a cat last month, a grey tabby called Mochi."
+   },
+   {
+    "id": "a20",
+    "date": "2025-05-25",
+    "text": "Took the train to Edinburgh last week."
+   },
+   {
+    "id": "a21",
+    "date": "2025-06-01",
+    "text": "My cousin is a manager at Tesco."
+   },
+   {
+    "id": "a22",
+    "date": "2025-06-08",
+    "text": "Borrowed my dad's Volvo last weekend."
+   },
+   {
+    "id": "a23",
+    "date": "2025-06-15",
+    "text": "Bought a case for my phone."
+   },
+   {
+    "id": "a24",
+    "date": "2025-06-22",
+    "text": "My wife started at Microsoft on Monday."
+   },
+   {
+    "id": "a25",
+    "date": "2025-06-29",
+    "text": "Had lunch with Tom on Friday."
+   },
+   {
+    "id": "a26",
+    "date": "2025-07-06",
+    "text": "I'm learning French on Duolingo."
+   },
+   {
+    "id": "a27",
+    "date": "2025-07-13",
+    "text": "Got new tyres for the Civic yesterday."
+   },
+   {
+    "id": "a28",
+    "date": "2025-07-20",
+    "text": "Moved the old desk into the spare room."
+   },
+   {
+    "id": "a29",
+    "date": "2025-07-27",
+    "text": "My brother moved to Seattle in the spring.",
+    "replaces": [
+     "a5"
+    ]
+   },
+   {
+    "id": "a30",
+    "date": "2025-08-03",
+    "text": "Joined a book club that meets on the first Sunday."
+   },
+   {
+    "id": "a31",
+    "date": "2025-08-10",
+    "text": "I'm also learning a bit of Portuguese."
+   },
+   {
+    "id": "a32",
+    "date": "2025-08-17",
+    "text": "Went to a Radiohead gig last week."
+   }
+  ],
+  "questions": [
+   {
+    "id": "aq1",
+    "type": "current",
+    "text": "Where do I work?",
+    "answer_ids": [
+     "a1"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "traps-two",
+  "today": "2025-09-01",
+  "statements": [
+   {
+    "id": "c1",
+    "date": "2025-01-05",
+    "text": "I teach chemistry at a secondary school in Leeds."
+   },
+   {
+    "id": "c2",
+    "date": "2025-01-12",
+    "text": "My husband works as an accountant at Deloitte."
+   },
+   {
+    "id": "c3",
+    "date": "2025-01-19",
+    "text": "I drive a Ford Focus to work every day."
+   },
+   {
+    "id": "c4",
+    "date": "2025-01-26",
+    "text": "I use a MacBook Air for marking and planning."
+   },
+   {
+    "id": "c5",
+    "date": "2025-02-02",
+    "text": "My daughter Isla is eight and loves swimming."
+   },
+   {
+    "id": "c6",
+    "date": "2025-02-09",
+    "text": "I play violin in a community orchestra on Wednesdays."
+   },
+   {
+    "id": "c7",
+    "date": "2025-02-16",
+    "text": "We live in a semi-detached house in Headingley."
+   },
+   {
+    "id": "c8",
+    "date": "2025-02-23",
+    "text": "I'm gluten intolerant, so I avoid bread and pasta."
+   },
+   {
+    "id": "c9",
+    "date": "2025-03-02",
+    "text": "My phone is a Samsung Galaxy S22."
+   },
+   {
+    "id": "c10",
+    "date": "2025-03-09",
+    "text": "I read mostly crime novels before bed."
+   },
+   {
+    "id": "c11",
+    "date": "2025-03-16",
+    "text": "Our dog Biscuit is a spaniel, five years old."
+   },
+   {
+    "id": "c12",
+    "date": "2025-03-23",
+    "text": "I do the weekly shop at Aldi on Saturday mornings."
+   },
+   {
+    "id": "c13",
+    "date": "2025-04-06",
+    "text": "Isla started violin lessons last month."
+   },
+   {
+    "id": "c14",
+    "date": "2025-04-13",
+    "text": "My husband got a new laptop for work, a Dell."
+   },
+   {
+    "id": "c15",
+    "date": "2025-04-20",
+    "text": "Picked up a second-hand cello for the orchestra."
+   },
+   {
+    "id": "c16",
+    "date": "2025-04-27",
+    "text": "I bought a new bike lock for my commute."
+   },
+   {
+    "id": "c17",
+    "date": "2025-05-04",
+    "text": "Visited Whitby last weekend, the fish and chips were great."
+   },
+   {
+    "id": "c18",
+    "date": "2025-05-11",
+    "text": "I went to a parents' evening on Tuesday."
+   },
+   {
+    "id": "c19",
+    "date": "2025-05-18",
+    "text": "Replaced the tyres on the Focus yesterday."
+   },
+   {
+    "id": "c20",
+    "date": "2025-05-25",
+    "text": "Isla won a swimming medal at the school gala."
+   },
+   {
+    "id": "c21",
+    "date": "2025-06-01",
+    "text": "Started a new book, another Ian Rankin."
+   },
+   {
+    "id": "c22",
+    "date": "2025-06-08",
+    "text": "We got a puppy, a cockapoo called Waffle."
+   },
+   {
+    "id": "c23",
+    "date": "2025-06-15",
+    "text": "My sister got a job at Aldi, she starts Monday."
+   },
+   {
+    "id": "c24",
+    "date": "2025-06-22",
+    "text": "Got a screen protector and a case for the Samsung."
+   },
+   {
+    "id": "c25",
+    "date": "2025-06-29",
+    "text": "I signed up to a gym near school, Tuesday and Friday mornings."
+   },
+   {
+    "id": "c26",
+    "date": "2025-07-06",
+    "text": "Dropped the kids at my mother-in-law's on Sunday."
+   },
+   {
+    "id": "c27",
+    "date": "2025-07-13",
+    "text": "My husband now has a company car, a Skoda."
+   },
+   {
+    "id": "c28",
+    "date": "2025-07-20",
+    "text": "I also play piano a bit, mostly for fun."
+   },
+   {
+    "id": "c29",
+    "date": "2025-08-03",
+    "text": "Moved the marking over to the new shared drive."
+   },
+   {
+    "id": "c30",
+    "date": "2025-08-10",
+    "text": "Isla now swims for the county squad."
+   }
+  ],
+  "questions": [
+   {
+    "id": "cq1",
+    "type": "current",
+    "text": "Where do I teach?",
+    "answer_ids": [
+     "c1"
+    ]
+   }
+  ]
+ }
+]

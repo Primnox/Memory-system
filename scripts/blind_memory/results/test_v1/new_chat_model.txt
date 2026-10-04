@@ -1,0 +1,20 @@
+split=test load=chat query=model model=huihui_ai/qwen3.5-abliterated:9b  (1233.4s)  code=../memory-v3/backend/primnox2
+
+10 scenarios, 168 questions
+                                         top-1                               top-3
+current           19.2% [ 12.0– 29.3]  (15/78)        25.6% [ 17.3– 36.3]  (20/78)
+past              40.0% [ 27.6– 53.8]  (20/50)        48.0% [ 34.8– 61.5]  (24/50)
+multi              40.0% [ 21.9– 61.3]  (8/20)        50.0% [ 29.9– 70.1]  (10/20)
+multi: every value in top k+2   30.0% [ 14.5– 51.9]  (6/20)
+answerable       29.1% [ 22.3– 36.8]  (43/148)       36.5% [ 29.2– 44.5]  (54/148)
+stale memory on top for a 'now' question   17.9% [ 11.0– 27.9]  (14/78)
+absent: returned nothing (retrieval can rarely do this)   75.0% [ 53.1– 88.8]  (15/20)
+past: model supplied a date at all  100.0% [ 92.9–100.0]  (50/50)
+current: model added a date it shouldn't   78.2% [ 67.8– 85.9]  (61/78)
+
+load: 267 statements, 0 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall      10.8% [  5.9– 18.7]  (10/93)
+  precision   37.0% [ 21.5– 55.8]  (10/27)
+  retired something never replaced: 8 of 27 retirements

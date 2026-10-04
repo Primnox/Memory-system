@@ -1,0 +1,18 @@
+split=test load=chat query=oracle  (0.6s)  code=../mem-v4/backend/primnox2
+
+10 scenarios, 168 questions
+                                         top-1                               top-3
+current           19.2% [ 12.0– 29.3]  (15/78)        29.5% [ 20.5– 40.4]  (23/78)
+past              52.0% [ 38.5– 65.2]  (26/50)        68.0% [ 54.2– 79.2]  (34/50)
+multi             50.0% [ 29.9– 70.1]  (10/20)        70.0% [ 48.1– 85.5]  (14/20)
+multi: every value in top k+2   35.0% [ 18.1– 56.7]  (7/20)
+answerable       34.5% [ 27.3– 42.4]  (51/148)       48.0% [ 40.1– 56.0]  (71/148)
+stale memory on top for a 'now' question   28.2% [ 19.4– 39.0]  (22/78)
+absent: returned nothing (retrieval can rarely do this)   70.0% [ 48.1– 85.5]  (14/20)
+
+load: 267 statements, 0 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall       9.7% [  5.2– 17.4]  (9/93)
+  precision   42.9% [ 24.5– 63.5]  (9/21)
+  retired something never replaced: 6 of 21 retirements

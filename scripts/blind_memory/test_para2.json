@@ -1,0 +1,3367 @@
+[
+ {
+  "scenario": "aiko-osaka-nurse",
+  "today": "2026-09-30",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-04",
+    "text": "Home is a small flat in Tennoji, around ten minutes on foot from the station.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-11",
+    "text": "I work as a nurse in the pediatric ward of Naniwa General and do three night shifts weekly.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-19",
+    "text": "I have a cat called Mochi, a rescue aged three, who can't stand the vacuum cleaner at all.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-02",
+    "text": "My morning commute to work is the Midosuji line, which is incredibly crowded, a real sardine can.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-15",
+    "text": "My sister Mio works baking at a little boulangerie in Kobe, and melon pan keeps arriving from her.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-11-29",
+    "text": "I started learning Korean with Duolingo for fifteen minutes a day, only because of K-dramas.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-13",
+    "text": "I'm still using my iPhone 12 and the battery is flat by lunch.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-12-27",
+    "text": "At the moment, Hikaru Utada is practically all I have on my playlist for the train.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-10",
+    "text": "My birthday present from Kenta, a surprise, was a Pixel 9, so no more worrying about the battery!",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-24",
+    "text": "I've joined a yoga class that runs on Saturday mornings, near Shinsaibashi.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-07",
+    "text": "I've turned vegetarian as of the new year, and it's turned out easier in Osaka than I figured it would be.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-02-21",
+    "text": "I was transferred to the Naniwa General ICU this week and my feet are in ruins.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-08",
+    "text": "A tabby kitten called Kinako has joined us as Mochi's new little brother.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-22",
+    "text": "Shellfish allergy, as it happens: I learned it the hard way with a bowl of ramen in Hakata.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-19",
+    "text": "Because Kenta works as an engineer at Panasonic, he gets an odd no-overtime Wednesday each week.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-05-03",
+    "text": "This weekend Kenta and I move into a 2LDK in Fukushima ward that we signed for.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-17",
+    "text": "My commute to the hospital is by bike now: fifteen minutes door to door. I've stopped dreading the mornings.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-31",
+    "text": "These days Mio works at a specialty coffee roaster in Kyoto, having left the boulangerie.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-06-14",
+    "text": "I'm out on the Yodogawa riverside path running every Sunday, preparing for a 10k in November this year.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-28",
+    "text": "Duolingo is out, replaced by a weekly Korean class in Umeda; what I need is an actual human to correct me.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-07-12",
+    "text": "Every time Kenta's mum visits she brings antihistamines, since she's allergic to cats.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-26",
+    "text": "My Pixel is dead after I dropped it in the bath; for now I'm on a spare Galaxy A55 from Kenta.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-08-09",
+    "text": "Fish is on my plate again; going vegetarian didn't last through the night shifts, which makes me basically pescatarian at this point.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-23",
+    "text": "On top of that I started Spanish on Tandem; Thursdays I talk with a guy from Valencia.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-09-06",
+    "text": "The Himeji Castle 10k on November 8th: I've registered for it.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-09-20",
+    "text": "Utada's been sidelined while Fujii Kaze has moved in and taken over my playlists.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-27",
+    "text": "Mochi's teeth were cleaned at the vet today, and he sulked for hours.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which place do I call home right now?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "At the moment, how do I travel to work?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which handset am I using currently?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What does my eating look like at present?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Which unit of the hospital am I working in?",
+    "type": "current",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How does my sister earn her living?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "When is the race I'm training for, and which one is it?",
+    "type": "current",
+    "answer_ids": [
+     "s19",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Around the new year, what phone was I using?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-12-31"
+   },
+   {
+    "id": "q9",
+    "text": "In March, where did I live?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-03-16"
+   },
+   {
+    "id": "q10",
+    "text": "In February, how did I commute?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q11",
+    "text": "In April, what kind of diet did I have?",
+    "type": "past",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": "2026-04-15"
+   },
+   {
+    "id": "q12",
+    "text": "In January, what ward was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2026-01-16"
+   },
+   {
+    "id": "q13",
+    "text": "What pets are in my household?",
+    "type": "multi",
+    "answer_ids": [
+     "s3",
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Right now, which languages do I study?",
+    "type": "multi",
+    "answer_ids": [
+     "s20",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What kind of car do I drive?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What tea is my favourite?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "bjorn-bergen-teacher",
+  "today": "2026-09-14",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-09-06",
+    "text": "My 26th year in the classroom, teaching physics and maths at Tertnes high school.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-09-20",
+    "text": "I'm still behind the wheel of the 2014 Volvo V70 diesel; it has 240,000 km on the clock and just won't die.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-04",
+    "text": "I've been put on amlodipine by the doctor for my blood pressure: 5 mg every morning.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-10-18",
+    "text": "Our Labrador Odin is nine years old now, and he slows down on the hills.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-01",
+    "text": "These days Ingrid mostly works day shifts, as a nurse at Haukeland.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-11-15",
+    "text": "Four cups of black filter coffee daily, yes, I know.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-29",
+    "text": "In the garage I'm putting together a clinker dinghy, which has taken up my Sundays since spring.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-12-13",
+    "text": "Fana is where our house is, around twenty-five minutes south of the city centre.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-12-24",
+    "text": "As every year, it's ribbe and aquavit on Christmas Eve, and by eight I'm asleep on the sofa.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-10",
+    "text": "The Bybanen light rail is how I travel to school most days, and it lets me mark papers on the way.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-01-24",
+    "text": "Italian on Babbel is something I've begun, because I want to be semi-conversational before our trip to Puglia.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-02-07",
+    "text": "I've been told by the doctor to cut the coffee; two cups a day now, plus green tea in the afternoon.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-02-21",
+    "text": "The MRI says torn meniscus after my knee gave out during the hike up Ulriken.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-07",
+    "text": "Due in July, Sofie is expecting!",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-03-21",
+    "text": "The principal at our school is Kari Sunde, who wants me to coach the physics olympiad team.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-04",
+    "text": "Incidentally, Odin is a yellow Lab, and his muzzle is very grey at the moment.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-18",
+    "text": "I finally got the arthroscopy on my knee done, and it's two weeks on crutches and I'm bored out of my mind.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-02",
+    "text": "An engineer's job at Equinor in Stavanger is what Mats got.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-16",
+    "text": "I keep reaching for a clutch that isn't there: the Model Y turned up on Friday and the V70 has gone.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-30",
+    "text": "Another thing I've started: restoring Ingrid's grandfather's rocking chair, and sanding it is a nightmare.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-13",
+    "text": "Amlodipine has been replaced by ramipril, since the swollen ankles were a pain.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-27",
+    "text": "I'm off until mid-August, as Friday was the last day before the summer break.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-07-11",
+    "text": "Linnea, seven pounds something, was born to Sofie on Monday, a baby girl.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-25",
+    "text": "The dinghy went into the water at Os this morning; I named her Snorre, and she floats!",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-08",
+    "text": "Now I cycle to work, forty minutes each way, having got an e-bike.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-08-22",
+    "text": "Terje Moe, who started this week, is our new principal now that Kari Sunde has retired.",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-08-29",
+    "text": "Ingrid has begun taking French lessons on Wednesday evenings and she's keen.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-09-05",
+    "text": "Following the blood pressure scare, I stopped coffee completely and drink only decaf and herbal tea.",
+    "replaces": [
+     "s12"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which vehicle do I drive nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "These days, how do I travel to school?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Who heads the school I teach in?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What tablet do I take for my blood pressure?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Where do things stand with my coffee drinking?",
+    "type": "current",
+    "answer_ids": [
+     "s28"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What is the situation with my knee?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is the name of my granddaughter?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Where does the boat I was building stand?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What colour and breed is the dog we have?",
+    "type": "current",
+    "answer_ids": [
+     "s4",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "In January, what was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2026-01-16"
+   },
+   {
+    "id": "q11",
+    "text": "In December, how much coffee did I drink?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2025-12-16"
+   },
+   {
+    "id": "q12",
+    "text": "Around Christmastime, what did I take for blood pressure?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q13",
+    "text": "In June, who held the principal position?",
+    "type": "past",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": "2026-06-15"
+   },
+   {
+    "id": "q14",
+    "text": "In March, what was my knee issue?",
+    "type": "past",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": "2026-03-16"
+   },
+   {
+    "id": "q15",
+    "text": "What jobs do Ingrid and Mats have?",
+    "type": "multi",
+    "answer_ids": [
+     "s5",
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Is anyone at home studying a language? Who, and which one?",
+    "type": "multi",
+    "answer_ids": [
+     "s11",
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What's the phone I use?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "Which football side do I back?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "dolores-albuquerque-retired",
+  "today": "2026-08-20",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-09-02",
+    "text": "Ever since 1989 this adobe house on Candelaria has been where I live; I'm not going anywhere.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-09-14",
+    "text": "My flip phone covers all my needs. No smartphone sales pitches, please.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-27",
+    "text": "All day long Pepito the parakeet chirps away, which is why the radio stays on for him.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-10-11",
+    "text": "Metformin, twice daily, is what I take for my sugar, and the pharmacist fixed me up with a little weekly pill box.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-25",
+    "text": "I've been under Dr. Patel's care at Lovelace for eleven years; he's my doctor.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-11-08",
+    "text": "Wednesday nights are rehearsals for the choir at St. Charles, where I sing alto.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-22",
+    "text": "My daughter Lucia, who lives in Phoenix, is a dental hygienist, and she lectures me about flossing.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-12-06",
+    "text": "Mateo and Camila, Marcus's two kids, are making the drive down from Denver to stay for Christmas.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-12-20",
+    "text": "I'm still behind the wheel of my 2009 Buick Lucerne, which has only 61,000 miles on it.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-05",
+    "text": "I have cafe con leche each morning, two sugars, and don't you judge.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-01-17",
+    "text": "February 3rd is the date booked for cataract surgery on my left eye.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-01-31",
+    "text": "There's a bridge club at the community center that meets Thursday afternoons, and I've joined it.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-02-10",
+    "text": "The cataract operation was a wonderful success; the blue of the Sandias is visible to my left eye again.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-02-24",
+    "text": "Chula, a blue budgie, belonged to a neighbor who couldn't keep her, so she's mine now.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-03-10",
+    "text": "Dr. Patel retired last month, which is why I see Dr. Okafor at the UNM clinic now.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-03-24",
+    "text": "I'm learning how to FaceTime the grandkids after getting talked into an iPhone SE by Lucia.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-07",
+    "text": "I've planted tomatoes and green chile, so the garden is back in business.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-04-21",
+    "text": "Every Sunday I get photos from my daughter-in-law Elena, who works as a pharmacist at Kaiser.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-05",
+    "text": "My A1C was too high, so Dr. Okafor put Jardiance on top of the metformin: one pill each morning.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-19",
+    "text": "The Candelaria house is sold, and I've moved into a one-bedroom at Sandia Vista, on the east side.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-02",
+    "text": "I sold the Buick to the neighbor's grandson; Sandia Vista runs a shuttle, so I don't miss driving.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-16",
+    "text": "Rosa and I ate lunch at Garduno's yesterday; the sopapillas were huge.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-30",
+    "text": "The tomato days are over, and all I've got now is a pot of basil on the balcony.",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-14",
+    "text": "I can hear the choir again, thanks to the Phonak hearing aids I got from the audiologist.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-21",
+    "text": "I cried more than I expected to when Pepito, aged eleven, passed away in his sleep this week.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-07-28",
+    "text": "My pressure's been creeping up, so it's decaf cafe con leche now.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-08-10",
+    "text": "I see Brenda Wells, a nurse practitioner at the Sandia Vista clinic, because Dr. Okafor left the UNM clinic.",
+    "replaces": [
+     "s15"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "At present, where is my home?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Am I still a car owner?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Who's my current doctor?",
+    "type": "current",
+    "answer_ids": [
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What type of phone am I using?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "In the mornings, how do I drink my coffee at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Are tomatoes still something I'm growing?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What animals do I keep as pets?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How did things turn out with my eye operation?",
+    "type": "current",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Around Christmastime, what phone did I use?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q10",
+    "text": "In November, who was my doctor?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q11",
+    "text": "In January, what animals did I keep?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2026-01-16"
+   },
+   {
+    "id": "q12",
+    "text": "Which place was my home in April?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-04-15"
+   },
+   {
+    "id": "q13",
+    "text": "In March, what did I drive?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2026-03-16"
+   },
+   {
+    "id": "q14",
+    "text": "Which medicines am I taking for my diabetes?",
+    "type": "multi",
+    "answer_ids": [
+     "s4",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "How do my daughter and daughter-in-law each earn a living?",
+    "type": "multi",
+    "answer_ids": [
+     "s7",
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Which service do I stream on?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What was my vacation destination this summer?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "emeka-lagos-engineer",
+  "today": "2026-07-18",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-08-09",
+    "text": "My job is structural engineer at Brightwater Builders, and it's mostly high-rise work around Lekki.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-08-23",
+    "text": "In Yaba we rent a three-bedroom flat; the landlord keeps on promising to fix the water pump.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-06",
+    "text": "A 2011 Toyota Camry, Tokunbo, is my ride; the AC is the only thing complaining.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-20",
+    "text": "Third Mainland Bridge is my sworn enemy; the trip to site takes around ninety minutes each way.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-04",
+    "text": "Ngozi, who is my wife, is a pharmacist working at a hospital in Ikeja.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-18",
+    "text": "We've relocated to a flat in Surulere because our landlord sold the building, and the boxes are still all over the place.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-01",
+    "text": "My knees hate me for it, but the banter makes five-a-side football every Saturday morning worth it.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-11-15",
+    "text": "Our compound's generator runs on petrol, and the fuel bill is killing me.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-11-29",
+    "text": "Ngozi and I will be welcoming our first baby in March!",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-12-13",
+    "text": "Honestly the camera on my phone, a Tecno Camon 30, is decent.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-12-27",
+    "text": "Christmas was with my parents in Enugu, and my mum's jollof is no match for Lagos jollof, though don't tell her.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-01-10",
+    "text": "I'm giving intermittent fasting a go, with sixteen hours off and no eating after 7pm.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-01-24",
+    "text": "I've booked the PMP exam for 14 May, so every night after dinner I'm studying.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-02-07",
+    "text": "I sold the generator to my cousin, and solar panels and an inverter were put in last week.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-03-07",
+    "text": "On the 4th Chidi arrived, weighing 3.4 kg, with Ngozi's frown already.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-03-21",
+    "text": "The Tecno now lives in a drawer; Chidi's first-month photos are all on my new-to-me iPhone 14.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-18",
+    "text": "Monday is my start date at Arcadia Infrastructure, as a senior structural engineer, after resigning from Brightwater.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-02",
+    "text": "In case Arcadia ever sends me to Abidjan, I'm studying French on Busuu for twenty minutes before bed.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-16",
+    "text": "I got through the PMP exam!! It was four months of misery, and it paid off.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-30",
+    "text": "Since the new office is on Victoria Island, I now set off at 5:30am and arrive in roughly an hour.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-13",
+    "text": "I gave up on the fasting experiment; sleeping is worth more than an eating window when there's a newborn at home.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-20",
+    "text": "The client expects the Ikoyi tower package at the end of September.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-27",
+    "text": "My boss at Arcadia, Folake Bankole, keeps meetings short, and I love that.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-04",
+    "text": "In Manchester, my younger brother Obinna is a junior doctor.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-08",
+    "text": "That one can wait, since mid-December is the deadline for the Ajah estate package.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-07-11",
+    "text": "At last the Camry went to the scrapyard, and a dealer in Lekki sold me a 2016 Honda CR-V.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-07-15",
+    "text": "At the hospital, Ngozi reports to Dr. Adeyemi, a very serious man.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-07-17",
+    "text": "Three months in, Arcadia has just promoted me to principal structural engineer and I'm still processing it.",
+    "replaces": [
+     "s17"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where in Lagos are we living at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Currently, what is my position and which company employs me?",
+    "type": "current",
+    "answer_ids": [
+     "s28"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "How do I commute to the office at present?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Which phone do I own?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What's my current ride?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How do we power our home?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "By when is the Ajah estate project due?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What's the name of my son?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "In January, who was my employer?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-01-16"
+   },
+   {
+    "id": "q10",
+    "text": "Around Christmastime, which phone did I use?",
+    "type": "past",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q11",
+    "text": "In September, where were we living?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-09-15"
+   },
+   {
+    "id": "q12",
+    "text": "In December, what powered our home?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2025-12-16"
+   },
+   {
+    "id": "q13",
+    "text": "In February, how long was my commute?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q14",
+    "text": "What project deadlines are ahead of me?",
+    "type": "multi",
+    "answer_ids": [
+     "s22",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "How do my wife and brother earn their living?",
+    "type": "multi",
+    "answer_ids": [
+     "s5",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Have we got pets?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What blood type do I have?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "hannah-melbourne-student",
+  "today": "2026-09-25",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-09-10",
+    "text": "My architecture degree at RMIT is in its final year, and studio is consuming my whole life.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-09-24",
+    "text": "One of my three housemates steals my yoghurt; we're in a share terrace in Brunswick East.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-08",
+    "text": "My weekend job is at a bike shop on Sydney Road; I mostly fix punctures and drink bad coffee.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-10-22",
+    "text": "To get to uni I catch the tram, the 96 whenever it actually shows up.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-05",
+    "text": "No upgrade yet, since my Pixel 7 still works even though its screen is a spiderweb.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-11-19",
+    "text": "Four years of stomach aches are explained: it turns out I'm lactose intolerant, so oat flat whites from now on.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-03",
+    "text": "The fan on my 2019 MacBook Pro sounds like a jet engine, and I'm still using it.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-12-17",
+    "text": "Since my October birthday I've been vegetarian, and mum is coping.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-07",
+    "text": "Okay Spotify, fine, I did spend nine hundred minutes listening to Phoebe Bridgers last year.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-21",
+    "text": "Bike-shop savings went on a splurge, a MacBook Air M3, and the jet engine has been retired.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-04",
+    "text": "My forearms are not impressed since I started bouldering at Northside on Tuesday nights.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-02-18",
+    "text": "Every morning before my coffee I spend ten minutes learning Japanese on WaniKani.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-04",
+    "text": "My brother Jonas is an electrician in the Pilbara on a FIFO roster, two weeks on then one off.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-18",
+    "text": "Finally some quiet: I've signed a lease on my own one-bedroom in Northcote.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-01",
+    "text": "The bike is my transport now: thirty minutes along the Merri Creek trail to the city.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-15",
+    "text": "Home from ten days in Kyoto, and my Japanese got through a ramen vending machine.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-29",
+    "text": "My bike is an olive-green Surly Cross-Check, should anybody ask.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-13",
+    "text": "Three days a week I'm interning at a small studio called Fenwick+Lowe in Collingwood, having quit the bike shop.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-27",
+    "text": "The topic of my thesis is adaptive reuse of old Brunswick warehouses.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-10",
+    "text": "My nan is horrified that I'm going vegan for June, and quite possibly forever.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-24",
+    "text": "Sign language has always fascinated me, so I signed up for Auslan classes on Thursday nights.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-08",
+    "text": "Cheese won: vegan month is over, I caved, and I'm back to vegetarian.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-07-22",
+    "text": "Three days in with the new iPhone 15 and I already miss the camera on the Pixel.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-05",
+    "text": "Because I'm on the iPhone now, Spotify is deleted and my playlists have moved to Apple Music.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-19",
+    "text": "I had to ditch the warehouses because my supervisor said so, and now the thesis is a timber community library.",
+    "replaces": [
+     "s19"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-09-02",
+    "text": "The thesis is due on the 30th of October, and I've got around eleven pages.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-16",
+    "text": "The competition entry for Fenwick+Lowe is due on the 14th of October, which means late nights all round.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where am I living now?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What's my ride around town?",
+    "type": "current",
+    "answer_ids": [
+     "s15",
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone do I have currently?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Which laptop am I using?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What diet do I follow currently?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where's my workplace?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is the subject of my thesis?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which music streaming app do I use?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "At Christmastime, what work was I doing?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q10",
+    "text": "In February, where was my home?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q11",
+    "text": "Towards the end of June, what was I eating?",
+    "type": "past",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": "2026-06-23"
+   },
+   {
+    "id": "q12",
+    "text": "Around the new year, which laptop was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-12-31"
+   },
+   {
+    "id": "q13",
+    "text": "In May, what phone was I using?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2026-05-16"
+   },
+   {
+    "id": "q14",
+    "text": "What upcoming deadlines do I have?",
+    "type": "multi",
+    "answer_ids": [
+     "s26",
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What languages am I working on learning?",
+    "type": "multi",
+    "answer_ids": [
+     "s12",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Do I play an instrument, and which one?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "Which is my favourite Melbourne restaurant?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "nadia-lyon-pastry",
+  "today": "2026-09-20",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-06",
+    "text": "I began this week as a pastry chef at Maison Verdier, here in Lyon. The croissants by themselves make the 4am alarm worth it.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-19",
+    "text": "My calves are filing a complaint: my tiny studio in Croix-Rousse, which I rent, is on the fifth floor with no elevator.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-11-02",
+    "text": "Whenever I'm home on a Sunday my six-year-old tabby Biscotte is deeply offended.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-15",
+    "text": "Cycling along the Rhône gets me to work in about 25 minutes, wind permitting.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-28",
+    "text": "I'm attempting Spanish with Duolingo, ten minutes in bed every night before I pass out.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-12",
+    "text": "I have a hazelnut allergy, a cruel joke for a pastry chef, and I always carry my epi pen.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-21",
+    "text": "A double espresso from my stovetop moka pot, no sugar, no conversation, is how every morning starts.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-09",
+    "text": "At a little radio station near Part-Dieu, my boyfriend Théo is a sound engineer.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-24",
+    "text": "The battery on my phone, a Samsung Galaxy S21, is dead by lunchtime.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-07",
+    "text": "I do 5k running loops in Parc de la Tête d'Or on Tuesday and Thursday evenings, every week.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-22",
+    "text": "For baking days I always reach for Khruangbin's Mordechai.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-08",
+    "text": "On my doctor's orders to cut the caffeine, mornings are genmaicha tea now.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-29",
+    "text": "From the shelter I adopted a second cat, Madeleine, a shy little black one.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-04-14",
+    "text": "My notice at Maison Verdier is in. Next Monday I begin as head of pastry at Café Lumière!",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-30",
+    "text": "The camera on the iPhone 16 I unboxed today is unreal for food shots.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-05-17",
+    "text": "We finally moved, Théo and me, to a two-bedroom in Villeurbanne with an actual elevator.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-26",
+    "text": "Biscotte is on a diet and furious about it, because the vet says she weighs a chunky seven kilos.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-06-02",
+    "text": "Tram T1 is how I travel now, as Café Lumière is across town, and reading on my commute is finally possible.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-06-20",
+    "text": "Since May my knee has been angry, and running is banned by the doctor. Twice a week I swim at the municipal pool instead.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-07-04",
+    "text": "On top of that, I signed up for Italian classes on Tuesday evenings; why suffer in just one language?",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-07-19",
+    "text": "Friday's dinner with my sister Inès was at that Lebanese place, and she cried over the baklava.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-08-02",
+    "text": "These days my baking soundtrack is Lux by Rosalía.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-08-16",
+    "text": "My mouth went itchy at brunch, so apparently I'm also mildly allergic to kiwi.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-30",
+    "text": "Surprise: I've gone back to coffee, though only decaf, from the old moka pot.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-09-10",
+    "text": "Now Théo is a sound designer at a video game studio in Lyon, having quit the radio.",
+    "replaces": [
+     "s8"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where do I work these days?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What do I drink first thing each morning these days?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "How does my boyfriend earn a living?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "In the mornings, how do I commute to the bakery?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What phone am I using?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What's my current exercise routine?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Where am I living at present?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "In February, what was my wake-up drink?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q9",
+    "text": "Last winter, where did I work?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-01-15"
+   },
+   {
+    "id": "q10",
+    "text": "In March, what did I use to get to work?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q11",
+    "text": "Last November, where was my home?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-11-16"
+   },
+   {
+    "id": "q12",
+    "text": "In May, which drink did I have in the mornings?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2026-05-15"
+   },
+   {
+    "id": "q13",
+    "text": "Which animals do I have as pets?",
+    "type": "multi",
+    "answer_ids": [
+     "s3",
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Because of my allergies, what foods should I take care with?",
+    "type": "multi",
+    "answer_ids": [
+     "s6",
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What kind of car do I drive?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What is my sister's line of work?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "oskar-gothenburg-teacher",
+  "today": "2026-07-18",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-08-11",
+    "text": "Monday is when the school year kicks off. After 27 years of teaching physics and maths at Älvsborgsskolan, I somehow still enjoy it.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-08-30",
+    "text": "A red villa with white corners (naturally) in Mölndal, just outside Gothenburg, is where we live.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-14",
+    "text": "I have no plans at all to part with my 2014 Volvo V70 diesel, which I drive and which has 240,000 km on the clock.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-28",
+    "text": "We have a dog named Sture, a nine-year-old golden retriever, and every walk is a polar expedition to him.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-05",
+    "text": "Rain or shine, Sture's three kilometres happen every morning at 6, and I got myself a headlamp for the dark months.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-19",
+    "text": "At my checkup my blood pressure was slightly high, which means 5 mg of amlodipine each morning for me.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-02",
+    "text": "The laptop I use is a ThinkPad T480, which I refuse to retire.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-11-16",
+    "text": "On Wednesday evenings there's my woodworking course, and in it I'm building a Shaker-style cabinet.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-11-30",
+    "text": "Up in Uppsala my daughter Linnea works as a vet, mostly horses and the occasional angry goat.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-12-14",
+    "text": "Constantly bragging about the fuel economy, Karin drives a white Toyota Yaris hybrid.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-01-10",
+    "text": "A second-hand Nissan Leaf replaced the old Volvo in a trade-in. The dog doesn't hear me coming, it's so quiet.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2026-01-24",
+    "text": "The doctor doubled my amlodipine to 10 mg because my blood pressure is still stubborn.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-02-20",
+    "text": "My woodworking course finished last night, and the finished cabinet now stands in our hallway.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-07",
+    "text": "Karin and I took in a one-eyed cat named Pelle; the cat adopted us, more or less.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-03-21",
+    "text": "These days mornings with Sture are a gentle one kilometre, since his hips are getting bad.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-04",
+    "text": "My new MacBook Air is what I'm typing this on, and the battery just won't quit.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-18",
+    "text": "No more teenagers hiding phones under desks: I left the classroom for good, and now I work as a lab instructor at Chalmers' physics department.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-04-25",
+    "text": "On Sunday mornings I race a Laser dinghy with the Mölndal club, now that sailing season is open.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-02",
+    "text": "Every Friday Karin's boss at the pharmacy, Mattias, bakes cardamom buns for the entire team.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-16",
+    "text": "The doctor switched me from amlodipine to losartan after my ankles swelled up like balloons.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-05-30",
+    "text": "The winter range on the Leaf was a joke, so I traded it in for a used Skoda Enyaq.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-06",
+    "text": "The dog crate fits in the back perfectly, and the Enyaq is the dark green 80 version.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-13",
+    "text": "Goosebumps all night at the Esbjörn Svensson tribute concert I went to at the Konserthuset on Friday.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-06-27",
+    "text": "Central Gothenburg is a lot louder than Mölndal ever was, I find while unpacking boxes in our new place in Linné.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-05",
+    "text": "On top of that, I've joined a men's choir, where I'm a second tenor and we rehearse Tuesday nights.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "How do I earn my living nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What car am I driving currently?",
+    "type": "current",
+    "answer_ids": [
+     "s21",
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "For my blood pressure, what am I on?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What's the computer I use?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "In the mornings, how far do I walk the dog?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where is the home Karin and I have now?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What line of work is my daughter in?",
+    "type": "current",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which animals are we sharing our house with?",
+    "type": "multi",
+    "answer_ids": [
+     "s4",
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "For fun nowadays, do I belong to any clubs or groups, and what do I do?",
+    "type": "multi",
+    "answer_ids": [
+     "s18",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "In October, what car was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-10-15"
+   },
+   {
+    "id": "q11",
+    "text": "Around Christmastime, what was my workplace?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q12",
+    "text": "In January, what did I type on?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-01-15"
+   },
+   {
+    "id": "q13",
+    "text": "In March, which pill was I taking for my blood pressure?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q14",
+    "text": "In November, how far was the dog's morning walk?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q15",
+    "text": "What smartphone am I using?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Are there allergies that I have?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "priya-bangalore-designer",
+  "today": "2026-05-30",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-09",
+    "text": "My days are Figma and arguing about button radii, since I design interfaces for Finlo, a fintech startup here in Bangalore.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-22",
+    "text": "I have a great manager in Divya, who actually reads my design docs.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-06",
+    "text": "The rent is eye-watering for the three-bedroom flat in Indiranagar I share with two roommates.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-20",
+    "text": "My daily commute to the office is by scooter, 35 minutes when Old Airport Road behaves.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-08-03",
+    "text": "After three years, my OnePlus 9 phone is still going strong.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-17",
+    "text": "My whole life I've been vegetarian, because mom would disown me otherwise.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-08-31",
+    "text": "7am sharp on Saturday mornings it's badminton with the Koramangala crew.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-09-14",
+    "text": "I'm tired of smiling and nodding because my landlord only speaks Kannada, so I'm learning Kannada.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-09-28",
+    "text": "The deadline is in December for the HCI master's at TU Delft, which I'm planning to apply for.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-12",
+    "text": "At Infosys in Pune my brother Arjun does backend stuff that he refuses to explain.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-10-26",
+    "text": "The scooter I ride is a matte grey Honda Activa, bought second-hand from a colleague.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-11-09",
+    "text": "With Project Lotus shipping on 15 December, the whole team is sleeping under their desks.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-11-23",
+    "text": "Not until the end of January is Project Atlas due, the other thing I'm working on.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-07",
+    "text": "Work had a reorg. Divya moved over to the payments team, and my manager now is Karthik.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-12-14",
+    "text": "I keep all my work notes in Notion, in a color-coded system nobody else understands.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-12-28",
+    "text": "My roommate Sneha works as a corporate lawyer; her hourly billing is more than my daily earnings.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-04",
+    "text": "My food photos look way better than they deserve thanks to the camera on my iPhone 15.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-18",
+    "text": "Eggs are in now: my checkup showed low iron, and I'm no longer strictly vegetarian.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-01",
+    "text": "No Delft master's for me, as I decided to skip it. The money goes towards a down payment on a flat instead.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-15",
+    "text": "Tomorrow I begin as a senior product designer at Orchard Health, after last Friday which was my last day at Finlo.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-01",
+    "text": "My boss at Orchard is Meera: ex-Google, scary good at asking questions.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-15",
+    "text": "The scooter is collecting dust in the parking lot; with Orchard's office right by the Purple Line, I now take the metro.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-29",
+    "text": "I've moved into a 1BHK of my own in HSR Layout; it's my first time living alone and it's glorious.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-12",
+    "text": "On top of that, French on Duolingo, which I picked up purely for fun.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-04-26",
+    "text": "Saturday mornings are now bouldering at a climbing gym in HSR, instead of badminton.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-10",
+    "text": "My voice is completely gone after seeing Prateek Kuhad live at Palace Grounds on Friday.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-05-24",
+    "text": "Notion stays for work stuff, and I've begun using Obsidian for my personal notes.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Right now, who do I report to?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What do I take to get to the office nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone is mine?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What diet am I following currently?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "On weekends, what sport am I doing?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where is my home these days?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What's my brother's workplace?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Who is my employer?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Which languages do I study?",
+    "type": "multi",
+    "answer_ids": [
+     "s8",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "What note-taking apps do I use?",
+    "type": "multi",
+    "answer_ids": [
+     "s15",
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q11",
+    "text": "In October, who did I report to?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-10-15"
+   },
+   {
+    "id": "q12",
+    "text": "In September, which phone was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-09-15"
+   },
+   {
+    "id": "q13",
+    "text": "Around November, what grad school plan did I have?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q14",
+    "text": "Last August, where was my home?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-08-15"
+   },
+   {
+    "id": "q15",
+    "text": "Around New Year, which company did I work for?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2025-12-31"
+   },
+   {
+    "id": "q16",
+    "text": "What name does my mother go by?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "Have I got any pets?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "rafael-saopaulo-photographer",
+  "today": "2026-04-12",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-05",
+    "text": "My job is freelance photography, mostly weddings and corporate headshots around São Paulo.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-19",
+    "text": "In Vila Madalena we rent a third-floor apartment, where the neighbours' samba nights make for free entertainment.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-03",
+    "text": "A Canon R6 is my camera body, and about 40k frames have gone through it so far.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-17",
+    "text": "My car is a Fiat Argo, perfect for squeezing into parking spots in São Paulo.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-07-31",
+    "text": "He's obsessed with dinosaurs, Lucas, who is eight and attends Colégio Santa Maria.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-14",
+    "text": "We have a dog called Pipoca, a caramel vira-lata aged three, who steals socks.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-08-28",
+    "text": "Cheap and cheerful describes my phone, a Moto G54.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-09-11",
+    "text": "After two years of jiu-jitsu on Tuesday and Thursday nights, I'm still a blue belt.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-09-25",
+    "text": "Low-carb is what I've been trying since last month, with no rice and no bread, and that's brutal in Brazil.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-09",
+    "text": "In Pinheiros my wife Camila runs her own clinic as a dentist.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-10-23",
+    "text": "Bia just turned five, attends a little school called Pequeno Príncipe, and comes home covered in paint every day.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-11-06",
+    "text": "My brother Thiago thinks that driving a black Jeep Renegade makes him an adventurer.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-11-20",
+    "text": "Witchcraft is the only word for the autofocus tracking on the Sony A7 IV I picked up, and the Canon has been sold.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-04",
+    "text": "She never lets me forget that the camera on Camila's phone, a Pixel 8, beats mine.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-12-18",
+    "text": "I'm back on rice and beans like a normal Brazilian, after low-carb lasted four months.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-01-08",
+    "text": "No more chasing invoices as a freelancer, since I joined Estúdio Lume as lead photographer.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-22",
+    "text": "The stabilization is absurd on my new iPhone 15 Pro, which I used to film Lucas's school recital.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-02-05",
+    "text": "A Hyundai HB20 with automatic transmission replaced the Argo in a trade, and my left leg thanks me.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-19",
+    "text": "At last we have a garden, having moved to a house in Granja Viana, forty minutes outside the city.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-05",
+    "text": "Lucas attends Escola Vila Verde now, a new school for the new house, and in week one he made a best friend named Davi.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-12",
+    "text": "There's a little yard at the new place, and Lucas is building a football goal there out of PVC pipes.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-19",
+    "text": "I quit jiu-jitsu because my shoulder said enough, and now it's futsal on Wednesday nights with the neighbourhood guys.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-26",
+    "text": "Bia gave the name Mel to the tiny grey cat we adopted from a rescue fair.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-02",
+    "text": "The film simulations are addictive on the Fujifilm X-T5 I'm shooting everything on, and the Sony has gone.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-04-06",
+    "text": "On top of that I got a DJI Mini 4 drone for aerial shots; wedding clients go nuts for them.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-04-09",
+    "text": "Eleven hours on my feet at a wedding I shot in Campos do Jordão last Saturday.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which camera body am I using?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "How do I earn my living at present?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What's my car?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What school is Lucas at nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "At the moment, what is my way of staying active?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Is cutting carbs something I'm still doing?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Where is our home now?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What line of work is my wife in?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What pets are at home with us?",
+    "type": "multi",
+    "answer_ids": [
+     "s6",
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "What schools are my two children at?",
+    "type": "multi",
+    "answer_ids": [
+     "s11",
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q11",
+    "text": "Last August, what camera was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-08-15"
+   },
+   {
+    "id": "q12",
+    "text": "In December, what did I drive?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-12-15"
+   },
+   {
+    "id": "q13",
+    "text": "Around Christmastime, what phone was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q14",
+    "text": "Last September, where was our home?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-09-15"
+   },
+   {
+    "id": "q15",
+    "text": "In November, what sport did I do at night?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q16",
+    "text": "Who do I support in football?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "Is there any medication I take?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "wendy-ohio-retired-nurse",
+  "today": "2026-08-05",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-04",
+    "text": "We've been in the same two-story house in Westerville, Ohio, for 31 years, Walt and I.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-12",
+    "text": "A 2015 Buick Encore is what I drive; it's been a faithful little car.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-26",
+    "text": "I'm still on a flip phone, and I don't see why anybody would need more than that.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-09",
+    "text": "Wish me luck: December 8th is the date set for my knee replacement.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-23",
+    "text": "On my side of the bed sleeps Marmalade, my seventeen-year-old cat.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-06",
+    "text": "Right before bed each night, I take an atorvastatin for my cholesterol.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-15",
+    "text": "Fine is how the surgery went! I'm using a walker to get around the house for the time being.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-12-29",
+    "text": "Retirement is overrated, says Walt, who still works Saturdays at the hardware store.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-11",
+    "text": "My Phonak hearing aids are what I wear, and the left one keeps whistling at me.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-25",
+    "text": "At the library, on the first Thursday of each month, is when book club meets.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-08",
+    "text": "After thirty-eight years of nursing I still can't stay away, so Monday mornings I'm in the hospital gift shop.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-02-22",
+    "text": "I'm ahead of schedule according to the physical therapist; the walker is gone and it's just a cane now.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-08",
+    "text": "I'm visiting my daughter Jenny and her family, who live in Seattle, in June.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-22",
+    "text": "Hank, a three-year-old rescue beagle we adopted, howls at the mailman.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-05",
+    "text": "I'm texting the grandkids emojis nonstop now that Jenny has set me up with an iPhone SE.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-19",
+    "text": "On top of that, I've joined a knitting circle at church, which meets Fridays at ten.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-03",
+    "text": "The Buick has been swapped for a Subaru Forester; higher seats are kinder to the new knee.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-10",
+    "text": "My Forester is forest green, something Walt finds hilarious.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-24",
+    "text": "Walt keeps driving the 2008 F-150 he refuses to sell.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-31",
+    "text": "My doctor switched me from atorvastatin to rosuvastatin over muscle aches.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-14",
+    "text": "Today I walked the entire neighborhood loop without my cane, which is in the closet!",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-21",
+    "text": "No more fumbling with tiny batteries, since I got new rechargeable Oticon hearing aids.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-28",
+    "text": "A one-floor ranch in Hilliard, with no stairs at all, is where we moved after selling the old house.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-05",
+    "text": "Marmalade slipped away last night, curled up on my side of the bed, and I'm a mess.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-12",
+    "text": "The library room got double-booked, so book club now meets at Jan's house on the second Tuesday evening of the month.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-07-19",
+    "text": "Monday mornings at the library I now read to kids, after quitting the hospital gift shop.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-07-26",
+    "text": "My grandson Owen named every single penguin when I took him to the zoo on Saturday.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which vehicle am I driving nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s17",
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "For cholesterol, which pill am I taking?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What's my phone these days?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "When does my reading group gather?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Where is Walt's and my home?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How do I volunteer my time?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "After my knee surgery, how do I get around nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which pets do I currently have at home?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Which clubs or groups am I part of?",
+    "type": "multi",
+    "answer_ids": [
+     "s25",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Which vehicles do we keep in the driveway?",
+    "type": "multi",
+    "answer_ids": [
+     "s17",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q11",
+    "text": "In March, what medicine did I take for cholesterol?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q12",
+    "text": "Around Christmastime, what did I drive?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q13",
+    "text": "In January, what phone was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2026-01-15"
+   },
+   {
+    "id": "q14",
+    "text": "Over New Year's, what was I relying on to get around?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-12-31"
+   },
+   {
+    "id": "q15",
+    "text": "In February, which animals were part of my household?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q16",
+    "text": "What instrument is it that I play?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "At which grocery store do I do my shopping?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ }
+]

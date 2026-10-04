@@ -1,0 +1,85 @@
+{
+ "runs": {
+  "sdl:memory-100:import:kw": {
+   "summary": {
+    "all": {
+     "n": 11,
+     "top1": 100.0,
+     "top3": 100.0,
+     "top10": 100.0,
+     "stale_on_top": 0.0,
+     "p50_ms": 1.05,
+     "p95_ms": 1.53
+    },
+    "L1": {
+     "n": 5,
+     "top1": 100.0,
+     "top3": 100.0,
+     "top10": 100.0,
+     "stale_on_top": 0.0,
+     "p50_ms": 1.44,
+     "p95_ms": 1.53
+    },
+    "L4": {
+     "n": 6,
+     "top1": 100.0,
+     "top3": 100.0,
+     "top10": 100.0,
+     "stale_on_top": 0.0,
+     "p50_ms": 0.96,
+     "p95_ms": 1.05
+    }
+   },
+   "supersession": {
+    "truly_stale": 10,
+    "caught": 10,
+    "wrong_successor": 0,
+    "missed": 0,
+    "wrongly_retired": 0,
+    "false_rate_pct": 0.0,
+    "wrong_examples": []
+   },
+   "write": {
+    "p50_ms": 0.72,
+    "p95_ms": 0.72
+   },
+   "memories": 100
+  },
+  "held-out": {
+   "summary": {
+    "all": {
+     "n": 12,
+     "top1": 100.0,
+     "top3": 100.0,
+     "top10": 100.0,
+     "stale_on_top": 0.0,
+     "p50_ms": 0.2,
+     "p95_ms": 0.26
+    },
+    "L1": {
+     "n": 12,
+     "top1": 100.0,
+     "top3": 100.0,
+     "top10": 100.0,
+     "stale_on_top": 0.0,
+     "p50_ms": 0.2,
+     "p95_ms": 0.26
+    }
+   },
+   "supersession": {
+    "truly_stale": 6,
+    "caught": 6,
+    "wrong_successor": 0,
+    "missed": 0,
+    "wrongly_retired": 0,
+    "false_rate_pct": 0.0,
+    "wrong_examples": []
+   },
+   "write": {
+    "p50_ms": 0.45,
+    "p95_ms": 0.82
+   },
+   "memories": 20
+  }
+ }
+}

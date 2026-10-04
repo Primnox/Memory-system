@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6427.62it/s]
+split=test load=chat query=oracle llm-verify  (528.5s)  code=../mem-verify/backend/primnox2
+
+12 scenarios, 195 questions
+                                         top-1                               top-3
+current           60.2% [ 50.1– 69.6]  (56/93)        71.0% [ 61.1– 79.2]  (66/93)
+past              66.7% [ 53.4– 77.8]  (36/54)        72.2% [ 59.1– 82.4]  (39/54)
+multi             62.5% [ 42.7– 78.8]  (15/24)        79.2% [ 59.5– 90.8]  (19/24)
+multi: every value in top k+2   50.0% [ 31.4– 68.6]  (12/24)
+answerable      62.6% [ 55.1– 69.5]  (107/171)      72.5% [ 65.4– 78.7]  (124/171)
+stale memory on top for a 'now' question   11.8% [  6.7– 20.0]  (11/93)
+absent: returned nothing (retrieval can rarely do this)   58.3% [ 38.8– 75.5]  (14/24)
+
+load: 309 statements, 1 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall      65.2% [ 56.0– 73.4]  (73/112)
+  precision   78.5% [ 69.1– 85.6]  (73/93)
+  retired something never replaced: 12 of 93 retirements
+
+verifier: 120 saves with candidates of 309, 298 questions (0.96 per save), 298 answered, 0 failed, 0 skipped, 12 retired
+  latency per question 1763 ms; queue drained after load in 522 s over 12 scenarios

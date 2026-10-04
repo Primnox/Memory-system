@@ -1,0 +1,20 @@
+split=test load=chat query=model model=omniroute:auto/best-free  (1644.8s)  code=../memory-v3/backend/primnox2
+
+10 scenarios, 168 questions
+                                         top-1                               top-3
+current           20.5% [ 13.0– 30.8]  (16/78)        28.2% [ 19.4– 39.0]  (22/78)
+past              52.0% [ 38.5– 65.2]  (26/50)        62.0% [ 48.2– 74.1]  (31/50)
+multi              45.0% [ 25.8– 65.8]  (9/20)         45.0% [ 25.8– 65.8]  (9/20)
+multi: every value in top k+2   30.0% [ 14.5– 51.9]  (6/20)
+answerable       34.5% [ 27.3– 42.4]  (51/148)       41.9% [ 34.2– 49.9]  (62/148)
+stale memory on top for a 'now' question   15.4% [  9.0– 25.0]  (12/78)
+absent: returned nothing (retrieval can rarely do this)   80.0% [ 58.4– 91.9]  (16/20)
+past: model supplied a date at all  100.0% [ 92.9–100.0]  (50/50)
+current: model added a date it shouldn't    0.0% [  0.0–  4.7]  (0/78)
+
+load: 267 statements, 0 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall      10.8% [  5.9– 18.7]  (10/93)
+  precision   37.0% [ 21.5– 55.8]  (10/27)
+  retired something never replaced: 8 of 27 retirements

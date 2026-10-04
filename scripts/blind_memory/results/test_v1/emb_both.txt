@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8161.05it/s]
+split=test load=chat query=oracle embeddings=both  (3.5s)  code=../mem-embed/backend/primnox2
+
+10 scenarios, 168 questions
+                                         top-1                               top-3
+current           37.2% [ 27.3– 48.3]  (29/78)        44.9% [ 34.3– 55.9]  (35/78)
+past              72.0% [ 58.3– 82.5]  (36/50)        78.0% [ 64.8– 87.2]  (39/50)
+multi             75.0% [ 53.1– 88.8]  (15/20)        80.0% [ 58.4– 91.9]  (16/20)
+multi: every value in top k+2   35.0% [ 18.1– 56.7]  (7/20)
+answerable       54.1% [ 46.0– 61.9]  (80/148)       60.8% [ 52.8– 68.3]  (90/148)
+stale memory on top for a 'now' question   17.9% [ 11.0– 27.9]  (14/78)
+absent: returned nothing (retrieval can rarely do this)   70.0% [ 48.1– 85.5]  (14/20)
+
+load: 267 statements, 0 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall      44.1% [ 34.4– 54.2]  (41/93)
+  precision   56.2% [ 44.8– 67.0]  (41/73)
+  retired something never replaced: 20 of 73 retirements

@@ -1,0 +1,18 @@
+split=test_para2 load=chat query=question backend=../memory-baseline/backend  (0.4s)  code=../memory-baseline/backend/primnox2
+
+10 scenarios, 168 questions
+                                         top-1                               top-3
+current            11.5% [  6.2– 20.5]  (9/78)        25.6% [ 17.3– 36.3]  (20/78)
+past               16.0% [  8.3– 28.5]  (8/50)        42.0% [ 29.4– 55.8]  (21/50)
+multi              30.0% [ 14.5– 51.9]  (6/20)         45.0% [ 25.8– 65.8]  (9/20)
+multi: every value in top k+2   15.0% [  5.2– 36.0]  (3/20)
+answerable       15.5% [ 10.6– 22.2]  (23/148)       33.8% [ 26.7– 41.7]  (50/148)
+stale memory on top for a 'now' question   50.0% [ 39.2– 60.8]  (39/78)
+absent: returned nothing (retrieval can rarely do this)    0.0% [  0.0– 16.1]  (0/20)
+
+load: 267 statements, 0 refused, 0 dropped as duplicates
+
+supersession (by old→successor pair)
+  recall      16.1% [ 10.0– 24.9]  (15/93)
+  precision   20.8% [ 13.1– 31.6]  (15/72)
+  retired something never replaced: 29 of 72 retirements
