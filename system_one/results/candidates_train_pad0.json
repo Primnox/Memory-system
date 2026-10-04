@@ -1,0 +1,24 @@
+{
+ "split": "train",
+ "pad": 0,
+ "k": 15,
+ "true": 454,
+ "rows": {
+  "similar": {
+   "reach": 447,
+   "candidates": 13.49074074074074
+  },
+  "+names": {
+   "reach": 449,
+   "candidates": 13.503086419753087
+  },
+  "+aliases": {
+   "reach": 449,
+   "candidates": 13.503086419753087
+  },
+  "+aliases+topic": {
+   "reach": 449,
+   "candidates": 13.503086419753087
+  }
+ }
+}

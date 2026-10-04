@@ -79,8 +79,9 @@ replay of the same test set:
 
 With the model's decisions in the memory, the first search result is right
 for **66.7%** of blind questions (rules 59.1%, rules + 9B verifier 62.6%,
-perfect change detection 70.8%; vs rules paired p = 0.007). Handing the 4%
-least certain decisions to the 9B would remove ~80% of its remaining errors.
+perfect change detection 70.8%; vs rules paired p = 0.007). Letting the local 9B
+override its uncertain decisions only when the 9B is at least 95% sure removes
+29% of its remaining errors (a perfect supervisor would remove 80%).
 
 A second training run gave 92/112 with 2 wrong retirements. **On data not
 written by Claude the edge shrinks:** F1 0.51 on crowdworker-written facts
@@ -97,8 +98,8 @@ all of them cuts the memory block by ~45% (small stores) to ~89% (200 facts,
 A graph index (facts linked by people, things and topics) did not choose
 better than plain similarity in a blind test; see [`graph/`](graph/).
 
-**Research paper** (method, all results with confidence intervals, threats to
-validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
+**Research paper** (method, all results with confidence intervals, design
+limitations, threats to validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
 [`docs/MEMORY_EXPERIMENT.md`](docs/MEMORY_EXPERIMENT.md). Every score file:
 [`scripts/blind_memory/results/RESULTS.md`](scripts/blind_memory/results/RESULTS.md).
 

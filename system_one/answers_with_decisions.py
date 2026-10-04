@@ -34,7 +34,24 @@ def ms(day: str, end_of_day: bool = False) -> int:
     return int(d.timestamp() * 1000) + (86_400_000 - 1 if end_of_day else 12 * 3_600_000)
 
 
-def run(sc: dict, decided: set[tuple[str, str]] | None) -> list[dict]:
+def event_day(text: str, said: str) -> str:
+    """When the statement says the thing happened ("moved here in March", "two
+    weeks ago"), the start of that span, resolved in code by the application's
+    own time-phrase module; otherwise the day it was said."""
+    from datetime import date
+    from primnox2.memory import when
+    span = when.resolve(text, date.fromisoformat(said))
+    if span is None:
+        return said
+    start = span[0] if isinstance(span, tuple) else getattr(span, "start", None)
+    if start is None:
+        return said
+    start = start if isinstance(start, date) else date.fromisoformat(str(start)[:10])
+    return start.isoformat() if start.isoformat() < said else said
+
+
+def run(sc: dict, decided: set[tuple[str, str]] | None, event_time: bool = False,
+        stats: dict | None = None) -> list[dict]:
     from primnox2.storage import db
     db.configure(Path(tempfile.mkdtemp(prefix="s1-ans-")) / "primnox.db")
     db.init()
@@ -43,7 +60,10 @@ def run(sc: dict, decided: set[tuple[str, str]] | None) -> list[dict]:
     sid, mid, real_now = {}, {}, mem.now_ms
     try:
         for s in sts:
-            stamp = ms(s["date"])
+            day = event_day(s["text"], s["date"]) if event_time else s["date"]
+            if stats is not None and day != s["date"]:
+                stats["event_dated"] = stats.get("event_dated", 0) + 1
+            stamp = ms(day)
             mem.now_ms = lambda stamp=stamp: stamp
             try:
                 out = mem.remember(s["text"])
@@ -81,6 +101,8 @@ def main() -> None:
     ap.add_argument("--data", default=str(ROOT / "scripts/blind_memory/v2/test.json"))
     ap.add_argument("--decisions", required=True, help="rules | labels | path to blind_pairs --save-pairs json")
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--event-time", action="store_true",
+                    help="stamp a statement at the time it says the thing happened, when it says so")
     args = ap.parse_args()
     sys.path.insert(0, str(Path(args.backend).resolve()))
     os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -93,7 +115,7 @@ def main() -> None:
     model = None
     if args.decisions not in ("rules", "labels"):
         model = json.loads(Path(args.decisions).read_text(encoding="utf-8"))["per_scenario"]
-    qs = []
+    qs, stats = [], {}
     for sc in scenarios:
         if args.decisions == "rules":
             decided = None
@@ -101,15 +123,18 @@ def main() -> None:
             decided = {(o, s["id"]) for s in sc["statements"] for o in s.get("replaces", [])}
         else:
             decided = {tuple(p) for p in model[sc["scenario"]]["retired_pairs"]}
-        qs += run(sc, decided)
+        qs += run(sc, decided, args.event_time, stats)
     by_type = {}
     for q in qs:
         h, n = by_type.get(q["type"], (0, 0))
         by_type[q["type"]] = (h + q["top1"], n + 1)
     hit = sum(q["top1"] for q in qs)
+    if args.event_time:
+        print(f"statements dated by their own time words: {stats.get('event_dated', 0)}")
     print(f"{args.tag}: top-1 {hit}/{len(qs)} = {hit / len(qs):.1%}  " +
           "  ".join(f"{t} {h}/{n}" for t, (h, n) in sorted(by_type.items())))
     out = {"data": Path(args.data).name, "decisions": args.decisions if model is None else Path(args.decisions).name,
+           "event_time": args.event_time, "event_dated": stats.get("event_dated", 0),
            "top1": hit, "answerable": len(qs), "by_type": {t: list(v) for t, v in by_type.items()},
            "hits": {q["id"]: q["top1"] for q in qs}}
     (HERE / "results" / f"answers_v2_{args.tag}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")

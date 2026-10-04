@@ -31,9 +31,10 @@ turns from LongMemEval. Adding restatements and long chatty messages to the
 training data cut restatement errors 4.6-fold (170 → 37 per 1,000) without
 loss on the blind set (94/112), but did not help with changes buried in long
 chat turns; splitting messages into statements about the user before comparing
-them did (6 → 33 of 72 changes caught, F1 0.15 → 0.54). Escalating the 4%
-least certain decisions to a supervisor would remove about 80% of the
-detector's errors. Finally, selecting facts for the prompt instead of
+them did (6 → 33 of 72 changes caught, F1 0.15 → 0.54). Escalating its least
+certain decisions to the local 9B, acting only when the 9B is at least 95%
+sure, removes 29% of the detector's errors (a perfect supervisor would remove
+80%). Finally, selecting facts for the prompt instead of
 sending all of them cuts memory tokens by 45% to 89% (4,075 → 454 tokens at 200
 facts) while keeping 97% and 79% of the facts the answers need; a graph index
 over people, things and topics does not select better than plain similarity.
@@ -443,13 +444,30 @@ band to a supervisor that is assumed correct (a best case):
 
 Expected calibration error is 0.047 (10 bins); the model is slightly
 under-confident at the top (mean P 0.85 in its 0.8–0.9 bin, all correct).
-Escalating 4% of decisions would remove about 80% of the errors, which
-supports the agent / supervisor split. The development data come from the
-same writer family as training, so these figures are optimistic.
+
+The best case above assumes a perfect supervisor. With the application's own
+9B verifier as the supervisor (local Ollama, relation read from its token
+probabilities), the picture changes: on the escalated decisions it is right
+80% of the time (39/49 and 72/90) and leans towards `replaces`.
+
+*Table 13. Escalation with the real 9B supervisor (total errors; 17 without escalation).*
+
+| Band | Escalated | Perfect supervisor | 9B overrides | 9B veto only | 9B overrides only when P ≥ 0.95 |
+|---|---|---|---|---|---|
+| 0.3 < P < 0.7 | 21 | 9 | 15 | 16 | 16 |
+| 0.2 < P < 0.8 | 49 | 3 | 13 | 16 | **12** |
+| 0.1 < P < 0.9 | 90 | 1 | 19 | 16 | **12** |
+
+Letting the 9B override can make things worse (19 errors at the widest band);
+the rule the application already uses for its verifier — act only when the
+9B's own probability is at least 0.95 — gives the best realistic result,
+17 → 12 errors (−29%), far from the −80% of a perfect supervisor. The agent /
+supervisor split holds only with a confident-only supervisor, and a better
+supervisor is worth more than a wider band.
 
 ### 6.12 Speed
 
-*Table 13. Time per comparison.*
+*Table 14. Time per comparison.*
 
 | Setting | Time |
 |---|---|
@@ -479,7 +497,7 @@ with other people's non-safety facts — a harsh test, since the padding
 includes strangers' "I live in…" facts. Developed on dev (64 questions);
 scored once on `v2` (117 questions).
 
-*Table 14. Prompt selection on blind `v2`.*
+*Table 15. Prompt selection on blind `v2`.*
 
 | Store | Method | Answer facts in block (95% CI) | Tokens |
 |---|---|---|---|
@@ -525,7 +543,28 @@ on these questions.
 
 ---
 
-## 9. Threats to validity
+## 9. Design limitations
+
+Flaws in the design itself, independent of how it was measured, with what was
+done about each.
+
+| # | Limitation | Status |
+|---|---|---|
+| 1 | **A single "replaced by" link is too blunt.** It cannot express partial changes ("moved to Pune, still work for the Lisbon office"), temporary states, uncertainty ("might move") or recurring facts. | **Open.** Temporary stays and unexecuted plans are trained as non-changes (`event`); validity windows per fact and per attribute need a schema change. |
+| 2 | **Mention time is used as event time.** "I moved last year", said today, is stored as today. | **Implemented, not measurable here.** Statements are dated by their own time words (`answers_with_decisions.py --event-time`, using the time-phrase module); 20 of 309 `v2` statements were re-dated and top-1 moved 101 → 100 (rules) and 114 → 113 (detector), because `v2`'s labels date facts by mention. Needs a test set with event-time questions; off by default. |
+| 3 | **Pairwise comparison does not scale.** A fixed shortlist covers a shrinking share of a growing memory. | **Measured, partly fixed** (`candidates_scale.py`, training people padded to 200 facts): changes reachable from top-15 similar 80%, + shared names and topic 84%, top-30 89%, top-50 93%; cost grows linearly (top-50 ≈ 21 s per message on CPU, 0.7 s on GPU), acceptable for a background job. |
+| 4 | **Errors snowball.** A wrong retirement removes the fact from the live set, so it is never compared again. | **Open; mitigated.** Wrong retirements are rare (1–2 per 112 changes) and retired facts are kept, so they can be restored; a periodic re-check pass is proposed. |
+| 5 | **The detector sees two statements only.** It cannot tell that "Tom", "my boyfriend" and "he" are one person, or what "she said yes" refers to. | **Partly addressed.** Candidates include facts sharing a name; joining kin words to names ("my boyfriend Tom") added no reach on our data; coreference across messages remains open. |
+| 6 | **A message is the wrong unit.** Retiring a whole message retires its other, still-true facts. | **Partly fixed.** Rule-based statement extraction (§6.9) raised long-message recall from 8% to 46%; storing raw words plus extracted statements linked to them is the intended design. |
+| 7 | **Everything is believed.** Quotes, hypotheticals, sarcasm and lies are stored as true. | **Partly addressed.** Plans not yet carried out are trained as non-changes; quotes, sarcasm and confidence per fact remain open. |
+| 8 | **The supervisor was assumed correct.** | **Measured and corrected** (§6.11): the real 9B is right on 80% of escalated cases and over-calls changes; only a confident-only rule helps (−29% errors). |
+| 9 | **One generator family wrote training and test data.** | **Partly addressed** by external tests (crowdworkers, GPT-4o; §6.7); a human-labelled set and a blind set from another model family remain open. |
+| 10 | **Trimmed prompts lose facts needed indirectly** ("I'm vegetarian" for a recipe question), and the recall tool depends on the model choosing to search. | **Open.** Safety facts are always pinned; pinning standing preferences is proposed. |
+| 11 | **Safety pinning relies on an English word list.** A differently phrased allergy is not pinned and can fall out of a trimmed prompt. | **Open.** A small-model safety head is proposed. |
+| 12 | **Stored memories are a lasting prompt-injection channel.** | **Mitigated, not tested adversarially.** Instructions are filtered from facts on write, and the prompt block is labelled as context, not instructions. |
+| 13 | **Background decisions lag.** The next turn can still see a fact that the queue is about to retire. | **Open by design**; at ~4 s per message on CPU the window is short. |
+
+## 10. Threats to validity
 
 - **Same generator family.** Training people, development sets and `v2` were
   all written by Claude agents (different agents, separate specs). The model
@@ -557,7 +596,7 @@ on these questions.
 
 ---
 
-## 10. Conclusion and future work
+## 11. Conclusion and future work
 
 A local memory without any LLM on the write path reached 63% top-1 on a
 strict blind set; a small decision model trained in minutes on synthetic
@@ -566,8 +605,9 @@ people replaced its hand-written change rules and lifted top-1 answers to 67%
 examples and rule-based fact extraction recovered much of the loss. Next:
 
 1. Integrate the trained detector as a live background job, with the 9B
-   supervising the ~4% least certain decisions, and score it on a fresh blind
-   set written by a different model family, with chain reactions.
+   overriding only its uncertain decisions and only when at least 95% sure,
+   and score it on a fresh blind set written by a different model family,
+   with chain reactions.
 2. Better fact extraction: the rule-based splitter raised long-message recall
    from 8% to 46% at 0.66 precision; a learned extractor (a "worth keeping?"
    head) is the next step, and it is also what LoCoMo and LongMemEval need,
@@ -634,6 +674,8 @@ Fine-tuning ran on Kaggle's free GPU tier.
 | Fact extraction scoring | `system_one/external_eval.py --model <checkpoint> --tag <name> --sentences` |
 | Answer accuracy under given decisions | `system_one/answers_with_decisions.py --backend <primnox>/backend --decisions rules` (or `labels`, or a `--save-pairs` file) |
 | Paired tests | `system_one/paired.py --changes A B --answers A B` |
+| Real supervisor | `system_one/supervisor_check.py --backend <primnox>/backend --scores <dev scores>` |
+| Candidate reach at scale | `system_one/candidates_scale.py --split train --pad 200 --k 15` |
 | Escalation and calibration | `system_one/escalation.py --scores <dev scores> --tag <name>` |
 | Prompt selection | `graph/eval_block.py --split v2 --pad 200` |
 

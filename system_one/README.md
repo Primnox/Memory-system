@@ -91,8 +91,14 @@ Files: `results/external_v3.json`, `results/blind_v2_v3.json`,
   (`answers_with_decisions.py`): rules 59.1%, rules + verifier 62.6%,
   detector **66.7%**, perfect change detection 70.8%. Paired vs rules:
   answers 17 vs 4 (p = 0.007), changes 41 vs 8 (p = 2e-6) (`paired.py`).
-- Escalation (`escalation.py`): sending the 4% least certain dev decisions
-  to a supervisor leaves 3 errors of 17; ECE 0.047.
+- Escalation: with a perfect supervisor the 4% least certain dev decisions
+  hold 14 of 17 errors (`escalation.py`, ECE 0.047); with the real local 9B
+  (`supervisor_check.py`) it is right on 80% of them and over-calls changes;
+  overriding only when it is at least 95% sure gives 17 -> 12 errors.
+- Candidate reach at 200 facts (`candidates_scale.py`): top-15 80%, + names
+  and topic 84%, top-30 89%, top-50 93%.
+- Event-time dating (`answers_with_decisions.py --event-time`): no effect on
+  `v2`, whose labels date facts by mention.
 
 ## Files
 
