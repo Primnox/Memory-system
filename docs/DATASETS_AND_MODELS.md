@@ -71,6 +71,10 @@ personal-information tagging dataset.
 
 ## Evaluation only (never train on these)
 
+Used 2026-10-04 as external blind tests (`system_one/data/blind_external/`):
+Dialogue NLI verified test (3,000 sampled pairs, MIT) and LongMemEval
+knowledge-update sessions (421 pairs, [xiaowu0162/longmemeval](https://huggingface.co/datasets/xiaowu0162/longmemeval), MIT).
+
 - Our blind sets: `scripts/blind_memory/test.json`, `v2/test.json`, and a fresh
   `v3` to be written for the final verdict.
 - LongMemEval (has a "knowledge update" category) and LoCoMo — the benchmarks

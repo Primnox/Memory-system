@@ -89,8 +89,8 @@ all of them cuts the memory block by ~45% (small stores) to ~89% (200 facts,
 A graph index (facts linked by people, things and topics) did not choose
 better than plain similarity in a blind test; see [`graph/`](graph/).
 
-Research write-up with method, statistics and limitations:
-[`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
+**Research paper** (method, all results with confidence intervals, threats to
+validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
 [`docs/MEMORY_EXPERIMENT.md`](docs/MEMORY_EXPERIMENT.md). Every score file:
 [`scripts/blind_memory/results/RESULTS.md`](scripts/blind_memory/results/RESULTS.md).
 
@@ -120,10 +120,11 @@ Research write-up with method, statistics and limitations:
 | `scripts/blind_memory/` | The frozen test sets, dev sets, paraphrase variants, and all results |
 | `scripts/bench_memory_blind.py` | The blind-test runner (intervals, paired McNemar, query modes) |
 | `scripts/e2e_memory_chat.py` | Full-chat harness: the assistant chats, a judge model grades the answers |
-| `docs/RESEARCH.md` | Research write-up: problem, related systems, method, all results, limitations |
+| `docs/RESEARCH.md` | Research paper: protocol, three experiments, threats to validity, references |
 | `docs/architecture.png` | Architecture diagram |
 | `docs/SYSTEM_ONE_PLAN.md` | The small local decision model (≤500M parameters): plan and status |
 | `docs/DATASETS_AND_MODELS.md` | Open datasets, teacher models and starting models for it |
+| `graph/` | Graph-index experiment for choosing which facts go into the prompt |
 | `system_one/` | The small model: screen, training data, Kaggle training job, blind replay, results |
 
 **Can I run it?** Not on its own yet. The memory modules import a few parts of

@@ -3,8 +3,10 @@
 Status, 2026-10-04: **memory head (change detection) trained and
 blind-tested.** Fine-tuned Laya (421M) noticed 95/112 changes with 2 mistaken
 retirements on the blind set, against 73/112 and 20 for rules + the 9B
-verifier. Not yet wired into the memory service; ~0.4 s per comparison on
-CPU. Details: [`RESEARCH.md`](RESEARCH.md) §6 and
+verifier. A second training run gave 92/112. On text from other authors the edge
+shrinks but stays ahead of the rules (Dialogue NLI F1 0.51 vs 0.26; LongMemEval
+chat turns 0.24 vs 0.09). Not yet wired into the memory service; ~0.4 s per
+comparison on CPU. Details: [`RESEARCH.md`](RESEARCH.md) §6 and
 [`../system_one/`](../system_one/).
 
 ## Idea

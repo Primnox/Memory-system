@@ -28,16 +28,22 @@ without the previous session's notes. Read this, then
    retirements; `RESEARCH.md` §6). Checkpoints are not in git: re-run
    `system_one/kaggle/train_kaggle.py` on Kaggle (~25 min with setup) or keep
    the downloaded `system_one/kaggle_out/models/`.
-2. **Make it faster** (~0.4 s per comparison on CPU, ~10 per message): a
+2. **Fix the two gaps the external tests found** (`RESEARCH.md` §6.7): add
+   "same fact, said differently" examples (restatements are over-called) and
+   long multi-topic messages to the training people; retrain on Kaggle
+   (`system_one/kaggle/train_kaggle.py`) and re-score with
+   `system_one/kaggle/eval_kaggle.py`.
+3. **Make it faster** (~0.4 s per comparison on CPU, ~10 per message): a
    ~150M student, one pass over all candidates, or a background queue.
-3. **Check on real chats** (the owner's own memories, locally, never pushed)
+4. **Check on real chats** (the owner's own memories, locally, never pushed)
    and a fresh blind set `v3` written by a different model family.
-4. **Auto-save from the user's messages** so memory does not depend on the
+5. **Auto-save from the user's messages** so memory does not depend on the
    chat model calling `remember` (a "worth keeping?" head).
-5. Send only relevant memories to the prompt (token cut: the memory block is
-   ~500–650 tokens typical, up to ~3.2k).
-6. Graph memory with tidying after each chat.
-7. Head-to-head against Mem0, Graphiti/Zep, Letta, LangMem on LongMemEval /
+6. Send only relevant memories to the prompt: similarity top-20 plus the
+   recall tool as fallback (blind: 89% fewer tokens at 200 facts, 79% of
+   answer facts kept; the graph index did not beat similarity, `graph/`).
+7. Graph memory only with learned entity links and multi-hop tests.
+8. Head-to-head against Mem0, Graphiti/Zep, Letta, LangMem on LongMemEval /
    LoCoMo.
 
 ## Working rules
