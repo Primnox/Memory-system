@@ -7,9 +7,10 @@ without the previous session's notes. Read this, then
 
 ## Where things stand
 
-- Best version: branch `exp/memory-change-verify` of `Primnox/main`
-  (commit `c013cad`), 63% top-1 on the fresh blind set `v2`. All memory
-  branches are pushed there; this repo mirrors the memory files.
+- Best version: branch `exp/memory-change-verify` of the Primnox app repo
+  (`Primnox/main`, commit `c013cad`; the app repo is going private), 63% top-1
+  on the fresh blind set `v2`. All memory branches are pushed there; this
+  public repo mirrors the memory files.
 - **Not merged into Primnox `main`.** The owner decides when. Before any merge
   or any run against real data, back up `~/Documents/Primnox2/primnox.db`:
   schema v12 is one-way and older code refuses a v12 database.
@@ -42,8 +43,9 @@ without the previous session's notes. Read this, then
   scores. Development scores are labelled as such.
 - Benchmarks always use scratch databases. Never point anything at the real
   `primnox.db`, and never set up a vault from a scratch backend.
-- `Primnox/main` and this repo are public: scan for secrets and personal data
-  before every push. Never commit raw full-chat outputs (they hold test
+- This repo is public (the Primnox app repo is going private): scan for
+  secrets and personal data before every push, and never copy app code beyond
+  the memory files into it without the owner's OK. Never commit raw full-chat outputs (they hold test
   transcripts). Do not push `fix/memory-robustness` (its fixtures hold the
   owner's first name; it also scored worse blind and was parked).
 - No merges to `main` and no pull requests without the owner's OK.
@@ -66,6 +68,8 @@ without the previous session's notes. Read this, then
   models (~1 GB). Not for the 9B or for training — training goes to Kaggle.
 
 ## Setup on a new machine
+
+Needs access to the private Primnox app repo.
 
 ```bash
 git clone -b exp/memory-change-verify https://github.com/Primnox/main.git primnox
