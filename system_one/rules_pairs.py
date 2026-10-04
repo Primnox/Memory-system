@@ -59,6 +59,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--backend", required=True, help="Primnox backend directory (holds primnox2/)")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--data", nargs="*", help="scenario files (default: the development sets)")
     args = ap.parse_args()
     sys.path.insert(0, str(Path(args.backend).resolve()))
     os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -69,7 +70,7 @@ def main() -> None:
         if not enc.prepare(300):
             raise SystemExit("sentence encoder failed to load")
     result = {}
-    for f in DEV_FILES:
+    for f in (args.data or DEV_FILES):
         for sc in json.loads((ROOT / f).read_text(encoding="utf-8")):
             result[sc["scenario"]] = run(sc)
             print(sc["scenario"], len(result[sc["scenario"]]["pairs"]), "retired", flush=True)

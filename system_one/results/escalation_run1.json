@@ -1,0 +1,63 @@
+{
+ "scores": "scores_laya_ft_v2-nodnli.json",
+ "decisions": 1165,
+ "positives": 69,
+ "curve": [
+  {
+   "band": [
+    0.5,
+    0.5
+   ],
+   "escalated": 0,
+   "escalated_share": 0.0,
+   "missed_kept": 11,
+   "wrong_retire_kept": 6,
+   "accuracy_kept": 0.9854077253218884
+  },
+  {
+   "band": [
+    0.3,
+    0.7
+   ],
+   "escalated": 21,
+   "escalated_share": 0.018025751072961373,
+   "missed_kept": 7,
+   "wrong_retire_kept": 2,
+   "accuracy_kept": 0.9921328671328671
+  },
+  {
+   "band": [
+    0.2,
+    0.8
+   ],
+   "escalated": 49,
+   "escalated_share": 0.04206008583690987,
+   "missed_kept": 3,
+   "wrong_retire_kept": 0,
+   "accuracy_kept": 0.9973118279569892
+  },
+  {
+   "band": [
+    0.1,
+    0.9
+   ],
+   "escalated": 90,
+   "escalated_share": 0.07725321888412018,
+   "missed_kept": 1,
+   "wrong_retire_kept": 0,
+   "accuracy_kept": 0.9990697674418605
+  },
+  {
+   "band": [
+    0.05,
+    0.95
+   ],
+   "escalated": 195,
+   "escalated_share": 0.16738197424892703,
+   "missed_kept": 0,
+   "wrong_retire_kept": 0,
+   "accuracy_kept": 1.0
+  }
+ ],
+ "ece_10_bins": 0.04734944206008585
+}

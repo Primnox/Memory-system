@@ -1,0 +1,527 @@
+{
+ "data": "test.json",
+ "model": "laya-memory-v2-nodnli",
+ "k": 15,
+ "max_linked": 12,
+ "threshold": 0.5,
+ "seconds": 1548,
+ "ms_per_candidate": 507.6,
+ "total": {
+  "true": 112,
+  "predicted": 100,
+  "correct": 95,
+  "false_retire": 2,
+  "candidates_scored": 3050,
+  "true_reachable": 110
+ },
+ "per_scenario": {
+  "anika-bengaluru-designer": {
+   "true": 9,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s1",
+     "s16"
+    ],
+    [
+     "s13",
+     "s20"
+    ],
+    [
+     "s17",
+     "s22"
+    ],
+    [
+     "s18",
+     "s23"
+    ],
+    [
+     "s2",
+     "s9"
+    ],
+    [
+     "s4",
+     "s10"
+    ],
+    [
+     "s6",
+     "s17"
+    ],
+    [
+     "s7",
+     "s25"
+    ]
+   ]
+  },
+  "bjorn-bergen-teacher": {
+   "true": 10,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 10,
+   "retired_pairs": [
+    [
+     "s1",
+     "s22"
+    ],
+    [
+     "s10",
+     "s20"
+    ],
+    [
+     "s13",
+     "s24"
+    ],
+    [
+     "s2",
+     "s18"
+    ],
+    [
+     "s3",
+     "s13"
+    ],
+    [
+     "s4",
+     "s12"
+    ],
+    [
+     "s8",
+     "s21"
+    ],
+    [
+     "s9",
+     "s13"
+    ]
+   ]
+  },
+  "carmen-guadalajara-nurse": {
+   "true": 9,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s1",
+     "s21"
+    ],
+    [
+     "s10",
+     "s23"
+    ],
+    [
+     "s11",
+     "s22"
+    ],
+    [
+     "s2",
+     "s15"
+    ],
+    [
+     "s4",
+     "s24"
+    ],
+    [
+     "s5",
+     "s12"
+    ],
+    [
+     "s7",
+     "s25"
+    ],
+    [
+     "s9",
+     "s19"
+    ]
+   ]
+  },
+  "dmitri-toronto-student": {
+   "true": 9,
+   "predicted": 9,
+   "correct": 9,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s10",
+     "s20"
+    ],
+    [
+     "s11",
+     "s21"
+    ],
+    [
+     "s13",
+     "s23"
+    ],
+    [
+     "s2",
+     "s17"
+    ],
+    [
+     "s3",
+     "s18"
+    ],
+    [
+     "s4",
+     "s14"
+    ],
+    [
+     "s5",
+     "s11"
+    ],
+    [
+     "s8",
+     "s22"
+    ],
+    [
+     "s9",
+     "s13"
+    ]
+   ]
+  },
+  "esther-leeds-retired": {
+   "true": 9,
+   "predicted": 6,
+   "correct": 6,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s11",
+     "s23"
+    ],
+    [
+     "s12",
+     "s18"
+    ],
+    [
+     "s2",
+     "s22"
+    ],
+    [
+     "s4",
+     "s13"
+    ],
+    [
+     "s7",
+     "s19"
+    ],
+    [
+     "s9",
+     "s20"
+    ]
+   ]
+  },
+  "hiroshi-osaka-chef": {
+   "true": 8,
+   "predicted": 8,
+   "correct": 6,
+   "false_retire": 1,
+   "true_reachable": 8,
+   "retired_pairs": [
+    [
+     "s1",
+     "s18"
+    ],
+    [
+     "s13",
+     "s22"
+    ],
+    [
+     "s14",
+     "s23"
+    ],
+    [
+     "s2",
+     "s19"
+    ],
+    [
+     "s4",
+     "s17"
+    ],
+    [
+     "s5",
+     "s11"
+    ],
+    [
+     "s7",
+     "s21"
+    ],
+    [
+     "s8",
+     "s23"
+    ]
+   ]
+  },
+  "nandini-hyderabad-pm": {
+   "true": 10,
+   "predicted": 9,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s1",
+     "s13"
+    ],
+    [
+     "s11",
+     "s27"
+    ],
+    [
+     "s16",
+     "s26"
+    ],
+    [
+     "s17",
+     "s23"
+    ],
+    [
+     "s2",
+     "s18"
+    ],
+    [
+     "s23",
+     "s25"
+    ],
+    [
+     "s3",
+     "s12"
+    ],
+    [
+     "s5",
+     "s16"
+    ],
+    [
+     "s6",
+     "s24"
+    ]
+   ]
+  },
+  "wanjiru-nairobi-nurse": {
+   "true": 10,
+   "predicted": 9,
+   "correct": 9,
+   "false_retire": 0,
+   "true_reachable": 10,
+   "retired_pairs": [
+    [
+     "s1",
+     "s17"
+    ],
+    [
+     "s2",
+     "s13"
+    ],
+    [
+     "s3",
+     "s23"
+    ],
+    [
+     "s4",
+     "s11"
+    ],
+    [
+     "s5",
+     "s19"
+    ],
+    [
+     "s6",
+     "s24"
+    ],
+    [
+     "s7",
+     "s14"
+    ],
+    [
+     "s8",
+     "s22"
+    ],
+    [
+     "s9",
+     "s16"
+    ]
+   ]
+  },
+  "rafael-curitiba-chef": {
+   "true": 9,
+   "predicted": 8,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 8,
+   "retired_pairs": [
+    [
+     "s1",
+     "s14"
+    ],
+    [
+     "s13",
+     "s24"
+    ],
+    [
+     "s17",
+     "s26"
+    ],
+    [
+     "s2",
+     "s19"
+    ],
+    [
+     "s20",
+     "s23"
+    ],
+    [
+     "s5",
+     "s8"
+    ],
+    [
+     "s6",
+     "s17"
+    ],
+    [
+     "s8",
+     "s12"
+    ]
+   ]
+  },
+  "sven-gothenburg-student": {
+   "true": 9,
+   "predicted": 9,
+   "correct": 9,
+   "false_retire": 0,
+   "true_reachable": 9,
+   "retired_pairs": [
+    [
+     "s14",
+     "s27"
+    ],
+    [
+     "s15",
+     "s22"
+    ],
+    [
+     "s2",
+     "s18"
+    ],
+    [
+     "s3",
+     "s14"
+    ],
+    [
+     "s4",
+     "s19"
+    ],
+    [
+     "s5",
+     "s17"
+    ],
+    [
+     "s6",
+     "s12"
+    ],
+    [
+     "s8",
+     "s26"
+    ],
+    [
+     "s9",
+     "s20"
+    ]
+   ]
+  },
+  "tessa-perth-teacher": {
+   "true": 10,
+   "predicted": 10,
+   "correct": 9,
+   "false_retire": 1,
+   "true_reachable": 10,
+   "retired_pairs": [
+    [
+     "s1",
+     "s21"
+    ],
+    [
+     "s12",
+     "s23"
+    ],
+    [
+     "s13",
+     "s22"
+    ],
+    [
+     "s2",
+     "s16"
+    ],
+    [
+     "s3",
+     "s18"
+    ],
+    [
+     "s4",
+     "s22"
+    ],
+    [
+     "s6",
+     "s19"
+    ],
+    [
+     "s7",
+     "s15"
+    ],
+    [
+     "s8",
+     "s17"
+    ],
+    [
+     "s9",
+     "s20"
+    ]
+   ]
+  },
+  "walter-ohio-retiree": {
+   "true": 10,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 10,
+   "retired_pairs": [
+    [
+     "s10",
+     "s21"
+    ],
+    [
+     "s12",
+     "s25"
+    ],
+    [
+     "s14",
+     "s22"
+    ],
+    [
+     "s15",
+     "s22"
+    ],
+    [
+     "s2",
+     "s22"
+    ],
+    [
+     "s3",
+     "s16"
+    ],
+    [
+     "s4",
+     "s20"
+    ],
+    [
+     "s5",
+     "s13"
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "changes": {
+  "A": "rules_v2_pairs.json",
+  "B": "blind_v2_run1-pairs.json",
+  "caught_by_both": 54,
+  "only_A": 8,
+  "only_B": 41,
+  "p": 1.9646537765538596e-06
+ },
+ "answers": {
+  "A": "answers_v2_rules.json",
+  "B": "answers_v2_run1.json",
+  "only_A": 4,
+  "only_B": 17,
+  "p": 0.007197380065917969
+ },
+ "answers_vs_verifier": {
+  "only_verifier": 5,
+  "only_model": 12,
+  "p": 0.143463134765625
+ }
+}

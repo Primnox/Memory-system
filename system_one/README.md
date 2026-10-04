@@ -83,6 +83,17 @@ The external sets informed this data, so these external scores are not blind.
 Files: `results/external_v3.json`, `results/blind_v2_v3.json`,
 `results/screen_dev_v3.json`.
 
+## Round 4 and answer accuracy (2026-10-04)
+
+- Fact extraction (`extract.py`, rules): LongMemEval changes caught 6/72 →
+  33/72 (F1 0.15 → 0.54). Blind `v2` 94/112 with 1 mistaken.
+- Answer top-1 on blind `v2` with the detector's decisions
+  (`answers_with_decisions.py`): rules 59.1%, rules + verifier 62.6%,
+  detector **66.7%**, perfect change detection 70.8%. Paired vs rules:
+  answers 17 vs 4 (p = 0.007), changes 41 vs 8 (p = 2e-6) (`paired.py`).
+- Escalation (`escalation.py`): sending the 4% least certain dev decisions
+  to a supervisor leaves 3 errors of 17; ECE 0.047.
+
 ## Files
 
 | File | What |

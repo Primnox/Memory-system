@@ -36,6 +36,9 @@ def main() -> None:
     ap.add_argument("--max-linked", type=int, default=12)
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--save-pairs", action="store_true",
+                    help="also save the retired (old, new) statement ids per scenario (ids only, no text), "
+                         "for paired tests and for answer accuracy with these decisions")
     args = ap.parse_args()
 
     from laya.agent import Agent
@@ -72,9 +75,12 @@ def main() -> None:
             live.append(new)
         row = {"true": len(truth), "predicted": len(got), "correct": len(got & truth),
                "false_retire": sum(1 for o, _ in got if o not in replaced_ever), "true_reachable": reachable}
+        if args.save_pairs:
+            row["retired_pairs"] = sorted([o, n] for o, n in got)
         per[sc["scenario"]] = row
         for k, v in row.items():
-            tot[k] += v
+            if k in tot:
+                tot[k] += v
         print(f"{len(per)}/{len(scenarios)} scenarios done", flush=True)
 
     secs = time.perf_counter() - t0

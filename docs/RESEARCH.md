@@ -22,13 +22,18 @@ an earlier one, using only synthetic people from two independent generator
 agents and twelve minutes of one free cloud GPU. Replayed on the same blind
 set, it notices 95 of 112 changes (85% [77–90]) with 2 mistaken retirements,
 against 73 of 112 (65% [56–73]) with 20 for the best rule-based system with a
-9B verifier; a second training run gives 92/112 with 2. On data not written by
+9B verifier; three further training runs give 92–94/112 with 1–2. With its
+decisions in the memory, top-1 answers rise from 59.1% to 66.7% [59–73]
+(paired p = 0.007), against a 70.8% ceiling for perfect change detection. On data not written by
 our generator family the advantage shrinks but persists: F1 0.51 vs 0.26 for
 the rules on crowdworker-written persona facts, and 0.24 vs 0.09 on long chat
 turns from LongMemEval. Adding restatements and long chatty messages to the
 training data cut restatement errors 4.6-fold (170 → 37 per 1,000) without
 loss on the blind set (94/112), but did not help with changes buried in long
-chat turns. Finally, selecting facts for the prompt instead of
+chat turns; splitting messages into statements about the user before comparing
+them did (6 → 33 of 72 changes caught, F1 0.15 → 0.54). Escalating the 4%
+least certain decisions to a supervisor would remove about 80% of the
+detector's errors. Finally, selecting facts for the prompt instead of
 sending all of them cuts memory tokens by 45% to 89% (4,075 → 454 tokens at 200
 facts) while keeping 97% and 79% of the facts the answers need; a graph index
 over people, things and topics does not select better than plain similarity.
@@ -58,8 +63,9 @@ This report makes four contributions:
    set without any LLM on the write path (§5).
 3. **A small trained change detector** that replaces hand-written rules:
    85% of changes noticed with 2 mistaken retirements on the blind set (rules
-   with a 9B verifier: 65% and 20), with tests on data from other authors that
-   show where it breaks (§6).
+   with a 9B verifier: 65% and 20), raising top-1 answers from 59% to 67%,
+   with tests on data from other authors that show where it breaks and two
+   fixes that address it (§6).
 4. **A measured negative result on graph indexing for prompt selection:**
    selection saves 45–89% of memory tokens, but a rule-built graph does not
    select better than similarity (§7).
@@ -303,11 +309,14 @@ leave the live set. Totals only.
 | **Fine-tuned Laya, run 1** | **95/112 = 85% [77–90]** | 100 | **2** | **95% [89–98]** |
 | Fine-tuned Laya, run 2 | 92/112 = 82% [74–88] | 101 | 2 | 91% [84–95] |
 | Fine-tuned Laya, round 3 (§6.8) | 94/112 = 84% [76–90] | 100 | 2 | 94% [88–97] |
+| Fine-tuned Laya, round 4 (§6.9) | 94/112 = 84% [76–90] | 99 | 1 | 95% [89–98] |
 
-Run 1 vs rules + verifier: changes noticed z = 3.39, p = 0.0007; mistaken
-retirements 2/100 vs 20/93, z = −4.26, p < 0.001. Run 1 vs rules: z = 4.82,
-p < 0.001 (two-proportion tests). Run 2 used the same recipe and data on a
-fresh GPU session.
+Run 1 vs rules, paired over the 112 labelled changes: 41 caught only by the
+detector, 8 only by the rules (exact McNemar p = 2·10⁻⁶). Run 1 vs rules +
+verifier (no per-pair outcomes were kept for the verifier run): changes
+noticed z = 3.39, p = 0.0007; mistaken retirements 2/100 vs 20/93,
+z = −4.26, p < 0.001 (two-proportion tests). Runs 2–4 repeat training on
+fresh GPU sessions.
 
 ### 6.7 External tests: text from other authors
 
@@ -363,9 +372,84 @@ Long messages hold several facts, and retiring a whole message when one of
 them changes is itself wrong; the remedy is to extract individual facts before
 change detection.
 
-### 6.9 Speed
+### 6.9 Fact extraction for long messages (round 4)
 
-*Table 10. Time per comparison.*
+Long chat turns hold several facts; comparing whole turns hides the change.
+A rule-based splitter (`extract.py`, no language model) breaks a message into
+sentences and keeps those about the user (first person) that are neither
+questions nor requests to the assistant; a message pair is scored as the
+highest score over its statement pairs (3.8 comparisons per pair on average
+for LongMemEval). The model was retrained on writers A, B and C (same recipe
+as round 3) and scored both ways. The splitter was designed after §6.7 showed
+the long-message gap, and one LongMemEval input was read to check that it
+splits correctly; these LongMemEval scores are therefore not blind.
+
+*Table 10. Round 4: whole messages vs extracted statements.*
+
+| | Whole messages | Extracted statements |
+|---|---|---|
+| LongMemEval changes caught | 6/72 = 8% [4–17] | **33/72 = 46% [35–57]** |
+| LongMemEval precision / F1 | 0.86 / 0.15 | 0.66 / **0.54** |
+| DNLI F1 (single sentences; little to split) | 0.51 | 0.48 |
+| Blind `v2` (whole statements, unchanged) | 94/112, 1 mistaken | — |
+
+Extraction multiplies the changes caught in long chat turns by 5.5 at some
+cost in precision. Round 3 and round 4 used the same data and recipe; their
+DNLI scores (F1 0.58 vs 0.51, restatements called a change 37 vs 60 per
+1,000) show the run-to-run variation on that set.
+
+### 6.10 Answer accuracy with the trained detector
+
+Change detection matters only through answers. Each blind `v2` person was
+loaded through the application's `remember()` exactly as the blind runner
+does; the "replaced by" links were then set to (a) the rules' own decisions,
+(b) the decisions of the fine-tuned detector (run 1, replayed as in §6.6), or
+(c) the labels (perfect change detection, a ceiling), and every answerable
+question was scored top-1 with oracle dates. Condition (a) reproduces the
+blind runner's 59.1% exactly, so the procedure matches.
+
+*Table 11. Top-1 on blind `v2` (171 answerable questions) by change decisions.*
+
+| Change decisions | Top-1 (95% CI) | "Now" questions | Past | Multi |
+|---|---|---|---|---|
+| Rules (current system) | 101 = 59.1% [52–66] | 50/93 | 36/54 | 15/24 |
+| Rules + 9B verifier (Table 3) | 107 = 62.6% [55–69] | 56/93 | 36/54 | 15/24 |
+| **Fine-tuned detector** | **114 = 66.7% [59–73]** | **62/93** | 36/54 | 16/24 |
+| Labels (ceiling) | 121 = 70.8% [64–77] | 69/93 | 36/54 | 16/24 |
+
+Paired exact McNemar tests: detector vs rules on answers, 17 questions right
+only with the detector and 4 only with the rules, p = 0.007; on changes, 41
+caught only by the detector and 8 only by the rules, p = 2·10⁻⁶. Against the
+rules + 9B verifier on answers: 12 vs 5, p = 0.14 (not significant). The
+detector closes 13 of the 20 answers between the rules and perfect change
+detection; the gain is almost entirely on "now" questions, as expected.
+
+### 6.11 Escalation and calibration
+
+The intended design keeps the small model as the agent and the 9B as a
+supervisor for uncertain decisions. On the development shortlist (1,165
+decisions, 69 changes; run 1), sending decisions with P(`replaces`) inside a
+band to a supervisor that is assumed correct (a best case):
+
+*Table 12. Escalation band vs errors left in the small model's own decisions.*
+
+| Escalate when | Escalated | Errors kept (missed / wrong retirement) |
+|---|---|---|
+| never | 0% | 17 (11 / 6) |
+| 0.3 < P < 0.7 | 2% | 9 (7 / 2) |
+| 0.2 < P < 0.8 | 4% | 3 (3 / 0) |
+| 0.1 < P < 0.9 | 8% | 1 (1 / 0) |
+| 0.05 < P < 0.95 | 17% | 0 |
+
+Expected calibration error is 0.047 (10 bins); the model is slightly
+under-confident at the top (mean P 0.85 in its 0.8–0.9 bin, all correct).
+Escalating 4% of decisions would remove about 80% of the errors, which
+supports the agent / supervisor split. The development data come from the
+same writer family as training, so these figures are optimistic.
+
+### 6.12 Speed
+
+*Table 13. Time per comparison.*
 
 | Setting | Time |
 |---|---|
@@ -395,7 +479,7 @@ with other people's non-safety facts — a harsh test, since the padding
 includes strangers' "I live in…" facts. Developed on dev (64 questions);
 scored once on `v2` (117 questions).
 
-*Table 11. Prompt selection on blind `v2`.*
+*Table 14. Prompt selection on blind `v2`.*
 
 | Store | Method | Answer facts in block (95% CI) | Tokens |
 |---|---|---|---|
@@ -447,25 +531,27 @@ on these questions.
   all written by Claude agents (different agents, separate specs). The model
   may partly learn these writers' phrasing; §6.7 shows the drop on other
   authors. The owner's real chats have not been tested.
-- **Change detection, not answers.** Top-1 retrieval with the trained model in
-  the loop has not been measured; it needs integration into the memory
-  service.
+- **Simulated integration.** Answer accuracy (§6.10) sets the detector's
+  decisions after loading, rather than running it live as a background job;
+  timing effects of a background queue are not measured.
 - **Small samples.** 112 blind changes and 117 block questions: intervals are
   ±7–9 points.
-- **Test reuse.** `v2` has been scored in 14 runs (9 retrieval configurations
-  across six versions, three change-detection replays, two block tests). No
+- **Test reuse.** `v2` has been scored in 19 runs (9 retrieval configurations
+  across six versions, five change-detection replays, two block tests, three
+  answer runs including a reproduction of the rules). No
   per-item result was read and nothing was tuned on it, but a fresh blind set
   is needed for a final verdict.
-- **Unpaired comparisons.** Per-pair outcomes were not kept for both change
-  detectors, so Table 7 uses unpaired tests.
+- **Partly unpaired comparisons.** Detector vs rules is paired (changes and
+  answers); detector vs rules + verifier is paired on answers but unpaired on
+  changes, since that run kept no per-pair outcomes.
 - **Different loading paths.** Rule runs load statements through the
   application's `remember()`, which can refuse or deduplicate; the model
   replay scores every statement.
-- **Runs and model size.** Three training runs agree on blind `v2` (95, 92
-  and 94 of 112, each with 2 mistaken retirements); only the 421M English
-  checkpoint was trained.
-- **External sets reused.** After §6.7 informed the round-3 data, the
-  external scores of round 3 are no longer blind.
+- **Runs and model size.** Four training runs agree on blind `v2` (95, 92, 94
+  and 94 of 112, 1–2 mistaken retirements); run-to-run variation is larger on
+  DNLI (F1 0.51–0.58). Only the 421M English checkpoint was trained.
+- **External sets reused.** §6.7 informed the round-3 data and the round-4
+  splitter, so their external scores are not blind.
 - **Token estimate.** Tokens are characters / 4, not a model tokenizer.
 - **Language.** The rules are English-only; the external tests are English.
 
@@ -474,18 +560,18 @@ on these questions.
 ## 10. Conclusion and future work
 
 A local memory without any LLM on the write path reached 63% top-1 on a
-strict blind set, and a small decision model trained in minutes on synthetic
-people replaced its hand-written change rules with a large gain on that set.
-The gain is smaller, though still positive, on text from other authors, which
-sets the next steps:
+strict blind set; a small decision model trained in minutes on synthetic
+people replaced its hand-written change rules and lifted top-1 answers to 67%
+(ceiling 71%). Its gain shrinks on text from other authors; restatement
+examples and rule-based fact extraction recovered much of the loss. Next:
 
-1. Integrate the trained detector as a background job and measure answer
-   top-1 on a fresh blind set written by a different model family, with chain
-   reactions.
-2. Fact extraction before change detection: restatement examples fixed one
-   gap (§6.8), but changes inside long chat turns need individual facts, not
-   more examples. The same step is required to run LoCoMo and LongMemEval end
-   to end, since the memory deliberately refuses multi-fact text.
+1. Integrate the trained detector as a live background job, with the 9B
+   supervising the ~4% least certain decisions, and score it on a fresh blind
+   set written by a different model family, with chain reactions.
+2. Better fact extraction: the rule-based splitter raised long-message recall
+   from 8% to 46% at 0.66 precision; a learned extractor (a "worth keeping?"
+   head) is the next step, and it is also what LoCoMo and LongMemEval need,
+   since the memory deliberately refuses multi-fact text.
 3. A smaller or faster student (~150M parameters, or one pass over all
    candidates), with the 9B model as supervisor for low-confidence and
    safety-critical retirements.
@@ -545,6 +631,10 @@ Fine-tuning ran on Kaggle's free GPU tier.
 | Blind change detection | `system_one/blind_pairs.py --model <checkpoint> --tag <name>` |
 | External pairs and scoring | `system_one/build_external.py`, `system_one/external_eval.py`, `system_one/rules_external.py` |
 | Second run + external tests on Kaggle | `system_one/kaggle/eval_kaggle.py` |
+| Fact extraction scoring | `system_one/external_eval.py --model <checkpoint> --tag <name> --sentences` |
+| Answer accuracy under given decisions | `system_one/answers_with_decisions.py --backend <primnox>/backend --decisions rules` (or `labels`, or a `--save-pairs` file) |
+| Paired tests | `system_one/paired.py --changes A B --answers A B` |
+| Escalation and calibration | `system_one/escalation.py --scores <dev scores> --tag <name>` |
 | Prompt selection | `graph/eval_block.py --split v2 --pad 200` |
 
 Training data: `system_one/data/train_writer_a.json`, `train_writer_b.json`.

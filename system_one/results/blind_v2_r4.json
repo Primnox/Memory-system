@@ -1,0 +1,103 @@
+{
+ "data": "test.json",
+ "model": "laya-memory-r4",
+ "k": 15,
+ "max_linked": 12,
+ "threshold": 0.5,
+ "seconds": 42,
+ "ms_per_candidate": 13.6,
+ "total": {
+  "true": 112,
+  "predicted": 99,
+  "correct": 94,
+  "false_retire": 1,
+  "candidates_scored": 3061,
+  "true_reachable": 109
+ },
+ "per_scenario": {
+  "anika-bengaluru-designer": {
+   "true": 9,
+   "predicted": 9,
+   "correct": 9,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "bjorn-bergen-teacher": {
+   "true": 10,
+   "predicted": 8,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "carmen-guadalajara-nurse": {
+   "true": 9,
+   "predicted": 7,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "dmitri-toronto-student": {
+   "true": 9,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "esther-leeds-retired": {
+   "true": 9,
+   "predicted": 7,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "hiroshi-osaka-chef": {
+   "true": 8,
+   "predicted": 8,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 8
+  },
+  "nandini-hyderabad-pm": {
+   "true": 10,
+   "predicted": 9,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "wanjiru-nairobi-nurse": {
+   "true": 10,
+   "predicted": 10,
+   "correct": 10,
+   "false_retire": 0,
+   "true_reachable": 10
+  },
+  "rafael-curitiba-chef": {
+   "true": 9,
+   "predicted": 8,
+   "correct": 8,
+   "false_retire": 0,
+   "true_reachable": 9
+  },
+  "sven-gothenburg-student": {
+   "true": 9,
+   "predicted": 9,
+   "correct": 7,
+   "false_retire": 1,
+   "true_reachable": 8
+  },
+  "tessa-perth-teacher": {
+   "true": 10,
+   "predicted": 9,
+   "correct": 9,
+   "false_retire": 0,
+   "true_reachable": 10
+  },
+  "walter-ohio-retiree": {
+   "true": 10,
+   "predicted": 7,
+   "correct": 7,
+   "false_retire": 0,
+   "true_reachable": 10
+  }
+ }
+}

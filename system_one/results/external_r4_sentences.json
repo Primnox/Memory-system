@@ -1,0 +1,36 @@
+{
+ "model": "models/laya-memory-r4",
+ "files": {
+  "pairs_dnli": {
+   "pairs": 3000,
+   "positives": 1000,
+   "ap": 0.6290903047380331,
+   "best_f1": 0.5508175697338891,
+   "f1_at_0.5": 0.4784756527875794,
+   "precision_at_0.5": 0.8129496402877698,
+   "recall_at_0.5": 0.339,
+   "called_replace_by_source": {
+    "dnli:negative": "339/1000",
+    "dnli:neutral": "3/1000",
+    "dnli:positive": "75/1000"
+   },
+   "comparisons": 3373,
+   "ms_per_pair": 12.9
+  },
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6285604046309408,
+   "best_f1": 0.6891891891891891,
+   "f1_at_0.5": 0.5409836065573771,
+   "precision_at_0.5": 0.66,
+   "recall_at_0.5": 0.4583333333333333,
+   "called_replace_by_source": {
+    "lme_ku": "50/421"
+   },
+   "comparisons": 1597,
+   "ms_per_pair": 55.3
+  }
+ },
+ "sentences": true
+}

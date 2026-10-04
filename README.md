@@ -15,8 +15,9 @@ sets, every score, and the plan for what comes next.
 - **Fully local.** It keeps your exact words with dates and knows when
   something changed, without calling a big AI.
 - **Blind tests:** the right fact comes up first 63% of the time (from 19%).
-  A small model trained in 12 minutes now catches 85% of life changes (from
-  65%) and wrongly retires 2 facts instead of 20.
+  A small model trained in 12 minutes catches 85% of life changes (from 65%),
+  wrongly retires 2 facts instead of 20, and lifts right answers to 67%
+  (perfect change detection would give 71%).
 - **Still early:** the small model is not in the app yet; on messy,
   non-Claude-written text its edge shrinks a lot (still ahead of the rules);
   and there is no head-to-head comparison with other memory systems yet.
@@ -76,12 +77,18 @@ replay of the same test set:
 | Rules + local 9B verifier | 73/112 (65%) | 20 |
 | **Small trained model** | **95/112 (85%)** | **2** |
 
+With the model's decisions in the memory, the first search result is right
+for **66.7%** of blind questions (rules 59.1%, rules + 9B verifier 62.6%,
+perfect change detection 70.8%; vs rules paired p = 0.007). Handing the 4%
+least certain decisions to the 9B would remove ~80% of its remaining errors.
+
 A second training run gave 92/112 with 2 wrong retirements. **On data not
 written by Claude the edge shrinks:** F1 0.51 on crowdworker-written facts
 (rules 0.26) and 0.24 on long, chatty LongMemEval messages (rules 0.09). The
 85% holds for short, clean facts. Adding restatements to the training data cut
 "same fact said differently" errors from 17% to 4% (blind set unchanged at
-94/112); changes buried in long messages still need fact extraction. Not yet measured: answer accuracy with the model in
+94/112), and splitting long messages into statements before comparing them
+raised changes caught in long chat turns from 6 to 33 of 72. Not yet measured: answer accuracy with the model in
 the loop, and CPU speed (~0.4 s per comparison).
 
 **Fewer tokens per chat:** sending only the most relevant facts instead of
