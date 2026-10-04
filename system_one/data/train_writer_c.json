@@ -1,0 +1,2934 @@
+[
+ {
+  "scenario": "ravi-pune-support-lead",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-03",
+    "text": "Can you suggest a stretching routine for my lower back? I'm an IT support analyst at a logistics company here in Pune and I sit about nine hours a day, so by evening my back is completely stiff. Nothing fancy please, I only have about ten minutes before dinner.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-10",
+    "text": "Quick question about my scooter. It's a Honda Activa and the ride to the office is around forty minutes each way through Baner traffic, so mileage matters to me. Is 45 km per litre normal for it, or should I be getting more? Also, what's a decent engine oil to use?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-24",
+    "text": "I'm trying to budget groceries better. I share a flat in Baner with two flatmates, so we split the basics like rice, oil and cleaning stuff, and I buy my own vegetables. Can you suggest a way to track shared expenses without making it awkward? We tried a notebook but it keeps getting lost.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-07",
+    "text": "Planning meals for the week. I've been vegetarian my whole life, so dal, paneer and soy chunks are my main protein sources, and I'd like some variety without becoming a full-time cook. Can you suggest a high-protein menu? About 90 grams a day is my target.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-21",
+    "text": "I finally joined a gym near my office and I go Monday, Wednesday and Friday straight after work. Can you build me a beginner full-body routine for those three days? Also, how long should I rest between sets? I always forget what I read.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-12",
+    "text": "Python question while I work through a free course on weekday evenings: what's the practical difference between a list and a tuple? I keep mixing them up and the course just moved on to dictionaries, which feels like a big jump. Could you give me a twenty-minute exercise to lock the basics in?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-03",
+    "text": "Good news, I got promoted last week and I'm now the team lead of our support desk, six people in total. It also means more meetings and a lot less time fixing laptops myself. Can you suggest how to run a fifteen-minute daily standup that doesn't drag? I've never led meetings before.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-24",
+    "text": "My lower back is acting up again after a long week. The forty-minute scooter ride each way isn't helping, and I still do the stretches you gave me every evening. Do you think I should see a physio, or can I keep managing with stretches alone?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s9",
+    "date": "2025-07-14",
+    "text": "Big news, I moved out of the shared flat last weekend and now live in a one-bedroom in Wakad on my own. It's quiet but I'm still figuring out utilities. Can you give me a checklist for setting up a first solo apartment, like internet, a gas cylinder and so on?",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-08-04",
+    "text": "Since the Wakad move the scooter ride had grown to over an hour, so three weeks ago I sold the Activa to my cousin and started taking the company shuttle from Hinjewadi. I can read on the way now. Any audiobook recommendations for a fifty-minute ride, preferably non-fiction?",
+    "replaces": [
+     "s2",
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-25",
+    "text": "Can you explain how to read a nutrition label properly? I'm comparing two protein bars where one says 20 g per serving and the other says 14 g per 40 g bar, and I can't tell which is really better value. A quick method I can reuse in the shop would be great.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-15",
+    "text": "I've had to change my gym days. Weekday sessions aren't realistic anymore with how my evenings go, and I only manage Saturday and Sunday mornings, an hour each. Can you restructure my routine into two longer full-body sessions? I don't want to lose my squat progress.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-10-06",
+    "text": "I'm off to a colleague's wedding in Jaipur next weekend and I'm a little worried about the food, since being vegetarian I usually end up with just rotis and sabzi at big events. Any tips for politely asking the caterers? Also, what should I wear in October heat?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     },
+     {
+      "to": "s9",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-11-03",
+    "text": "I left the logistics company at the end of October and started at a fintech startup this week as a support engineering manager, so no more company shuttle for me. The pay is better but I already miss my old team. Could you help me draft a 30-60-90 day plan for the new role?",
+    "replaces": [
+     "s7",
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-24",
+    "text": "The new office turns out to be a ten-minute walk from my Wakad flat, which still feels like a luxury after all those shuttle rides. I'm trying to use the saved time well. Could you suggest a short morning routine that fits in forty minutes, with some movement and no phone?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s9",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-12-15",
+    "text": "Can you recommend a beginner-friendly book on managing engineers? I keep reading blogs but I'd like something structured that I can finish in a couple of weeks, ideally under three hundred pages. I'm especially curious about giving feedback without sounding harsh.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-12",
+    "text": "I got engaged! Meera and I are planning to get married in April, and I'm trying to sort out a budget for it. Can you suggest a simple method for splitting costs between the two families and ourselves, so nobody feels awkward about money?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-02-02",
+    "text": "I skipped my Sunday gym session because of a festival visit to my parents. I'm still sticking to the weekend-only gym schedule, so I don't want to lose two sessions in a row. Can you suggest a quick bodyweight routine for twenty-five minutes at home?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-23",
+    "text": "My doctor says my LDL is high, so I've cut out cheese and most paneer, and I now eat eggs and a little fish twice a week, which is a huge shift after a lifetime of being vegetarian. Can you suggest easy ways to cook fish without the whole flat smelling for days?",
+    "replaces": [
+     "s4",
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-09",
+    "text": "Do you have a high-protein breakfast that takes under ten minutes? I'm bored of the same boiled eggs and I don't want to spend longer than ten minutes before leaving. Something with oats or lentils would be fine too, as long as it's filling.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-30",
+    "text": "We're trying to sort out our savings before the wedding. I put 20 percent of my salary into a monthly SIP in an index fund and I'm wondering whether to raise it now that my pay has gone up. Is there a rule of thumb for choosing the percentage, or does it just depend on goals?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-27",
+    "text": "We got married on the 19th and last weekend we moved into a bigger two-bedroom flat in Kharadi, since the Wakad place was too small for two. The catch is it's twenty-five minutes from the office, so I take a cab now instead of walking. Any ideas for arranging the small second bedroom as a study?",
+    "replaces": [
+     "s9",
+     "s15",
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-05-11",
+    "text": "Since the wedding costs came in under budget I've raised my SIP from 20 to 30 percent of my salary, set up last week. Meera thinks it's too aggressive. Can you help me stress-test that number against a six-month emergency fund and our rent?",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-30",
+    "text": "I also started playing badminton on Thursday evenings with a few colleagues, since Meera works night shifts at the hospital on those days and I'd otherwise be alone at home. Can you give me some shoulder warm-ups so I don't pull anything? My first game was a disaster.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "adds"
+     },
+     {
+      "to": "s14",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "amara-lagos-nurse",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-03",
+    "text": "Can you help me write a clear patient handout on managing mild hypertension? I'm a nurse at a private clinic in Victoria Island and my supervisor asked me to make something simple with big text for older patients. About 150 words, plain language, and a line or two about salt in meals like ogbono soup would be perfect.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-17",
+    "text": "Work has been exhausting lately, I do twelve-hour night shifts, usually four a week, and my sleep is a mess. Can you suggest a routine for sleeping properly in the daytime? Lagos noise and the neighbours' generators don't help, and my room gets really hot by ten in the morning.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-31",
+    "text": "My cat Biscuit has started scratching the sofa and my mother is not amused. She's two years old and I adopted her from a neighbour's litter. What can I do to redirect the scratching without anything cruel like declawing, which I would never do?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-14",
+    "text": "I still live with my mother in the family flat in Yaba and the noise is wearing me down, but rents in Lagos are crazy right now. Can you help me work out a realistic budget for moving out, assuming a one-bedroom costs around six hundred thousand naira a year?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-28",
+    "text": "I take the BRT bus to Victoria Island every day and it's about an hour each way if the traffic is bad. Are there any good nursing podcasts or audio courses I could listen to on the bus? I'd love something that counts towards continuing education.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-12",
+    "text": "My doctor put me on iron tablets, one every morning, for anaemia and I keep forgetting them. Any tips for remembering? And should I take them with orange juice? I've heard that tea and iron don't mix well, which is a problem because I love my evening tea.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-26",
+    "text": "My Infinix phone's screen cracked a month ago and the touch has become glitchy, which is a nightmare when I'm entering patient vitals into the clinic app. Is it worth repairing or should I upgrade? I can spend maybe 150,000 naira at most.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-09",
+    "text": "Can you explain the difference between type 1 and type 2 diabetes in simple terms I can use with patients? I always get tangled when they ask about insulin and diet. A short script of about five sentences would help, ideally with an everyday comparison.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-30",
+    "text": "I made a dress for my cousin's engagement from ankara fabric, my first time doing a proper lining. I've been sewing since I was fifteen and it's my favourite way to switch off after a hard week. Any tips for getting neat hems on curved edges?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-21",
+    "text": "Good news, I've been moved to day shifts starting this month, seven to seven, so I can finally sleep at night like a normal person. How should I reset my body clock after two years of nights? I'd like to be properly awake by my first morning on the ward.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-11",
+    "text": "Biscuit knocked over my mother's favourite plant again and now the cat is officially my responsibility, which is fair. Do scratching posts really need to be tall, or are cheap short ones fine? She's still young and full of energy at two and a half.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-01",
+    "text": "I replaced the cracked Infinix last week with a Samsung Galaxy A15 and the camera is a big upgrade for photographing fabric. Can you explain how to move my WhatsApp chats and work app logins safely? I'm nervous about losing patient reminders.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-22",
+    "text": "My follow-up bloods show my haemoglobin is back to normal, so the doctor told me to stop the iron tablets. I'm a bit scared I'll slip again though. Is there a food plan to keep my levels up using ugu, beans and liver without eating the same thing every day?",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-13",
+    "text": "Spent the weekend at my aunt's place in Ibadan, and coming back to Yaba and my mother's cooking felt like relief, though I'm still counting the months until I can afford my own place. Do you have a savings plan template for a flat deposit?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-03",
+    "text": "What are some good warm-up stretches for nurses who are on their feet all day? My calves are killing me by evening and I'd like something I can do in the locker room in five minutes. Are compression socks actually worth buying, or is that marketing?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-24",
+    "text": "I signed a lease! Last week I moved into a one-bedroom flat in Surulere, my first place on my own. The landlord says no pets, which I only read properly after signing, though my sister Ngozi says she could take Biscuit if he won't budge. Any advice on how to raise it politely?",
+    "replaces": [
+     "s4",
+     "s14"
+    ],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-15",
+    "text": "The landlord wouldn't budge, so Biscuit now lives with my sister Ngozi in Lekki. I visit on Sundays and it breaks my heart a little. Is it normal for a cat to act distant and sulky for a few days after I visit her?",
+    "replaces": [
+     "s3",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-12",
+    "text": "I've been asked to give a short talk on infection control to the new interns. Can you help me structure ten minutes covering hand hygiene, PPE and sharps disposal? I want it practical, not just slides full of rules nobody remembers.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-02",
+    "text": "I got the offer! I start this month at the Lagos University Teaching Hospital as a staff nurse, so no more long BRT rides to Victoria Island, it's a short bus ride from my flat now. I'm nervous about the bigger wards though. How should I prepare for my first month?",
+    "replaces": [
+     "s1",
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-23",
+    "text": "My doctor at the new hospital started me on vitamin D, one capsule a week, after routine bloods showed it was low. Does it matter whether I take it with food? Also, can I take it right after my evening tea, or should I wait a while?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-16",
+    "text": "I picked up crocheting during the long Harmattan evenings and I'm making a baby blanket for a colleague, while I still sew whenever I get a free weekend. Can you explain how to read a basic crochet pattern? The abbreviations like sc and dc are throwing me.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s9",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-30",
+    "text": "My Samsung's battery barely survives a shift now, probably because I use it for charting and the drug-dose calculator all day. Any settings to stretch it? I don't want to carry a power bank onto the ward.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-13",
+    "text": "I'm putting aside about eighty thousand naira each month for the UK nursing registration exams, hoping to work abroad one day. Can you break down what costs I should expect, like exam fees, visa and flights? I'd like a rough total so I can set a target.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-27",
+    "text": "Sadly the hospital has rotated me onto night duty, three nights a week, so the day-shift life lasted much less than I hoped. Could you help me build a sleep plan again? I'm dreading the first block, and the new flat has thin curtains.",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-11",
+    "text": "After three months at the teaching hospital my feet are in a sorry state. Can you recommend what kind of shoes nurses wear for twelve-hour shifts? The wards here are huge, and my phone says I walk at least six kilometres each shift.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-25",
+    "text": "I've decided against moving abroad, the exam fees plus the visa are just too much and I'd rather stay near my mum and my sister. I've stopped the monthly transfers and I'd like to put that money towards a proper sewing machine instead. Which features matter most for a beginner?",
+    "replaces": [
+     "s23"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "kenji-osaka-inspector",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-04",
+    "text": "Could you help me make a clearer checklist for visual inspection of small brass fittings? I'm a quality inspector at a metal parts factory in Higashiosaka and our current sheet is two pages of tiny text. Ideally I'd like one page, with photos of pass and fail examples in mind.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-18",
+    "text": "We live in a company-subsidised apartment block in Hirakata, third floor, no elevator, and my knees complain every time I carry the shopping up. Do you have tips for reducing the strain on my knees on stairs? I'm 48, so I suppose it's age creeping in.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-01",
+    "text": "The drive to the factory takes about twenty-five minutes in my Daihatsu Tanto, a kei car, and fuel prices lately are painful. What are the best ways to improve mileage without buying anything? I mostly do short trips and the engine rarely warms up fully.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-15",
+    "text": "My doctor put me on amlodipine for high blood pressure last year and I take one every morning with breakfast. Does it matter if I skip a day when I'm travelling? Also, are there any foods I should avoid, like grapefruit?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-29",
+    "text": "My son Haruto is in his second year at a university in Kyoto and still commutes from our place, but he's glued to his phone at night and his grades are slipping. Any advice on how to talk to a twenty-year-old without it turning into a fight? My wife Yoko says I'm too blunt.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-13",
+    "text": "On Sundays I usually go fishing for horse mackerel off the pier in Osaka Bay, leaving around five in the morning. Can you suggest an easy way to cook small fish when I bring home too many? Yoko is tired of frying everything.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-27",
+    "text": "Yoko works part-time at a supermarket three days a week and she's thinking of asking for more hours. How should she raise it with her manager without sounding like she's complaining about the current schedule? She hates confrontation, so a script would help.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-10",
+    "text": "My iPhone 8 only lasts half a day on a charge now, and the photos I take look terrible in low light. Is it worth replacing the battery, or is the phone too old to bother with? I'd rather not spend more than ten thousand yen on it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-24",
+    "text": "Can you explain the 50/30/20 budgeting rule and whether it works when overtime pay changes a lot from month to month? I'd like something I can set up in a spreadsheet in under an hour. No complicated apps please, I get lost in menus.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-15",
+    "text": "Big change at work: I've been moved from the inspection line to the production planning office, so I'm at a desk most of the day instead of on my feet. Can you suggest how to learn basic scheduling concepts quickly? I only know the shop floor side of things.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-05",
+    "text": "Haruto's end-of-term results came back decent, and Yoko and I are relieved. He still stays up late with his phone, but at least he's studying at the kitchen table most evenings now. How do I encourage him without hovering over his shoulder?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-26",
+    "text": "I switched blood pressure medicine to losartan because the amlodipine made my ankles swell, and the doctor said that's quite common. I take it once a day after breakfast. Is there anything about losartan and salty foods I should know, since Japanese cooking uses so much soy sauce?",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-16",
+    "text": "I traded in the Tanto for a used Toyota Aqua hybrid last Saturday, and the mileage is already unbelievable. The dealer said the hybrid battery warranty is five years. Any maintenance tips for a hybrid, since I've only ever driven simple kei cars?",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-07",
+    "text": "Sunday fishing off the pier is still the best part of my week, and lately the sea bream have been biting, so Yoko cooked one for the neighbours. Any ideas for preparing sea bream beyond grilling? Also, is there a good way to freeze whole fish without ruining the texture?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-28",
+    "text": "What's the difference between a regular savings account and a fixed-term deposit at Japanese banks right now? I'd like to understand the interest rates and the penalties for early withdrawal. Please keep it simple, I get lost in banking terminology.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-18",
+    "text": "Haruto moved into a share house in Kyoto with three university friends last week, so it's suddenly just Yoko and me at home with his empty room. He says the daily commute was wearing him out, and the house is quieter than I expected. Any ideas for what to do with the spare room, maybe a small reading corner?",
+    "replaces": [
+     "s5",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-09",
+    "text": "I finally bought a new iPhone 15 after the old one died completely on a train, and I'm lost with all the gestures. Can you walk me through transferring my photos and LINE chats from the old backup? I'd like to keep my chat history intact.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-06",
+    "text": "We moved out of the company apartment last weekend into the small secondhand house we bought in Neyagawa, and I'm already enjoying having no stairs to climb with the shopping. Can you suggest a sensible order for unpacking? Yoko wants the kitchen done first.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-27",
+    "text": "The Aqua's display shows 28 km per litre on my trip to the office, which my coworkers don't believe. Is that realistic, or is the display optimistic? I'd like to check it against real fill-ups for a month and compare the numbers.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-17",
+    "text": "Yoko took a full-time job as a receptionist at a dental clinic this month, so our evenings have changed a lot. Can you suggest a fair way to split the housework now that she's out of the house all day? I want to do my share without being told.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-10",
+    "text": "My lower back gave out at the pier and the doctor told me to stop standing for hours on piers. So I've given up the Sunday fishing and bought a road bike instead, riding along the Yodo river. Can you suggest a beginner cycling plan that won't aggravate my back?",
+    "replaces": [
+     "s6",
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-31",
+    "text": "Could you recommend a few simple stretching exercises for someone who sits for long hours? Being at a desk all day in the planning office, my shoulders and neck are very tight these days and I'm trying not to rely on painkillers. Ten minutes would be perfect.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-21",
+    "text": "My doctor added a statin on top of the losartan after my latest cholesterol numbers, so now I take both with breakfast. Is it fine to take them at the same time, or should I split them? Also, any foods that interact with statins besides grapefruit?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-12",
+    "text": "Yoko and I are planning a week in Hokkaido in October, flying from Kansai, and I'd like help with a rough itinerary. We love hot springs and seafood, but we're not keen on very long drives. Could you suggest an order for Sapporo, Otaru and Furano?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-26",
+    "text": "I rode forty kilometres along the Yodo river on Sunday and my back held up fine, which makes me happy. Do you think it's a good moment to add some hills, or should I keep building distance first? I don't want to overdo it after the back trouble.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s21",
+      "relation": "detail"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "maria-sevilla-retired-teacher",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-03",
+    "text": "Could you suggest some games I can play over a video call with my granddaughter Lucia? She's four and lives in Madrid with my son Javier, so I only see her in person every couple of months. She gets bored after ten minutes, so I need quick, simple ideas, nothing that needs props I don't have.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-17",
+    "text": "My right knee has osteoarthritis, the rheumatologist says, and stairs are the worst part. Are there exercises I can do at home that won't make it worse? I'm 62 and I really don't want to give up my daily walk by the river if I can help it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-31",
+    "text": "I live alone in my flat in Triana, third floor without a lift, since my husband Paco passed away three years ago. Can you give me ideas for making the place feel less quiet in the evenings? I keep the radio on, but it isn't the same as company.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-14",
+    "text": "My little dog Canela, a twelve-year-old mutt, has started refusing her dry food. Should I mix in some cooked chicken, or is that a bad idea? She's the reason I get out of the house twice a day, so I worry about her more than I'd admit.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-28",
+    "text": "I'm planning my weekly lunches and I always have a slice of jamon serrano with my bread and tomato, every single day, a habit from my mother's kitchen. Can you suggest some new Andalusian recipes using chickpeas and spinach? I'd like variety without losing that daily ham ritual.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-12",
+    "text": "I go to a watercolour class on Tuesday afternoons at the cultural centre and I'm struggling with skies, they always come out muddy. Any advice on wet-on-wet technique? The teacher says I overwork the paper, but I find it hard to stop fiddling.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-26",
+    "text": "My old Samsung tablet has become painfully slow, and my video calls with Lucia freeze every few minutes. Is there anything I can do to speed it up, like clearing the cache? I'd rather not spend money on a new one if I can avoid it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-09",
+    "text": "I'm trying to work out my monthly budget now that I'm retired from teaching. My pension is 1,450 euros a month and the electricity bill in summer is shocking. Can you show me a simple way to split it into fixed costs, food and a little fun money?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-23",
+    "text": "How can I tell whether an email supposedly from my bank is a scam? I got one yesterday saying my account would be blocked unless I clicked a link, and I nearly did. Is there a quick checklist I can print and stick next to the telephone?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-07",
+    "text": "My friend Pilar and I are going to Galicia for ten days next month, by train, and I'd love help with a packing list. I'll be walking a lot in A Coruna and Santiago, so comfortable shoes are the priority. Also, any must-eat dishes beyond pulpo?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-18",
+    "text": "Back from Galicia and it was wonderful, the pulpo in Santiago lived up to the hype and Pilar and I walked far more than I expected. I took hundreds of photos and I have no idea how to sort them. Can you suggest a simple way to organise them into albums, preferably something I can do without a computer?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-15",
+    "text": "I had my right knee replaced two weeks ago and I'm home now with a walker. The physio says I should do my exercises three times a day, and I keep forgetting the second set. Could you make me a simple daily schedule? Neighbours are bringing food, which is lovely but I feel useless.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-10-06",
+    "text": "Canela hasn't been walked properly since my surgery, so the neighbour's boy takes her around the block. She's thirteen now and she seems to be putting on weight. Is there an indoor game I can play with her while I can't walk far?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-27",
+    "text": "My son Javier gave me an iPad for my birthday and I'm a little scared of it. The video calls with Lucia are so smooth compared to my old tablet, but I keep closing apps by accident. Can you explain how to keep the camera on and the volume up without pressing the wrong things?",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-17",
+    "text": "Does Spanish public healthcare cover physiotherapy after a knee replacement, and for how many sessions? My surgeon's office gave me a leaflet, but it's full of abbreviations I don't understand. Can you explain what I should ask for at my health centre?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-12-08",
+    "text": "Wonderful news: Javier got a transfer, and he, his wife and Lucia moved to Sevilla last weekend, only twenty minutes from my flat. I'm over the moon! What are some good activities for a four-year-old and a grandmother who still can't walk very far?",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-05",
+    "text": "The watercolour class has moved to Thursday afternoons from this term, which suits me better because Tuesdays were always busy with physio. We're starting on portraits and I'm terrified of faces. Any tips for getting proportions right as a beginner?",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-26",
+    "text": "My cardiologist says my blood pressure is too high and told me to give up cured ham and cut the salt, which feels like losing a friend. I've stopped the daily jamon now. Can you suggest tasty low-salt sandwich fillings that still feel Andalusian?",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-16",
+    "text": "Climbing to the third floor with no lift is still hard even with the new knee, and last week I paused on every landing with the shopping. I'm not complaining, just tired of it. Any tricks for carrying groceries up stairs safely?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-09",
+    "text": "I adopted a kitten named Nube from the shelter, a tiny grey thing, and Canela is not impressed at all. How do I introduce them gently? Canela has been hiding under the table and the kitten keeps pouncing on her tail.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-30",
+    "text": "I sold the Triana flat and moved in with my sister Carmen, into her ground-floor flat in Nervion, because the stairs were too much and we get along better than I expected. Any advice on dividing space and chores without driving each other mad?",
+    "replaces": [
+     "s3",
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-13",
+    "text": "Lucia and her parents come for lunch every Sunday now, which makes the week feel shorter. She turns five in June, so I'd like to plan a small birthday with a few cousins and some painting. Can you suggest a simple schedule for a two-hour party at home?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-27",
+    "text": "Do you have a recipe for gazpacho that uses less salt but still tastes good? Carmen says mine is bland, and my cardiologist wants me under five grams of salt a day. I'd also love a few ideas for flavouring with herbs and lemon instead.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-11",
+    "text": "Good news from the pension office: my monthly payment went up to 1,530 euros after the yearly revaluation, and I can finally contribute to the household bills here without feeling guilty. Can you help me update my budget with the new figure?",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-18",
+    "text": "Canela passed away peacefully last week at thirteen, in her basket with me beside her. I knew it was coming but the house feels very empty. Can you suggest a gentle way to mark her memory, and how to help Nube, who keeps looking for her?",
+    "replaces": [
+     "s4",
+     "s13"
+    ],
+    "relations": [
+     {
+      "to": "s20",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-29",
+    "text": "Lucia has a baby brother! Mateo was born on Monday and Javier sent photos at dawn. I'd like to knit something small for him, and I haven't knitted since the nineties. Can you suggest a simple pattern and a wool that's gentle on newborn skin?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "adds"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "lars-malmo-backend-dev",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-05",
+    "text": "Can you help me write a clearer README for an internal payments service? I'm a backend developer at a fintech in Malmo, mostly Go and a bit of Rust, and our docs are a mess of outdated wiki pages. I'd like a structure that new joiners can follow in their first week.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-19",
+    "text": "We're in the office Monday to Wednesday and work from home on Thursdays and Fridays, which I like, but my focus on the office days is terrible because of the open plan. Any strategies for deep work in a noisy room? I already own noise-cancelling headphones.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-02",
+    "text": "I cycle to the office, about fifteen minutes along the canal, all year round, and last winter's ice almost put me down, so I'm thinking about studded tyres for next winter. Are they worth it in a flat city like Malmo, or is that overkill? My current tyres are slick commuter ones.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-16",
+    "text": "Elin and I live in a two-room apartment in Mollevangen and the kitchen has barely any counter space. Can you suggest some clever storage ideas that don't involve drilling, since our landlord is strict? We cook a lot, so the clutter really bothers us.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-30",
+    "text": "I've been vegan since 2022 and I'm hosting a dinner for six friends who are not, so I want something impressive but simple. Can you suggest a three-course menu that doesn't feel like a compromise? One of them keeps asking where I get my protein.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-14",
+    "text": "I boulder on Tuesday evenings and Saturday mornings at the climbing gym near the harbour, and I've been stuck at the same V4 grade for months. Any ideas for breaking a plateau? Someone told me to focus on footwork rather than pulling harder.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-28",
+    "text": "My personal MacBook Air with the M1 chip is still going strong, but the storage is nearly full with photos from climbing trips. What's the safest way to offload them, an external SSD or cloud storage? I'd rather not pay a subscription forever.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-11",
+    "text": "Can you explain how Go channels differ from mutexes, and when you'd pick one over the other? I keep writing code with too many goroutines that block each other. A small example comparing both approaches would help me explain it to a junior colleague.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-25",
+    "text": "Our company has cut the office days to just Wednesdays, starting this week, so I'll be at home four days out of five. I'm excited but a bit worried about isolation. Can you suggest a good structure for a home workday, with breaks and a hard stop at five?",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-09",
+    "text": "My bike chain keeps skipping after all the rain lately. Do I need a new chain and cassette, or can a proper clean and lube fix it? It's a steel-frame commuter, nothing fancy, and I do the fifteen-minute ride to the office every Wednesday.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     },
+     {
+      "to": "s9",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-30",
+    "text": "Big change: I resigned from the fintech and joined a climate-data startup as a senior engineer, fully remote, so I haven't touched the bike commute or the office since I started. The team is scattered across Europe. Can you suggest how to build trust with colleagues I've only met over video?",
+    "replaces": [
+     "s1",
+     "s3",
+     "s9",
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-20",
+    "text": "At a colleague's barbecue everyone assumed vegan meant salad, and I ended up eating grilled corn and hummus again. Can you give me a few polite lines for asking hosts about options before I arrive? It's getting tiring after three years as a vegan.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-10",
+    "text": "I strained a finger pulley at the gym and my physio says no bouldering for at least six months. I'm gutted. I've started swimming three mornings a week instead and want a basic plan. Which strokes will be gentlest on a healing finger?",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-01",
+    "text": "How often should vegans get their B12 checked, and are weekly supplements as effective as daily ones? I read conflicting advice online and doctor's appointments are hard to get. Please keep it short, I'll discuss it with my GP anyway.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-22",
+    "text": "I treated myself to a new MacBook Pro with the M4 chip after the old Air's battery began swelling, and the speed difference is silly. Can you help me set up Time Machine and a sensible folder structure from scratch? I'd like to keep my work and personal files separate.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-12",
+    "text": "I also bought a second-hand iPad Pro for sketching and note-taking, so now I use it alongside the laptop for meetings. Can you recommend an app for handwritten notes that syncs to the laptop? Searchable handwriting would be a bonus.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-03",
+    "text": "Elin and I bought a terraced house in Lund and we moved in over the weekend, so we've left Mollevangen after four years. Can you suggest a sensible order for sorting out utilities and change of address in Sweden? I never remember which authority needs notifying first.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-14",
+    "text": "We adopted a retired racing greyhound named Gunnar from a rescue and he is tall, gentle and terrified of stairs. Can you suggest how to teach him to climb them? He freezes at the bottom and refuses treats completely.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-04",
+    "text": "I've gone back to eating dairy and eggs, so I'm basically vegetarian now, because my iron levels were low and the supplements weren't enough. Can you suggest a week of high-iron meals that include some cheese and eggs? I don't want to lose my vegan habits entirely.",
+    "replaces": [
+     "s5",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-25",
+    "text": "My sourdough starter has gone sluggish after the move and smells like nail polish remover. Is it dead, or just hungry? I'd like to rescue it rather than start over, and I keep it on the counter with a loose lid.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-18",
+    "text": "My swimming is finally improving, I did 1,500 metres without stopping this morning and nothing hurt in the finger. Should I add drills or just keep building distance? I swim three mornings a week and don't want to burn out.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-08",
+    "text": "Sad news, the climate startup ran out of money and shut down in March, so I'm freelancing as a backend consultant now. Can you help me work out a day rate that covers taxes, pension and unpaid holidays? I'm in Sweden and registered a sole proprietorship last week.",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-29",
+    "text": "Gunnar finally climbed the stairs by himself last night and I nearly cried. He still sleeps most of the day, which is apparently normal for greyhounds. How much exercise does a retired racer actually need? I'm walking him twice a day.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-13",
+    "text": "Elin and I split up in April, and I've moved into a one-bedroom flat in Limhamn with Gunnar, while she kept the house in Lund. It's a lot to take in. Can you help me draw up a simple list of practical things to sort out, like the mortgage and shared accounts?",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "fatima-casablanca-student",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-04",
+    "text": "Can you help me understand pointers in C? I'm in the first year of computer science at a university in Casablanca and our professor went through them in twenty minutes yesterday, so everyone looked lost. A simple analogy would help, and maybe a tiny example I can run.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-18",
+    "text": "I live with my parents in the Maarif district and my little brother keeps taking over the only decent desk in the flat. Do you have tips for creating a quiet study corner in a crowded apartment? I can't really afford a separate desk right now.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-01",
+    "text": "I take the tram to campus every morning and it takes about thirty-five minutes, so I try to use the time to revise flashcards. Can you suggest an app or method for spaced repetition that works offline? The signal drops between stops.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-15",
+    "text": "My dad gives me an allowance of 1,500 dirhams a month for transport, lunch and books, and by the third week I'm usually broke. Can you suggest a realistic way to budget it without feeling like I can never do anything fun?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-29",
+    "text": "I tutor two kids in maths on Saturdays for 80 dirhams an hour and one of them is very distracted. How can I keep a nine-year-old focused for an hour without sweets as a bribe? I only started a few weeks ago and I don't want to lose them.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-13",
+    "text": "My Dell Inspiron has 8 GB of RAM and it freezes whenever I open the IDE and a browser together. Is there any way to make it usable for coding without buying a new one? A new laptop would eat my whole savings for the year.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-27",
+    "text": "I play football with a women's team in the neighbourhood every Sunday, and we have a friendly match coming up against a team from Rabat. Can you give me a good pre-match warm-up routine? I always feel stiff in the first twenty minutes.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-10",
+    "text": "I drink about three coffees a day, mostly during revision, and lately my heart races at night. Is that normal for a student, or am I overdoing it? Please don't just say drink less, tell me how to taper without getting headaches.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-24",
+    "text": "What's recursion in simple terms, and why do my functions keep crashing with a stack overflow? I'm trying to write a factorial function and I think I'm missing something about the base case. Could you walk through an example step by step?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-08",
+    "text": "I stopped tutoring after the family moved to Rabat, and now I do freelance Arabic-French translation for a small agency, paid per page. Can you suggest how to price my work fairly? They offered 40 dirhams a page and I'm not sure if that's low.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-29",
+    "text": "My third coffee of the day again, while finishing an assignment due tonight, and I know I should cut back. I really like the ritual of it, especially with a little cardamom. Can you suggest a switch to something less caffeinated that still feels like a treat?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-19",
+    "text": "I bought a refurbished ThinkPad with 16 GB of RAM from a shop in Derb Ghallef, and it's so much faster that coding feels fun again. Can you help me set up a clean Python environment and a decent editor? I'd also like automatic backups of my important files.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-09",
+    "text": "I got accepted into the data science track for my second year, so I've left the general computer science stream. The first lectures are heavy on statistics and I'm nervous. Can you recommend a gentle way to relearn probability from scratch?",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-23",
+    "text": "The tram was delayed forty minutes today and I missed a quiz, which was infuriating. After all those mornings of thirty-five minutes each way, I'm sick of it. Can you help me write a polite email to the lecturer asking whether I can retake it?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-07",
+    "text": "How does groupby work in pandas, and when do I need agg instead of just sum or mean? Our first practical is next week and I keep getting confusing multi-level columns. A small example with fake student grades would be perfect.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-10-28",
+    "text": "I moved into a shared flat with two classmates, Salma and Imane, ten minutes on foot from campus, so no more parents' flat and no more tram. It's much quieter, but I have no idea how to split bills fairly. Can you suggest a simple system?",
+    "replaces": [
+     "s2",
+     "s3",
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-11-18",
+    "text": "My father now pays my share of the rent directly, 1,200 dirhams a month, so there's no cash allowance anymore. I only have my own earnings for food and books. Can you help me build a monthly budget around that? I'm worried about the months when work is slow.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-12-09",
+    "text": "I tore a ligament in my knee during a match and the doctor said no football for a year, which is crushing. I've started swimming three times a week to stay in shape. Can you suggest a beginner plan that's safe for a healing knee?",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-06",
+    "text": "Which swimming stroke is best for building endurance when you can't kick hard? My physio says to avoid breaststroke kick for now, since the knee is still healing. I'd like to know whether to use a pull buoy, and how long each session should be.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-01-27",
+    "text": "My doctor says the palpitations are down to caffeine, so I'm down to one coffee a day, in the morning, and I'm drinking mint tea otherwise. The headaches lasted a week. Can you suggest a mid-afternoon routine that stops me falling asleep over my notes?",
+    "replaces": [
+     "s8",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-02-17",
+    "text": "I also tutor on Saturdays again, one hour for a neighbour's daughter, who is about to sit her first big maths exam. Can you suggest some fun ways to teach fractions to an eight-year-old who says she hates maths? She loves drawing, if that helps.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-10",
+    "text": "Our statistics professor assigns a lot of problems, and being in the data science track also means a lot of Python homework. Can you suggest a study timetable that fits around my part-time work? I'm going to be busy for the rest of the term.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-31",
+    "text": "My older sister Hajar is studying medicine in Rabat and her schedule is brutal, so we barely see each other. Can you suggest a good way to stay close despite our schedules? A weekly call feels forced, but texting isn't enough.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-21",
+    "text": "Salma and I are going to Marrakech for a weekend in May, by train, and we'd like an itinerary that fits a small budget. Where can students eat well for under 40 dirhams? We'd like at least one rooftop sunset and the Majorelle garden if it's affordable.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-12",
+    "text": "I landed an internship in a bank's data team three days a week, so the translation work has had to go. I told the agency last week. How should I prepare for my first day, and what do analysts usually wear? I want to look prepared, not stiff.",
+    "replaces": [
+     "s10"
+    ],
+    "relations": [
+     {
+      "to": "s21",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-26",
+    "text": "How do I write a good thesis statement for a short report on public transport data in Casablanca? I'd like to compare tram and bus ridership using open data, but I'm not sure how to phrase a clear question. A couple of example sentences would help.",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "jake-austin-barista",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-06",
+    "text": "Can you help me come up with a cheaper latte art practice routine? I'm a barista at a coffee shop in East Austin and I'm trying to nail rosettas, but the milk gets wasted so fast. I'd love ideas for practising without burning through ten gallons a week.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-20",
+    "text": "My beagle mix Waffles has started howling whenever I leave for work, and the neighbours have noticed. What can I do to ease the separation anxiety? I'm out from six-thirty until after three, so she's alone a good while, and she has already chewed a shoe.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-03",
+    "text": "My 2011 Honda Civic is making a squealing noise when I brake and I'm trying to decide whether to fix it or save for something newer. Can you give me a rough idea of what a brake job costs in Texas? I don't want to get ripped off at a chain shop.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-17",
+    "text": "I rent a house in East Austin with two roommates, Marcus and Tyler, and the electric bill went crazy this summer. How should we split utilities fairly when one person is home all day? Marcus is, and he leaves the AC at 68.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-01",
+    "text": "I'm paying down about twelve thousand dollars of student loans at three hundred a month, and I keep wondering if I should throw extra at it or save for emergencies. What's a sensible split? I get paid every two weeks and tips are unpredictable.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-15",
+    "text": "I've been seeing someone named Dani for a few months now and I want to plan something nice for our six-month anniversary that doesn't cost a fortune. She loves live music and tacos, if that helps. Any ideas for a fun low-budget evening in Austin?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-29",
+    "text": "I'm allergic to tree nuts, and with almond and cashew in everything on menus these days, eating out is stressful. How do I ask about cross-contamination without sounding rude? I carry an EpiPen, but I'd rather never need it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-12",
+    "text": "I play bass in a covers band and we rehearse on Thursday nights in a garage out in Pflugerville. My fingers get sore on long sets. Can you suggest a warm-up and stretching routine for bass players? We have a gig at a brewery coming up on Saturday.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-26",
+    "text": "What's the difference between a Roth IRA and a traditional IRA for someone in their twenties? I keep hearing I should start early, but every article I read uses different jargon. A plain explanation of when each one makes sense would help me decide.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-17",
+    "text": "I got promoted to shift lead, which means a small raise and the dreaded opening shifts three days a week. Can you suggest a good way to handle the early alarm without feeling dead by noon? I'm not a morning person at all.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-07",
+    "text": "The Civic's brakes finally got fixed for 340 dollars, but now the check engine light is on. Is it likely related, or just a coincidence? It's got about 130,000 miles on it and I'd like to keep it running for another two years.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-28",
+    "text": "A truck rear-ended my Civic at a red light on Monday and the insurance company is calling it totaled. I'm fine, just sore, and I'm in a rental for now. They're offering 5,200 dollars, which feels low for a car that just had new brakes. How do I negotiate the payout?",
+    "replaces": [
+     "s3",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-18",
+    "text": "Dani and I are flying to Colorado for a week in November and staying in a cabin near Breckenridge, so I need a packing list. I've never been somewhere that cold. Do I need proper snow boots, or will my regular sneakers survive?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-09",
+    "text": "At a wedding last weekend the salad had candied pecans and I almost ate it before asking. I'm fine, but it was a close call with my tree nut allergy. Can you give me a short, polite script for quizzing caterers and hosts? I never know how far to push.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-30",
+    "text": "I bought a used 2016 Toyota Tacoma for 17,500 dollars, financed through my credit union, and I'm thrilled and terrified of the payment. Can you help me work out a budget that covers the loan and insurance? The quote came in at 160 a month.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-20",
+    "text": "I adopted a grey cat from the Austin shelter, named Miso, and Waffles is curious while Miso is horrified. How do I help them bond? I've put up a baby gate so the cat can retreat upstairs, and I'm feeding them in separate rooms.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-11",
+    "text": "Dani and I signed a lease on a one-bedroom in Mueller and moved in last weekend, so Marcus and Tyler are finding a new roommate. It's a big step with my girlfriend, and we're already arguing about the thermostat. Can you suggest a fair way to split chores and bills?",
+    "replaces": [
+     "s4"
+    ],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-08",
+    "text": "I made my last student loan payment yesterday! It took longer than I planned, but it's finally gone. I'd like to celebrate without blowing the money I'm freeing up. Can you suggest a sensible way to use the extra three hundred dollars a month?",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-22",
+    "text": "How should I split about three hundred dollars a month between an index fund and a high-yield savings account now that the loan payments are gone? I'd like a simple rule I can set and forget, rather than constantly tinkering with it.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-12",
+    "text": "After five years of coffee I'm leaving the shop to start as a junior web developer at a small startup, after finishing a bootcamp in the evenings. I'm excited and scared about the pay cut at first. Can you suggest how to prepare for my first week?",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-05",
+    "text": "First week as a developer done, and my brain is soup. My teammate says I should write down everything I don't understand, but the list is already two pages. Is it normal to feel this lost, and how do I prioritise what to ask?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s20",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-26",
+    "text": "The band broke up after our drummer moved to Denver, so no more Thursday rehearsals. I'm a bit sad, but I've decided to use the evenings for coding practice. Can you suggest a daily routine of about ninety minutes that builds real skills without burning me out?",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-09",
+    "text": "Dani and I split up last month, and I moved into a small studio in Hyde Park with Waffles and Miso. It's rough, but the dog likes the park. Can you help me sort out the practical stuff, like transferring utilities and getting my deposit back from the Mueller place?",
+    "replaces": [
+     "s6",
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-23",
+    "text": "My brother Cole just bought a Tacoma too, a 2019, and now we're comparing fuel numbers like old men. Is it normal for a truck like that to average only 19 miles per gallon in the city? He's convinced his is faulty and wants to take it to the dealer.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-07",
+    "text": "I sold the Tacoma to a guy from Round Rock and I'm going car-free, using an e-bike for the commute plus the bus when it rains. The truck payment was eating my budget. Can you help me pick a decent commuter e-bike under 1,500 dollars and a lock that won't get cut?",
+    "replaces": [
+     "s15"
+    ],
+    "relations": [
+     {
+      "to": "s24",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-21",
+    "text": "How do I center a div both vertically and horizontally without using hacks? I keep finding five different answers on forums and I never know which one is current. A short example with flexbox and one with grid would be great.",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "chloe-melbourne-designer",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-10",
+    "text": "Can you help me write a polite but firm email to a client who keeps asking for just one more logo revision? I'm a freelance graphic designer working from a spare room at home, and this project is already three rounds over what we agreed. I'd like to protect my time without losing the relationship.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-24",
+    "text": "My husband Ben is a paramedic on rotating shifts, so I never know whether he'll be home for dinner. Can you suggest meal-prep ideas that reheat well and don't taste like leftovers? He often comes in at two in the morning ravenous, and I'd rather he not just eat toast.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-07",
+    "text": "Our son Oscar is in grade one and the reading levels at his school seem to be racing ahead. He's six and gets frustrated with longer words. Do you have any games that build reading confidence without feeling like homework?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-21",
+    "text": "Ivy is three and goes to family daycare three days a week, and drop-offs have become a battle. She clings to my leg and screams. How can I make the goodbye shorter without feeling like a monster?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-05",
+    "text": "We rent a townhouse in Brunswick and the lease is up for renewal in a few months. The landlord hinted at a rent increase of around ten percent. Can you help me draft a message to negotiate it? We've been good tenants for three years.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-19",
+    "text": "We've got about 45,000 dollars saved towards a house deposit, and I'm trying to decide whether to keep it in a high-interest savings account or an offset account. Can you explain the difference in simple terms? We don't plan to buy for at least another year.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-02",
+    "text": "I run on Tuesday and Thursday mornings along the Merri Creek trail before the kids wake up, and my pace has stalled. Any ideas for breaking through? I'm thirty-eight and I'd like a sub-thirty five-k by spring.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-16",
+    "text": "Our cat Pickles has started peeing outside the litter tray and the vet found nothing wrong. Could it be stress from the new routines? What can I try, besides yelling at the cat, which doesn't help?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-30",
+    "text": "We only have one car, a ten-year-old Mazda 3, and juggling pickups and drop-offs with it is a nightmare. Can you suggest a sensible way to organise the week so nobody is stranded? I'm tempted to just buy a second one, but the budget says no.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-14",
+    "text": "What's a good way to teach a child to tie their shoelaces? I tried the bunny ears method and it was a disaster, with tears from both of us. Any tricks that actually work for someone who gets frustrated quickly?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-28",
+    "text": "Ivy started kinder this term, five mornings a week, and she skipped in on the first day, which surprised me after all the daycare drama. Now I have quiet mornings again. Any advice on structuring them so I'm not just scrolling email until pickup?",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-18",
+    "text": "Oscar's reading is coming along, he finished his first chapter book this week, and he's very proud. He's still in grade one, but the teacher says he's reading at a grade-two level. What books should I get him next, ideally with short chapters?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-08",
+    "text": "Ben has moved to a day job as an ambulance dispatcher, so he's home every night and the rotating shifts are history. We're all adjusting. Can you help us come up with a new weekly routine so he takes over bedtime two nights a week?",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-29",
+    "text": "My knee has been aching since winter, and the physio said to swap running for something low impact, so I've started swimming twice a week at the Fitzroy pool. Can you give me a beginner swim set that builds endurance? I can't kick much yet.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-16",
+    "text": "We just found out we're expecting our third, due in May, and we're over the moon and terrified. Can you suggest how to tell Oscar and Ivy in a way they'll understand? Ivy keeps asking where babies come from.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-03",
+    "text": "What foods are actually unsafe in pregnancy, and which warnings are myths? I got conflicting advice from the pharmacist and my mother-in-law. A simple list I can stick on the fridge would be perfect.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-02-05",
+    "text": "Oscar started grade two this term and he already has homework every night, which seems a lot. Can you suggest a gentle homework routine that doesn't turn evenings into a battle? We have about forty minutes between dinner and bath time.",
+    "replaces": [
+     "s3",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-02-19",
+    "text": "Spent the whole day designing packaging for a new tea brand, which is a dream project, and the client is lovely. I forgot about lunch until three. Is there a good way to batch my invoices so I'm not chasing payments every month?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-03-05",
+    "text": "Ben and I are escaping to Daylesford for a weekend while his mum has the kids, and I'd love some restaurant and spa ideas. We haven't been away alone in two years. Any tips for switching off from the kids for a couple of days?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-19",
+    "text": "We bought a house in Coburg and settlement was last week, which means the deposit has gone and I now own a lawnmower. Can you help me make a list of first-month jobs in a new house, like changing locks and taking meter readings? I'm trying not to forget anything.",
+    "replaces": [
+     "s5",
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-04-02",
+    "text": "I closed my freelance business last month and joined a branding agency as a salaried senior designer, three days a week at their Collingwood studio. It's strange having a boss again. Can you suggest how to negotiate a four-day week once I've settled in?",
+    "replaces": [
+     "s1",
+     "s18"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-16",
+    "text": "Pickles has taken over the boxes in the hallway and refuses to use anything but the cardboard. She's also stopped the litter tray accidents since the move, which is a relief. Can I reuse the packing paper for her, or is that a bad idea? She's very particular.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-30",
+    "text": "We bought a second-hand Kia Carnival last weekend, so we finally have two cars and no more pickup gymnastics. I'm already hearing a rattle from the back doors. Can you tell me what to check before the dealer warranty ends in a month?",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-07",
+    "text": "How do I get a damp smell out of an old wooden cupboard? I tried leaving baking soda in it overnight and it didn't help at all. I'd rather avoid anything with a strong chemical smell, since it holds our towels.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-14",
+    "text": "Our daughter Matilda was born on Monday, healthy and loud, after a very quick labour. Oscar and Ivy are smitten, though Ivy keeps trying to feed her toast. Can you suggest a gentle way to keep the older two involved without letting them wake her? We're exhausted.",
+    "replaces": [
+     "s15",
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-28",
+    "text": "My sister Hannah has just gone freelance as a photographer and she's asking me for advice on pricing. I'm happy to help, but I've never priced photography. Can you give me a simple framework I can pass on? She charges by the hour and always undercharges.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s21",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-05-31",
+    "text": "What are some good screen-free activities for a rainy school holiday afternoon? The kids get restless after an hour indoors, and I'd like a short list of things that use stuff we already have around, like cardboard, paper and tape. Nothing that needs a trip to the shops.",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "tomasz-krakow-forklift",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-12",
+    "text": "Can you help me write a short, polite message to my shift supervisor asking for a day off for a family wedding? I'm a forklift operator at a distribution warehouse near Krakow and holidays need to be requested two weeks ahead. I'd like it to sound respectful without too much explaining.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-26",
+    "text": "I start at six in the morning on the early shift, which ends at two, and my body clock is wrecked on Sundays. Any advice on getting up at four-thirty without feeling like a zombie? I'm 55 and the coffee isn't working like it used to.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-09",
+    "text": "I take the bus to the warehouse, about twenty-two minutes, and the six-ten is always crowded and late. Is there any app that gives reliable real-time departures for Krakow buses? Nothing too heavy please, I'm not good with technology.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-23",
+    "text": "My wife Halina and I live in a flat in Nowa Huta, fourth floor, with a lift that breaks down every other month. Can you suggest a polite way to push our housing cooperative to fix it properly? We've complained twice already.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-07",
+    "text": "I take metformin twice a day for type 2 diabetes and my stomach is upset every time I forget to eat with it. Is it better to take it with breakfast or dinner? I'd like to keep my sugar steady even when my days are irregular.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-21",
+    "text": "I have an allotment garden and my tomatoes got blight again, all the leaves are brown. Is there anything I can do now, or should I pull everything up? I grow them for Halina's soups and I hate wasting a season.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-04",
+    "text": "Our daughter Kasia lives in Dublin and works in a hospital pharmacy, and she is planning to visit us at Christmas with her little boy. What are some good Polish Christmas dishes a toddler can eat? He's not keen on fish, and Halina insists on carp.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-18",
+    "text": "My phone is an old Nokia with buttons, and my daughter keeps nagging me to get a smartphone. Do you think it's worth it at my age? I just want calls, texts and maybe a few photos, nothing complicated.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-07-02",
+    "text": "Can you explain how to read the numbers on a blood glucose test, and what a normal range is before and after meals? The leaflet that came with the meter is confusing. A simple table would help me a lot.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-23",
+    "text": "The bus was cancelled again and I walked the last two kilometres in the rain. Twenty-two minutes by bus is fine when it comes, but it never does. Can you suggest a decent waterproof jacket for under 300 zloty? I'd also like a hood that doesn't blow off.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-13",
+    "text": "Our schedule has changed and I'm on the afternoon shift now, two to ten at night, so I'm finally sleeping in. The downside is catching the last bus home. Can you suggest how to eat dinner properly when I finish at ten without a heavy meal right before bed?",
+    "replaces": [
+     "s2"
+    ],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     },
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-03",
+    "text": "The tomatoes survived, barely, and I've been harvesting a bucket every few days. Halina is making passata and the whole kitchen smells of basil. Do you know how long homemade passata keeps if I sterilise the jars properly?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-24",
+    "text": "The doctor replaced my metformin with empagliflozin, one tablet in the morning, because my kidney numbers weren't great. I read that it can cause infections down there and now I'm worried. Is that true, and what should I look out for?",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-15",
+    "text": "Kasia called last night from Dublin, the baby just started walking, and I teared up on the phone. She says rents there are brutal and they may not stay long. What can I send them from Poland that's easy to post? Halina wants to include homemade pierogi.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-05",
+    "text": "Can you explain the difference between best before and use by dates on food packaging? Halina and I argue about it constantly, she throws things away the day after and I'd happily eat a yoghurt a week past. Is there a sensible rule of thumb for dairy?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-26",
+    "text": "Kasia sent me a second-hand Samsung smartphone and I'm learning WhatsApp video, which is magical but confusing. Can you walk me through how to make a video call with the camera showing my face and not the ceiling? My hands shake a bit.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-17",
+    "text": "Kasia and her family have moved back from Dublin and found a flat in Podgorze, so we'll see them every weekend. I can hardly believe it. What kind of toy or small gift would be good for a one-year-old grandson who's just walking?",
+    "replaces": [
+     "s7",
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-14",
+    "text": "Halina and I are going to Zakopane for a long weekend in the spring, a little guesthouse near the lower cable car. Can you suggest an easy trail for people who aren't hiking-fit? Her knees aren't good and my back isn't much better.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-04",
+    "text": "My doctor also started me on a pill for blood pressure, in addition to the diabetes medicine, so now I take two things in the morning. Can I take them together, or should I space them out? I keep them in a little box with the days of the week.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-25",
+    "text": "The company offered a voluntary severance package and I took it, so I retired last month and my forklift days are over. I don't ride the bus every day anymore, and the shifts are history too. Can you suggest a structure for my weekdays so I don't just sit in front of the television? Halina says I'm underfoot.",
+    "replaces": [
+     "s1",
+     "s3",
+     "s10",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-18",
+    "text": "I gave up the allotment lease to a neighbour, my back can't take the digging anymore, and it was strange handing over the key to the shed. I'll miss the tomatoes. Can you suggest a gentle hobby for a retired man with a bad back and not much money?",
+    "replaces": [
+     "s6",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-08",
+    "text": "I'm getting better with the smartphone from Kasia, I sent my first voice message to Marek yesterday without help. How do I stop the phone from autocorrecting Polish words into nonsense? It changes my brother's name every time.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-22",
+    "text": "Halina and I moved to a ground-floor flat in Bronowice last weekend, so the broken lift is finally someone else's problem. It's about ten minutes from Kasia's. Can you help me with the paperwork for changing our address, like the pension office and the health clinic?",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-06",
+    "text": "My brother Marek was diagnosed with type 2 diabetes too, and he's scared of needles and tablets alike. Can you suggest how I can encourage him to follow the doctor's plan without sounding like a nag? He listens to me about as much as I listen to Halina.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-20",
+    "text": "What's a good daily walking routine for a man my age who wants to stay fit but has a sore lower back? I'd like to build up from fifteen minutes a day, maybe along the Vistula. Are walking poles worth trying, or are they just for mountains?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-27",
+    "text": "I've lost 14 kilos since retiring and my doctor took me off the diabetes tablet, so now it's just diet and the blood pressure pill. I'm a bit nervous about stopping. Can you suggest a sensible schedule for checking my sugar at home, and which numbers should worry me?",
+    "replaces": [
+     "s13"
+    ],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "detail"
+     },
+     {
+      "to": "s24",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "sofia-saopaulo-psychology",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-07",
+    "text": "Can you help me structure a literature review on adolescent anxiety? I'm in the final year of my psychology degree at a university in Sao Paulo and my advisor wants a first outline by Friday. I have around thirty articles but no idea how to group them.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-21",
+    "text": "I do an unpaid internship two mornings a week at a community mental health clinic, and I'm supposed to shadow sessions and write notes. How do I write clear, professional session notes without including too much detail? My supervisor says mine are either too short or too long.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-04",
+    "text": "I've been vegetarian since I was sixteen, and my family still tries to sneak chicken stock into the feijoada. Can you suggest a good vegetarian feijoada recipe that tastes like the real thing? They'd never admit it if it was better.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-18",
+    "text": "I'm allergic to shellfish, and at a friend's birthday the moqueca was cooked in the same pan as shrimp. I got hives on my arms. What should I say to hosts, and how do I know when a reaction needs the emergency room?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-02",
+    "text": "I live with my grandmother in Pinheiros, and she's lovely but she waits up for me and worries whenever I'm out late. How do I talk to her about my independence without hurting her feelings? She's eighty-one.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-16",
+    "text": "My iPhone 11 battery is almost dead by lunchtime, and I need it for audio notes of my lectures. Is it better to replace the battery or buy a new phone? I'm on a student budget, and Apple's quote seemed high.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-30",
+    "text": "I take Metro line 4 and then a bus to campus, and I read papers on the way, but the carriages are packed and I can't open a PDF. Can you suggest an app that lets me listen to articles offline? Something that handles academic papers.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-13",
+    "text": "I train Brazilian jiu-jitsu three evenings a week and I have a belt test coming up. My guard retention is weak and my coach says I give up my back too easily. Any tips for drilling these on my own, without a partner?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-27",
+    "text": "I get a scholarship of eight hundred reais a month, and I'm trying to make it last. Can you help me design a budget that includes transport, lunch on campus and small treats? I'm tempted to buy a new pair of trainers.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-11",
+    "text": "What is the correct way to format APA 7 citations for a journal article with more than twenty authors? My advisor insists on exact formatting and I always lose points on the reference list. A short template I can reuse would help.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-25",
+    "text": "I finished the clinic internship last week and was hired as a part-time psychology assistant at a private school, three afternoons a week. It's a bit scary to have my own students. How should I prepare for my first meeting with parents?",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-15",
+    "text": "My cousin's wedding is coming up and the buffet will be all churrasco, and being vegetarian I'll probably end up with rice and salad again. How do I ask the caterers politely for something else without making a scene? Ideas for a dress too?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-05",
+    "text": "I replaced my old iPhone with a Samsung Galaxy S23 from a refurbished shop, and the battery lasts all day. Can you help me move my voice memos and notes across? I'm scared of losing the recordings from my lectures.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-26",
+    "text": "Line 4 was stuck for forty minutes this morning and I was late for my seminar. Honestly, the metro and then the bus is a lot every day. Can you help me write a short apology to my professor that doesn't sound like an excuse?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-17",
+    "text": "I graduated last week and I got into a master's in clinical psychology at a federal university in Rio, starting in February. I'm thrilled and very nervous. Can you help me write a short thank-you note to my advisor? She wrote my recommendation letter.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-07",
+    "text": "How do I choose between a thesis-based master's and a professional one? I got into the thesis track but I'm afraid I'd rather be practising than writing. A pros and cons comparison would help me think it through.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-11-28",
+    "text": "My grandmother cooked a fish stew for the family on Sunday and I asked her three times whether there was any shrimp stock in it. She got offended, but I can't take chances with my shellfish allergy. How do I explain it to her gently?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-16",
+    "text": "I moved to Rio last week into a flat in Botafogo with two other master's students, so I no longer live with my grandmother and I've stopped taking the metro and bus to campus in Sao Paulo. I also had to quit the school job. Can you give me a checklist for settling into a new city? I don't know a soul here.",
+    "replaces": [
+     "s5",
+     "s7",
+     "s11",
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-06",
+    "text": "Since moving in with Bia and Luca I've gone vegan, because they cook vegan and I got curious about it. Can you suggest vegan sources of B12 and iron for someone on a student budget? I still miss cheese, so please don't judge.",
+    "replaces": [
+     "s3",
+     "s12"
+    ],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-27",
+    "text": "My master's funding came through: the CAPES scholarship pays 2,100 reais a month, which is almost triple what I had. Can you help me work out a new budget with Rio rents in mind? I'd also like to put something aside each month.",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-20",
+    "text": "I dislocated my shoulder at a tournament and the orthopaedist told me no more grappling, so I've stopped jiu-jitsu and started indoor climbing twice a week. Can you suggest beginner exercises to strengthen my shoulder safely? I'm worried about overdoing it.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-10",
+    "text": "What's the difference between qualitative and quantitative research designs, and when do clinical psychologists use mixed methods? I need to explain it in two minutes in a seminar tomorrow. A simple example for each would help.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-24",
+    "text": "I discovered I'm allergic to latex too, after a nasty rash at a lab practical. The nurse said it's often linked to some food allergies. Can you explain what latex-free options exist for lab gloves? I'll be seeing clients in a clinic next year.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-08",
+    "text": "My grandmother's eighty-second birthday is in July and I'm flying back to Sao Paulo for the weekend. Can you suggest a gift that isn't another scarf? She loves old samba records and her garden.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-15",
+    "text": "My Samsung was stolen from my bag on the bus yesterday, and I'm furious. I've blocked the SIM but I'm not sure what else to do. Can you give me a step-by-step for tracking and wiping it? I'm temporarily using Bia's old Motorola.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-22",
+    "text": "Bia is vegan too, and she's the one who taught me to make cashew cheese that actually tastes like something. Can you suggest a few more cheese-style recipes from nuts or beans? We want to host a dinner for her cousins without anyone noticing it's vegan.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "george-leeds-retired-driver",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-08",
+    "text": "Can you explain in plain English how Premium Bonds work? I'm a retired bus driver, forty years with the same company in Leeds, and my daughter says I should put some of my lump sum somewhere safer than the building society. I don't trust anything I can't understand.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-22",
+    "text": "My wife Margaret and I live in a semi in Headingley with a steep staircase, and lately I'm taking it one step at a time. Do you know of any simple exercises that help with strength for the stairs? I'm 72 and I'd rather not fit a stairlift yet.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-05",
+    "text": "I take warfarin every evening for an irregular heartbeat and I have a blood test every few weeks at the surgery. Does eating a lot of spinach really cause problems with it? Margaret has been making salads and I don't want to get it wrong.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-19",
+    "text": "Our golden Labrador Bess is eleven and she's started slipping on the laminate in the hall. Is there anything we can put down for grip that's safe for her joints? She still loves her walk around Woodhouse Moor.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-03",
+    "text": "I play bowls every Wednesday afternoon at the club on Cardigan Road, and my wrist has been aching after a long game. Is it worth trying a different grip? One of the lads said I'm gripping too tightly.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-17",
+    "text": "My Vauxhall Astra is due its MOT next month and it has a few advisories I don't understand, something about corrosion on the sills. How worried should I be, and what's a fair price for the work? The garage quoted three hundred.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-31",
+    "text": "We've had our caravan for ten years, a 2012 Bailey kept on a storage site in Otley, and I need to get the brakes serviced before the season starts. Can you tell me how often a caravan needs a full service? The man at the site says every year, but that seems excessive.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-14",
+    "text": "Our grandson set me up with an iPad last Christmas and I mostly use it for the cricket scores and email. How do I get it to read emails aloud, since my eyes tire quickly? He lives in Manchester and can't pop round to help.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-28",
+    "text": "What's the easiest way to tackle the cryptic crossword when you're stuck? I get about half of it done every morning and then I run out of steam. Are there any tricks for spotting anagrams? Margaret thinks I'm cheating if I use the app.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-12",
+    "text": "The surgery has switched me from warfarin to apixaban, so no more regular blood tests, which is a relief. I take two tablets a day, morning and evening. Is there anything I should avoid eating or drinking with it, besides the usual grapefruit warnings?",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-02",
+    "text": "Bess slept most of the day in the heat, and I had to carry her up the front steps after her walk. She's a good old girl but she's eleven and not what she was. What can I give her for stiff joints? The vet mentioned glucosamine but I'm not sure.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-23",
+    "text": "I've had to give up bowls after my wrist got worse, the doctor says it's arthritis, so I've joined a Thursday chair exercise class at the community centre. Can you suggest some gentle exercises I can do at home on the other days? I miss the lads already.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-13",
+    "text": "Bess passed away on Tuesday, in her own bed, with Margaret and me beside her. Forty years of dogs and it never gets easier. Can you suggest a way to mark her memory that isn't too soppy? Maybe a tree in the garden.",
+    "replaces": [
+     "s4",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-04",
+    "text": "How long does it take a small apple tree to go from a young sapling to fruit? I'm thinking of planting one in memory of Bess, but I'm seventy-two and don't want to plant something I won't see. A good variety for Yorkshire would help.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-25",
+    "text": "I swapped the Astra for a Honda Jazz last week, it's smaller and easier to park, and Margaret likes the seat height. Any tips for getting used to a car with a different gearbox? It's a CVT automatic and I've only ever driven manual.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-15",
+    "text": "Our caravan awning leaked in the rain again, and it has seen ten summers, so I'm wondering whether to proof it myself or buy a new one. The caravan itself is in good nick and we still use it every few weeks until the autumn. Which proofing spray works best on old canvas?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-10",
+    "text": "The iPad has started telling me my storage is full and I've no idea what's taking the space. Can you walk me through checking what's using it? My grandson says it's probably the photos of Bess, which I'm not deleting.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-31",
+    "text": "Margaret and I have sold the semi and moved into a bungalow in Garforth, because the stairs were getting too much for both of us. The move was exhausting. Can you suggest a sensible order for setting up a new house, like utilities and the doctor's? We've never moved at our age.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-02-21",
+    "text": "We've sold the caravan to a young couple from Harrogate, the site fees and the towing were too much at our age. Margaret says she won't miss the cold awnings. Can you suggest an alternative for holidays, maybe coach tours or a cottage rental?",
+    "replaces": [
+     "s7",
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-14",
+    "text": "The doctor has added a statin to the apixaban after my cholesterol check, so now I take three tablets a day. Is it better to take the statin at night? I keep them in a weekly pill box Margaret fills for me.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-04-04",
+    "text": "Margaret has been put on tablets for her blood pressure and she's grumbling about the side effects. Is a dry cough common with those? I told her to ring the surgery but she says she doesn't want to make a fuss.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-18",
+    "text": "My iPad finally gave up the ghost, the screen went black after I dropped it, and my grandson sent me a Samsung tablet instead. It's a bit different from what I'm used to. Can you help me find the email app and make the text size bigger?",
+    "replaces": [
+     "s8",
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-30",
+    "text": "What should I look for when choosing a coach holiday for people who tire easily? We're thinking of a trip to the Lake District in the summer, and I'd like to know how to check accessibility before booking. The brochures all say suitable for all, which means nothing.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-10",
+    "text": "My optician says my night vision isn't good enough anymore and I've decided to stop driving, so the Jazz is going to my daughter Karen. It feels like losing my independence. How do I get around Garforth without a car, bus passes, taxis, anything cheaper?",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-20",
+    "text": "The bungalow is lovely, but the garden is a blank slate. Can you suggest a low-maintenance border plan for a sunny, south-facing strip? Margaret wants roses, and I want something that won't need much bending.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s18",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-31",
+    "text": "We've decided to get another dog, a rescue greyhound from the sanctuary near Wakefield, if the home check goes well next month. Margaret says I'm mad at my age. Can you suggest how to prepare the house for a nervous dog?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "event"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "mei-singapore-auditor",
+  "writer": "c",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-09",
+    "text": "Can you help me simplify how I explain deferred tax to a client who isn't from a finance background? I'm an audit associate at a large firm in Singapore and my senior wants me to lead the meeting next week. I'd like an analogy with everyday money, maybe rent or a loan.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-23",
+    "text": "I still live with my parents in a four-room HDB flat in Tampines and my mum treats my bedroom like a storage room whenever I'm out. How do I set boundaries without starting a family drama? I'm thirty-one, which makes it awkward.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-06",
+    "text": "My boyfriend Wei Jie and I are trying to plan a budget date night each month that isn't just another mall meal. We like hawker food and walking, and he hates crowds. Any ideas that don't cost more than fifty dollars total?",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-20",
+    "text": "Wei Jie and I have saved 48,000 dollars towards a BTO flat, and we're debating whether to keep it in a fixed deposit or in a savings account with higher bonus interest. Can you explain the trade-offs? We might need the cash within two years.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-04",
+    "text": "I run a 5k every Saturday morning at East Coast Park, and my time has been stuck at 29 minutes for months. Can you suggest interval sessions I can add without a coach? I'm worried about overdoing it and getting injured.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-18",
+    "text": "My commute is about fifty minutes on the East-West line, with a change at Tanah Merah, and the trains are packed in the morning. Is there a good way to use that time for studying for my CPA exams? I've been trying audio lectures but my attention drifts.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-01",
+    "text": "My iPhone 12 storage is full again and I've got thousands of photos from hawker trips. What's the cleanest way to back them up without paying for iCloud forever? I'd like to keep full-quality versions of the best ones.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-15",
+    "text": "My younger sister Li Ying lives in Sydney and works in a bank, and I'm trying to plan a visit for Lunar New Year. Can you help me decide how long to stay and what to bring? She says everything there is overpriced.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-06-29",
+    "text": "How does GST work for a small business that sells online, and when do you have to register? My cousin is starting a candle shop and wants to know before launching. A short, clear explanation would help me advise her.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-13",
+    "text": "Every morning I get a kopi-c from the hawker centre near my block, and I'm trying to figure out how much sugar I'm really having. Is the standard kopi-c much worse than kopi-c-kosong? I only have one a day.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-27",
+    "text": "I upgraded to an iPhone 15 and the camera is beautiful, though I'm lost with the new USB-C port. Can you help me set up a transfer from my old phone and recommend a good USB-C cable? I don't want to fry the battery with a cheap one.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-17",
+    "text": "Wei Jie and I attended the BTO ballot briefing and it's very competitive in the mature estates. Our savings are on track, which feels almost enough for the downpayment. Can you explain the housing grant eligibility for couples? I always get confused.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-07",
+    "text": "I left the audit firm last month and joined a tech company's finance team in one-north, so my MRT route is completely different now, about thirty-five minutes via the Circle Line. The pay is similar but the hours are saner. Can you suggest a good way to introduce myself to a new team that doesn't know me?",
+    "replaces": [
+     "s1",
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-28",
+    "text": "Li Ying messaged me that Sydney winters are colder than she expected, and she's complaining about her flat's heating. I keep telling her to come home for a holiday. What can I send her that doesn't break the airline weight limits? Any ideas for care packages?",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-19",
+    "text": "I tweaked my knee on a long run and the physio said no running for three months, so I've started reformer Pilates twice a week. Can you give me a few at-home Pilates moves for rainy days? I'm worried I'll lose my fitness.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-09",
+    "text": "Do I count as a tax resident if I work in Singapore but spend about two months abroad each year? I read the IRAS page but I'm still confused about the 183-day rule. A simple example would help.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-11-30",
+    "text": "Li Ying has moved to Melbourne for a new job at an insurer, so I'll be adjusting my Australia trip. Melbourne is supposed to be good for coffee and brunch. Can you suggest a four-day itinerary that skips the tourist traps?",
+    "replaces": [
+     "s8",
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-12-21",
+    "text": "Wei Jie proposed on the beach at Sentosa last night, and I said yes! We haven't told his grandmother yet, who is very traditional. Can you suggest how to break the news in a way that won't offend her? She's expecting an engagement tea.",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-18",
+    "text": "I also started swimming twice a week at the community pool, on top of the Pilates, since the physio said it's gentle on the knee. Can you suggest a beginner set that mixes freestyle and kick drills? I'm slow and embarrassed about it.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-02-01",
+    "text": "At the hawker this morning the auntie asked if I wanted my usual kopi-c and I realised I've been ordering the same drink for years. Is it true that evaporated milk has less sugar than condensed? I'm trying to understand what I'm actually drinking.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-02-15",
+    "text": "I've switched from kopi-c to plain barley water at the hawker, since the doctor flagged my cholesterol and sugar. It tastes like nothing, honestly. Any way to make unsweetened drinks more interesting? I miss the ritual of it.",
+    "replaces": [
+     "s10",
+     "s20"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-03-01",
+    "text": "My Pilates instructor says my hamstrings are very tight and that's probably why the knee flared up. Can you suggest a daily five-minute stretching routine for people who sit a lot? I do twenty minutes of Pilates on Tuesday and Thursday mornings.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-15",
+    "text": "We collected the keys to our BTO in Tampines North last week and moved in over the weekend, so I've left my parents' flat after thirty-one years, and our savings went into the renovation. My mum cried. Can you suggest a sensible order for furnishing a bare flat on a tight budget?",
+    "replaces": [
+     "s2",
+     "s4",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-05",
+    "text": "My dad has inherited my old iPhone 12 and he keeps calling me by accident from his pocket. Can you suggest how to disable the side button shortcuts so he stops dialling emergency services? He's seventy and refuses to read the manual.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-04-26",
+    "text": "Wei Jie and I registered our marriage at the ROM last Friday, just us and four witnesses, with a big dinner planned for later in the year. Can you help me with updating my marital status on my IC, bank and CPF records? I'm not sure of the order.",
+    "replaces": [
+     "s18"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-05-17",
+    "text": "Is it worth buying a robot vacuum for a small flat with a lot of corners? We're comparing two models, one with a camera and one with lidar, and the reviews contradict each other. I'd like a simple way to decide without reading fifty forum threads.",
+    "replaces": [],
+    "relations": []
+   }
+  ]
+ }
+]

@@ -1,11 +1,12 @@
-"""Kaggle GPU job, round 2: external blind tests + a second training seed.
+"""Kaggle GPU job: retrain the memory head and run every evaluation.
 
-1. Retrain the shipped variant (writers A + B, no Dialogue NLI) with the same
-   recipe: a second run, so the blind result can be checked for seed variance.
-2. Score untrained Laya and the retrained head on the external pairs
-   (Dialogue NLI verified test, LongMemEval knowledge-update).
-3. Replay blind v2 with the retrained head (seed-variance check of the first
-   run's 95/112).
+Set TAG / ROWS below for each round (round 2: seed2 on writers A+B; round 3:
+v3 on writers A+B+C, which adds long chatty messages and restatements).
+
+1. Retrain with Laya's recipe on ROWS (no Dialogue NLI).
+2. Score it on the external pairs (Dialogue NLI verified test, LongMemEval
+   knowledge-update); untrained Laya too when ZERO_SHOT.
+3. Replay blind v2 with it, and score it on the dev shortlist.
 Results and logs land in /kaggle/working for `kaggle kernels output`.
 """
 import os
@@ -15,7 +16,10 @@ import time
 
 OUT = "/kaggle/working"
 SRC = "/tmp/ms"
-MODEL = "models/laya-memory-seed2"
+TAG = "v3"
+ROWS = "data/train_rows.jsonl"
+MODEL = f"models/laya-memory-{TAG}"
+ZERO_SHOT = False   # already scored in round 2
 
 
 def sh(cmd: str, log: str) -> None:
@@ -30,13 +34,15 @@ sh("pip install -q laya scikit-learn", f"{OUT}/logs/setup.log")
 sh(f"rm -rf {SRC} && git clone -q --depth 1 https://github.com/Primnox/Memory-system {SRC}", f"{OUT}/logs/setup.log")
 os.chdir(f"{SRC}/system_one")
 
-sh(f"python train_laya.py --device cuda --rows data/train_rows.jsonl --soft-ratio 2 --epochs 3 "
-   f"--micro-batch 8 --grad-accum 4 --output-dir {MODEL}", f"{OUT}/logs/train_seed2.log")
-sh("python external_eval.py --model convaiinnovations/laya --tag zeroshot", f"{OUT}/logs/external.log")
-sh(f"python external_eval.py --model {MODEL} --tag seed2", f"{OUT}/logs/external.log")
-sh(f"python blind_pairs.py --model {MODEL} --tag seed2", f"{OUT}/logs/blind_v2_seed2.log")
+sh(f"python train_laya.py --device cuda --rows {ROWS} --soft-ratio 2 --epochs 3 "
+   f"--micro-batch 8 --grad-accum 4 --output-dir {MODEL}", f"{OUT}/logs/train_{TAG}.log")
+if ZERO_SHOT:
+    sh("python external_eval.py --model convaiinnovations/laya --tag zeroshot", f"{OUT}/logs/external.log")
+sh(f"python external_eval.py --model {MODEL} --tag {TAG}", f"{OUT}/logs/external.log")
+sh(f"python blind_pairs.py --model {MODEL} --tag {TAG}", f"{OUT}/logs/blind_v2_{TAG}.log")
+sh(f"python screen.py --scorers laya_ft --laya-ft {MODEL} --tag {TAG}", f"{OUT}/logs/dev_{TAG}.log")
 
 for f in os.listdir("results"):
-    if f.startswith(("external_", "blind_v2_seed2")):
+    if f.startswith(("external_", f"blind_v2_{TAG}", "screen_dev")):
         shutil.copy(os.path.join("results", f), OUT)
 print(f"all done in {time.time() - t0:.0f}s", flush=True)
