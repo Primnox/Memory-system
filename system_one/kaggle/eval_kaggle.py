@@ -16,7 +16,7 @@ import time
 
 OUT = "/kaggle/working"
 SRC = "/tmp/ms"
-TAG = "v3"
+TAG = "r4"   # round 4: writers A+B+C, plus fact extraction for long messages
 ROWS = "data/train_rows.jsonl"
 MODEL = f"models/laya-memory-{TAG}"
 ZERO_SHOT = False   # already scored in round 2
@@ -39,10 +39,15 @@ sh(f"python train_laya.py --device cuda --rows {ROWS} --soft-ratio 2 --epochs 3 
 if ZERO_SHOT:
     sh("python external_eval.py --model convaiinnovations/laya --tag zeroshot", f"{OUT}/logs/external.log")
 sh(f"python external_eval.py --model {MODEL} --tag {TAG}", f"{OUT}/logs/external.log")
+sh(f"python external_eval.py --model {MODEL} --tag {TAG} --sentences", f"{OUT}/logs/external.log")
 sh(f"python blind_pairs.py --model {MODEL} --tag {TAG}", f"{OUT}/logs/blind_v2_{TAG}.log")
 sh(f"python screen.py --scorers laya_ft --laya-ft {MODEL} --tag {TAG}", f"{OUT}/logs/dev_{TAG}.log")
 
 for f in os.listdir("results"):
     if f.startswith(("external_", f"blind_v2_{TAG}", "screen_dev")):
         shutil.copy(os.path.join("results", f), OUT)
+for leftover in ("train_items.pt", "checkpoint_latest"):
+    path = os.path.join(MODEL, leftover)
+    shutil.rmtree(path) if os.path.isdir(path) else (os.path.exists(path) and os.remove(path))
+shutil.copytree(MODEL, f"{OUT}/{MODEL}")
 print(f"all done in {time.time() - t0:.0f}s", flush=True)
