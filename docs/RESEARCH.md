@@ -276,7 +276,29 @@ The blind replay averaged 9.9 comparisons per statement: about 4 s per message
 on the dev PC's CPU. Laya's own notes put int8 ONNX at about 2× faster with a
 real accuracy cost, so a smaller student or a background queue is the path.
 
-## 7. Discussion
+## 7. Experiment 3: a graph as the prompt index
+
+Today every chat carries all current facts (up to 200). A graph linking facts
+to the people, pets, places, things and topics they mention, walked with a
+personalized PageRank from the message's names, topic and 3 most similar facts
+(HippoRAG-style, no LLM), was compared with plain similarity top-k and with
+sending everything. Measure: does the block still hold all answer facts for
+"now" and multi-value questions; tokens estimated as characters / 4. Built on
+dev (64 questions), scored once on `v2` (117 questions); `--pad 200` fills each
+store with other people's facts as noise.
+
+| `v2` | Everything | Similarity | Graph | Hybrid |
+|---|---|---|---|---|
+| ~16 facts, top 8: answers kept / tokens | 100% / 384 | 97% / 213 | 93% / 214 | 96% / 214 |
+| 200 facts, top 20: answers kept / tokens | 100% / 4,075 | 79% / 454 | 68% / 467 | 79% / 463 |
+
+Selecting facts cuts tokens by ~45–89%, but this graph does not select better
+than similarity, and is worse at 200 facts. The questions are paraphrased and
+rarely name what they ask about, rule-based names and keywords link noise
+through common words, and multi-hop questions (where a graph should win) are
+rare. Details: [`../graph/`](../graph/).
+
+## 8. Discussion
 
 A small trained classifier replaced hand-written change rules and beat them
 clearly on data neither was tuned on, while cutting wrong retirements tenfold.
@@ -286,7 +308,7 @@ chain reactions need more than a similarity shortlist. Second, the decision
 does not have to be inline: change detection can run after the reply, as the
 9B verifier already does, which makes CPU latency much less critical.
 
-## 8. Limitations
+## 9. Limitations
 
 - **Same model family, and messy text.** Training people, development sets
   and `v2` were all written by Claude agents. On outside data (§6.8) the gain
@@ -310,7 +332,7 @@ does not have to be inline: change detection can run after the reply, as the
 - **English only** for the rules; the training people include code-switching
   but the evaluation does not test other languages.
 
-## 9. Next
+## 10. Next
 
 1. Wire the head into the memory service as a background job; score answer
    top-1 on the blind set.
@@ -323,7 +345,7 @@ does not have to be inline: change detection can run after the reply, as the
    selection, then public benchmarks (LongMemEval, LoCoMo) for comparison
    with other systems.
 
-## 10. Reproducing
+## 11. Reproducing
 
 | Step | Command / file |
 |---|---|

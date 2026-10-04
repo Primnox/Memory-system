@@ -83,6 +83,12 @@ written by Claude the edge shrinks:** F1 0.51 on crowdworker-written facts
 messier training data. Not yet measured: answer accuracy with the model in
 the loop, and CPU speed (~0.4 s per comparison).
 
+**Fewer tokens per chat:** sending only the most relevant facts instead of
+all of them cuts the memory block by ~45% (small stores) to ~89% (200 facts,
+4,075 → ~450 tokens) while keeping 96–97% / 79% of the facts the answers need.
+A graph index (facts linked by people, things and topics) did not choose
+better than plain similarity in a blind test; see [`graph/`](graph/).
+
 Research write-up with method, statistics and limitations:
 [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
 [`docs/MEMORY_EXPERIMENT.md`](docs/MEMORY_EXPERIMENT.md). Every score file:

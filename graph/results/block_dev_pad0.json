@@ -1,0 +1,71 @@
+{
+ "split": "dev",
+ "pad": 0,
+ "questions": 64,
+ "rows": {
+  "full": {
+   "answer_in_block": 1.0,
+   "tokens": 355.4921875
+  },
+  "similar@3": {
+   "answer_in_block": 0.765625,
+   "tokens": 101.4375
+  },
+  "similar@5": {
+   "answer_in_block": 0.9375,
+   "tokens": 138.01953125
+  },
+  "similar@8": {
+   "answer_in_block": 0.96875,
+   "tokens": 190.54296875
+  },
+  "similar@12": {
+   "answer_in_block": 1.0,
+   "tokens": 262.8203125
+  },
+  "similar@20": {
+   "answer_in_block": 1.0,
+   "tokens": 352.05078125
+  },
+  "graph@3": {
+   "answer_in_block": 0.78125,
+   "tokens": 102.32421875
+  },
+  "graph@5": {
+   "answer_in_block": 0.953125,
+   "tokens": 138.14453125
+  },
+  "graph@8": {
+   "answer_in_block": 0.984375,
+   "tokens": 191.17578125
+  },
+  "graph@12": {
+   "answer_in_block": 0.984375,
+   "tokens": 262.14453125
+  },
+  "graph@20": {
+   "answer_in_block": 1.0,
+   "tokens": 352.0390625
+  },
+  "hybrid@3": {
+   "answer_in_block": 0.78125,
+   "tokens": 101.90234375
+  },
+  "hybrid@5": {
+   "answer_in_block": 0.96875,
+   "tokens": 137.4296875
+  },
+  "hybrid@8": {
+   "answer_in_block": 0.984375,
+   "tokens": 190.6171875
+  },
+  "hybrid@12": {
+   "answer_in_block": 1.0,
+   "tokens": 262.63671875
+  },
+  "hybrid@20": {
+   "answer_in_block": 1.0,
+   "tokens": 352.0390625
+  }
+ }
+}

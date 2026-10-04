@@ -1,0 +1,71 @@
+{
+ "split": "v2",
+ "pad": 0,
+ "questions": 117,
+ "rows": {
+  "full": {
+   "answer_in_block": 1.0,
+   "tokens": 384.3269230769231
+  },
+  "similar@3": {
+   "answer_in_block": 0.6837606837606838,
+   "tokens": 109.88247863247864
+  },
+  "similar@5": {
+   "answer_in_block": 0.8632478632478633,
+   "tokens": 151.6645299145299
+  },
+  "similar@8": {
+   "answer_in_block": 0.9658119658119658,
+   "tokens": 213.0448717948718
+  },
+  "similar@12": {
+   "answer_in_block": 1.0,
+   "tokens": 294.5576923076923
+  },
+  "similar@20": {
+   "answer_in_block": 1.0,
+   "tokens": 384.3269230769231
+  },
+  "graph@3": {
+   "answer_in_block": 0.5897435897435898,
+   "tokens": 109.98931623931624
+  },
+  "graph@5": {
+   "answer_in_block": 0.8547008547008547,
+   "tokens": 152.11752136752136
+  },
+  "graph@8": {
+   "answer_in_block": 0.9316239316239316,
+   "tokens": 214.00213675213675
+  },
+  "graph@12": {
+   "answer_in_block": 0.9743589743589743,
+   "tokens": 296.29700854700855
+  },
+  "graph@20": {
+   "answer_in_block": 1.0,
+   "tokens": 384.3269230769231
+  },
+  "hybrid@3": {
+   "answer_in_block": 0.6666666666666666,
+   "tokens": 109.77991452991454
+  },
+  "hybrid@5": {
+   "answer_in_block": 0.8803418803418803,
+   "tokens": 151.991452991453
+  },
+  "hybrid@8": {
+   "answer_in_block": 0.9572649572649573,
+   "tokens": 214.32264957264957
+  },
+  "hybrid@12": {
+   "answer_in_block": 0.9914529914529915,
+   "tokens": 296.2478632478632
+  },
+  "hybrid@20": {
+   "answer_in_block": 1.0,
+   "tokens": 384.3269230769231
+  }
+ }
+}
