@@ -1,6 +1,11 @@
 # System One: a small local decision model
 
-Status: plan, 2026-10-04. Nothing built yet.
+Status, 2026-10-04: **memory head (change detection) trained and
+blind-tested.** Fine-tuned Laya (421M) noticed 95/112 changes with 2 mistaken
+retirements on the blind set, against 73/112 and 20 for rules + the 9B
+verifier. Not yet wired into the memory service; ~0.4 s per comparison on
+CPU. Details: [`RESEARCH.md`](RESEARCH.md) §6 and
+[`../system_one/`](../system_one/).
 
 ## Idea
 
@@ -49,6 +54,12 @@ Not its job: writing replies, planning multi-step tasks, reading pixels, date
 arithmetic (stays in `memory/when.py`). Those stay with the 9B or with code.
 
 ## Plan for the memory head
+
+Done 2026-10-04: steps 1 (Laya screened: AP 0.57 untrained), 3 (two generated
+writers + soft labels; Dialogue NLI tried and dropped), 4 (Laya only; trained
+on Kaggle) and a blind change-detection replay ahead of step 6. Step 2 (Kev
+teacher) skipped: training on generated labels was enough to clear the bar.
+Open: step 5 (wiring), the speed work, and step 6 on a fresh `v3`.
 
 1. **Screen starting models, untrained**, on the dev set (`scripts/blind_memory/dev.json`):
    Laya (421M), Laya multilingual (322M), Open-Jev DeBERTa-v3-large (~400M),

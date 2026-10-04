@@ -42,7 +42,23 @@ and "back then" questions 24 → 34 of 54 (p=0.002).
   (LongMemEval, LoCoMo) are on the roadmap; until then there is no claim of
   being better than anything else.
 
-Full write-up, method, and what did not work:
+### A small trained model for change detection (new)
+
+A 421M-parameter decision model (Laya, fine-tuned on synthetic people in ~12
+minutes on one free GPU) replaced the hand-written change rules in a blind
+replay of the same test set:
+
+| Change detector | Changes noticed | Wrongly retired facts |
+|---|---|---|
+| Rules | 62/112 (55%) | 19 |
+| Rules + local 9B verifier | 73/112 (65%) | 20 |
+| **Small trained model** | **95/112 (85%)** | **2** |
+
+Not yet measured: answer accuracy with the model in the loop, real
+(non-synthetic) chats, and CPU speed (~0.4 s per comparison).
+
+Research write-up with method, statistics and limitations:
+[`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
 [`docs/MEMORY_EXPERIMENT.md`](docs/MEMORY_EXPERIMENT.md). Every score file:
 [`scripts/blind_memory/results/RESULTS.md`](scripts/blind_memory/results/RESULTS.md).
 
@@ -72,9 +88,11 @@ Full write-up, method, and what did not work:
 | `scripts/blind_memory/` | The frozen test sets, dev sets, paraphrase variants, and all results |
 | `scripts/bench_memory_blind.py` | The blind-test runner (intervals, paired McNemar, query modes) |
 | `scripts/e2e_memory_chat.py` | Full-chat harness: the assistant chats, a judge model grades the answers |
-| `docs/SYSTEM_ONE_PLAN.md` | Next: a small local decision model (≤500M parameters) |
+| `docs/RESEARCH.md` | Research write-up: problem, related systems, method, all results, limitations |
+| `docs/architecture.png` | Architecture diagram |
+| `docs/SYSTEM_ONE_PLAN.md` | The small local decision model (≤500M parameters): plan and status |
 | `docs/DATASETS_AND_MODELS.md` | Open datasets, teacher models and starting models for it |
-| `system_one/` | Work on that model, starting with a zero-shot screen on dev data |
+| `system_one/` | The small model: screen, training data, Kaggle training job, blind replay, results |
 
 **Can I run it?** Not on its own yet. The memory modules import a few parts of
 the Primnox app that are not published (database layer, settings, tool
@@ -89,9 +107,10 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
 2. A standalone package: `pip install`, `remember / search / forget` on SQLite.
 3. Public benchmarks: LongMemEval and LoCoMo, for a comparison with other
    memory systems.
-4. A small local decision model (≤500M parameters) for memory, context
-   selection, privacy and computer-use decisions — see
-   [`docs/SYSTEM_ONE_PLAN.md`](docs/SYSTEM_ONE_PLAN.md).
+4. The small local decision model (≤500M parameters): change detection
+   trained and blind-tested (above); next, wire it into the memory service,
+   make it faster, then the "worth keeping?", context, privacy and
+   computer-use heads — see [`docs/SYSTEM_ONE_PLAN.md`](docs/SYSTEM_ONE_PLAN.md).
 
 ## Licence
 

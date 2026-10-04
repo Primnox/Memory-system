@@ -3,7 +3,9 @@
 Started 2026-10-01 on branch `exp/memory-v3`; finished 2026-10-02 on
 `fix/memory-change-detection`, which merges every fix that passed (see below).
 Two more steps followed on 2026-10-03: `fix/memory-time-phrases` and
-`exp/memory-change-verify` (the current best, 63%).
+`exp/memory-change-verify` (the current best, 63%). On 2026-10-04 a small
+trained decision model replaced the change rules in a blind replay (95/112
+changes noticed, 2 wrong retirements): see [`RESEARCH.md`](RESEARCH.md) §6.
 
 ## Why
 

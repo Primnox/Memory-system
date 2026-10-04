@@ -1,6 +1,10 @@
 # Datasets and models for System One
 
-Researched 2026-10-04 for [`SYSTEM_ONE_PLAN.md`](SYSTEM_ONE_PLAN.md). Sizes and
+Researched 2026-10-04 for [`SYSTEM_ONE_PLAN.md`](SYSTEM_ONE_PLAN.md).
+**Used so far:** Laya (fine-tuned, the memory head) and Dialogue NLI (tried as
+extra training rows; it did not help and the shipped variant drops it). The
+main training data is our own generated people (`system_one/data/`). Results:
+[`RESEARCH.md`](RESEARCH.md). Sizes and
 licences are as published on the linked pages at that date; "check" means the
 licence was not confirmed yet. Confirm every licence before training weights
 that ship.
@@ -34,7 +38,7 @@ variants not yet reviewed: [Jevland](https://jevland.mnimiy.com/collections/loca
 |---|---|---|---|
 | [MultiNLI](https://huggingface.co/datasets/nyu-mll/multi_nli) | 412k | contradiction / neutral / entailment, human labels | check |
 | WANLI (in [Open-Jev v1.1](https://huggingface.co/datasets/ZefanCai/Open-Jev-v1.1)) | 101k | contradiction, human labels | check |
-| Dialogue NLI (Welleck et al., 2019) | large | personal-fact pairs labelled contradict / neutral / entail — closest public match | check |
+| [Dialogue NLI](https://huggingface.co/datasets/xksteven/dialogue_nli) (Welleck et al., 2019) | 310k | personal-fact pairs labelled contradict / neutral / entail; tried, no gain | MIT |
 | PersonaChat, Multi-Session Chat | — | personal facts in chats: "worth keeping?" and unlabelled pairs for the teacher | check |
 | Open-Jev `citation-control-v1` | 4k | supported / contradicted / insufficient | CC0 |
 

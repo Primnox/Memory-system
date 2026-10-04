@@ -22,13 +22,22 @@ without the previous session's notes. Read this, then
 
 ## Next steps, in order
 
-1. **Auto-save from the user's messages** so memory does not depend on the
-   chat model calling `remember` (rules first; the small model later).
-2. **System One memory head** — see `SYSTEM_ONE_PLAN.md`.
-3. Send only relevant memories to the prompt (token cut: the memory block is
+1. **Wire the trained memory head into the memory service** as a background
+   job (like the verifier), then score answer top-1 on the blind set. The head
+   beat the rules on blind change detection (95/112 vs 73/112, 2 vs 20 wrong
+   retirements; `RESEARCH.md` §6). Checkpoints are not in git: re-run
+   `system_one/kaggle/train_kaggle.py` on Kaggle (~25 min with setup) or keep
+   the downloaded `system_one/kaggle_out/models/`.
+2. **Make it faster** (~0.4 s per comparison on CPU, ~10 per message): a
+   ~150M student, one pass over all candidates, or a background queue.
+3. **Check on real chats** (the owner's own memories, locally, never pushed)
+   and a fresh blind set `v3` written by a different model family.
+4. **Auto-save from the user's messages** so memory does not depend on the
+   chat model calling `remember` (a "worth keeping?" head).
+5. Send only relevant memories to the prompt (token cut: the memory block is
    ~500–650 tokens typical, up to ~3.2k).
-4. Graph memory with tidying after each chat.
-5. Head-to-head against Mem0, Graphiti/Zep, Letta, LangMem on LongMemEval /
+6. Graph memory with tidying after each chat.
+7. Head-to-head against Mem0, Graphiti/Zep, Letta, LangMem on LongMemEval /
    LoCoMo.
 
 ## Working rules
@@ -89,6 +98,17 @@ cd primnox && PYTHONIOENCODING=utf-8 backend/venv/Scripts/python scripts/bench_m
 
 The first run downloads the MiniLM encoder (`sentence-transformers/all-MiniLM-L6-v2`).
 On Windows set `PYTHONIOENCODING=utf-8` for every script.
+
+## Kaggle (training on a free GPU)
+
+`system_one/.venv` has the Kaggle CLI. Sign in once with
+`system_one/.venv/Scripts/kaggle.exe auth login --no-launch-browser` in an
+interactive shell (paste the code back); the account must be phone-verified or
+jobs get no internet. Create `system_one/kaggle/kernel-metadata.json` (kept out
+of git: `id` = `<username>/primnox-memory-head`, `kernel_type` script,
+`enable_gpu` and `enable_internet` true, `code_file` `train_kaggle.py`), then
+`kaggle kernels push -p system_one/kaggle`, poll `kaggle kernels status`, fetch
+with `kaggle kernels output`.
 
 ## Runner reference
 
