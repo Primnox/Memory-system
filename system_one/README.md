@@ -41,6 +41,26 @@ Caveat: the training people and the dev sets were both written by Claude
 agents, so part of the gain may be learning how those writers describe life
 changes; only a blind set settles it (`blind_pairs.py`).
 
+## Blind set (2026-10-04)
+
+`v2/test.json` (12 people, 112 true changes), never used for training or
+tuning; replayed in date order as the app would (up to 15 similar live facts
++ linked ones per new fact, fixed 0.5 threshold), scored by (old, successor)
+pair exactly as the blind runner scores the rules. Scored once.
+
+| Change detector | Changes noticed | Retired | Mistaken retirements | Pair precision |
+|---|---|---|---|---|
+| Rules (`fix/memory-change-detection`) | 62/112 (55%) | 81 | 19 | 77% |
+| Rules + 9B verifier (`exp/memory-change-verify`) | 73/112 (65%) | 93 | 20 | 78% |
+| **Fine-tuned Laya (writers A, B)** | **95/112 (85%)** | 100 | **2** | **95%** |
+
+What this does not show yet: answer accuracy (the 63% top-1) — that needs the
+head wired into the memory service. Speed on the dev PC's CPU: ~0.42 s per
+comparison, ~10 comparisons per message (~4 s, fine as a background job, too
+slow inline). Training data and test set were both written by Claude agents
+(different ones, from separate specs), so real chats still need checking.
+Totals: `results/blind_v2_v2-nodnli.json`.
+
 ## Files
 
 | File | What |

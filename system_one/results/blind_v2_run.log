@@ -1,1 +1,14 @@
-Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3773.01it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 95/112 (85%); retired 100, mistaken 2; pair precision 95%; reachable from candidates 110/112; 415.9 ms per candidate on this machine
