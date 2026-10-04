@@ -10,6 +10,28 @@ It was built inside Primnox, a desktop assistant. The app is closed source;
 this repo publishes the memory work in the open: the code, the blind test
 sets, every score, and the plan for what comes next.
 
+## In short
+
+- **Fully local.** It keeps your exact words with dates and knows when
+  something changed, without calling a big AI.
+- **Blind tests:** the right fact comes up first 63% of the time (from 19%).
+  A small model trained in 12 minutes now catches 85% of life changes (from
+  65%) and wrongly retires 2 facts instead of 20.
+- **Still early:** the small model is not in the app yet, the tests use
+  AI-written conversations, and there is no head-to-head comparison with
+  other memory systems yet.
+
+**How it differs from other AI memory** (by design; accuracy not yet compared):
+
+| | Keeps | Updates memory with | Local |
+|---|---|---|---|
+| ChatGPT | a summary of you, rewritten over time | the AI itself | no |
+| Claude | old chats, searched when the AI decides to | nothing; it searches raw chats | no |
+| Mem0 / Graphiti | facts extracted by an AI | a big AI on every message | yes |
+| **Primnox** | **your exact words + dates; old facts kept, marked replaced** | **rules + a small model, no big AI** | **yes** |
+
+![architecture](docs/architecture.png)
+
 ## Results
 
 Measured on a blind test set: written by agents that never saw the code,
