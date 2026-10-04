@@ -16,9 +16,12 @@ same blind set it noticed 95 of 112 changes (85% [77–90]) with 2 mistaken
 retirements, against 73 of 112 (65% [56–73]) with 20 mistaken for the best
 rule-based system with a local 9B verifier (recall p < 0.001, mistaken
 retirements p < 0.001). The model was trained only on synthetic people from
-two independent generator agents, in about 12 minutes on one free cloud GPU.
-Answer-level accuracy with the model in the loop, real (non-synthetic) chats
-and CPU speed (about 0.4 s per comparison) remain open.
+two independent generator agents, in about 12 minutes on one free cloud GPU; a
+second training run gave 92/112. On data not written by Claude agents the
+advantage shrinks: F1 0.51 on crowdworker-written facts (rules 0.26) and 0.24
+on long chatty messages from LongMemEval (rules 0.09). Answer-level accuracy
+with the model in the loop, messy input and CPU speed (about 0.4 s per
+comparison) remain open.
 
 ## 1. Problem
 
@@ -230,7 +233,38 @@ Fine-tuned vs rules + verifier: recall z = 3.39, p = 0.0007; mistaken
 retirements 2/100 vs 20/93, z = −4.26, p < 0.001 (two-proportion tests,
 unpaired). Against rules alone: recall z = 4.82, p < 0.001.
 
-### 6.7 Speed
+### 6.7 Second training run
+
+Same recipe, fresh run on a Kaggle T4: blind `v2` replay 92/112 changes
+noticed (82%), 101 retired, 2 mistaken (first run: 95/112, 100, 2). The blind
+result is not a lucky seed.
+
+### 6.8 External blind tests (data not written by Claude agents)
+
+Two sets, fixed 0.5 threshold, scored once:
+
+- **Dialogue NLI, verified test** (crowdworker-written persona facts; the
+  shipped head never saw Dialogue NLI): 1,000 pairs per label; contradiction
+  should replace, entailment and neutral should not.
+- **LongMemEval, knowledge-update sessions** (GPT-4o-generated chats, long and
+  chatty user turns): 421 pairs, 72 true changes buried in multi-topic
+  messages; the other pairs are same-session, same-topic turns with no change.
+
+| Detector | DNLI F1 | DNLI restatements called a change | LongMemEval changes caught | LongMemEval F1 |
+|---|---|---|---|---|
+| Rules | 0.26 (P 0.53, R 0.17) | 148/1000 | 4/72 (P 0.31) | 0.09 |
+| Laya untrained | 0.40 (P 0.97, R 0.25) | 6/1000 | 0/72 | 0.00 |
+| Laya fine-tuned (second run) | **0.51** (P 0.70, R 0.41) | 170/1000 | **~10/72** (P 0.77) | **0.24** |
+
+The fine-tuned head is the best of the three on outside data too, but all
+three are weak on long, messy messages: the 85% on `v2` holds for short,
+clean, single-fact statements (which is what the app stores today, because the
+chat model writes the memory). Two concrete gaps: no "same fact, said
+differently" examples in training (restatements are over-called), and no long
+multi-topic messages (saving straight from raw user messages would need fact
+extraction first, or messier training data).
+
+### 6.9 Speed
 
 | Setting | Time per comparison |
 |---|---|
@@ -254,10 +288,11 @@ does not have to be inline: change detection can run after the reply, as the
 
 ## 8. Limitations
 
-- **Same model family.** Training people, development sets and the blind set
-  were all written by Claude agents (different agents, separate specs). The
-  model may partly learn how these writers phrase life changes. Real chats
-  have not been tested.
+- **Same model family, and messy text.** Training people, development sets
+  and `v2` were all written by Claude agents. On outside data (§6.8) the gain
+  shrinks sharply: F1 0.51 on crowdworker-written facts and 0.24 on long chat
+  messages, though still above the rules (0.26 and 0.09). The owner's real
+  chats have not been tested.
 - **Change detection only.** Answer accuracy (top-1) with the model in the
   loop has not been measured; it needs integration into the memory service.
 - **Small sets.** 112 blind changes; intervals are wide (±7 points).

@@ -61,6 +61,19 @@ slow inline). Training data and test set were both written by Claude agents
 (different ones, from separate specs), so real chats still need checking.
 Totals: `results/blind_v2_v2-nodnli.json`.
 
+## External blind tests (2026-10-04)
+
+| Detector | Dialogue NLI F1 | Restatements called a change | LongMemEval changes caught | LongMemEval F1 |
+|---|---|---|---|---|
+| Rules | 0.26 | 148/1000 | 4/72 | 0.09 |
+| Laya untrained | 0.40 | 6/1000 | 0/72 | 0.00 |
+| Laya fine-tuned (second run) | 0.51 | 170/1000 | ~10/72 | 0.24 |
+
+Second run on blind `v2`: 92/112, 2 mistaken. Files: `results/external_*.json`,
+`results/blind_v2_seed2.json`; pairs in `data/blind_external/`
+(`build_external.py`); rules via `rules_external.py`; Kaggle job
+`kaggle/eval_kaggle.py`.
+
 ## Files
 
 | File | What |

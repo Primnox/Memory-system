@@ -17,9 +17,9 @@ sets, every score, and the plan for what comes next.
 - **Blind tests:** the right fact comes up first 63% of the time (from 19%).
   A small model trained in 12 minutes now catches 85% of life changes (from
   65%) and wrongly retires 2 facts instead of 20.
-- **Still early:** the small model is not in the app yet, the tests use
-  AI-written conversations, and there is no head-to-head comparison with
-  other memory systems yet.
+- **Still early:** the small model is not in the app yet; on messy,
+  non-Claude-written text its edge shrinks a lot (still ahead of the rules);
+  and there is no head-to-head comparison with other memory systems yet.
 
 **How it differs from other AI memory** (by design; accuracy not yet compared):
 
@@ -76,8 +76,12 @@ replay of the same test set:
 | Rules + local 9B verifier | 73/112 (65%) | 20 |
 | **Small trained model** | **95/112 (85%)** | **2** |
 
-Not yet measured: answer accuracy with the model in the loop, real
-(non-synthetic) chats, and CPU speed (~0.4 s per comparison).
+A second training run gave 92/112 with 2 wrong retirements. **On data not
+written by Claude the edge shrinks:** F1 0.51 on crowdworker-written facts
+(rules 0.26) and 0.24 on long, chatty LongMemEval messages (rules 0.09). The
+85% holds for short, clean facts; messy messages need fact extraction or
+messier training data. Not yet measured: answer accuracy with the model in
+the loop, and CPU speed (~0.4 s per comparison).
 
 Research write-up with method, statistics and limitations:
 [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:

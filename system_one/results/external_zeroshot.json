@@ -1,0 +1,33 @@
+{
+ "model": "convaiinnovations/laya",
+ "files": {
+  "pairs_dnli": {
+   "pairs": 3000,
+   "positives": 1000,
+   "ap": 0.8356518419459334,
+   "best_f1": 0.7597535934291582,
+   "f1_at_0.5": 0.40221694378463974,
+   "precision_at_0.5": 0.9657794676806084,
+   "recall_at_0.5": 0.254,
+   "called_replace_by_source": {
+    "dnli:negative": "254/1000",
+    "dnli:neutral": "3/1000",
+    "dnli:positive": "6/1000"
+   },
+   "ms_per_pair": 12.0
+  },
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.3868026248419845,
+   "best_f1": 0.39316239316239315,
+   "f1_at_0.5": 0.0,
+   "precision_at_0.5": 0.0,
+   "recall_at_0.5": 0.0,
+   "called_replace_by_source": {
+    "lme_ku": "0/421"
+   },
+   "ms_per_pair": 25.1
+  }
+ }
+}

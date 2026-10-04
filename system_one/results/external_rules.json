@@ -1,0 +1,24 @@
+{
+ "pairs_dnli": {
+  "pairs": 3000,
+  "positives": 1000,
+  "precision": 0.5295950155763239,
+  "recall": 0.17,
+  "f1": 0.2573807721423164,
+  "called_replace_by_source": {
+   "dnli:negative": "170/1000",
+   "dnli:neutral": "3/1000",
+   "dnli:positive": "148/1000"
+  }
+ },
+ "pairs_lme_ku": {
+  "pairs": 421,
+  "positives": 72,
+  "precision": 0.3076923076923077,
+  "recall": 0.05555555555555555,
+  "f1": 0.09411764705882353,
+  "called_replace_by_source": {
+   "lme_ku": "13/421"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "model": "models/laya-memory-seed2",
+ "files": {
+  "pairs_dnli": {
+   "pairs": 3000,
+   "positives": 1000,
+   "ap": 0.6354539437389456,
+   "best_f1": 0.5749754982032015,
+   "f1_at_0.5": 0.5139240506329114,
+   "precision_at_0.5": 0.7,
+   "recall_at_0.5": 0.406,
+   "called_replace_by_source": {
+    "dnli:negative": "406/1000",
+    "dnli:neutral": "4/1000",
+    "dnli:positive": "170/1000"
+   },
+   "ms_per_pair": 12.2
+  },
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.3933639381712202,
+   "best_f1": 0.42290748898678415,
+   "f1_at_0.5": 0.23529411764705882,
+   "precision_at_0.5": 0.7692307692307693,
+   "recall_at_0.5": 0.1388888888888889,
+   "called_replace_by_source": {
+    "lme_ku": "13/421"
+   },
+   "ms_per_pair": 24.3
+  }
+ }
+}
