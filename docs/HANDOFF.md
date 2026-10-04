@@ -22,23 +22,29 @@ without the previous session's notes. Read this, then
 
 ## Next steps, in order
 
-1. **Wire the trained memory head into the memory service** as a background
-   job (like the verifier), then score answer top-1 on the blind set. The head
-   beat the rules on blind change detection (95/112 vs 73/112, 2 vs 20 wrong
-   retirements; `RESEARCH.md` §6). Checkpoints are not in git: re-run
-   `system_one/kaggle/train_kaggle.py` on Kaggle (~25 min with setup) or keep
-   the downloaded `system_one/kaggle_out/models/`.
-2. **Fix the two gaps the external tests found** (`RESEARCH.md` §6.7): add
-   "same fact, said differently" examples (restatements are over-called) and
-   long multi-topic messages to the training people; retrain on Kaggle
-   (`system_one/kaggle/train_kaggle.py`) and re-score with
-   `system_one/kaggle/eval_kaggle.py`.
-3. **Make it faster** (~0.4 s per comparison on CPU, ~10 per message): a
-   ~150M student, one pass over all candidates, or a background queue.
-4. **Check on real chats** (the owner's own memories, locally, never pushed)
-   and a fresh blind set `v3` written by a different model family.
-5. **Auto-save from the user's messages** so memory does not depend on the
-   chat model calling `remember` (a "worth keeping?" head).
+1. **Wire the trained memory head into the memory service** as a live
+   background job (like the verifier), with the 9B overriding only uncertain
+   decisions and only when at least 95% sure (`RESEARCH.md` §6.11). Simulated
+   so far: blind answers 59.1% → 66.7% (`system_one/answers_with_decisions.py`).
+   The round-4 checkpoint (writers A+B+C) is in
+   `system_one/kaggle_out4/models/laya-memory-r4` (not in git, ~800 MB);
+   `system_one/kaggle/eval_kaggle.py` retrains and re-scores on Kaggle in
+   ~25 min.
+2. **A learned fact extractor** ("worth keeping?" head): the rule-based
+   splitter (`system_one/extract.py`) raised long-message recall from 8% to
+   46% at 0.66 precision. The same step unlocks LoCoMo / LongMemEval, since
+   the memory refuses multi-fact text.
+3. **Make it faster** (~0.4 s per comparison on CPU; ~15–50 comparisons per
+   message at scale, `system_one/candidates_scale.py`): a ~150M student, one
+   pass over all candidates, or a background queue.
+4. **Fresh blind set `v3`** written by a different model family, with chain
+   reactions and "it happened earlier" questions (needed to measure
+   event-time dating), plus a small human-labelled set. The owner's real chats
+   need an explicit OK first (a local-only check was proposed and blocked
+   pending that OK).
+5. **Open design limitations** (`RESEARCH.md` §9): validity windows per fact,
+   a re-check pass for wrong retirements, pinning standing preferences in
+   trimmed prompts, a safety head instead of the English word list.
 6. Send only relevant memories to the prompt: similarity top-20 plus the
    recall tool as fallback (blind: 89% fewer tokens at 200 facts, 79% of
    answer facts kept; the graph index did not beat similarity, `graph/`).

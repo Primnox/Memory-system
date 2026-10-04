@@ -3,11 +3,14 @@
 Status, 2026-10-04: **memory head (change detection) trained and
 blind-tested.** Fine-tuned Laya (421M) noticed 95/112 changes with 2 mistaken
 retirements on the blind set, against 73/112 and 20 for rules + the 9B
-verifier. A second training run gave 92/112. On text from other authors the edge
-shrinks but stays ahead of the rules (Dialogue NLI F1 0.51 vs 0.26; LongMemEval
-chat turns 0.24 vs 0.09). Not yet wired into the memory service; ~0.4 s per
-comparison on CPU. Details: [`RESEARCH.md`](RESEARCH.md) §6 and
-[`../system_one/`](../system_one/).
+verifier (four training runs: 92–95/112, 1–2 mistaken). With its decisions in
+the memory, top-1 answers rise from 59.1% to 66.7% (ceiling 70.8%; paired
+p = 0.007 vs rules). On text from other authors the edge shrinks but stays
+ahead of the rules; restatement examples cut "same fact said differently"
+errors from 17% to 4%, and rule-based fact extraction raised changes caught in
+long chat turns from 6 to 33 of 72. Not yet wired into the memory service;
+~0.4 s per comparison on CPU. Details: [`RESEARCH.md`](RESEARCH.md) §6 and §9,
+and [`../system_one/`](../system_one/).
 
 ## Idea
 
@@ -32,6 +35,11 @@ local-first, privacy-first assistant, so we train our own.
   safety-critical (retiring an allergy or medication fact, a destructive or
   risky computer action), it escalates to the local 9B. A random sample is
   audited too. Every disagreement is logged and becomes training data.
+  *Measured 2026-10-04:* the 9B is a weak supervisor — right on 80% of the
+  uncertain decisions and biased towards "replaces"; letting it override can
+  make things worse. It should override only when its own probability is at
+  least 0.95 (17 → 12 errors on dev). A stronger supervisor is worth more
+  than a wider escalation band.
 - **Saving must not depend on the chat model.** Today a fact reaches memory only
   if the chat model calls `remember`, in its own words. Every user message
   should pass through the small model ("worth keeping?") and the user's own
@@ -61,7 +69,11 @@ Done 2026-10-04: steps 1 (Laya screened: AP 0.57 untrained), 3 (two generated
 writers + soft labels; Dialogue NLI tried and dropped), 4 (Laya only; trained
 on Kaggle) and a blind change-detection replay ahead of step 6. Step 2 (Kev
 teacher) skipped: training on generated labels was enough to clear the bar.
-Open: step 5 (wiring), the speed work, and step 6 on a fresh `v3`.
+Also done: answer top-1 with the detector's decisions (66.7%), a real-9B
+supervisor check, writer C (long messages, restatements) and rule-based fact
+extraction. Open: step 5 (wiring, live), the speed work, a learned extractor
+("worth keeping?" head), and step 6 on a fresh `v3` written by another model
+family.
 
 1. **Screen starting models, untrained**, on the dev set (`scripts/blind_memory/dev.json`):
    Laya (421M), Laya multilingual (322M), Open-Jev DeBERTa-v3-large (~400M),

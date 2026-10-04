@@ -3,7 +3,8 @@
 Researched 2026-10-04 for [`SYSTEM_ONE_PLAN.md`](SYSTEM_ONE_PLAN.md).
 **Used so far:** Laya (fine-tuned, the memory head) and Dialogue NLI (tried as
 extra training rows; it did not help and the shipped variant drops it). The
-main training data is our own generated people (`system_one/data/`). Results:
+main training data is our own generated people (`system_one/data/`: writers
+A, B and C, 36 people; C adds long chatty messages and restatements). Results:
 [`RESEARCH.md`](RESEARCH.md). Sizes and
 licences are as published on the linked pages at that date; "check" means the
 licence was not confirmed yet. Confirm every licence before training weights
