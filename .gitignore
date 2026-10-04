@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 system_one/models/
 system_one/data/external/
+system_one/kaggle/kernel-metadata.json
