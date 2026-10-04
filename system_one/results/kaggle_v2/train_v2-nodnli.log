@@ -1,0 +1,29 @@
+rows: {'labelled_traps': 145, 'replaces': 280, 'soft': 850} (soft kept 850 of 5054)
+1275 training items -> models/laya-memory-v2-nodnli/train_items.pt (skipped 0)
+Device: cuda
+Training items: 1148; calibration items: 127
+micro_batch=8; grad_accum=4; epochs=3
+epoch 1/3, step 100, loss=1.0442
+Epoch 1/3 complete; avg_loss=1.1617
+epoch 2/3, step 100, loss=0.7840
+Epoch 2/3 complete; avg_loss=0.8437
+epoch 3/3, step 100, loss=1.0688
+Epoch 3/3 complete; avg_loss=0.9279
+Running temperature calibration ...
+Model saved to models/laya-memory-v2-nodnli
+Temperatures: [2.7159972190856934, 1.2, 1.2]
+3371 pairs, 70 true replacements
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+laya_ft 160/1165  14 ms/pair
+laya_ft 320/1165  13 ms/pair
+laya_ft 480/1165  13 ms/pair
+laya_ft 640/1165  12 ms/pair
+laya_ft 800/1165  12 ms/pair
+laya_ft 960/1165  12 ms/pair
+laya_ft 1120/1165  12 ms/pair
+laya_ft: 1165 pairs in 16s
+
+pairs 3371 (positives 70); shortlist 1165 (positives 69)
+rules (current system)     all       precision=0.93  recall=0.89  f1=0.91
+rules (current system)     shortlist precision=0.93  recall=0.90  f1=0.91
+laya_ft:choice_replaces    shortlist ap=0.96  best_f1=0.90  f1_at_0.5=0.87  precision_at_0.5=0.91  recall_at_0.5=0.84
