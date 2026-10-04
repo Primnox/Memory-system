@@ -74,6 +74,15 @@ Second run on blind `v2`: 92/112, 2 mistaken. Files: `results/external_*.json`,
 (`build_external.py`); rules via `rules_external.py`; Kaggle job
 `kaggle/eval_kaggle.py`.
 
+## Round 3: targeted data (2026-10-04)
+
+Writer C added long chatty messages and 58 restatements. Retrained on A+B+C:
+blind `v2` 94/112 with 2 mistaken; dev F1 0.91; Dialogue NLI F1 0.58 with
+restatements called a change 37/1000 (was 170); LongMemEval 6/72 (was 10).
+The external sets informed this data, so these external scores are not blind.
+Files: `results/external_v3.json`, `results/blind_v2_v3.json`,
+`results/screen_dev_v3.json`.
+
 ## Files
 
 | File | What |

@@ -79,8 +79,9 @@ replay of the same test set:
 A second training run gave 92/112 with 2 wrong retirements. **On data not
 written by Claude the edge shrinks:** F1 0.51 on crowdworker-written facts
 (rules 0.26) and 0.24 on long, chatty LongMemEval messages (rules 0.09). The
-85% holds for short, clean facts; messy messages need fact extraction or
-messier training data. Not yet measured: answer accuracy with the model in
+85% holds for short, clean facts. Adding restatements to the training data cut
+"same fact said differently" errors from 17% to 4% (blind set unchanged at
+94/112); changes buried in long messages still need fact extraction. Not yet measured: answer accuracy with the model in
 the loop, and CPU speed (~0.4 s per comparison).
 
 **Fewer tokens per chat:** sending only the most relevant facts instead of

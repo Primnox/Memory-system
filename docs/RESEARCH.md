@@ -25,7 +25,10 @@ against 73 of 112 (65% [56–73]) with 20 for the best rule-based system with a
 9B verifier; a second training run gives 92/112 with 2. On data not written by
 our generator family the advantage shrinks but persists: F1 0.51 vs 0.26 for
 the rules on crowdworker-written persona facts, and 0.24 vs 0.09 on long chat
-turns from LongMemEval. Finally, selecting facts for the prompt instead of
+turns from LongMemEval. Adding restatements and long chatty messages to the
+training data cut restatement errors 4.6-fold (170 → 37 per 1,000) without
+loss on the blind set (94/112), but did not help with changes buried in long
+chat turns. Finally, selecting facts for the prompt instead of
 sending all of them cuts memory tokens by 45% to 89% (4,075 → 454 tokens at 200
 facts) while keeping 97% and 79% of the facts the answers need; a graph index
 over people, things and topics does not select better than plain similarity.
@@ -157,6 +160,7 @@ result in this report follows one protocol:
 | `dev.json`, `change.json` | Sonnet agents | 10 people, 263 statements, 70 changes, 85 questions | development: failures read, rules tuned |
 | Training people A | 1 Sonnet agent (prose) | 12 people, 350 statements | training the change detector only |
 | Training people B | 1 Sonnet agent (texting style) | 12 people, 327 messages | training the change detector only |
+| Training people C | 1 Sonnet agent (long chatty messages, restatements) | 12 people, 308 messages | training (round 3, §6.8) |
 | Dialogue NLI, verified test [We19] | crowdworkers | 3,000 pairs (1,000 per label) | external test |
 | LongMemEval, knowledge update [Wu25] | GPT-4o, human-checked | 421 pairs, 72 changes | external test |
 
@@ -298,6 +302,7 @@ leave the live set. Totals only.
 | Rules + 9B verifier | 73/112 = 65% [56–73] | 93 | 20 | 78% [69–86] |
 | **Fine-tuned Laya, run 1** | **95/112 = 85% [77–90]** | 100 | **2** | **95% [89–98]** |
 | Fine-tuned Laya, run 2 | 92/112 = 82% [74–88] | 101 | 2 | 91% [84–95] |
+| Fine-tuned Laya, round 3 (§6.8) | 94/112 = 84% [76–90] | 100 | 2 | 94% [88–97] |
 
 Run 1 vs rules + verifier: changes noticed z = 3.39, p = 0.0007; mistaken
 retirements 2/100 vs 20/93, z = −4.26, p < 0.001. Run 1 vs rules: z = 4.82,
@@ -330,9 +335,37 @@ are over-called (the training data has no "same fact, said differently"
 examples), and changes buried in long multi-topic turns are mostly missed (the
 training data has none).
 
-### 6.8 Speed
+### 6.8 A targeted fix (round 3)
 
-*Table 9. Time per comparison.*
+The two gaps in §6.7 suggested two additions to the training data. A third
+Sonnet writer (C), blind to the code and to every test set, wrote 12 more
+people in long, chatty, multi-topic messages (mean ~245 characters): changes
+buried mid-message, questions with no new fact, and 58 restatements labelled
+as not replacing. The model was retrained on writers A, B and C (415
+replacement rows, 236 trap rows) with the same recipe.
+
+*Table 9. Before and after the targeted data. The external sets informed this
+change (by their aggregate failure types, not by any item), so round-3
+external scores are not blind.*
+
+| | Run 2 (A, B) | Round 3 (A, B, C) |
+|---|---|---|
+| Blind `v2`: changes noticed / mistaken | 92/112 / 2 | 94/112 = 84% [76%–90%] / 2 |
+| Development shortlist F1 @0.5 | 0.87 | 0.91 |
+| DNLI F1 | 0.51 | 0.58 |
+| DNLI restatements called a change | 170/1000 | **37/1000** |
+| DNLI contradictions caught | 406/1000 | 427/1000 = 43% [40%–46%] |
+| LongMemEval changes caught | 10/72 | 6/72 = 8% [4%–17%] |
+
+Restatement errors fell 4.6-fold with no loss on the blind set. Changes buried
+in long chat turns did not improve: examples of the style were not enough.
+Long messages hold several facts, and retiring a whole message when one of
+them changes is itself wrong; the remedy is to extract individual facts before
+change detection.
+
+### 6.9 Speed
+
+*Table 10. Time per comparison.*
 
 | Setting | Time |
 |---|---|
@@ -362,7 +395,7 @@ with other people's non-safety facts — a harsh test, since the padding
 includes strangers' "I live in…" facts. Developed on dev (64 questions);
 scored once on `v2` (117 questions).
 
-*Table 10. Prompt selection on blind `v2`.*
+*Table 11. Prompt selection on blind `v2`.*
 
 | Store | Method | Answer facts in block (95% CI) | Tokens |
 |---|---|---|---|
@@ -419,8 +452,8 @@ on these questions.
   service.
 - **Small samples.** 112 blind changes and 117 block questions: intervals are
   ±7–9 points.
-- **Test reuse.** `v2` has been scored in 13 runs (9 retrieval configurations
-  across six versions, two change-detection replays, two block tests). No
+- **Test reuse.** `v2` has been scored in 14 runs (9 retrieval configurations
+  across six versions, three change-detection replays, two block tests). No
   per-item result was read and nothing was tuned on it, but a fresh blind set
   is needed for a final verdict.
 - **Unpaired comparisons.** Per-pair outcomes were not kept for both change
@@ -428,8 +461,11 @@ on these questions.
 - **Different loading paths.** Rule runs load statements through the
   application's `remember()`, which can refuse or deduplicate; the model
   replay scores every statement.
-- **Two runs, one model size.** Two training runs agree (95 and 92 of 112);
-  only the 421M English checkpoint was trained.
+- **Runs and model size.** Three training runs agree on blind `v2` (95, 92
+  and 94 of 112, each with 2 mistaken retirements); only the 421M English
+  checkpoint was trained.
+- **External sets reused.** After §6.7 informed the round-3 data, the
+  external scores of round 3 are no longer blind.
 - **Token estimate.** Tokens are characters / 4, not a model tokenizer.
 - **Language.** The rules are English-only; the external tests are English.
 
@@ -446,15 +482,18 @@ sets the next steps:
 1. Integrate the trained detector as a background job and measure answer
    top-1 on a fresh blind set written by a different model family, with chain
    reactions.
-2. Add "same fact, said differently" examples and long multi-topic messages to
-   the training data, plus fact extraction for raw messages.
+2. Fact extraction before change detection: restatement examples fixed one
+   gap (§6.8), but changes inside long chat turns need individual facts, not
+   more examples. The same step is required to run LoCoMo and LongMemEval end
+   to end, since the memory deliberately refuses multi-fact text.
 3. A smaller or faster student (~150M parameters, or one pass over all
    candidates), with the 9B model as supervisor for low-confidence and
    safety-critical retirements.
 4. Ship similarity-based prompt selection with the recall tool as fallback;
    revisit graph indexing only with learned entity links and multi-hop
    questions.
-5. Report on LoCoMo and LongMemEval to compare with other systems.
+5. Report on LoCoMo and LongMemEval to compare with other systems, once fact
+   extraction exists (both are built from long raw chat turns).
 
 ---
 
