@@ -1,0 +1,11 @@
+laya: 2199 pairs in 2179s
+
+pairs 3371 (positives 70); shortlist 1165 (positives 69)
+rules (current system)     all       precision=0.93  recall=0.89  f1=0.91
+rules (current system)     shortlist precision=0.93  recall=0.90  f1=0.91
+nli:contradiction          all       ap=0.04  best_f1=0.08  f1_at_0.5=0.06  precision_at_0.5=0.03  recall_at_0.5=0.83
+nli:contradiction          shortlist ap=0.09  best_f1=0.18  f1_at_0.5=0.16  precision_at_0.5=0.09  recall_at_0.5=0.83
+laya:noul                  all       ap=0.17  best_f1=0.33  f1_at_0.5=0.08  precision_at_0.5=0.16  recall_at_0.5=0.06
+laya:noul                  shortlist ap=0.29  best_f1=0.43  f1_at_0.5=0.10  precision_at_0.5=0.29  recall_at_0.5=0.06
+laya:choice_replaces       all       ap=0.36  best_f1=0.41  f1_at_0.5=0.34  precision_at_0.5=0.41  recall_at_0.5=0.29
+laya:choice_replaces       shortlist ap=0.57  best_f1=0.60  f1_at_0.5=0.40  precision_at_0.5=0.65  recall_at_0.5=0.29

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Primnox Memory Architecture</title>
+<style>
+  :root {
+    --bg: #f6f4ef;
+    --ink: #1c1d1f;
+    --muted: #5d6066;
+    --line: #c9c4b8;
+    --card: #ffffff;
+    --built: #0f766e;
+    --built-soft: #e3f1ef;
+    --next: #b45309;
+    --next-soft: #fbf0e2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    width: 1080px;
+    padding: 56px 64px 48px;
+  }
+  header { margin-bottom: 36px; }
+  h1 { font-size: 46px; font-weight: 750; letter-spacing: -0.02em; }
+  .sub { font-size: 21px; color: var(--muted); margin-top: 8px; }
+  .legend { display: flex; gap: 14px; margin-top: 20px; }
+  .chip {
+    font-size: 16px; font-weight: 600; padding: 6px 14px; border-radius: 999px;
+    border: 2px solid; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .chip.built { color: var(--built); border-color: var(--built); background: var(--built-soft); }
+  .chip.next { color: var(--next); border-color: var(--next); border-style: dashed; background: var(--next-soft); }
+
+  .top { display: flex; align-items: center; gap: 18px; }
+  .pill {
+    background: var(--ink); color: #fff; font-size: 22px; font-weight: 650;
+    padding: 16px 28px; border-radius: 14px;
+  }
+  .model {
+    flex: 1; background: var(--card); border: 2px solid var(--ink); border-radius: 14px;
+    padding: 16px 24px; font-size: 22px; font-weight: 650;
+  }
+  .model span { display: block; font-size: 17px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+  .arrow-h { font-size: 30px; color: var(--muted); }
+
+  .flow { display: flex; flex-direction: column; align-items: stretch; }
+  .down {
+    display: flex; align-items: center; gap: 16px; padding: 10px 0 10px 40px;
+    color: var(--muted); font-size: 17px;
+  }
+  .down .stem { width: 3px; height: 46px; background: var(--line); position: relative; }
+  .down .stem::after {
+    content: ""; position: absolute; left: -7px; bottom: -4px;
+    border: 8.5px solid transparent; border-top: 11px solid var(--line); border-bottom: 0;
+  }
+  .down b { color: var(--ink); font-weight: 600; }
+  .down .n { color: var(--next); font-weight: 600; }
+
+  .card {
+    background: var(--card); border: 2px solid var(--built); border-radius: 18px;
+    padding: 24px 28px 26px;
+  }
+  .card.next { border-color: var(--next); border-style: dashed; background: #fffdf9; }
+  .card h2 {
+    font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 750;
+    color: var(--built); margin-bottom: 16px; display: flex; justify-content: space-between;
+  }
+  .card.next h2 { color: var(--next); }
+  .card h2 em { font-style: normal; letter-spacing: 0; text-transform: none; font-weight: 500; color: var(--muted); font-size: 15px; }
+
+  .steps { display: grid; gap: 12px; }
+  .step { display: grid; grid-template-columns: 44px 150px 1fr; align-items: baseline; gap: 6px; }
+  .num {
+    width: 32px; height: 32px; border-radius: 50%; background: var(--built-soft); color: var(--built);
+    font-weight: 750; font-size: 17px; display: grid; place-items: center;
+  }
+  .step .k { font-size: 21px; font-weight: 650; }
+  .step .v { font-size: 18.5px; color: var(--muted); line-height: 1.35; }
+  .tag {
+    font-size: 13.5px; font-weight: 650; padding: 2px 9px; border-radius: 999px; margin-left: 6px;
+    border: 1.5px dashed var(--next); color: var(--next); background: var(--next-soft); white-space: nowrap;
+  }
+  .tag.opt { border-style: solid; border-color: var(--line); color: var(--muted); background: #f3f1ec; }
+
+  .facts { display: grid; gap: 10px; margin-top: 2px; }
+  .fact {
+    display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center;
+    border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 16px; font-size: 19px;
+  }
+  .fact.old { background: #f3f1ec; color: var(--muted); }
+  .fact.old .t { text-decoration: line-through; text-decoration-color: #a39d90; }
+  .fact .meta { font-size: 15px; color: var(--muted); text-align: right; line-height: 1.3; }
+  .fact .rep { color: var(--built); font-weight: 650; }
+  .note { font-size: 17px; color: var(--muted); margin-top: 14px; line-height: 1.4; }
+
+  .read { display: grid; gap: 14px; }
+  .r { display: grid; grid-template-columns: 44px 1fr; gap: 6px; }
+  .r .num { background: var(--built-soft); }
+  .r .k { font-size: 21px; font-weight: 650; }
+  .r .v { font-size: 18.5px; color: var(--muted); line-height: 1.4; margin-top: 2px; }
+  .r code {
+    font-family: "Cascadia Mono", Consolas, monospace; font-size: 16.5px; background: #f1efe9;
+    padding: 1px 6px; border-radius: 6px; color: var(--ink);
+  }
+
+  .out {
+    background: var(--ink); color: #fff; border-radius: 14px; padding: 16px 24px;
+    font-size: 21px; font-weight: 600;
+  }
+  .out span { color: #b9bcc2; font-weight: 400; }
+
+  .s1 { margin-top: 30px; }
+  .jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 22px; }
+  .job { font-size: 19px; line-height: 1.35; padding-left: 22px; position: relative; }
+  .job::before { content: ""; position: absolute; left: 2px; top: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--next); }
+  .job small { display: block; color: var(--muted); font-size: 16px; }
+  .esc {
+    margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: var(--next-soft);
+    font-size: 18px; line-height: 1.4;
+  }
+
+  footer {
+    margin-top: 30px; padding-top: 20px; border-top: 2px solid var(--line);
+    display: flex; justify-content: space-between; gap: 20px; font-size: 17px; color: var(--muted);
+  }
+  footer b { color: var(--ink); font-size: 22px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Primnox Memory</h1>
+    <div class="sub">Long-term memory for AI assistants. Runs entirely on your computer.</div>
+    <div class="legend">
+      <span class="chip built">Built</span>
+      <span class="chip next">Next</span>
+    </div>
+  </header>
+
+  <div class="flow">
+    <div class="top">
+      <div class="pill">You</div>
+      <div class="arrow-h">→</div>
+      <div class="model">Chat model <span>any AI: a local 9B, a cloud model, anything</span></div>
+    </div>
+
+    <div class="down"><div class="stem"></div>
+      <div><b>Saving:</b> today the AI calls <b>remember()</b> · <span class="n">next: a small model checks every message itself</span></div>
+    </div>
+
+    <section class="card">
+      <h2>Write path <em>no big AI needed · milliseconds</em></h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div class="k">Filter</div><div class="v">junk, too long, instructions vs facts</div></div>
+        <div class="step"><div class="num">2</div><div class="k">Label</div><div class="v">topic (home, phone, job…) · a lasting fact or a one-off event</div></div>
+        <div class="step"><div class="num">3</div><div class="k">Match</div><div class="v">find related old facts: same topic + similar meaning (tiny embedding model)</div></div>
+        <div class="step"><div class="num">4</div><div class="k">Decide</div><div class="v">a change? a second value? someone else? more detail? one-off? duplicate? <span class="tag">next: small model</span></div></div>
+        <div class="step"><div class="num">5</div><div class="k">Unsure?</div><div class="v">background check by the local 9B, must be 95%+ sure, every answer logged <span class="tag opt">optional</span></div></div>
+      </div>
+    </section>
+
+    <div class="down"><div class="stem"></div><div></div></div>
+
+    <section class="card">
+      <h2>Storage <em>one SQLite file on your computer</em></h2>
+      <div class="facts">
+        <div class="fact old"><div class="t">“I live in Lisbon.”</div><div class="meta">Jan · home · fact<br><span class="rep">replaced by ↓</span></div></div>
+        <div class="fact"><div class="t">“Moved to Pune last week.”</div><div class="meta">May · home · fact<br>current</div></div>
+        <div class="fact"><div class="t">“My sister lives in Lisbon.”</div><div class="meta">Jun · someone else<br>replaces nothing</div></div>
+      </div>
+      <div class="note">Your exact words, with dates. Changed facts are kept and marked, never deleted or rewritten. <span class="tag">next: facts linked as a graph</span></div>
+    </section>
+
+    <div class="down"><div class="stem"></div><div></div></div>
+
+    <section class="card">
+      <h2>Read path</h2>
+      <div class="read">
+        <div class="r"><div class="num">A</div><div><div class="k">Every chat</div><div class="v">a memory block goes into the prompt: allergies and medications always first, then current facts (up to 200) <span class="tag">next: only the facts this message needs</span></div></div></div>
+        <div class="r"><div class="num">B</div><div><div class="k">On demand</div><div class="v"><code>recall_memory("where did I live in March?")</code> → “March” becomes a real date in code → word + meaning search → only facts that were true then → <b style="color:var(--ink)">Lisbon</b></div></div></div>
+        <div class="r"><div class="num">C</div><div><div class="k">Forget and review</div><div class="v">delete a fact, or browse the full history in the Memory tab</div></div></div>
+      </div>
+    </section>
+
+    <div class="down"><div class="stem"></div><div></div></div>
+
+    <div class="out">Chat model gets plain text → answers you <span>· swap the AI, keep the memory</span></div>
+
+    <section class="card next s1">
+      <h2>Next: System One <em>a small decision model · under 500M · runs on CPU</em></h2>
+      <div class="jobs">
+        <div class="job">Worth remembering?<small>saves your own words, no AI rewrite</small></div>
+        <div class="job">Does it change an old fact?<small>replaces the hand-written rules</small></div>
+        <div class="job">Which facts does this message need?<small>fewer tokens per prompt</small></div>
+        <div class="job">Later: privacy and computer control<small>private-info tagging, click checks</small></div>
+      </div>
+      <div class="esc"><b>Not sure?</b> It asks the big local model and logs the answer. Those answers become its training data.</div>
+    </section>
+  </div>
+
+  <footer>
+    <div><b>19% → 63%</b><br>right first result on a blind test, written by agents that never saw the code</div>
+    <div style="text-align:right">github.com/Primnox/Memory-system</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,3171 @@
+[
+ {
+  "scenario": "priya-bengaluru-nurse",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-08",
+    "text": "Hi! Priya here, 34. I rent a tiny 1BHK in Indiranagar, Bengaluru, fifth floor, no lift, my calves are legendary.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-08",
+    "text": "Staff nurse, ICU, Manipal Hospital. Mostly night shifts. Six years in.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-10",
+    "text": "Red Activa, 2016 model, rattles like a tin of coins but it gets me to work.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-12",
+    "text": "Biscuit is my ginger cat. He's three and has decided the flat belongs to him.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-01-15",
+    "text": "I'm vegetarian. Always have been. Eggs are my one grey area, don't tell Amma.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-01-20",
+    "text": "Filter coffee, two cups a day, no sugar. Do not speak to me before cup one.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-02",
+    "text": "Tuesday and Thursday mornings I do yoga at a little studio on 12th Main, right when my night shift ends.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-02-14",
+    "text": "Been with Arjun for two years now. He's an architect, annoyingly tidy. I am not.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-02-16",
+    "text": "Sundays I'm at my boyfriend's flat in Jayanagar for dosa breakfast. Non-negotiable.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-03",
+    "text": "My partner and I each put 20k into a joint account every month, house deposit fund.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-10",
+    "text": "My sister Divya lives in Pune, she's a pharmacist at Ruby Hall.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     },
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-03-22",
+    "text": "Malayalam at home, Hindi and English from school, Kannada from living here. I can scold in all four.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-05",
+    "text": "Phone is a Redmi Note 10. Batery gives up by 4pm, every single day.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-20",
+    "text": "Biscuit weighs 6.2 kg now. Vet said diet. Biscuit disagreed.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-05-18",
+    "text": "Brought home a tiny black kitten from the clinic car park. Named her Soot. Biscuit is furious.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-02",
+    "text": "Saving up for a master's in critical care nursing, hopefully starting 2027.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-28",
+    "text": "Back from Kochi, my cousin's wedding. Three days of sadya, I may never eat again.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-07-15",
+    "text": "First week at Fortis done. Honestly the ICU there is calmer than Manipal ever was, and nobody rings at 4am asking me to cover.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-09",
+    "text": "Got the Pixel 8a last week. The Redmi is in a drawer where it can think about what it did.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-14",
+    "text": "Arjun and I broke up. It's been coming for months. I'd rather not talk about it yet.",
+    "replaces": [
+     "s8",
+     "s9",
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-05",
+    "text": "Doctor says my iron is rock bottom so I'm eating chicken now. Three decades of veg, undone by haemoglobin.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-30",
+    "text": "Swapped my Activa for an Ather electric scooter. The old girl went to my neighbour's son.",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-12",
+    "text": "Palpitations after the shifts, so it's green tea only now. Filter coffee, I will miss you.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-01",
+    "text": "Started French on Duolingo, want to order croissants in Paris without pointing.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-20",
+    "text": "Change of plan, skipping the master's. I'll do a one-year online critical care fellowship through a UK college instead.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-03-08",
+    "text": "Got a job at Jehangir Hospital in Pune and moved last weekend. Biscuit and Soot took the train like royalty.",
+    "replaces": [
+     "s18",
+     "s1",
+     "s7"
+    ],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "tomasz-gdansk-welder",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2024-03-02",
+    "text": "Tomasz, 58. Welder at the shipyard in Gdansk, thirty-one years, hull sections mostly.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2024-03-02",
+    "text": "We live in Przymorze, panel block, fourth floor, with a view of other panel blocks. Very romantic.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2024-03-09",
+    "text": "My wife Halina teaches Polish at a primary school.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s4",
+    "date": "2024-03-16",
+    "text": "Skoda Octavia estate, 2011, diesel, 240 thousand km and still going.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2024-03-23",
+    "text": "Type 2 diabetes since 2022. Not fun but you get used to it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2024-03-23",
+    "text": "Metformin, twice a day, with food. The pill box lives on the fridge.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2024-03-30",
+    "text": "Black tea with lemon, no sugar, five glasses a day. The shipyard runs on tea, not steel.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2024-04-06",
+    "text": "Saturdays I fish at Lake Raduńskie with my brother Marek. We catch mostly silence.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2024-04-06",
+    "text": "Marek is a taxi driver in Gdynia, twenty years now.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2024-04-13",
+    "text": "Tram number 6 to the shipyard gate every morning. Shift starts at six so I'm up at 4:45.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2024-04-20",
+    "text": "I still smoke, about ten a day. Halina nags, I nod.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2024-05-04",
+    "text": "Our son Kuba studies civil engineering in Wroclaw, third year.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2024-05-11",
+    "text": "Lunch is the canteen with my crew. Friday is pork cutlet and nobody dares skip it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2024-05-25",
+    "text": "Evenings I play chess on the bench outside our block with old Pan Edek, the caretaker. He cheats.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2024-06-08",
+    "text": "Putting money aside for a small camper van for when I retire. Halina already picked the curtains.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2024-06-22",
+    "text": "Our dachshund Burek is nine, deaf as a post, thinks he's a Rottweiler.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2024-07-06",
+    "text": "My phone is an old Nokia with buttons. Don't tell me about touch screens.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2024-07-27",
+    "text": "HbA1c came back at 7.1. Doctor was cautiously pleased, so I celebrated with an extra cutlet.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2024-08-17",
+    "text": "Ten days in Croatia on Hvar with Halina, first real holiday in four years.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2024-09-14",
+    "text": "The Octavia finally died on the S6. Bought a used Passat from a guy in Tczew, 2013, also diesel.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2024-10-12",
+    "text": "Day 40 without a cigarette. Don't congratulate me, I'm in a terrible mood.",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2024-11-16",
+    "text": "They took me off the torch. Welding inspector now, clipboard instead of electrode, my hands don't know what to do.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2024-12-14",
+    "text": "Doctor stopped the metformin, I'm on insulin glargine at night now. Needle every evening, fine.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-01-25",
+    "text": "Halina forced a smartphone on me. The Nokia is retired to the drawer with my old watch.",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-02-15",
+    "text": "Burek has a girlfriend now. We took in a shelter mutt called Lola.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2025-03-08",
+    "text": "Knee operation went fine but no more standing in the cold at the lake. I build model ships in the cellar on Saturdays now.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-03-30",
+    "text": "Passat's gone, a truck hit us at the roundabout. Driving Halina's old Fiat Panda until the insurance pays.",
+    "replaces": [
+     "s20"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2025-04-30",
+    "text": "Retired this Friday. Thirty-two years, they gave me a cake and a plaque. The 6th tram will run without me.",
+    "replaces": [
+     "s22",
+     "s10",
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-06-17",
+    "text": "Bought the camper! A 2008 Fiat Ducato, one owner, smells of pine. The savings jar is empty.",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-08-30",
+    "text": "Sold the flat and moved to a little house in Kolbudy with a garden. Burek is confused, Halina is thrilled.",
+    "replaces": [
+     "s2",
+     "s14"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "amara-lagos-tailor",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-04",
+    "text": "I'm Amara, 29. I run a tailoring shop in Yaba, Lagos, three sewing machines and a cutting table that eats my back.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-04",
+    "text": "Home is a two-bedroom flat in Surulere, third floor, generator noise included free.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-09",
+    "text": "Two apprentices, Bisi and Kelechi. Bisi is quick, Kelechi is... enthusiastic.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-15",
+    "text": "Surulere to Yaba is danfo then keke, an hour on a good day, two when God is busy.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-22",
+    "text": "My little brother Chidi lives in Kano, he's a bank teller, only calls when he needs money.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-01",
+    "text": "Tecno Camon 18, cracked screen, I refuse to replace it, it still photographs my clients' dresses fine.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-08",
+    "text": "Allergic to shellfish. Found out at a wedding in Ikoyi and spent the reception at a clinic. No pork either, just personal.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-15",
+    "text": "Afrobeats on speaker all day in the shop. Asake, Ayra Starr, Rema. My apprentices sing louder than the radio.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-22",
+    "text": "Saturday choir practice at the Redeemed church in Surulere, then Sunday service. I'm second soprano.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-29",
+    "text": "Mum lives in Ibadan, I call her every evening around 8. She always asks if I've eaten.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-05",
+    "text": "Doctor said anaemia, so I'm taking iron tablets every morning with orange juice.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-12",
+    "text": "My boyfriend Emeka is a civil engineer in Abuja. We see each other once a month when flights allow.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-19",
+    "text": "Thursdays I go to Balogun market for fabric. Same three sellers, I know all their children's names.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-03",
+    "text": "Saving for an industrial embroidery machine, around 1.2 million naira. I've got maybe a third.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-05-10",
+    "text": "Morning walks, five kilometres round the Teslim Balogun stadium before the sun gets nasty.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-24",
+    "text": "The shop is painted yellow, on Herbert Macaulay Way, next to the old bank. Impossible to miss.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-07",
+    "text": "I speak Yoruba and English, and my pidgin is first class.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-06-21",
+    "text": "Just back from a week at a fabric expo in Dubai. I touched real silk and may have cried a bit.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-07-05",
+    "text": "My Tecno finally gave up, died in the middle of a fitting. Got a used iPhone 11 from a guy in Computer Village.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-07-19",
+    "text": "Doctor did my blood again, iron is fine now. No more tablets, I'm free.",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-08-02",
+    "text": "Learning French on Duolingo, I want to buy fabric directly in Cotonou.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s17",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-08-30",
+    "text": "Bisi has graduated from apprentice. She's opened her own stall in Mushin with my blessing and one of my old machines.",
+    "replaces": [
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-09-14",
+    "text": "Emeka proposed at Jabi Lake!!! I said yes before he finished the sentence.",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-10-04",
+    "text": "Moved the shop out of Yaba. Bigger unit in Ikeja, finally a proper cutting table and a changing room for clients.",
+    "replaces": [
+     "s1",
+     "s4",
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-10-25",
+    "text": "My knee said stop, so no more walking round the stadium. I do dance workout videos in the living room now.",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-11-15",
+    "text": "Forget the embroidery machine for now. The Ikeja rent ate that money and I'm at peace with it.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-01-10",
+    "text": "Married! Small ceremony in Ibadan, Mum cried more than me.",
+    "replaces": [
+     "s23"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-03-14",
+    "text": "Closed the Ikeja shop and moved to Abuja to live with my husband. Surulere, I'll miss your noise a little bit.",
+    "replaces": [
+     "s24",
+     "s2",
+     "s9",
+     "s13"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "hiroshi-osaka-retired",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-02",
+    "text": "Hiroshi, 67. Retired from Panasonic last year, quality control, thirty-eight years of staring at tiny defects.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-02",
+    "text": "My house is in Suita, Osaka. Two storeys, thirty years of creaking floors.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-05",
+    "text": "My wife Keiko died three years ago. Some mornings I still put out two cups.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-03-05",
+    "text": "Since then I live alone. The quiet in the house is quite loud.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-12",
+    "text": "Every morning I walk the Yamada river for an hour with my Shiba, Shiro.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-12",
+    "text": "The doctor has me on amlodipine, 5 mg every morning with breakfast, for blood pressure.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-20",
+    "text": "I drive a 2012 Prius, only to the supermarket and the clinic. Like an old man should.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-26",
+    "text": "Wednesday afternoons are shogi at the community centre. I get beaten by a ten-year-old.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-04",
+    "text": "Daughter Emi works at a bank in Tokyo and rings on Sundays, without fail.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-18",
+    "text": "My phone is a flip phone and I love it. Emi says it's a museum piece.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-25",
+    "text": "Shiro gets a hip injection every month at Dr. Tanaka's clinic. 7000 yen a time. Worth every yen.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-03",
+    "text": "Six pots of tomatoes and cucumbers on the veranda. The cucumbers are winning.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-10",
+    "text": "Shiro is thirteen now. Red Shiba, terrible temper, terrible hips.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-24",
+    "text": "My son Daichi is an engineer in Nagoya. I see him at Obon and sometimes New Year.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-07",
+    "text": "Saturday evening I walk to the sento down the road. Long soak, then a beer from the vending machine.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-20",
+    "text": "I speak Japanese and a bit of Korean from my years working in Busan.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-07-08",
+    "text": "Back from five days in Hokkaido with my old Panasonic colleagues. Too much crab.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-07-30",
+    "text": "I'd like to see Lisbon before my knees quit, so I put a little aside every month.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-15",
+    "text": "Doctor swapped my amlodipine for losartan. My ankles were like balloons.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-02",
+    "text": "Handed in my driving licence at the police station today. Sold the Prius to a very polite young man.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-20",
+    "text": "Emi sent me a smartphone and now I'm on LINE. The flip phone lives in a drawer with my Walkman.",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-12",
+    "text": "English conversation class at the library, Tuesdays. My accent is a crime but the teacher is kind.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-01",
+    "text": "Shiro died this morning, in his bed. Fourteen years. I can't write more tonight.",
+    "replaces": [
+     "s5",
+     "s11",
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-05",
+    "text": "Tomatoes kept dying on me, so the veranda is chrysanthemums only now.",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-18",
+    "text": "Lost eight kilos and the doctor took me off the blood pressure pills altogether.",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-22",
+    "text": "Sold the house and moved to a condo in Nishinomiya, with a lift! Farewell Wednesday shogi, farewell sento down the road. My knees send their thanks.",
+    "replaces": [
+     "s2",
+     "s8",
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-03-15",
+    "text": "A widow from my old shogi club, Yumiko, and I have started having dinner together. Don't tell Emi yet.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2026-05-02",
+    "text": "Dropped Lisbon, too many hills. Booked Okinawa for November instead.",
+    "replaces": [
+     "s18"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-06-20",
+    "text": "Yumiko moved in with me last weekend. Two cups in the morning again.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "lucia-mexicocity-bakery",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-10",
+    "text": "Soy Lucia, 41. I own a little panaderia called La Concha Dorada in Colonia Roma, Mexico City. We start baking at four in the morning.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-10",
+    "text": "I live in my late abuela's house in Coyoacan, the one with the lemon tree that drops fruit on everyone.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-14",
+    "text": "My husband Rafael teaches physics at a prepa. He explains proofing dough with thermodynamics and I want to throw things.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-20",
+    "text": "Valeria is nine and plays striker for a girls' football team. Saturday matches at nine sharp.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-01-26",
+    "text": "Saturday mornings Rafael and I do the Coyoacan market together. It's the one hour of the week we actually talk.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-02",
+    "text": "Every Sunday Rafael and I take Valeria to lunch at his mother's in Iztapalapa. Mole, three hours, no escape.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-09",
+    "text": "We have a chihuahua mix called Canela.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-02-23",
+    "text": "Canela is seven, terrified of thunder, and sleeps on my side of the bed.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-01",
+    "text": "I drive a 2014 Nissan March to the bakery. At 4 a.m. the whole city is mine.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-08",
+    "text": "Flour comes from Molino San Juan every Tuesday morning. If the truck is late I get anxiety rashes.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-15",
+    "text": "My head baker is Don Chuy, 62. Eight years with me, he knows the oven better than I do.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-03-18",
+    "text": "Alarm goes off at 3:30 every morning. I don't need coffee, I need a miracle.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-05",
+    "text": "Trying to eat low-carb. Which, for a baker, is humiliating.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-12",
+    "text": "I swim Tuesday and Thursday evenings at the Deportivo, six o'clock. It's the only quiet I get.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-26",
+    "text": "I still owe 200,000 pesos on the new deck oven. Four more years of payments, but she's beautiful.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-10",
+    "text": "iPhone SE with a cracked corner and a case made of flour.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-05-17",
+    "text": "I speak Spanish and English, and I'm told my accent in both is very chilanga.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-05-24",
+    "text": "My sister Ana owns a bakery too, in Puebla. We compete over who has the sourer customers.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     },
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-31",
+    "text": "Long weekend in Puebla for my cousin's quinceanera. I ate three cemitas and regret nothing.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-06-14",
+    "text": "Rent in the Roma doubled, so La Concha Dorada moved to a space in Narvarte. Same smell, different street.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-28",
+    "text": "Started Italian lessons online. My abuelo was from Bologna and left a notebook of recipes I can't read.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s17",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-07-20",
+    "text": "The March's gearbox gave up right in front of the bakery. Bought a used Kia Rio, don't tell Rafael how much.",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-09-06",
+    "text": "Week in Madrid at a baking expo. Ate better churros than mine, I'm furious and inspired.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s20",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-09-27",
+    "text": "Gave up the low-carb thing. I'm a baker, I eat bread, end of story.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-10-18",
+    "text": "Pool's behind me now. I run in Viveros de Coyoacan at dawn on my day off with my neighbour Paty.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-11-15",
+    "text": "Paid off the oven! Last instalment cleared today. Rafael bought me a cake from a rival bakery as a joke.",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-06",
+    "text": "Dropped my iPhone SE into the dough mixer. Samsung A54 now, surviving so far.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-01-17",
+    "text": "Valeria quit football. She's all in on the violin now, apparently Saturdays are for Vivaldi.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-02-21",
+    "text": "Rafael and I have separated. He moved out to his brother's in Narvarte on Sunday. I'm okay, mostly.",
+    "replaces": [
+     "s3",
+     "s5",
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-04-18",
+    "text": "Closed La Concha Dorada for good on Saturday. Sold the ovens, hugged Don Chuy and gave him a fat envelope. I start at a culinary school as a teacher next week.",
+    "replaces": [
+     "s20",
+     "s10",
+     "s11",
+     "s12"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "ben-manchester-student",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-09-18",
+    "text": "Hi, Ben, 19. First year Geography at Manchester, mostly because I liked field trips at school and hated maths.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-09-18",
+    "text": "I'm from Leeds, parents are still in Horsforth, same house since the day I was born.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-20",
+    "text": "I'm in halls in Fallowfield, a room with a window that looks onto the bin store. Romantic.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-24",
+    "text": "Dinner is in the halls dining room most nights. The Friday fish is a war crime.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-09-27",
+    "text": "From my halls it's a ten minute walk to lectures, which is the only reason I'm ever on time.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-02",
+    "text": "I do weekends at the Tesco Express on Wilmslow Road, twelve hours, minimum wage and a meal deal discount.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-10-05",
+    "text": "My mate Callum works at the Co-op on Oxford Road, we compare staff discounts like absolute dorks.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-10-08",
+    "text": "Vegan since freshers week. Mostly for the planet, a bit for a girl, I'll admit.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-10-11",
+    "text": "My laptop is an ancient Lenovo ThinkPad from sixth form held together with electrical tape and denial.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-18",
+    "text": "Hannah, my girlfriend, is at Leeds Uni, we've been together since Year 12.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-10-18",
+    "text": "every night at ten we facetime, even if we are just watching each other eat toast",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-10-26",
+    "text": "Hannah comes over every other weekend and sleeps on my floor. The guy next door thinks we're doing something illegal.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-11-02",
+    "text": "Wednesdays I play for the uni's fourth football team. We have lost nine out of nine.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-11-09",
+    "text": "I dont drink coffee. Monster Ultra, the white one, is my entire personality.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-11-15",
+    "text": "Callum's in the same halls as me, floor above, and he plays the bongos at midnight. Send help.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-11-25",
+    "text": "Joined the chess society, Monday nights. I'm bad but they let me stay.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s13",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-12-05",
+    "text": "Okay, vegan's dead. Halloumi won. I'm just vegetarian now and I've made my peace with it.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-12-24",
+    "text": "Home in Leeds for Christmas, Mum has put me in the box room again.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-12-27",
+    "text": "Parents' house is a 1930s semi, my old bedroom is now Mum's yoga room, there's a mat where my bed was.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-01-12",
+    "text": "Tore my ankle ligaments in the 9-0 defeat, so that's football finished for me.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-02-03",
+    "text": "Hannah ended it. Said we've become different people. I didn't see it coming.",
+    "replaces": [
+     "s10",
+     "s11",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-02-20",
+    "text": "Turned 20 and Dad got me a MacBook Air. The ThinkPad gets a Viking funeral.",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-03-15",
+    "text": "Revision week and I discovered flat whites. Monster Ultra is dead to me.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-12",
+    "text": "Switched to Urban Planning, paperwork finally done. The Geography lot waved me off like it was a funeral.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-05-03",
+    "text": "Picked up Saturday shifts on the front desk at the climbing wall, same pay as Tesco but nicer people.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-06-20",
+    "text": "Quit Tesco. Pulling pints in the Northern Quarter on weekend nights now, my feet hate me.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-07-28",
+    "text": "Eating fish again so I'm officially pescatarian. Don't tell the vegans.",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-09-12",
+    "text": "Moved into a four-person house in Withington today. Boxes everywhere, one bathroom, already a rota.",
+    "replaces": [
+     "s3",
+     "s4",
+     "s5"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "fatima-cairo-pharmacist",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-03",
+    "text": "I'm Fatima, 36, a pharmacist at a private hospital in Heliopolis. Nine years in the same basement pharmacy, I know every drug rep by their cologne.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-03",
+    "text": "We live in Maadi, fourth floor, a flat with a balcony facing a tree that's older than me.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-08",
+    "text": "I drive to Heliopolis, thirty-five minutes if the ring road is kind, ninety if it's a Tuesday.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-12",
+    "text": "Every second Friday I take the night shift at the hospital, so Karim has to handle the kids.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-15",
+    "text": "My husband Karim is a first officer at EgyptAir. Away half the month, jet-lagged the other half.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-20",
+    "text": "Our son Yassin is five and goes to a nursery in Maadi. He calls it his office.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-26",
+    "text": "I drive a Hyundai Elantra, 2018, silver, with a Lego brick permanently wedged in the air vent.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-04",
+    "text": "Turkish coffee, mazbout, medium sugar. Two cups before noon or I'm dangerous.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-11",
+    "text": "Zumba on Thursday evenings at the sporting club, the only hour nobody can reach me.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-18",
+    "text": "I've had asthma since I was a kid. Ventolin lives in every handbag I own.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-25",
+    "text": "Spring is the worst, the khamsin dust sits right on my chest.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-02",
+    "text": "My sister Mona is a pharmacist as well, in Alexandria. We compete over who has the more annoying customers.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-10",
+    "text": "Doing 16:8 intermittent fasting. Please don't offer me koshary before noon.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-19",
+    "text": "I bake birthday cakes for friends and family. The last one was a three-tier unicorn. Never again.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-27",
+    "text": "I speak Arabic, English and school French.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-06",
+    "text": "Our baby Laila turns one next month and has strong opinions about shoes.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-05-17",
+    "text": "iPhone 11. It's fine. Please don't tell me about newer ones.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-06-14",
+    "text": "Week in Hurghada with the kids. Yassin refuses to get out of the water.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-07-05",
+    "text": "Karim's brother Hany lives in Dubai and keeps sending photos of his pool.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-12",
+    "text": "Yassin's first week of Grade 1 at a school in Maadi. He cried at drop-off, I cried in the car.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-03",
+    "text": "Opened my own pharmacy on Road 9 in Maadi. Signed the lease, painted the sign myself. Goodbye, basement, after nine years.",
+    "replaces": [
+     "s1",
+     "s3",
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-11-08",
+    "text": "Doctor told me to cut sugar, so my Turkish coffee is saada now. Plain. Tragic.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-01",
+    "text": "Started Spanish on an app, I want to survive Barcelona next year.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-20",
+    "text": "Traded the Elantra for a used Kia Sportage, I needed room for two car seats and delivery boxes for the pharmacy.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-25",
+    "text": "Karim got his fourth stripe! Captain now. He wore the uniform to breakfast.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-14",
+    "text": "Abandoned the fasting, I was snapping at the staff. Breakfast is back.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-03-21",
+    "text": "No more cakes, I'm doing a pottery class on Wednesdays now. My bowls look like hats.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-05-02",
+    "text": "New Samsung S24. My iPhone went to my mother-in-law.",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-07-10",
+    "text": "We're moving to Dubai! Karim's new base. Sold the pharmacy to my cousin Hesham, sold the car, shipping three suitcases and two kids.",
+    "replaces": [
+     "s21",
+     "s2",
+     "s9",
+     "s24",
+     "s20"
+    ],
+    "relations": [
+     {
+      "to": "s19",
+      "relation": "other"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "sipho-johannesburg-truckdriver",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2024-11-04",
+    "text": "Sipho, 45. I drive long-haul for a freight company, Joburg to Durban and Maputo mostly. Twenty years behind the wheel.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2024-11-04",
+    "text": "The truck is a Scania R460, white, and I treat her better than my back deserves.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2024-11-09",
+    "text": "I'm on the road Monday to Friday. Home on weekends, if the border behaves.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2024-11-16",
+    "text": "Company medical aid covers the whole family. That's the only reason I haven't quit.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2024-11-23",
+    "text": "We live in Orlando East, Soweto, in the house my father built in 1978. Stoep, peach tree, the lot.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2024-11-30",
+    "text": "My wife Nomsa is a nurse. She gets more respect than me and also more money.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s7",
+    "date": "2024-12-07",
+    "text": "My brother Vusi drives for Imperial. We meet at the Beitbridge border sometimes and share pap.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2024-12-14",
+    "text": "Lindiwe is in Grade 11 at Orlando High, she wants to study law. God help the magistrates.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2024-12-21",
+    "text": "Saturday mornings I coach Thandi's under-13 soccer side. We've won one game and the snacks are the best part.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-01-04",
+    "text": "Took the whole family to Durban for the holidays, first time Thandi saw the sea. Sand in everything now.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2025-01-11",
+    "text": "Kaizer Chiefs season tickets at FNB with Vusi. We suffer together.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-01-25",
+    "text": "My own bakkie is a 2008 Hilux, white, with a dent I'll fix one day.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-02-08",
+    "text": "I smoke about a pack of Peter Stuyvesant a week. Nomsa is a nurse, you can imagine the lectures.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-02-22",
+    "text": "Doctor says my blood pressure is high, I take enalapril every morning. Salt is my enemy now.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-03-08",
+    "text": "I haven't touched alcohol in five years. A truck driver can't afford to.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-03-22",
+    "text": "Our stokvel, twelve of us, everyone puts in R1000 a month and we rotate the payout. Very serious business.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-04-05",
+    "text": "Zulu at home, Sotho from my mum, English at work and a bit of Portuguese from the Maputo runs.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-04-19",
+    "text": "Picked up some Xitsonga from a guy on the Maputo run. He taught me the swear words first.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s17",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-03",
+    "text": "Samsung A12, screen cracked in a lovely spiderweb.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-05-24",
+    "text": "Nomsa works nights in the maternity ward, so half our marriage happens on WhatsApp.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-14",
+    "text": "Nomsa and I went to Sun City for our anniversary. Two nights, and I lost money on only one slot machine.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-08-30",
+    "text": "Doctor stopped the enalapril. Now it's one combination pill, same time every morning.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-09-20",
+    "text": "Hilux's engine blew on the N1. Bought a used Ford Ranger on finance, tell no one how much.",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-10-31",
+    "text": "Retrenched on Friday. Twenty years, one letter, a handshake from HR. I'm okay. I'm not okay.",
+    "replaces": [
+     "s1",
+     "s2",
+     "s3",
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-11-22",
+    "text": "Our stokvel put the contribution up to R1500 a month. Inflation doesn't care about my feelings.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-06",
+    "text": "Finally replaced the cracked A12 with a second-hand Redmi. My fingers are very grateful.",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-31",
+    "text": "New Year's Eve at Vusi's, I had a beer. Then a few more. Five years gone, I'm not proud.",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-02-14",
+    "text": "Sold the Ranger, couldn't carry the finance. No vehicle of my own until I'm back on my feet.",
+    "replaces": [
+     "s23"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-03-01",
+    "text": "Stopped smoking. Nomsa stuck a printed picture of lungs on the fridge and, annoyingly, it worked.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-04-18",
+    "text": "We're going back to Mthatha, my mother's land. I start driving a municipal bus there, Lindiwe starts a new school Monday, and the hired truck leaves Saturday.",
+    "replaces": [
+     "s24",
+     "s5",
+     "s8",
+     "s9",
+     "s11"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "karin-stockholm-teacher",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-13",
+    "text": "Karin, 52. I teach history and religion at a gymnasium in Sundbyberg, twenty-one years of explaining the Thirty Years' War to people who'd rather be asleep.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-13",
+    "text": "I bike to school, twenty-five minutes, and in deep winter I give in and take the tunnelbana.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-18",
+    "text": "We rent a flat in Bromma, third floor, a hyresratt I got in the nineties and will defend with my life.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-25",
+    "text": "My husband Lars is a carpenter. Our flat has three of his shelves, one of which is crooked on purpose, he says.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-01",
+    "text": "Every July Lars and I go to our little stuga in the Roslagen archipelago. No wifi, one sauna, bliss.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-08",
+    "text": "Friday is tacos at home, Lars does the guacamole, I do the cheese. It's the one tradition the kids still show up for.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-15",
+    "text": "Sixten is our cat, a Norwegian forest cat with the dignity of a retired diplomat.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-02-22",
+    "text": "Our son Anton is 24 and works in Malmo at a logistics firm.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-01",
+    "text": "Elsa, our daughter, is 21 and studies biology in Uppsala.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-09",
+    "text": "I drive a 2009 Volvo V70 that Lars keeps alive out of pure spite.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-16",
+    "text": "I knit, mostly sweaters, currently a Fair Isle one for Elsa that she doesn't know about.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-03-23",
+    "text": "Tuesday evenings: choir at Bromma church. Alto, which means I hold the harmony nobody notices.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-03-30",
+    "text": "Coffee, four cups a day. Fika at ten and at three, no matter what the school schedule says.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-13",
+    "text": "Iron tablets every morning, my ferritin was low and my doctor believes in them more than I do.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-20",
+    "text": "I put 8,000 kronor a month into my ISK account. Pension anxiety in a convenient package.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-04",
+    "text": "Swedish, English, and my school German, which is better than I admit.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-05-11",
+    "text": "My sister Ulla teaches at a school in Gothenburg. Same job, different accent.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-05-30",
+    "text": "Weekend in Copenhagen for Elsa's birthday. Too much cake and a very long walk.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-06-14",
+    "text": "Saturday mornings I walk from the flat down to Lake Malaren with a thermos, alone, like a true Swede.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-08-18",
+    "text": "New term, new school. They moved me to Kista, forty minutes each way by train and bus. The principal called it a fresh start.",
+    "replaces": [
+     "s1",
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-06",
+    "text": "We adopted a second cat, a tiny grey one called Saga. Sixten is not speaking to us.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-09-27",
+    "text": "Italian lessons on Wednesday evenings, I want to read Dante before I turn sixty.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s16",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-10-18",
+    "text": "Lars finally let the V70 die. We bought a used Kia e-Niro and the silence is spooky.",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-11-15",
+    "text": "Blood test says my ferritin is fine so no more iron tablets.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-12-10",
+    "text": "Shoulder is wrecked, no more knitting. I paint watercolours now, badly and happily.",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-01-12",
+    "text": "Left teaching after twenty-one years. I'm a museum educator at the Historiska now, school groups and no exams to grade.",
+    "replaces": [
+     "s20"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-02-14",
+    "text": "Lars and I are separating. It's calm and sad and long overdue. He's moved to his sister's in Nacka.",
+    "replaces": [
+     "s4",
+     "s5",
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-03-08",
+    "text": "Doubled my pension savings, 12,000 a month into the ISK now. I got scared.",
+    "replaces": [
+     "s15"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-03-22",
+    "text": "Sixten died last night, he was sixteen. Saga keeps looking for him.",
+    "replaces": [
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-05-30",
+    "text": "Moved into a one-bedroom on Sodermalm last weekend. New postcode, new life, I barely know where the bins are.",
+    "replaces": [
+     "s3",
+     "s12",
+     "s19"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "diego-buenosaires-cook",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-04",
+    "text": "Soy Diego, 31. Line cook at a parrilla in Palermo, grill station. I smell like smoke even in my dreams.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-04",
+    "text": "I work Tuesday to Saturday, 4 p.m. to 1 a.m. My social life is a Monday.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-09",
+    "text": "I take the 29 colectivo to Palermo, forty minutes, reading on my phone and missing my stop at least once a week.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-03-14",
+    "text": "We live in Boedo, a one-bedroom on the second floor with a balcony that fits exactly one chair.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-20",
+    "text": "My girlfriend Camila is a vet. She can calm a rottweiler but not my mother.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-27",
+    "text": "Pancho is our dog, a mutt with one ear up and zero concept of personal space.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-04-03",
+    "text": "Sunday asado at Camila's parents' place in Quilmes. Her dad guards the grill like a border.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-10",
+    "text": "Peanut allergy, the dangerous kind. I carry an EpiPen even though I'm a cook. Especially because I'm a cook.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-17",
+    "text": "First reaction was at a birthday party when I was eight. ER visit, nobody forgot.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s8",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-24",
+    "text": "I'm a Boca socio, La Bombonera every other Sunday. Don't ask me to explain, it's a religion.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-08",
+    "text": "Crossfit at 11 a.m. before my shift, three times a week. My coach calls my form creative.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-15",
+    "text": "Mate, around ten a day. The thermos is basically attached to my hand.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-22",
+    "text": "My brother Nico drives a remis in Caballito. He thinks cooking is a hobby.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-29",
+    "text": "I keep my savings in dollars in a tin behind the pasta. Everybody does.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-12",
+    "text": "Spanish and Italian, my nonna was from Calabria and swore at me in it.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-07-10",
+    "text": "Five-year plan: open my own restaurant. Ten tables, one grill, no menu in English.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-07-26",
+    "text": "Flew to Montevideo for a friend's wedding. So much dulce de leche I'm in danger.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-08-14",
+    "text": "Cooked at a pop-up in Mendoza for a week. Hands full of burns and wine.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-30",
+    "text": "Camila's sister Flor lives in Boedo too, three blocks away, and she borrows my tools.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-06",
+    "text": "Learning English with a podcast, I want to read the cookbooks in the original.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-27",
+    "text": "Left the parrilla. New pasta kitchen in Almagro, ten minutes on foot from my door, nine to five, and nobody shouts. I don't trust it.",
+    "replaces": [
+     "s1",
+     "s2",
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-18",
+    "text": "Gave back my Boca socio card, too expensive and the team's a mess.",
+    "replaces": [
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-12-14",
+    "text": "Camila and I are done. She took Pancho, I took two suitcases.",
+    "replaces": [
+     "s5",
+     "s6",
+     "s4",
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-01-18",
+    "text": "Six weeks on Nico's couch in Caballito now. His fridge is a crime scene.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-02-20",
+    "text": "Signed a lease on a studio in San Telmo! Tiny, cobblestones, a landlady who talks to herself.",
+    "replaces": [
+     "s24"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-03-28",
+    "text": "Quit the kitchen. I have my own food truck now, choripan and provoleta at Parque Lezama, drowning in paperwork.",
+    "replaces": [
+     "s21"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-04-18",
+    "text": "Moved my dollars out of the tin into a bank account. My mother made me.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-05-09",
+    "text": "Cut down the mate, doctor says my stomach is shot. Tea. I'm sorry, tea.",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-06-13",
+    "text": "Ditched crossfit, too expensive. Now I run along the Costanera Sur at dawn.",
+    "replaces": [
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-07-25",
+    "text": "Scrapped the restaurant dream. A truck is enough, less debt and nobody to call at 2 a.m.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   }
+  ]
+ },
+ {
+  "scenario": "kai-perth-fifo-sparky",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-10",
+    "text": "Kai, 28. I'm a sparky on a mine site near Newman, FIFO out of Perth. The hi-vis tan lines are real.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-10",
+    "text": "Roster is two weeks on, one week off. Two weeks of dust, one week of pretending to be a normal person.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-15",
+    "text": "Flights out of Perth airport at 5 a.m. on changeover day. The 4 a.m. alarm makes me violent.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-19",
+    "text": "On site I'm in a donga, room 214, sharing a bathroom with a bloke who snores through walls.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-23",
+    "text": "When I'm off I'm back at my parents' place in Rockingham, saving every cent.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-02",
+    "text": "I train at the Rockingham gym on my week off. Shoulders and back, the usual bro fare.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-08",
+    "text": "Every off-week morning it's a flat white and a toastie at the cafe on Kent Street. Same order, the barista knows.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-16",
+    "text": "My girlfriend Mia is a primary school teacher in Joondalup. Seven months in and she tolerates my snoring.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-23",
+    "text": "Ute is a Ford Ranger, 2019, grey. My pride and my biggest debt.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-06",
+    "text": "I've got a kelpie called Dusty, six years old, lives at Mum and Dad's and thinks the garden is his.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-13",
+    "text": "Dusty swims better than I do. Jumps off the jetty at Rockingham every chance he gets.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-27",
+    "text": "Surf at Secret Harbour whenever the swell isn't pathetic.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-04",
+    "text": "Started fishing off the Rockingham jetty with Dad on Sundays.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s12",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-11",
+    "text": "Mia's brother Tom is a sparky too, in Geraldton. We argue about cable sizes at Christmas.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-05-18",
+    "text": "My mate Brodie works at the same mine, different crew. We share the smoko hut sometimes.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s1",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-01",
+    "text": "I have a few tinnies every off-week, mostly Gold, mostly at the pub with Brodie.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-08",
+    "text": "Right shoulder's cooked from overhead cable work. Can't lift anything above my head without a groan.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-06-22",
+    "text": "Mia and I are saving for a house deposit, 60k each by the end of next year, if interest rates behave.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-07-05",
+    "text": "iPhone 14. Does the job and the screen's miraculously intact.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-08-02",
+    "text": "A week in Bali for Brodie's 30th. I surfed, he fell off a scooter, we're both fine.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-08-30",
+    "text": "Transferred to the gas plant at Karratha. New site, new roster, eight days on and six off.",
+    "replaces": [
+     "s1",
+     "s2",
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-11",
+    "text": "Proposed to Mia on the Fremantle Esplanade. She said yes and then laughed for ten minutes.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-15",
+    "text": "Shoulder's finally healed after physio and a lot of boring exercises. Lifting overhead like it's 2020.",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-12-06",
+    "text": "Haven't had a beer since September. My sleep is unreal and my wallet is thrilled.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-01-18",
+    "text": "Sold the Ranger, couldn't justify the repayments. Picked up a 2016 Subaru Outback. Boring and brilliant.",
+    "replaces": [
+     "s9"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-03-01",
+    "text": "Quit FIFO. Starting Monday as a local sparky for a company in Fremantle. I get to sleep in my own bed every night, it feels illegal.",
+    "replaces": [
+     "s21",
+     "s3"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-04-12",
+    "text": "Mia and I moved in together, a rental in Fremantle near the markets. Dusty's staying with Mum for now and sulking.",
+    "replaces": [
+     "s5",
+     "s6",
+     "s7"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-06-06",
+    "text": "We got married! Backyard wedding at Mum and Dad's, Dusty was ring bearer for about ten seconds.",
+    "replaces": [
+     "s22"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-07-04",
+    "text": "Dropped my iPhone off the jetty. Pixel 9 now, Mia says it's karma.",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-07-18",
+    "text": "We got a second dog, a pug called Nugget. Dusty is unimpressed.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s10",
+      "relation": "adds"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "walter-dayton-retired-machinist",
+  "writer": "a",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-06",
+    "text": "Walter, 75, retired machinist. Forty-one years at the same plant in Dayton. My hands still twitch when I hear a lathe.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-06",
+    "text": "We live in a brick ranch in Kettering, Ohio. Bought it in 1979 and the porch light's been on ever since.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-10",
+    "text": "My wife June and I do the crossword every morning at seven. She does the clues, I do the complaining.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-15",
+    "text": "I mow the lawn every Saturday in summer, push mower. A riding mower is for quitters.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-01-22",
+    "text": "Basement workshop, mostly birdhouses and the occasional rocking horse for the grandkids.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-01-29",
+    "text": "Golf Tuesdays and Fridays at the municipal course. I shoot a 95 on a good day.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-05",
+    "text": "My neighbour Bob golfs too. He cheats on the scorecard and I let him.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-02-12",
+    "text": "I drive a 2006 Buick LeSabre, 98,000 miles, one owner: me.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-02-19",
+    "text": "Thursday nights I drive to the VFW hall for euchre. Second best in the post.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-02-26",
+    "text": "Wednesday mornings I do the Kroger run with June's list in my shirt pocket.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-05",
+    "text": "Low sodium diet since the heart thing. Food tastes like cardboard that's been to church.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-03-12",
+    "text": "Doctor wants me under 1,500 mg a day. I read labels like they owe me money.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s11",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-03-19",
+    "text": "I take warfarin and get my INR checked every month at the clinic.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-03-26",
+    "text": "Folgers, black, five cups a day. Doctor says it's fine, June says it's a lifestyle.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-02",
+    "text": "Our daughter Beth lives in Columbus, she's a nurse with two kids and drives down once a month.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-04-09",
+    "text": "Our son Greg lives in Phoenix. Calls on Sundays, from the car, always from the car.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-04-16",
+    "text": "My phone is a Jitterbug flip phone with big buttons. June handles the texting.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-04-23",
+    "text": "I listen to every Reds game on the radio on the porch, even when it hurts, which is often.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-07",
+    "text": "I walk laps at the Dayton Mall at 8 every morning before the stores open, with the other old guys.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-05-24",
+    "text": "Drove up to Pittsburgh for June's sister's funeral. Six hours each way, sad weekend.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-10",
+    "text": "Joined a bridge club on Mondays, June made me.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s9",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-07-18",
+    "text": "Hip replacement was Tuesday. Doc says golf is done for me. I'll putt on the living room carpet.",
+    "replaces": [
+     "s6"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-08-20",
+    "text": "Switched from warfarin to Eliquis. No more monthly needle sticks.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-09-14",
+    "text": "Doctor finally got me. Decaf now. I'm in mourning.",
+    "replaces": [
+     "s14"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-10-12",
+    "text": "Traded the Buick for a used F-150, my knees can't climb out of a low car anymore.",
+    "replaces": [
+     "s8"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-11-08",
+    "text": "Beth gave me her old iPhone. June says I text like a teenager, two words at a time.",
+    "replaces": [
+     "s17"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-05",
+    "text": "Cardiologist says my numbers are great. Salt limit is 2,300 now, not 1,500. I salted an egg with tears in my eyes.",
+    "replaces": [
+     "s11",
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-01-10",
+    "text": "Greg moved back to Dayton! New job at Wright-Patt, twelve minutes from our house.",
+    "replaces": [
+     "s16"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-02-28",
+    "text": "Gave up my driver's licence today. Eyes, reflexes and the DMV lady all agreed. Greg took the truck, and the VFW and Kroger will have to survive without me.",
+    "replaces": [
+     "s25",
+     "s9",
+     "s10"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-05-23",
+    "text": "We've moved into Maple Court, the retirement place off Dorothy Lane. No more lawn, no more basement, plenty of bingo.",
+    "replaces": [
+     "s2",
+     "s4",
+     "s5"
+    ],
+    "relations": []
+   }
+  ]
+ }
+]
