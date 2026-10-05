@@ -99,7 +99,8 @@ A graph index (facts linked by people, things and topics) did not choose
 better than plain similarity in a blind test; see [`graph/`](graph/).
 
 **Research paper** (method, all results with confidence intervals, design
-limitations, threats to validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md). Full experiment log:
+limitations, threats to validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md); IEEE-style Word
+version: [`docs/Primnox_Memory_Research_Paper.docx`](docs/Primnox_Memory_Research_Paper.docx). Full experiment log:
 [`docs/MEMORY_EXPERIMENT.md`](docs/MEMORY_EXPERIMENT.md). Every score file:
 [`scripts/blind_memory/results/RESULTS.md`](scripts/blind_memory/results/RESULTS.md).
 
