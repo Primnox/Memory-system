@@ -28,6 +28,8 @@ def main() -> None:
     ap.add_argument("--backend", required=True)
     ap.add_argument("--scores", required=True)
     ap.add_argument("--bands", nargs="+", default=["0.3-0.7", "0.2-0.8", "0.1-0.9"])
+    ap.add_argument("--tag", help="results/supervisor_check_<tag>.json instead of supervisor_check.json; "
+                                  "the supervisor is PRIMNOX2_MEMORY_VERIFY_MODEL (omniroute:<id> for a cloud model)")
     args = ap.parse_args()
     sys.path.insert(0, str(Path(args.backend).resolve()))
     from primnox2.memory import verifier
@@ -89,12 +91,13 @@ def main() -> None:
                              "real_supervisor_overrides": {"missed": r[0], "wrong_retire": r[1]},
                              "real_supervisor_veto_only": {"missed": vt[0], "wrong_retire": vt[1]},
                              "real_supervisor_only_when_sure": {"missed": sr[0], "wrong_retire": sr[1]}})
-        print(f"band {band}: escalated {len(esc)}, 9B right on {sup_right}; errors: none {sum(base)}, "
-              f"perfect {sum(perfect)}, 9B overrides {sum(r)} ({r[0]}/{r[1]}), veto-only {sum(vt)} ({vt[0]}/{vt[1]}), "
+        print(f"band {band}: escalated {len(esc)}, supervisor right on {sup_right}; errors: none {sum(base)}, "
+              f"perfect {sum(perfect)}, overrides {sum(r)} ({r[0]}/{r[1]}), veto-only {sum(vt)} ({vt[0]}/{vt[1]}), "
               f"only-when-sure {sum(sr)} ({sr[0]}/{sr[1]})")
-    print(f"9B: {len(asked)} questions in {secs:.0f}s, {out['unanswered']} unanswered")
+    print(f"{verifier.model_name()}: {len(asked)} questions in {secs:.0f}s, {out['unanswered']} unanswered")
     out["answers"] = asked   # development pairs only
-    (HERE / "results" / "supervisor_check.json").write_text(json.dumps(out, indent=1))
+    name = f"supervisor_check_{args.tag}.json" if args.tag else "supervisor_check.json"
+    (HERE / "results" / name).write_text(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":

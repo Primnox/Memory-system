@@ -36,13 +36,18 @@ def main() -> None:
     ap.add_argument("--max-linked", type=int, default=12)
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--onnx", help="run --model's ONNX export (onnx_dml.py) on a DirectX 12 GPU instead")
     ap.add_argument("--save-pairs", action="store_true",
                     help="also save the retired (old, new) statement ids per scenario (ids only, no text), "
                          "for paired tests and for answer accuracy with these decisions")
     args = ap.parse_args()
 
-    from laya.agent import Agent
-    agent = Agent(args.model)
+    if args.onnx:
+        from onnx_dml import load
+        agent = load(args.model, args.onnx)
+    else:
+        from laya.agent import Agent
+        agent = Agent(args.model)
     scenarios = json.loads(Path(args.data).read_text(encoding="utf-8"))
     vec = embed(sorted({s["text"] for sc in scenarios for s in sc["statements"]}))
 
@@ -90,6 +95,10 @@ def main() -> None:
            "total": tot, "per_scenario": per}
     (HERE / "results" / f"blind_{Path(args.data).parent.name}_{args.tag}.json").write_text(
         json.dumps(out, indent=1), encoding="utf-8")
+    if not tot["true"]:
+        print(f'\nno change labels in this data; retired {tot["predicted"]}, '
+              f'{out["ms_per_candidate"]} ms per candidate on this machine')
+        return
     p = tot["correct"] / tot["predicted"] if tot["predicted"] else 0.0
     print(f'\nchanges noticed {tot["correct"]}/{tot["true"]} ({tot["correct"] / tot["true"]:.0%}); '
           f'retired {tot["predicted"]}, mistaken {tot["false_retire"]}; pair precision {p:.0%}; '

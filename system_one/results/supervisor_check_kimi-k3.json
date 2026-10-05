@@ -1,0 +1,432 @@
+{
+ "scores": "scores_laya_ft_v2-nodnli.json",
+ "supervisor": "omniroute:openrouter/moonshotai/kimi-k3",
+ "asked": 90,
+ "unanswered": 2,
+ "seconds": 524,
+ "bands": [
+  {
+   "band": "0.3-0.7",
+   "escalated": 21,
+   "supervisor_right": 17,
+   "perfect_supervisor": {
+    "missed": 7,
+    "wrong_retire": 2
+   },
+   "real_supervisor_overrides": {
+    "missed": 7,
+    "wrong_retire": 6
+   },
+   "real_supervisor_veto_only": {
+    "missed": 11,
+    "wrong_retire": 3
+   },
+   "real_supervisor_only_when_sure": {
+    "missed": 8,
+    "wrong_retire": 7
+   }
+  },
+  {
+   "band": "0.2-0.8",
+   "escalated": 49,
+   "supervisor_right": 42,
+   "perfect_supervisor": {
+    "missed": 3,
+    "wrong_retire": 0
+   },
+   "real_supervisor_overrides": {
+    "missed": 3,
+    "wrong_retire": 6
+   },
+   "real_supervisor_veto_only": {
+    "missed": 11,
+    "wrong_retire": 3
+   },
+   "real_supervisor_only_when_sure": {
+    "missed": 7,
+    "wrong_retire": 7
+   }
+  },
+  {
+   "band": "0.1-0.9",
+   "escalated": 90,
+   "supervisor_right": 80,
+   "perfect_supervisor": {
+    "missed": 1,
+    "wrong_retire": 0
+   },
+   "real_supervisor_overrides": {
+    "missed": 2,
+    "wrong_retire": 7
+   },
+   "real_supervisor_veto_only": {
+    "missed": 11,
+    "wrong_retire": 3
+   },
+   "real_supervisor_only_when_sure": {
+    "missed": 7,
+    "wrong_retire": 7
+   }
+  }
+ ],
+ "no_escalation": {
+  "missed": 11,
+  "wrong_retire": 6
+ },
+ "answers": {
+  "ingrid-bergen-nurse|s6|s12": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "ingrid-bergen-nurse|s12|s13": {
+   "relation": "adds_detail",
+   "confidence": 0.92
+  },
+  "ingrid-bergen-nurse|s6|s14": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "ingrid-bergen-nurse|s13|s14": {
+   "relation": "unrelated",
+   "confidence": 0.92
+  },
+  "ingrid-bergen-nurse|s10|s15": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "ingrid-bergen-nurse|s7|s17": null,
+  "ingrid-bergen-nurse|s16|s19": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "ingrid-bergen-nurse|s8|s21": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "ingrid-bergen-nurse|s1|s25": {
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  "ingrid-bergen-nurse|s8|s25": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "ingrid-bergen-nurse|s21|s25": {
+   "relation": "replaces",
+   "confidence": 0.92
+  },
+  "kofi-toronto-gradstudent|k3|k5": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k4|k13": {
+   "relation": "replaces",
+   "confidence": 0.92
+  },
+  "kofi-toronto-gradstudent|k5|k14": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k5|k17": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k14|k17": {
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  "kofi-toronto-gradstudent|k3|k18": {
+   "relation": "replaces",
+   "confidence": 0.7
+  },
+  "kofi-toronto-gradstudent|k17|k18": {
+   "relation": "adds_detail",
+   "confidence": 0.9
+  },
+  "kofi-toronto-gradstudent|k9|k19": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k16|k19": {
+   "relation": "unrelated",
+   "confidence": 0.9
+  },
+  "kofi-toronto-gradstudent|k14|k20": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k8|k21": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "kofi-toronto-gradstudent|k6|k26": {
+   "relation": "replaces",
+   "confidence": 0.92
+  },
+  "kofi-toronto-gradstudent|k4|k27": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t1|t15": {
+   "relation": "other_person",
+   "confidence": 0.8
+  },
+  "mateo-monterrey-taqueria|t5|t15": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t1|t16": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t16|t17": {
+   "relation": "adds_detail",
+   "confidence": 0.9
+  },
+  "mateo-monterrey-taqueria|t7|t19": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t8|t19": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t9|t21": {
+   "relation": "replaces",
+   "confidence": 0.65
+  },
+  "mateo-monterrey-taqueria|t8|t23": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t2|t24": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t24|t25": {
+   "relation": "unrelated",
+   "confidence": 0.82
+  },
+  "mateo-monterrey-taqueria|t13|t26": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t1|t27": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t9|t27": {
+   "relation": "replaces",
+   "confidence": 0.85
+  },
+  "mateo-monterrey-taqueria|t12|t27": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t21|t27": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mateo-monterrey-taqueria|t5|t28": {
+   "relation": "another_value",
+   "confidence": 0.75
+  },
+  "mateo-monterrey-taqueria|t15|t28": {
+   "relation": "another_value",
+   "confidence": 0.7
+  },
+  "mina-london-analyst|m1|m13": {
+   "relation": "replaces",
+   "confidence": 0.97
+  },
+  "mina-london-analyst|m2|m14": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "mina-london-analyst|m3|m15": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mina-london-analyst|m6|m17": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "mina-london-analyst|m9|m20": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "omar-lagos-founder|o2|o15": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "omar-lagos-founder|o3|o17": {
+   "relation": "replaces",
+   "confidence": 0.85
+  },
+  "omar-lagos-founder|o14|o17": {
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  "omar-lagos-founder|o16|o17": {
+   "relation": "adds_detail",
+   "confidence": 0.75
+  },
+  "omar-lagos-founder|o7|o20": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "omar-lagos-founder|o4|o21": {
+   "relation": "unrelated",
+   "confidence": 0.95
+  },
+  "omar-lagos-founder|o16|o22": {
+   "relation": "other_person",
+   "confidence": 0.9
+  },
+  "omar-lagos-founder|o6|o23": {
+   "relation": "unrelated",
+   "confidence": 0.8
+  },
+  "omar-lagos-founder|o11|o23": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "omar-lagos-founder|o9|o25": null,
+  "rosa-lisbon-teacher|r1|r12": {
+   "relation": "replaces",
+   "confidence": 0.92
+  },
+  "rosa-lisbon-teacher|r3|r14": {
+   "relation": "replaces",
+   "confidence": 0.85
+  },
+  "rosa-lisbon-teacher|r4|r15": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "rosa-lisbon-teacher|r6|r16": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "rosa-lisbon-teacher|r10|r18": {
+   "relation": "replaces",
+   "confidence": 0.97
+  },
+  "rosa-lisbon-teacher|r8|r19": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "rosa-lisbon-teacher|r5|r22": {
+   "relation": "replaces",
+   "confidence": 0.88
+  },
+  "hana-osaka-designer|h3|h14": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "hana-osaka-designer|h6|h17": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "hana-osaka-designer|h9|h20": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "hana-osaka-designer|h7|h23": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "hana-osaka-designer|h13|h23": {
+   "relation": "adds_detail",
+   "confidence": 0.85
+  },
+  "tomas-brno-engineer|b1|b13": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "tomas-brno-engineer|b4|b13": {
+   "relation": "unrelated",
+   "confidence": 0.85
+  },
+  "tomas-brno-engineer|b8|b13": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "tomas-brno-engineer|b2|b14": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "tomas-brno-engineer|b4|b16": {
+   "relation": "replaces",
+   "confidence": 0.9
+  },
+  "tomas-brno-engineer|b6|b17": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "tomas-brno-engineer|b7|b18": {
+   "relation": "replaces",
+   "confidence": 0.92
+  },
+  "tomas-brno-engineer|b9|b20": {
+   "relation": "replaces",
+   "confidence": 0.97
+  },
+  "tomas-brno-engineer|b5|b23": {
+   "relation": "adds_detail",
+   "confidence": 0.8
+  },
+  "tomas-brno-engineer|b15|b25": {
+   "relation": "another_value",
+   "confidence": 0.8
+  },
+  "traps-one|a11|a20": {
+   "relation": "unrelated",
+   "confidence": 0.88
+  },
+  "traps-one|a10|a21": {
+   "relation": "other_person",
+   "confidence": 0.9
+  },
+  "traps-one|a13|a22": {
+   "relation": "another_value",
+   "confidence": 0.6
+  },
+  "traps-one|a2|a23": {
+   "relation": "adds_detail",
+   "confidence": 0.7
+  },
+  "traps-one|a5|a29": {
+   "relation": "replaces",
+   "confidence": 0.95
+  },
+  "traps-two|c4|c14": {
+   "relation": "other_person",
+   "confidence": 0.95
+  },
+  "traps-two|c6|c15": {
+   "relation": "another_value",
+   "confidence": 0.7
+  },
+  "traps-two|c3|c19": {
+   "relation": "adds_detail",
+   "confidence": 0.7
+  },
+  "traps-two|c11|c22": {
+   "relation": "another_value",
+   "confidence": 0.9
+  },
+  "traps-two|c9|c24": {
+   "relation": "adds_detail",
+   "confidence": 0.75
+  },
+  "traps-two|c3|c27": {
+   "relation": "other_person",
+   "confidence": 0.9
+  },
+  "traps-two|c4|c29": {
+   "relation": "unrelated",
+   "confidence": 0.75
+  }
+ }
+}
