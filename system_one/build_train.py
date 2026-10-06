@@ -78,9 +78,12 @@ def embed(texts: list[str]) -> dict:
 
 
 def rows_for(scenarios: list[dict], vec: dict) -> tuple[list[dict], dict]:
-    rows, stats = [], {"pairs": 0, "replaces": 0, "labelled_traps": 0, "soft": 0,
+    rows, stats = [], {"pairs": 0, "replaces": 0, "labelled_traps": 0, "soft": 0, "skipped": 0,
                        "true_replacements": 0, "found_by_similarity": 0, "found_with_entities": 0}
     for sc in scenarios:
+        # pairs whose label a checker of another family disputed (gen_people.py):
+        # neither trained as the writer said nor as "not a replacement"
+        skip = {tuple(p) for p in sc.get("skip") or []}
         sts = sorted(sc["statements"], key=lambda s: (s["date"], s["id"]))
         names = names_in(sts)
         ents = {s["id"]: entities(s["text"], names) for s in sts}
@@ -99,6 +102,9 @@ def rows_for(scenarios: list[dict], vec: dict) -> tuple[list[dict], dict]:
             stats["found_with_entities"] += len(gone & cands)
             for old in earlier:
                 if old["id"] not in cands:
+                    continue
+                if (old["id"], new["id"]) in skip:
+                    stats["skipped"] += 1
                     continue
                 if old["id"] in gone:
                     probs, kind = {k: float(k == "replaces") for k in RELATION}, "replaces"

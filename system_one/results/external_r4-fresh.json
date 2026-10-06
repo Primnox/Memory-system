@@ -1,0 +1,22 @@
+{
+ "model": "kaggle_out4/models/laya-memory-r4",
+ "files": {
+  "pairs_dnli_fresh": {
+   "pairs": 1500,
+   "positives": 500,
+   "ap": 0.39119864970153384,
+   "best_f1": 0.5005005005005005,
+   "f1_at_0.5": 0.2767857142857143,
+   "precision_at_0.5": 0.5406976744186046,
+   "recall_at_0.5": 0.186,
+   "called_replace_by_source": {
+    "dnli-fresh:negative": "93/500",
+    "dnli-fresh:neutral": "27/500",
+    "dnli-fresh:positive": "52/500"
+   },
+   "comparisons": 1500,
+   "ms_per_pair": 457.2
+  }
+ },
+ "sentences": false
+}

@@ -98,6 +98,8 @@ def score(args) -> None:
         from primnox2.memory import embeddings as enc
         if not enc.prepare(300):
             raise SystemExit("sentence encoder failed to load")
+        if tunables.get("memory.search_encoder") and hasattr(enc, "prepare_search") and not enc.prepare_search(300):
+            raise SystemExit("search encoder failed to load")
     from primnox2.storage import db
     scenarios = json.loads(Path(args.data).read_text(encoding="utf-8"))
     model = None

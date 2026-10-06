@@ -1,0 +1,305 @@
+[
+ {
+  "scenario": "uri-kampala-bus-driver",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-10",
+    "text": "Morning shift today, the 5:30 route to Ntinda was quiet except for that one guy who always argues about the fare. My phone battery died halfway through, need to get a new one soon.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-15",
+    "text": "Just got a Xiaomi Redmi Note 13, finally. The camera is decent, but the battery lasts all day even with the bus app running. My old Samsung was a brick.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-02",
+    "text": "My sister Grace just moved to Leeds for a nursing job. She says it rains all the time. I told her Kampala traffic is worse than any weather.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-14",
+    "text": "Started running in the mornings before my shift. Just a few kilometers around the neighborhood, but my legs are killing me. Trying to drop the belly.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-08-01",
+    "text": "Bought a secondhand Toyota Corolla for weekends. It's old but runs fine. Now I can visit my parents in Jinja without waiting for the taxi.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s4",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-20",
+    "text": "My dog Bubbles died yesterday. He was 14, a good boy. The house feels empty. I buried him under the mango tree in the backyard.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-09-05",
+    "text": "Got a new kitten from a neighbor. She's grey and white, named her Panya because she chases mice. Bubbles would have liked her.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s6",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s8",
+    "date": "2025-09-12",
+    "text": "Thinking about switching to Android from this Xiaomi. The camera is fine but the software is glitchy. Maybe a Samsung again.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s2",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s9",
+    "date": "2025-10-01",
+    "text": "Finally got the keys to the Kadıköy place. Wait, no, that's not me—my cousin in Istanbul. I'm still in Kampala. Just excited for him.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-15",
+    "text": "My first week on nights. The 11pm route to Bwaise is eerie but the roads are empty. I sleep during the day now, feels weird.",
+    "replaces": [
+     "s1"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-11-01",
+    "text": "Quit running. Too tired after night shifts. Now I just do push-ups at home. Not the same but better than nothing.",
+    "replaces": [
+     "s4"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-11-20",
+    "text": "My girlfriend Sarah moved in last week. She brought her cat, Mwizi. Now Panya and Mwizi hiss at each other all day. Chaos.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-12-05",
+    "text": "Switched to a Samsung Galaxy A54. The Xiaomi was driving me crazy with the notifications. This one feels solid.",
+    "replaces": [
+     "s2"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-20",
+    "text": "Sarah and I broke up last night. She moved out this morning, took Mwizi. The flat is too quiet. Panya keeps looking for her.",
+    "replaces": [
+     "s12"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-01-10",
+    "text": "Started a weekend gig driving for a private school bus. Extra cash for the rent. The kids are loud but it's only Saturday mornings.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-01-25",
+    "text": "Went to Jinja for the weekend. My mom made matoke and groundnut stew. The Corolla handled the road fine, no issues.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-02-10",
+    "text": "Got a new phone again—Pixel 7a. The Samsung was okay but the camera on this is amazing. I take photos of the sunrise on my night shifts.",
+    "replaces": [
+     "s13"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-02-28",
+    "text": "My brother Joseph just started driving for the same bus company. He's on the Jinja route. We see each other at the depot sometimes.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s15",
+      "relation": "other"
+     }
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-03-15",
+    "text": "Switched to a plant-based diet for Lent. No meat, no eggs. I'm surviving on beans and rice. Sarah would have laughed—she was vegetarian.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s14",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-04-01",
+    "text": "Back to eating meat. Lent is over. Had a huge beef stew yesterday. My stomach was not happy but my soul was.",
+    "replaces": [
+     "s19"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-04-15",
+    "text": "The Corolla broke down on the way to Jinja. Timing belt. Cost me a month's savings to fix. Thinking of selling it and just using the bus again.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s5",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-05-01",
+    "text": "Sold the Corolla. Now I'm back to taking taxis on my days off. It's actually cheaper than maintaining that car.",
+    "replaces": [
+     "s5"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-05-20",
+    "text": "Started a new hobby: learning Swahili on my phone. I use Duolingo during breaks. Ninajifunza Kiswahili. Pole pole.",
+    "replaces": [],
+    "relations": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-06-05",
+    "text": "My sister Grace is back from Leeds for a visit. She brought fish and chips. We ate them in the garden. Panya tried to steal a chip.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s3",
+      "relation": "event"
+     }
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-06-15",
+    "text": "Switched back to day shifts. The night schedule was killing my social life. Now I can see my friends again. Also started running again, gently.",
+    "replaces": [
+     "s10",
+     "s11"
+    ],
+    "relations": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-06-20",
+    "text": "Panya had kittens. Four of them. Under the bed. I didn't even know she was pregnant. Now I have five cats. Help.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s7",
+      "relation": "adds"
+     }
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-06-25",
+    "text": "Gave two kittens to my neighbor. Two left. They're cute but they climb the curtains. Panya is a good mother.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s26",
+      "relation": "detail"
+     }
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2026-06-28",
+    "text": "Thinking about getting a motorcycle. A Bajaj Boxer. Cheaper than a car, good for Kampala traffic. But my mom will worry. We'll see.",
+    "replaces": [],
+    "relations": [
+     {
+      "to": "s22",
+      "relation": "event"
+     }
+    ]
+   }
+  ],
+  "writer": "openrouter/deepseek/deepseek-v4-flash",
+  "style": "mixed",
+  "skip": [
+   [
+    "s26",
+    "s27"
+   ]
+  ]
+ }
+]

@@ -31,14 +31,20 @@ def main() -> None:
     ap.add_argument("--model", required=True)
     ap.add_argument("--tag", required=True)
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--files", nargs="+", help="pair files to score instead of the default two")
+    ap.add_argument("--onnx", help="run --model's ONNX export (onnx_dml.py) on a DirectX 12 GPU")
     ap.add_argument("--sentences", action="store_true",
                     help="split both messages into statements about the user (extract.py) and score every "
                          "statement pair; the message pair's score is the highest")
     args = ap.parse_args()
-    from laya.agent import Agent
-    agent = Agent(args.model)
+    if args.onnx:
+        from onnx_dml import load
+        agent = load(args.model, args.onnx)
+    else:
+        from laya.agent import Agent
+        agent = Agent(args.model)
     report = {"model": args.model, "files": {}}
-    for f in FILES:
+    for f in [Path(x) for x in args.files] if args.files else FILES:
         pairs = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
         t0 = time.perf_counter()
         # one unit per comparison; a message pair owns one or more units

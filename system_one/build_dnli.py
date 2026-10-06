@@ -36,12 +36,13 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--per-label", type=int, default=300)
     ap.add_argument("--seed", type=int, default=20261004)
+    ap.add_argument("--out", default=str(HERE / "data" / "dnli_rows.jsonl"))
     args = ap.parse_args()
     data = json.loads(zipfile.ZipFile(ZIP).read("dnli/dialogue_nli/dialogue_nli_train.jsonl"))
     rng = random.Random(args.seed)
     rng.shuffle(data)
     taken = {k: 0 for k in MAP}
-    out = HERE / "data" / "dnli_rows.jsonl"
+    out = Path(args.out)
     with open(out, "w", encoding="utf-8") as f:
         for ex in data:
             lab = ex["label"]
