@@ -11,3 +11,9 @@ system_one/kaggle_out3/
 system_one/kaggle_out4/
 system_one/kaggle_lme/kernel-metadata.json
 system_one/data/lme_e2e/dataset-metadata.json
+system_one/kaggle_gen/kernel-metadata.json
+system_one/kaggle_gen/kit/
+system_one/.venv-rocm/
+system_one/data/pilot/
+system_one/data/r5/
+system_one/kaggle_gen/out/

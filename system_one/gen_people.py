@@ -226,8 +226,35 @@ def _ask_opencode(model: str, prompt: str) -> str:
     return "".join(texts)
 
 
+def _ask_vllm(spec: str, prompt: str, max_tokens: int, temperature: float) -> str:
+    """`vllm:<port>:<model>`, a vLLM OpenAI-compatible server on this machine."""
+    port, model = spec.split(":", 1)
+    body = json.dumps({"model": model, "temperature": temperature, "max_tokens": max_tokens,
+                       "messages": [{"role": "user", "content": prompt}]}).encode()
+    req = urllib.request.Request(f"http://127.0.0.1:{port}/v1/chat/completions", data=body,
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=1800) as r:
+        reply = json.loads(r.read())
+    usage = reply.get("usage") or {}
+    with _spend_lock:
+        _spend["calls"] += 1
+        _spend["in"] += usage.get("prompt_tokens") or 0
+        _spend["out"] += usage.get("completion_tokens") or 0
+    return (reply.get("choices") or [{}])[0].get("message", {}).get("content") or ""
+
+
 def ask(model: str, prompt: str, max_tokens: int = 8000, attempts: int = 4) -> str:
     temperature = 0.9 if "write" in prompt[:40] else 0
+    if model.startswith("vllm:"):
+        for attempt in range(attempts):
+            try:
+                content = _ask_vllm(model[len("vllm:"):], prompt, max_tokens, temperature)
+                if content.strip():
+                    return content
+            except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError, OSError) as e:
+                print(f"    {model}: {e}", flush=True)
+            time.sleep(3 * (attempt + 1))
+        raise RuntimeError(f"{model}: no usable reply after {attempts} attempts")
     if model.startswith("opencode:"):
         for attempt in range(attempts):
             try:
@@ -488,18 +515,33 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--no-check", action="store_true",
+                    help="write people without checking their labels (check them later with --recheck)")
+    ap.add_argument("--recheck", metavar="FILE",
+                    help="check the labels of people already written to FILE instead of writing new ones")
     args = ap.parse_args()
     if args.kind == "test" and not args.judge:
         ap.error("--judge is needed for test data")
     for m in (args.writer, args.checker, args.judge):
-        if m and not m.startswith(("openrouter/", "ollama:", "opencode:")):
-            ap.error(f"{m}: give an OmniRoute id (openrouter/...), ollama:<model> or opencode:<provider/model>")
+        if m and not m.startswith(("openrouter/", "ollama:", "opencode:", "vllm:")):
+            ap.error(f"{m}: give an OmniRoute id (openrouter/...), ollama:<model>, opencode:<provider/model> "
+                     "or vllm:<port>:<model>")
+    written = json.loads(Path(args.recheck).read_text(encoding="utf-8")) if args.recheck else None
+    if written is not None:
+        args.n = len(written)
 
     def one(n: int):
-        rng = random.Random(args.seed * 1000 + n)
-        person = write_one(args, rng, n)
+        if written is not None:
+            person = written[n]
+        else:
+            rng = random.Random(args.seed * 1000 + n)
+            person = write_one(args, rng, n)
         if person is None:
             return None, None
+        if args.no_check:
+            print(f"  #{n} {person['scenario']} ({person.get('style', '?')}): {len(person['statements'])} messages, "
+                  f"not checked yet", flush=True)
+            return person, {}
         try:
             audit = check(args, person)
             if args.kind == "test":
@@ -507,7 +549,7 @@ def main() -> int:
         except (RuntimeError, ValueError, KeyError) as e:
             print(f"  #{n} {person['scenario']}: check failed ({e}); person dropped", flush=True)
             return None, None
-        print(f"  #{n} {person['scenario']} ({person['style']}): {len(person['statements'])} messages, "
+        print(f"  #{n} {person['scenario']} ({person.get('style', '?')}): {len(person['statements'])} messages, "
               f"audit {audit}", flush=True)
         return person, audit
 

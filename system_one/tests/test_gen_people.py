@@ -157,3 +157,18 @@ def test_a_flawed_reply_is_sent_back_for_repair(monkeypatch):
     out = g.write_one(args, __import__("random").Random(1), 0)
     assert out is not None and len(sent) == 2
     assert "out of order" in sent[1] and '"s12"' in sent[1]     # the problems and the reply went back
+
+
+def test_recheck_checks_people_already_written(monkeypatch, tmp_path):
+    p = person()
+    src = tmp_path / "raw.json"
+    src.write_text(json.dumps([p]), encoding="utf-8")
+    pairs = g.labelled_pairs(p)
+    monkeypatch.setattr(g, "ask", lambda model, prompt, **kw: json.dumps(
+        {"answers": ["yes" if rep else "no" for *_, rep in pairs]}))
+    out = tmp_path / "checked.json"
+    monkeypatch.setattr(sys, "argv", ["gen_people.py", "--kind", "train", "--writer", "vllm:8000:w",
+                                      "--checker", "vllm:8001:c", "--recheck", str(src), "--out", str(out)])
+    assert g.main() == 0
+    (checked,) = json.loads(out.read_text(encoding="utf-8"))
+    assert checked["scenario"] == "x" and "skip" not in checked      # the checker agreed with every label
