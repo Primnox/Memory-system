@@ -1,29 +1,25 @@
 """Kaggle GPU job: write memory-head training people with two open model families.
 
-Qwen 2.5 14B (Alibaba) and Mistral Nemo 12B (Mistral) are served with vLLM on
-Kaggle's T4s; each writes N people with gen_people.py, and the OTHER checks every
-label it gave. With two GPUs both run at once; with one, they take turns (write
-without checking, then the other model rechecks). Outputs land in
-/kaggle/working for `kaggle kernels output`.
+Qwen 2.5 14B (Alibaba, Apache-2.0) and Mistral Nemo 12B (Mistral, Apache-2.0) are
+served by Ollama on Kaggle's T4s, one server per GPU; each writes N people with
+gen_people.py and the OTHER checks every label it gave. With one GPU, a single
+server holds both and swaps between them. Outputs land in /kaggle/working for
+`kaggle kernels output`.
+
+(vLLM was the first choice; Kaggle's Python 3.13 has no torch for the vLLM that
+still runs on a T4's compute 7.5, so Ollama, which does.)
 """
 import glob
 import json
 import os
-import shutil
 import subprocess
-import sys
 import time
 import urllib.request
 
 OUT = "/kaggle/working"
 N = 20
-KIT = os.path.dirname(glob.glob("/kaggle/input/**/gen_people.py", recursive=True)[0])
-GEN = os.path.join(KIT, "gen_people.py")
-CANDIDATES = {
-    "qwen": ["Qwen/Qwen2.5-14B-Instruct-AWQ"],
-    "mistral": ["casperhansen/mistral-nemo-instruct-2407-awq", "solidrust/Mistral-Nemo-Instruct-2407-AWQ",
-                "Qwen/Qwen2.5-7B-Instruct-AWQ"],
-}
+QWEN, MISTRAL = "qwen2.5:14b", "mistral-nemo:12b"
+GEN = glob.glob("/kaggle/input/**/gen_people.py", recursive=True)[0]
 log = open(f"{OUT}/run.log", "a", buffering=1)
 
 
@@ -34,75 +30,57 @@ def say(msg: str) -> None:
 
 def sh(cmd: str, check: bool = True) -> None:
     say(f"$ {cmd}")
-    subprocess.run(["bash", "-c", f"set -o pipefail; ({cmd}) 2>&1 | tee -a {OUT}/run.log"], check=check)
+    subprocess.run(["bash", "-c", f"set -o pipefail; ({cmd}) 2>&1 | tail -20 | tee -a {OUT}/run.log"], check=check)
 
 
-def pick(family: str) -> str:
-    from huggingface_hub import model_info
-    for repo in CANDIDATES[family]:
+def server(gpu: int | None, port: int) -> None:
+    env = dict(os.environ, OLLAMA_HOST=f"127.0.0.1:{port}", OLLAMA_NUM_PARALLEL="2",
+               OLLAMA_MAX_LOADED_MODELS="2", OLLAMA_KEEP_ALIVE="2h")
+    if gpu is not None:
+        env["CUDA_VISIBLE_DEVICES"] = str(gpu)
+    subprocess.Popen(["ollama", "serve"], env=env, stdout=open(f"{OUT}/ollama_{port}.log", "w"),
+                     stderr=subprocess.STDOUT)
+    for _ in range(60):
         try:
-            model_info(repo)
-            return repo
-        except Exception as e:
-            say(f"{repo}: unavailable ({type(e).__name__})")
-    raise SystemExit(f"no {family} model available")
-
-
-def serve(model: str, gpu: int, port: int) -> subprocess.Popen:
-    args = [sys.executable, "-m", "vllm.entrypoints.openai.api_server", "--model", model,
-            "--served-model-name", model, "--dtype", "half", "--max-model-len", "10240",
-            "--gpu-memory-utilization", "0.92", "--port", str(port), "--disable-log-requests"]
-    if "awq" in model.lower():
-        args += ["--quantization", "awq"]
-    env = dict(os.environ, CUDA_VISIBLE_DEVICES=str(gpu))
-    proc = subprocess.Popen(args, env=env, stdout=open(f"{OUT}/vllm_{port}.log", "w"), stderr=subprocess.STDOUT)
-    for _ in range(180):
-        try:
-            urllib.request.urlopen(f"http://127.0.0.1:{port}/v1/models", timeout=5)
-            say(f"{model} up on GPU {gpu}, port {port}")
-            return proc
+            urllib.request.urlopen(f"http://127.0.0.1:{port}/api/tags", timeout=5)
+            say(f"ollama up on port {port} (GPU {gpu})")
+            return
         except Exception:
-            if proc.poll() is not None:
-                raise SystemExit(f"vLLM for {model} exited; see vllm_{port}.log")
-            time.sleep(10)
-    raise SystemExit(f"vLLM for {model} never came up")
+            time.sleep(2)
+    raise SystemExit(f"ollama on port {port} never came up")
 
 
-def gen(writer: str, checker: str, seed: int, out: str, extra: str = "") -> None:
-    sh(f"PYTHONIOENCODING=utf-8 python {GEN} --kind train --writer {writer} --checker {checker} "
-       f"-n {N} --workers 6 --seed {seed} --out {out} {extra}", check=False)
+def pull(port: int, model: str) -> None:
+    sh(f"OLLAMA_HOST=127.0.0.1:{port} ollama pull {model} 2>&1 | grep -v '^pulling' | tail -2")
+
+
+def gen(writer: str, checker: str, seed: int, out: str, name: str) -> subprocess.Popen:
+    cmd = (f"PYTHONIOENCODING=utf-8 python {GEN} --kind train --writer {writer} --checker {checker} "
+           f"-n {N} --workers 2 --seed {seed} --out {out} >> {OUT}/gen_{name}.log 2>&1")
+    say(f"$ {cmd}")
+    return subprocess.Popen(["bash", "-c", cmd])
 
 
 t0 = time.time()
-sh("pip install -q vllm==0.6.3.post1")
-import torch  # noqa: E402  (after vLLM pulls its own torch)
-gpus = torch.cuda.device_count()
-say(f"GPUs: {gpus} x {torch.cuda.get_device_name(0) if gpus else 'none'}")
-qwen, mistral = pick("qwen"), pick("mistral")
-Q, M = f"vllm:8000:{qwen}", f"vllm:8001:{mistral}"
+sh("curl -fsSL https://ollama.com/install.sh | sh")
+gpus = int(subprocess.run(["bash", "-c", "nvidia-smi -L | wc -l"], capture_output=True, text=True).stdout or 0)
+say(f"GPUs: {gpus}")
 q_out, m_out = f"{OUT}/train_writer_qwen25.json", f"{OUT}/train_writer_mistralnemo.json"
-
 if gpus >= 2:
-    a, b = serve(qwen, 0, 8000), serve(mistral, 1, 8001)
-    p1 = subprocess.Popen(["bash", "-c", f"PYTHONIOENCODING=utf-8 python {GEN} --kind train --writer {Q} "
-                           f"--checker {M} -n {N} --workers 6 --seed 900 --out {q_out} >> {OUT}/gen_qwen.log 2>&1"])
-    p2 = subprocess.Popen(["bash", "-c", f"PYTHONIOENCODING=utf-8 python {GEN} --kind train --writer {M} "
-                           f"--checker {Q} -n {N} --workers 6 --seed 910 --out {m_out} >> {OUT}/gen_mistral.log 2>&1"])
-    p1.wait(), p2.wait()
-    a.terminate(), b.terminate()
+    server(0, 11434), server(1, 11435)
+    pull(11434, QWEN), pull(11435, MISTRAL)
+    Q, M = f"ollama@11434:{QWEN}", f"ollama@11435:{MISTRAL}"
 else:
-    a = serve(qwen, 0, 8000)
-    gen(Q, M, 900, f"{OUT}/raw_qwen.json", "--no-check")
-    a.terminate(); a.wait(); time.sleep(10)
-    b = serve(mistral, 0, 8001)
-    gen(M, Q, 910, f"{OUT}/raw_mistral.json", "--no-check")
-    gen(Q, M, 0, q_out, f"--recheck {OUT}/raw_qwen.json")
-    b.terminate(); b.wait(); time.sleep(10)
-    a = serve(qwen, 0, 8000)
-    gen(M, Q, 0, m_out, f"--recheck {OUT}/raw_mistral.json")
-    a.terminate()
-
+    server(None, 11434)
+    pull(11434, QWEN), pull(11434, MISTRAL)
+    Q, M = f"ollama@11434:{QWEN}", f"ollama@11434:{MISTRAL}"
+jobs = [gen(Q, M, 900, q_out, "qwen"), gen(M, Q, 910, m_out, "mistral")]
+for j in jobs:
+    j.wait()
 for f in (q_out, m_out):
     n = len(json.load(open(f))) if os.path.exists(f) else 0
     say(f"{os.path.basename(f)}: {n} people")
+for f in glob.glob(f"{OUT}/gen_*.log"):
+    say(f"--- {os.path.basename(f)} (tail)")
+    say("".join(open(f, encoding="utf-8", errors="replace").readlines()[-3:]))
 say(f"done in {time.time() - t0:.0f}s")

@@ -9,13 +9,13 @@
 # 4. score once, each on data the round never trained or tuned on:
 #      regression cases (and against the previous round), fresh Dialogue NLI,
 #      LongMemEval knowledge-update pairs, LongMemEval end to end through the app,
-#      blind v2 and (when it exists) blind v3 through the app
+#      blind v2 through the app (v3 is training data, not a test)
 # Test misses are never printed.
 set -euo pipefail
 TAG=${1:?round tag, e.g. r5}
 PREV=${2:-r4}
 HERE=$(cd "$(dirname "$0")" && pwd)
-APP=C:/project/.worktrees/mem-verify
+APP=C:/project/.worktrees/memory
 APPPY=C:/project/backend/venv/Scripts/python.exe
 ROCM=$HERE/.venv-rocm/Scripts/python.exe
 CPU=$HERE/.venv/Scripts/python.exe
@@ -44,7 +44,7 @@ echo "== 4b. fresh Dialogue NLI + LongMemEval knowledge-update pairs"
 echo "== 4c. LongMemEval end to end"
 "$CPU" blind_pairs.py --data data/lme_e2e/lme_e2e.json --model "$MODEL" --onnx "$ONNX" --tag "$TAG" --save-pairs | tail -1
 "$APPPY" lme_e2e.py score --backend "$APP/backend" --decisions "results/blind_lme_e2e_$TAG.json" --tag "head-$TAG" | grep top-1
-for SPLIT in v2 v3; do
+for SPLIT in v2; do   # v3 is training data now (its README): never score on it
   [ -f "$APP/scripts/blind_memory/$SPLIT/test.json" ] || continue
   echo "== 4d. blind $SPLIT through the app"
   (cd "$APP" && PRIMNOX2_MEMORY_HEAD_SUPERVISE=0 "$APPPY" scripts/bench_memory_blind.py --split test \

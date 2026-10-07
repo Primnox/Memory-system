@@ -17,3 +17,4 @@ system_one/.venv-rocm/
 system_one/data/pilot/
 system_one/data/r5/
 system_one/kaggle_gen/out/
+system_one/data/train_v3_*.json

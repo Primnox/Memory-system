@@ -156,13 +156,22 @@ _spend = {"calls": 0, "in": 0, "out": 0}
 _spend_lock = threading.Lock()
 
 
-def _ask_ollama(model: str, prompt: str, max_tokens: int, temperature: float) -> str:
+def _ollama_target(model: str) -> tuple[str, str]:
+    """`ollama:<model>` on the default server, or `ollama@<port>:<model>` on another
+    (one Ollama server per GPU)."""
+    if model.startswith("ollama@"):
+        port, name = model[len("ollama@"):].split(":", 1)
+        return name, f"http://127.0.0.1:{port}/api/chat"
+    return model[len("ollama:"):], OLLAMA
+
+
+def _ask_ollama(model: str, prompt: str, max_tokens: int, temperature: float, url: str = OLLAMA) -> str:
     # Ollama's native route: its OpenAI-compatible /v1 ignores num_ctx and loads every
     # model at 4,096 tokens, shorter than one written person.
     body = json.dumps({"model": model, "stream": False, "think": False,
                        "options": {"temperature": temperature, "num_ctx": 16384, "num_predict": max_tokens},
                        "messages": [{"role": "user", "content": prompt}]}).encode()
-    req = urllib.request.Request(OLLAMA, data=body, headers={"Content-Type": "application/json"})
+    req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=1800) as r:
         reply = json.loads(r.read())
     with _spend_lock:
@@ -267,10 +276,11 @@ def ask(model: str, prompt: str, max_tokens: int = 8000, attempts: int = 4) -> s
                 print(f"    {model}: {type(e).__name__}", flush=True)
             time.sleep(5 * (attempt + 1))
         raise RuntimeError(f"{model}: no usable reply after {attempts} attempts")
-    if model.startswith("ollama:"):
+    if model.startswith(("ollama:", "ollama@")):
         for attempt in range(attempts):
             try:
-                content = _ask_ollama(model[len("ollama:"):], prompt, max_tokens, temperature)
+                name, url = _ollama_target(model)
+                content = _ask_ollama(name, prompt, max_tokens, temperature, url)
                 if content.strip():
                     return content
             except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError, OSError):
@@ -523,7 +533,7 @@ def main() -> int:
     if args.kind == "test" and not args.judge:
         ap.error("--judge is needed for test data")
     for m in (args.writer, args.checker, args.judge):
-        if m and not m.startswith(("openrouter/", "ollama:", "opencode:", "vllm:")):
+        if m and not m.startswith(("openrouter/", "ollama:", "ollama@", "opencode:", "vllm:")):
             ap.error(f"{m}: give an OmniRoute id (openrouter/...), ollama:<model>, opencode:<provider/model> "
                      "or vllm:<port>:<model>")
     written = json.loads(Path(args.recheck).read_text(encoding="utf-8")) if args.recheck else None

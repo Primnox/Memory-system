@@ -1,0 +1,36 @@
+{
+ "model": "C:/project/.worktrees/memory-system/system_one/models/laya-memory-r6",
+ "files": {
+  "pairs_dnli_fresh": {
+   "pairs": 1500,
+   "positives": 500,
+   "ap": 0.4427973907192629,
+   "best_f1": 0.5015608740894901,
+   "f1_at_0.5": 0.2689873417721519,
+   "precision_at_0.5": 0.6439393939393939,
+   "recall_at_0.5": 0.17,
+   "called_replace_by_source": {
+    "dnli-fresh:negative": "85/500",
+    "dnli-fresh:neutral": "15/500",
+    "dnli-fresh:positive": "32/500"
+   },
+   "comparisons": 1500,
+   "ms_per_pair": 26.9
+  },
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.43378333820493864,
+   "best_f1": 0.42201834862385323,
+   "f1_at_0.5": 0.10526315789473684,
+   "precision_at_0.5": 1.0,
+   "recall_at_0.5": 0.05555555555555555,
+   "called_replace_by_source": {
+    "lme_ku": "4/421"
+   },
+   "comparisons": 421,
+   "ms_per_pair": 57.8
+  }
+ },
+ "sentences": false
+}

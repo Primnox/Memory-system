@@ -172,3 +172,9 @@ def test_recheck_checks_people_already_written(monkeypatch, tmp_path):
     assert g.main() == 0
     (checked,) = json.loads(out.read_text(encoding="utf-8"))
     assert checked["scenario"] == "x" and "skip" not in checked      # the checker agreed with every label
+
+
+def test_an_ollama_model_can_name_its_server():
+    assert g._ollama_target("ollama:gemma4:26b") == ("gemma4:26b", g.OLLAMA)
+    assert g._ollama_target("ollama@11435:mistral-nemo:12b") == ("mistral-nemo:12b",
+                                                                 "http://127.0.0.1:11435/api/chat")
