@@ -15,12 +15,18 @@ sets, every score, and the plan for what comes next.
 - **Fully local.** It keeps your exact words with dates and knows when
   something changed, without calling a big AI.
 - **Blind tests:** the right fact comes up first 63% of the time (from 19%).
-  A small model trained in 12 minutes catches 85% of life changes (from 65%),
-  wrongly retires 2 facts instead of 20, and lifts right answers to 67%
-  (perfect change detection would give 71%).
-- **Still early:** the small model is not in the app yet; on messy,
-  non-Claude-written text its edge shrinks a lot (still ahead of the rules);
-  and there is no head-to-head comparison with other memory systems yet.
+  A small model (421M) now catches **104 of 112** life changes with **no**
+  wrong retirements, and still 90 of 112 when the same messages are typed
+  messily (round 7, below).
+- **Public benchmarks:** on LongMemEval's knowledge-update pairs it reaches
+  F1 **0.78** when given cleanly extracted facts; Gemini 3.1 Pro judging the
+  same pairs directly scores 0.80.
+- **The biggest lever is extraction.** On real people's chats (REALTALK), turning
+  messages into clean facts first makes the right message come up first 34% of
+  the time instead of 10%. The extraction in that test used a cloud model; a
+  small local extractor is being trained now.
+- **Still early:** the small model is not in the app yet, and there is no
+  head-to-head comparison with other memory systems (Mem0, Zep) yet.
 
 **How it differs from other AI memory** (by design; accuracy not yet compared):
 
@@ -32,6 +38,47 @@ sets, every score, and the plan for what comes next.
 | **Primnox** | **your exact words + dates; old facts kept, marked replaced** | **rules + a small model, no big AI** | **yes** |
 
 ![architecture](docs/architecture.png)
+
+## Latest: round 7 of the change-detection model (2026-10-08)
+
+Round 7 trained on everything at once: the earlier synthetic people, 24 new
+people written as real-looking chats with an assistant (facts mentioned in
+passing, half the messages about something else), 21 people who mix languages
+(Hinglish, Spanglish, Taglish, Arabizi, Pidgin, Singlish…), and messy-typing
+copies of all of them (typos, shorthand, half-sentences, voice-to-text slips).
+Lives were drawn at random rather than hand-picked, and every label was settled
+by a 2-of-3 vote between the writer and two independent auditors. Nothing below
+was trained on.
+
+| Test | Round 6 | **Round 7** |
+|---|---|---|
+| Blind test set, clean: changes noticed · wrongly retired | 103/112 · 0 | **104/112 · 0** |
+| Same set, messy typing (identical labels) | 81/112 · 7 | **90/112 · 4** |
+| Same set, heavy messy typing | 58/112 · 6 | **82/112 · 6** |
+| LongMemEval knowledge-update pairs, F1 (facts extracted by a cloud model) | 0.69 | **0.78** |
+| LongMemEval, F1 (messages split by rules, fully local) | 0.51 | 0.55 |
+| Dialogue NLI, full test / verified test, F1 | 0.49 / 0.57 | **0.61 / 0.69** |
+
+**For reference, a frontier model on the same tests.** Gemini 3.1 Pro, shown
+each person's whole history at once, catches all 112 changes (clean or messy)
+and scores F1 0.80 on LongMemEval reading whole messages. The small model judges
+one shortlisted pair at a time and runs on a laptop CPU; closing that gap
+locally is the current goal.
+
+**Extraction matters more than anything else measured.** The same model on
+LongMemEval scores F1 0.11 on whole messages, 0.51 on rule-split sentences and
+0.69 on cleanly extracted facts. On REALTALK (10 real 21-day chats between
+people; 505 memory questions), the right message comes up first:
+
+| Memory holds | First result right | In top 3 |
+|---|---|---|
+| Raw messages | 10% | 16% |
+| Messages split by rules | 9% | 15% |
+| Facts extracted by a model | **34%** | **50%** |
+
+Fine-tuned local extractors (Qwen 2.5 1.5B and 7B, QLoRA) are trained; their
+LongMemEval score is being measured. Data, code, Kaggle jobs and every score:
+[`round7/`](round7/). REALTALK's messages are not included (no licence).
 
 ## Results
 
@@ -61,9 +108,10 @@ and "back then" questions 24 → 34 of 54 (p=0.002).
 - About 1 in 5 retirements is a mistake.
 - These are retrieval scores, not end-to-end answers, on synthetic,
   agent-written conversations (171 answerable questions).
-- No comparison with other memory systems yet. Public benchmarks
-  (LongMemEval, LoCoMo) are on the roadmap; until then there is no claim of
-  being better than anything else.
+- No comparison with other memory systems yet. LongMemEval knowledge updates
+  and REALTALK are now measured (round 7, above); LoCoMo and other memory
+  systems are next. Until then there is no claim of being better than anything
+  else.
 
 ### A small trained model for change detection (new)
 
@@ -136,6 +184,7 @@ version: [`docs/Primnox_Memory_Research_Paper.docx`](docs/Primnox_Memory_Researc
 | `docs/DATASETS_AND_MODELS.md` | Open datasets, teacher models and starting models for it |
 | `graph/` | Graph-index experiment for choosing which facts go into the prompt |
 | `system_one/` | The small model: screen, training data, Kaggle training job, blind replay, results |
+| `round7/` | Round 7: chat-format and mixed-language people with audited labels, messy-typing test copies, extractor training data, every Kaggle job and score |
 
 **Can I run it?** Not on its own yet. The memory modules import a few parts of
 the Primnox app that are not published (database layer, settings, tool
@@ -145,15 +194,19 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
 
 ## Roadmap
 
-1. Save facts straight from the user's messages, so memory does not depend on
-   the chat model deciding to call `remember`.
-2. A standalone package: `pip install`, `remember / search / forget` on SQLite.
-3. Public benchmarks: LongMemEval and LoCoMo, for a comparison with other
-   memory systems.
-4. The small local decision model (≤500M parameters): change detection
-   trained and blind-tested (above); next, wire it into the memory service,
-   make it faster, then the "worth keeping?", context, privacy and
-   computer-use heads — see [`docs/SYSTEM_ONE_PLAN.md`](docs/SYSTEM_ONE_PLAN.md).
+1. **A local fact extractor**, so every message becomes clean facts without a
+   cloud model and without depending on the chat model deciding to call
+   `remember`. Measured as the biggest lever (above); first fine-tuned models
+   trained, being scored.
+2. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
+   0.80): give the change decision more context than one pair at a time.
+3. A standalone package: `pip install`, `remember / search / forget` on SQLite.
+4. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured
+   (above); LoCoMo and a comparison with other memory systems are next.
+5. The small local decision model (≤500M parameters): rounds 6–7 trained and
+   blind-tested (above); next, wire it into the memory service, make it faster,
+   then the "worth keeping?", context, privacy and computer-use heads — see
+   [`docs/SYSTEM_ONE_PLAN.md`](docs/SYSTEM_ONE_PLAN.md).
 
 ## Licence
 
