@@ -24,7 +24,8 @@ sets, every score, and the plan for what comes next.
 - **The biggest lever is extraction.** On real people's chats (REALTALK), turning
   messages into clean facts first makes the right message come up first 34% of
   the time instead of 10%. The extraction in that test used a cloud model; a
-  small local extractor is being trained now.
+  first fine-tuned local extractor (7B) scores 0.67 on LongMemEval, ahead of
+  rule splitting (0.55), behind cloud-extracted facts (0.78).
 - **Still early:** the small model is not in the app yet, and there is no
   head-to-head comparison with other memory systems (Mem0, Zep) yet.
 
@@ -76,9 +77,21 @@ people; 505 memory questions), the right message comes up first:
 | Messages split by rules | 9% | 15% |
 | Facts extracted by a model | **34%** | **50%** |
 
-Fine-tuned local extractors (Qwen 2.5 1.5B and 7B, QLoRA) are trained; their
-LongMemEval score is being measured. Data, code, Kaggle jobs and every score:
-[`round7/`](round7/). REALTALK's messages are not included (no licence).
+**First local extractors** (QLoRA on the audited chat people), scored on LongMemEval
+with the round-7 model:
+
+| Facts written by | F1 | Precision | Recall |
+|---|---|---|---|
+| A cloud model (Gemini, prompt only) | 0.78 | 0.77 | 0.79 |
+| **Qwen 2.5 7B, fine-tuned (local)** | **0.67** | 0.78 | 0.58 |
+| Rule-based sentence splitting (local) | 0.55 | 0.71 | 0.44 |
+| Qwen 2.5 1.5B, fine-tuned (local) | 0.41 | 0.63 | 0.31 |
+| Qwen 2.5 3B, prompt only (local) | 0.38 | 0.78 | 0.25 |
+
+The fine-tuned 7B beats the rules and matches the cloud model's precision, but
+writes half as many facts, so it misses updates; the 1.5B is not usable yet.
+Data, code, Kaggle jobs and every score: [`round7/`](round7/). REALTALK's
+messages are not included (no licence).
 
 ## Results
 
@@ -196,8 +209,8 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
 
 1. **A local fact extractor**, so every message becomes clean facts without a
    cloud model and without depending on the chat model deciding to call
-   `remember`. Measured as the biggest lever (above); first fine-tuned models
-   trained, being scored.
+   `remember`. Measured as the biggest lever (above); the first fine-tuned 7B
+   reaches 0.67 (rules 0.55, cloud 0.78) and needs more recall.
 2. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
    0.80): give the change decision more context than one pair at a time.
 3. A standalone package: `pip install`, `remember / search / forget` on SQLite.

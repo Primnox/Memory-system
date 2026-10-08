@@ -60,8 +60,19 @@ and 7B (2 h) on Kaggle T4s.
 | Gemini 3.8 Flash (prompt) | — | 653 | 75 of 467 |
 
 Training loss fell to 0.01–0.05 while held-out loss stayed 0.67–0.74 — likely memorising 20
-people. On LongMemEval they write half as many facts as Gemini; the head's score on their
-facts (`kaggle/primnox-extract-score`) decides whether that costs recall. **Pending.**
+people. Scored on LongMemEval KU (`kaggle/primnox-extract-score`), F1 at the fixed 0.5 threshold:
+
+| Facts written by | Round 6 head | Round 7 head (P · R) |
+|---|---|---|
+| Gemini 3.8 Flash, prompt only | 0.69 | **0.78** (0.77 · 0.79) |
+| **Qwen 2.5 7B, fine-tuned** | 0.65 | **0.67** (0.78 · 0.58) |
+| Rule splitter (extract.py) | 0.51 | 0.55 (0.71 · 0.44) |
+| Qwen 2.5 1.5B, fine-tuned | 0.42 | 0.41 (0.63 · 0.31) |
+| Qwen 2.5 3B, prompt only | 0.37 | 0.38 (0.78 · 0.25) |
+
+The fine-tuned 7B beats the rules and matches Gemini's precision; its recall is the gap (it
+writes 298 facts for the 467 messages against Gemini's 653). The 1.5B is below the rules.
+Next for the extractor: more varied training people, a weaker "no fact" prior, fewer epochs.
 
 ## Data
 
