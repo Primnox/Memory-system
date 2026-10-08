@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-memory-extract",
+  "title": "primnox-memory-extract",
+  "code_file": "primnox-memory-extract.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-memory-head-r6", "anikethpani/primnox-lme-extract"],
+  "kernel_sources": ["anikethpani/primnox-memory-head"],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

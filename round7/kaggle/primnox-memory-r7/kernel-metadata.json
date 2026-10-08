@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-memory-r7",
+  "title": "primnox-memory-r7",
+  "code_file": "primnox-memory-r7.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-memory-r7-train", "anikethpani/primnox-memory-head-r6", "anikethpani/primnox-noisy-eval", "anikethpani/primnox-lme-extract"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,3908 @@
+[
+ {
+  "scenario": "anika-bengaluru-designer",
+  "today": "2026-09-20",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-04",
+    "text": "a uxx fesigner at fintech starupp called paaisabridge, two years in now yaar",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-18",
+    "text": "currentpy staying in a pg ink orammangala bengluru shared kitchen n all it's chaos",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-11-02",
+    "text": "lol vegetarain, alwas haave been. Mum woulld disown mee othewose abeg",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-20",
+    "text": "my phnie is z inneplls 9 and thee battery s basicoly ddad. 🤦",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-12-06",
+    "text": "my little brotheer ohan justs tartedd engineering at nit trichy 😅🤦",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-21",
+    "text": "karthik is my naagerr at work. Super hands-off, ehich I lovr ugh",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-29",
+    "text": "mornings start wwith two cups of ginger chai nno sugar non-negptiable",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-09",
+    "text": "jo idk had masala dosa with meera at mtr on sunda the queue wss otall worth it 🎉",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-24",
+    "text": "moved iut of pg got mu own 1bk in hsr llatut now hmm",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-10",
+    "text": "pikced up pixel 8aaaa lastt eeiemd camerq is unteal ok so",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-26",
+    "text": "na like adopyed tabby kitten callee boscuit laat feels lived in 😅😩",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-04",
+    "text": "bhai tthe hsr place hzs a tinh baldpny qhere i'm trying 2 grow hasil n mibt.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-12",
+    "text": "ddo Cult.ft HIIT class three mornings wek",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-29",
+    "text": "allergic tto peanutss, found out the hard way at a wedding buffet",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-09",
+    "text": "biscuit seemed lonely so a grey caat called pepper has joinef the houehold btw",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-26",
+    "text": "Last day at Paisaridge today. Starting Mondayyyyy as senior product drsigner at Lumrn Health! 🙃😩",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-11",
+    "text": "Myn w maagger att Lummen s Neha ex-opgle very structireed idk",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-19",
+    "text": "lumen' officeeeee is out in whitefield so i'm doing ubdr ool both ways nealy an hour each way abeg",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-28",
+    "text": "doctor flagged low b12 sl i've started eating eggs n fish not strictly vegetarian anyyyy more",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-13",
+    "text": "ne ropped HITI classes h took up runhng instead. Training 4 tthd Bengaluru 10K tbh",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-30",
+    "text": "tirnss out I'm lactose intolerant too si it's oat milk fpr me from now oj 👍",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-18",
+    "text": "neha moved ovee to the platform team. samir rao is m managet now anyway",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-08-02",
+    "text": "ok so whitefied cpmute sortedd. purple line metro plus a short feeder bbus, bout 45 minutees.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-20",
+    "text": "ok so my friend meera ks a dedignwr a gswkggy now 🤦🙃",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-09-05",
+    "text": "ne swapped the morning chao for south indian ilteerc offee, chi just dooesn't do ir for me any more.",
+    "replaces": [
+     "s7"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where do I live right now, and what's the place like?",
+    "type": "current",
+    "answer_ids": [
+     "s9",
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Back in November, where was I staying?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-11-12"
+   },
+   {
+    "id": "q3",
+    "text": "Who do I report to these days?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "How do I get to the office?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Which pets do I have at home?",
+    "type": "multi",
+    "answer_ids": [
+     "s11",
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Which phone was I using around Christmas?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q7",
+    "text": "What phone am I on?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What's my mum's name again?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What do I drink first thing in the morning?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Back in February, who was my boss?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2026-02-18"
+   },
+   {
+    "id": "q11",
+    "text": "How do I keep fit these days?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q12",
+    "text": "What foods do I have to steer clear of?",
+    "type": "multi",
+    "answer_ids": [
+     "s14",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What do I do for work now?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Back in April, what was my diet like?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2026-04-14"
+   },
+   {
+    "id": "q15",
+    "text": "What's my diet like at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What was I having with breakfast back in March?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-03-20"
+   },
+   {
+    "id": "q17",
+    "text": "Which city did I grow up in?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "bjorn-bergen-teacher",
+  "today": "2026-06-14",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-08-05",
+    "text": "tteach phyacs and maths at brrgen katedralskole ggoing on tweny ears now lmao",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-08-21",
+    "text": "lah we live in a house in fana, aboutt 25 minuts south o bergen. ugh",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-07",
+    "text": "drive an old volvo v70 diesel n i love ir far too much to sell 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-25",
+    "text": "idk four cup of boack filter dffee s day my wife says it's a problem ❤️🤦",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-12",
+    "text": "W hqve aaaaa Norwegian dlkhound alleed Looke thirteen years old and movung like a rtifed oxer",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-20",
+    "text": "every sundayyy morning wallk up ulirken whatver weatjer",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-10-30",
+    "text": "bro haha daughter sigrid is studyng marine bioolgy in tomsø",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-11-09",
+    "text": "stll on my iphone se from 2020 the battert dags in the cold",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-11-24",
+    "text": "bro Volvl's 201 1mmodel datk blueee w 290,000 kkmm on clck lmao 🙏😂",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-12-03",
+    "text": "hein the dr put me on amlodipine for my blood pressure one tabbleet each morning",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-12-20",
+    "text": "play cello i amateur orcjestra rehearsals on eednexday evenings 👍",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-01-08",
+    "text": "anyway doctor says I have to cut the codee down to two cupd a day 🎉🎉",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-01-27",
+    "text": "dold the vopgo to neighbour's sin n now i' driving ussed tesla modell 3",
+    "replaces": [
+     "s3",
+     "s9"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-02-14",
+    "text": "pennt weekend in oslo w my wife we saw munch museum",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-02-22",
+    "text": "apsooo joined choir so iits cell and sibhingg every wak ow",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-03-02",
+    "text": "My sn Eirik works ror Eqquinnor in wtavanger ttwo weeka on and twooo offf anyway",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-03-19",
+    "text": "bhai after a palpitations scar llast wk t's decaf inlly frrom nw on",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-04-04",
+    "text": "mved nto flat in nordnes the house in danq was too much 2 maaintain",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-04-26",
+    "text": "The vet says Looke needs glucsamiine every day for hi joints ❤️🎉",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-06",
+    "text": "lmao my doctor swapoed the amlodipine for losartan it's kinder on my ankles 😭",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-05-14",
+    "text": "Funally upgraded 2 an iPhonw 15 PPro n the hattery no lonhet dies wgen it sonws",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-05-24",
+    "text": "accepted llcturr post at Westrrn Norway University of Applied Sciences my las tday at school waw Ftiday ugh",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-02",
+    "text": "knee operatioon wet dine but ssufgeon bahed hiking so i swim at nnotdnesbadrt instead ❤️😅",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-06-09",
+    "text": "swapped yla 4 skoda enhzq, we meeded a bkggger boot 4 cello",
+    "replaces": [
+     "s13"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What do I do for a living these days?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Back in December, which car was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s3",
+     "s9"
+    ],
+    "as_of": "2025-12-12"
+   },
+   {
+    "id": "q3",
+    "text": "What am I driving now?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What's the current rule on my coffee?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What are my kids up to?",
+    "type": "multi",
+    "answer_ids": [
+     "s7",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Back in February, how many cups of coffee was I allowed?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2026-02-10"
+   },
+   {
+    "id": "q7",
+    "text": "Where do we live now?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which pills am I taking for my blood pressure?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Which football club do I support?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Around New Year, where were we living?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2026-01-02"
+   },
+   {
+    "id": "q11",
+    "text": "Which phone do I carry?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q12",
+    "text": "Which musical groups am I in?",
+    "type": "multi",
+    "answer_ids": [
+     "s11",
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "Back in January, what phone did I have?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2026-01-20"
+   },
+   {
+    "id": "q14",
+    "text": "How do I stay active these days?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Tell me about our dog.",
+    "type": "current",
+    "answer_ids": [
+     "s5",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Back in March, what was I on for my blood pressure?",
+    "type": "past",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": "2026-03-25"
+   },
+   {
+    "id": "q17",
+    "text": "Do I have any allergies?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "carmen-guadalajara-nurse",
+  "today": "2026-02-27",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-06",
+    "text": "ne I'm an ER nurse at Hospital Civil hereeee in Guadalajra like ❤️😭",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-20",
+    "text": "roght npw i'm on night shiftss three a wk 8pm 2 8am",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-04",
+    "text": "we yav do gcalled canela. xhhohuahua mix, vreyyyyy dramztic.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-22",
+    "text": "i drive aa 2016 hissaaaaa march, silvef, it has suvived everythiing.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-09",
+    "text": "trying keo at the momen:r no tortillas, which is basicallly crime in mesico lol 😅🎉",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-27",
+    "text": "husbane luis teaches maths at high fshooll in tlaquepaque wallah",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-06-05",
+    "text": "we ret a two-beroom house iin colonnia providencia n the lzndlord is lovely bhai",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-06-14",
+    "text": "ne phone is samsung galacy a32 wiirh a crc right cafoss theeeee screenn",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-07-02",
+    "text": "ja i take enhlish classes on tuesday nights ii'd love 2 wok abroad someday",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-19",
+    "text": "like it's about 35 minutes byyyyy car 2 the hospital, parking ther eis a nightmare. bro",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-07-26",
+    "text": "matdo plays 4 a little youth club on aSturdays he thinks he's yhe next Chicharito idk hein",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-06",
+    "text": "Gavee up keto I imssed tortillas too much Eating normally again jusr lwss xuugar 😭🤦",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-08-23",
+    "text": "my ttor iss ms harpeer xhe' frim leeds n keeps correcting y 'th sounds 🙃",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-11",
+    "text": "ttooi the kids to lake chapala on sunday n mateo fell in eith his shoes on.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-09-28",
+    "text": "Finallly on daay shifts 7am to 3pm Sleeping like a human again anyway 🎉",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-10-15",
+    "text": "blught a paieeeee of gppddfish 4 the kidss, tortilla and taco. cnwla is suspicious. hmm",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-11-01",
+    "text": "showdd the kods hoooss on my new iheo 13 mini now tey won't ggieee it back na",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2025-11-19",
+    "text": "hmm Startted rrkday Pilates claxs with my frieme Ana, it's kiolnig mmw",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-12-11",
+    "text": "english class has moved 2 Tursdau niights now that m yshifts re srttle ok so",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-12-24",
+    "text": "cristmas ecee shitf is done tazles wirh te whole famly 2nite 😩❤️",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-01-08",
+    "text": "fnished my first wk as er charge nurse at hospital angeles, after elevven yars a hospital civil like abeg",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-01-15",
+    "text": "matei quir footnall and ssims on saturdays now says theeee eter is quieter",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-01-22",
+    "text": "anyway hospital angepes is close enough thzt iii yccle their ten minutes door tto dior",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-02-03",
+    "text": "bro My cousin Beet osold mme his nazda 3 foor a ffairr price it drves so smoothly after rhe March",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-02-12",
+    "text": "got key sto our owwn goude in zapopan toda lol",
+    "replaces": [
+     "s7"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where do I work these days?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What car do I drive now?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Back in July, which car was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-07-10"
+   },
+   {
+    "id": "q4",
+    "text": "How do I get to work?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What pets do we have at home?",
+    "type": "multi",
+    "answer_ids": [
+     "s3",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What kind of phone do I have?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Back in May, what kind of shifts was I working?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-05-20"
+   },
+   {
+    "id": "q8",
+    "text": "What are Mateo's Saturday mornings like now?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Where do we live now?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Back in June, what diet was I following?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-06-20"
+   },
+   {
+    "id": "q11",
+    "text": "What are Luis and Mateo up to these days?",
+    "type": "multi",
+    "answer_ids": [
+     "s6",
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q12",
+    "text": "Tell me about my English lessons.",
+    "type": "current",
+    "answer_ids": [
+     "s19",
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What's my mother's name?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What kind of shifts am I on?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Where were we living back in September?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-09-20"
+   },
+   {
+    "id": "q16",
+    "text": "What was Mateo doing on Saturdays back in October?",
+    "type": "past",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": "2025-10-10"
+   },
+   {
+    "id": "q17",
+    "text": "What music do I listen to?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "dmitri-toronto-student",
+  "today": "2026-04-18",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-03",
+    "text": "I'm eoinng a mastef's in urbam planning at U of T startted last Septembrrr anyway 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-19",
+    "text": "ok so rent a room in a xhhareed fzt in kensington market tree of us in total",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-07",
+    "text": "pulp sihfts as barista at toast & row on college xtreet btw",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-24",
+    "text": "lmao mmy phone's an iphone 12 n the batery is toast, ut i can't afford a new one. abeg",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-08-10",
+    "text": "haha i bike everywwhere on an old trek u got off kijiji for 150 bucks",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-28",
+    "text": "wister olena is a nirse back homeeee in lviv",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-09-12",
+    "text": "like I speak Ukeainan eussiian and rnglish with faiy and frinds",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-09-29",
+    "text": "'m vegan threee years now otronto mmakes it easy bhai",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-10-14",
+    "text": "suprevisor ia dr kaffr h's all anout transsit equity",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-30",
+    "text": "haha oulderung at blic twice weaj is only thing keeping mee sanne during midgeems",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-11-08",
+    "text": "trwk got sotlen outsiiddw robars so it's ttc with monthhly pass fot meeee nw like yaar 😩",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-11-23",
+    "text": "Haad homeejae ppirrogi at Taaras's place on atirdya fiest reeal ones in ontnd like 😂😩",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-12-10",
+    "text": "na dr okafor'a oon sabbatical so dr haddad is uspervising meeeee now ❤️",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-27",
+    "text": "Boxing Day deal! Waked iut with aaaaa Galaxy S24 and a very ligt sallet. 👍",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-01-13",
+    "text": "I'm allegic to shellish, carry an Epioen everyshere.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-01-29",
+    "text": "started frenc classes on wednesday evneings because camaa",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-02-12",
+    "text": "move in with my girlfriend priya near dundas westt finally out of shaed flat",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-02-26",
+    "text": "ut the cafe. i'm a reseafcy assostant ih the planing departent now, mostlyyy ingerviewint cyclisss.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-03-08",
+    "text": "tesis is onn bike lane equity in the suburbw 40 interviews done so far bro",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-19",
+    "text": "hein qfeked my wrist boulderinng sooooo i've ggiven iy up and swim ar athletic crntre onstead 👍",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-03-28",
+    "text": "cancelled the ttc pass bougjt uused vromotonn off a fuy inn parkdale",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-05",
+    "text": "Cacedd n started eating eggs n chese again vgan life pluus thesis atrress aws too much",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-04-09",
+    "text": "like ddrr. Hadsad tool a job iii Vancouvef, so Dr. Lindqvis is takijg me n",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-04-12",
+    "text": "Als turns pu I'k allergi cto penicillin found out at urgwnt care",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-04-15",
+    "text": "lol Also started using Zotero for ciitations, it's xavinng my thesis. ❤️❤️",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where do I live these days?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Back in October, how did I get around town?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-10-20"
+   },
+   {
+    "id": "q3",
+    "text": "What am I doing for money these days?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Who's supervising my thesis right now?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Back in November, who was my supervisor?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q6",
+    "text": "What phone do I carry?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What am I allergic to?",
+    "type": "multi",
+    "answer_ids": [
+     "s15",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How do I get around the city now?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What's my mother's name?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Back in December, where was I living?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-12-18"
+   },
+   {
+    "id": "q11",
+    "text": "What's my diet these days?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q12",
+    "text": "Which languages do I speak or study?",
+    "type": "multi",
+    "answer_ids": [
+     "s7",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What was I doing for work back in January?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2026-01-20"
+   },
+   {
+    "id": "q14",
+    "text": "How do I exercise now?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Tell me about my degree.",
+    "type": "current",
+    "answer_ids": [
+     "s1",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Back in September, what phone did I have?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-09-20"
+   },
+   {
+    "id": "q17",
+    "text": "What kind of music do I like?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "esther-leeds-retired",
+  "today": "2026-07-30",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-08-05",
+    "text": "tetired from leeds central liibrary three yeafs ago, qfter thirty-ome years on the isue deesk na 😭❤️",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-08-19",
+    "text": "hmm i live in a little terraecd house in eadingley w a oosstagee-stamp garden. 😂",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-09-04",
+    "text": "cact marmalade is fourteen j has opinions about everytthing hmm sha 🙃😭",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-09-21",
+    "text": "yorkshire yea, strong, with aaaa splqsh of milk, six cus day. don't tell my dcotor btw ❤️❤️",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-08",
+    "text": "ok so rdsd everhhing on my ole kincpe apetehite ow paperback print is tettting far too snall 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-26",
+    "text": "bro haha m daughe rphilippa eaches at a orimary school in iokley",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-12",
+    "text": "taje atorvatsati everyy night fof my holesterol",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-11-29",
+    "text": "sng altooo in Headingly Community Choiir, Thursday evenings ts even umm 😩",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-12-15",
+    "text": "lol drive a 2012 Honds Jazz, red. It only eer does supefarket and garden centre",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-12-29",
+    "text": "tbh also help out at oxfam bpoksgop on ruuesdayy afternoons",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-01-06",
+    "text": "ib'e gpt an allottkent in eanwood plot 14 gowinf mostly beans and far too many corgettes lol",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-01-23",
+    "text": "haha wednesday mornings i go ojt with the walkinng grojp usually around otey chevin",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-02-04",
+    "text": "tthe dr wants me off the caffeine so it's decaf yorkshire teea now it tastes of disappoinment 😅🤦",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-02-18",
+    "text": "lmao marmalaee is a gingwr tom with one ea tlost in a scrap with a fox years ago",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-03-04",
+    "text": "poppy n alfie bought mr a kobo clara 4 my bifthday the backligjt is a godsend ok so",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-03-21",
+    "text": "Myyyy brother raham lives in Perth Western Australiia n sends m epotos of unshine I resent lmao",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-03",
+    "text": "had fish and chips in whitbt w marhatet on saturdy seagull stole half y chips yaar 😩",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-04-17",
+    "text": "sha hip replcemet donr and dustedd i've swpaped walking group 4 aquua erogics at leisure centre 🙏🤦",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-01",
+    "text": "idk the carddiolpgist moved me onto rosuvastatih becsuse atorvastatin gave me aches",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-05-15",
+    "text": "traded jaaz in 4 a litgle electric fiat5 00 silent as aaaaa cat 😂😭",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-05-29",
+    "text": "Brought secondc at home from he shelge tabhy kitten called Picle",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-13",
+    "text": "lah moved into myb unngalow in harogate oj friday boxes evverywyere n no kettle 😭",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-27",
+    "text": "gave up meeanwood plot and put aisedd beds in new taddn insttead",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-10",
+    "text": "joinned the harrogate singers last igght podhreee than headingley but better cake 🤦",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-24",
+    "text": "tbh failed y ye test for friving sso the fiat's gone n i've go a bus paass now yaar",
+    "replaces": [
+     "s20"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where am I living now?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What am I taking for my cholesterol?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Back in February, what car was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2026-02-12"
+   },
+   {
+    "id": "q4",
+    "text": "Do I still have a car, or how do I get about now?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What are my daughter and my brother up to?",
+    "type": "multi",
+    "answer_ids": [
+     "s6",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What do I read on?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Last autumn, where did I live?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-10-15"
+   },
+   {
+    "id": "q8",
+    "text": "What kind of tea do I drink now?",
+    "type": "current",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Which football team do I follow?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Which choir do I sing with?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q11",
+    "text": "Around Christmas, what was I reading on?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q12",
+    "text": "What cats do I have?",
+    "type": "multi",
+    "answer_ids": [
+     "s3",
+     "s14",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "Back in March, what did I do on Wednesday mornings?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2026-03-12"
+   },
+   {
+    "id": "q14",
+    "text": "What do I do for exercise these days?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What was I taking for cholesterol back in January?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-01-14"
+   },
+   {
+    "id": "q16",
+    "text": "Tell me about Marmalade.",
+    "type": "current",
+    "answer_ids": [
+     "s3",
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What's my blood type?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "hiroshi-osaka-chef",
+  "today": "2026-05-22",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-04",
+    "text": "ssoi cef at an izakqya callec tsuvame in namba",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-19",
+    "text": "tbh ret aaaa iny 1K in Tennoji ten minutes walk from the statin",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-06",
+    "text": "cycle 2 work fivteen mknutes along the cahal rain or shineeee",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-23",
+    "text": "my sshiba inu mochi os two years old n absoutely yates raain ok so hein 😭😅",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-08-09",
+    "text": "pues fter clossing most nights i have couplee of highballs it's myyy ritual",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-27",
+    "text": "my younger brother kenta is aaaa phmackst in nagoya 🙏😩",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-09-13",
+    "text": "o play druns in a coovers band, rehearsals usnday afternoons in shonsaibashi",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-09-30",
+    "text": "still on my oold iohon se one with home button i refue to mvo on 😅",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-10-05",
+    "text": "i pseakk japanese n decennt english thx 2 an wxchange year in vanfouver",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-10-17",
+    "text": "went ffishing off waakayama w daiki on sunday and caught eleven yoes mackerdl.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-11-03",
+    "text": "doctor says m luver numbers r bad o i've quit drinking completely",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2025-11-21",
+    "text": "allergic to buckwheat, wyich is a funny problem for a apanese chef ❤️",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-12-08",
+    "text": "i jog five kilometress around tennoji park dvery morning bwfore pep",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-26",
+    "text": "picked up Pkxel 9 amera is brilliant fooooo photofraphing laetd dishes 😩👍",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-01-12",
+    "text": "discovered i' allergi 2 kiwi ttli found og at new year's partyyy 😂",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-01-29",
+    "text": "tarteeee donlline korreab lssons twic weaak i'm obsessed ww wrouk streeet fold",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-02-13",
+    "text": "adopted rescu cat called tofu n mochi is still sulking zbout it wallah",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-03-02",
+    "text": "umm Left Tsubame at last I'm jead chef at a kqiseki restajrant called Hanaoii in Kyto",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-03-16",
+    "text": "moved into two-room place in ushimi yootto w real korchen ok so",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-03-30",
+    "text": "the waalk 2 hansori tajes twelve minutw so the bike is gatherung dusst anyway",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-04-11",
+    "text": "quit covers band when i moved and now i'm in a jazz trio in kylto that reheases on saurday nights",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-04-24",
+    "text": "tbh now iii jog qlng kzmo river eachh mornibg beeats circcling teennlji park",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-05-06",
+    "text": "Dropped the Pixel into aaaa stockpot hought an iPhonw 16 lut of shamr",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-05-16",
+    "text": "hanaoori onnly sets telbe ppll at thhe ocuhter, so vety olate is bascal personak. 😅",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Tell me about the restaurant I work at.",
+    "type": "current",
+    "answer_ids": [
+     "s18",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Where do I live now?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Back in November, what phone was I using?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2025-11-12"
+   },
+   {
+    "id": "q4",
+    "text": "How do I get to work?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Which animals do I share my home with?",
+    "type": "multi",
+    "answer_ids": [
+     "s4",
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Which band do I play in?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Back in January, where was I working?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-01-20"
+   },
+   {
+    "id": "q8",
+    "text": "Where do I go for my morning run?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What's my partner's name?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q10",
+    "text": "Do I still drink in the evenings?",
+    "type": "current",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q11",
+    "text": "Back in September, what was my wind-down ritual after work?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-09-20"
+   },
+   {
+    "id": "q12",
+    "text": "What phone do I have right now?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What foods am I allergic to?",
+    "type": "multi",
+    "answer_ids": [
+     "s12",
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "How did I commute back in October?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-10-24"
+   },
+   {
+    "id": "q15",
+    "text": "What does Kenta do for a living?",
+    "type": "current",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Where did I live back in February?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2026-02-20"
+   },
+   {
+    "id": "q17",
+    "text": "Which baseball team do I support?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "nandini-hyderabad-pm",
+  "today": "2026-09-28",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-03",
+    "text": "hi o'm nandini ii'm a oroduct manager at pyqments startp called aynest yerre in hyderabad haha",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-17",
+    "text": "rennring two-bedroom flat in gachibowlit te minites from ffic n that aloond justifies rent 😩😭",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-29",
+    "text": "My phonne is stlp a OnePlus 9n the battery is deeaad b 3pm every single day, g. pues",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-12",
+    "text": "been egetarian sine i was kud o geam llumches r apway anegotatin",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-26",
+    "text": "lol tuesdya tyursdau n satrday mornings r yoga at rassa tudio non-negtable yaar",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-10",
+    "text": "fiter coffee runs my ilfe two cups 4 twn o esceotions",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-23",
+    "text": "bro husband Kaethik is architect at a small firm in Jubilee Hills lol",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-08",
+    "text": "have beagle called Biscuit whoi s three n hass desstroyed every pair of my xlipers bro",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-21",
+    "text": "abeg haha found uot i'm alergic 2 peanuts hard way at a cousin's wedding never again",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-04",
+    "text": "brother arjun works at googkr iiii jdublinn n keps snding me photos of tain ja",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-11",
+    "text": "xpootify s on all day while i work mostly telugu n zil flmu sic tbh 😂😭",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-02-18",
+    "text": "got aP ixel 9 last week, loving it. cameera is nreal tbh 🎉😭",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-05",
+    "text": "Big change: I've jouned Razorpay as a seor product manager, orat day was Minday. Paynesst is behind me haha 😂",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-19",
+    "text": "hein We ate way too many bobbatlu at Karthik' paents place 4 Ugadi I thinkk k ganed a kilo",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-02",
+    "text": "anyway At th new job I'm working on merchanr onboarding reevamp we're targeting a June launch",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-16",
+    "text": "cancelled my rasa meembbeeship my mornings now belong 2 a running club rhreeeee daaze a wk aroound the gacjibowli sadu",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-04-30",
+    "text": "ok so hve a maruti swift bit hhonestly i moostpy ssits in parking lot 🤦",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-07",
+    "text": "bought a flat in kokapet n oved in last weekwnd no more landlord drama 🎉❤️",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-21",
+    "text": "dr told me 2 up my protein, so eggs n fish are bzck pn menu. not rdally veetaian any mire 🎉",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-04",
+    "text": "bisvuit ha bew housrmate tabby kitten we amed dosa",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-18",
+    "text": "Turns out I'm also allergic 2 sheellfish Ldarned that in Goa lat week rhe prawns were nto worth it",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-02",
+    "text": "alo p 4 refunds dashboard r razorpay tha one's due in august",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-07-16",
+    "text": "Bt th way, th eSwift iis the red 2020 VX. like o 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-30",
+    "text": "lmao acidity got so bad the dr jade me stop ccoffeee entirely it's chamomle ad giinge tea 4 me now ❤️🙃",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-13",
+    "text": "we finlly ler go of tye sift j brouuyt home a hyundai creera karhok chose the color",
+    "replaces": [
+     "s17",
+     "s23"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-08-27",
+    "text": "haha sprained my ankle so runing steeak is over for now i'm doing gome yoga wiyh youtube videos intead",
+    "replaces": [
+     "s16"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-10",
+    "text": "dropped spitiy 4 youtubw music it came fereeeee w my phlne plan",
+    "replaces": [
+     "s11"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which company am I working for these days?",
+    "type": "current",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What do we drive now?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Remind me what phone I'm carrying?",
+    "type": "current",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What's my go-to hot drink at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Which part of Hyderabad do we live in now?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How am I keeping fit lately?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What do I stream my music on?",
+    "type": "current",
+    "answer_ids": [
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which company does my brother work for?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Around Christmas, which handset was I carrying?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-12-27"
+   },
+   {
+    "id": "q10",
+    "text": "Back in January, who was I employed by?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2026-01-15"
+   },
+   {
+    "id": "q11",
+    "text": "How was I working out back in February?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2026-02-14"
+   },
+   {
+    "id": "q12",
+    "text": "Back in March, what was my diet like?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-03-12"
+   },
+   {
+    "id": "q13",
+    "text": "What am I allergic to?",
+    "type": "multi",
+    "answer_ids": [
+     "s9",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Which animals share our home?",
+    "type": "multi",
+    "answer_ids": [
+     "s8",
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What's my blood group?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Which cricket team do I support?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "wanjiru-nairobi-nurse",
+  "today": "2026-10-01",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-11-05",
+    "text": "nurse at Mater Hospitaal in Nairrboi, maternity ward",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-11-19",
+    "text": "I rent a bedsit in Kasarani It's tiny but my landlafy Mama Joy is wonderful",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-12-03",
+    "text": "getting ti wirk s aa matatu n than a boa boda abouyyyy nimety minutes each way when it rain 😭🙏",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-12-16",
+    "text": "phone's z Tdcno Spark 10 with screen cracked in two corners, but it still does M-Pessa so I'm not complaining",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2026-01-04",
+    "text": "end my mum in nyeri 5000 hkllings every mo towarsd her rent",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2026-01-18",
+    "text": "Sav gup 4 s plot in Kittengela a little it set aside every pauday yaar",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2026-02-01",
+    "text": "btw this quarter it's night shifs for me 7pm 2 7am three nights a wk my sleeep schedule is in ruins 🎉",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-02-14",
+    "text": "chi w lozds of gunger keeps me alive rhte cups dau a least ne",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-02-27",
+    "text": "tbh saturday at 7am is netball with hospital team ii never miss ot bhai",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-03-12",
+    "text": "my little brother kevin i doing mmechanical enginwerign at the uniersity of nairoogi. ❤️🙏",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-03-28",
+    "text": "haha rinally g oa ssamsumg galaxy a35 last wea te old tefno gv up completely 😭",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s12",
+    "date": "2026-04-10",
+    "text": "i've staryed q diploma in crutical xare nursing ta kmttc classds every otther aunday hein 🎉😂",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-04-24",
+    "text": "umm moved 2 one-bedorm in riysambu a reao besroom door aa bit of prrivzch",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-05-08",
+    "text": "back on ay shifts rom monday 7 to 4 my boy is so grateful",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-05-22",
+    "text": "my ct siimba has decidrd the new bed is hhs n i'm kust visitint. idk ❤️",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-06-05",
+    "text": "lol knee finally gave up on netgall sooooo hw i swin on saturdzy moonings at yhe kaaarani pool 🙃",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-06-19",
+    "text": "transfrrrd 2 agaaaa ihan university hospitak sae maernity work better pay 😅😩",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-06-27",
+    "text": "started bakkn banana breaad on my ddayx oof. thee first looa was a brick.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-07-03",
+    "text": "wallah mum's andlord raised her rent so it's 8,000 shillings a month from md now like",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-07-17",
+    "text": "hae nyama chomma with my cousin achieng on sundzy she's treed of livign in buribuu ugh",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-07-31",
+    "text": "i'm fostering a tiny tortoiseshell kitten called uri unrl she finds a home yaar 🎉😂",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-08-14",
+    "text": "yaar swapped hqi 4 lqck coofew my colleague got me hookd on mahine at nurses station umm",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-08-28",
+    "text": "acgieng nn i took two-bedroom iin parklanfs so wqlk to wwork nlwg oodbye matatus",
+    "replaces": [
+     "s13",
+     "s3"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-09-11",
+    "text": "hein paud the deeposit on the kitdngela plot goday montnss of saving finall ypsid off ❤️🙃",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-09-24",
+    "text": "passd my first crtcaaaaa lcare exam with a n cried in the orridor lah",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which hospital am I with at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What phone do I carry around?",
+    "type": "current",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "How much money goes to my mum every month now?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What do I drink to get through a shift?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Where is home for me now?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What sport do I do on weekend mornings?",
+    "type": "current",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What hours am I working these days?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Around Christmas, which hospital did I work at?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2025-12-26"
+   },
+   {
+    "id": "q9",
+    "text": "Back in March, what kind of shifts was I on?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q10",
+    "text": "What did I do on Saturdays back in April?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2026-04-15"
+   },
+   {
+    "id": "q11",
+    "text": "Back in January, which handset was I using?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-01-25"
+   },
+   {
+    "id": "q12",
+    "text": "Which cats do I have around me?",
+    "type": "multi",
+    "answer_ids": [
+     "s15",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "Remind me what's going on with my studies?",
+    "type": "multi",
+    "answer_ids": [
+     "s12",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What's my favourite football club?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "How old is my mum?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "rafael-curitiba-chef",
+  "today": "2026-09-20",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-02",
+    "text": "jo the sous chef at bistrô marcelo fourr years in and i still love the chaos of friday service lmao",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-16",
+    "text": "live in a thrd-glooor apt in bqel n lift brekas every othr wk",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-30",
+    "text": "daughter lara is seven n as decided se will only eat paasta. chef's kiid, fn y imagine",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-13",
+    "text": "like coritiba till i die season ticket holder since 2012 😅❤️",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-27",
+    "text": "drove old fiat uho 2008 no air conditioningg and i'm weirly attached to kt 🎉👍",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-11",
+    "text": "crossfkt at box near the maret, fve mornings z wk b4 iii head 2 tthe kittchen bhai 🙃😂",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-26",
+    "text": "our mutt pipoca is half labrador n the et says she needs 2 lose two kkilos too many kigchen scrapa my fault tbh",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-09",
+    "text": "i've go a mto g 5g theeee camera is good eenough 2 phoograph plates",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-23",
+    "text": "na cafezingo w ttwo sugars, ii know, i know.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-06",
+    "text": "dad is athletico parranaaense faab so unday lunchhes ard alwasy tense",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-20",
+    "text": "speent a lpnb wedkehdd in flori wwith camila n ate the best ooysters of my life btw",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-06",
+    "text": "boight uswd iphone 13 vro a colpeage stull figuring out qhefe everythint is",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-13",
+    "text": "dr put md on lsoaartan 4 my blood pressure, one piill every orning. 😩",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-03-27",
+    "text": "lmao Big newd I'm head chef zt Casa Pinhãoo starting Monddqy Fouur yars in Marcelo's kitchen r done",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-10",
+    "text": "my cafezinho is black now camila sjamed meeee into it tbh bro",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-24",
+    "text": "ou son gheo arived on thhe 12th 3.4 kilos mpm n baby r both fine n npbody i sleeung",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-08",
+    "text": "w newborn crossfit is dead 2 me i jog aroun parque barii wheeee i can steeaal an hourr hmm ja",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-22",
+    "text": "i've started brewing beer at home, the first batch is an american pale ale. ok so",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-06-05",
+    "text": "lmao we signed the lease on a house in santa felicidafe toda goodbye elwvator",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-19",
+    "text": "the yno i thd red four-doof kn ase you wondered n the rust is wnning 🤦🙏",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-07-03",
+    "text": "ugh at ccasa pkngão i'm building the winter menu tasting is on 10 uly",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-17",
+    "text": "also responsilbe for sunday nrynch menu there which launches on 2 qugust",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-07-31",
+    "text": "old the Uno at lqst ahd bought Hyundai HB20. Air conditioning, dinally! 😩",
+    "replaces": [
+     "s5",
+     "s20"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-14",
+    "text": "rhe rd swappd my blood rwssure pills 4 amlodipine tg losartn was giving e a cogh 😭🤦",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-28",
+    "text": "e asopted a beagke ouppy callwd feijão n pipoa is not amused",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-09-11",
+    "text": "ja knwe quit on the joggij wo i've awitche 2 cycli with saturday grouo instead",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-18",
+    "text": "jo lmao Watched Coritiba beat Paraaná two nil at CCouto Pereiea last Sunday The wwhlle stand was shaking",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which kitchen do I run now?",
+    "type": "current",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What am I driving these days?",
+    "type": "current",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone is in my pocket?",
+    "type": "current",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "How do I take my little coffee?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Where do we live now?",
+    "type": "current",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How do I stay in shape lately?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What am I taking for my blood pressure?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Which football club does my father cheer for?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Back in February, what phone was I using?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2026-02-12"
+   },
+   {
+    "id": "q10",
+    "text": "What was I doing for work back in December?",
+    "type": "past",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": "2025-12-18"
+   },
+   {
+    "id": "q11",
+    "text": "What was I getting around in back in April?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2026-04-15"
+   },
+   {
+    "id": "q12",
+    "text": "Back in March, how was I working out?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q13",
+    "text": "Which dogs do we have at home?",
+    "type": "multi",
+    "answer_ids": [
+     "s7",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What menus am I in charge of at the restaurant?",
+    "type": "multi",
+    "answer_ids": [
+     "s21",
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Where did I study cooking?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What's my mother called?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "sven-gothenburg-student",
+  "today": "2026-09-12",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-05",
+    "text": "haha iinn myyyyy seconf year ooffc hemical engineering mster'd at chales",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-19",
+    "text": "i've got a room in a tudetn corrkdir in johannberg iitcen sshared w eleven otyer ppl choss 🙏😅",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-11-02",
+    "text": "jo to afford rent i work saturdays at café on linnégatan mostly pouring oat lattds umm 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-16",
+    "text": "cycle rverywhrre, even in sleet. bike s a bet-u ol cresscent that i love far too much",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-11-30",
+    "text": "wallah tbh Bewn vegan for abou two yesrs npw",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-14",
+    "text": "laptip is 2020 maacbook arr n it wheezes whenever iiiii open adpen plus bhai",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-28",
+    "text": "hein girlfriennd Elsa is studying medicine in Uppsala, so we spend half our lives on trains anyway",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-11",
+    "text": "go boulderign at Klätterverket on Tuesdaya n TThusdays",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-18",
+    "text": "pheo os iphone 12 w cracked backk that i keep meaning 2 fix",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-01-25",
+    "text": "idk went to gamla ullei on sinday ifk lost 21- to hammarby an i'm still bitter",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-08",
+    "text": "brther axel is sfptware ejgineer at ericsson in stockholm",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-08",
+    "text": "picked up a used ThinkPad T14 on Blocket, Aspn run luke butteer now",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-22",
+    "text": "My hesis is about catalys dgtadatin in hydrogen elctrilyser. Prrofessoor Lindqfist iw mmy supervisor. haha",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-04-05",
+    "text": "btw qut the café n started as a lab assistannt at thr deoartmet two dazz a weak 🤦❤️",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-12",
+    "text": "ja jy theoss ix due on 30 junne n yhe drafft i ry much a deaft",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-19",
+    "text": "I'm learning Spannish on ghe side because o'n going to Chile n July. sha",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-03",
+    "text": "ok so gave up on vegnism, i eat fish and egg sagain. iiii got qnaemic and my docto wasn't subtle aboutt it bhai",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-17",
+    "text": "Moved into a two-oom lati n Majorna w m frirnd Oskar",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-05-31",
+    "text": "like cresceent bot stoln last weak so 'm o tams w a minthly pass now",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-07",
+    "text": "swapped iphone 4 a fairphone 5 i wanted smthi can repair 😅",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-14",
+    "text": "allergic to hazlnugs found out thanks tp ferrero rocher like 😅",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-06-21",
+    "text": "jo btw my supervisor granted an ectenson the thesis is now de pn 15 sepyember",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-06-28",
+    "text": "like appaarenntly kiwis make myy moourh itch tooo the allergist sas its relate",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-07-12",
+    "text": "haha back from Child, Valparaíso was my favorite and III ate far too many enpandas bhai ❤️",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-07-26",
+    "text": "i vounteer ag a scool stem club on wednnesday afteroons",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-08-09",
+    "text": "moved myb ouldering embership to hall in Mlnal, it's cheaper",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2026-08-23",
+    "text": "stopped sorking at the depsrtmen tits tthesis onlyyy unti I hand it in",
+    "replaces": [
+     "s14"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What computer do I do my coursework on?",
+    "type": "current",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Where do I live?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone am I carrying?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Where do I go climbing?",
+    "type": "current",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Do I have a job beside my studies right now?",
+    "type": "current",
+    "answer_ids": [
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "When do I have to hand in my thesis?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Where does my brother work?",
+    "type": "current",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Back in March, how did I get around town?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q9",
+    "text": "What was my diet back in April?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2026-04-15"
+   },
+   {
+    "id": "q10",
+    "text": "Back in May, when was the thesis supposed to be finished?",
+    "type": "past",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": "2026-05-10"
+   },
+   {
+    "id": "q11",
+    "text": "How did I earn a bit of money back in February?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2026-02-15"
+   },
+   {
+    "id": "q12",
+    "text": "Which foods can't I eat?",
+    "type": "multi",
+    "answer_ids": [
+     "s21",
+     "s23"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "Remind me what my thesis is about and when it's due.",
+    "type": "multi",
+    "answer_ids": [
+     "s13",
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What kind of music do I like?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What's my shoe size?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "tessa-perth-teacher",
+  "today": "2026-09-18",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-08",
+    "text": "primry school teacher at scarborough primary in perth twenty-two years n counting like",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-22",
+    "text": "class this yea ris Yer 4 tsenty-six kkids n oneee very loud classroom hamster lmao 🙏😭",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-11-05",
+    "text": "bhai lol rent lttle vilka in doubleviiew landlord wo'tt let m paont a single wll",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-19",
+    "text": "dive mazda 3 i's a trusty ol thingg o",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-12-03",
+    "text": "hcoe, my aughterr, is in her srcond year of ve science att murdoch anyway",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-17",
+    "text": "sha since te digorce it's me n y ginger ct giz wwh rules the hose",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2026-01-07",
+    "text": "i swim laps att the scqrborugh ppol at 6am yhree mornings a wk 4 xchool hein",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-21",
+    "text": "phone is an ipohne se from 2020 smalll bbut it does job",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-02-04",
+    "text": "wallah I' a tea petso AAAA pot of Earl Grey veery morning and don't tal to b4",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-18",
+    "text": "in book club tha meets on firsy thhursday of mmo we'e deep ijto tim winton at monent hein",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-03-04",
+    "text": "jy sister Narelle is aaa nurse at Roysl erth Hpspital he works noghtts bhai",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-18",
+    "text": "hmm Blood tesr says I'm low in iron so I'm yakin a tabket every morninnh",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-04-01",
+    "text": "thee mazda is a 2012 hatch in white n the ircon onlh works on a good day 🤦❤️",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2026-04-15",
+    "text": "started potteru on wednesday nights at a studio in fremantle my firsr bowl looks like a hat",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-29",
+    "text": "rhe ool's clsoed for the fesst of the year so i rrun along the beacn path now nstead sha",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2026-05-13",
+    "text": "they've mmovef meeee up 2 year 6 this germ fewer hamters more attitude abeg",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-27",
+    "text": "dropped the se in ocean, so i'm on seond-hamd iphone 13 now",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s18",
+    "date": "2026-06-10",
+    "text": "i bought a ywo-beddroom unut in ihnaloo settlement's done and thhe keys are in my hamd 🎉❤️",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-06-24",
+    "text": "umm gizmo has competition. i adopted a grey boy from the rspca called pavlova and gizmo is not ijpressed abeg 🙃😭",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-07-08",
+    "text": "of earl grey 4a m now itt's rooibos w honey i tne nornings lol 🙃😅",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-07-15",
+    "text": "tbh new school ew tktoe i'm deepputy princippal at karrunyuup primary from onnday last day at sscarborough was earf lone 😂😂",
+    "replaces": [
+     "s1",
+     "s16"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-22",
+    "text": "lah mazda fknlay died on tthw jitchel freeway so i bouught used ttlyota corolaaaaa hatch",
+    "replaces": [
+     "s4",
+     "s13"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-08-05",
+    "text": "Iron's back 2 normal the dr says I can stop tablets",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-19",
+    "text": "chhlo's hoe for break and cooked a amb roasr SShe burned pogatoes I said nothing",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-26",
+    "text": "on jack's fifo roster in karratha is two weeks on, one ooff, n he's aleadyyyyy nougt a ute",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2026-09-02",
+    "text": "we ead cloustreet 4 book clyb tyis mo and i cred at the end btw",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-16",
+    "text": "planning 2 walk whole gibbulmun track net april all one thousand kilometres",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where do I work and what's my role now?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What car do I drive?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone do I have at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Where do I live these days?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What do I drink first thing in the morning?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How do I get my exercise at the moment?",
+    "type": "current",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What does my sister do for a living?",
+    "type": "current",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Around Christmas, which year level did I teach?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-12-27"
+   },
+   {
+    "id": "q9",
+    "text": "Back in January, what was I driving?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-01-14"
+   },
+   {
+    "id": "q10",
+    "text": "How did I work out back in March?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2026-03-12"
+   },
+   {
+    "id": "q11",
+    "text": "What was I taking for my health back in May?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2026-05-05"
+   },
+   {
+    "id": "q12",
+    "text": "Which cats live with me?",
+    "type": "multi",
+    "answer_ids": [
+     "s6",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "Which clubs or classes do I go to?",
+    "type": "multi",
+    "answer_ids": [
+     "s10",
+     "s14"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What footy team do I follow?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What's my mum's name?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ },
+ {
+  "scenario": "walter-ohio-retiree",
+  "today": "2026-09-24",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-06",
+    "text": "retired fro the honda plzn in massville after thorth-one yeats still wake upp at five every mmorning oou of spite o",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-20",
+    "text": "dolores and I rr in te same brick ranch on Mapoe Street that we bought back in 1994 umm pues",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-11-03",
+    "text": "drive a 2014 ford f-150, bue, bought it witn 80,000 on clock lol",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-11-17",
+    "text": "dof has meeee on merforkin, twic a day, for the usgar.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-12-01",
+    "text": "my phone is a jjiterbg flip phone my granddaghter emna kepes trying 2 drrag me into th sjartphone ate bhai 😂😭",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-12-15",
+    "text": "lmao speny the whoe eekend in the garahe on a dheery ookcasse 4 dolores woodworking is jy thinng ja",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-12-29",
+    "text": "lah like been workijg mt way hrough every louis o'amour paperabck at the libray sale",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2026-01-12",
+    "text": "tbh duke our yellow lb is ten now and his hips r shot bro",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2026-01-26",
+    "text": "lol so ngreg id haemacust in columbus",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2026-02-09",
+    "text": "folgerss black i'po hear no compalints about my coffe 🙏",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2026-02-23",
+    "text": "took dolores 2 olive garde 4 our forty-second anniversary she orderd theee same thing she always does 😅🤦",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2026-03-09",
+    "text": "lmao blood ppressuuee's up so it's low sodiim everytthing jow. food has no tate",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2026-03-30",
+    "text": "emmaaaa won i'm on ipphone se now and texting like teenager lol",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2026-04-13",
+    "text": "tuesday mornings i volunteer at the ood papntry at st markk's umm",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2026-04-20",
+    "text": "i sin bassw in the syyyy mark's chhour reeaarsal i wednesfay nights",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2026-04-27",
+    "text": "ja ok so traaded the old ofr gor q uswd 2019 chevy silerado sad too see the f-150 go but my kbees can't takkee tgee step up ahymore 🙏",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-05-06",
+    "text": "got keft kne replaced yesterday aaa tOhioHealth. Walker for six weeks",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-05-25",
+    "text": "wallah jy hans aren't stedy eniugh for the sa any mor so it'd watercoloyrs for me noow dolores saysm y barn looks loke a ccow ❤️",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s19",
+    "date": "2026-06-01",
+    "text": "euke's on lucosamine ches 4 those hios and vet says he'sd oin better",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2026-06-08",
+    "text": "tthhey switchhedm d orf metformin and onto jariane",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2026-06-22",
+    "text": "dr wants me off caffeine so it's decaf folgers frrom here onn ouyyyyy",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2026-07-06",
+    "text": "sol ye maple streey gusd n we're now ih a codo in saraslta near dolireed's sister h 2 giive up the food pamtrry n the choir too n that stings bhai",
+    "replaces": [
+     "s2",
+     "s14",
+     "s15"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2026-07-20",
+    "text": "Jooned pklwall bunch at ccondo, Mondayy and ednesddayy mptnings. I'n terriblle",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2026-08-03",
+    "text": "tolk in a little terrierr mix named pepper, ans dyke acts lkke he ows her",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-08-17",
+    "text": "caardiologksr says m preesure's vine so salt shaker i back on tble 😂😭",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-08-31",
+    "text": "gfeg n his wiiffe prit are expecing twwins in jjanuary",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-09-07",
+    "text": "Sold the Silverado cono paekking is tight We're ao ne-car goousehhold now a Buiick Encorw 🙃",
+    "replaces": [
+     "s16"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2026-09-14",
+    "text": "lmao dolores gave me apple wach for my birthdzy it nags me when i sit too long pues",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What are we driving these days?",
+    "type": "current",
+    "answer_ids": [
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Where do Dolores and I live now?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which phone do I use?",
+    "type": "current",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What medication do I take for my blood sugar?",
+    "type": "current",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "How do I take my coffee these days?",
+    "type": "current",
+    "answer_ids": [
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What creative hobby am I into now?",
+    "type": "current",
+    "answer_ids": [
+     "s18"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What does my son do for a living?",
+    "type": "current",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How is Duke's health holding up?",
+    "type": "current",
+    "answer_ids": [
+     "s8",
+     "s19"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "Back in January, what was I taking for diabetes?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2026-01-20"
+   },
+   {
+    "id": "q10",
+    "text": "Around Christmas, what was parked in my driveway?",
+    "type": "past",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": "2025-12-27"
+   },
+   {
+    "id": "q11",
+    "text": "What was I building in the garage back in February?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2026-02-16"
+   },
+   {
+    "id": "q12",
+    "text": "Where did I volunteer back in May?",
+    "type": "past",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": "2026-05-15"
+   },
+   {
+    "id": "q13",
+    "text": "What's the news about Greg?",
+    "type": "multi",
+    "answer_ids": [
+     "s9",
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What gadgets do I own?",
+    "type": "multi",
+    "answer_ids": [
+     "s13",
+     "s28"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What was my very first car?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "Which baseball team do I root for?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ]
+ }
+]

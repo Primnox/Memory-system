@@ -1,0 +1,20 @@
+{
+ "model": "models/laya-memory-r7",
+ "files": {
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6057456326634505,
+   "best_f1": 0.6811594202898551,
+   "f1_at_0.5": 0.5470085470085471,
+   "precision_at_0.5": 0.7111111111111111,
+   "recall_at_0.5": 0.4444444444444444,
+   "called_replace_by_source": {
+    "lme_ku": "45/421"
+   },
+   "comparisons": 1597,
+   "ms_per_pair": 49.9
+  }
+ },
+ "sentences": true
+}

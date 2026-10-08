@@ -1,0 +1,38 @@
+{
+ "model": "/kaggle/input/datasets/anikethpani/primnox-memory-head-r6",
+ "files": {
+  "pairs_dnli_test_full": {
+   "pairs": 16500,
+   "positives": 5700,
+   "ap": 0.6898510869143304,
+   "best_f1": 0.5984327217125381,
+   "f1_at_0.5": 0.4941919191919192,
+   "precision_at_0.5": 0.8815315315315315,
+   "recall_at_0.5": 0.3433333333333333,
+   "called_replace_by_source": {
+    "dnli-test:negative": "1957/5700",
+    "dnli-test:neutral": "53/5400",
+    "dnli-test:positive": "210/5400"
+   },
+   "comparisons": 16500,
+   "ms_per_pair": 10.6
+  },
+  "pairs_dnli_verified_test_full": {
+   "pairs": 12376,
+   "positives": 4041,
+   "ap": 0.7548219810268066,
+   "best_f1": 0.6575047157100513,
+   "f1_at_0.5": 0.5684533970638443,
+   "precision_at_0.5": 0.9163456246560264,
+   "recall_at_0.5": 0.41202672605790647,
+   "called_replace_by_source": {
+    "dnli-verified_test:negative": "1665/4041",
+    "dnli-verified_test:neutral": "10/4008",
+    "dnli-verified_test:positive": "142/4327"
+   },
+   "comparisons": 12376,
+   "ms_per_pair": 11.0
+  }
+ },
+ "sentences": false
+}

@@ -1,0 +1,13 @@
+q7: loaded Qwen/Qwen2.5-7B-Instruct + adapter /kaggle/input/notebooks/anikethpani/primnox-extractor/adapters/q7
+q7: held-out people — fact/no-fact agreement 232/240, unparseable 0
+q7: exam 0/467 (3s)
+q7: exam 50/467 (58s)
+q7: exam 100/467 (134s)
+q7: exam 150/467 (209s)
+q7: exam 200/467 (292s)
+q7: exam 250/467 (358s)
+q7: exam 300/467 (435s)
+q7: exam 350/467 (506s)
+q7: exam 400/467 (564s)
+q7: exam 450/467 (628s)
+q7: exam done — 467 messages, 298 facts, 276 with none

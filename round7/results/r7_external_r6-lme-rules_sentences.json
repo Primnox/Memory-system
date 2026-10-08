@@ -1,0 +1,20 @@
+{
+ "model": "/kaggle/input/datasets/anikethpani/primnox-memory-head-r6",
+ "files": {
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6369513439060076,
+   "best_f1": 0.674846625766871,
+   "f1_at_0.5": 0.5128205128205128,
+   "precision_at_0.5": 0.6666666666666666,
+   "recall_at_0.5": 0.4166666666666667,
+   "called_replace_by_source": {
+    "lme_ku": "45/421"
+   },
+   "comparisons": 1597,
+   "ms_per_pair": 49.4
+  }
+ },
+ "sentences": true
+}

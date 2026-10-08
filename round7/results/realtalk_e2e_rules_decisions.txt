@@ -1,0 +1,15 @@
+=== llm ===
+rt-llm-rules multi-hop: top-1 63/217 = 29.0%, top-3 47.5%, stale value first 0/217
+rt-llm-rules other: top-1 17/81 = 21.0%, top-3 33.3%, stale value first 0/81
+rt-llm-rules temporal: top-1 92/207 = 44.4%, top-3 58.5%, stale value first 0/207
+statements refused by the memory: 0
+=== rules ===
+rt-rules-rules multi-hop: top-1 14/217 = 6.5%, top-3 15.2%, stale value first 0/217
+rt-rules-rules other: top-1 8/81 = 9.9%, top-3 16.0%, stale value first 0/81
+rt-rules-rules temporal: top-1 22/207 = 10.6%, top-3 14.5%, stale value first 0/207
+statements refused by the memory: 103
+=== raw ===
+rt-raw-rules multi-hop: top-1 13/217 = 6.0%, top-3 15.7%, stale value first 0/217
+rt-raw-rules other: top-1 10/81 = 12.3%, top-3 16.0%, stale value first 0/81
+rt-raw-rules temporal: top-1 29/207 = 14.0%, top-3 16.9%, stale value first 0/207
+statements refused by the memory: 100

@@ -1,0 +1,13 @@
+q15: loaded Qwen/Qwen2.5-1.5B-Instruct + adapter /kaggle/input/notebooks/anikethpani/primnox-extractor/adapters/q15
+q15: held-out people — fact/no-fact agreement 231/240, unparseable 0
+q15: exam 0/467 (2s)
+q15: exam 50/467 (35s)
+q15: exam 100/467 (78s)
+q15: exam 150/467 (134s)
+q15: exam 200/467 (181s)
+q15: exam 250/467 (225s)
+q15: exam 300/467 (274s)
+q15: exam 350/467 (322s)
+q15: exam 400/467 (356s)
+q15: exam 450/467 (386s)
+q15: exam done — 467 messages, 314 facts, 265 with none

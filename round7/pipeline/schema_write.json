@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "required": ["scenarios"],
+  "additionalProperties": false,
+  "properties": {
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scenario", "today", "statements", "questions"],
+        "additionalProperties": false,
+        "properties": {
+          "scenario": {"type": "string"},
+          "today": {"type": "string"},
+          "statements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "date", "text", "replaces"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "date": {"type": "string"},
+                "text": {"type": "string"},
+                "replaces": {"type": "array", "items": {"type": "string"}}
+              }
+            }
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "text", "type", "answer_ids", "as_of"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "text": {"type": "string"},
+                "type": {"type": "string", "enum": ["current", "past", "multi", "absent"]},
+                "answer_ids": {"type": "array", "items": {"type": "string"}},
+                "as_of": {"type": ["string", "null"]}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

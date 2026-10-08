@@ -1,0 +1,216 @@
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.9/133.9 kB 3.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 377.3/377.3 kB 14.1 MB/s eta 0:00:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2750.87it/s]
+train 508 scenarios {"pairs": 169529, "replaces": 7098, "labelled_traps": 1155, "soft": 161276, "skipped": 580, "true_replacements": 7880, "found_by_similarity": 7345, "found_with_entities": 7364}
+val 10 scenarios {"pairs": 2082, "replaces": 70, "labelled_traps": 0, "soft": 2012, "skipped": 0, "true_replacements": 70, "found_by_similarity": 70, "found_with_entities": 70}
+Downloading convaiinnovations/laya to /tmp/ms/system_one/models/laya_base ...
+Fetching 39 files:   0%|          | 0/39 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 39 files:   3%|▎         | 1/39 [00:00<00:05,  6.79it/s]Fetching 39 files:  13%|█▎        | 5/39 [00:00<00:01, 21.95it/s]Fetching 39 files:  23%|██▎       | 9/39 [00:00<00:01, 28.49it/s]Fetching 39 files:  33%|███▎      | 13/39 [00:00<00:00, 32.23it/s]Fetching 39 files:  44%|████▎     | 17/39 [00:00<00:00, 33.12it/s]Fetching 39 files:  56%|█████▋    | 22/39 [00:00<00:00, 36.93it/s]Fetching 39 files:  67%|██████▋   | 26/39 [00:00<00:00, 36.40it/s]Fetching 39 files:  77%|███████▋  | 30/39 [00:00<00:00, 37.31it/s]Fetching 39 files:  87%|████████▋ | 34/39 [00:01<00:00, 37.17it/s]Fetching 39 files:  97%|█████████▋| 38/39 [00:07<00:00,  2.05it/s]Fetching 39 files: 100%|██████████| 39/39 [00:07<00:00,  5.45it/s]
+rows: {'replaces': 7098, 'labelled_traps': 1155, 'soft': 16506} (soft kept 16506 of 161276)
+24759 training items -> models/laya-memory-r7/train_items.pt (skipped 0)
+Device: cuda
+Training items: 24359; calibration items: 400
+micro_batch=8; grad_accum=4; epochs=3
+epoch 1/3, step 100, loss=1.2176
+epoch 1/3, step 200, loss=0.5590
+epoch 1/3, step 300, loss=1.4195
+epoch 1/3, step 400, loss=1.8923
+epoch 1/3, step 500, loss=-0.0219
+epoch 1/3, step 600, loss=0.9103
+epoch 1/3, step 700, loss=0.3873
+epoch 1/3, step 800, loss=0.5640
+epoch 1/3, step 900, loss=0.7729
+epoch 1/3, step 1000, loss=-0.1954
+epoch 1/3, step 1100, loss=0.4193
+epoch 1/3, step 1200, loss=0.0011
+epoch 1/3, step 1300, loss=0.4902
+epoch 1/3, step 1400, loss=2.2973
+epoch 1/3, step 1500, loss=-0.1253
+epoch 1/3, step 1600, loss=0.2434
+epoch 1/3, step 1700, loss=1.1988
+epoch 1/3, step 1800, loss=0.6857
+epoch 1/3, step 1900, loss=0.6882
+epoch 1/3, step 2000, loss=0.4390
+epoch 1/3, step 2100, loss=1.2808
+epoch 1/3, step 2200, loss=-0.0773
+epoch 1/3, step 2300, loss=0.6779
+epoch 1/3, step 2400, loss=1.4980
+epoch 1/3, step 2500, loss=1.5869
+epoch 1/3, step 2600, loss=0.3702
+epoch 1/3, step 2700, loss=0.3946
+epoch 1/3, step 2800, loss=1.4864
+epoch 1/3, step 2900, loss=0.4920
+epoch 1/3, step 3000, loss=0.4734
+Epoch 1/3 complete; avg_loss=0.6954
+epoch 2/3, step 100, loss=0.1401
+epoch 2/3, step 200, loss=0.5485
+epoch 2/3, step 300, loss=0.0957
+epoch 2/3, step 400, loss=1.0242
+epoch 2/3, step 500, loss=1.1243
+epoch 2/3, step 600, loss=0.2476
+epoch 2/3, step 700, loss=0.3768
+epoch 2/3, step 800, loss=0.1946
+epoch 2/3, step 900, loss=1.3225
+epoch 2/3, step 1000, loss=0.0764
+epoch 2/3, step 1100, loss=0.2988
+epoch 2/3, step 1200, loss=-0.3138
+epoch 2/3, step 1300, loss=0.2609
+epoch 2/3, step 1400, loss=-0.1803
+epoch 2/3, step 1500, loss=0.9856
+epoch 2/3, step 1600, loss=0.6584
+epoch 2/3, step 1700, loss=0.0341
+epoch 2/3, step 1800, loss=-0.0280
+epoch 2/3, step 1900, loss=0.5222
+epoch 2/3, step 2000, loss=-0.1178
+epoch 2/3, step 2100, loss=0.2892
+epoch 2/3, step 2200, loss=0.4558
+epoch 2/3, step 2300, loss=0.2844
+epoch 2/3, step 2400, loss=1.2075
+epoch 2/3, step 2500, loss=1.4507
+epoch 2/3, step 2600, loss=0.2536
+epoch 2/3, step 2700, loss=0.7686
+epoch 2/3, step 2800, loss=1.5409
+epoch 2/3, step 2900, loss=1.8620
+epoch 2/3, step 3000, loss=0.0611
+Epoch 2/3 complete; avg_loss=0.5061
+epoch 3/3, step 100, loss=0.2326
+epoch 3/3, step 200, loss=0.1017
+epoch 3/3, step 300, loss=-0.0286
+epoch 3/3, step 400, loss=0.6469
+epoch 3/3, step 500, loss=-0.0857
+epoch 3/3, step 600, loss=0.1428
+epoch 3/3, step 700, loss=-0.1796
+epoch 3/3, step 800, loss=1.4101
+epoch 3/3, step 900, loss=0.1637
+epoch 3/3, step 1000, loss=0.2452
+epoch 3/3, step 1100, loss=0.2324
+epoch 3/3, step 1200, loss=1.1711
+epoch 3/3, step 1300, loss=1.0040
+epoch 3/3, step 1400, loss=0.4111
+epoch 3/3, step 1500, loss=0.4871
+epoch 3/3, step 1600, loss=0.1641
+epoch 3/3, step 1700, loss=0.3095
+epoch 3/3, step 1800, loss=0.3219
+epoch 3/3, step 1900, loss=0.1817
+epoch 3/3, step 2000, loss=-0.2913
+epoch 3/3, step 2100, loss=1.4406
+epoch 3/3, step 2200, loss=0.5041
+epoch 3/3, step 2300, loss=-0.0806
+epoch 3/3, step 2400, loss=-0.2162
+epoch 3/3, step 2500, loss=0.6945
+epoch 3/3, step 2600, loss=1.6431
+epoch 3/3, step 2700, loss=-0.2072
+epoch 3/3, step 2800, loss=0.8396
+epoch 3/3, step 2900, loss=1.1038
+epoch 3/3, step 3000, loss=0.5661
+Epoch 3/3 complete; avg_loss=0.4594
+Running temperature calibration ...
+Model saved to models/laya-memory-r7
+Temperatures: [2.2061069011688232, 1.2, 1.2]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 3137.97it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 103/112 (92%); retired 105, mistaken 0; pair precision 98%; reachable from candidates 110/112; 13.1 ms per candidate on this machine
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2823.84it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 81/112 (72%); retired 90, mistaken 7; pair precision 90%; reachable from candidates 111/112; 13.7 ms per candidate on this machine
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2738.79it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 58/112 (52%); retired 68, mistaken 6; pair precision 85%; reachable from candidates 108/112; 14.0 ms per candidate on this machine
+pairs_lme_ku   AP 0.43  P 1.00  R 0.06  F1 0.11  {'lme_ku': '4/421'}  22.5 ms/pair
+pairs_lme_ku   AP 0.64  P 0.67  R 0.42  F1 0.51  {'lme_ku': '45/421'}  49.4 ms/pair
+pairs_lme_ku   AP 0.66  P 0.70  R 0.68  F1 0.69  {'lme_ku': '70/421'}  39.4 ms/pair
+pairs_dnli_test_full AP 0.69  P 0.88  R 0.34  F1 0.49  {'dnli-test:negative': '1957/5700', 'dnli-test:neutral': '53/5400', 'dnli-test:positive': '210/5400'}  10.6 ms/pair
+pairs_dnli_verified_test_full AP 0.75  P 0.92  R 0.41  F1 0.57  {'dnli-verified_test:negative': '1665/4041', 'dnli-verified_test:neutral': '10/4008', 'dnli-verified_test:positive': '142/4327'}  11.0 ms/pair
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2782.01it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 104/112 (93%); retired 105, mistaken 0; pair precision 99%; reachable from candidates 111/112; 13.2 ms per candidate on this machine
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2905.97it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 90/112 (80%); retired 102, mistaken 4; pair precision 88%; reachable from candidates 105/112; 13.9 ms per candidate on this machine
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2967.96it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 82/112 (73%); retired 97, mistaken 6; pair precision 85%; reachable from candidates 106/112; 14.1 ms per candidate on this machine
+pairs_lme_ku   AP 0.45  P 0.71  R 0.07  F1 0.13  {'lme_ku': '7/421'}  22.5 ms/pair
+pairs_lme_ku   AP 0.61  P 0.71  R 0.44  F1 0.55  {'lme_ku': '45/421'}  49.9 ms/pair
+pairs_lme_ku   AP 0.67  P 0.77  R 0.79  F1 0.78  {'lme_ku': '74/421'}  39.8 ms/pair
+pairs_dnli_test_full AP 0.76  P 0.91  R 0.46  F1 0.61  {'dnli-test:negative': '2620/5700', 'dnli-test:neutral': '36/5400', 'dnli-test:positive': '214/5400'}  10.6 ms/pair
+pairs_dnli_verified_test_full AP 0.83  P 0.94  R 0.55  F1 0.69  {'dnli-verified_test:negative': '2216/4041', 'dnli-verified_test:neutral': '5/4008', 'dnli-verified_test:positive': '141/4327'}  11.0 ms/pair

@@ -1,0 +1,10 @@
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.9/128.9 kB 2.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 360.0/360.0 kB 6.4 MB/s eta 0:00:00
+pairs_lme_ku   AP 0.40  P 0.86  R 0.08  F1 0.15  {'lme_ku': '7/421'}  23.3 ms/pair
+pairs_lme_ku   AP 0.63  P 0.66  R 0.46  F1 0.54  {'lme_ku': '50/421'}  48.4 ms/pair
+pairs_lme_ku   AP 0.67  P 0.72  R 0.65  F1 0.69  {'lme_ku': '65/421'}  40.5 ms/pair
+messages not in the facts file: 0
+pairs_lme_ku   AP 0.43  P 1.00  R 0.06  F1 0.11  {'lme_ku': '4/421'}  23.0 ms/pair
+pairs_lme_ku   AP 0.64  P 0.67  R 0.42  F1 0.51  {'lme_ku': '45/421'}  53.6 ms/pair
+pairs_lme_ku   AP 0.66  P 0.70  R 0.68  F1 0.69  {'lme_ku': '70/421'}  45.9 ms/pair
+messages not in the facts file: 0

@@ -1,0 +1,3 @@
+q15: config settings this library does not have, dropped: none
+q15: trainable tensors cast to fp32: 0; trainable params 18.5M
+q15: trained in 2147s; eval loss 0.736172616481781

@@ -1,0 +1,4 @@
+v2 clean (12/12 people): changes noticed 112/112 (100%); retired 112, mistaken 0
+v2 noisy (12/12 people): changes noticed 112/112 (100%); retired 112, mistaken 0
+v2 heavy (12/12 people): changes noticed 112/112 (100%); retired 112, mistaken 0
+LongMemEval KU (421/421 pairs judged): P 0.71  R 0.92  F1 0.80  (updates caught 66/72, false alarms 27)

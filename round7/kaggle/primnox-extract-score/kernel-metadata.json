@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-extract-score",
+  "title": "primnox-extract-score",
+  "code_file": "primnox-extract-score.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-memory-head-r6", "anikethpani/primnox-lme-extract", "anikethpani/primnox-local-extract"],
+  "kernel_sources": ["anikethpani/primnox-memory-r7", "anikethpani/primnox-extract-exam"],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}
