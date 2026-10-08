@@ -1,0 +1,4164 @@
+{
+ "anika-bengaluru-designer": {
+  "folders": {
+   "F1": {
+    "name": "Anika",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Paisabridge",
+    "type": "organisation",
+    "aliases": [
+     "fintech startup called Paisabridge"
+    ],
+    "link": "Anika's former employer"
+   },
+   "F3": {
+    "name": "Rohan",
+    "type": "person",
+    "aliases": [
+     "my little brother Rohan",
+     "my little brother",
+     "Anika's brother"
+    ],
+    "link": "Anika's brother"
+   },
+   "F4": {
+    "name": "NIT Trichy",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Anika's brother Rohan studies"
+   },
+   "F5": {
+    "name": "Karthik",
+    "type": "person",
+    "aliases": [
+     "my manager at work",
+     "Anika's manager"
+    ],
+    "link": "Anika's former manager at Paisabridge"
+   },
+   "F6": {
+    "name": "Meera",
+    "type": "person",
+    "aliases": [
+     "my friend Meera",
+     "Anika's friend"
+    ],
+    "link": "Anika's friend"
+   },
+   "F7": {
+    "name": "MTR",
+    "type": "place",
+    "aliases": [],
+    "link": "restaurant Anika visited"
+   },
+   "F8": {
+    "name": "Biscuit",
+    "type": "pet",
+    "aliases": [
+     "tabby kitten called Biscuit"
+    ],
+    "link": "Anika's cat"
+   },
+   "F9": {
+    "name": "Cult.fit",
+    "type": "organisation",
+    "aliases": [],
+    "link": "gym Anika attended"
+   },
+   "F10": {
+    "name": "Pepper",
+    "type": "pet",
+    "aliases": [
+     "grey cat called Pepper"
+    ],
+    "link": "Anika's cat"
+   },
+   "F11": {
+    "name": "Lumen Health",
+    "type": "organisation",
+    "aliases": [
+     "Lumen"
+    ],
+    "link": "Anika's employer"
+   },
+   "F12": {
+    "name": "Neha",
+    "type": "person",
+    "aliases": [
+     "my new manager at Lumen",
+     "Anika's manager"
+    ],
+    "link": "Anika's former manager at Lumen Health"
+   },
+   "F13": {
+    "name": "Samir Rao",
+    "type": "person",
+    "aliases": [
+     "my manager"
+    ],
+    "link": "Anika's manager at Lumen Health"
+   },
+   "F14": {
+    "name": "Swiggy",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Anika's friend Meera works"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.employer": "one",
+   "F1.lives_in": "one",
+   "F1.diet": "many",
+   "F1.phone": "one",
+   "F3.studies": "one",
+   "F1.manager": "one",
+   "F1.routine": "many",
+   "F1.events": "many",
+   "F1.pet": "many",
+   "F1.home": "many",
+   "F1.sport": "many",
+   "F1.health": "many",
+   "F1.commute": "one",
+   "F6.job": "one",
+   "F6.employer": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F3",
+     "F1",
+     "F4"
+    ],
+    "slot": "F3.studies"
+   },
+   "s6": {
+    "folders": [
+     "F1",
+     "F5",
+     "F2"
+    ],
+    "slot": "F1.manager"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F6",
+     "F7"
+    ],
+    "slot": "F1.events"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s11": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.pet"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.home"
+   },
+   "s13": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.sport"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F10",
+     "F8"
+    ],
+    "slot": "F1.pet"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F11",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F12",
+     "F11"
+    ],
+    "slot": "F1.manager"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F11"
+    ],
+    "slot": "F1.commute"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F13",
+     "F12"
+    ],
+    "slot": "F1.manager"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F11"
+    ],
+    "slot": "F1.commute"
+   },
+   "s24": {
+    "folders": [
+     "F6",
+     "F14"
+    ],
+    "slot": "F6.job"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   }
+  }
+ },
+ "bjorn-bergen-teacher": {
+  "folders": {
+   "F1": {
+    "name": "Bjorn",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Bergen Katedralskole",
+    "type": "organisation",
+    "aliases": [
+     "the school"
+    ],
+    "link": "where Bjorn taught"
+   },
+   "F3": {
+    "name": "Fana",
+    "type": "place",
+    "aliases": [
+     "house in Fana"
+    ],
+    "link": "where Bjorn used to live"
+   },
+   "F4": {
+    "name": "Volvo V70",
+    "type": "thing",
+    "aliases": [
+     "the Volvo",
+     "old Volvo V70"
+    ],
+    "link": "Bjorn's former car"
+   },
+   "F5": {
+    "name": "Bjorn's wife",
+    "type": "person",
+    "aliases": [
+     "my wife",
+     "wife"
+    ],
+    "link": "Bjorn's wife"
+   },
+   "F6": {
+    "name": "Loke",
+    "type": "pet",
+    "aliases": [
+     "Norwegian elkhound called Loke"
+    ],
+    "link": "Bjorn's dog"
+   },
+   "F7": {
+    "name": "Ulriken",
+    "type": "place",
+    "aliases": [],
+    "link": "mountain Bjorn walked up"
+   },
+   "F8": {
+    "name": "Sigrid",
+    "type": "person",
+    "aliases": [
+     "my daughter Sigrid",
+     "my daughter"
+    ],
+    "link": "Bjorn's daughter"
+   },
+   "F9": {
+    "name": "Tromsø",
+    "type": "place",
+    "aliases": [],
+    "link": "where Sigrid studies"
+   },
+   "F10": {
+    "name": "iPhone SE",
+    "type": "thing",
+    "aliases": [
+     "my iPhone SE from 2020"
+    ],
+    "link": "Bjorn's former phone"
+   },
+   "F11": {
+    "name": "Oslo",
+    "type": "place",
+    "aliases": [],
+    "link": "city Bjorn visited"
+   },
+   "F12": {
+    "name": "Munch Museum",
+    "type": "place",
+    "aliases": [
+     "Munch museum"
+    ],
+    "link": "museum Bjorn visited in Oslo"
+   },
+   "F13": {
+    "name": "Eirik",
+    "type": "person",
+    "aliases": [
+     "my son Eirik",
+     "my son"
+    ],
+    "link": "Bjorn's son"
+   },
+   "F14": {
+    "name": "Equinor",
+    "type": "organisation",
+    "aliases": [],
+    "link": "Eirik's employer"
+   },
+   "F15": {
+    "name": "Stavanger",
+    "type": "place",
+    "aliases": [],
+    "link": "where Eirik works"
+   },
+   "F16": {
+    "name": "Nordnes",
+    "type": "place",
+    "aliases": [
+     "flat in Nordnes"
+    ],
+    "link": "where Bjorn lives"
+   },
+   "F17": {
+    "name": "Tesla Model 3",
+    "type": "thing",
+    "aliases": [
+     "the Tesla",
+     "used Tesla Model 3"
+    ],
+    "link": "Bjorn's former car"
+   },
+   "F18": {
+    "name": "Western Norway University of Applied Sciences",
+    "type": "organisation",
+    "aliases": [],
+    "link": "Bjorn's employer"
+   },
+   "F19": {
+    "name": "Nordnesbadet",
+    "type": "place",
+    "aliases": [],
+    "link": "where Bjorn swims"
+   },
+   "F20": {
+    "name": "Skoda Enyaq",
+    "type": "thing",
+    "aliases": [],
+    "link": "Bjorn's car"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F1.diet": "many",
+   "F1.pet": "many",
+   "F1.routine": "many",
+   "F8.studies": "one",
+   "F1.phone": "one",
+   "F4.specs": "many",
+   "F1.medication": "many",
+   "F1.hobby": "many",
+   "F1.events": "many",
+   "F13.job": "one",
+   "F6.medication": "many",
+   "F1.health": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.car"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.pet"
+   },
+   "s6": {
+    "folders": [
+     "F1",
+     "F7"
+    ],
+    "slot": "F1.routine"
+   },
+   "s7": {
+    "folders": [
+     "F8",
+     "F1",
+     "F9"
+    ],
+    "slot": "F8.studies"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.specs"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1",
+     "F17",
+     "F4"
+    ],
+    "slot": "F1.car"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F5",
+     "F11",
+     "F12"
+    ],
+    "slot": "F1.events"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s16": {
+    "folders": [
+     "F13",
+     "F1",
+     "F14",
+     "F15"
+    ],
+    "slot": "F13.job"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F16",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F6"
+    ],
+    "slot": "F6.medication"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F18",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F19"
+    ],
+    "slot": "F1.health"
+   },
+   "s24": {
+    "folders": [
+     "F1",
+     "F20",
+     "F17"
+    ],
+    "slot": "F1.car"
+   }
+  }
+ },
+ "carmen-guadalajara-nurse": {
+  "folders": {
+   "F1": {
+    "name": "Carmen",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Guadalajara",
+    "type": "place",
+    "aliases": [
+     "here in Guadalajara"
+    ],
+    "link": "where Carmen lives"
+   },
+   "F3": {
+    "name": "Hospital Civil",
+    "type": "organisation",
+    "aliases": [
+     "the hospital"
+    ],
+    "link": "Carmen's former workplace"
+   },
+   "F4": {
+    "name": "Canela",
+    "type": "pet",
+    "aliases": [
+     "our dog"
+    ],
+    "link": "Carmen's dog"
+   },
+   "F5": {
+    "name": "2016 Nissan March",
+    "type": "thing",
+    "aliases": [
+     "the March",
+     "Nissan March"
+    ],
+    "link": "Carmen's former car"
+   },
+   "F6": {
+    "name": "Luis",
+    "type": "person",
+    "aliases": [
+     "my husband"
+    ],
+    "link": "Carmen's husband"
+   },
+   "F7": {
+    "name": "Tlaquepaque",
+    "type": "place",
+    "aliases": [],
+    "link": "where Luis teaches"
+   },
+   "F8": {
+    "name": "Colonia Providencia house",
+    "type": "place",
+    "aliases": [
+     "two-bedroom house in Colonia Providencia"
+    ],
+    "link": "Carmen's rented house"
+   },
+   "F9": {
+    "name": "Samsung Galaxy A32",
+    "type": "thing",
+    "aliases": [
+     "my phone"
+    ],
+    "link": "Carmen's old phone"
+   },
+   "F10": {
+    "name": "English classes",
+    "type": "activity",
+    "aliases": [
+     "English class",
+     "classes"
+    ],
+    "link": "Carmen's class"
+   },
+   "F11": {
+    "name": "Mateo",
+    "type": "person",
+    "aliases": [
+     "my son"
+    ],
+    "link": "Carmen's son"
+   },
+   "F12": {
+    "name": "Ms Harper",
+    "type": "person",
+    "aliases": [
+     "my tutor"
+    ],
+    "link": "Carmen's English tutor"
+   },
+   "F13": {
+    "name": "Lake Chapala",
+    "type": "place",
+    "aliases": [],
+    "link": "lake visited by Carmen and kids"
+   },
+   "F14": {
+    "name": "Tortilla and Taco",
+    "type": "pet",
+    "aliases": [
+     "goldfish",
+     "pair of goldfish"
+    ],
+    "link": "Carmen's kids' goldfish"
+   },
+   "F15": {
+    "name": "iPhone 13 mini",
+    "type": "thing",
+    "aliases": [
+     "my new iPhone 13 mini",
+     "iPhone"
+    ],
+    "link": "Carmen's phone"
+   },
+   "F16": {
+    "name": "Ana",
+    "type": "person",
+    "aliases": [
+     "my friend Ana"
+    ],
+    "link": "Carmen's friend"
+   },
+   "F17": {
+    "name": "Pilates class",
+    "type": "activity",
+    "aliases": [
+     "Friday Pilates class"
+    ],
+    "link": "Carmen's Pilates class"
+   },
+   "F18": {
+    "name": "Hospital Angeles",
+    "type": "organisation",
+    "aliases": [],
+    "link": "Carmen's workplace"
+   },
+   "F19": {
+    "name": "Beto",
+    "type": "person",
+    "aliases": [
+     "my cousin Beto"
+    ],
+    "link": "Carmen's cousin"
+   },
+   "F20": {
+    "name": "Mazda 3",
+    "type": "thing",
+    "aliases": [
+     "the Mazda 3",
+     "his Mazda 3"
+    ],
+    "link": "Carmen's car"
+   },
+   "F21": {
+    "name": "Zapopan house",
+    "type": "place",
+    "aliases": [
+     "our own house in Zapopan"
+    ],
+    "link": "Carmen's house"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.work_schedule": "one",
+   "F1.pet": "many",
+   "F1.car": "one",
+   "F1.diet": "one",
+   "F6.job": "one",
+   "F1.home": "one",
+   "F1.phone": "one",
+   "F1.studies": "many",
+   "F1.commute": "one",
+   "F11.hobby": "many",
+   "F10.tutor": "one",
+   "F1.events": "many",
+   "F1.hobby": "many",
+   "F10.schedule": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F3",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.work_schedule"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.pet"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.car"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s6": {
+    "folders": [
+     "F6",
+     "F1",
+     "F7"
+    ],
+    "slot": "F6.job"
+   },
+   "s7": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.home"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.studies"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.commute"
+   },
+   "s11": {
+    "folders": [
+     "F11"
+    ],
+    "slot": "F11.hobby"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F10",
+     "F12"
+    ],
+    "slot": "F10.tutor"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F11",
+     "F13"
+    ],
+    "slot": "F1.events"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.work_schedule"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F14",
+     "F4"
+    ],
+    "slot": "F1.pet"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F15"
+    ],
+    "slot": "F1.phone"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F17",
+     "F16"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F10"
+    ],
+    "slot": "F10.schedule"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F18",
+     "F3"
+    ],
+    "slot": "F1.job"
+   },
+   "s22": {
+    "folders": [
+     "F11"
+    ],
+    "slot": "F11.hobby"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F18"
+    ],
+    "slot": "F1.commute"
+   },
+   "s24": {
+    "folders": [
+     "F1",
+     "F20",
+     "F19",
+     "F5"
+    ],
+    "slot": "F1.car"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F21"
+    ],
+    "slot": "F1.home"
+   }
+  }
+ },
+ "dmitri-toronto-student": {
+  "folders": {
+   "F1": {
+    "name": "Dmitri",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "U of T",
+    "type": "organisation",
+    "aliases": [
+     "University of Toronto",
+     "Dmitri's university"
+    ],
+    "link": "where Dmitri studies"
+   },
+   "F3": {
+    "name": "Kensington Market",
+    "type": "place",
+    "aliases": [
+     "the shared flat",
+     "shared flat in Kensington Market"
+    ],
+    "link": "where Dmitri lived"
+   },
+   "F4": {
+    "name": "Roast & Row",
+    "type": "organisation",
+    "aliases": [
+     "the cafe",
+     "Roast & Row on College Street"
+    ],
+    "link": "where Dmitri worked"
+   },
+   "F5": {
+    "name": "iPhone 12",
+    "type": "thing",
+    "aliases": [
+     "my phone",
+     "Dmitri's phone"
+    ],
+    "link": "Dmitri's phone"
+   },
+   "F6": {
+    "name": "Trek",
+    "type": "thing",
+    "aliases": [
+     "my old Trek",
+     "old Trek",
+     "Dmitri's bike"
+    ],
+    "link": "Dmitri's bike"
+   },
+   "F7": {
+    "name": "Olena",
+    "type": "person",
+    "aliases": [
+     "my sister",
+     "Dmitri's sister"
+    ],
+    "link": "Dmitri's sister"
+   },
+   "F8": {
+    "name": "Lviv",
+    "type": "place",
+    "aliases": [
+     "back home",
+     "home in Lviv"
+    ],
+    "link": "where Dmitri's sister lives"
+   },
+   "F9": {
+    "name": "Dr. Okafor",
+    "type": "person",
+    "aliases": [
+     "my supervisor",
+     "Dmitri's supervisor"
+    ],
+    "link": "Dmitri's supervisor"
+   },
+   "F10": {
+    "name": "The Bloc",
+    "type": "place",
+    "aliases": [
+     "the Bloc"
+    ],
+    "link": "where Dmitri boulders"
+   },
+   "F11": {
+    "name": "Robarts",
+    "type": "place",
+    "aliases": [
+     "Robarts Library"
+    ],
+    "link": "library at U of T"
+   },
+   "F12": {
+    "name": "TTC",
+    "type": "organisation",
+    "aliases": [
+     "the TTC",
+     "Toronto Transit Commission"
+    ],
+    "link": "transit Dmitri uses"
+   },
+   "F13": {
+    "name": "Taras",
+    "type": "person",
+    "aliases": [
+     "Dmitri's friend"
+    ],
+    "link": "Dmitri's friend"
+   },
+   "F14": {
+    "name": "Dr. Haddad",
+    "type": "person",
+    "aliases": [
+     "my supervisor",
+     "Dmitri's supervisor"
+    ],
+    "link": "Dmitri's supervisor"
+   },
+   "F15": {
+    "name": "Galaxy S24",
+    "type": "thing",
+    "aliases": [
+     "my phone",
+     "Dmitri's phone"
+    ],
+    "link": "Dmitri's phone"
+   },
+   "F16": {
+    "name": "Priya",
+    "type": "person",
+    "aliases": [
+     "my girlfriend",
+     "Dmitri's girlfriend"
+    ],
+    "link": "Dmitri's girlfriend"
+   },
+   "F17": {
+    "name": "Dundas West",
+    "type": "place",
+    "aliases": [],
+    "link": "where Dmitri lives"
+   },
+   "F18": {
+    "name": "Athletic Centre",
+    "type": "place",
+    "aliases": [
+     "the Athletic Centre"
+    ],
+    "link": "where Dmitri swims"
+   },
+   "F19": {
+    "name": "Brompton",
+    "type": "thing",
+    "aliases": [
+     "used Brompton",
+     "Dmitri's bike"
+    ],
+    "link": "Dmitri's bike"
+   },
+   "F20": {
+    "name": "Dr. Lindqvist",
+    "type": "person",
+    "aliases": [
+     "my supervisor",
+     "Dmitri's supervisor"
+    ],
+    "link": "Dmitri's supervisor"
+   },
+   "F21": {
+    "name": "Zotero",
+    "type": "thing",
+    "aliases": [],
+    "link": "software Dmitri uses"
+   }
+  },
+  "slots": {
+   "F1.studies": "one",
+   "F1.lives_in": "one",
+   "F1.job": "one",
+   "F1.phone": "one",
+   "F1.transport": "one",
+   "F7.job": "one",
+   "F1.languages": "many",
+   "F1.diet": "one",
+   "F1.supervisor": "one",
+   "F1.sport": "many",
+   "F1.events": "many",
+   "F1.health": "many",
+   "F1.routine": "many",
+   "F1.thesis": "one",
+   "F1.software": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.studies"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.job"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.transport"
+   },
+   "s6": {
+    "folders": [
+     "F7",
+     "F1",
+     "F8"
+    ],
+    "slot": "F7.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.languages"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s9": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.supervisor"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.sport"
+   },
+   "s11": {
+    "folders": [
+     "F1",
+     "F6",
+     "F11",
+     "F12"
+    ],
+    "slot": "F1.transport"
+   },
+   "s12": {
+    "folders": [
+     "F1",
+     "F13"
+    ],
+    "slot": "F1.events"
+   },
+   "s13": {
+    "folders": [
+     "F1",
+     "F14",
+     "F9"
+    ],
+    "slot": "F1.supervisor"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F15"
+    ],
+    "slot": "F1.phone"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F16",
+     "F17",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F4",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.thesis"
+   },
+   "s20": {
+    "folders": [
+     "F1",
+     "F18",
+     "F10"
+    ],
+    "slot": "F1.sport"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F19",
+     "F12"
+    ],
+    "slot": "F1.transport"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F20",
+     "F14"
+    ],
+    "slot": "F1.supervisor"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F21"
+    ],
+    "slot": "F1.software"
+   }
+  }
+ },
+ "esther-leeds-retired": {
+  "folders": {
+   "F1": {
+    "name": "Esther",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Leeds Central Library",
+    "type": "organisation",
+    "aliases": [
+     "the library"
+    ],
+    "link": "where Esther used to work"
+   },
+   "F3": {
+    "name": "Headingley",
+    "type": "place",
+    "aliases": [],
+    "link": "where Esther lived"
+   },
+   "F4": {
+    "name": "Marmalade",
+    "type": "pet",
+    "aliases": [
+     "my cat"
+    ],
+    "link": "Esther's cat"
+   },
+   "F5": {
+    "name": "Philippa",
+    "type": "person",
+    "aliases": [
+     "my daughter"
+    ],
+    "link": "Esther's daughter"
+   },
+   "F6": {
+    "name": "Headingley Community Choir",
+    "type": "organisation",
+    "aliases": [
+     "the choir"
+    ],
+    "link": "choir Esther sang in"
+   },
+   "F7": {
+    "name": "Oxfam bookshop",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Esther volunteers"
+   },
+   "F8": {
+    "name": "Meanwood allotment",
+    "type": "place",
+    "aliases": [
+     "allotment in Meanwood",
+     "Meanwood plot",
+     "plot 14"
+    ],
+    "link": "Esther's allotment"
+   },
+   "F9": {
+    "name": "Poppy",
+    "type": "person",
+    "aliases": [],
+    "link": "Esther's family or friend"
+   },
+   "F10": {
+    "name": "Alfie",
+    "type": "person",
+    "aliases": [],
+    "link": "Esther's family or friend"
+   },
+   "F11": {
+    "name": "Graham",
+    "type": "person",
+    "aliases": [
+     "my brother"
+    ],
+    "link": "Esther's brother"
+   },
+   "F12": {
+    "name": "Margaret",
+    "type": "person",
+    "aliases": [],
+    "link": "Esther's friend"
+   },
+   "F13": {
+    "name": "Whitby",
+    "type": "place",
+    "aliases": [],
+    "link": "where Esther visited"
+   },
+   "F14": {
+    "name": "Pickle",
+    "type": "pet",
+    "aliases": [
+     "second cat",
+     "tabby kitten"
+    ],
+    "link": "Esther's cat"
+   },
+   "F15": {
+    "name": "Harrogate",
+    "type": "place",
+    "aliases": [],
+    "link": "where Esther lives"
+   },
+   "F16": {
+    "name": "Harrogate Singers",
+    "type": "organisation",
+    "aliases": [],
+    "link": "choir Esther joined"
+   }
+  },
+  "slots": {
+   "F1.career": "many",
+   "F1.lives_in": "one",
+   "F4.bio": "many",
+   "F1.diet": "many",
+   "F1.reading": "many",
+   "F5.job": "one",
+   "F1.medication": "many",
+   "F1.hobby": "many",
+   "F1.car": "one",
+   "F1.volunteering": "many",
+   "F1.events": "many",
+   "F11.lives_in": "one",
+   "F1.health": "many",
+   "F14.bio": "many",
+   "F1.transport": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.career"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F4",
+     "F1"
+    ],
+    "slot": "F4.bio"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.reading"
+   },
+   "s6": {
+    "folders": [
+     "F5",
+     "F1"
+    ],
+    "slot": "F5.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F7"
+    ],
+    "slot": "F1.volunteering"
+   },
+   "s11": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s14": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.bio"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F9",
+     "F10"
+    ],
+    "slot": "F1.reading"
+   },
+   "s16": {
+    "folders": [
+     "F11",
+     "F1"
+    ],
+    "slot": "F11.lives_in"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F12",
+     "F13"
+    ],
+    "slot": "F1.events"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s21": {
+    "folders": [
+     "F14",
+     "F1"
+    ],
+    "slot": "F14.bio"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F15"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s24": {
+    "folders": [
+     "F1",
+     "F16"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.transport"
+   }
+  }
+ },
+ "hiroshi-osaka-chef": {
+  "folders": {
+   "F1": {
+    "name": "Hiroshi",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Tsubame",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Hiroshi works"
+   },
+   "F3": {
+    "name": "Mochi",
+    "type": "pet",
+    "aliases": [
+     "my shiba inu"
+    ],
+    "link": "Hiroshi's dog"
+   },
+   "F4": {
+    "name": "Kenta",
+    "type": "person",
+    "aliases": [
+     "my younger brother",
+     "younger brother"
+    ],
+    "link": "Hiroshi's younger brother"
+   },
+   "F5": {
+    "name": "the covers band",
+    "type": "organisation",
+    "aliases": [
+     "covers band"
+    ],
+    "link": "Hiroshi's band"
+   },
+   "F6": {
+    "name": "Daiki",
+    "type": "person",
+    "aliases": [],
+    "link": "Hiroshi's friend"
+   },
+   "F7": {
+    "name": "Tofu",
+    "type": "pet",
+    "aliases": [
+     "rescue cat",
+     "a rescue cat"
+    ],
+    "link": "Hiroshi's cat"
+   },
+   "F8": {
+    "name": "Hanaori",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Hiroshi works"
+   },
+   "F9": {
+    "name": "the jazz trio",
+    "type": "organisation",
+    "aliases": [
+     "jazz trio"
+    ],
+    "link": "Hiroshi's band"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.routine": "many",
+   "F1.pet": "many",
+   "F4.job": "one",
+   "F1.hobby": "many",
+   "F1.phone": "one",
+   "F1.languages": "many",
+   "F1.events": "many",
+   "F1.health": "many",
+   "F1.diet": "many",
+   "F1.studies": "many",
+   "F8.capacity": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.routine"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.pet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s6": {
+    "folders": [
+     "F4",
+     "F1"
+    ],
+    "slot": "F4.job"
+   },
+   "s7": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.languages"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.events"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F7",
+     "F3"
+    ],
+    "slot": "F1.pet"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F8",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s20": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.routine"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F9",
+     "F5"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s24": {
+    "folders": [
+     "F8",
+     "F1"
+    ],
+    "slot": "F8.capacity"
+   }
+  }
+ },
+ "nandini-hyderabad-pm": {
+  "folders": {
+   "F1": {
+    "name": "Nandini",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Hyderabad",
+    "type": "place",
+    "aliases": [
+     "here in Hyderabad"
+    ],
+    "link": "where Nandini lives"
+   },
+   "F3": {
+    "name": "Paynest",
+    "type": "organisation",
+    "aliases": [
+     "payments startup called Paynest"
+    ],
+    "link": "Nandini's former employer"
+   },
+   "F4": {
+    "name": "Gachibowli flat",
+    "type": "place",
+    "aliases": [
+     "two-bedroom flat in Gachibowli",
+     "flat in Gachibowli"
+    ],
+    "link": "Nandini's rented flat"
+   },
+   "F5": {
+    "name": "OnePlus 9",
+    "type": "thing",
+    "aliases": [
+     "my phone"
+    ],
+    "link": "Nandini's old phone"
+   },
+   "F6": {
+    "name": "Rasa",
+    "type": "organisation",
+    "aliases": [
+     "the Rasa studio",
+     "Rasa studio"
+    ],
+    "link": "yoga studio Nandini attended"
+   },
+   "F7": {
+    "name": "Karthik",
+    "type": "person",
+    "aliases": [
+     "my husband",
+     "husband"
+    ],
+    "link": "Nandini's husband"
+   },
+   "F8": {
+    "name": "Biscuit",
+    "type": "pet",
+    "aliases": [
+     "beagle called Biscuit",
+     "our beagle"
+    ],
+    "link": "Nandini's dog"
+   },
+   "F9": {
+    "name": "Arjun",
+    "type": "person",
+    "aliases": [
+     "my brother"
+    ],
+    "link": "Nandini's brother"
+   },
+   "F10": {
+    "name": "Dublin",
+    "type": "place",
+    "aliases": [],
+    "link": "where Arjun lives"
+   },
+   "F11": {
+    "name": "Google",
+    "type": "organisation",
+    "aliases": [],
+    "link": "Arjun's employer"
+   },
+   "F12": {
+    "name": "Pixel 9",
+    "type": "thing",
+    "aliases": [],
+    "link": "Nandini's phone"
+   },
+   "F13": {
+    "name": "Razorpay",
+    "type": "organisation",
+    "aliases": [
+     "the new job"
+    ],
+    "link": "Nandini's employer"
+   },
+   "F14": {
+    "name": "Karthik's parents' place",
+    "type": "place",
+    "aliases": [],
+    "link": "home of Karthik's parents"
+   },
+   "F15": {
+    "name": "Maruti Swift",
+    "type": "thing",
+    "aliases": [
+     "the Swift",
+     "red 2020 VXi"
+    ],
+    "link": "Nandini and Karthik's car"
+   },
+   "F16": {
+    "name": "Kokapet flat",
+    "type": "place",
+    "aliases": [
+     "flat in Kokapet"
+    ],
+    "link": "Nandini's home"
+   },
+   "F17": {
+    "name": "Dosa",
+    "type": "pet",
+    "aliases": [
+     "tabby kitten"
+    ],
+    "link": "Nandini's cat"
+   },
+   "F18": {
+    "name": "Goa",
+    "type": "place",
+    "aliases": [],
+    "link": "trip destination"
+   },
+   "F19": {
+    "name": "Hyundai Creta",
+    "type": "thing",
+    "aliases": [
+     "Creta"
+    ],
+    "link": "Nandini and Karthik's car"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.employer": "one",
+   "F1.lives_in": "one",
+   "F1.phone": "one",
+   "F1.diet": "one",
+   "F1.routine": "many",
+   "F1.partner": "one",
+   "F7.job": "one",
+   "F1.pet": "many",
+   "F1.health": "many",
+   "F9.employer": "one",
+   "F9.lives_in": "one",
+   "F1.likes": "many",
+   "F1.events": "many",
+   "F1.car": "one",
+   "F15.details": "one",
+   "F1.music": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.phone"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.routine"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s7": {
+    "folders": [
+     "F7",
+     "F1"
+    ],
+    "slot": "F7.job"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.pet"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s10": {
+    "folders": [
+     "F9",
+     "F11",
+     "F10",
+     "F1"
+    ],
+    "slot": "F9.employer"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.likes"
+   },
+   "s12": {
+    "folders": [
+     "F1",
+     "F12"
+    ],
+    "slot": "F1.phone"
+   },
+   "s13": {
+    "folders": [
+     "F1",
+     "F13",
+     "F3"
+    ],
+    "slot": "F1.employer"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F14",
+     "F7"
+    ],
+    "slot": "F1.events"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F13"
+    ],
+    "slot": "F1.job"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.routine"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F15",
+     "F7"
+    ],
+    "slot": "F1.car"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F16"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s20": {
+    "folders": [
+     "F1",
+     "F17",
+     "F8"
+    ],
+    "slot": "F1.pet"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F18"
+    ],
+    "slot": "F1.health"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F13"
+    ],
+    "slot": "F1.job"
+   },
+   "s23": {
+    "folders": [
+     "F15"
+    ],
+    "slot": "F15.details"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F19",
+     "F15",
+     "F7"
+    ],
+    "slot": "F1.car"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.music"
+   }
+  }
+ },
+ "rafael-curitiba-chef": {
+  "folders": {
+   "F1": {
+    "name": "Rafael",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Bistrô Marcelo",
+    "type": "organisation",
+    "aliases": [
+     "Marcelo's kitchen"
+    ],
+    "link": "where Rafael used to work"
+   },
+   "F3": {
+    "name": "Batel apartment",
+    "type": "place",
+    "aliases": [
+     "third-floor apartment in Batel",
+     "our flat in Batel"
+    ],
+    "link": "Rafael's apartment"
+   },
+   "F4": {
+    "name": "Lara",
+    "type": "person",
+    "aliases": [
+     "my daughter",
+     "my daughter Lara",
+     "Rafael's daughter"
+    ],
+    "link": "Rafael's daughter"
+   },
+   "F5": {
+    "name": "Coritiba",
+    "type": "organisation",
+    "aliases": [
+     "Coritiba Foot Ball Club"
+    ],
+    "link": "football club Rafael supports"
+   },
+   "F6": {
+    "name": "Fiat Uno",
+    "type": "thing",
+    "aliases": [
+     "an old Fiat Uno",
+     "the Uno",
+     "Rafael's Fiat Uno"
+    ],
+    "link": "Rafael's former car"
+   },
+   "F7": {
+    "name": "Pipoca",
+    "type": "pet",
+    "aliases": [
+     "our mutt Pipoca",
+     "Pipoca the mutt"
+    ],
+    "link": "Rafael's dog"
+   },
+   "F8": {
+    "name": "Moto G 5G",
+    "type": "thing",
+    "aliases": [
+     "my Moto G 5G",
+     "Moto G"
+    ],
+    "link": "Rafael's phone"
+   },
+   "F9": {
+    "name": "Rafael's dad",
+    "type": "person",
+    "aliases": [
+     "my dad",
+     "dad"
+    ],
+    "link": "Rafael's dad"
+   },
+   "F10": {
+    "name": "Athletico Paranaense",
+    "type": "organisation",
+    "aliases": [
+     "Athletico"
+    ],
+    "link": "football club Rafael's dad supports"
+   },
+   "F11": {
+    "name": "Floripa",
+    "type": "place",
+    "aliases": [
+     "Florianópolis"
+    ],
+    "link": "place Rafael visited"
+   },
+   "F12": {
+    "name": "Camila",
+    "type": "person",
+    "aliases": [
+     "my partner",
+     "Rafael's partner"
+    ],
+    "link": "Rafael's partner"
+   },
+   "F13": {
+    "name": "iPhone 13",
+    "type": "thing",
+    "aliases": [
+     "used iPhone 13",
+     "Rafael's iPhone 13"
+    ],
+    "link": "Rafael's phone"
+   },
+   "F14": {
+    "name": "Casa Pinhão",
+    "type": "organisation",
+    "aliases": [
+     "Casa Pinhão restaurant"
+    ],
+    "link": "where Rafael works"
+   },
+   "F15": {
+    "name": "Theo",
+    "type": "person",
+    "aliases": [
+     "our son Theo",
+     "my son",
+     "Rafael's son"
+    ],
+    "link": "Rafael's son"
+   },
+   "F16": {
+    "name": "Parque Barigui",
+    "type": "place",
+    "aliases": [
+     "Barigui Park"
+    ],
+    "link": "park in Curitiba where Rafael jogs"
+   },
+   "F17": {
+    "name": "Santa Felicidade house",
+    "type": "place",
+    "aliases": [
+     "house in Santa Felicidade",
+     "our house in Santa Felicidade"
+    ],
+    "link": "Rafael's house"
+   },
+   "F18": {
+    "name": "Hyundai HB20",
+    "type": "thing",
+    "aliases": [
+     "the HB20",
+     "HB20"
+    ],
+    "link": "Rafael's car"
+   },
+   "F19": {
+    "name": "Feijão",
+    "type": "pet",
+    "aliases": [
+     "Feijão the beagle",
+     "our beagle puppy"
+    ],
+    "link": "Rafael's dog"
+   },
+   "F20": {
+    "name": "Paraná",
+    "type": "organisation",
+    "aliases": [],
+    "link": "football club Coritiba played against"
+   },
+   "F21": {
+    "name": "Couto Pereira",
+    "type": "place",
+    "aliases": [
+     "the Couto Pereira"
+    ],
+    "link": "stadium where Rafael watched Coritiba"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F4.diet": "one",
+   "F1.likes": "many",
+   "F1.car": "one",
+   "F1.routine": "many",
+   "F7.health": "many",
+   "F1.phone": "one",
+   "F1.diet": "many",
+   "F9.likes": "many",
+   "F1.events": "many",
+   "F1.medication": "one",
+   "F15.events": "many",
+   "F1.hobby": "many",
+   "F6.car": "one",
+   "F14.events": "many",
+   "F19.pet": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.diet"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.likes"
+   },
+   "s5": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.car"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s7": {
+    "folders": [
+     "F7",
+     "F1"
+    ],
+    "slot": "F7.health"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s10": {
+    "folders": [
+     "F9",
+     "F10",
+     "F1"
+    ],
+    "slot": "F9.likes"
+   },
+   "s11": {
+    "folders": [
+     "F1",
+     "F11",
+     "F12"
+    ],
+    "slot": "F1.events"
+   },
+   "s12": {
+    "folders": [
+     "F1",
+     "F13"
+    ],
+    "slot": "F1.phone"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F14",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F12"
+    ],
+    "slot": "F1.diet"
+   },
+   "s16": {
+    "folders": [
+     "F15",
+     "F1",
+     "F12"
+    ],
+    "slot": "F15.events"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F16"
+    ],
+    "slot": "F1.routine"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F1",
+     "F17"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s20": {
+    "folders": [
+     "F6"
+    ],
+    "slot": "F6.car"
+   },
+   "s21": {
+    "folders": [
+     "F14",
+     "F1"
+    ],
+    "slot": "F14.events"
+   },
+   "s22": {
+    "folders": [
+     "F14",
+     "F1"
+    ],
+    "slot": "F14.events"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F18",
+     "F6"
+    ],
+    "slot": "F1.car"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s25": {
+    "folders": [
+     "F19",
+     "F7",
+     "F1"
+    ],
+    "slot": "F19.pet"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s27": {
+    "folders": [
+     "F1",
+     "F5",
+     "F20",
+     "F21"
+    ],
+    "slot": "F1.events"
+   }
+  }
+ },
+ "sven-gothenburg-student": {
+  "folders": {
+   "F1": {
+    "name": "Sven",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Chalmers",
+    "type": "organisation",
+    "aliases": [
+     "Chalmers University of Technology",
+     "the department"
+    ],
+    "link": "where Sven studies"
+   },
+   "F3": {
+    "name": "Johanneberg student corridor",
+    "type": "place",
+    "aliases": [
+     "student corridor in Johanneberg",
+     "Johanneberg"
+    ],
+    "link": "Sven's former student corridor"
+   },
+   "F4": {
+    "name": "Café on Linnégatan",
+    "type": "organisation",
+    "aliases": [
+     "the café",
+     "café on Linnégatan"
+    ],
+    "link": "where Sven used to work"
+   },
+   "F5": {
+    "name": "Crescent bike",
+    "type": "thing",
+    "aliases": [
+     "the bike",
+     "beat-up old Crescent",
+     "my Crescent"
+    ],
+    "link": "Sven's stolen bike"
+   },
+   "F6": {
+    "name": "2020 MacBook Air",
+    "type": "thing",
+    "aliases": [
+     "my laptop",
+     "MacBook Air"
+    ],
+    "link": "Sven's former laptop"
+   },
+   "F7": {
+    "name": "Elsa",
+    "type": "person",
+    "aliases": [
+     "my girlfriend",
+     "Sven's girlfriend"
+    ],
+    "link": "Sven's girlfriend"
+   },
+   "F8": {
+    "name": "Klätterverket",
+    "type": "organisation",
+    "aliases": [],
+    "link": "where Sven goes bouldering"
+   },
+   "F9": {
+    "name": "iPhone 12",
+    "type": "thing",
+    "aliases": [
+     "my phone",
+     "the iPhone"
+    ],
+    "link": "Sven's former phone"
+   },
+   "F10": {
+    "name": "Gamla Ullevi",
+    "type": "place",
+    "aliases": [],
+    "link": "stadium Sven visited"
+   },
+   "F11": {
+    "name": "IFK Göteborg",
+    "type": "organisation",
+    "aliases": [
+     "IFK"
+    ],
+    "link": "football team Sven supports"
+   },
+   "F12": {
+    "name": "Axel",
+    "type": "person",
+    "aliases": [
+     "my brother",
+     "Sven's brother"
+    ],
+    "link": "Sven's brother"
+   },
+   "F13": {
+    "name": "Ericsson",
+    "type": "organisation",
+    "aliases": [
+     "Ericsson in Stockholm"
+    ],
+    "link": "Axel's employer"
+   },
+   "F14": {
+    "name": "ThinkPad T14",
+    "type": "thing",
+    "aliases": [
+     "used ThinkPad T14"
+    ],
+    "link": "Sven's laptop"
+   },
+   "F15": {
+    "name": "Master's thesis",
+    "type": "activity",
+    "aliases": [
+     "my thesis",
+     "the thesis"
+    ],
+    "link": "Sven's thesis"
+   },
+   "F16": {
+    "name": "Professor Lindqvist",
+    "type": "person",
+    "aliases": [
+     "my supervisor",
+     "Sven's supervisor"
+    ],
+    "link": "Sven's thesis supervisor"
+   },
+   "F17": {
+    "name": "Chile trip",
+    "type": "activity",
+    "aliases": [
+     "Chile",
+     "trip to Chile"
+    ],
+    "link": "Sven's trip"
+   },
+   "F18": {
+    "name": "Majorna flat",
+    "type": "place",
+    "aliases": [
+     "two-room flat in Majorna"
+    ],
+    "link": "Sven's flat"
+   },
+   "F19": {
+    "name": "Oskar",
+    "type": "person",
+    "aliases": [
+     "my friend Oskar",
+     "Sven's friend Oskar"
+    ],
+    "link": "Sven's friend and flatmate"
+   },
+   "F20": {
+    "name": "Fairphone 5",
+    "type": "thing",
+    "aliases": [],
+    "link": "Sven's phone"
+   },
+   "F21": {
+    "name": "Bouldering hall in Mölndal",
+    "type": "organisation",
+    "aliases": [
+     "hall in Mölndal",
+     "bouldering hall in Mölndal"
+    ],
+    "link": "where Sven goes bouldering"
+   }
+  },
+  "slots": {
+   "F1.studies": "many",
+   "F1.lives_in": "one",
+   "F1.job": "many",
+   "F1.bike": "one",
+   "F1.diet": "one",
+   "F1.computer": "one",
+   "F1.partner": "one",
+   "F7.studies": "many",
+   "F1.sport": "many",
+   "F1.phone": "one",
+   "F1.events": "many",
+   "F12.job": "one",
+   "F15.topic": "one",
+   "F15.deadline": "one",
+   "F1.hobby": "many",
+   "F1.health": "many",
+   "F1.allergy": "many",
+   "F17.highlights": "many",
+   "F1.volunteer": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.studies"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.job"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.bike"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s6": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.computer"
+   },
+   "s7": {
+    "folders": [
+     "F7",
+     "F1"
+    ],
+    "slot": "F7.studies"
+   },
+   "s8": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.sport"
+   },
+   "s9": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.phone"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F10",
+     "F11"
+    ],
+    "slot": "F1.events"
+   },
+   "s11": {
+    "folders": [
+     "F12",
+     "F1",
+     "F13"
+    ],
+    "slot": "F12.job"
+   },
+   "s12": {
+    "folders": [
+     "F1",
+     "F14"
+    ],
+    "slot": "F1.computer"
+   },
+   "s13": {
+    "folders": [
+     "F15",
+     "F1",
+     "F16"
+    ],
+    "slot": "F15.topic"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F2",
+     "F4"
+    ],
+    "slot": "F1.job"
+   },
+   "s15": {
+    "folders": [
+     "F15",
+     "F1"
+    ],
+    "slot": "F15.deadline"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F17"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F18",
+     "F19"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F5",
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s20": {
+    "folders": [
+     "F1",
+     "F20",
+     "F9"
+    ],
+    "slot": "F1.phone"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.allergy"
+   },
+   "s22": {
+    "folders": [
+     "F15",
+     "F1",
+     "F16"
+    ],
+    "slot": "F15.deadline"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.allergy"
+   },
+   "s24": {
+    "folders": [
+     "F17",
+     "F1"
+    ],
+    "slot": "F17.highlights"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.volunteer"
+   },
+   "s26": {
+    "folders": [
+     "F1",
+     "F21"
+    ],
+    "slot": "F1.sport"
+   },
+   "s27": {
+    "folders": [
+     "F1",
+     "F2",
+     "F15"
+    ],
+    "slot": "F1.job"
+   }
+  }
+ },
+ "tessa-perth-teacher": {
+  "folders": {
+   "F1": {
+    "name": "Tessa",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Scarborough Primary",
+    "type": "organisation",
+    "aliases": [
+     "Scarborough",
+     "Scarborough Primary School"
+    ],
+    "link": "where Tessa worked"
+   },
+   "F3": {
+    "name": "Tessa's landlord",
+    "type": "person",
+    "aliases": [
+     "the landlord",
+     "my landlord"
+    ],
+    "link": "Tessa's landlord"
+   },
+   "F4": {
+    "name": "the Mazda 3",
+    "type": "thing",
+    "aliases": [
+     "Mazda 3",
+     "the Mazda",
+     "my Mazda",
+     "the Mazda 3 hatch"
+    ],
+    "link": "Tessa's car"
+   },
+   "F5": {
+    "name": "Chloe",
+    "type": "person",
+    "aliases": [
+     "my daughter",
+     "Tessa's daughter"
+    ],
+    "link": "Tessa's daughter"
+   },
+   "F6": {
+    "name": "Murdoch",
+    "type": "organisation",
+    "aliases": [
+     "Murdoch University"
+    ],
+    "link": "where Chloe studies"
+   },
+   "F7": {
+    "name": "Gizmo",
+    "type": "pet",
+    "aliases": [
+     "my ginger cat",
+     "my cat",
+     "Tessa's cat",
+     "my ginger cat Gizmo"
+    ],
+    "link": "Tessa's cat"
+   },
+   "F8": {
+    "name": "Scarborough pool",
+    "type": "place",
+    "aliases": [
+     "the Scarborough pool",
+     "the pool"
+    ],
+    "link": "where Tessa swims"
+   },
+   "F9": {
+    "name": "the book club",
+    "type": "activity",
+    "aliases": [
+     "book club",
+     "my book club"
+    ],
+    "link": "Tessa's book club"
+   },
+   "F10": {
+    "name": "Narelle",
+    "type": "person",
+    "aliases": [
+     "my sister",
+     "Tessa's sister",
+     "my sister Narelle"
+    ],
+    "link": "Tessa's sister"
+   },
+   "F11": {
+    "name": "Royal Perth Hospital",
+    "type": "organisation",
+    "aliases": [
+     "the hospital",
+     "RPH"
+    ],
+    "link": "where Narelle works"
+   },
+   "F12": {
+    "name": "pottery",
+    "type": "activity",
+    "aliases": [
+     "pottery class",
+     "pottery classes"
+    ],
+    "link": "Tessa's pottery class"
+   },
+   "F13": {
+    "name": "Pavlova",
+    "type": "pet",
+    "aliases": [
+     "a grey boy",
+     "a grey boy from the RSPCA called Pavlova",
+     "Tessa's cat"
+    ],
+    "link": "Tessa's cat"
+   },
+   "F14": {
+    "name": "RSPCA",
+    "type": "organisation",
+    "aliases": [
+     "the RSPCA"
+    ],
+    "link": "where Tessa adopted Pavlova"
+   },
+   "F15": {
+    "name": "Karrinyup Primary",
+    "type": "organisation",
+    "aliases": [
+     "Karrinyup Primary School"
+    ],
+    "link": "where Tessa works"
+   },
+   "F16": {
+    "name": "the Toyota Corolla",
+    "type": "thing",
+    "aliases": [
+     "the Corolla",
+     "Toyota Corolla",
+     "a used Toyota Corolla hatch",
+     "Tessa's Corolla"
+    ],
+    "link": "Tessa's car"
+   },
+   "F17": {
+    "name": "Jack",
+    "type": "person",
+    "aliases": [
+     "my son",
+     "Tessa's son",
+     "my son Jack"
+    ],
+    "link": "Tessa's son"
+   },
+   "F18": {
+    "name": "Bibbulmun Track",
+    "type": "place",
+    "aliases": [
+     "the Bibbulmun Track",
+     "the whole Bibbulmun Track"
+    ],
+    "link": "where Tessa plans to walk"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.class": "one",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F5.studies": "one",
+   "F1.pet": "many",
+   "F1.sport": "one",
+   "F1.phone": "one",
+   "F1.diet": "one",
+   "F1.hobby": "many",
+   "F10.job": "one",
+   "F1.health": "many",
+   "F4.details": "one",
+   "F5.events": "many",
+   "F17.job": "one",
+   "F1.events": "many",
+   "F1.plans": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.class"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s4": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.car"
+   },
+   "s5": {
+    "folders": [
+     "F5",
+     "F1",
+     "F6"
+    ],
+    "slot": "F5.studies"
+   },
+   "s6": {
+    "folders": [
+     "F1",
+     "F7"
+    ],
+    "slot": "F1.pet"
+   },
+   "s7": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.sport"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s10": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s11": {
+    "folders": [
+     "F10",
+     "F1",
+     "F11"
+    ],
+    "slot": "F10.job"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s13": {
+    "folders": [
+     "F4",
+     "F1"
+    ],
+    "slot": "F4.details"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F12"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F8"
+    ],
+    "slot": "F1.sport"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.class"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F1",
+     "F13",
+     "F7",
+     "F14"
+    ],
+    "slot": "F1.pet"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F15",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F16",
+     "F4"
+    ],
+    "slot": "F1.car"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s24": {
+    "folders": [
+     "F5",
+     "F1"
+    ],
+    "slot": "F5.events"
+   },
+   "s25": {
+    "folders": [
+     "F17",
+     "F1"
+    ],
+    "slot": "F17.job"
+   },
+   "s26": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.events"
+   },
+   "s27": {
+    "folders": [
+     "F1",
+     "F18"
+    ],
+    "slot": "F1.plans"
+   }
+  }
+ },
+ "walter-ohio-retiree": {
+  "folders": {
+   "F1": {
+    "name": "Walter",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "Walt",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Honda plant in Marysville",
+    "type": "organisation",
+    "aliases": [
+     "Honda plant",
+     "Marysville Honda plant"
+    ],
+    "link": "where Walter worked"
+   },
+   "F3": {
+    "name": "Dolores",
+    "type": "person",
+    "aliases": [
+     "my wife"
+    ],
+    "link": "Walter's wife"
+   },
+   "F4": {
+    "name": "Maple Street house",
+    "type": "place",
+    "aliases": [
+     "the brick ranch on Maple Street",
+     "brick ranch on Maple Street",
+     "house on Maple Street",
+     "Maple Street"
+    ],
+    "link": "Walter and Dolores's former home"
+   },
+   "F5": {
+    "name": "2014 Ford F-150",
+    "type": "thing",
+    "aliases": [
+     "Ford F-150",
+     "the old Ford",
+     "the F-150"
+    ],
+    "link": "Walter's former truck"
+   },
+   "F6": {
+    "name": "Emma",
+    "type": "person",
+    "aliases": [
+     "my granddaughter"
+    ],
+    "link": "Walter's granddaughter"
+   },
+   "F7": {
+    "name": "Duke",
+    "type": "pet",
+    "aliases": [
+     "our yellow Lab"
+    ],
+    "link": "Walter and Dolores's yellow Lab"
+   },
+   "F8": {
+    "name": "Greg",
+    "type": "person",
+    "aliases": [
+     "my son"
+    ],
+    "link": "Walter's son"
+   },
+   "F9": {
+    "name": "Olive Garden",
+    "type": "organisation",
+    "aliases": [],
+    "link": "restaurant Walter and Dolores visited"
+   },
+   "F10": {
+    "name": "St. Mark's",
+    "type": "organisation",
+    "aliases": [
+     "St. Mark's church"
+    ],
+    "link": "church where Walter volunteered and sang"
+   },
+   "F11": {
+    "name": "2019 Chevy Silverado",
+    "type": "thing",
+    "aliases": [
+     "Chevy Silverado",
+     "Silverado"
+    ],
+    "link": "Walter's truck"
+   },
+   "F12": {
+    "name": "OhioHealth",
+    "type": "organisation",
+    "aliases": [],
+    "link": "hospital where Walter had surgery"
+   },
+   "F13": {
+    "name": "Sarasota condo",
+    "type": "place",
+    "aliases": [
+     "condo in Sarasota",
+     "a condo in Sarasota"
+    ],
+    "link": "Walter and Dolores's condo in Sarasota"
+   },
+   "F14": {
+    "name": "Dolores's sister",
+    "type": "person",
+    "aliases": [
+     "my sister-in-law"
+    ],
+    "link": "Dolores's sister"
+   },
+   "F15": {
+    "name": "Pepper",
+    "type": "pet",
+    "aliases": [
+     "little terrier mix"
+    ],
+    "link": "Walter and Dolores's terrier mix"
+   },
+   "F16": {
+    "name": "Priya",
+    "type": "person",
+    "aliases": [
+     "Greg's wife"
+    ],
+    "link": "Greg's wife"
+   },
+   "F17": {
+    "name": "Buick Encore",
+    "type": "thing",
+    "aliases": [],
+    "link": "Walter's car"
+   },
+   "F18": {
+    "name": "Apple Watch",
+    "type": "thing",
+    "aliases": [],
+    "link": "Walter's Apple Watch"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.routine": "many",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F1.medication": "many",
+   "F1.health": "many",
+   "F1.phone": "one",
+   "F1.hobby": "many",
+   "F1.diet": "many",
+   "F1.events": "many",
+   "F3.events": "many",
+   "F3.lives_in": "one",
+   "F7.health": "many",
+   "F7.medication": "many",
+   "F8.job": "one",
+   "F8.lives_in": "one",
+   "F8.events": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3",
+     "F4"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1",
+     "F5"
+    ],
+    "slot": "F1.car"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s5": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.phone"
+   },
+   "s6": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s8": {
+    "folders": [
+     "F7",
+     "F1"
+    ],
+    "slot": "F7.health"
+   },
+   "s9": {
+    "folders": [
+     "F8",
+     "F1"
+    ],
+    "slot": "F8.job"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s11": {
+    "folders": [
+     "F1",
+     "F3",
+     "F9"
+    ],
+    "slot": "F1.events"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.phone"
+   },
+   "s14": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.routine"
+   },
+   "s15": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.routine"
+   },
+   "s16": {
+    "folders": [
+     "F1",
+     "F11",
+     "F5"
+    ],
+    "slot": "F1.car"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F12"
+    ],
+    "slot": "F1.health"
+   },
+   "s18": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F7"
+    ],
+    "slot": "F7.medication"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F3",
+     "F13",
+     "F4",
+     "F14",
+     "F10"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F13"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s24": {
+    "folders": [
+     "F15",
+     "F1",
+     "F3",
+     "F7"
+    ],
+    "slot": "F1.events"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s26": {
+    "folders": [
+     "F8",
+     "F16"
+    ],
+    "slot": "F8.events"
+   },
+   "s27": {
+    "folders": [
+     "F1",
+     "F11",
+     "F13",
+     "F17"
+    ],
+    "slot": "F1.car"
+   },
+   "s28": {
+    "folders": [
+     "F1",
+     "F3",
+     "F18"
+    ],
+    "slot": "F1.events"
+   }
+  }
+ },
+ "wanjiru-nairobi-nurse": {
+  "folders": {
+   "F1": {
+    "name": "Wanjiru",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Mater Hospital",
+    "type": "organisation",
+    "aliases": [
+     "Mater Hospital in Nairobi",
+     "Mater Hospital"
+    ],
+    "link": "where Wanjiru worked"
+   },
+   "F3": {
+    "name": "Mama Joy",
+    "type": "person",
+    "aliases": [
+     "my landlady, Mama Joy",
+     "my landlady",
+     "Mama Joy"
+    ],
+    "link": "Wanjiru's former landlady"
+   },
+   "F4": {
+    "name": "Wanjiru's mother",
+    "type": "person",
+    "aliases": [
+     "my mum",
+     "mum",
+     "my mum in Nyeri"
+    ],
+    "link": "Wanjiru's mother"
+   },
+   "F5": {
+    "name": "Kevin",
+    "type": "person",
+    "aliases": [
+     "my little brother Kevin",
+     "my little brother",
+     "Kevin"
+    ],
+    "link": "Wanjiru's brother"
+   },
+   "F6": {
+    "name": "University of Nairobi",
+    "type": "organisation",
+    "aliases": [
+     "University of Nairobi"
+    ],
+    "link": "where Kevin studies"
+   },
+   "F7": {
+    "name": "KMTC",
+    "type": "organisation",
+    "aliases": [
+     "KMTC"
+    ],
+    "link": "where Wanjiru studies"
+   },
+   "F8": {
+    "name": "Simba",
+    "type": "pet",
+    "aliases": [
+     "my cat Simba",
+     "Simba"
+    ],
+    "link": "Wanjiru's cat"
+   },
+   "F9": {
+    "name": "Aga Khan University Hospital",
+    "type": "organisation",
+    "aliases": [
+     "Aga Khan University Hospital"
+    ],
+    "link": "where Wanjiru works"
+   },
+   "F10": {
+    "name": "Achieng",
+    "type": "person",
+    "aliases": [
+     "my cousin Achieng",
+     "Achieng"
+    ],
+    "link": "Wanjiru's cousin and flatmate"
+   },
+   "F11": {
+    "name": "Zuri",
+    "type": "pet",
+    "aliases": [
+     "a tiny tortoiseshell kitten called Zuri",
+     "Zuri"
+    ],
+    "link": "Wanjiru's foster kitten"
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.commute": "one",
+   "F1.phone": "one",
+   "F4.finances": "many",
+   "F1.goals": "many",
+   "F1.routine": "many",
+   "F1.diet": "many",
+   "F1.sport": "many",
+   "F5.studies": "one",
+   "F1.studies": "many",
+   "F8.habits": "many",
+   "F1.health": "many",
+   "F1.hobby": "many",
+   "F1.events": "many",
+   "F1.pet": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F4",
+     "F1"
+    ],
+    "slot": "F4.finances"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.goals"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s9": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.sport"
+   },
+   "s10": {
+    "folders": [
+     "F5",
+     "F6",
+     "F1"
+    ],
+    "slot": "F5.studies"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s12": {
+    "folders": [
+     "F1",
+     "F7"
+    ],
+    "slot": "F1.studies"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s15": {
+    "folders": [
+     "F8",
+     "F1"
+    ],
+    "slot": "F8.habits"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s17": {
+    "folders": [
+     "F1",
+     "F9"
+    ],
+    "slot": "F1.job"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F4",
+     "F1"
+    ],
+    "slot": "F4.finances"
+   },
+   "s20": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.events"
+   },
+   "s21": {
+    "folders": [
+     "F1",
+     "F11"
+    ],
+    "slot": "F1.pet"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F10"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F7"
+    ],
+    "slot": "F1.events"
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+chat: 586 questions; answer facts carried to the model (covered % / all answers %)
+  budget               TOP             INDEX              WALK
+     150     96.7 /  94.9     96.1 /  94.0     93.3 /  90.8
+     300     99.5 /  99.0     98.8 /  98.3     97.9 /  96.9
+     600    100.0 /  99.8    100.0 /  99.8     99.8 /  99.7
+
+by question type, covered %:
+  current      (281)   98.9  98.6  97.2   |    99.6  99.6  99.6   |   100.0 100.0 100.0
+  multi        (111)   93.6  93.0  86.8   |    99.2  98.9  97.8   |    99.9  99.9  99.9
+  past         (194)   95.1  94.3  91.5   |    99.5  97.4  95.4   |   100.0 100.0  99.5
+  (each budget: TOP INDEX WALK)

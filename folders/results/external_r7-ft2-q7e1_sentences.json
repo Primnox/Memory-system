@@ -1,0 +1,20 @@
+{
+ "model": "/kaggle/input/notebooks/anikethpani/primnox-memory-r7/models/laya-memory-r7",
+ "files": {
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6212624917393753,
+   "best_f1": 0.6504065040650406,
+   "f1_at_0.5": 0.5614035087719298,
+   "precision_at_0.5": 0.7619047619047619,
+   "recall_at_0.5": 0.4444444444444444,
+   "called_replace_by_source": {
+    "lme_ku": "42/421"
+   },
+   "comparisons": 659,
+   "ms_per_pair": 24.8
+  }
+ },
+ "sentences": true
+}

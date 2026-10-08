@@ -1,0 +1,13 @@
+blind: 171 questions; APP* = perfect head + perfect date filter (from labels); INDEX = folders, no labels
+questions                       PLAIN       APP* (ceiling)                INDEX         APP* + cards
+all (171)         41.5 /  85.4 /  98.8  82.5 /  96.5 / 100.0  73.7 /  95.9 / 100.0  88.3 /  97.7 / 100.0
+current (93)      33.3 /  83.9 /  97.8  81.7 /  93.5 / 100.0  73.1 /  97.8 / 100.0  89.2 /  97.8 / 100.0
+multi (24)        75.0 / 100.0 / 100.0  87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0  91.7 / 100.0 / 100.0
+past (54)         40.7 /  81.5 / 100.0  81.5 / 100.0 / 100.0  68.5 /  90.7 / 100.0  85.2 /  96.3 / 100.0
+
+chat: 586 questions; APP* = perfect head + perfect date filter (from labels); INDEX = folders, no labels
+questions                       PLAIN       APP* (ceiling)                INDEX         APP* + cards
+all (586)         41.6 /  87.0 /  96.4  80.5 /  96.1 /  99.3  59.4 /  90.1 /  96.2  85.5 /  97.1 /  99.4
+current (281)     35.9 /  89.3 /  98.9  83.3 /  96.1 / 100.0  61.9 /  93.6 /  98.9  87.9 /  97.5 / 100.0
+multi (111)       64.0 /  91.9 /  92.3  82.0 /  95.5 /  96.3  68.5 /  91.0 /  93.3  85.6 /  95.5 /  96.6
+past (194)        37.1 /  80.9 /  95.1  75.8 /  96.4 / 100.0  50.5 /  84.5 /  93.8  82.0 /  97.4 / 100.0

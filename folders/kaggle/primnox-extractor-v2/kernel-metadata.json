@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-extractor-v2",
+  "title": "primnox-extractor-v2",
+  "code_file": "primnox-extractor-v2.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-extractor-train-v2"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,8 @@
+REALTALK top-1 / top-3, %
+  all       plain:  45.7 /  66.1  head only:  41.6 /  58.0  dates only:  44.2 /  64.4
+  multi-hop plain:  30.9 /  54.8  head only:  31.3 /  53.9  dates only:  30.4 /  53.9
+  temporal  plain:  67.6 /  86.0  head only:  58.0 /  70.0  dates only:  64.7 /  83.1
+  other     plain:  29.6 /  45.7  head only:  27.2 /  38.3  dates only:  28.4 /  44.4
+questions whose EVERY answer fact the head retired: {'multi-hop': 7, 'other': 10, 'temporal': 37}
+questions the date reader dated: {'multi-hop': 4, 'other': 2, 'temporal': 14}
+

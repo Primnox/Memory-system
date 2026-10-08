@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-folders-qwen",
+  "title": "primnox-folders-qwen",
+  "code_file": "primnox-folders-qwen.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-folders-input"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -26,6 +26,9 @@ sets, every score, and the plan for what comes next.
   the time instead of 10%. The extraction in that test used a cloud model; a
   first fine-tuned local extractor (7B) scores 0.67 on LongMemEval, ahead of
   rule splitting (0.55), behind cloud-extracted facts (0.78).
+- **Folders on top:** filing facts into folders for people, places and things, with
+  an index, lifts the blind test to **86%** first / **97.7%** in the top 3, from 80% /
+  94% with the change model alone (not in the app yet).
 - **Still early:** the small model is not in the app yet, and there is no
   head-to-head comparison with other memory systems (Mem0, Zep) yet.
 
@@ -40,7 +43,29 @@ sets, every score, and the plan for what comes next.
 
 ![architecture](docs/architecture.png)
 
-## Latest: round 7 of the change-detection model (2026-10-08)
+## Latest: folder memory (2026-10-08)
+
+Memory organised like a person's organiser: every fact is filed into **folders** (people,
+pets, places, organisations, things, plus one per speaker) and under one **slot** of one
+folder (`Sarah.lives_in`, `me.employer`), with an **index** (days, and a card per folder)
+linking it all. A model files facts in date order without ever seeing labels or later facts.
+
+On the blind test set (171 questions, settings chosen beforehand on a separate dev set):
+
+| How memory is searched | Right fact first | In the top 3 |
+|---|---|---|
+| Plain similarity | 41.5% | 85.4% |
+| Folders + index, no change-detection model | 73.7% | 95.9% |
+| Today's memory (round-7 model retiring old facts) | 80.1% | 94.2% |
+| **Today's memory + folders** | **86.0%** | **97.7%** |
+
+Folders do not replace the change-detection model; they add to it. Two honest limits: on
+real chats (REALTALK) retiring old facts currently **hurts** search (45.7% → 41.6% first),
+because most questions there are about history and retired facts are hidden; and a retrained
+local extractor (v2) scored **worse** than v1 on LongMemEval (0.60 vs 0.67). Details, code
+and every score: [`folders/`](folders/).
+
+## Round 7 of the change-detection model (2026-10-08)
 
 Round 7 trained on everything at once: the earlier synthetic people, 24 new
 people written as real-looking chats with an assistant (facts mentioned in
@@ -198,6 +223,7 @@ version: [`docs/Primnox_Memory_Research_Paper.docx`](docs/Primnox_Memory_Researc
 | `graph/` | Graph-index experiment for choosing which facts go into the prompt |
 | `system_one/` | The small model: screen, training data, Kaggle training job, blind replay, results |
 | `round7/` | Round 7: chat-format and mixed-language people with audited labels, messy-typing test copies, extractor training data, every Kaggle job and score |
+| `folders/` | Folder memory: the filing rules, the filing model, folder/index/web search tests, the round-7 model run as the app runs it, extractor v2, every score |
 
 **Can I run it?** Not on its own yet. The memory modules import a few parts of
 the Primnox app that are not published (database layer, settings, tool
@@ -210,13 +236,19 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
 1. **A local fact extractor**, so every message becomes clean facts without a
    cloud model and without depending on the chat model deciding to call
    `remember`. Measured as the biggest lever (above); the first fine-tuned 7B
-   reaches 0.67 (rules 0.55, cloud 0.78) and needs more recall.
-2. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
+   reaches 0.67 (rules 0.55, cloud 0.78) and needs more recall. A second
+   version scored lower (0.60); next, train it on the cloud model's own
+   extractions of non-benchmark chats.
+2. **Folder memory in the app**: folders, slots and the index on top of the
+   change model (86% / 97.7% on the blind set), filed by a local model; keep
+   retired facts searchable for questions about history (on real chats,
+   hiding them costs 4 points).
+3. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
    0.80): give the change decision more context than one pair at a time.
-3. A standalone package: `pip install`, `remember / search / forget` on SQLite.
-4. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured
+4. A standalone package: `pip install`, `remember / search / forget` on SQLite.
+5. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured
    (above); LoCoMo and a comparison with other memory systems are next.
-5. The small local decision model (≤500M parameters): rounds 6–7 trained and
+6. The small local decision model (≤500M parameters): rounds 6–7 trained and
    blind-tested (above); next, wire it into the memory service, make it faster,
    then the "worth keeping?", context, privacy and computer-use heads — see
    [`docs/SYSTEM_ONE_PLAN.md`](docs/SYSTEM_ONE_PLAN.md).

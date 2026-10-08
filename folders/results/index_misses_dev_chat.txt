@@ -1,0 +1,94 @@
+index misses at top-1 on dev: 238
+    78  now: older fact in the SAME slot ranked first
+    35  now: top-1 was replaced (label) but filed in ANOTHER slot / many-value slot
+    31  past: time words not understood
+    29  past: answer got no time bonus (outside span, not the slot's standing value)
+    27  now: other (similarity picked a different fact)
+    20  past: top-1 dated after the span
+    16  past: other
+     2  now: the answer itself was ranked down as stale
+
+== now: other (similarity picked a different fact)
+  Q: Where does Bridget live?
+    top1 [F4.lives_in]: My sister Sarah moved to London in May 2025.
+    want ['F1.lives_in']: ['I moved to a new flat in Southville, Bristol with rent of £1100 a month.']
+  Q: Did she recently go through a breakup?
+    top1 [F2.relationship]: My ex-husband Mark has a new girlfriend.
+    want ['F1.relationship']: ['My boyfriend Tom and I broke up in March 2026.']
+  Q: Who is my current PhD supervisor?
+    top1 [F1.plans]: I am considering asking Dr. Martin to be my PhD supervisor.
+    want ['F1.supervisor']: ['My new PhD supervisor is Dr. Martin and my thesis is focused on swarm intelligence.']
+
+== now: older fact in the SAME slot ranked first
+  Q: Is she currently following a dairy-free diet?
+    top1 [F1.diet]: I have gone dairy-free based on my doctor's suggestion.
+    want ['F1.diet']: ['I gave up being dairy-free and am eating cheese again.']
+  Q: Which day of the week does she go to the gym?
+    top1 [F1.routine]: I go to the gym on Tuesdays.
+    want ['F1.routine']: ['I changed my gym schedule to only Mondays.']
+  Q: What are the names and ages of her pets?
+    top1 [F1.pet]: I have a 5-year-old cat named Barnaby.
+    want ['F1.pet', 'F3.age']: ['I got a second cat, a kitten named Luna.', 'My cat Barnaby is 6 years old.']
+
+== now: top-1 was replaced (label) but filed in ANOTHER slot / many-value slot
+  Q: How much does she pay for rent?
+    top1 [F1.finances]: My rent in Bedminster will be £950 a month.
+    want ['F1.lives_in']: ['I moved to a new flat in Southville, Bristol with rent of £1100 a month.']
+  Q: What is my current address and how much is my rent?
+    top1 [F1.rent]: My rent is 650 EUR.
+    want ['F1.lives_in']: ['I live alone in a studio at 42 Avenue des Minimes for 720 EUR a month.']
+  Q: Do I have any pets right now?
+    top1 [F1.plans]: I plan to adopt a cat.
+    want ['F1.pet']: ['I adopted a 3-year-old black cat named Banh Mi.']
+
+== past: answer got no time bonus (outside span, not the slot's standing value)
+  Q: Where was she living on Christmas Day 2024?
+    top1 [F1.lives_in]: I lived at my previous home for five years.
+    want ['F1.lives_in']: ['I am moving into a 1-bed flat in Clifton, Bristol.']
+  Q: What sewing machine was I using around Christmas 2025?
+    top1 [F1.hobby]: I sew on an old manual Singer treadle sewing machine from 1978.
+    want ['F1.hobby']: ['I bought an electric Brother CS6000i sewing machine because the manual treadle hurt my knees.']
+  Q: What bike was I riding back in winter 2025 after I retired the Trek?
+    top1 [F1.bike]: My primary road bike is a 2019 Trek Emonda.
+    want ['F1.bike']: ['My primary road bike is a custom Curve titanium road bike.']
+
+== past: other
+  Q: How old was she in November 2024?
+    top1 [F1.job]: I am starting a new job as a paramedic in September 2024.
+    want ['F1.age']: ['I am 32 years old.']
+  Q: Who was she dating in December 2025?
+    top1 [F4.lives_in]: My sister Sarah moved to London in May 2025.
+    want ['F1.relationship']: ['I am dating a man named Tom.']
+  Q: What was her job title in January 2026?
+    top1 [F1.age]: I turned 34 years old in January 2026.
+    want ['F1.job', 'F1.job']: ['I am back at work as a paramedic.', 'I am starting a new job as a paramedic in September 2024.']
+
+== past: top-1 dated after the span
+  Q: Where did her sister Sarah live in March 2025?
+    top1 [F4.lives_in]: My sister Sarah moved to London in May 2025.
+    want ['F4.lives_in']: ['My sister Sarah lives in Bath.']
+  Q: What was I drinking in the mornings in spring 2025 when my acid reflux was bad?
+    top1 [F1.diet]: I switched back to drinking black drip coffee in the mornings after my acid reflux resolved in May 2026.
+    want ['F1.diet']: ['I switched my morning drink from coffee to Japanese sencha green tea due to acid reflux.']
+  Q: Where was the grandfather clock kept in October 2024?
+    top1 [F19.location]: My family's heirloom grandfather clock is in the shed.
+    want ['F1.household']: ['My family has an heirloom grandfather clock in our hallway.']
+
+== now: the answer itself was ranked down as stale
+  Q: Who has she been romantically involved with in the past?
+    top1 [F2.relationship]: My ex-husband Mark has a new girlfriend.
+    want ['F1.relationship', 'F1.relationship']: ['I finalized my divorce with my ex-husband Mark on February 10, 2025.', 'My boyfriend Tom and I broke up in March 2026.']
+  Q: Is the user a smoker?
+    top1 [F1.smoking]: I almost bought cigarettes on April 19, 2026.
+    want ['F1.smoking']: ['I quit smoking cigarettes for good.']
+
+== past: time words not understood
+  Q: What blood pressure medication was I taking back around Easter 2025?
+    top1 [F1.medication]: Dr. Restrepo switched my blood pressure medication from losartan to enalapril 20mg once daily.
+    want ['F1.medication']: ['My doctor increased my losartan dosage to 100mg once daily in the morning.']
+  Q: What was my research focus back when I was at LAAS-CNRS?
+    top1 [F1.lab]: My lab is LAAS-CNRS.
+    want ['F1.studies']: ['My research focus is general robotics.']
+  Q: What phone did I have before buying the iPhone 14?
+    top1 [F1.phone]: I bought a used iPhone 14.
+    want ['F1.phone']: ['I have an iPhone 12 with a cracked screen.']

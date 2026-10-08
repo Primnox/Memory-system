@@ -1,0 +1,15 @@
+q7e1: config settings this library does not have, dropped: none
+q7e1: trainable tensors cast to fp32: 392; trainable params 40.4M
+q7e1: trained in 6142s; eval loss 0.36906754970550537
+q7e1: held-out people — fact/no-fact agreement 233/240, unparseable 0
+q7e1: exam 0/467 (3s)
+q7e1: exam 50/467 (77s)
+q7e1: exam 100/467 (163s)
+q7e1: exam 150/467 (247s)
+q7e1: exam 200/467 (336s)
+q7e1: exam 250/467 (408s)
+q7e1: exam 300/467 (489s)
+q7e1: exam 350/467 (579s)
+q7e1: exam 400/467 (648s)
+q7e1: exam 450/467 (705s)
+q7e1: exam done — 467 messages, 309 facts, 233 with none

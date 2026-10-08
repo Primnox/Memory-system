@@ -1,0 +1,7 @@
+retirements kept (same person) 403, dropped (different people) 32
+REALTALK top-1 / top-3, %
+  all       plain:  45.7 /  66.1   head, any pair:  41.6 /  58.0   head, same person:  42.0 /  58.4
+  multi-hop plain:  30.9 /  54.8   head, any pair:  31.3 /  53.9   head, same person:  31.3 /  53.0
+  temporal  plain:  67.6 /  86.0   head, any pair:  58.0 /  70.0   head, same person:  58.5 /  71.0
+  other     plain:  29.6 /  45.7   head, any pair:  27.2 /  38.3   head, same person:  28.4 /  40.7
+

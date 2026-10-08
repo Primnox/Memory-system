@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-head-sweep",
+  "title": "primnox-head-sweep",
+  "code_file": "primnox-head-sweep.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-head-sweep-input"],
+  "kernel_sources": ["anikethpani/primnox-memory-r7"],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

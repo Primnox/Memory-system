@@ -1,0 +1,8 @@
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.8/110.8 kB 3.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 368.3/368.3 kB 12.2 MB/s eta 0:00:00
+/usr/local/lib/python3.13/dist-packages/laya/agent.py:609: RuntimeWarning: laya: could not patch /kaggle/input/notebooks/anikethpani/primnox-memory-r7/models/laya-memory-r7/tokenizer/tokenizer_config.json ([Errno 30] Read-only file system: '/kaggle/input/notebooks/anikethpani/primnox-memory-r7/models/laya-memory-r7/tokenizer/.tokenizer_config.np9kohf9.tmp'); the tokenizer may fail to load with this transformers version.
+  _fix_tokenizer_config(model_dir)
+pairs_lme_ku   AP 0.62  P 0.76  R 0.44  F1 0.56  {'lme_ku': '42/421'}  24.8 ms/pair
+/usr/local/lib/python3.13/dist-packages/laya/agent.py:609: RuntimeWarning: laya: could not patch /kaggle/input/notebooks/anikethpani/primnox-memory-r7/models/laya-memory-r7/tokenizer/tokenizer_config.json ([Errno 30] Read-only file system: '/kaggle/input/notebooks/anikethpani/primnox-memory-r7/models/laya-memory-r7/tokenizer/.tokenizer_config.w_g66s1_.tmp'); the tokenizer may fail to load with this transformers version.
+  _fix_tokenizer_config(model_dir)
+pairs_lme_ku   AP 0.60  P 0.75  R 0.50  F1 0.60  {'lme_ku': '48/421'}  25.5 ms/pair

@@ -1,0 +1,12 @@
+Round-7 head run as the app runs it (kaggle/primnox-head-sweep, run 1), scored against the labels.
+chat and v3 long are head TRAINING data; only blind v2 is a proof set.
+
+blind   app          changes caught 104/112 (93%), retired 105, wrong retirements 0
+blind   slot-gemini  changes caught 104/112 (93%), retired 105, wrong retirements 0
+chat    app          changes caught 419/457 (92%), retired 478, wrong retirements 36
+chat    slot-gemini  changes caught 419/457 (92%), retired 478, wrong retirements 36
+v3long  app          changes caught 591/622 (95%), retired 638, wrong retirements 32
+
+slot-gemini = the app's candidates plus up to 20 facts filed in the same slot. On these
+25-65-fact people the app's 15 most similar + 12 name-linked candidates already reach
+nearly every earlier fact, so adding the slot changes nothing here.

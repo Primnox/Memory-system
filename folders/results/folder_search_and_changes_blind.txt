@@ -1,0 +1,15 @@
+blind: 171 questions in 12 people
+
+ALPHA = 0.05   (top-1 / top-3 / R@10, %)
+questions                             A                    F                  A+R                  F+R
+all (171)           41.5 /  85.4 /  98.8  47.4 /  92.4 / 100.0  40.9 /  85.4 /  98.8  47.4 /  92.4 / 100.0
+current (93)        33.3 /  83.9 /  97.8  40.9 /  96.8 / 100.0  33.3 /  83.9 /  97.8  40.9 /  96.8 / 100.0
+multi (24)          75.0 / 100.0 / 100.0  83.3 / 100.0 / 100.0  75.0 / 100.0 / 100.0  83.3 / 100.0 / 100.0
+past (54)           40.7 /  81.5 / 100.0  42.6 /  81.5 / 100.0  38.9 /  81.5 / 100.0  42.6 /  81.5 / 100.0
+blind: 112 replacements, average pool 14 earlier facts
+  replaced fact filed in the SAME SLOT as the new one: 92/112 (82%)
+  shares a folder other than the speaker's:           48/112
+  replaced fact among the first B candidates:
+           B       1       3       5      10      15
+         SIM     88%     97%     99%     99%    100%
+        SLOT     82%     99%    100%    100%    100%
