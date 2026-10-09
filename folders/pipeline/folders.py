@@ -6,6 +6,8 @@ and the next batch only, never later facts (the app would file as facts arrive).
 about replacements or questions is shown. Sets:
   chat      24 chat people (training data; dev for the search test)
   v3long    24 v3 long-tier people (head training data; never seen by this method)
+  writers / multilang / v3short / v3dev   the other head-training people (teacher data for
+            training a local clerk and an index-aware head)
   blind     blind v2 (proof)
   realtalk  REALTALK with Gemini facts (proof; no licence, never committed)
 Output: folders/<set>/<scenario>/state.json  {"folders": {...}, "slots": {...}, "facts": {...}}
@@ -28,15 +30,22 @@ HERE = Path(__file__).resolve().parent
 # FOLDERS_OUT points the scorers at another clerk's filing (e.g. folders_qwen/)
 OUT = Path(os.environ.get("FOLDERS_OUT") or HERE / "folders")
 SPEC = (HERE / "SPEC_FOLDERS.md").read_text(encoding="utf-8")
-MODEL = "gemini-3.8-flash-medium"
-BATCH = 25
-WORKERS = 16
+MODEL = os.environ.get("FOLDERS_MODEL") or "gemini-3.8-flash-medium"   # claude-sonnet-4-6 took over when Gemini credits ran out
+BATCH = int(os.environ.get("FOLDERS_BATCH") or 25)   # 1 = one fact per call, as the app files them
+WORKERS = int(os.environ.get("FOLDERS_WORKERS") or 16)
 BLIND = Path(__file__).resolve().parents[2] / "scripts" / "blind_memory" / "v2" / "test.json"
 
 
 def load(name: str) -> list[dict]:
     if name == "chat":
         return [json.loads(f.read_text(encoding="utf-8"))[0] for f in sorted((HERE / "chat").glob("p*/voted.json"))]
+    if name == "writers":       # training people: writers A-D and the DeepSeek pilot
+        return [sc for f in sorted((HERE.parent / "ms" / "system_one" / "data").glob("train_writer_*.json"))
+                for sc in json.loads(f.read_text(encoding="utf-8"))]
+    if name == "multilang":
+        return [json.loads(f.read_text(encoding="utf-8"))[0] for f in sorted((HERE / "cases" / "multilang").glob("p*/voted.json"))]
+    if name in ("v3short", "v3dev"):
+        return json.loads((HERE.parent / "kaggle_ds" / f"train_v3_{name[2:]}.json").read_text(encoding="utf-8"))
     if name == "v3long":
         return json.loads((HERE.parent / "kaggle_ds" / "train_v3_long.json").read_text(encoding="utf-8"))
     if name == "blind":

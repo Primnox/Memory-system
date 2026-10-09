@@ -1,0 +1,16 @@
+Round 8 (kaggle/primnox-r8-index), in run order:
+  1 blind v2 clean, head r8i, no tags
+  2 blind v2 clean, head r8i, tags from the cloud clerk filing one fact at a time
+  3 blind v2 clean, head r7, same tags (r7 never trained with tags)
+  4 LongMemEval KU, Gemini-extracted facts, head r8i, no tags
+  5-6 Dialogue NLI test / verified, head r8i, no tags
+  7 blind v2 clean, head r8i, tags from the local 3B clerk filing one fact at a time
+Round 7 for reference: blind 104/112, 0 wrong; LME F1 0.78; DNLI 0.61 / 0.69
+
+changes noticed 99/112 (88%); retired 100, mistaken 0; pair precision 99%; reachable from candidates 111/112; 14.7 ms per candidate on this machine
+changes noticed 105/112 (94%); retired 107, mistaken 0; pair precision 98%; reachable from candidates 110/112; 17.3 ms per candidate on this machine
+changes noticed 106/112 (95%); retired 106, mistaken 0; pair precision 100%; reachable from candidates 112/112; 17.1 ms per candidate on this machine
+pairs_lme_ku   AP 0.67  P 0.74  R 0.74  F1 0.74  {'lme_ku': '72/421'}  45.2 ms/pair
+pairs_dnli_test_full AP 0.71  P 0.86  R 0.38  F1 0.53  {'dnli-test:negative': '2183/5700', 'dnli-test:neutral': '46/5400', 'dnli-test:positive': '307/5400'}  12.3 ms/pair
+pairs_dnli_verified_test_full AP 0.77  P 0.89  R 0.46  F1 0.60  {'dnli-verified_test:negative': '1844/4041', 'dnli-verified_test:neutral': '7/4008', 'dnli-verified_test:positive': '210/4327'}  12.2 ms/pair
+changes noticed 100/112 (89%); retired 104, mistaken 0; pair precision 96%; reachable from candidates 108/112; 17.3 ms per candidate on this machine

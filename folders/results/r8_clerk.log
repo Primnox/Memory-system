@@ -1,0 +1,5 @@
+clerk examples: train 257, val 18 (longer than 8192 tokens dropped)
+clerk trained in 6154s; eval loss 0.18270352482795715
+clerk vs Gemini on held-out people: 18/18 replies parsed; per fact: same slot key 150/319 (47%), same subject folder 197/319 (62%)
+clerk filed blind v2 one fact at a time in 854s; unfiled facts: 9
+clerk done

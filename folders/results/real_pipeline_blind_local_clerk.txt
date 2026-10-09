@@ -1,0 +1,10 @@
+Blind v2 search with folders filed by the LOCAL clerk (Qwen 2.5 3B + LoRA trained on the cloud
+clerk's filing of training people; kaggle/primnox-r8-index), one fact at a time; round-7 head
+retirements; dates read by when.py. Compare: cloud clerk one fact at a time 87.7 / 97.7.
+
+blind, retirements from retired_app_blind.json: 171 questions (top-1 / top-3 / R@10, %)
+questions                         APP                CARDS              CARDS+E
+all (171)         80.1 /  94.2 /  99.4  84.8 /  97.1 /  99.4  84.8 /  97.1 /  99.4
+current (93)      78.5 /  91.4 / 100.0  80.6 /  95.7 / 100.0  80.6 /  95.7 / 100.0
+multi (24)        87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0
+past (54)         79.6 /  96.3 /  98.1  90.7 /  98.1 /  98.1  90.7 /  98.1 /  98.1

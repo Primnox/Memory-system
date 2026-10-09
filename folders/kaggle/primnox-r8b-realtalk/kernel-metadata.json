@@ -1,0 +1,24 @@
+{
+  "id": "anikethpani/primnox-r8b-realtalk",
+  "title": "primnox-r8b-realtalk",
+  "code_file": "primnox-r8b-realtalk.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "anikethpani/primnox-folders-input",
+    "anikethpani/primnox-clerk-train",
+    "anikethpani/primnox-memory-r8i-train"
+  ],
+  "kernel_sources": [
+    "anikethpani/primnox-r8-index",
+    "anikethpani/primnox-memory-r7"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

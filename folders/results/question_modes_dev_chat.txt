@@ -1,0 +1,7 @@
+Dev set (chat people): retired facts kept; the question decides (now / dated / history). question_modes.py
+chat, retirements from retired_app_chat.json; question modes by type: {('current', 'now'): 271, ('current', 'history'): 10, ('past', 'dated'): 157, ('past', 'history'): 37, ('multi', 'now'): 98, ('multi', 'history'): 10, ('multi', 'dated'): 3}
+questions             PLAIN (no head)    APP (head, today)                MODES
+all (586)         41.6 /  87.0 /  96.4  74.1 /  88.1 /  90.3  75.3 /  92.2 /  95.9
+current (281)     35.9 /  89.3 /  98.9  82.9 /  95.4 /  99.1  81.9 /  95.4 /  99.1
+multi (111)       64.0 /  91.9 /  92.3  80.2 /  94.6 /  93.4  79.3 /  93.7 /  93.0
+past (194)        37.1 /  80.9 /  95.1  57.7 /  73.7 /  75.8  63.4 /  86.6 /  92.8

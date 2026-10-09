@@ -27,8 +27,9 @@ sets, every score, and the plan for what comes next.
   first fine-tuned local extractor (7B) scores 0.67 on LongMemEval, ahead of
   rule splitting (0.55), behind cloud-extracted facts (0.78).
 - **Folders on top:** filing facts into folders for people, places and things, with
-  an index, lifts the blind test to **86%** first / **97.7%** in the top 3, from 80% /
-  94% with the change model alone (not in the app yet).
+  an index, lifts the blind test to **88%** first / **98%** in the top 3, from 80% /
+  94% with the change model alone; 85% / 97% with a local 3B model doing the filing
+  (not in the app yet).
 - **Still early:** the small model is not in the app yet, and there is no
   head-to-head comparison with other memory systems (Mem0, Zep) yet.
 
@@ -43,27 +44,38 @@ sets, every score, and the plan for what comes next.
 
 ![architecture](docs/architecture.png)
 
-## Latest: folder memory (2026-10-08)
+## Latest: folder memory (2026-10-08/09)
 
 Memory organised like a person's organiser: every fact is filed into **folders** (people,
 pets, places, organisations, things, plus one per speaker) and under one **slot** of one
 folder (`Sarah.lives_in`, `me.employer`), with an **index** (days, and a card per folder)
-linking it all. A model files facts in date order without ever seeing labels or later facts.
+linking it all. A model files facts one at a time, in date order, without ever seeing labels
+or later facts.
 
 On the blind test set (171 questions, settings chosen beforehand on a separate dev set):
 
 | How memory is searched | Right fact first | In the top 3 |
 |---|---|---|
 | Plain similarity | 41.5% | 85.4% |
-| Folders + index, no change-detection model | 73.7% | 95.9% |
+| Folders + index, no change-detection model | 71.3% | 94.7% |
 | Today's memory (round-7 model retiring old facts) | 80.1% | 94.2% |
-| **Today's memory + folders** | **86.0%** | **97.7%** |
+| Today's memory + folders filed by a **local 3B model** | 84.8% | 97.1% |
+| **Today's memory + folders filed by a cloud model** | **87.7%** | **97.7%** |
 
-Folders do not replace the change-detection model; they add to it. Two honest limits: on
-real chats (REALTALK) retiring old facts currently **hurts** search (45.7% → 41.6% first),
-because most questions there are about history and retired facts are hidden; and a retrained
-local extractor (v2) scored **worse** than v1 on LongMemEval (0.60 vs 0.67). Details, code
-and every score: [`folders/`](folders/).
+Folders do not replace the change-detection model; they add to it. (The first version of this
+table, 86.0%, used a filing that saw each person's whole history at once; filing one fact at
+a time, as the app would, gives the numbers above.)
+
+What did not work, and the open problems:
+- **Real chats (REALTALK):** retiring old facts still **hurts** search (45.7% → 40.0% first).
+  Letting the question decide whether retired facts count recovers part of it (42.8%).
+- **A head trained to read the folders** (round 8) leaned on them and got worse without them
+  (99 vs 104 of 112; LongMemEval 0.74 vs 0.78): round 7 stays.
+- **The local filing model** works on one person's own facts but fails on chats between two
+  people (58% of REALTALK facts left unfiled).
+- A retrained local extractor (v2) scored **worse** than v1 on LongMemEval (0.60 vs 0.67).
+
+Details, code and every score: [`folders/`](folders/).
 
 ## Round 7 of the change-detection model (2026-10-08)
 
@@ -240,9 +252,9 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
    version scored lower (0.60); next, train it on the cloud model's own
    extractions of non-benchmark chats.
 2. **Folder memory in the app**: folders, slots and the index on top of the
-   change model (86% / 97.7% on the blind set), filed by a local model; keep
-   retired facts searchable for questions about history (on real chats,
-   hiding them costs 4 points).
+   change model (88% / 98% on the blind set; 85% / 97% with a local 3B model
+   filing), let the question decide whether retired facts count, and teach the
+   local filing model conversations between several people.
 3. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
    0.80): give the change decision more context than one pair at a time.
 4. A standalone package: `pip install`, `remember / search / forget` on SQLite.

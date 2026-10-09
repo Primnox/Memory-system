@@ -1,0 +1,13 @@
+blind, retirements from retired_app_blind.json; question modes by type: {('current', 'now'): 93, ('past', 'dated'): 54, ('multi', 'now'): 24}
+questions             PLAIN (no head)    APP (head, today)                MODES
+all (171)         41.5 /  85.4 /  98.8  80.1 /  94.2 /  99.4  80.1 /  94.2 /  99.4
+current (93)      33.3 /  83.9 /  97.8  78.5 /  91.4 / 100.0  78.5 /  91.4 / 100.0
+multi (24)        75.0 / 100.0 / 100.0  87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0
+past (54)         40.7 /  81.5 / 100.0  79.6 /  96.3 /  98.1  79.6 /  96.3 /  98.1
+realtalk, retirements from retired_app_realtalk.json; question modes by type: {('multi-hop', 'now'): 130, ('other', 'now'): 69, ('other', 'history'): 10, ('temporal', 'history'): 130, ('temporal', 'dated'): 14, ('multi-hop', 'history'): 83, ('temporal', 'now'): 63, ('multi-hop', 'dated'): 4, ('other', 'dated'): 2}
+questions             PLAIN (no head)    APP (head, today)                MODES
+all (505)         45.7 /  66.1 /  65.3  40.0 /  56.2 /  53.2  42.8 /  61.2 /  59.5
+multi-hop (217)   30.9 /  54.8 /  48.8  30.9 /  53.0 /  44.9  30.4 /  53.9 /  47.7
+other (81)        29.6 /  45.7 /  52.0  25.9 /  37.0 /  42.3  28.4 /  39.5 /  44.1
+temporal (207)    67.6 /  86.0 /  88.0  55.1 /  67.1 /  66.2  61.4 /  77.3 /  77.8
+

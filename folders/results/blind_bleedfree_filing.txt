@@ -1,0 +1,26 @@
+Bleed-free filing (one fact at a time) of blind v2: real pipeline, folder index, slots
+23:05
+
+blind, retirements from retired_app_blind.json: 171 questions (top-1 / top-3 / R@10, %)
+questions                         APP                CARDS              CARDS+E
+all (171)         80.1 /  94.2 /  99.4  87.7 /  97.7 /  99.4  87.7 /  97.7 /  99.4
+current (93)      78.5 /  91.4 / 100.0  86.0 /  97.8 / 100.0  86.0 /  97.8 / 100.0
+multi (24)        87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0  87.5 / 100.0 / 100.0
+past (54)         79.6 /  96.3 /  98.1  90.7 /  96.3 /  98.1  90.7 /  96.3 /  98.1
+blind: 171 questions in 12 people; 54 name a past time the code understood
+
+TIME = 0.05, STALE = 0.05   (top-1 / top-3 / R@10, %)
+questions                               F+R                    T                  T+N
+all (171)               49.1 /  94.2 /  98.8  59.1 /  95.9 /  99.4  71.3 /  94.7 /  99.1
+current (93)            45.2 /  97.8 /  98.9  45.2 /  97.8 /  98.9  68.8 /  95.7 /  98.9
+multi (24)              83.3 / 100.0 / 100.0  83.3 / 100.0 / 100.0  79.2 / 100.0 /  97.9
+past (54)               40.7 /  85.2 /  98.1  72.2 /  90.7 / 100.0  72.2 /  90.7 / 100.0
+past-time words (54)    40.7 /  85.2 /  98.1  72.2 /  90.7 / 100.0  72.2 /  90.7 / 100.0
+blind: 112 replacements, average pool 14 earlier facts
+  replaced fact filed in the SAME SLOT as the new one: 88/112 (79%)
+  shares a folder other than the speaker's:           58/112
+  replaced fact among the first B candidates:
+           B       1       3       5      10      15
+         SIM     88%     97%     99%     99%    100%
+        SLOT     77%     98%     99%     99%    100%
+
