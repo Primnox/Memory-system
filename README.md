@@ -14,10 +14,12 @@ sets, every score, and the plan for what comes next.
 
 - **Fully local.** It keeps your exact words with dates and knows when
   something changed, without calling a big AI.
-- **Blind tests:** the right fact comes up first 63% of the time (from 19%).
-  A small model (421M) now catches **104 of 112** life changes with **no**
-  wrong retirements, and still 90 of 112 when the same messages are typed
-  messily (round 7, below).
+- **Blind tests:** the right fact comes up first **19%** of the time at the
+  start, **63%** with the rules and checks in the app today, **80%** with a small
+  trained model (421M) deciding what changed plus meaning-based search, and
+  **88%** with folders on top (98% in the top 3). The small model catches
+  **104 of 112** life changes with **no** wrong retirements, and still 90 of 112
+  when the same messages are typed messily.
 - **Public benchmarks:** on LongMemEval's knowledge-update pairs it reaches
   F1 **0.78** when given cleanly extracted facts; Gemini 3.1 Pro judging the
   same pairs directly scores 0.80.
@@ -26,12 +28,16 @@ sets, every score, and the plan for what comes next.
   the time instead of 10%. The extraction in that test used a cloud model; a
   first fine-tuned local extractor (7B) scores 0.67 on LongMemEval, ahead of
   rule splitting (0.55), behind cloud-extracted facts (0.78).
-- **Folders on top:** filing facts into folders for people, places and things, with
-  an index, lifts the blind test to **88%** first / **98%** in the top 3, from 80% /
-  94% with the change model alone; 85% / 97% with a local 3B model doing the filing
-  (not in the app yet).
-- **Still early:** the small model is not in the app yet, and there is no
-  head-to-head comparison with other memory systems (Mem0, Zep) yet.
+- **Folders on top:** filing facts into folders for people, places and things,
+  with an index, is what takes the blind test from 80% to 88%; with a local 3B
+  model doing the filing instead of a cloud model, 85% (97% in the top 3).
+- **Real chats are the open problem:** on REALTALK, retiring old facts still
+  hurts search (45.7% → 42.8% first even with the question deciding which
+  retired facts count).
+- **Still early:** the small model and the folders are not in the app yet. A
+  head-to-head with another open memory system (Hindsight) is set up on the same
+  blind test but not run yet; until it is, there is no claim of being better
+  than anything else.
 
 **How it differs from other AI memory** (by design; accuracy not yet compared):
 
@@ -40,7 +46,8 @@ sets, every score, and the plan for what comes next.
 | ChatGPT | a summary of you, rewritten over time | the AI itself | no |
 | Claude | old chats, searched when the AI decides to | nothing; it searches raw chats | no |
 | Mem0 / Graphiti | facts extracted by an AI | a big AI on every message | yes |
-| **Primnox** | **your exact words + dates; old facts kept, marked replaced** | **rules + a small model, no big AI** | **yes** |
+| Hindsight | facts extracted by an AI, in separate networks (world, experiences, observations) | a big AI on every message | yes |
+| **Primnox** | **your exact words + dates, filed into folders and slots; old facts kept, marked replaced** | **rules + small models (421M decision model, 3B filing model), no big AI** | **yes** |
 
 ![architecture](docs/architecture.png)
 
@@ -130,7 +137,7 @@ writes half as many facts, so it misses updates; the 1.5B is not usable yet.
 Data, code, Kaggle jobs and every score: [`round7/`](round7/). REALTALK's
 messages are not included (no licence).
 
-## Results
+## Earlier results: the memory in the app
 
 Measured on a blind test set: written by agents that never saw the code,
 labels re-checked independently, frozen by SHA-256 before the first scored run,
@@ -163,7 +170,7 @@ and "back then" questions 24 → 34 of 54 (p=0.002).
   systems are next. Until then there is no claim of being better than anything
   else.
 
-### A small trained model for change detection (new)
+### A small trained model for change detection (first version)
 
 A 421M-parameter decision model (Laya, fine-tuned on synthetic people in ~12
 minutes on one free GPU) replaced the hand-written change rules in a blind
@@ -194,7 +201,8 @@ the loop, and CPU speed (~0.4 s per comparison).
 all of them cuts the memory block by ~45% (small stores) to ~89% (200 facts,
 4,075 → ~450 tokens) while keeping 96–97% / 79% of the facts the answers need.
 A graph index (facts linked by people, things and topics) did not choose
-better than plain similarity in a blind test; see [`graph/`](graph/).
+better prompt facts than plain similarity in a blind test; see [`graph/`](graph/).
+Filing facts into folders does improve search, though: see [`folders/`](folders/).
 
 **Research paper** (method, all results with confidence intervals, design
 limitations, threats to validity, references): [`docs/RESEARCH.md`](docs/RESEARCH.md); IEEE-style Word
@@ -214,6 +222,9 @@ version: [`docs/Primnox_Memory_Research_Paper.docx`](docs/Primnox_Memory_Researc
   from its token probabilities. Every decision is logged.
 - **Search.** Hybrid word and embedding ranking, time-aware: "back in March"
   is resolved to a date in code, and only facts true at that date are returned.
+- **Not in the app yet** (measured above, see `round7/` and `folders/`): the
+  421M decision model replacing the change rules, and folders — every fact filed
+  under the people, places and things it is about, searched with that context.
 - **Prompt block.** Live facts go into the assistant's prompt, safety-critical
   ones (allergies, medications) first, so they never fall off the end.
 
@@ -259,7 +270,8 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
    0.80): give the change decision more context than one pair at a time.
 4. A standalone package: `pip install`, `remember / search / forget` on SQLite.
 5. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured
-   (above); LoCoMo and a comparison with other memory systems are next.
+   (above); next, the head-to-head with Hindsight on the same blind test, then
+   LoCoMo.
 6. The small local decision model (≤500M parameters): rounds 6–7 trained and
    blind-tested (above); next, wire it into the memory service, make it faster,
    then the "worth keeping?", context, privacy and computer-use heads — see
