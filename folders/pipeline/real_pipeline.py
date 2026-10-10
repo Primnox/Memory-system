@@ -16,6 +16,7 @@ Rankings over the live facts:
            date ("before I bought the iPhone 14", "back when I was at LAAS", "after I retired
            the Trek"): the fact closest to that clause is the anchor and its date the moment
            (before -> the day before it; when/while/after -> its own date)
+  CARDS+E+Q  and the question decides whether retired facts count (question_modes.py)
 top-1 / top-3 / R@10, %. Settings: ALPHA from the dev set; the event rule is fixed here.
 """
 from __future__ import annotations
@@ -31,6 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from folder_eval import ALPHA, filed_text, named_folders, states   # noqa: E402
 from folder_index import when                                      # noqa: E402
+from question_modes import mode                                    # noqa: E402
 from folders import load                                           # noqa: E402
 from graph_search import Encoder                                   # noqa: E402
 
@@ -89,10 +91,13 @@ def main(name: str, sources: list[str]) -> None:
                 sa = (fa @ qv[qi]).tolist()
                 cards = [s + ALPHA * sum(w[x] for x in qf & fo) for s, fo in zip((ff @ qv[qi]).tolist(), ffold)]
                 ok, ok_e = alive(moment), alive(moment_e)
+                # the question decides: a history question sees every fact, retired or not
+                ok_q = [True] * n if mode(q["text"], today)[0] == "history" else ok_e
                 rows.append({"type": q["type"], "want": set(q["answer_ids"]), "ids": [f["id"] for f in facts],
                              "APP": [s if a else -9 for s, a in zip(sa, ok)],
                              "CARDS": [s if a else -9 for s, a in zip(cards, ok)],
-                             "CARDS+E": [s if a else -9 for s, a in zip(cards, ok_e)]})
+                             "CARDS+E": [s if a else -9 for s, a in zip(cards, ok_e)],
+                             "CARDS+E+Q": [s if a else -9 for s, a in zip(cards, ok_q)]})
 
         def score(rs, key):
             t1 = t3 = r10 = 0.0
@@ -105,10 +110,10 @@ def main(name: str, sources: list[str]) -> None:
             return f"{100 * t1 / k:5.1f} / {100 * t3 / k:5.1f} / {100 * r10 / k:5.1f}"
 
         print(f"\n{name}, retirements from {Path(src).name}: {len(rows)} questions (top-1 / top-3 / R@10, %)")
-        print(f"{'questions':16s} {'APP':>20s} {'CARDS':>20s} {'CARDS+E':>20s}")
+        print(f"{'questions':16s} {'APP':>20s} {'CARDS':>20s} {'CARDS+E':>20s} {'CARDS+E+Q':>20s}")
         for t in ["all"] + sorted({r["type"] for r in rows}):
             rs = rows if t == "all" else [r for r in rows if r["type"] == t]
-            print(f"{t + f' ({len(rs)})':16s} " + " ".join(f"{score(rs, k):>20s}" for k in ("APP", "CARDS", "CARDS+E")))
+            print(f"{t + f' ({len(rs)})':16s} " + " ".join(f"{score(rs, k):>20s}" for k in ("APP", "CARDS", "CARDS+E", "CARDS+E+Q")))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-r9-filing",
+  "title": "primnox-r9-filing",
+  "code_file": "primnox-r9-filing.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-memory-r7-train", "anikethpani/primnox-filing-rows", "anikethpani/primnox-lme-extract"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

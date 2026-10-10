@@ -1,0 +1,2498 @@
+{
+ "anika-bengaluru-designer": {
+  "folders": {
+   "F1": {
+    "name": "Anika",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Rohan",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Anika's manager",
+    "type": "person",
+    "aliases": [
+     "my manager"
+    ],
+    "link": ""
+   },
+   "F4": {
+    "name": "Meera",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.diet": "one",
+   "F1.phone": "one",
+   "F2.studies": "one",
+   "F3.manager": "one",
+   "F1.routine": "many",
+   "F1.events": "many",
+   "F1.pet": "many",
+   "F1.hobby": "many",
+   "F1.health": "many",
+   "F1.commute": "one",
+   "F1.sport": "many",
+   "F1.manager": "one",
+   "F4.job": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.studies"
+   },
+   "s6": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.manager"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s17": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.manager"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.manager"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s24": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.job"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "bjorn-bergen-teacher": {
+  "folders": {
+   "F1": {
+    "name": "Bjorn",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Sigrid",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Eirik",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Loke",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F1.diet": "one",
+   "F1.pet": "many",
+   "F1.routine": "many",
+   "F2.studies": "one",
+   "F1.phone": "one",
+   "F1.medication": "many",
+   "F1.hobby": "many",
+   "F1.trip": "many",
+   "F3.job": "one",
+   "F4.health": "many",
+   "F1.health": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s7": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.studies"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.trip"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s16": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.health"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "carmen-guadalajara-nurse": {
+  "folders": {
+   "F1": {
+    "name": "Carmen",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Luis",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Saturdays",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Mateo",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F5": {
+    "name": "Beto",
+    "type": "thing",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.pet": "many",
+   "F1.car": "one",
+   "F1.diet": "one",
+   "F2.job": "one",
+   "F1.lives_in": "one",
+   "F1.phone": "one",
+   "F1.studies": "one",
+   "F1.commute": "one",
+   "F3.sport": "many",
+   "F1.manager": "one",
+   "F1.events": "many",
+   "F1.hobby": "many",
+   "F4.sport": "many",
+   "F5.car": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s6": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s11": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.sport"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.manager"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s22": {
+    "folders": [
+     "F4",
+     "F3"
+    ],
+    "slot": "F4.sport"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s24": {
+    "folders": [
+     "F5"
+    ],
+    "slot": "F5.car"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "dmitri-toronto-student": {
+  "folders": {
+   "F1": {
+    "name": "Dmitri",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Olena",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Dr",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.studies": "one",
+   "F1.lives_in": "one",
+   "F1.job": "one",
+   "F1.phone": "one",
+   "F1.routine": "many",
+   "F2.job": "one",
+   "F1.languages": "many",
+   "F1.diet": "one",
+   "F1.manager": "one",
+   "F1.sport": "many",
+   "F1.commute": "one",
+   "F1.events": "many",
+   "F1.health": "many",
+   "F1.other": "many",
+   "F3.job": "one"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s6": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.languages"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.manager"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s23": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "esther-leeds-retired": {
+  "folders": {
+   "F1": {
+    "name": "Esther",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Marmalade",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Philippa",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Graham",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F2.age": "one",
+   "F1.diet": "one",
+   "F1.devices": "many",
+   "F3.job": "one",
+   "F1.medication": "many",
+   "F1.hobby": "many",
+   "F1.car": "one",
+   "F1.other": "many",
+   "F1.routine": "many",
+   "F2.details": "many",
+   "F4.lives_in": "one",
+   "F1.events": "many",
+   "F1.sport": "many",
+   "F1.pet": "many",
+   "F1.health": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.age"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.devices"
+   },
+   "s6": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s14": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.details"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.devices"
+   },
+   "s16": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.lives_in"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "hiroshi-osaka-chef": {
+  "folders": {
+   "F1": {
+    "name": "Hiroshi",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Kenta",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.commute": "one",
+   "F1.pet": "many",
+   "F1.routine": "many",
+   "F2.job": "one",
+   "F1.hobby": "many",
+   "F1.phone": "one",
+   "F1.languages": "many",
+   "F1.events": "many",
+   "F1.diet": "one",
+   "F1.health": "many",
+   "F1.other": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s6": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.job"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.languages"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "nandini-hyderabad-pm": {
+  "folders": {
+   "F1": {
+    "name": "Nandini",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Karthik",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Arjun",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Biscuit",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.phone": "one",
+   "F1.diet": "one",
+   "F1.routine": "many",
+   "F2.job": "one",
+   "F1.pet": "many",
+   "F1.health": "many",
+   "F3.job": "one",
+   "F1.sport": "many",
+   "F1.car": "one",
+   "F4.details": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s7": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.job"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s10": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s20": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.details"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F2"
+    ],
+    "slot": "F1.car"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "rafael-curitiba-chef": {
+  "folders": {
+   "F1": {
+    "name": "Rafael",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Lara",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Pipoca",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Athletico",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F5": {
+    "name": "Theo",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F6": {
+    "name": "Uno",
+    "type": "thing",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F2.diet": "one",
+   "F1.other": "many",
+   "F1.car": "one",
+   "F1.sport": "many",
+   "F3.details": "many",
+   "F1.phone": "one",
+   "F1.diet": "one",
+   "F4.likes": "many",
+   "F1.events": "many",
+   "F1.medication": "many",
+   "F1.routine": "many",
+   "F5.events": "many",
+   "F1.hobby": "many",
+   "F6.details": "many",
+   "F1.pet": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.diet"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s7": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.details"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s10": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.likes"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s16": {
+    "folders": [
+     "F5"
+    ],
+    "slot": "F5.events"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s20": {
+    "folders": [
+     "F6"
+    ],
+    "slot": "F6.details"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.other"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F6"
+    ],
+    "slot": "F1.car"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s25": {
+    "folders": [
+     "F1",
+     "F3"
+    ],
+    "slot": "F1.pet"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "sven-gothenburg-student": {
+  "folders": {
+   "F1": {
+    "name": "Sven",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Elsa",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Axel",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.studies": "one",
+   "F1.lives_in": "one",
+   "F1.job": "one",
+   "F1.routine": "many",
+   "F1.diet": "one",
+   "F1.devices": "many",
+   "F2.studies": "one",
+   "F1.sport": "many",
+   "F1.phone": "one",
+   "F1.events": "many",
+   "F3.job": "one",
+   "F1.commute": "one",
+   "F1.health": "many",
+   "F1.volunteering": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.devices"
+   },
+   "s7": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.studies"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s11": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.devices"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.volunteering"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "tessa-perth-teacher": {
+  "folders": {
+   "F1": {
+    "name": "Tessa",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Murdoch",
+    "type": "person",
+    "aliases": [
+     "my daughter"
+    ],
+    "link": ""
+   },
+   "F3": {
+    "name": "Narelle",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Mazda",
+    "type": "thing",
+    "aliases": [],
+    "link": ""
+   },
+   "F5": {
+    "name": "FIFO",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.studies": "one",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F2.studies": "one",
+   "F1.pet": "many",
+   "F1.routine": "many",
+   "F1.phone": "one",
+   "F1.hobby": "many",
+   "F3.job": "one",
+   "F1.medication": "many",
+   "F4.details": "many",
+   "F1.health": "many",
+   "F1.diet": "one",
+   "F1.events": "many",
+   "F5.job": "one",
+   "F1.plans": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s5": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.studies"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s11": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s13": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.details"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s22": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.car"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s25": {
+    "folders": [
+     "F5"
+    ],
+    "slot": "F5.job"
+   },
+   "s26": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.plans"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "walter-ohio-retiree": {
+  "folders": {
+   "F1": {
+    "name": "Walter",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Lab",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Greg",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.routine": "many",
+   "F1.lives_in": "one",
+   "F1.car": "one",
+   "F1.medication": "many",
+   "F1.phone": "one",
+   "F1.events": "many",
+   "F1.likes": "many",
+   "F2.health": "many",
+   "F3.job": "one",
+   "F1.diet": "one",
+   "F1.volunteering": "many",
+   "F1.hobby": "many",
+   "F1.health": "many",
+   "F1.sport": "many",
+   "F2.details": "many",
+   "F3.family": "many",
+   "F1.devices": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.likes"
+   },
+   "s8": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.health"
+   },
+   "s9": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.job"
+   },
+   "s10": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.events"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.volunteering"
+   },
+   "s15": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.health"
+   },
+   "s19": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.health"
+   },
+   "s20": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.medication"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s23": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s24": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.details"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.diet"
+   },
+   "s26": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.family"
+   },
+   "s27": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.car"
+   },
+   "s28": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.devices"
+   }
+  },
+  "filed_by": "r9"
+ },
+ "wanjiru-nairobi-nurse": {
+  "folders": {
+   "F1": {
+    "name": "Wanjiru",
+    "type": "speaker",
+    "aliases": [
+     "I",
+     "me",
+     "my",
+     "the user"
+    ],
+    "link": ""
+   },
+   "F2": {
+    "name": "Kevin",
+    "type": "person",
+    "aliases": [],
+    "link": ""
+   },
+   "F3": {
+    "name": "Simba",
+    "type": "pet",
+    "aliases": [],
+    "link": ""
+   },
+   "F4": {
+    "name": "Achieng",
+    "type": "person",
+    "aliases": [
+     "my cousin"
+    ],
+    "link": ""
+   }
+  },
+  "slots": {
+   "F1.job": "one",
+   "F1.lives_in": "one",
+   "F1.commute": "one",
+   "F1.phone": "one",
+   "F1.finances": "many",
+   "F1.routine": "many",
+   "F1.sport": "many",
+   "F2.studies": "one",
+   "F1.studies": "one",
+   "F3.events": "many",
+   "F1.hobby": "many",
+   "F4.events": "many",
+   "F1.pet": "many"
+  },
+  "facts": {
+   "s1": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s2": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s3": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.commute"
+   },
+   "s4": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s5": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.finances"
+   },
+   "s6": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.finances"
+   },
+   "s7": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s8": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s9": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.sport"
+   },
+   "s10": {
+    "folders": [
+     "F2"
+    ],
+    "slot": "F2.studies"
+   },
+   "s11": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.phone"
+   },
+   "s12": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   },
+   "s13": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s14": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s15": {
+    "folders": [
+     "F3"
+    ],
+    "slot": "F3.events"
+   },
+   "s16": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s17": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.job"
+   },
+   "s18": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.hobby"
+   },
+   "s19": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.finances"
+   },
+   "s20": {
+    "folders": [
+     "F4"
+    ],
+    "slot": "F4.events"
+   },
+   "s21": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.pet"
+   },
+   "s22": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.routine"
+   },
+   "s23": {
+    "folders": [
+     "F1",
+     "F4"
+    ],
+    "slot": "F1.lives_in"
+   },
+   "s24": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.finances"
+   },
+   "s25": {
+    "folders": [
+     "F1"
+    ],
+    "slot": "F1.studies"
+   }
+  },
+  "filed_by": "r9"
+ }
+}

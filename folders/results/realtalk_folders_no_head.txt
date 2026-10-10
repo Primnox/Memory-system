@@ -1,0 +1,10 @@
+REALTALK, Gemini filing, NO head (nothing retired): A plain / F folder cards / R named-folder bonus
+realtalk: 505 questions in 10 people
+
+ALPHA = 0.05   (top-1 / top-3 / R@10, %)
+questions                             A                    F                  A+R                  F+R
+all (505)           45.7 /  66.1 /  65.3  44.8 /  69.5 /  66.3  45.9 /  66.5 /  65.3  45.3 /  69.3 /  66.6
+multi-hop (217)     30.9 /  54.8 /  48.8  28.6 /  59.4 /  49.3  30.0 /  55.3 /  48.8  29.5 /  59.4 /  50.3
+other (81)          29.6 /  45.7 /  52.0  29.6 /  53.1 /  53.6  30.9 /  46.9 /  51.6  30.9 /  51.9 /  53.6
+temporal (207)      67.6 /  86.0 /  88.0  67.6 /  86.5 /  89.0  68.6 /  86.0 /  88.0  67.6 /  86.5 /  88.7
+

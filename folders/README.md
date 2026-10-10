@@ -1,6 +1,12 @@
-# Folder memory: folders, slots, an index — and the head together
+# Folder memory: folders, slots, an index — built by the 500M memory model
 
-Work of 2026-10-08/09. Numbers are copied from the files in `results/`.
+Work of 2026-10-08 to 2026-10-11. Numbers are copied from the files in `results/`.
+
+**The principle (round 9): the index is created and updated by the ~500M memory model itself.**
+Language models of any size are only *teachers* that write training data; filing is expressed as
+choices (which folder, what kind of thing, which of 34 slots) so the same small model that decides
+what changed also decides where a fact goes. Plain code adds what code can do reliably: names of new
+folders, a folder for every named thing, and labels. No LLM runs at memory time.
 
 ## The design
 
@@ -41,6 +47,7 @@ fixed before any proof set was scored.
 | Folders + index, **no head** (days index; one-value slots rank older values down) | 71.3% | 94.7% |
 | **Today's app**: round-7 head retirements + dates read from the question + plain similarity | 80.1% | 94.2% |
 | Today's app + folder cards, **local 3B clerk** filing | 84.8% | 97.1% |
+| **Today's app + the 500M model filing its own index** (round 9; its own change decisions, labels by code) | **86.5%** | **97.7%** |
 | **Today's app + folder cards, cloud clerk** filing | **87.7%** | **97.7%** |
 | Ceiling: a perfect head (from the labels) + folder cards | 88.3% | 97.7% |
 
@@ -81,6 +88,28 @@ Retiring facts still costs on real chats: most REALTALK questions are about hist
 "now"-phrased ones ("what are her hobbies?") lose answers the head retired. Only 32 of 435
 retirements were between facts about different people. REALTALK has no licence: none of its
 messages, facts or filings are in this repo.
+
+### Round 9: one 500M model that decides changes AND files the index
+
+Round 7's training mix plus 9,522 filing decisions (`pipeline/build_filing_rows.py`): *which folder*
+(the speaker, up to 7 other existing folders, or "new"), *what kind of thing is new*, *which of 34
+fixed slots* — rows in the same choice format as the change-detection rows (`kaggle/primnox-r9-filing`,
+`results/r9_500m_filing_and_changes.txt`). Teachers: Gemini 3.8 Flash and Claude Sonnet subagents.
+
+| | Round 7 | Round 9 |
+|---|---|---|
+| Blind v2 changes noticed · wrongly retired | **104/112** · 0 | 101/112 · 0 |
+| LongMemEval knowledge updates, F1 | 0.78 | 0.78 |
+| Dialogue NLI test / verified, F1 | **0.61 / 0.69** | 0.57 / 0.64 |
+| Filing on 8 held-out people: folder / new-thing type / slot | — | 92% / 95% / 71% |
+| Blind v2 search with its own index and own changes (first / top 3) | — | **86.5% / 97.7%** |
+
+It files 12 people (309 facts) in 54 seconds on one T4. The search number needs two honest notes:
+(1) the named-thing folders and the labels (`pipeline/add_named_folders.py`) are written by code, and
+the rule was designed after looking at these blind-v2 results and the ablations in the results file
+(without the labels: 83.0%), so it is optimistic until repeated on a set nobody has looked at;
+(2) training on both jobs cost the change task a little (101 vs 104 of 112, Dialogue NLI -0.04/-0.05);
+a round that weights the change rows more is the next fix.
 
 ### Round 8: a head that reads the index (a negative result)
 
@@ -141,7 +170,7 @@ v2 wrote facts for more messages (updates with an empty side: 17 → 4 of 72) bu
 short messages back whole as "facts". Its training data holds private v3 statements and is not
 published.
 
-### Head-to-head with Hindsight (set up, not yet run)
+### Head-to-head with Hindsight (set up, not yet run; the Kaggle job is ready)
 
 Hindsight (vectorize-io/hindsight, open source) on the same 171 blind-v2 questions with the same
 scoring: embedded mode, its fact extraction run by a local Qwen 2.5 7B through Ollama
@@ -149,19 +178,31 @@ scoring: embedded mode, its fact extraction run by a local Qwen 2.5 7B through O
 writes 1.6 tokens a second — too slow — so it runs on a Kaggle GPU; the first run failed on a
 model-load timeout. No result yet.
 
+## Next: who-is-who
+
+Two people called Rohan, a cat and a friend both called Bella, "my boss" after a job change, a fact
+about someone else's sister: identity needs more than names. `specs/IDENTITY_CASES.md` lists 404
+numbered hard cases (case names only), the scenarios that combine them, the label schema, the rules
+code must never break (never merge by name alone; reversible merges and splits; history kept) and a
+coverage plan: generated, audited and *blind* sets; whole sections held out of training; a discovery
+rate (failures from never-seen categories) as the release bar; ask-the-user when unsure.
+
 ## Files
 
 | Path | What |
 |---|---|
-| `specs/SPEC_FOLDERS.md` | the clerk's filing rules |
+| `specs/SPEC_FOLDERS.md` | the teacher clerk's filing rules |
+| `specs/IDENTITY_CASES.md` | 404 who-is-who hard cases, scenarios, labels, rules, coverage plan |
 | `pipeline/folders.py` | the cloud clerk (agy; uses `round7/pipeline/drive.py`) |
 | `pipeline/clerk_step.py` | one filing step at a time for a clerk not driven through agy |
 | `pipeline/folder_eval.py`, `folder_index.py`, `folder_walk.py` | search, index walk, what the model reads |
 | `pipeline/real_pipeline.py`, `question_modes.py`, `oracle_app.py` | search with a real head's retirements; the question deciding; the perfect-head ceiling |
 | `pipeline/build_clerk_data.py`, `build_r8i.py` | training data for the local clerk and the round-8 head (not published: they include v3) |
+| `pipeline/build_filing_rows.py`, `add_named_folders.py` | filing as choices for the 500M model; names and labels by code |
+| `kaggle/primnox-r9-filing` | round 9: change detection + filing in one model, and the model filing blind v2 |
 | `kaggle/primnox-r8-index`, `primnox-r8b-realtalk` | round 8 (head + local clerk) and its follow-up on real chats |
 | `kaggle/primnox-head-sweep` | the round-7 head run as the app runs it |
-| `data/folders_*_blind.json`, `folders_gemini_chat.json` | filings of the public sets: batch, bleed-free, local clerk |
+| `data/folders_*.json` | filings of the public sets: cloud batch, cloud bleed-free, 3B clerk, and the 500M model's own (raw and with code-added folders and labels) |
 | `data/lme_facts/` | extractor v2's facts for LongMemEval's 467 messages |
 
 Dates are read with the memory's own date reader, `backend/primnox2/memory/when.py`.

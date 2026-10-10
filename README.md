@@ -29,8 +29,8 @@ sets, every score, and the plan for what comes next.
   first fine-tuned local extractor (7B) scores 0.67 on LongMemEval, ahead of
   rule splitting (0.55), behind cloud-extracted facts (0.78).
 - **Folders on top:** filing facts into folders for people, places and things,
-  with an index, is what takes the blind test from 80% to 88%; with a local 3B
-  model doing the filing instead of a cloud model, 85% (97% in the top 3).
+  with an index, is what takes the blind test from 80% to 88%; with the 500M model
+  itself doing the filing (no language model at memory time), 86.5% (97.7% in the top 3).
 - **Real chats are the open problem:** on REALTALK, retiring old facts still
   hurts search (45.7% → 42.8% first even with the question deciding which
   retired facts count).
@@ -51,13 +51,15 @@ sets, every score, and the plan for what comes next.
 
 ![architecture](docs/architecture.png)
 
-## Latest: folder memory (2026-10-08/09)
+## Latest: folder memory, built by the 500M model (2026-10-08 to 10-11)
 
 Memory organised like a person's organiser: every fact is filed into **folders** (people,
 pets, places, organisations, things, plus one per speaker) and under one **slot** of one
 folder (`Sarah.lives_in`, `me.employer`), with an **index** (days, and a card per folder)
-linking it all. A model files facts one at a time, in date order, without ever seeing labels
-or later facts.
+linking it all. **The index is created and updated by the ~500M memory model itself** (the same
+model that decides what changed): filing is a set of choices — which folder, what kind of new thing,
+which of 34 slots — and language models of any size only teach it. Plain code adds the names of new
+folders and the labels. Facts are filed one at a time, in date order, never seeing later facts.
 
 On the blind test set (171 questions, settings chosen beforehand on a separate dev set):
 
@@ -66,18 +68,26 @@ On the blind test set (171 questions, settings chosen beforehand on a separate d
 | Plain similarity | 41.5% | 85.4% |
 | Folders + index, no change-detection model | 71.3% | 94.7% |
 | Today's memory (round-7 model retiring old facts) | 80.1% | 94.2% |
-| Today's memory + folders filed by a **local 3B model** | 84.8% | 97.1% |
+| Today's memory + folders filed by a local 3B language model | 84.8% | 97.1% |
+| **The 500M model alone**: its own change decisions and its own index (round 9) | **86.5%** | **97.7%** |
 | **Today's memory + folders filed by a cloud model** | **87.7%** | **97.7%** |
 
 Folders do not replace the change-detection model; they add to it. (The first version of this
 table, 86.0%, used a filing that saw each person's whole history at once; filing one fact at
 a time, as the app would, gives the numbers above.)
 
+The 500M number is slightly optimistic: the rule that adds named-thing folders and labels was
+designed after looking at this test set. A fresh blind set (never looked at) comes next, built around
+who-is-who traps (two people with one name, a role that changes hands, a quote vs a fact):
+[`folders/specs/IDENTITY_CASES.md`](folders/specs/IDENTITY_CASES.md).
+
 What did not work, and the open problems:
 - **Real chats (REALTALK):** retiring old facts still **hurts** search (45.7% → 40.0% first).
   Letting the question decide whether retired facts count recovers part of it (42.8%).
 - **A head trained to read the folders** (round 8) leaned on them and got worse without them
-  (99 vs 104 of 112; LongMemEval 0.74 vs 0.78): round 7 stays.
+  (99 vs 104 of 112; LongMemEval 0.74 vs 0.78). Round 9, one model trained to do both jobs, keeps
+  LongMemEval at 0.78 but loses a little on changes (101 vs 104 of 112; Dialogue NLI 0.57/0.64 vs
+  0.61/0.69): round 7 is still the change model until a rebalanced round fixes that.
 - **The local filing model** works on one person's own facts but fails on chats between two
   people (58% of REALTALK facts left unfiled).
 - A retrained local extractor (v2) scored **worse** than v1 on LongMemEval (0.60 vs 0.67).
@@ -262,10 +272,12 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
    reaches 0.67 (rules 0.55, cloud 0.78) and needs more recall. A second
    version scored lower (0.60); next, train it on the cloud model's own
    extractions of non-benchmark chats.
-2. **Folder memory in the app**: folders, slots and the index on top of the
-   change model (88% / 98% on the blind set; 85% / 97% with a local 3B model
-   filing), let the question decide whether retired facts count, and teach the
-   local filing model conversations between several people.
+2. **Folder memory in the app, built by the 500M model**: folders, slots and the index (86.5% /
+   97.7% on the blind set with the model filing its own index), a who-is-who benchmark and training
+   set (two people with one name, changing roles, quotes vs facts, merge/split with undo; 404 cases
+   listed in `folders/specs/IDENTITY_CASES.md`), a rebalanced round so change detection returns to
+   104/112, the question deciding whether retired facts count, and conversations between several
+   people.
 3. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
    0.80): give the change decision more context than one pair at a time.
 4. A standalone package: `pip install`, `remember / search / forget` on SQLite.

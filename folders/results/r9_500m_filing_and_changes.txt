@@ -1,0 +1,33 @@
+Round 9 (kaggle/primnox-r9-filing): ONE ~500M model (Laya fine-tune) trained on round 7's change-detection
+mix PLUS 9,522 filing decisions (folder / type / slot choices; 34,281 training items, 3 epochs, 1 T4).
+Teachers: Gemini 3.8 Flash through agy and Claude Sonnet subagents (clerk_step.py). Blind v2, LongMemEval and
+REALTALK were never trained on.
+
+Training rows: {'replaces': 7098, 'labelled_traps': 1155, 'filing': 9522, 'soft': 16506}
+
+Filing on 8 held-out training people (same decision the teacher made):
+  folder 295/319 (92%), type 20/21 (95%), slot 228/319 (71%)
+Blind v2 filed by the model itself, one fact at a time: 54 s for 12 people, 35 new folders made.
+  facts under the speaker folder: 269 of 309; elsewhere: 40
+  vs the cloud (bleed-free) filing: speaker/speaker 260, other/other 32, cloud-other-but-r9-speaker 9,
+  cloud-speaker-but-r9-other 8
+
+Change detection and the external tests (round 7 for reference):
+  blind v2 clean: changes noticed 101/112 (90%); retired 104, mistaken 0; precision 97%     (r7: 104/112, 0)
+  LongMemEval KU, Gemini-extracted facts: AP 0.66  P 0.76  R 0.81  F1 0.78                  (r7: 0.78)
+  Dialogue NLI test F1 0.57; verified F1 0.64                                                 (r7: 0.61 / 0.69)
+  speed: 13 ms per candidate on a T4
+
+Search on blind v2 (171 questions; top-1 / top-3 / R@10, %), the round-9 model's OWN change decisions
+(104 retirements) and its OWN filing; dates read by when.py:
+  filing as the model made it (no extra folders)       APP 79.5/94.7   CARDS 82.5/96.5
+  + a folder for every name / "my <relative>" by code    CARDS 83.0/97.1
+  + a link written by code from the model's decisions   CARDS 86.5/97.7   (current 82.8/96.8, multi 91.7/100, past 90.7/98.1)
+Ablations (same retirements):
+  cloud filing with its link text removed                CARDS 83.0/98.2
+  model filing + cloud slot names                        CARDS 83.0/97.1
+For comparison (round-7 head retirements): cloud filing 87.7/97.7, local 3B 84.8/97.1, today's app 80.1/94.2.
+
+NOTE: the named-folder and link rules (pipeline/add_named_folders.py) were designed AFTER looking at these
+blind-v2 results and the ablations. They contain no tuned numbers, but 86.5 / 97.7 is optimistic until it is
+repeated on a blind set that was never looked at.
