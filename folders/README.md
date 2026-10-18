@@ -265,16 +265,24 @@ Who-is-who blind set (voted labels, 1,198 decisions; `results/round10c/identity_
 20.3%; `results/round10b/`.)
 
 What this shows:
-- **Seed noise is large at this size.** The same data with another shuffle moves change detection
-  from 98 to 101 of 112 and the folder decision from 55% to 64%. Round 9's 101 against round 7's
-  104 is within that noise.
-- **Weighting the change rows did not help** (r10w): change detection and Dialogue NLI did not come
-  back. Halving the filing rows cost nothing measurable and halves the run.
-- **Who-is-who training works.** Folder choice goes from 17% (round 9) and 30% (code) to 55-64%,
-  and to 51-56% on sections never seen in training. Who-a-statement-is-about goes from 59% to 82-84%.
-- **It costs a little elsewhere.** Dialogue NLI falls on both seeds (0.57 → 0.50-0.52 on test) and
-  LongMemEval slips 0.78 → 0.76. Search on blind v2 does not move beyond noise. Round 7 stays the
-  change model in the app.
+- **Run-to-run variance is large at this size.** The same data with another shuffle moves change
+  detection from 98 to 101 of 112 and the folder decision from 55% to 64% (r10c, r10c2). Round 10b
+  was also run on a desktop AMD RX 9060 XT with the same data and recipe: changes noticed r10w 103
+  (Kaggle 100), r10f 105 with 1 wrong (Kaggle 99, 2 wrong); r10f who-is-who folder 33.5% (Kaggle
+  54.3%; writer-only labels), confidently wrong 1 (Kaggle 63); Dialogue NLI test F1 r10w 0.59
+  (0.54), r10f 0.46 (0.56); LongMemEval r10w 0.75, r10f 0.76. Identical recipes land anywhere from
+  98 to 105 of 112, so round 9's 101 against round 7's 104 is within the noise, and a single run
+  shows a direction at most.
+- **Weighting the change rows: open.** Weighting only (r10w) gave 100 and 103 of 112 on the two
+  machines (round 9: 101); it needs repeated runs to call. Halving the filing rows cost nothing
+  measurable and halves the run.
+- **Who-is-who training works with enough people.** With 24 training people, both runs take folder
+  choice from 17% (round 9) and 30% (code) to 55-64%, and to 51-56% on sections never seen in
+  training; who-a-statement-is-about goes from 59% to 82-84%. With only the 4 pilot people, one
+  machine reached 54% and the other 34% (code: 30% on those labels).
+- **It costs a little elsewhere.** Dialogue NLI is lower in every run trained with who-is-who data
+  (0.46-0.56 on test, round 9 0.57; r10c 0.52 / 0.50), and LongMemEval slips 0.78 → 0.76. Search on
+  blind v2 does not move beyond noise. Round 7 stays the change model in the app.
 - **Not measured yet:** real chats (the REALTALK retirements were computed but the question file
   has to be rebuilt before they can be scored), and the release bar (share of failures from
   never-seen categories), which needs the full blind and open sets.

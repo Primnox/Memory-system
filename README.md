@@ -36,9 +36,9 @@ sets, every score, and the plan for what comes next.
   retired facts count).
 - **Who-is-who (round 10):** trained on 24 generated people, the 500M model picks the
   right folder for a statement 55-64% of the time on a blind set (code alone: 30%), also on
-  trap types it never saw in training; it costs a little elsewhere (Dialogue NLI 0.57 →
-  0.50-0.52). Two runs that differ only in the seed differ by 3 of 112 changes, so small
-  gaps between rounds are noise.
+  trap types it never saw in training; Dialogue NLI is lower in every run trained with it
+  (0.46-0.56 vs 0.57). Identical training recipes land between 98 and 105 of 112 changes
+  across seeds and machines, so gaps of a few points between rounds are noise.
 - **Same blind test, another open memory system:** Hindsight, run locally with its fact
   extraction on Qwen 2.5 7B, finds the right fact first 39.8% of the time (73.7% in the top
   3); the 500M model filing its own index, 86.5% (97.7%). Hindsight's published scores use far
@@ -76,9 +76,15 @@ On a blind set written by a model never used for training (9 people so far, 1,19
 
 The same models elsewhere: blind-v2 changes 98 and 101 of 112 (round 9: 101), LongMemEval 0.76
 (0.78), Dialogue NLI 0.52 / 0.50 on test (0.57), blind-v2 search with their own filing 87.1% and
-87.7% first (86.5%). So who-is-who training works, Dialogue NLI pays for it, and the seed alone
-moves results by about as much as the differences between rounds. Weighting the change-detection
-rows more (round 10b) did not bring change detection back.
+87.7% first (86.5%).
+
+**Run-to-run variance is large.** Round 10b was run twice with the same data and recipe, once on
+Kaggle and once on a desktop AMD RX 9060 XT. Changes noticed: 100 vs 103 of 112 (weighting only)
+and 99 vs 105 (with the 4 pilot people); the who-is-who folder decision 54.3% vs 33.5%; Dialogue
+NLI 0.54 vs 0.59 and 0.56 vs 0.46. So a single run shows a direction at most. What holds across
+every run so far: with 24 training people both runs are far above code and round 9 on who-is-who,
+and Dialogue NLI is lower whenever who-is-who data is in training. Whether weighting the
+change-detection rows helps is open (100 and 103 on two machines).
 
 Caveats: the blind set's labels come from two models of one family and hold no merges or splits
 yet; 20 of the 40 training people still wait for their audit; real chats are not re-scored yet.
