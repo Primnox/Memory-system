@@ -21,17 +21,28 @@ def sh(cmd):
     subprocess.run(["bash", "-c", f"set -o pipefail; ({cmd}) 2>&1 | tee -a /kaggle/working/run.log | tail -n 5"], check=True)
 
 
-sh("apt-get -qq update && apt-get -qq install -y zstd")
-sh("curl -fsSL https://ollama.com/install.sh | sh")
-subprocess.Popen(["bash", "-c", "OLLAMA_NUM_PARALLEL=4 ollama serve > /kaggle/working/ollama.log 2>&1"])
-time.sleep(10)
-sh("ollama pull qwen2.5:7b-instruct")
-# warm the model into GPU memory first: the first call (model load) outlasted the client timeout last run
-sh("ollama run qwen2.5:7b-instruct 'Say OK.'")
 import os
+import sys
+
 os.environ["HINDSIGHT_API_LLM_TIMEOUT"] = "900"
-sh("pip install -q hindsight-all")
-sh("rm -rf /tmp/ms && git clone -q --depth 1 https://github.com/Primnox/Memory-system /tmp/ms")
+if os.environ.get("HS_CHILD") != "1":
+    sh("apt-get -qq update && apt-get -qq install -y zstd")
+    sh("curl -fsSL https://ollama.com/install.sh | sh")
+    subprocess.Popen(["bash", "-c", "OLLAMA_NUM_PARALLEL=4 ollama serve > /kaggle/working/ollama.log 2>&1"])
+    time.sleep(10)
+    sh("ollama pull qwen2.5:7b-instruct")
+    # warm the model into GPU memory first: the first call (model load) outlasted the client timeout last run
+    sh("ollama run qwen2.5:7b-instruct 'Say OK.'")
+    sh("pip install -q hindsight-all")
+    sh("rm -rf /tmp/ms && git clone -q --depth 1 https://github.com/Primnox/Memory-system /tmp/ms")
+    # Run 2 failed: Hindsight's embedded Postgres (pg0) runs initdb, which refuses to run as root, and
+    # Kaggle runs scripts as root. The benchmark below runs as an unprivileged user; nothing else changed.
+    sh("id hs >/dev/null 2>&1 || useradd -m hs; chmod -R a+rwX /kaggle/working /tmp/ms")
+    sh(f"cp {os.path.abspath(__file__)} /tmp/hs_bench.py && chmod a+r /tmp/hs_bench.py")
+    print("$ benchmark as user hs", flush=True)
+    subprocess.run(["su", "hs", "-c", f"cd /tmp && HINDSIGHT_API_LLM_TIMEOUT=900 HS_CHILD=1 {sys.executable} /tmp/hs_bench.py"],
+                   check=True)
+    sys.exit(0)
 
 from hindsight import HindsightServer
 from hindsight_client import Hindsight

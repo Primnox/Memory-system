@@ -8,7 +8,7 @@ without the previous session's notes. Read this, then
 ## Where things stand
 
 - Best version: branch `exp/memory-change-verify` of the Primnox app repo
-  (`Primnox/main`, commit `c013cad`; the app repo is going private), 63% top-1
+  (private; commit `c013cad`), 63% top-1
   on the fresh blind set `v2`. All memory branches are pushed there; this
   public repo mirrors the memory files.
 - **Not merged into Primnox `main`.** The owner decides when. Before any merge
@@ -90,11 +90,8 @@ without the previous session's notes. Read this, then
 
 ## Setup on a new machine
 
-Needs access to the private Primnox app repo.
-
-```bash
-git clone -b exp/memory-change-verify https://github.com/Primnox/main.git primnox
-```
+Needs access to the private Primnox app repo: clone its `exp/memory-change-verify` branch
+into a folder named `primnox`.
 
 ```bash
 cd primnox/backend && python -m venv venv && venv/Scripts/pip install -r requirements.txt

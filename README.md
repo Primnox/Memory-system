@@ -34,12 +34,18 @@ sets, every score, and the plan for what comes next.
 - **Real chats are the open problem:** on REALTALK, retiring old facts still
   hurts search (45.7% → 42.8% first even with the question deciding which
   retired facts count).
-- **Still early:** the small model and the folders are not in the app yet. A
-  head-to-head with another open memory system (Hindsight) is set up on the same
-  blind test but not run yet; until it is, there is no claim of being better
-  than anything else.
+- **Who-is-who (round 10):** trained on 24 generated people, the 500M model picks the
+  right folder for a statement 55-64% of the time on a blind set (code alone: 30%), also on
+  trap types it never saw in training; it costs a little elsewhere (Dialogue NLI 0.57 →
+  0.50-0.52). Two runs that differ only in the seed differ by 3 of 112 changes, so small
+  gaps between rounds are noise.
+- **Same blind test, another open memory system:** Hindsight, run locally with its fact
+  extraction on Qwen 2.5 7B, finds the right fact first 39.8% of the time (73.7% in the top
+  3); the 500M model filing its own index, 86.5% (97.7%). Hindsight's published scores use far
+  bigger models, so this is a same-hardware comparison on 12 people, not a general claim.
+- **Still early:** the small model and the folders are not in the app yet.
 
-**How it differs from other AI memory** (by design; accuracy not yet compared):
+**How it differs from other AI memory** (by design; accuracy compared only with Hindsight, on one blind test):
 
 | | Keeps | Updates memory with | Local |
 |---|---|---|---|
@@ -51,7 +57,34 @@ sets, every score, and the plan for what comes next.
 
 ![architecture](docs/architecture.png)
 
-## Latest: folder memory, built by the 500M model (2026-10-08 to 10-11)
+## Latest: who-is-who and round 10 (2026-10-12 to 10-18)
+
+Two people called Rohan, a cat and a friend both called Bella, "my boss" after a job change:
+identity needs more than names. Generated people (written by one model, labelled again by two
+others, a label kept when 2 of 3 agree) teach the 500M model which folder a statement belongs to,
+what kind of statement it is (fact, plan, quote, joke, rumour, correction...), who it is about, and
+when to ask the user. Whole sections of the 404-case map are held out of training.
+
+On a blind set written by a model never used for training (9 people so far, 1,198 decisions):
+
+| Decision | Code only | Round 9 | Round 10c (two seeds) |
+|---|---|---|---|
+| Which folder | 29.7% | 16.9% | 55.2% / 64.1% |
+| Which folder, on trap types never seen in training | 9.3% | 11.6% | 55.8% / 51.2% |
+| Who the statement is about | 39.5% | 58.8% | 83.5% / 81.5% |
+| Kind of statement (always answering "fact": 86.1%) | 84.7% | 68.1% | 89.1% / 89.9% |
+
+The same models elsewhere: blind-v2 changes 98 and 101 of 112 (round 9: 101), LongMemEval 0.76
+(0.78), Dialogue NLI 0.52 / 0.50 on test (0.57), blind-v2 search with their own filing 87.1% and
+87.7% first (86.5%). So who-is-who training works, Dialogue NLI pays for it, and the seed alone
+moves results by about as much as the differences between rounds. Weighting the change-detection
+rows more (round 10b) did not bring change detection back.
+
+Caveats: the blind set's labels come from two models of one family and hold no merges or splits
+yet; 20 of the 40 training people still wait for their audit; real chats are not re-scored yet.
+Details: [`folders/README.md`](folders/README.md#who-is-who-and-round-10-2026-10-12-to-10-18).
+
+## Folder memory, built by the 500M model (2026-10-08 to 10-11)
 
 Memory organised like a person's organiser: every fact is filed into **folders** (people,
 pets, places, organisations, things, plus one per speaker) and under one **slot** of one
@@ -65,11 +98,13 @@ On the blind test set (171 questions, settings chosen beforehand on a separate d
 
 | How memory is searched | Right fact first | In the top 3 |
 |---|---|---|
+| Hindsight (open source), its fact extraction on a local Qwen 2.5 7B | 39.8% | 73.7% |
 | Plain similarity | 41.5% | 85.4% |
 | Folders + index, no change-detection model | 71.3% | 94.7% |
 | Today's memory (round-7 model retiring old facts) | 80.1% | 94.2% |
 | Today's memory + folders filed by a local 3B language model | 84.8% | 97.1% |
 | **The 500M model alone**: its own change decisions and its own index (round 9) | **86.5%** | **97.7%** |
+| The same, round 10c (who-is-who training; two seeds) | 87.1% / 87.7% | 97.7% / 97.7% |
 | **Today's memory + folders filed by a cloud model** | **87.7%** | **97.7%** |
 
 Folders do not replace the change-detection model; they add to it. (The first version of this
@@ -273,17 +308,16 @@ format is described in [`scripts/blind_memory/README.md`](scripts/blind_memory/R
    version scored lower (0.60); next, train it on the cloud model's own
    extractions of non-benchmark chats.
 2. **Folder memory in the app, built by the 500M model**: folders, slots and the index (86.5% /
-   97.7% on the blind set with the model filing its own index), a who-is-who benchmark and training
-   set (two people with one name, changing roles, quotes vs facts, merge/split with undo; 404 cases
-   listed in `folders/specs/IDENTITY_CASES.md`), a rebalanced round so change detection returns to
-   104/112, the question deciding whether retired facts count, and conversations between several
-   people.
+   97.7% on the blind set with the model filing its own index), the who-is-who set finished (all 40
+   training people audited, the full blind set and the open set; 404 cases listed in
+   `folders/specs/IDENTITY_CASES.md`; round 10 already lifts the folder decision from 17% to
+   55-64%), keeping Dialogue NLI from falling as who-is-who data grows, the question deciding
+   whether retired facts count, and conversations between several people.
 3. **Close the gap to a frontier model on LongMemEval locally** (0.78 → beyond
    0.80): give the change decision more context than one pair at a time.
 4. A standalone package: `pip install`, `remember / search / forget` on SQLite.
-5. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured
-   (above); next, the head-to-head with Hindsight on the same blind test, then
-   LoCoMo.
+5. Public benchmarks: LongMemEval knowledge updates and REALTALK are measured,
+   and Hindsight was run on the same blind test (above); next, LoCoMo.
 6. The small local decision model (≤500M parameters): rounds 6–7 trained and
    blind-tested (above); next, wire it into the memory service, make it faster,
    then the "worth keeping?", context, privacy and computer-use heads — see

@@ -1,0 +1,62 @@
+r10w training ended (exit 0) after 20280s
+$ python blind_pairs.py --model /kaggle/working/models/laya-memory-r10w --tag r10w-clean --save-pairs
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2317.95it/s]
+1/12 scenarios done
+2/12 scenarios done
+3/12 scenarios done
+4/12 scenarios done
+5/12 scenarios done
+6/12 scenarios done
+7/12 scenarios done
+8/12 scenarios done
+9/12 scenarios done
+10/12 scenarios done
+11/12 scenarios done
+12/12 scenarios done
+
+changes noticed 100/112 (89%); retired 104, mistaken 0; pair precision 96%; reachable from candidates 108/112; 13.8 ms per candidate on this machine
+$ python run_llm_pieces.py /kaggle/input/datasets/anikethpani/primnox-lme-extract/facts_lme_ku.json --model /kaggle/working/models/laya-memory-r10w --tag r10w-lme-llm --sentences --files data/blind_external/pairs_lme_ku.jsonl
+pairs_lme_ku   AP 0.66  P 0.72  R 0.81  F1 0.76  {'lme_ku': '80/421'}  46.4 ms/pair
+$ python /tmp/ideval.py /kaggle/working/models/laya-memory-r10w r10w
+r10w on who-is-who blind: 1399 decisions
+  about                  207/409 (50.6%)
+  about|held_out         30/52 (57.7%)
+  about|seen             177/357 (49.6%)
+  folder                 84/409 (20.5%)
+  folder|held_out        10/52 (19.2%)
+  folder|seen            74/357 (20.7%)
+  kind                   128/409 (31.3%)
+  kind|held_out          10/52 (19.2%)
+  kind|seen              118/357 (33.1%)
+  merge                  24/67 (35.8%)
+  merge|held_out         3/6 (50.0%)
+  merge|seen             21/61 (34.4%)
+  split                  7/13 (53.8%)
+  split|held_out         1/3 (33.3%)
+  split|seen             6/10 (60.0%)
+  type                   47/92 (51.1%)
+  type|held_out          5/9 (55.6%)
+  type|seen              42/83 (50.6%)
+  false link to an existing folder (gold new): 30
+  false new folder (gold existing): 164
+  wrong existing folder: 110
+  ask predicted: 7
+  ask gold: 14
+  ask both: 0
+  confidently wrong (p>=0.8): 10
+$ python /tmp/filer_r10w.py /kaggle/working/models/laya-memory-r10w r10w
+filing on held-out people: folder 296/319 (93%), type 21/21 (100%), slot 223/319 (70%)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2648.20it/s]
+blind v2 filed by r10w one fact at a time in 68s; 31 folders made
+$ cd /kaggle/working && tar czf filed_r10w.tgz filed_r10w || true
+$ python external_eval.py --model /kaggle/working/models/laya-memory-r10w --tag r10w-dnli --batch 64 --files /tmp/dnli/pairs_dnli_test_full.jsonl /tmp/dnli/pairs_dnli_verified_test_full.jsonl
+pairs_dnli_test_full AP 0.71  P 0.79  R 0.41  F1 0.54  {'dnli-test:negative': '2316/5700', 'dnli-test:neutral': '70/5400', 'dnli-test:positive': '529/5400'}  11.3 ms/pair
+pairs_dnli_verified_test_full AP 0.77  P 0.82  R 0.48  F1 0.61  {'dnli-verified_test:negative': '1948/4041', 'dnli-verified_test:neutral': '10/4008', 'dnli-verified_test:positive': '408/4327'}  11.9 ms/pair
+$ MS=/tmp/ms_r10w python /tmp/sweep.py /kaggle/working/models/laya-memory-r10w r10w
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2561.34it/s]
+r10w blind: 104 retired in 40s
+r10w realtalk: 569 retired in 845s
+r10w all done after 21784s

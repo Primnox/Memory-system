@@ -1,0 +1,20 @@
+{
+ "model": "/kaggle/working/models/laya-memory-r10c",
+ "files": {
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6796429036042879,
+   "best_f1": 0.7843137254901961,
+   "f1_at_0.5": 0.7552447552447552,
+   "precision_at_0.5": 0.7605633802816901,
+   "recall_at_0.5": 0.75,
+   "called_replace_by_source": {
+    "lme_ku": "71/421"
+   },
+   "comparisons": 1345,
+   "ms_per_pair": 43.9
+  }
+ },
+ "sentences": true
+}

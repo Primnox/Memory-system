@@ -1,6 +1,6 @@
 # Folder memory: folders, slots, an index — built by the 500M memory model
 
-Work of 2026-10-08 to 2026-10-11. Numbers are copied from the files in `results/`.
+Work of 2026-10-08 to 2026-10-18. Numbers are copied from the files in `results/`.
 
 **The principle (round 9): the index is created and updated by the ~500M memory model itself.**
 Language models of any size are only *teachers* that write training data; filing is expressed as
@@ -170,15 +170,32 @@ v2 wrote facts for more messages (updates with an empty side: 17 → 4 of 72) bu
 short messages back whole as "facts". Its training data holds private v3 statements and is not
 published.
 
-### Head-to-head with Hindsight (set up, not yet run; the Kaggle job is ready)
+### Head-to-head with Hindsight (blind v2, 171 questions)
 
-Hindsight (vectorize-io/hindsight, open source) on the same 171 blind-v2 questions with the same
-scoring: embedded mode, its fact extraction run by a local Qwen 2.5 7B through Ollama
-(`pipeline/hindsight_bench_local.py`, `kaggle/primnox-hindsight-bench`). On this PC's CPU the 7B
-writes 1.6 tokens a second — too slow — so it runs on a Kaggle GPU; the first run failed on a
-model-load timeout. No result yet.
+Hindsight (vectorize-io/hindsight 0.10.x, open source, MIT) on the same 171 blind-v2 questions with
+the same scoring. Embedded mode (its own Postgres, embedder and reranker), one memory bank per
+person, every statement retained once in date order with its date, each question recalled with
+the person's `today` and budget "mid". Its fact extraction runs on a local Qwen 2.5 7B through
+Ollama on one Kaggle T4 (`pipeline/hindsight_bench_local.py`, `kaggle/primnox-hindsight-bench`,
+`results/hs_bench_results.json`).
 
-## Next: who-is-who
+| Memory | Right fact first | In the top 3 | Share of answers in the top 10 |
+|---|---|---|---|
+| Hindsight, local Qwen 2.5 7B | 39.8% | 73.7% | 87.4% |
+| Primnox, plain similarity, nothing retired | 41.5% | 85.4% | |
+| Primnox, today's app | 80.1% | 94.2% | |
+| Primnox, the 500M model filing its own index | 86.5% | 97.7% | |
+
+By question type, Hindsight: current (93) 34.4% first, 74.2% top 3; past (54) 38.9%, 61.1%;
+several facts together (24) 62.5%, 100%.
+
+Caveats: Hindsight's published scores use much larger LLMs than the 7B here, and this is one run
+on 12 people with about 25 statements each. It took 3 to 4 minutes per person to retain 25
+statements on a T4 (the 500M model files all 12 people in 54 seconds). Two earlier runs failed
+before scoring anything: a model-load timeout, then its embedded Postgres refusing to start as
+root on Kaggle (fixed by running the benchmark as an ordinary user).
+
+## Who-is-who and round 10 (2026-10-12 to 10-18)
 
 Two people called Rohan, a cat and a friend both called Bella, "my boss" after a job change, a fact
 about someone else's sister: identity needs more than names. `specs/IDENTITY_CASES.md` lists 404
@@ -186,6 +203,84 @@ numbered hard cases (case names only), the scenarios that combine them, the labe
 code must never break (never merge by name alone; reversible merges and splits; history kept) and a
 coverage plan: generated, audited and *blind* sets; whole sections held out of training; a discovery
 rate (failures from never-seen categories) as the release bar; ask-the-user when unsure.
+
+### The data so far
+
+- **Case map** (`specs/identity_map.json`, `pipeline/identity_map.py`). The 404 cases split into 224
+  for the model (184 train, 40 held out by whole section: sections 33, 40, 42 and 43), 140 for code,
+  30 for tests and 10 answered by asking the user.
+- **Labels** (`specs/SPEC_IDENTITY.md`, `pipeline/identity.py`). Every statement carries: kind
+  (fact, plan, hypothetical, question, quote, joke, rumour, correction, fiction), who it is about,
+  which folder (speaker / existing / new / ask), and any merge or split. A writer model invents a
+  person's timeline; two auditors from other model families label the bare statements; a label
+  counts when 2 of 3 agree (with one audit so far: when writer and auditor agree).
+- **Training people: 40 written, 24 voted** (the 4 pilot people and 20 of the training people,
+  3,352 decisions). Writers: Gemini 3.1 Pro and Gemini 3.8 Flash. Every Pro-written person is
+  audited by 3.8 Flash; four Flash-written people were audited by Claude Sonnet 4.6 and GPT-OSS
+  120B before those credits ran out. The other 20 Flash-written people wait for a non-Gemini
+  auditor. Writer vs first auditor on the 20: kind 89.7%, about 70.2%, folder 66.0% (the pilot:
+  92%, 83%, 77%); auditors kept 171 of the writers' 240 change pairs.
+- **Blind set: 9 of 18 people** (1,198 decisions, 147 from held-out sections), written by Gemini 3.7
+  Flash (never used to write training people), with cases from every section, held-out ones
+  included. Labelled by the writer and Gemini 3.8 Flash only, so writer and auditor are the same
+  family, and the auditor kept only 55 of the writer's 105 change pairs: treat these labels as a
+  first pass. The voted labels hold **no merges or splits**, so merge and split scores on this set
+  mean nothing yet.
+- **Open set** (written with no case list, for the "unknown unknowns"): not written yet.
+- **Two-person pairs** (third-person facts about two people, the REALTALK failure shape, written
+  from scratch, `specs/SPEC_DUO.md`, `pipeline/duo.py`): 16 written, 14 voted.
+
+The generated people and their labels are not in this repo yet; the scripts that write, audit and
+vote them are (they also use `round7/pipeline/sampler.py`, `gpt_long.py` and `long.py`).
+
+### Round 10: training the 500M model on it
+
+Round 10a (change rows given twice, ~60k items) reached step 7,500 of 7,585 when Kaggle's 12 hour
+limit ended it and saved nothing. Rounds 10b and 10c (`kaggle/primnox-r10b`, `kaggle/primnox-r10c`)
+use round 9's recipe with the change rows once and **half the filing rows** (seeded), a checkpoint
+every epoch, a training deadline, and two models side by side on two T4s (about 6.5 to 7.5 hours).
+
+| Test (none trained on) | r9 | r10w | r10f | r10c | r10c2 |
+|---|---|---|---|---|---|
+| Training data beyond round 9 | — | half the filing rows | + 4 pilot people, 11 pairs | + 24 people, 14 pairs | same, another seed |
+| Blind v2 changes noticed (of 112) | 101, 0 wrong | 100, 0 wrong | 99, 2 wrong | 98, 0 wrong | 101, 0 wrong |
+| LongMemEval knowledge-update F1 | 0.78 | 0.76 | 0.77 | 0.76 | 0.76 |
+| Dialogue NLI F1, test / verified | 0.57 / 0.64 | 0.54 / 0.61 | 0.56 / 0.64 | 0.52 / 0.59 | 0.50 / 0.57 |
+| Filing on 8 held-out people: folder / type / slot | 92 / 95 / 71 | 93 / 100 / 70 | 93 / 90 / 74 | 92 / 90 / 71 | 92 / 90 / 70 |
+| Blind v2 search, own changes + own filing (first / top 3) | 86.5 / 97.7 | 86.0 / 97.1 | 87.7 / 97.1 | 87.1 / 97.7 | 87.7 / 97.7 |
+
+Who-is-who blind set (voted labels, 1,198 decisions; `results/round10c/identity_*_blind.txt`):
+
+| Decision | Code only | r9 | r10c | r10c2 |
+|---|---|---|---|---|
+| Which folder | 29.7% | 16.9% | 55.2% | 64.1% |
+| Which folder, held-out sections | 9.3% | 11.6% | 55.8% | 51.2% |
+| Kind of statement (always "fact": 86.1%) | 84.7% | 68.1% | 89.1% | 89.9% |
+| Who it is about | 39.5% | 58.8% | 83.5% | 81.5% |
+| Kind of new folder (always "person": 79.3%) | 79.3% | 55.2% | 98.3% | 94.8% |
+| Asks the user: right / asked (10 should) | 3 / 71 | 0 / 24 | 3 / 9 | 3 / 9 |
+| Confidently wrong (p ≥ 0.8) | — | 24 | 10 | 24 |
+
+(Round 10b scored r10w and r10f on the earlier, writer-only labels: folder 20.5% and 54.3%, r9
+20.3%; `results/round10b/`.)
+
+What this shows:
+- **Seed noise is large at this size.** The same data with another shuffle moves change detection
+  from 98 to 101 of 112 and the folder decision from 55% to 64%. Round 9's 101 against round 7's
+  104 is within that noise.
+- **Weighting the change rows did not help** (r10w): change detection and Dialogue NLI did not come
+  back. Halving the filing rows cost nothing measurable and halves the run.
+- **Who-is-who training works.** Folder choice goes from 17% (round 9) and 30% (code) to 55-64%,
+  and to 51-56% on sections never seen in training. Who-a-statement-is-about goes from 59% to 82-84%.
+- **It costs a little elsewhere.** Dialogue NLI falls on both seeds (0.57 → 0.50-0.52 on test) and
+  LongMemEval slips 0.78 → 0.76. Search on blind v2 does not move beyond noise. Round 7 stays the
+  change model in the app.
+- **Not measured yet:** real chats (the REALTALK retirements were computed but the question file
+  has to be rebuilt before they can be scored), and the release bar (share of failures from
+  never-seen categories), which needs the full blind and open sets.
+
+Next: audit the other 20 training people, finish the blind and open sets, find out why Dialogue NLI
+falls as who-is-who data grows, then a round on the complete set.
 
 ## Files
 
@@ -200,6 +295,12 @@ rate (failures from never-seen categories) as the release bar; ask-the-user when
 | `pipeline/build_clerk_data.py`, `build_r8i.py` | training data for the local clerk and the round-8 head (not published: they include v3) |
 | `pipeline/build_filing_rows.py`, `add_named_folders.py` | filing as choices for the 500M model; names and labels by code |
 | `kaggle/primnox-r9-filing` | round 9: change detection + filing in one model, and the model filing blind v2 |
+| `kaggle/primnox-r10b`, `primnox-r10c` | round 10: half the filing rows, who-is-who rows, two runs side by side |
+| `specs/SPEC_IDENTITY.md`, `SPEC_DUO.md`, `identity_map.json` | who-is-who writer spec, two-person spec, the case map |
+| `pipeline/identity.py`, `duo.py` | write, audit (two other model families) and vote who-is-who people and two-person pairs |
+| `pipeline/build_identity_rows.py`, `assemble_r10.py`, `identity_baseline.py` | voted people → choice rows for the 500M model; the training file; the code-only baseline |
+| `pipeline/drive.py` | the agy driver these use (reads the stream and stops agy once its result is in) |
+| `results/round10b/`, `results/round10c/` | every round-10 score: changes, LongMemEval, Dialogue NLI, filing, who-is-who, blind v2 search |
 | `kaggle/primnox-r8-index`, `primnox-r8b-realtalk` | round 8 (head + local clerk) and its follow-up on real chats |
 | `kaggle/primnox-head-sweep` | the round-7 head run as the app runs it |
 | `data/folders_*.json` | filings of the public sets: cloud batch, cloud bleed-free, 3B clerk, and the 500M model's own (raw and with code-added folders and labels) |

@@ -1,0 +1,3771 @@
+{
+ "source": "IDENTITY_CASES.md",
+ "seed": 20261011,
+ "core_sections": [
+  1,
+  2,
+  6,
+  8
+ ],
+ "held_out_sections": [
+  33,
+  40,
+  42,
+  43
+ ],
+ "drawn_from": [
+  3,
+  7,
+  21,
+  30,
+  31,
+  33,
+  39,
+  40,
+  41,
+  42,
+  43
+ ],
+ "kinds": [
+  "fact",
+  "plan",
+  "hypothetical",
+  "question",
+  "quote",
+  "joke",
+  "rumour",
+  "correction",
+  "fiction"
+ ],
+ "about": [
+  "speaker",
+  "person",
+  "group",
+  "thing"
+ ],
+ "types": [
+  "person",
+  "pet",
+  "place",
+  "organisation",
+  "group",
+  "thing",
+  "activity",
+  "event"
+ ],
+ "sections": {
+  "1": {
+   "title": "Same identity or different?",
+   "first": 1,
+   "last": 12,
+   "layer": "model",
+   "held_out": false
+  },
+  "2": {
+   "title": "References without explicit names",
+   "first": 13,
+   "last": 24,
+   "layer": "model",
+   "held_out": false
+  },
+  "3": {
+   "title": "Who is speaking, whose perspective",
+   "first": 25,
+   "last": 32,
+   "layer": "model",
+   "held_out": false
+  },
+  "4": {
+   "title": "Same entity, facts change",
+   "first": 33,
+   "last": 50,
+   "layer": "model",
+   "held_out": false
+  },
+  "5": {
+   "title": "Discovering that folders are wrong",
+   "first": 51,
+   "last": 66,
+   "layer": "model",
+   "held_out": false
+  },
+  "6": {
+   "title": "Whose fact is it",
+   "first": 67,
+   "last": 84,
+   "layer": "model",
+   "held_out": false
+  },
+  "7": {
+   "title": "Entities that are not people",
+   "first": 85,
+   "last": 100,
+   "layer": "model",
+   "held_out": false
+  },
+  "8": {
+   "title": "Ambiguous, incomplete, adversarial",
+   "first": 101,
+   "last": 124,
+   "layer": "model",
+   "held_out": false
+  },
+  "21": {
+   "title": "Identity vs representation",
+   "first": 225,
+   "last": 234,
+   "layer": "model",
+   "held_out": false
+  },
+  "22": {
+   "title": "Identity boundaries imposed by context or policy",
+   "first": 235,
+   "last": 244,
+   "layer": "code",
+   "held_out": false
+  },
+  "23": {
+   "title": "Object identity and technological continuity",
+   "first": 245,
+   "last": 254,
+   "layer": "code",
+   "held_out": false
+  },
+  "24": {
+   "title": "Transactions, tasks, work products",
+   "first": 255,
+   "last": 264,
+   "layer": "model",
+   "held_out": false
+  },
+  "25": {
+   "title": "Fine-grained temporal identity",
+   "first": 265,
+   "last": 274,
+   "layer": "code",
+   "held_out": false
+  },
+  "26": {
+   "title": "Graph reasoning and logical boundaries",
+   "first": 275,
+   "last": 284,
+   "layer": "code",
+   "held_out": false
+  },
+  "27": {
+   "title": "Memory pipeline and storage corruption",
+   "first": 285,
+   "last": 294,
+   "layer": "code",
+   "held_out": false
+  },
+  "28": {
+   "title": "Benchmark and evaluation failures",
+   "first": 295,
+   "last": 304,
+   "layer": "test",
+   "held_out": false
+  },
+  "29": {
+   "title": "Ontology and entity-model mistakes",
+   "first": 305,
+   "last": 314,
+   "layer": "code",
+   "held_out": false
+  },
+  "30": {
+   "title": "Possibility, negation, counterfactuals",
+   "first": 315,
+   "last": 324,
+   "layer": "model",
+   "held_out": false
+  },
+  "31": {
+   "title": "Fine-grained fact semantics",
+   "first": 325,
+   "last": 334,
+   "layer": "model",
+   "held_out": false
+  },
+  "32": {
+   "title": "Complex temporal identity",
+   "first": 335,
+   "last": 344,
+   "layer": "code",
+   "held_out": false
+  },
+  "33": {
+   "title": "Actions, intentions, commitments",
+   "first": 345,
+   "last": 354,
+   "layer": "model",
+   "held_out": true
+  },
+  "34": {
+   "title": "Provenance and evidence chains",
+   "first": 355,
+   "last": 364,
+   "layer": "code",
+   "held_out": false
+  },
+  "35": {
+   "title": "Agents, tools, execution state",
+   "first": 365,
+   "last": 374,
+   "layer": "code",
+   "held_out": false
+  },
+  "36": {
+   "title": "Graph structure and consistency",
+   "first": 375,
+   "last": 384,
+   "layer": "code",
+   "held_out": false
+  },
+  "37": {
+   "title": "Forgetting, privacy, memory boundaries",
+   "first": 385,
+   "last": 394,
+   "layer": "code",
+   "held_out": false
+  },
+  "38": {
+   "title": "Benchmark integrity and generalisation",
+   "first": 395,
+   "last": 404,
+   "layer": "test",
+   "held_out": false
+  },
+  "39": {
+   "title": "Contexts and fictional worlds",
+   "first": 405,
+   "last": 414,
+   "layer": "model",
+   "held_out": false
+  },
+  "40": {
+   "title": "Cross-language and pragmatic meaning",
+   "first": 415,
+   "last": 424,
+   "layer": "model",
+   "held_out": true
+  },
+  "41": {
+   "title": "Speech acts and conversational intent",
+   "first": 425,
+   "last": 434,
+   "layer": "model",
+   "held_out": false
+  },
+  "42": {
+   "title": "Causality and event identity",
+   "first": 435,
+   "last": 444,
+   "layer": "model",
+   "held_out": true
+  },
+  "43": {
+   "title": "Identity under uncertainty",
+   "first": 445,
+   "last": 454,
+   "layer": "model",
+   "held_out": true
+  },
+  "44": {
+   "title": "Fact dependencies and derived memory",
+   "first": 455,
+   "last": 464,
+   "layer": "code",
+   "held_out": false
+  },
+  "45": {
+   "title": "Lifecycle, succession, lineage",
+   "first": 465,
+   "last": 474,
+   "layer": "model",
+   "held_out": false
+  },
+  "46": {
+   "title": "Conflicts between data sources and system boundaries",
+   "first": 475,
+   "last": 484,
+   "layer": "code",
+   "held_out": false
+  },
+  "47": {
+   "title": "Retrieval and response-generation mismatches",
+   "first": 485,
+   "last": 494,
+   "layer": "answer",
+   "held_out": false
+  },
+  "48": {
+   "title": "Benchmark construction and robustness",
+   "first": 495,
+   "last": 504,
+   "layer": "test",
+   "held_out": false
+  }
+ },
+ "cases": {
+  "1": {
+   "name": "Same name, different people",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "2": {
+   "name": "Same name, different entity types",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "3": {
+   "name": "Almost identical names",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "4": {
+   "name": "Same person, different names",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "5": {
+   "name": "Nicknames and pet names",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "6": {
+   "name": "Initials and abbreviations",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "7": {
+   "name": "Misspellings and typos",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "8": {
+   "name": "Transliteration differences",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "9": {
+   "name": "Diacritics and alternate spellings",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "10": {
+   "name": "Formal and informal names",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "11": {
+   "name": "Name changes",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "12": {
+   "name": "Reused identifiers",
+   "section": 1,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "13": {
+   "name": "Pronoun resolution",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "14": {
+   "name": "Ambiguous pronouns",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "15": {
+   "name": "Singular they and changing pronouns",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "16": {
+   "name": "Demonstratives",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "17": {
+   "name": "Ordinal references",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "18": {
+   "name": "Deictic references",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "19": {
+   "name": "Descriptions without names",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "20": {
+   "name": "Relationship-based references",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "21": {
+   "name": "Nested relationships",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "22": {
+   "name": "Possessive ambiguity",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "23": {
+   "name": "Ellipsis",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "24": {
+   "name": "Abrupt topic changes",
+   "section": 2,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "train"
+  },
+  "25": {
+   "name": "First-person speaker changes",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "26": {
+   "name": "Group-chat attribution",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "27": {
+   "name": "Nested quotations",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "28": {
+   "name": "Forwarded conversations",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "29": {
+   "name": "Authorship vs subject",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "30": {
+   "name": "Reported facts",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "31": {
+   "name": "Group pronouns",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "32": {
+   "name": "Speaker identity from metadata. (Speaker, fact subject, source and memory owner are separate.)",
+   "section": 3,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "33": {
+   "name": "Location changes",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "34": {
+   "name": "Job or role changes",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "35": {
+   "name": "Relationship stages",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "36": {
+   "name": "Relationship ends",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "37": {
+   "name": "Preferred name or pronouns change",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "38": {
+   "name": "Ownership changes",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "39": {
+   "name": "Replaced objects",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "40": {
+   "name": "Replacement vs repair",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "41": {
+   "name": "Renamed vs replaced entity",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "42": {
+   "name": "Temporary vs permanent state",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "43": {
+   "name": "Current vs historical facts",
+   "section": 4,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "44": {
+   "name": "Future intentions vs completed events",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "45": {
+   "name": "Scheduled vs actual",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "46": {
+   "name": "Recurring events",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "47": {
+   "name": "Date and time ambiguity",
+   "section": 4,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "48": {
+   "name": "Recycled identifiers over time",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "49": {
+   "name": "Repeated state values",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "50": {
+   "name": "Incorrectly inferred transitions",
+   "section": 4,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "51": {
+   "name": "Alias discovered later",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "52": {
+   "name": "Duplicate records discovered",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "53": {
+   "name": "Previously merged people must separate",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "54": {
+   "name": "Mistaken identity corrected",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "55": {
+   "name": "One entity, multiple roles",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "56": {
+   "name": "Same role, multiple entities",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "57": {
+   "name": "Role changes without identity change",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "change",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "58": {
+   "name": "One group becomes individuals",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "59": {
+   "name": "Group membership changes",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "60": {
+   "name": "Group vs individual",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "about"
+   ],
+   "split": "train"
+  },
+  "61": {
+   "name": "Group membership and ownership",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "about"
+   ],
+   "split": "train"
+  },
+  "62": {
+   "name": "Relationship-chain correction",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "63": {
+   "name": "Family structure changes",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "64": {
+   "name": "Reciprocal relationship resolution",
+   "section": 5,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "65": {
+   "name": "Composite entity vs components (twins)",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "66": {
+   "name": "Company identity changes",
+   "section": 5,
+   "layer": "model",
+   "decisions": [
+    "merge",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "67": {
+   "name": "User vs another person's fact",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "68": {
+   "name": "Relationship owner vs subject",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "69": {
+   "name": "Possessor vs attribute subject",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "70": {
+   "name": "Shared or disputed ownership",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "71": {
+   "name": "Experience vs observation",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "72": {
+   "name": "Emotional state attribution",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "73": {
+   "name": "Preferences attributed to the wrong person",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "74": {
+   "name": "Hypotheticals",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "75": {
+   "name": "Roleplay and fictional identity",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "76": {
+   "name": "Quotes vs endorsed statements",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "77": {
+   "name": "Reports and rumours",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "78": {
+   "name": "Belief vs reality",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "79": {
+   "name": "Conflicting sources",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "80": {
+   "name": "Negation and correction",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "81": {
+   "name": "Retractions",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "82": {
+   "name": "Jokes and sarcasm",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "83": {
+   "name": "Metaphorical relationships",
+   "section": 6,
+   "layer": "model",
+   "decisions": [
+    "about",
+    "kind"
+   ],
+   "split": "train"
+  },
+  "84": {
+   "name": "Instructions to forget",
+   "section": 6,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "85": {
+   "name": "Pet vs person",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "86": {
+   "name": "Place vs organisation",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "87": {
+   "name": "Building vs business at that address",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "88": {
+   "name": "Place hierarchy",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "89": {
+   "name": "Product vs model vs individual item",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "90": {
+   "name": "Product versions",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "91": {
+   "name": "Project vs team",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "92": {
+   "name": "Repository vs branch vs commit",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "93": {
+   "name": "File vs document contents",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "94": {
+   "name": "Conversation vs participants",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "95": {
+   "name": "Event vs event series",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "96": {
+   "name": "Abstract concept vs instance",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "97": {
+   "name": "Brand vs product vs company",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "98": {
+   "name": "Account vs account holder",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "99": {
+   "name": "Real vs fictional entity",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "100": {
+   "name": "Public figure vs namesake",
+   "section": 7,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "101": {
+   "name": "Insufficient information",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "102": {
+   "name": "New entity or unknown alias",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "103": {
+   "name": "Weakly matching descriptions",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "104": {
+   "name": "Identical descriptions",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "105": {
+   "name": "Twins and lookalikes",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "106": {
+   "name": "Ambiguous group references",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "107": {
+   "name": "Long-distance coreference",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "108": {
+   "name": "Alias changes over time",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "109": {
+   "name": "Multiple possible antecedents",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "110": {
+   "name": "Contradictory identity clues",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "111": {
+   "name": "Information missing from context",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "112": {
+   "name": "Repeated names inside one family",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "113": {
+   "name": "Identity across channels",
+   "section": 8,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "114": {
+   "name": "Different people sharing a platform account",
+   "section": 8,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "115": {
+   "name": "Cross-modal identity",
+   "section": 8,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "116": {
+   "name": "Ambiguous temporal references",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "117": {
+   "name": "Conflicting or corrupted data",
+   "section": 8,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "118": {
+   "name": "False memory and hallucinated linkage",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "119": {
+   "name": "Same fact, different wording",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "120": {
+   "name": "Same words, different meanings",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "121": {
+   "name": "Change without a change",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "122": {
+   "name": "Ambiguous instruction scope",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "123": {
+   "name": "Identity and access boundaries",
+   "section": 8,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "124": {
+   "name": "Unresolvable identity",
+   "section": 8,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "train"
+  },
+  "225": {
+   "name": "Person vs avatar",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "226": {
+   "name": "Multiple avatars, one user",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "227": {
+   "name": "One pseudonym, multiple authors",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "228": {
+   "name": "Rotating account operators",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "229": {
+   "name": "Model vs model instance",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "230": {
+   "name": "Robot vs controller",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "231": {
+   "name": "Digital twin vs physical original",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "232": {
+   "name": "Depicted person vs narrator",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "233": {
+   "name": "Cloned voice vs actual speaker",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "234": {
+   "name": "Historical representation vs present entity",
+   "section": 21,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "235": {
+   "name": "Same identity, separate memory scopes",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "236": {
+   "name": "Deliberately unlinked identities",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "237": {
+   "name": "Consent- dependent linking",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "238": {
+   "name": "Access-controlled aliases",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "239": {
+   "name": "Conflicting authoritative identifiers",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "240": {
+   "name": "Legal name vs display name",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "241": {
+   "name": "Jurisdiction-specific identifiers",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "242": {
+   "name": "Identity resolution across organisations",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "243": {
+   "name": "Household vs individual identity",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "244": {
+   "name": "Match forbidden by context",
+   "section": 22,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "245": {
+   "name": "Device hardware vs service account",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "246": {
+   "name": "SIM vs phone",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "247": {
+   "name": "Vehicle vs registration plate",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "248": {
+   "name": "Cloud instance recreation",
+   "section": 23,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "249": {
+   "name": "URL vs page identity",
+   "section": 23,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "250": {
+   "name": "Redirected URLs",
+   "section": 23,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "251": {
+   "name": "File path reuse",
+   "section": 23,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "252": {
+   "name": "Software package succession",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "253": {
+   "name": "Component replacement threshold",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "254": {
+   "name": "Identifier physically transferred",
+   "section": 23,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "train"
+  },
+  "255": {
+   "name": "Duplicate-looking transactions",
+   "section": 24,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "256": {
+   "name": "Order vs shipment",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type",
+    "change"
+   ],
+   "split": "train"
+  },
+  "257": {
+   "name": "Refund vs reversal",
+   "section": 24,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "258": {
+   "name": "Original expense vs reimbursement",
+   "section": 24,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "259": {
+   "name": "Recurring invoice instances",
+   "section": 24,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "260": {
+   "name": "Position vs occupant",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type"
+   ],
+   "split": "train"
+  },
+  "261": {
+   "name": "Rescheduled appointment vs follow-up",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "change"
+   ],
+   "split": "train"
+  },
+  "262": {
+   "name": "Renamed vs replacement project",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type",
+    "change"
+   ],
+   "split": "train"
+  },
+  "263": {
+   "name": "Duplicate issue vs shared symptom",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type",
+    "change"
+   ],
+   "split": "train"
+  },
+  "264": {
+   "name": "Publication vs edition",
+   "section": 24,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "type",
+    "change"
+   ],
+   "split": "train"
+  },
+  "265": {
+   "name": "Event date vs publication date",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "266": {
+   "name": "Open-ended validity",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "267": {
+   "name": "Approximate validity intervals",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "268": {
+   "name": "Age vs fixed birth date",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "269": {
+   "name": "Temporarily overlapping roles",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "270": {
+   "name": "Recurring state pattern",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "271": {
+   "name": "Daylight-saving ambiguity",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "272": {
+   "name": "Time precision mismatch",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "273": {
+   "name": "Retrospective statement",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "274": {
+   "name": "Future fact expires without happening",
+   "section": 25,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "275": {
+   "name": "Invalid inverse inference",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "276": {
+   "name": "Relation mistaken for identity",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "277": {
+   "name": "Container vs contained",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "278": {
+   "name": "Same location, different identity",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "279": {
+   "name": "Shared owner, different objects",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "280": {
+   "name": "Non-transitive matching",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "281": {
+   "name": "Contextual attribute conflicts",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "282": {
+   "name": "Derived vs stated facts",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "283": {
+   "name": "Multi-hop inference leakage",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "284": {
+   "name": "Cycles in relationship graphs",
+   "section": 26,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "285": {
+   "name": "Internal ID reassignment",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "286": {
+   "name": "Mention-ID collision during compaction",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "287": {
+   "name": "Concurrent entity creation",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "288": {
+   "name": "Partial merge failure",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "289": {
+   "name": "Database/index disagreement",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "290": {
+   "name": "Graph/cache inconsistency",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "291": {
+   "name": "Provenance lost during summarisation",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "292": {
+   "name": "Confidence carried forward incorrectly",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "293": {
+   "name": "Hidden-context dependence",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "294": {
+   "name": "Duplicate retrieval amplification",
+   "section": 27,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "295": {
+   "name": "Entity frequency imbalance",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "296": {
+   "name": "Long-tail identity failure",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "297": {
+   "name": "Lexical shortcut",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "298": {
+   "name": "Negative-example imbalance",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "299": {
+   "name": "Minimal-pair failure",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "300": {
+   "name": "Distractor-density failure",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "301": {
+   "name": "Long-horizon degradation",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "302": {
+   "name": "Missing-information calibration",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "303": {
+   "name": "Multiple-valid- interpretation failure",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "304": {
+   "name": "Abstention gaming",
+   "section": 28,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "305": {
+   "name": "Entity changes type",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "306": {
+   "name": "One entity, multiple types",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "307": {
+   "name": "Relationship mistaken for attribute",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "308": {
+   "name": "Attribute mistaken for relationship",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "309": {
+   "name": "Abstract role materialised as a person",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "310": {
+   "name": "Role instance vs role definition",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "311": {
+   "name": "Category mistaken for individual",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "312": {
+   "name": "Entity at different levels (product / release / executable / installed instance)",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "313": {
+   "name": "Cross-system type mismatch",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "314": {
+   "name": "Schema meaning changes",
+   "section": 29,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "315": {
+   "name": "Possible vs actual event",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "316": {
+   "name": "Counterfactual identity",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "317": {
+   "name": "Alternative timelines",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "318": {
+   "name": "Explicitly denied identity",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "319": {
+   "name": "Denied relationship",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "320": {
+   "name": "Uncertain entity existence",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "321": {
+   "name": "Hypothetical entity with a real name",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "322": {
+   "name": "Planned vs created entity",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "323": {
+   "name": "Conditional ownership",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "324": {
+   "name": "Retrospective uncertainty",
+   "section": 30,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "325": {
+   "name": "Implicit qualifier",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "326": {
+   "name": "Scoped preference",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "327": {
+   "name": "Conditional preference",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "328": {
+   "name": "Degree mistaken for category",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "329": {
+   "name": "Frequency mistaken for certainty",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "330": {
+   "name": "Comparative losing its reference",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "331": {
+   "name": "Quantifier scope",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "332": {
+   "name": "Universal vs particular claim",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "333": {
+   "name": "Attribution qualifier lost",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "334": {
+   "name": "Confidence qualifier lost in summarisation",
+   "section": 31,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "train"
+  },
+  "335": {
+   "name": "Fact valid only during an event",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "336": {
+   "name": "Retroactive correction with bounded scope",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "337": {
+   "name": "Appointment repeatedly rescheduled",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "338": {
+   "name": "Validity differs by jurisdiction",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "339": {
+   "name": "Parallel timelines",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "340": {
+   "name": "Time-dependent relationship cycles",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "341": {
+   "name": "Overlapping identities in a transition",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "342": {
+   "name": "Event time inferred from ordering",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "343": {
+   "name": "Reinstated facts",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "344": {
+   "name": "Retroactive effective date",
+   "section": 32,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "345": {
+   "name": "Task vs task owner",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "346": {
+   "name": "Delegation vs reassignment",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "347": {
+   "name": "Commitment vs completion",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "348": {
+   "name": "Attempt vs outcome",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "349": {
+   "name": "Request vs authorisation",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "350": {
+   "name": "Acceptance vs acknowledgement",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "351": {
+   "name": "Cancellation vs reversal",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "352": {
+   "name": "Intention owner vs beneficiary",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "353": {
+   "name": "Delegated authority expires",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "354": {
+   "name": "Action targets a changing referent",
+   "section": 33,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "change"
+   ],
+   "split": "held_out"
+  },
+  "355": {
+   "name": "Copies mistaken for independent corroboration",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "356": {
+   "name": "Source chain circularity",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "357": {
+   "name": "Original vs derived fact",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "358": {
+   "name": "Identity from weak metadata",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "359": {
+   "name": "Source authority changes",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "360": {
+   "name": "Composite source",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "361": {
+   "name": "Conflicting versions of a source",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "362": {
+   "name": "Provenance lost during merge",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "363": {
+   "name": "Evidence supports a relationship but not identity",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "364": {
+   "name": "Evidence inheritance error",
+   "section": 34,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "365": {
+   "name": "Agent identity vs user identity",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "366": {
+   "name": "Tool execution vs intention",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "367": {
+   "name": "Retry creates duplicates",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "368": {
+   "name": "Partial tool success",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "369": {
+   "name": "Tool returns stale state",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "370": {
+   "name": "Agents disagree",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "371": {
+   "name": "Delegated memory writes",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "372": {
+   "name": "Tool outputs treated as user instructions",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "373": {
+   "name": "Replayed event after restart",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "374": {
+   "name": "Uncommitted transaction retrieved",
+   "section": 35,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "375": {
+   "name": "Orphaned relationship edge",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "376": {
+   "name": "Redirect-chain loop",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "377": {
+   "name": "Broken canonical reference",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "378": {
+   "name": "Duplicate canonical entities",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "379": {
+   "name": "Inconsistent path-based conclusions",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "380": {
+   "name": "Unsupported transitive closure",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "381": {
+   "name": "Cardinality violation",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "382": {
+   "name": "Historical edge overwritten",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "383": {
+   "name": "Entity deletion leaves derived facts",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "384": {
+   "name": "Merge breaks uniqueness constraints",
+   "section": 36,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "385": {
+   "name": "Forget fact vs forget entity",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "386": {
+   "name": "Forget alias vs forget identity",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "387": {
+   "name": "Forget source vs forget assertion",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "388": {
+   "name": "Correction vs erasure",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "389": {
+   "name": "Deletion propagation scope",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "390": {
+   "name": "Shared fact with different permissions",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "391": {
+   "name": "Revoked consent after linking",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "392": {
+   "name": "Sensitive inference from unrelated links",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "393": {
+   "name": "Identity deletion with historical references",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "394": {
+   "name": "Forget with ambiguous target",
+   "section": 37,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "395": {
+   "name": "Name-distribution shift",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "396": {
+   "name": "Relationship-distribution shift",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "397": {
+   "name": "Temporal-distribution shift",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "398": {
+   "name": "Context-window shift",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "399": {
+   "name": "Alias memorisation",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "400": {
+   "name": "Writer-style leakage",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "401": {
+   "name": "Annotation-convention leakage",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "402": {
+   "name": "Metric concealment",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "403": {
+   "name": "Recovery not measured",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "404": {
+   "name": "Overfitting to one failure taxonomy",
+   "section": 38,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "405": {
+   "name": "Same name in separate fictional universes",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "406": {
+   "name": "Character across adaptations",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "407": {
+   "name": "Fictional biography mistaken for real",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "408": {
+   "name": "Simulation vs real-world state",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "409": {
+   "name": "In-character vs out-of- character statements",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "410": {
+   "name": "Hypothetical duplicate identities",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "411": {
+   "name": "Alternate versions of a character",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "412": {
+   "name": "Character renamed during a story",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "413": {
+   "name": "Narrator mistaken for author",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "414": {
+   "name": "Fan interpretation vs canon",
+   "section": 39,
+   "layer": "model",
+   "decisions": [
+    "kind",
+    "folder"
+   ],
+   "split": "train"
+  },
+  "415": {
+   "name": "Honorific mistaken for part of a name",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "416": {
+   "name": "Kinship term used socially",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "417": {
+   "name": "Kinship term translated too literally",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "418": {
+   "name": "Respectful plural mistaken for several people",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "419": {
+   "name": "Omitted subject changes interpretation",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "420": {
+   "name": "Gender inferred from a name",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "421": {
+   "name": "Grammatical forms of one name",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "422": {
+   "name": "Code-switching changes reference cues",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "423": {
+   "name": "Sarcastic correction",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "424": {
+   "name": "Cultural naming order",
+   "section": 40,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "about"
+   ],
+   "split": "held_out"
+  },
+  "425": {
+   "name": "Question mistaken for assertion",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "426": {
+   "name": "Request mistaken for a fact",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "427": {
+   "name": "Suggestion mistaken for a decision",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "428": {
+   "name": "Promise mistaken for action",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "429": {
+   "name": "Refusal mistaken for negation of identity",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "430": {
+   "name": "Presupposition in a question",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "431": {
+   "name": "Confirmation bias from leading questions",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "432": {
+   "name": "Indirect correction",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "433": {
+   "name": "Ironical agreement",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "434": {
+   "name": "Conversational repair",
+   "section": 41,
+   "layer": "model",
+   "decisions": [
+    "kind"
+   ],
+   "split": "train"
+  },
+  "435": {
+   "name": "Correlation mistaken for identity",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "436": {
+   "name": "Cause mistaken for event",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "437": {
+   "name": "Consequence mistaken for cause",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "438": {
+   "name": "One event, multiple descriptions",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "439": {
+   "name": "Similar incidents mistaken for one event",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "440": {
+   "name": "One incident split into several records",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "441": {
+   "name": "Recurring problem vs individual occurrence",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "442": {
+   "name": "Root cause changes during investigation",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "443": {
+   "name": "Overlapping events",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "444": {
+   "name": "Uncertain event boundaries",
+   "section": 42,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "merge"
+   ],
+   "split": "held_out"
+  },
+  "445": {
+   "name": "Two plausible matches, unequal evidence",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "446": {
+   "name": "Evidence threshold varies by operation",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "447": {
+   "name": "Confidence depends on source quality",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "448": {
+   "name": "Confidence cannot be multiplied blindly",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "449": {
+   "name": "Identity uncertainty differs from fact uncertainty",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "450": {
+   "name": "Fact certainty differs from temporal certainty",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "451": {
+   "name": "Conflicting high-quality evidence",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "452": {
+   "name": "Unknown alias space",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "453": {
+   "name": "Confidence changes after new evidence",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "454": {
+   "name": "Evidence insufficient despite extensive search",
+   "section": 43,
+   "layer": "model",
+   "decisions": [
+    "folder"
+   ],
+   "split": "held_out"
+  },
+  "455": {
+   "name": "Derived fact becomes stale",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "456": {
+   "name": "Derived fact loses its assumptions",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "457": {
+   "name": "Dependent facts survive deletion of their premise",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "458": {
+   "name": "Circularly derived facts",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "459": {
+   "name": "Derived identity treated as confirmed",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "460": {
+   "name": "Source conflict contaminates downstream facts",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "461": {
+   "name": "Fact inheritance crosses an invalid boundary",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "462": {
+   "name": "Aggregate statistic becomes individual fact",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "463": {
+   "name": "Inference survives a graph split",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "464": {
+   "name": "No dependency tracking",
+   "section": 44,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "465": {
+   "name": "Successor mistaken for predecessor",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "466": {
+   "name": "Founder vs current owner",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "467": {
+   "name": "Original vs successor organisation",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "468": {
+   "name": "Biological lineage vs legal relationship",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "469": {
+   "name": "Guardian vs parent",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "470": {
+   "name": "Household composition changes",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "471": {
+   "name": "Team succession vs continuity",
+   "section": 45,
+   "layer": "model",
+   "decisions": [
+    "folder",
+    "change"
+   ],
+   "split": "train"
+  },
+  "472": {
+   "name": "Version lineage vs object identity",
+   "section": 45,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "473": {
+   "name": "Reincorporation or legal restructuring",
+   "section": 45,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "474": {
+   "name": "Entity expiration vs disappearance",
+   "section": 45,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "475": {
+   "name": "Different refresh schedules",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "476": {
+   "name": "Conflicting replicas",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "477": {
+   "name": "Out-of-order event processing",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "478": {
+   "name": "Late-arriving historical data",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "479": {
+   "name": "Duplicate delivery with different metadata",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "480": {
+   "name": "Tombstone lost during replication",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "481": {
+   "name": "Concurrent contradictory corrections",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "482": {
+   "name": "Version check omitted",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "483": {
+   "name": "Cross-index deletion incomplete",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "484": {
+   "name": "Recovery restores corrupted state",
+   "section": 46,
+   "layer": "code",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "485": {
+   "name": "Correct retrieval, wrong synthesis",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "486": {
+   "name": "Correct identity, wrong time slice",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "487": {
+   "name": "Correct facts, wrong attribution",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "488": {
+   "name": "Ranking hides decisive evidence",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "489": {
+   "name": "Query wording changes the chosen entity",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "490": {
+   "name": "Search expansion introduces false candidates",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "491": {
+   "name": "Summary erases uncertainty",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "492": {
+   "name": "Conflicting memories collapsed into one answer",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "493": {
+   "name": "Correct entity omitted from the answer",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "494": {
+   "name": "Unsupported explanation of resolution",
+   "section": 47,
+   "layer": "answer",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "495": {
+   "name": "Semantically equivalent paraphrase",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "496": {
+   "name": "Surface-form perturbation",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "497": {
+   "name": "Irrelevant information injection",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "498": {
+   "name": "Contradictory distractor insertion",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "499": {
+   "name": "Order permutation",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "500": {
+   "name": "Delayed disambiguation",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "501": {
+   "name": "Counterfactual minimal pair",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "502": {
+   "name": "Repeated mistake recovery",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "503": {
+   "name": "Distribution shift in interaction density",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  },
+  "504": {
+   "name": "Unseen combinations with familiar components",
+   "section": 48,
+   "layer": "test",
+   "decisions": [],
+   "split": "n/a"
+  }
+ }
+}
