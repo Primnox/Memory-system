@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-r10d",
+  "title": "primnox-r10d",
+  "code_file": "primnox-r10d.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-memory-r7-train", "anikethpani/primnox-filing-rows", "anikethpani/primnox-lme-extract", "anikethpani/primnox-folders-input", "anikethpani/primnox-identity-rows"],
+  "kernel_sources": ["anikethpani/primnox-r9-filing"],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

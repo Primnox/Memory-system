@@ -146,22 +146,26 @@ def write(i: int) -> None:
         log(f"duo p{i + 1:02d}: FAILED: {str(e)[:200]}")
 
 
+def audit_prompt(sc: dict) -> str:
+    rules = SPEC.split("### Statements", 1)[1].split("## Before you answer", 1)[0]
+    bare = {"speakers": sc["speakers"], "today": sc["today"],
+            "statements": [{"id": s["id"], "date": s["date"], "text": s["text"], "about": s.get("about")} for s in sc["statements"]],
+            "questions": [{k: q[k] for k in ("id", "text", "type", "as_of")} for q in sc["questions"]]}
+    return ("# Labelling a two-person memory set\n\nBelow are the facts and questions WITHOUT labels. Using the rules "
+            "the writer followed, give for every fact the ids of earlier facts it makes no longer true right now, "
+            "and for every question the fact ids that answer it.\n\n## Rules\n" + rules +
+            "\n## Reply\n\n{\"replaces\": {\"s7\": [\"s2\"], ...only facts that replace something...}, "
+            "\"answers\": {\"q1\": [\"s4\"], ...every question...}}\n\nJSON only, no tools, no code.\n\n" +
+            json.dumps(bare, indent=1, ensure_ascii=False) + "\n")
+
+
 def audit(i: int) -> None:
     home = ROOT / f"p{i + 1:02d}"
     if not (home / "final.json").exists():
         return
     sc = json.loads((home / "final.json").read_text(encoding="utf-8"))[0]
     job = json.loads((home / "job.json").read_text(encoding="utf-8"))
-    rules = SPEC.split("### Statements", 1)[1].split("## Before you answer", 1)[0]
-    bare = {"speakers": sc["speakers"], "today": sc["today"],
-            "statements": [{"id": s["id"], "date": s["date"], "text": s["text"], "about": s.get("about")} for s in sc["statements"]],
-            "questions": [{k: q[k] for k in ("id", "text", "type", "as_of")} for q in sc["questions"]]}
-    prompt = ("# Labelling a two-person memory set\n\nBelow are the facts and questions WITHOUT labels. Using the rules "
-              "the writer followed, give for every fact the ids of earlier facts it makes no longer true right now, "
-              "and for every question the fact ids that answer it.\n\n## Rules\n" + rules +
-              "\n## Reply\n\n{\"replaces\": {\"s7\": [\"s2\"], ...only facts that replace something...}, "
-              "\"answers\": {\"q1\": [\"s4\"], ...every question...}}\n\nJSON only, no tools, no code.\n\n" +
-              json.dumps(bare, indent=1, ensure_ascii=False) + "\n")
+    prompt = audit_prompt(sc)
     for model in auditors(job["writer"], home):
         out = home / f"audit_{model}.json"
         if out.exists():

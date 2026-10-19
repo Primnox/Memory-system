@@ -65,7 +65,7 @@ others, a label kept when 2 of 3 agree) teach the 500M model which folder a stat
 what kind of statement it is (fact, plan, quote, joke, rumour, correction...), who it is about, and
 when to ask the user. Whole sections of the 404-case map are held out of training.
 
-On a blind set written by a model never used for training (9 people so far, 1,198 decisions):
+On the first 9 people of a blind set written by a model never used for training (1,198 decisions):
 
 | Decision | Code only | Round 9 | Round 10c (two seeds) |
 |---|---|---|---|
@@ -86,8 +86,15 @@ every run so far: with 24 training people both runs are far above code and round
 and Dialogue NLI is lower whenever who-is-who data is in training. Whether weighting the
 change-detection rows helps is open (100 and 103 on two machines).
 
-Caveats: the blind set's labels come from two models of one family and hold no merges or splits
-yet; 20 of the 40 training people still wait for their audit; real chats are not re-scored yet.
+**The sets are now complete (2026-10-19):** all 40 training people audited (Claude Sonnet audits
+alongside Gemini; Claude Code subagents did the work once the CLI's Claude credits ran out), the
+full blind set of 18 people (9 written by Gemini 3.7 Flash, 9 by Claude Sonnet; 2,763 decisions) and
+an open set of 6 people written with no case list. Round 10d trains on all 44 people with round 10c's
+two seeds and is scored on both sets; results here when it finishes.
+
+Caveats: almost no merges or splits survive the vote (writers put them in, auditors rarely agree),
+so merge and split are not measured yet; Claude Sonnet both wrote half the blind set and audits the
+training people; real chats are not re-scored yet.
 Details: [`folders/README.md`](folders/README.md#who-is-who-and-round-10-2026-10-12-to-10-18).
 
 ## Folder memory, built by the 500M model (2026-10-08 to 10-11)

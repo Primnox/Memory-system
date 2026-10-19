@@ -213,22 +213,34 @@ rate (failures from never-seen categories) as the release bar; ask-the-user when
   (fact, plan, hypothetical, question, quote, joke, rumour, correction, fiction), who it is about,
   which folder (speaker / existing / new / ask), and any merge or split. A writer model invents a
   person's timeline; two auditors from other model families label the bare statements; a label
-  counts when 2 of 3 agree (with one audit so far: when writer and auditor agree).
-- **Training people: 40 written, 24 voted** (the 4 pilot people and 20 of the training people,
-  3,352 decisions). Writers: Gemini 3.1 Pro and Gemini 3.8 Flash. Every Pro-written person is
-  audited by 3.8 Flash; four Flash-written people were audited by Claude Sonnet 4.6 and GPT-OSS
-  120B before those credits ran out. The other 20 Flash-written people wait for a non-Gemini
-  auditor. Writer vs first auditor on the 20: kind 89.7%, about 70.2%, folder 66.0% (the pilot:
-  92%, 83%, 77%); auditors kept 171 of the writers' 240 change pairs.
-- **Blind set: 9 of 18 people** (1,198 decisions, 147 from held-out sections), written by Gemini 3.7
-  Flash (never used to write training people), with cases from every section, held-out ones
-  included. Labelled by the writer and Gemini 3.8 Flash only, so writer and auditor are the same
-  family, and the auditor kept only 55 of the writer's 105 change pairs: treat these labels as a
-  first pass. The voted labels hold **no merges or splits**, so merge and split scores on this set
-  mean nothing yet.
-- **Open set** (written with no case list, for the "unknown unknowns"): not written yet.
+  counts when 2 of 3 agree (with one audit: when writer and auditor agree).
+- **Who did the work.** Writers and auditors ran through the Antigravity CLI (Gemini 3.1 Pro, 3.7 and
+  3.8 Flash; Claude Sonnet 4.6 and GPT-OSS 120B until their credits ran out) and, from 2026-10-19,
+  Claude Code subagents on Claude Sonnet (`pipeline/subagent_tasks.py`: one prompt file per task, the
+  subagent writes one JSON file, the same validator files it). A model never audits its own family's
+  writing.
+- **Training people: all 40 written and voted** (plus the 4 pilot people). Writers: Gemini 3.1 Pro
+  and 3.8 Flash. Pro-written people are audited by 3.8 Flash and Claude Sonnet (2 of 3); Flash-written
+  people by Claude Sonnet (a few also GPT-OSS). 1,872 statements, 484 questions. Writer vs first
+  auditor: kind 90.9%, about 75.4%, folder 70.3% (the pilot: 92%, 83%, 77%); a voted label exists
+  for 95% / 87% / 83% of those decisions; auditors kept 372 of the writers' 475 change pairs.
+  Round 10c trained on the first 24 of these people (3,352 decisions); round 10d on all of them.
+- **Blind set: all 18 people** (859 statements, 235 questions, 2,763 decisions, 350 from held-out
+  sections), with cases from every section, held-out ones included. p01-p09 written by Gemini 3.7
+  Flash, p10-p18 by Claude Sonnet; neither ever writes training people. Labelled again by Gemini 3.8
+  Flash and, for the Gemini-written half, Claude Sonnet. Writer vs first auditor: kind 91.0%, about
+  86.5%, folder 80.8%; auditors kept 151 of the writers' 207 change pairs. Code-only baseline: folder
+  27.4%, kind 76.6% (always "fact": 80.3%), about 37.3%. Almost no merges or splits survive the vote
+  (0 merges, 1 split): the writers put them in, the auditors rarely agree, so merge and split scores
+  still mean nothing. Caveat: Claude Sonnet wrote half the blind set and also audits every training
+  person.
+- **Open set: 6 people**, written by Claude Sonnet with no case list (the writer invents the traps,
+  for the "unknown unknowns"), audited by Gemini 3.8 Flash: 300 statements, 82 questions, 942
+  decisions. Writer vs auditor: kind 93.7%, about 85.7%, folder 85.3%; change pairs kept 61 of 68.
+  Code-only baseline: folder 23.2%, kind 79.7% (always "fact": 78.6%), about 35.8%.
 - **Two-person pairs** (third-person facts about two people, the REALTALK failure shape, written
-  from scratch, `specs/SPEC_DUO.md`, `pipeline/duo.py`): 16 written, 14 voted.
+  from scratch, `specs/SPEC_DUO.md`, `pipeline/duo.py`): all 16 voted; auditors kept 228 of the
+  writers' 233 change pairs.
 
 The generated people and their labels are not in this repo yet; the scripts that write, audit and
 vote them are (they also use `round7/pipeline/sampler.py`, `gpt_long.py` and `long.py`).
@@ -287,8 +299,10 @@ What this shows:
   has to be rebuilt before they can be scored), and the release bar (share of failures from
   never-seen categories), which needs the full blind and open sets.
 
-Next: audit the other 20 training people, finish the blind and open sets, find out why Dialogue NLI
-falls as who-is-who data grows, then a round on the complete set.
+Next (2026-10-19): the who-is-who sets are complete, and round 10d (`kaggle/primnox-r10d`) trains on
+all 44 people with round 10c's two seeds, so per seed only the who-is-who data changes (24 → 44 people).
+It is scored on the full blind set and the open set. After that: find out why Dialogue NLI falls as
+who-is-who data grows, and repeat rounds before trusting single differences.
 
 ## Files
 
@@ -306,6 +320,7 @@ falls as who-is-who data grows, then a round on the complete set.
 | `kaggle/primnox-r10b`, `primnox-r10c` | round 10: half the filing rows, who-is-who rows, two runs side by side |
 | `specs/SPEC_IDENTITY.md`, `SPEC_DUO.md`, `identity_map.json` | who-is-who writer spec, two-person spec, the case map |
 | `pipeline/identity.py`, `duo.py` | write, audit (two other model families) and vote who-is-who people and two-person pairs |
+| `pipeline/subagent_tasks.py` | the same writes and audits done by Claude Code subagents: one prompt file per task, the validator files the result |
 | `pipeline/build_identity_rows.py`, `assemble_r10.py`, `identity_baseline.py` | voted people → choice rows for the 500M model; the training file; the code-only baseline |
 | `pipeline/drive.py` | the agy driver these use (reads the stream and stops agy once its result is in) |
 | `results/round10b/`, `results/round10c/` | every round-10 score: changes, LongMemEval, Dialogue NLI, filing, who-is-who, blind v2 search |
