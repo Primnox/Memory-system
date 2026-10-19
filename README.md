@@ -34,11 +34,12 @@ sets, every score, and the plan for what comes next.
 - **Real chats are the open problem:** on REALTALK, retiring old facts still
   hurts search (45.7% → 42.8% first even with the question deciding which
   retired facts count).
-- **Who-is-who (round 10):** trained on 24 generated people, the 500M model picks the
-  right folder for a statement 55-64% of the time on a blind set (code alone: 30%), also on
-  trap types it never saw in training; Dialogue NLI is lower in every run trained with it
-  (0.46-0.56 vs 0.57). Identical training recipes land between 98 and 105 of 112 changes
-  across seeds and machines, so gaps of a few points between rounds are noise.
+- **Who-is-who (round 10d):** trained on 44 generated people, the 500M model picks the
+  right folder for a statement 66.7% of the time on an 18-person blind set (both seeds;
+  round 9: 19.7%, code alone: 27.4%), 60-62% on trap types never seen in training, and
+  65-67% on a set whose writer invented the traps with no case list. Dialogue NLI is lower
+  in every run trained with it (0.46-0.56 vs 0.57). Identical training recipes land between
+  98 and 105 of 112 changes across seeds and machines, so gaps of a few points are noise.
 - **Same blind test, another open memory system:** Hindsight, run locally with its fact
   extraction on Qwen 2.5 7B, finds the right fact first 39.8% of the time (73.7% in the top
   3); the 500M model filing its own index, 86.5% (97.7%). Hindsight's published scores use far
@@ -57,7 +58,7 @@ sets, every score, and the plan for what comes next.
 
 ![architecture](docs/architecture.png)
 
-## Latest: who-is-who and round 10 (2026-10-12 to 10-18)
+## Latest: who-is-who and round 10 (2026-10-12 to 10-19)
 
 Two people called Rohan, a cat and a friend both called Bella, "my boss" after a job change:
 identity needs more than names. Generated people (written by one model, labelled again by two
@@ -89,8 +90,25 @@ change-detection rows helps is open (100 and 103 on two machines).
 **The sets are now complete (2026-10-19):** all 40 training people audited (Claude Sonnet audits
 alongside Gemini; Claude Code subagents did the work once the CLI's Claude credits ran out), the
 full blind set of 18 people (9 written by Gemini 3.7 Flash, 9 by Claude Sonnet; 2,763 decisions) and
-an open set of 6 people written with no case list. Round 10d trains on all 44 people with round 10c's
-two seeds and is scored on both sets; results here when it finishes.
+an open set of 6 people written with no case list.
+
+**Round 10d** trains on all 44 people with round 10c's two seeds (so per seed only the who-is-who data
+changes):
+
+| Decision | Code only | Round 9 | Round 10d (two seeds) |
+|---|---|---|---|
+| Blind set (18 people), which folder | 27.4% | 19.7% | 66.7% / 66.7% |
+| Blind set, which folder, trap types never seen in training | — | 12.0% | 59.8% / 62.0% |
+| Blind set, who the statement is about | 37.3% | 60.1% | 82.3% / 83.2% |
+| Blind set, kind of statement (always "fact": 80.3%) | 76.6% | 58.6% | 86.8% / 88.0% |
+| Open set (no case list), which folder | 23.2% | 24.0% | 65.0% / 66.5% |
+| Asks the user: right / asked (31 should) | — | 0 / 35 | 11 / 31, 18 / 47 |
+
+Against round 10c on the shared tests, per seed: blind-v2 changes 101 and 100 of 112 (r10c 98, 101;
+r10d makes 2-3 wrong retirements where r10c made none), LongMemEval 0.75 / 0.77 (0.76 / 0.76), Dialogue
+NLI 0.49 / 0.50 (0.52 / 0.50), and blind-v2 search with its own filing **88.3% / 88.9%** first (87.1% /
+87.7%), at the level the cloud filing model reached (87.7%). Round 10c's who-is-who scores on the
+complete sets are pending (its re-scoring job is waiting for a Kaggle GPU).
 
 Caveats: almost no merges or splits survive the vote (writers put them in, auditors rarely agree),
 so merge and split are not measured yet; Claude Sonnet both wrote half the blind set and audits the
@@ -117,7 +135,8 @@ On the blind test set (171 questions, settings chosen beforehand on a separate d
 | Today's memory (round-7 model retiring old facts) | 80.1% | 94.2% |
 | Today's memory + folders filed by a local 3B language model | 84.8% | 97.1% |
 | **The 500M model alone**: its own change decisions and its own index (round 9) | **86.5%** | **97.7%** |
-| The same, round 10c (who-is-who training; two seeds) | 87.1% / 87.7% | 97.7% / 97.7% |
+| The same, round 10c (who-is-who training, 24 people; two seeds) | 87.1% / 87.7% | 97.7% / 97.7% |
+| The same, round 10d (who-is-who training, 44 people; two seeds) | 88.3% / 88.9% | 97.7% / 96.5% |
 | **Today's memory + folders filed by a cloud model** | **87.7%** | **97.7%** |
 
 Folders do not replace the change-detection model; they add to it. (The first version of this

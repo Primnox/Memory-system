@@ -1,0 +1,26 @@
+r9 on who-is-who blind: 2763 decisions
+  about                  478/796 (60.1%)
+  about|held_out         62/98 (63.3%)
+  about|seen             416/698 (59.6%)
+  folder                 148/751 (19.7%)
+  folder|held_out        11/92 (12.0%)
+  folder|seen            137/659 (20.8%)
+  kind                   483/824 (58.6%)
+  kind|held_out          50/107 (46.7%)
+  kind|seen              433/717 (60.4%)
+  merge                  36/207 (17.4%)
+  merge|held_out         4/31 (12.9%)
+  merge|seen             32/176 (18.2%)
+  split                  7/29 (24.1%)
+  split|held_out         1/7 (14.3%)
+  split|seen             6/22 (27.3%)
+  type                   91/156 (58.3%)
+  type|held_out          9/15 (60.0%)
+  type|seen              82/141 (58.2%)
+  false link to an existing folder (gold new): 47
+  false new folder (gold existing): 312
+  wrong existing folder: 178
+  ask predicted: 35
+  ask gold: 31
+  ask both: 0
+  confidently wrong (p>=0.8): 59

@@ -299,10 +299,54 @@ What this shows:
   has to be rebuilt before they can be scored), and the release bar (share of failures from
   never-seen categories), which needs the full blind and open sets.
 
-Next (2026-10-19): the who-is-who sets are complete, and round 10d (`kaggle/primnox-r10d`) trains on
-all 44 people with round 10c's two seeds, so per seed only the who-is-who data changes (24 → 44 people).
-It is scored on the full blind set and the open set. After that: find out why Dialogue NLI falls as
-who-is-who data grows, and repeat rounds before trusting single differences.
+### Round 10d: the complete who-is-who set (2026-10-19)
+
+Round 10c's recipe and its two seeds, trained on all 44 people (6,362 who-is-who decisions) and all 16
+two-person pairs, so per seed only the who-is-who data changes (24 → 44 people)
+(`kaggle/primnox-r10d`, `results/round10d/`).
+
+| Test (none trained on) | r9 | r10c | r10c2 | r10d | r10d2 |
+|---|---|---|---|---|---|
+| Blind v2 changes noticed (of 112) | 101, 0 wrong | 98, 0 wrong | 101, 0 wrong | 101, 3 wrong | 100, 2 wrong |
+| LongMemEval knowledge-update F1 | 0.78 | 0.76 | 0.76 | 0.75 | 0.77 |
+| Dialogue NLI F1, test / verified | 0.57 / 0.64 | 0.52 / 0.59 | 0.50 / 0.57 | 0.49 / 0.56 | 0.50 / 0.57 |
+| Filing on 8 held-out people: folder / type / slot | 92 / 95 / 71 | 92 / 90 / 71 | 92 / 90 / 70 | 92 / 90 / 72 | 92 / 86 / 71 |
+| Blind v2 search, own changes + own filing (first / top 3) | 86.5 / 97.7 | 87.1 / 97.7 | 87.7 / 97.7 | **88.3** / 97.7 | **88.9** / 96.5 |
+
+Who-is-who on the complete sets (`results/round10d/identity_*`). Round 10c's two models are being
+re-scored on these same rows (`kaggle/primnox-r10c-rescore`, waiting for a Kaggle GPU); until then the
+per-seed comparison with round 10c covers only the tests above:
+
+| Decision | Code only | r9 | r10d | r10d2 |
+|---|---|---|---|---|
+| Blind, which folder (751) | 27.4% | 19.7% | 66.7% | 66.7% |
+| Blind, which folder, held-out sections (92) | — | 12.0% | 59.8% | 62.0% |
+| Blind, who it is about (796) | 37.3% | 60.1% | 82.3% | 83.2% |
+| Blind, kind (824; always "fact": 80.3%) | 76.6% | 58.6% | 86.8% | 88.0% |
+| Blind, kind of new folder (156) | 77.6% | 58.3% | 89.7% | 90.4% |
+| Blind, asks the user: right / asked (31 should) | — | 0 / 35 | 11 / 31 | 18 / 47 |
+| Open set, which folder (254) | 23.2% | 24.0% | 65.0% | 66.5% |
+| Open set, who it is about (257) | 35.8% | 61.9% | 84.4% | 83.7% |
+| Open set, kind (281; always "fact": 78.6%) | 79.7% | 56.6% | 90.4% | 92.2% |
+| Confidently wrong (p ≥ 0.8), blind / open | — | 59 / 18 | 73 / 24 | 52 / 18 |
+
+What this shows:
+- **On who-is-who, the two seeds now agree:** both put 66.7% of blind folder decisions right (60-62% on
+  held-out sections) and 65-67% on the open set, whose traps were invented by the writer with no case
+  list. Round 9 and code alone stay at 20-27%.
+- **Elsewhere, more who-is-who data costs nothing measurable beyond round 10c**: changes 101 / 100 of
+  112 (2-3 wrong retirements, against 0 for r10c), LongMemEval 0.75 / 0.77, filing unchanged. Dialogue
+  NLI stays at round 10c's lower level (0.49-0.50 on test, round 9 0.57).
+- **Search on blind v2 is up by about 1.2 points on both seeds** (87.1 → 88.3 and 87.7 → 88.9 first),
+  which is 2 questions of 171: same direction on both seeds, still inside the run-to-run noise seen
+  in round 10b. 88.3-88.9% is at the level the cloud filing model reached (87.7%), with the 500M model
+  doing all the filing and change decisions itself.
+- **Not measured yet:** merges and splits (no voted merges survive), real chats (REALTALK), and the
+  release bar.
+
+Next: find out why Dialogue NLI falls as who-is-who data grows (it does on every seed and machine),
+and why round 10d makes 2-3 wrong retirements where round 10c made none; repeat runs before trusting
+single differences.
 
 ## Files
 

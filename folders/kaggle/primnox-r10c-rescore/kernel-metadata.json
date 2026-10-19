@@ -1,0 +1,17 @@
+{
+  "id": "anikethpani/primnox-r10c-rescore",
+  "title": "primnox-r10c-rescore",
+  "code_file": "primnox-r10c-rescore.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": ["anikethpani/primnox-identity-rows"],
+  "kernel_sources": ["anikethpani/primnox-r10c"],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

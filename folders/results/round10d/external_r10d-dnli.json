@@ -1,0 +1,38 @@
+{
+ "model": "/kaggle/working/models/laya-memory-r10d",
+ "files": {
+  "pairs_dnli_test_full": {
+   "pairs": 16500,
+   "positives": 5700,
+   "ap": 0.6827820982208828,
+   "best_f1": 0.6043985881075211,
+   "f1_at_0.5": 0.48851359741711164,
+   "precision_at_0.5": 0.8359541011474713,
+   "recall_at_0.5": 0.3450877192982456,
+   "called_replace_by_source": {
+    "dnli-test:negative": "1967/5700",
+    "dnli-test:neutral": "44/5400",
+    "dnli-test:positive": "342/5400"
+   },
+   "comparisons": 16500,
+   "ms_per_pair": 10.7
+  },
+  "pairs_dnli_verified_test_full": {
+   "pairs": 12376,
+   "positives": 4041,
+   "ap": 0.7401435860952774,
+   "best_f1": 0.651327002678354,
+   "f1_at_0.5": 0.5584589614740368,
+   "precision_at_0.5": 0.8641783307413168,
+   "recall_at_0.5": 0.4125216530561742,
+   "called_replace_by_source": {
+    "dnli-verified_test:negative": "1667/4041",
+    "dnli-verified_test:neutral": "8/4008",
+    "dnli-verified_test:positive": "254/4327"
+   },
+   "comparisons": 12376,
+   "ms_per_pair": 11.0
+  }
+ },
+ "sentences": false
+}
