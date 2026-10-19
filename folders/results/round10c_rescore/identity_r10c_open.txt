@@ -1,0 +1,20 @@
+r10c on who-is-who open: 942 decisions
+  about                  218/257 (84.8%)
+  about|seen             218/257 (84.8%)
+  folder                 109/254 (42.9%)
+  folder|seen            109/254 (42.9%)
+  kind                   252/281 (89.7%)
+  kind|seen              252/281 (89.7%)
+  merge                  70/70 (100.0%)
+  merge|seen             70/70 (100.0%)
+  split                  10/10 (100.0%)
+  split|seen             10/10 (100.0%)
+  type                   62/70 (88.6%)
+  type|seen              62/70 (88.6%)
+  false link to an existing folder (gold new): 18
+  false new folder (gold existing): 17
+  wrong existing folder: 85
+  ask predicted: 8
+  ask gold: 19
+  ask both: 1
+  confidently wrong (p>=0.8): 4

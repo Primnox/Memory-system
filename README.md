@@ -95,20 +95,22 @@ an open set of 6 people written with no case list.
 **Round 10d** trains on all 44 people with round 10c's two seeds (so per seed only the who-is-who data
 changes):
 
-| Decision | Code only | Round 9 | Round 10d (two seeds) |
-|---|---|---|---|
-| Blind set (18 people), which folder | 27.4% | 19.7% | 66.7% / 66.7% |
-| Blind set, which folder, trap types never seen in training | — | 12.0% | 59.8% / 62.0% |
-| Blind set, who the statement is about | 37.3% | 60.1% | 82.3% / 83.2% |
-| Blind set, kind of statement (always "fact": 80.3%) | 76.6% | 58.6% | 86.8% / 88.0% |
-| Open set (no case list), which folder | 23.2% | 24.0% | 65.0% / 66.5% |
-| Asks the user: right / asked (31 should) | — | 0 / 35 | 11 / 31, 18 / 47 |
+| Decision | Code only | Round 9 | Round 10c, 24 people (two seeds) | Round 10d, 44 people (same seeds) |
+|---|---|---|---|---|
+| Blind set (18 people), which folder | 27.4% | 19.7% | 50.7% / 61.5% | **66.7% / 66.7%** |
+| Blind set, which folder, trap types never seen in training | — | 12.0% | 48.9% / 56.5% | 59.8% / 62.0% |
+| Blind set, who the statement is about | 37.3% | 60.1% | 82.2% / 82.2% | 82.3% / 83.2% |
+| Blind set, kind of statement (always "fact": 80.3%) | 76.6% | 58.6% | 85.6% / 86.0% | 86.8% / 88.0% |
+| Open set (no case list), which folder | 23.2% | 24.0% | 42.9% / 59.8% | **65.0% / 66.5%** |
+| Asks the user: right / asked (31 should) | — | 0 / 35 | 6 / 19, 6 / 28 | 11 / 31, 18 / 47 |
 
-Against round 10c on the shared tests, per seed: blind-v2 changes 101 and 100 of 112 (r10c 98, 101;
-r10d makes 2-3 wrong retirements where r10c made none), LongMemEval 0.75 / 0.77 (0.76 / 0.76), Dialogue
-NLI 0.49 / 0.50 (0.52 / 0.50), and blind-v2 search with its own filing **88.3% / 88.9%** first (87.1% /
-87.7%), at the level the cloud filing model reached (87.7%). Round 10c's who-is-who scores on the
-complete sets are pending (its re-scoring job is waiting for a Kaggle GPU).
+More who-is-who data raises the folder decision on both seeds (+16 and +5 points on the blind set, +22
+and +7 on the open set) and the two seeds converge (11 points apart with 24 people, level with 44).
+The other decisions were already high and do not move; confident mistakes do not fall (blind: 22 → 73
+on one seed, 57 → 52 on the other). On the shared tests, per seed: blind-v2 changes 101 and 100 of 112
+(r10c 98, 101; r10d makes 2-3 wrong retirements where r10c made none), LongMemEval 0.75 / 0.77 (0.76 /
+0.76), Dialogue NLI 0.49 / 0.50 (0.52 / 0.50), and blind-v2 search with its own filing **88.3% / 88.9%**
+first (87.1% / 87.7%), at the level the cloud filing model reached (87.7%).
 
 Caveats: almost no merges or splits survive the vote (writers put them in, auditors rarely agree),
 so merge and split are not measured yet; Claude Sonnet both wrote half the blind set and audits the
