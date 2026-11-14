@@ -1,0 +1,1467 @@
+{
+ "description": "Hand-written synthetic name-collision scenarios. Each has two folders sharing a name; answer = folder id the statement belongs in, or 'ask'. No private data.",
+ "scenarios": [
+  {
+   "id": "rohan",
+   "name": "Rohan",
+   "kind": "two people, same first name (colleague vs cousin)",
+   "folders": [
+    {
+     "id": "rohan_colleague",
+     "label": "Rohan, colleague at Kestrel Logistics",
+     "aliases": [
+      "Rohan",
+      "Rohan from work"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-04",
+       "text": "Rohan joined my team at Kestrel Logistics as a backend engineer."
+      },
+      {
+       "date": "2026-04-10",
+       "text": "Rohan sits next to me and drinks only black coffee."
+      },
+      {
+       "date": "2026-06-02",
+       "text": "Rohan led the migration to Postgres at work."
+      },
+      {
+       "date": "2026-08-19",
+       "text": "Rohan has been interviewing at a startup in Berlin."
+      },
+      {
+       "date": "2026-09-15",
+       "text": "Rohan is on my team's on-call rota every second week."
+      }
+     ]
+    },
+    {
+     "id": "rohan_cousin",
+     "label": "Rohan, my cousin in Pune",
+     "aliases": [
+      "Rohan",
+      "my cousin Rohan"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-11",
+       "text": "My cousin Rohan lives in Pune and works as a dentist."
+      },
+      {
+       "date": "2026-05-07",
+       "text": "Rohan (my cousin) got engaged to Meera."
+      },
+      {
+       "date": "2026-07-22",
+       "text": "Rohan's wedding is set for 12 December in Pune."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "My cousin Rohan is asking the family for photo ideas for the wedding."
+      },
+      {
+       "date": "2026-10-03",
+       "text": "My cousin Rohan said he will never leave Pune."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "rohan_s1",
+     "date": "2026-11-02",
+     "text": "Rohan broke the build again just before the on-call handover.",
+     "answer": "rohan_colleague",
+     "level": "easy",
+     "why": "work detail"
+    },
+    {
+     "id": "rohan_s2",
+     "date": "2026-11-03",
+     "text": "Rohan wants me at his wedding rehearsal on 11 December.",
+     "answer": "rohan_cousin",
+     "level": "easy",
+     "why": "wedding"
+    },
+    {
+     "id": "rohan_s3",
+     "date": "2026-11-04",
+     "text": "Rohan told me he is moving to Berlin in January.",
+     "answer": "rohan_colleague",
+     "level": "hard",
+     "why": "colleague was interviewing in Berlin; cousin said he'd never leave Pune; no explicit marker"
+    },
+    {
+     "id": "rohan_s4",
+     "date": "2026-11-05",
+     "text": "Rohan called me last night and sounded really stressed.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "nothing separates the two"
+    }
+   ]
+  },
+  {
+   "id": "bella",
+   "name": "Bella",
+   "kind": "a cat and a friend with the same name",
+   "folders": [
+    {
+     "id": "bella_cat",
+     "label": "Bella, my grey tabby cat",
+     "aliases": [
+      "Bella"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-05",
+       "text": "I adopted a grey tabby cat called Bella from a shelter."
+      },
+      {
+       "date": "2026-03-14",
+       "text": "Bella's birthday is 14 March; she turned 3."
+      },
+      {
+       "date": "2026-05-20",
+       "text": "Bella is allergic to chicken-flavoured food, so she eats the salmon kind."
+      },
+      {
+       "date": "2026-07-09",
+       "text": "Bella knocked a glass off the shelf and I stepped on it."
+      },
+      {
+       "date": "2026-09-01",
+       "text": "Bella is due her annual vaccination in October."
+      }
+     ]
+    },
+    {
+     "id": "bella_friend",
+     "label": "Bella, friend in Nairobi",
+     "aliases": [
+      "Bella",
+      "my friend Bella"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-02",
+       "text": "My friend Bella and I did our MBA together."
+      },
+      {
+       "date": "2026-04-18",
+       "text": "Bella lives in Nairobi and works in a bank."
+      },
+      {
+       "date": "2026-06-25",
+       "text": "Bella is training for the Lagos marathon with me over video calls."
+      },
+      {
+       "date": "2026-08-30",
+       "text": "Bella's birthday is on 21 November."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "Bella is visiting me in the first week of November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "bella_s1",
+     "date": "2026-11-02",
+     "text": "Bella is hiding under the bed because of the fireworks.",
+     "answer": "bella_cat",
+     "level": "easy",
+     "why": "pet behaviour"
+    },
+    {
+     "id": "bella_s2",
+     "date": "2026-11-03",
+     "text": "Bella and I finished our long run at 7 am.",
+     "answer": "bella_friend",
+     "level": "easy",
+     "why": "running together"
+    },
+    {
+     "id": "bella_s3",
+     "date": "2026-11-04",
+     "text": "I need to buy a present for Bella before the 21st.",
+     "answer": "bella_friend",
+     "level": "hard",
+     "why": "only the birthday date separates them (cat's is 14 March)"
+    },
+    {
+     "id": "bella_s4",
+     "date": "2026-11-06",
+     "text": "Bella wouldn't touch her dinner tonight.",
+     "answer": "bella_cat",
+     "level": "hard",
+     "why": "pet-like, no explicit marker"
+    },
+    {
+     "id": "bella_s5",
+     "date": "2026-11-07",
+     "text": "I really miss Bella.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "nothing separates the two"
+    }
+   ]
+  },
+  {
+   "id": "boss",
+   "name": "my boss",
+   "kind": "'my boss' after a job change",
+   "folders": [
+    {
+     "id": "boss_karen",
+     "label": "Karen Whitfield, former boss at Nimbus Retail",
+     "aliases": [
+      "my boss",
+      "Karen"
+     ],
+     "facts": [
+      {
+       "date": "2025-11-03",
+       "text": "My boss at Nimbus Retail is Karen Whitfield."
+      },
+      {
+       "date": "2026-01-15",
+       "text": "My boss Karen makes the team work Saturdays during stocktake."
+      },
+      {
+       "date": "2026-04-20",
+       "text": "Karen reads every email I send to clients before it goes out."
+      },
+      {
+       "date": "2026-06-30",
+       "text": "My boss gave me a so-so performance review."
+      },
+      {
+       "date": "2026-08-14",
+       "text": "I resigned from Nimbus Retail; my last day is 30 September."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "Today was my last day at Nimbus; Karen gave me a card."
+      }
+     ]
+    },
+    {
+     "id": "boss_dev",
+     "label": "Dev Malhotra, current boss at Orbit Analytics",
+     "aliases": [
+      "my boss",
+      "Dev"
+     ],
+     "facts": [
+      {
+       "date": "2026-09-01",
+       "text": "I accepted a job at Orbit Analytics starting 5 October."
+      },
+      {
+       "date": "2026-10-05",
+       "text": "First day at Orbit. My boss there is Dev Malhotra."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "My boss Dev lets us work from home on Wednesdays."
+      },
+      {
+       "date": "2026-10-26",
+       "text": "Dev holds one-to-ones every Thursday and asks for my goals."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "boss_s1",
+     "date": "2026-11-03",
+     "text": "My boss approved my leave for the week of Diwali.",
+     "answer": "boss_dev",
+     "level": "easy",
+     "why": "current boss"
+    },
+    {
+     "id": "boss_s2",
+     "date": "2026-11-05",
+     "text": "My boss used to read every email I sent to clients, I still flinch.",
+     "answer": "boss_karen",
+     "level": "hard",
+     "why": "past tense + Karen's habit"
+    },
+    {
+     "id": "boss_s3",
+     "date": "2026-11-06",
+     "text": "My boss wants the quarterly numbers by Friday.",
+     "answer": "boss_dev",
+     "level": "easy",
+     "why": "current boss"
+    },
+    {
+     "id": "boss_s4",
+     "date": "2026-11-08",
+     "text": "My boss texted me to say congratulations.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "could be either"
+    }
+   ]
+  },
+  {
+   "id": "maya",
+   "name": "Maya",
+   "kind": "sister vs neighbour's child",
+   "folders": [
+    {
+     "id": "maya_sister",
+     "label": "Maya, my younger sister in Leeds",
+     "aliases": [
+      "Maya",
+      "my sister"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-20",
+       "text": "My sister Maya is two years younger than me and lives in Leeds."
+      },
+      {
+       "date": "2026-03-09",
+       "text": "Maya works as a nurse at Leeds General."
+      },
+      {
+       "date": "2026-05-30",
+       "text": "Maya is expecting her first baby in December."
+      },
+      {
+       "date": "2026-08-02",
+       "text": "Maya and her husband Tom bought a flat in Headingley."
+      },
+      {
+       "date": "2026-10-10",
+       "text": "Maya has started maternity leave early because of back pain."
+      }
+     ]
+    },
+    {
+     "id": "maya_neighbor",
+     "label": "Maya, 7-year-old next door",
+     "aliases": [
+      "Maya",
+      "Maya from next door"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-14",
+       "text": "My neighbour's daughter Maya is 7 and loves roller skating."
+      },
+      {
+       "date": "2026-04-22",
+       "text": "Maya from next door is in Year 3 at St Anne's."
+      },
+      {
+       "date": "2026-07-17",
+       "text": "I give Maya maths homework help on Tuesdays."
+      },
+      {
+       "date": "2026-09-18",
+       "text": "Maya from next door lost her front tooth."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "maya_s1",
+     "date": "2026-11-02",
+     "text": "Maya lost another tooth and wants me to pay the tooth fairy.",
+     "answer": "maya_neighbor",
+     "level": "easy",
+     "why": "tooth"
+    },
+    {
+     "id": "maya_s2",
+     "date": "2026-11-03",
+     "text": "Maya's due date has been moved up; the doctor says maybe 1 December.",
+     "answer": "maya_sister",
+     "level": "easy",
+     "why": "due date"
+    },
+    {
+     "id": "maya_s3",
+     "date": "2026-11-05",
+     "text": "Maya fell off her skates and I had to patch her knee.",
+     "answer": "maya_neighbor",
+     "level": "easy",
+     "why": "skates"
+    },
+    {
+     "id": "maya_s4",
+     "date": "2026-11-07",
+     "text": "Maya's baby shower is next Saturday.",
+     "answer": "maya_sister",
+     "level": "easy",
+     "why": "baby"
+    },
+    {
+     "id": "maya_s5",
+     "date": "2026-11-09",
+     "text": "Maya asked if she can stay at my place for the weekend.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "sam",
+   "name": "Sam",
+   "kind": "pronouns separate two Sams (wife vs teacher)",
+   "folders": [
+    {
+     "id": "sam_wife",
+     "label": "Sam, my wife (paramedic)",
+     "aliases": [
+      "Sam",
+      "my wife"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-08",
+       "text": "My wife Sam is a paramedic and often works night shifts."
+      },
+      {
+       "date": "2026-03-19",
+       "text": "Sam is allergic to penicillin."
+      },
+      {
+       "date": "2026-06-14",
+       "text": "Sam and I are planning a trip to Lisbon in March."
+      },
+      {
+       "date": "2026-09-05",
+       "text": "Sam sprained her ankle playing five-a-side."
+      }
+     ]
+    },
+    {
+     "id": "sam_teacher",
+     "label": "Mr Sam Patel, my daughter's teacher",
+     "aliases": [
+      "Sam",
+      "Mr Patel"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-03",
+       "text": "My daughter's teacher, Mr Sam Patel, teaches Year 4 at Elm Park Primary."
+      },
+      {
+       "date": "2026-04-17",
+       "text": "Sam Patel runs the chess club after school on Mondays."
+      },
+      {
+       "date": "2026-06-27",
+       "text": "Mr Patel said my daughter is reading above her level."
+      },
+      {
+       "date": "2026-10-01",
+       "text": "Sam the teacher has parents' evening on 19 November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "sam_s1",
+     "date": "2026-11-03",
+     "text": "Sam said she would pick up the dry cleaning on her way back from the shift.",
+     "answer": "sam_wife",
+     "level": "hard",
+     "why": "'she' + shift"
+    },
+    {
+     "id": "sam_s2",
+     "date": "2026-11-04",
+     "text": "Sam wants to talk to us about the school trip form.",
+     "answer": "sam_teacher",
+     "level": "easy",
+     "why": "school"
+    },
+    {
+     "id": "sam_s3",
+     "date": "2026-11-06",
+     "text": "Sam hurt his wrist but still ran the chess club.",
+     "answer": "sam_teacher",
+     "level": "hard",
+     "why": "'his' + chess club"
+    },
+    {
+     "id": "sam_s4",
+     "date": "2026-11-08",
+     "text": "Sam is on nights again this week.",
+     "answer": "sam_wife",
+     "level": "easy",
+     "why": "nights"
+    },
+    {
+     "id": "sam_s5",
+     "date": "2026-11-09",
+     "text": "Sam texted that the meeting is moved to 5.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "priya",
+   "name": "Priya",
+   "kind": "friend vs landlady",
+   "folders": [
+    {
+     "id": "priya_friend",
+     "label": "Priya, college friend in Toronto",
+     "aliases": [
+      "Priya",
+      "my friend Priya"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-09",
+       "text": "My college friend Priya lives in Toronto and works in UX design."
+      },
+      {
+       "date": "2026-05-12",
+       "text": "Priya and I talk every Sunday on WhatsApp."
+      },
+      {
+       "date": "2026-08-08",
+       "text": "Priya is getting divorced and is staying with her parents."
+      },
+      {
+       "date": "2026-10-20",
+       "text": "Priya is thinking of moving back to Mumbai."
+      }
+     ]
+    },
+    {
+     "id": "priya_landlady",
+     "label": "Priya Nair, my landlady",
+     "aliases": [
+      "Priya",
+      "my landlady"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-30",
+       "text": "My landlady is Priya Nair; I pay her rent on the 1st of each month."
+      },
+      {
+       "date": "2026-04-02",
+       "text": "Priya the landlady raised my rent by 5%."
+      },
+      {
+       "date": "2026-07-11",
+       "text": "Priya sent a plumber to fix the leaking tap in the bathroom."
+      },
+      {
+       "date": "2026-09-25",
+       "text": "Priya (landlady) says she wants to sell the flat next year."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "priya_s1",
+     "date": "2026-11-02",
+     "text": "Priya says the plumber will come on Thursday between 9 and 12.",
+     "answer": "priya_landlady",
+     "level": "easy",
+     "why": "plumber"
+    },
+    {
+     "id": "priya_s2",
+     "date": "2026-11-04",
+     "text": "Priya cried on the phone about the divorce papers.",
+     "answer": "priya_friend",
+     "level": "easy",
+     "why": "divorce"
+    },
+    {
+     "id": "priya_s3",
+     "date": "2026-11-06",
+     "text": "Priya asked me if I'd consider buying the flat.",
+     "answer": "priya_landlady",
+     "level": "hard",
+     "why": "she wants to sell the flat"
+    },
+    {
+     "id": "priya_s4",
+     "date": "2026-11-08",
+     "text": "Priya wants me to help her look at flats in Mumbai.",
+     "answer": "priya_friend",
+     "level": "hard",
+     "why": "moving to Mumbai; the landlady owns, not rents"
+    }
+   ]
+  },
+  {
+   "id": "leo",
+   "name": "Leo",
+   "kind": "dog vs nephew",
+   "folders": [
+    {
+     "id": "leo_dog",
+     "label": "Leo, my golden retriever",
+     "aliases": [
+      "Leo"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-01",
+       "text": "I got a golden retriever puppy named Leo."
+      },
+      {
+       "date": "2026-04-15",
+       "text": "Leo has been chewing my slippers."
+      },
+      {
+       "date": "2026-06-09",
+       "text": "Leo finished puppy school."
+      },
+      {
+       "date": "2026-09-12",
+       "text": "Leo weighs 28 kg now and needs a bigger crate."
+      }
+     ]
+    },
+    {
+     "id": "leo_nephew",
+     "label": "Leo, my 5-year-old nephew in Bristol",
+     "aliases": [
+      "Leo",
+      "my nephew"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-03",
+       "text": "My nephew Leo is 5 and just started school in Bristol."
+      },
+      {
+       "date": "2026-05-28",
+       "text": "Leo loves dinosaurs, especially the stegosaurus."
+      },
+      {
+       "date": "2026-08-23",
+       "text": "Leo stays with me for a week every August."
+      },
+      {
+       "date": "2026-10-18",
+       "text": "Leo is learning to ride a bike without stabilisers."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "leo_s1",
+     "date": "2026-11-02",
+     "text": "Leo ate a whole sock and I'm worried.",
+     "answer": "leo_dog",
+     "level": "easy",
+     "why": "chewing"
+    },
+    {
+     "id": "leo_s2",
+     "date": "2026-11-03",
+     "text": "Leo wants a stegosaurus cake for his birthday.",
+     "answer": "leo_nephew",
+     "level": "easy",
+     "why": "stegosaurus"
+    },
+    {
+     "id": "leo_s3",
+     "date": "2026-11-05",
+     "text": "Leo fell off and scraped his knees, he was so brave.",
+     "answer": "leo_nephew",
+     "level": "hard",
+     "why": "bike; no explicit marker"
+    },
+    {
+     "id": "leo_s4",
+     "date": "2026-11-07",
+     "text": "I'm walking Leo around the park for an hour.",
+     "answer": "leo_dog",
+     "level": "hard",
+     "why": "walking suits the dog"
+    },
+    {
+     "id": "leo_s5",
+     "date": "2026-11-09",
+     "text": "Leo has gone to sleep early after the long day.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "shah",
+   "name": "Dr Shah",
+   "kind": "two doctors with one surname",
+   "folders": [
+    {
+     "id": "shah_dentist",
+     "label": "Dr Anita Shah, my dentist",
+     "aliases": [
+      "Dr Shah"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-12",
+       "text": "My dentist is Dr Anita Shah."
+      },
+      {
+       "date": "2026-05-06",
+       "text": "Dr Shah said I need a root canal on my lower left molar."
+      },
+      {
+       "date": "2026-09-09",
+       "text": "Dr Shah (dentist) booked me for the root canal on 3 November."
+      }
+     ]
+    },
+    {
+     "id": "shah_cardio",
+     "label": "Dr Vikram Shah, my father's cardiologist",
+     "aliases": [
+      "Dr Shah"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-23",
+       "text": "My father's cardiologist is Dr Vikram Shah at City Heart Clinic."
+      },
+      {
+       "date": "2026-06-18",
+       "text": "Dr Shah put my father on a lower dose of beta blockers."
+      },
+      {
+       "date": "2026-09-28",
+       "text": "Dr Shah wants my father to have an echocardiogram in November."
+      },
+      {
+       "date": "2026-10-22",
+       "text": "Dr Shah's clinic called to say the echo is on 14 November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "shah_s1",
+     "date": "2026-11-03",
+     "text": "Dr Shah says I shouldn't eat anything hard for 24 hours.",
+     "answer": "shah_dentist",
+     "level": "easy",
+     "why": "about me, hard food"
+    },
+    {
+     "id": "shah_s2",
+     "date": "2026-11-05",
+     "text": "Dr Shah's receptionist rescheduled the scan.",
+     "answer": "shah_cardio",
+     "level": "hard",
+     "why": "scan = echo"
+    },
+    {
+     "id": "shah_s3",
+     "date": "2026-11-06",
+     "text": "Dad is nervous about seeing Dr Shah.",
+     "answer": "shah_cardio",
+     "level": "easy",
+     "why": "Dad"
+    },
+    {
+     "id": "shah_s4",
+     "date": "2026-11-08",
+     "text": "I have to be at Dr Shah's at 9 on Monday.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "landlord",
+   "name": "my landlord",
+   "kind": "'my landlord' after moving house",
+   "folders": [
+    {
+     "id": "landlord_evans",
+     "label": "Mr Evans, landlord of the old Camden flat",
+     "aliases": [
+      "my landlord",
+      "Mr Evans"
+     ],
+     "facts": [
+      {
+       "date": "2025-08-01",
+       "text": "My landlord is Mr Evans, for the Camden flat."
+      },
+      {
+       "date": "2026-02-10",
+       "text": "My landlord Mr Evans refuses to fix the boiler."
+      },
+      {
+       "date": "2026-06-05",
+       "text": "Mr Evans is threatening to keep part of my deposit."
+      },
+      {
+       "date": "2026-07-31",
+       "text": "I moved out of the Camden flat and handed the keys to my landlord Mr Evans."
+      },
+      {
+       "date": "2026-08-20",
+       "text": "Mr Evans still hasn't returned my 1,200 pound deposit."
+      }
+     ]
+    },
+    {
+     "id": "landlord_okafor",
+     "label": "Mrs Okafor, landlord of the Hackney flat",
+     "aliases": [
+      "my landlord",
+      "Mrs Okafor"
+     ],
+     "facts": [
+      {
+       "date": "2026-08-01",
+       "text": "I moved into a flat in Hackney; my landlord is Mrs Okafor."
+      },
+      {
+       "date": "2026-09-14",
+       "text": "My landlord Mrs Okafor fixed the heating within a day."
+      },
+      {
+       "date": "2026-10-30",
+       "text": "Mrs Okafor wants to inspect the flat on 20 November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "landlord_s1",
+     "date": "2026-11-02",
+     "text": "My landlord is finally refunding the deposit.",
+     "answer": "landlord_evans",
+     "level": "hard",
+     "why": "deposit"
+    },
+    {
+     "id": "landlord_s2",
+     "date": "2026-11-03",
+     "text": "My landlord said the inspection is just routine.",
+     "answer": "landlord_okafor",
+     "level": "easy",
+     "why": "inspection"
+    },
+    {
+     "id": "landlord_s3",
+     "date": "2026-11-05",
+     "text": "My landlord was the worst thing about that Camden flat.",
+     "answer": "landlord_evans",
+     "level": "easy",
+     "why": "Camden, past"
+    },
+    {
+     "id": "landlord_s4",
+     "date": "2026-11-07",
+     "text": "My landlord messaged me about the rent.",
+     "answer": "landlord_okafor",
+     "level": "hard",
+     "why": "current landlord"
+    },
+    {
+     "id": "landlord_s5",
+     "date": "2026-11-09",
+     "text": "My landlord called about the money.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "deposit or rent"
+    }
+   ]
+  },
+  {
+   "id": "chris",
+   "name": "Chris",
+   "kind": "brother vs gym trainer",
+   "folders": [
+    {
+     "id": "chris_brother",
+     "label": "Chris, my brother in Sydney",
+     "aliases": [
+      "Chris",
+      "my brother"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-19",
+       "text": "My brother Chris lives in Sydney."
+      },
+      {
+       "date": "2026-04-04",
+       "text": "Chris has been vegetarian since he was 16."
+      },
+      {
+       "date": "2026-07-20",
+       "text": "Chris is flying to London on 20 November for a week."
+      },
+      {
+       "date": "2026-09-27",
+       "text": "Chris will stay in my spare room when he visits."
+      }
+     ]
+    },
+    {
+     "id": "chris_trainer",
+     "label": "Chris, my gym trainer at FitBox",
+     "aliases": [
+      "Chris",
+      "my trainer"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-25",
+       "text": "My gym trainer is Chris at FitBox on Elm Street."
+      },
+      {
+       "date": "2026-05-15",
+       "text": "Chris has me doing deadlifts on Mondays and Thursdays."
+      },
+      {
+       "date": "2026-08-11",
+       "text": "Chris told me to cut down on sugar."
+      },
+      {
+       "date": "2026-10-14",
+       "text": "Chris is away on holiday until the end of November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "chris_s1",
+     "date": "2026-11-02",
+     "text": "Chris is bringing me a boomerang from Australia.",
+     "answer": "chris_brother",
+     "level": "easy",
+     "why": "Australia"
+    },
+    {
+     "id": "chris_s2",
+     "date": "2026-11-04",
+     "text": "Chris cancelled my Thursday session.",
+     "answer": "chris_trainer",
+     "level": "easy",
+     "why": "session"
+    },
+    {
+     "id": "chris_s3",
+     "date": "2026-11-06",
+     "text": "Chris says I should eat more protein.",
+     "answer": "chris_trainer",
+     "level": "hard",
+     "why": "brother is vegetarian; trainer gives diet advice"
+    },
+    {
+     "id": "chris_s4",
+     "date": "2026-11-08",
+     "text": "Chris wants to try the new vegetarian place on the high street.",
+     "answer": "chris_brother",
+     "level": "hard",
+     "why": "vegetarian"
+    },
+    {
+     "id": "chris_s5",
+     "date": "2026-11-20",
+     "text": "Chris texted to say he's landed.",
+     "answer": "chris_brother",
+     "level": "hard",
+     "why": "brother flies in 20 Nov"
+    }
+   ]
+  },
+  {
+   "id": "ahmed",
+   "name": "Ahmed",
+   "kind": "flatmate vs grandfather",
+   "folders": [
+    {
+     "id": "ahmed_flatmate",
+     "label": "Ahmed, my flatmate",
+     "aliases": [
+      "Ahmed",
+      "my flatmate"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-27",
+       "text": "My flatmate Ahmed moved in during February."
+      },
+      {
+       "date": "2026-05-09",
+       "text": "Ahmed is a night owl and plays guitar until 2 am."
+      },
+      {
+       "date": "2026-08-03",
+       "text": "Ahmed always forgets to take the bins out."
+      },
+      {
+       "date": "2026-10-11",
+       "text": "Ahmed is studying for his CPA exams."
+      }
+     ]
+    },
+    {
+     "id": "ahmed_grandfather",
+     "label": "Ahmed, my grandfather in Cairo",
+     "aliases": [
+      "Ahmed",
+      "my grandfather"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-22",
+       "text": "My grandfather Ahmed is 84 and lives in Cairo."
+      },
+      {
+       "date": "2026-04-30",
+       "text": "My grandfather Ahmed had a cataract operation."
+      },
+      {
+       "date": "2026-07-14",
+       "text": "Ahmed (grandfather) needs knee surgery."
+      },
+      {
+       "date": "2026-10-27",
+       "text": "Ahmed's knee surgery is booked for 16 November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "ahmed_s1",
+     "date": "2026-11-02",
+     "text": "Ahmed ate my leftover lasagne again.",
+     "answer": "ahmed_flatmate",
+     "level": "easy",
+     "why": "flat life"
+    },
+    {
+     "id": "ahmed_s2",
+     "date": "2026-11-17",
+     "text": "Ahmed is out of hospital and walking with a frame.",
+     "answer": "ahmed_grandfather",
+     "level": "hard",
+     "why": "after the knee surgery"
+    },
+    {
+     "id": "ahmed_s3",
+     "date": "2026-11-04",
+     "text": "Ahmed practised guitar until 3 am and I can't sleep.",
+     "answer": "ahmed_flatmate",
+     "level": "easy",
+     "why": "guitar"
+    },
+    {
+     "id": "ahmed_s4",
+     "date": "2026-11-12",
+     "text": "Ahmed called, he wants me to visit before the op.",
+     "answer": "ahmed_grandfather",
+     "level": "hard",
+     "why": "op"
+    }
+   ]
+  },
+  {
+   "id": "therapist",
+   "name": "my therapist",
+   "kind": "'my therapist' after changing therapist",
+   "folders": [
+    {
+     "id": "therapist_lena",
+     "label": "Dr Lena Fischer, former therapist",
+     "aliases": [
+      "my therapist",
+      "Lena"
+     ],
+     "facts": [
+      {
+       "date": "2025-10-06",
+       "text": "I started seeing a therapist, Dr Lena Fischer, on Mondays."
+      },
+      {
+       "date": "2026-02-16",
+       "text": "My therapist Lena taught me a breathing technique for panic attacks."
+      },
+      {
+       "date": "2026-05-25",
+       "text": "Lena is going on maternity leave in June, so I am ending therapy."
+      },
+      {
+       "date": "2026-06-22",
+       "text": "My final session with Lena was today."
+      }
+     ]
+    },
+    {
+     "id": "therapist_omar",
+     "label": "Dr Omar Reyes, current therapist",
+     "aliases": [
+      "my therapist",
+      "Omar"
+     ],
+     "facts": [
+      {
+       "date": "2026-07-13",
+       "text": "I started with a new therapist, Dr Omar Reyes, on Wednesdays."
+      },
+      {
+       "date": "2026-09-02",
+       "text": "My therapist Omar does cognitive behavioural therapy and gives me homework."
+      },
+      {
+       "date": "2026-10-21",
+       "text": "Omar asked me to keep a sleep diary."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "therapist_s1",
+     "date": "2026-11-03",
+     "text": "My therapist said I should keep logging my sleep.",
+     "answer": "therapist_omar",
+     "level": "easy",
+     "why": "sleep diary"
+    },
+    {
+     "id": "therapist_s2",
+     "date": "2026-11-05",
+     "text": "I still use the breathing exercise my therapist taught me for panic.",
+     "answer": "therapist_lena",
+     "level": "hard",
+     "why": "breathing technique"
+    },
+    {
+     "id": "therapist_s3",
+     "date": "2026-11-06",
+     "text": "My therapist has moved my session to Thursday.",
+     "answer": "therapist_omar",
+     "level": "easy",
+     "why": "current"
+    },
+    {
+     "id": "therapist_s4",
+     "date": "2026-11-08",
+     "text": "My therapist had a baby, I saw the announcement.",
+     "answer": "therapist_lena",
+     "level": "hard",
+     "why": "maternity leave"
+    }
+   ]
+  },
+  {
+   "id": "mercury",
+   "name": "Mercury",
+   "kind": "a cat and a client company",
+   "folders": [
+    {
+     "id": "mercury_cat",
+     "label": "Mercury, my black cat",
+     "aliases": [
+      "Mercury"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-12",
+       "text": "My black cat is called Mercury."
+      },
+      {
+       "date": "2026-06-20",
+       "text": "Mercury scratches the leather sofa."
+      },
+      {
+       "date": "2026-09-04",
+       "text": "Mercury has a bald patch from stress; the vet suggested a pheromone diffuser."
+      }
+     ]
+    },
+    {
+     "id": "mercury_client",
+     "label": "Mercury Freight, a freelance client",
+     "aliases": [
+      "Mercury",
+      "Mercury Freight"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-18",
+       "text": "Mercury Freight is my freelance client for logistics dashboards."
+      },
+      {
+       "date": "2026-05-27",
+       "text": "Mercury pays invoices 60 days after submission."
+      },
+      {
+       "date": "2026-08-29",
+       "text": "The Mercury contract renews in January."
+      },
+      {
+       "date": "2026-10-16",
+       "text": "Mercury wants a new reporting module by 30 November."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "mercury_s1",
+     "date": "2026-11-02",
+     "text": "Mercury is late paying the October invoice.",
+     "answer": "mercury_client",
+     "level": "easy",
+     "why": "invoice"
+    },
+    {
+     "id": "mercury_s2",
+     "date": "2026-11-03",
+     "text": "Mercury is hiding in the wardrobe since the thunderstorm.",
+     "answer": "mercury_cat",
+     "level": "easy",
+     "why": "hiding"
+    },
+    {
+     "id": "mercury_s3",
+     "date": "2026-11-05",
+     "text": "Mercury cancelled our Friday call.",
+     "answer": "mercury_client",
+     "level": "hard",
+     "why": "call"
+    },
+    {
+     "id": "mercury_s4",
+     "date": "2026-11-07",
+     "text": "Mercury is making a mess and I have to sort it out.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "cat or client"
+    }
+   ]
+  },
+  {
+   "id": "jordan",
+   "name": "Jordan",
+   "kind": "pronouns separate two Jordans (friend vs housemate)",
+   "folders": [
+    {
+     "id": "jordan_pilot",
+     "label": "Jordan, friend who is a pilot (she/her)",
+     "aliases": [
+      "Jordan"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-05",
+       "text": "My friend Jordan (she/her) is a pilot for Skyline Air."
+      },
+      {
+       "date": "2026-05-17",
+       "text": "Jordan is based in Dubai."
+      },
+      {
+       "date": "2026-08-12",
+       "text": "Jordan is training for her first Ironman."
+      },
+      {
+       "date": "2026-10-09",
+       "text": "Jordan has a layover in London on 22 November."
+      }
+     ]
+    },
+    {
+     "id": "jordan_phd",
+     "label": "Jordan, housemate doing a PhD (he/him)",
+     "aliases": [
+      "Jordan"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-30",
+       "text": "My housemate Jordan (he/him) is a PhD student in chemistry."
+      },
+      {
+       "date": "2026-06-08",
+       "text": "Jordan is writing his thesis."
+      },
+      {
+       "date": "2026-09-21",
+       "text": "Jordan has his viva on 17 December."
+      },
+      {
+       "date": "2026-10-25",
+       "text": "Jordan is stressed and lives on instant noodles."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "jordan_s1",
+     "date": "2026-11-03",
+     "text": "Jordan said he can't come out because he has to finish chapter four.",
+     "answer": "jordan_phd",
+     "level": "hard",
+     "why": "'he' + thesis"
+    },
+    {
+     "id": "jordan_s2",
+     "date": "2026-11-04",
+     "text": "Jordan texted that she's boarding a flight to Doha.",
+     "answer": "jordan_pilot",
+     "level": "hard",
+     "why": "'she' + flight"
+    },
+    {
+     "id": "jordan_s3",
+     "date": "2026-11-06",
+     "text": "Jordan's viva prep is taking over the whole house.",
+     "answer": "jordan_phd",
+     "level": "easy",
+     "why": "viva"
+    },
+    {
+     "id": "jordan_s4",
+     "date": "2026-11-08",
+     "text": "Jordan is doing a swim session before the layover.",
+     "answer": "jordan_pilot",
+     "level": "easy",
+     "why": "layover"
+    },
+    {
+     "id": "jordan_s5",
+     "date": "2026-11-09",
+     "text": "Jordan wants to borrow my charger.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "alex",
+   "name": "Alex",
+   "kind": "ex-partner vs new colleague",
+   "folders": [
+    {
+     "id": "alex_ex",
+     "label": "Alex, my ex-partner (broke up March 2026)",
+     "aliases": [
+      "Alex"
+     ],
+     "facts": [
+      {
+       "date": "2024-09-02",
+       "text": "My partner Alex and I moved in together in Bristol."
+      },
+      {
+       "date": "2025-12-24",
+       "text": "Alex is vegan and cooks incredible curries."
+      },
+      {
+       "date": "2026-03-18",
+       "text": "Alex and I broke up in March."
+      },
+      {
+       "date": "2026-04-05",
+       "text": "Alex took the sofa and kept my winter coat."
+      },
+      {
+       "date": "2026-06-10",
+       "text": "Alex and I haven't spoken since the breakup except about the lease."
+      }
+     ]
+    },
+    {
+     "id": "alex_colleague",
+     "label": "Alex, new analyst on my team",
+     "aliases": [
+      "Alex"
+     ],
+     "facts": [
+      {
+       "date": "2026-07-06",
+       "text": "A new analyst named Alex joined my team."
+      },
+      {
+       "date": "2026-08-18",
+       "text": "Alex is from Glasgow and supports Celtic."
+      },
+      {
+       "date": "2026-09-29",
+       "text": "Alex and I are working on the budgeting model together."
+      },
+      {
+       "date": "2026-10-20",
+       "text": "Alex is organising the team offsite in December."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "alex_s1",
+     "date": "2026-11-02",
+     "text": "Alex still hasn't sent back my winter coat.",
+     "answer": "alex_ex",
+     "level": "easy",
+     "why": "coat"
+    },
+    {
+     "id": "alex_s2",
+     "date": "2026-11-04",
+     "text": "Alex asked for my slide deck for the offsite.",
+     "answer": "alex_colleague",
+     "level": "easy",
+     "why": "offsite"
+    },
+    {
+     "id": "alex_s3",
+     "date": "2026-11-06",
+     "text": "Alex messaged me at midnight.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    },
+    {
+     "id": "alex_s4",
+     "date": "2026-11-08",
+     "text": "Alex and I finally sorted out the lease termination.",
+     "answer": "alex_ex",
+     "level": "hard",
+     "why": "lease"
+    }
+   ]
+  }
+ ]
+}

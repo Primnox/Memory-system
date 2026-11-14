@@ -352,6 +352,48 @@ Next: find out why Dialogue NLI falls as who-is-who data grows (it does on every
 and why round 10d makes 2-3 wrong retirements where round 10c made none; repeat runs before trusting
 single differences.
 
+## Name collisions: a language model reads the whole folders (2026-11-14)
+
+Design: every person is a folder; plain code files a statement under a name. When a name matches more than
+one folder (two Rohans, a cat and a friend both called Bella, "my boss" after a job change), a language
+model is given the whole of the matching folders plus the new statement and answers with one folder or
+"ask" (ask the user).
+
+Test set: `data/collision/collision_set.json`, 15 hand-written synthetic scenarios (no private data), each
+with two same-named folders of 3-6 facts and 4-5 new statements (67 in all) whose correct folder is known;
+11 of the 67 should be answered "ask". Mix: easy (a distinguishing detail is present), and hard (pronouns,
+role changes, "my boss" / "my therapist" / "my landlord" after a change, a date that only fits one person).
+Script: `pipeline/collision_test.py`; every raw answer and the scores: `results/collision/`.
+LLM: free/gemini-3.8-flash, temperature 0, one call per statement. Code does the name matching in all
+three rows, so the model only ever sees folders whose name or alias appears in the statement.
+
+| Who decides | Folder right (of 67) | On the 56 with a real answer | Easy / hard | Confidently wrong (conf >= 0.8) | Said "ask" (right / needless) |
+|---|---|---|---|---|---|
+| (a) Code only: most recently used matching folder | 28 (41.8%) | 50.0% | 17/32 · 11/35 | 39 (code never doubts) | 0 |
+| (b) LLM sees names + last fact of each folder | 45 (67.2%) | 69.6% | 26/32 · 19/35 | 6 | 19 (6 / 13) |
+| (c) LLM sees the whole folders | **55 (82.1%)** | **85.7%** | 29/32 · 26/35 | **3** | 13 (7 / 6) |
+
+What this shows:
+- **The whole folders do help here:** +15 points over names + last fact (+40 over code), and fewer
+  confident mistakes. Most of the gain is on hard cases whose answer is only in an older fact (e.g.
+  "Rohan told me he is moving to Berlin": only the colleague's folder says he was interviewing there).
+- **It does not solve it.** 12 of 67 are still wrong. The model says "ask" 6 times when one folder was
+  right, and 3 of the 11 true "ask" statements it answered confidently (0.85-0.9: "My boss texted me to say
+  congratulations", "Maya asked if she can stay at my place", "Mercury is making a mess"). It also took a
+  date clue the wrong way once (a present for Bella before the 21st: the cat), and once picked the wrong Rohan
+  with low confidence (0.25).
+- Seeing only the last fact (b) made the model over-cautious (13 needless asks) and confidently wrong 6
+  times; the code-only "most recent folder" is wrong for nearly every case where the newest folder is the
+  wrong one.
+
+Caveats: this is a small hand-written set. 67 statements means a 95% interval of roughly +/-9 points on each
+accuracy, so (b) vs (c) is a 15-point gap on the same 67 items, not a settled size. I wrote the scenarios and
+the answers myself; which statements "should ask" is my judgement, and a few hard ones have a defensible
+second reading. The statements are independent (the code baseline's "last used" is not updated between
+them), they are short, and each folder has under ten facts, so whole-folder context is cheap here and may not
+be at real folder sizes. One run per condition at temperature 0 from one model; the free API rate limit
+(429 retries) did not change any answer. Not compared with a trained filing model on this set.
+
 ## Files
 
 | Path | What |
@@ -370,6 +412,7 @@ single differences.
 | `pipeline/identity.py`, `duo.py` | write, audit (two other model families) and vote who-is-who people and two-person pairs |
 | `pipeline/subagent_tasks.py` | the same writes and audits done by Claude Code subagents: one prompt file per task, the validator files the result |
 | `pipeline/build_identity_rows.py`, `assemble_r10.py`, `identity_baseline.py` | voted people → choice rows for the 500M model; the training file; the code-only baseline |
+| `pipeline/collision_test.py`, `data/collision/collision_set.json`, `results/collision/` | name-collision test: code vs LLM given last facts vs LLM given whole folders |
 | `pipeline/drive.py` | the agy driver these use (reads the stream and stops agy once its result is in) |
 | `results/round10b/`, `results/round10c/` | every round-10 score: changes, LongMemEval, Dialogue NLI, filing, who-is-who, blind v2 search |
 | `kaggle/primnox-r8-index`, `primnox-r8b-realtalk` | round 8 (head + local clerk) and its follow-up on real chats |

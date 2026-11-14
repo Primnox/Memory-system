@@ -1,0 +1,563 @@
+{
+ "model": "free/gemini-3.8-flash",
+ "confident_threshold": 0.8,
+ "code_last_used": {
+  "statements": 67,
+  "should_ask": 11,
+  "correct": 28,
+  "accuracy": 0.418,
+  "accuracy_resolvable_only": 0.5,
+  "resolvable": 56,
+  "easy": "17/32",
+  "hard": "11/35",
+  "confident_wrong": 39,
+  "asked": 0,
+  "asked_rightly": 0,
+  "asked_needlessly": 0,
+  "wrong_items": [
+   {
+    "id": "rohan_s1",
+    "text": "Rohan broke the build again just before the on-call handover.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "rohan_s3",
+    "text": "Rohan told me he is moving to Berlin in January.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "rohan_s4",
+    "text": "Rohan called me last night and sounded really stressed.",
+    "truth": "ask",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "bella_s1",
+    "text": "Bella is hiding under the bed because of the fireworks.",
+    "truth": "bella_cat",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "bella_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "bella_s5",
+    "text": "I really miss Bella.",
+    "truth": "ask",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "boss_s2",
+    "text": "My boss used to read every email I sent to clients, I still flinch.",
+    "truth": "boss_karen",
+    "pick": "boss_dev",
+    "confidence": 1.0
+   },
+   {
+    "id": "boss_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 1.0
+   },
+   {
+    "id": "maya_s1",
+    "text": "Maya lost another tooth and wants me to pay the tooth fairy.",
+    "truth": "maya_neighbor",
+    "pick": "maya_sister",
+    "confidence": 1.0
+   },
+   {
+    "id": "maya_s3",
+    "text": "Maya fell off her skates and I had to patch her knee.",
+    "truth": "maya_neighbor",
+    "pick": "maya_sister",
+    "confidence": 1.0
+   },
+   {
+    "id": "maya_s5",
+    "text": "Maya asked if she can stay at my place for the weekend.",
+    "truth": "ask",
+    "pick": "maya_sister",
+    "confidence": 1.0
+   },
+   {
+    "id": "sam_s1",
+    "text": "Sam said she would pick up the dry cleaning on her way back from the shift.",
+    "truth": "sam_wife",
+    "pick": "sam_teacher",
+    "confidence": 1.0
+   },
+   {
+    "id": "sam_s4",
+    "text": "Sam is on nights again this week.",
+    "truth": "sam_wife",
+    "pick": "sam_teacher",
+    "confidence": 1.0
+   },
+   {
+    "id": "sam_s5",
+    "text": "Sam texted that the meeting is moved to 5.",
+    "truth": "ask",
+    "pick": "sam_teacher",
+    "confidence": 1.0
+   },
+   {
+    "id": "priya_s1",
+    "text": "Priya says the plumber will come on Thursday between 9 and 12.",
+    "truth": "priya_landlady",
+    "pick": "priya_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "priya_s3",
+    "text": "Priya asked me if I'd consider buying the flat.",
+    "truth": "priya_landlady",
+    "pick": "priya_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "leo_s1",
+    "text": "Leo ate a whole sock and I'm worried.",
+    "truth": "leo_dog",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "leo_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "leo_s5",
+    "text": "Leo has gone to sleep early after the long day.",
+    "truth": "ask",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "shah_s1",
+    "text": "Dr Shah says I shouldn't eat anything hard for 24 hours.",
+    "truth": "shah_dentist",
+    "pick": "shah_cardio",
+    "confidence": 1.0
+   },
+   {
+    "id": "shah_s4",
+    "text": "I have to be at Dr Shah's at 9 on Monday.",
+    "truth": "ask",
+    "pick": "shah_cardio",
+    "confidence": 1.0
+   },
+   {
+    "id": "landlord_s1",
+    "text": "My landlord is finally refunding the deposit.",
+    "truth": "landlord_evans",
+    "pick": "landlord_okafor",
+    "confidence": 1.0
+   },
+   {
+    "id": "landlord_s3",
+    "text": "My landlord was the worst thing about that Camden flat.",
+    "truth": "landlord_evans",
+    "pick": "landlord_okafor",
+    "confidence": 1.0
+   },
+   {
+    "id": "landlord_s5",
+    "text": "My landlord called about the money.",
+    "truth": "ask",
+    "pick": "landlord_okafor",
+    "confidence": 1.0
+   },
+   {
+    "id": "chris_s1",
+    "text": "Chris is bringing me a boomerang from Australia.",
+    "truth": "chris_brother",
+    "pick": "chris_trainer",
+    "confidence": 1.0
+   },
+   {
+    "id": "chris_s4",
+    "text": "Chris wants to try the new vegetarian place on the high street.",
+    "truth": "chris_brother",
+    "pick": "chris_trainer",
+    "confidence": 1.0
+   },
+   {
+    "id": "chris_s5",
+    "text": "Chris texted to say he's landed.",
+    "truth": "chris_brother",
+    "pick": "chris_trainer",
+    "confidence": 1.0
+   },
+   {
+    "id": "ahmed_s1",
+    "text": "Ahmed ate my leftover lasagne again.",
+    "truth": "ahmed_flatmate",
+    "pick": "ahmed_grandfather",
+    "confidence": 1.0
+   },
+   {
+    "id": "ahmed_s3",
+    "text": "Ahmed practised guitar until 3 am and I can't sleep.",
+    "truth": "ahmed_flatmate",
+    "pick": "ahmed_grandfather",
+    "confidence": 1.0
+   },
+   {
+    "id": "therapist_s2",
+    "text": "I still use the breathing exercise my therapist taught me for panic.",
+    "truth": "therapist_lena",
+    "pick": "therapist_omar",
+    "confidence": 1.0
+   },
+   {
+    "id": "therapist_s4",
+    "text": "My therapist had a baby, I saw the announcement.",
+    "truth": "therapist_lena",
+    "pick": "therapist_omar",
+    "confidence": 1.0
+   },
+   {
+    "id": "mercury_s2",
+    "text": "Mercury is hiding in the wardrobe since the thunderstorm.",
+    "truth": "mercury_cat",
+    "pick": "mercury_client",
+    "confidence": 1.0
+   },
+   {
+    "id": "mercury_s4",
+    "text": "Mercury is making a mess and I have to sort it out.",
+    "truth": "ask",
+    "pick": "mercury_client",
+    "confidence": 1.0
+   },
+   {
+    "id": "jordan_s2",
+    "text": "Jordan texted that she's boarding a flight to Doha.",
+    "truth": "jordan_pilot",
+    "pick": "jordan_phd",
+    "confidence": 1.0
+   },
+   {
+    "id": "jordan_s4",
+    "text": "Jordan is doing a swim session before the layover.",
+    "truth": "jordan_pilot",
+    "pick": "jordan_phd",
+    "confidence": 1.0
+   },
+   {
+    "id": "jordan_s5",
+    "text": "Jordan wants to borrow my charger.",
+    "truth": "ask",
+    "pick": "jordan_phd",
+    "confidence": 1.0
+   },
+   {
+    "id": "alex_s1",
+    "text": "Alex still hasn't sent back my winter coat.",
+    "truth": "alex_ex",
+    "pick": "alex_colleague",
+    "confidence": 1.0
+   },
+   {
+    "id": "alex_s3",
+    "text": "Alex messaged me at midnight.",
+    "truth": "ask",
+    "pick": "alex_colleague",
+    "confidence": 1.0
+   },
+   {
+    "id": "alex_s4",
+    "text": "Alex and I finally sorted out the lease termination.",
+    "truth": "alex_ex",
+    "pick": "alex_colleague",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "names_last_fact": {
+  "statements": 67,
+  "should_ask": 11,
+  "correct": 45,
+  "accuracy": 0.672,
+  "accuracy_resolvable_only": 0.696,
+  "resolvable": 56,
+  "easy": "26/32",
+  "hard": "19/35",
+  "confident_wrong": 6,
+  "asked": 19,
+  "asked_rightly": 6,
+  "asked_needlessly": 13,
+  "wrong_items": [
+   {
+    "id": "rohan_s2",
+    "text": "Rohan wants me at his wedding rehearsal on 11 December.",
+    "truth": "rohan_cousin",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "rohan_s3",
+    "text": "Rohan told me he is moving to Berlin in January.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 0.55
+   },
+   {
+    "id": "bella_s2",
+    "text": "Bella and I finished our long run at 7 am.",
+    "truth": "bella_friend",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "boss_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 0.9
+   },
+   {
+    "id": "maya_s5",
+    "text": "Maya asked if she can stay at my place for the weekend.",
+    "truth": "ask",
+    "pick": "maya_sister",
+    "confidence": 0.75
+   },
+   {
+    "id": "sam_s1",
+    "text": "Sam said she would pick up the dry cleaning on her way back from the shift.",
+    "truth": "sam_wife",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "sam_s2",
+    "text": "Sam wants to talk to us about the school trip form.",
+    "truth": "sam_teacher",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "sam_s3",
+    "text": "Sam hurt his wrist but still ran the chess club.",
+    "truth": "sam_teacher",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "priya_s2",
+    "text": "Priya cried on the phone about the divorce papers.",
+    "truth": "priya_friend",
+    "pick": "priya_landlady",
+    "confidence": 0.9
+   },
+   {
+    "id": "leo_s3",
+    "text": "Leo fell off and scraped his knees, he was so brave.",
+    "truth": "leo_nephew",
+    "pick": "leo_dog",
+    "confidence": 0.85
+   },
+   {
+    "id": "leo_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "shah_s4",
+    "text": "I have to be at Dr Shah's at 9 on Monday.",
+    "truth": "ask",
+    "pick": "shah_cardio",
+    "confidence": 0.8
+   },
+   {
+    "id": "landlord_s1",
+    "text": "My landlord is finally refunding the deposit.",
+    "truth": "landlord_evans",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "chris_s5",
+    "text": "Chris texted to say he's landed.",
+    "truth": "chris_brother",
+    "pick": "chris_trainer",
+    "confidence": 0.85
+   },
+   {
+    "id": "ahmed_s2",
+    "text": "Ahmed is out of hospital and walking with a frame.",
+    "truth": "ahmed_grandfather",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "ahmed_s3",
+    "text": "Ahmed practised guitar until 3 am and I can't sleep.",
+    "truth": "ahmed_flatmate",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "therapist_s2",
+    "text": "I still use the breathing exercise my therapist taught me for panic.",
+    "truth": "therapist_lena",
+    "pick": "ask",
+    "confidence": 0.45
+   },
+   {
+    "id": "therapist_s3",
+    "text": "My therapist has moved my session to Thursday.",
+    "truth": "therapist_omar",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "therapist_s4",
+    "text": "My therapist had a baby, I saw the announcement.",
+    "truth": "therapist_lena",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "mercury_s3",
+    "text": "Mercury cancelled our Friday call.",
+    "truth": "mercury_client",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "mercury_s4",
+    "text": "Mercury is making a mess and I have to sort it out.",
+    "truth": "ask",
+    "pick": "mercury_cat",
+    "confidence": 0.65
+   },
+   {
+    "id": "jordan_s5",
+    "text": "Jordan wants to borrow my charger.",
+    "truth": "ask",
+    "pick": "jordan_phd",
+    "confidence": 0.85
+   }
+  ]
+ },
+ "whole_folders": {
+  "statements": 67,
+  "should_ask": 11,
+  "correct": 55,
+  "accuracy": 0.821,
+  "accuracy_resolvable_only": 0.857,
+  "resolvable": 56,
+  "easy": "29/32",
+  "hard": "26/35",
+  "confident_wrong": 3,
+  "asked": 13,
+  "asked_rightly": 7,
+  "asked_needlessly": 6,
+  "wrong_items": [
+   {
+    "id": "rohan_s1",
+    "text": "Rohan broke the build again just before the on-call handover.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 0.25
+   },
+   {
+    "id": "bella_s1",
+    "text": "Bella is hiding under the bed because of the fireworks.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "bella_s3",
+    "text": "I need to buy a present for Bella before the 21st.",
+    "truth": "bella_friend",
+    "pick": "bella_cat",
+    "confidence": 0.7
+   },
+   {
+    "id": "bella_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "boss_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 0.9
+   },
+   {
+    "id": "maya_s5",
+    "text": "Maya asked if she can stay at my place for the weekend.",
+    "truth": "ask",
+    "pick": "maya_neighbor",
+    "confidence": 0.85
+   },
+   {
+    "id": "leo_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "shah_s4",
+    "text": "I have to be at Dr Shah's at 9 on Monday.",
+    "truth": "ask",
+    "pick": "shah_cardio",
+    "confidence": 0.75
+   },
+   {
+    "id": "landlord_s4",
+    "text": "My landlord messaged me about the rent.",
+    "truth": "landlord_okafor",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "chris_s4",
+    "text": "Chris wants to try the new vegetarian place on the high street.",
+    "truth": "chris_brother",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "mercury_s4",
+    "text": "Mercury is making a mess and I have to sort it out.",
+    "truth": "ask",
+    "pick": "mercury_cat",
+    "confidence": 0.85
+   },
+   {
+    "id": "jordan_s4",
+    "text": "Jordan is doing a swim session before the layover.",
+    "truth": "jordan_pilot",
+    "pick": "ask",
+    "confidence": 0.5
+   }
+  ]
+ }
+}
