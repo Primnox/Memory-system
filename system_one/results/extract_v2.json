@@ -1,0 +1,11 @@
+{
+ "tag": "v2",
+ "messages": 234,
+ "reference_facts": 309,
+ "statements": 570,
+ "recall": 0.537,
+ "precision": 0.277,
+ "f1": 0.366,
+ "empty_messages": "2/234",
+ "statements_per_message": 2.44
+}
