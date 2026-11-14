@@ -5,7 +5,6 @@ Three conditions on folders/data/collision/collision_set.json:
   code   - among folders whose name/alias appears in the statement, pick the most recently used
   names  - an LLM sees only each folder's label, aliases and last fact
   whole  - an LLM sees the WHOLE of each matching folder (every fact)
-  whole_plus_index - same, plus the index (card per folder, days index)
 The LLM may also answer "ask" (ask the user).
 
 The API key is not read or sent by this script: the sandbox proxy injects it for api.apinex.bond.
@@ -58,38 +57,23 @@ def render_folder(f, whole):
     return head + ("Facts:\n" if whole else "Last fact:\n") + body
 
 
-def render_index(sc):
-    """Index built by code from the folders: main index (one card per folder) + days index."""
-    out = ["INDEX", "Main index (one card per folder):"]
-    for f in sc["folders"]:
-        facts = sorted(f["facts"], key=lambda x: x["date"])
-        out.append(f"  [{f['id']} | {' | '.join(f['aliases'])}] {f['label']}; {len(facts)} facts, "
-                   f"{facts[0]['date']} to {facts[-1]['date']}; latest: {facts[-1]['text']}")
-    out.append("Days index (date: folder id):")
-    days = {}
-    for f in sc["folders"]:
-        for x in f["facts"]:
-            days.setdefault(x["date"], []).append(f["id"])
-    for d in sorted(days):
-        out.append(f"  {d}: {', '.join(days[d])}")
-    return "\n".join(out) + "\n\n"
-
-
-def build_prompt(sc, stmt, whole, index=False):
+def build_prompt(sc, stmt, whole):
     folders = matching(sc, stmt)
-    return ((render_index(sc) if index else "") + "Matching folders:\n\n" + "\n".join(render_folder(f, whole) for f in folders)
+    return ("Matching folders:\n\n" + "\n".join(render_folder(f, whole) for f in folders)
             + f"\nNew statement (dated {stmt['date']}): \"{stmt['text']}\"\n"
             + "Valid answers: " + ", ".join(f['id'] for f in folders) + ", ask")
 
 
-def call(prompt):
+def call(prompt, system=None, with_usage=False):
     body = json.dumps({"model": MODEL, "temperature": 0, "max_tokens": 1024,
-                       "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}]}).encode()
+                       "messages": [{"role": "system", "content": system or SYSTEM}, {"role": "user", "content": prompt}]}).encode()
     for attempt in range(8):
         req = urllib.request.Request(URL, data=body, headers={"Content-Type": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
-                return json.load(r)["choices"][0]["message"]["content"]
+                d = json.load(r)
+                text = d["choices"][0]["message"]["content"]
+                return (text, d.get("usage") or {}) if with_usage else text
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
                 wait = 15 * (attempt + 1)
@@ -97,7 +81,7 @@ def call(prompt):
                 time.sleep(wait)
                 continue
             raise
-        except (urllib.error.URLError, TimeoutError):
+        except (urllib.error.URLError, OSError):
             time.sleep(10)
     raise RuntimeError("giving up after retries")
 
@@ -115,7 +99,7 @@ def parse(raw, valid):
     return (folder, conf) if folder in valid else ("invalid", conf)
 
 
-def run_condition(data, cond, whole, index=False):
+def run_condition(data, cond, whole):
     path = os.path.join(OUT, f"raw_{cond}.jsonl")
     cache = {}
     if os.path.exists(path):
@@ -131,7 +115,7 @@ def run_condition(data, cond, whole, index=False):
                 gap = MIN_GAP - (time.time() - last)
                 if gap > 0:
                     time.sleep(gap)
-                prompt = build_prompt(sc, st, whole, index)
+                prompt = build_prompt(sc, st, whole)
                 raw = call(prompt)
                 last = time.time()
                 valid = {f["id"] for f in matching(sc, st)}
@@ -188,8 +172,8 @@ def main():
     code = {s["id"]: (code_pick(sc, s), 1.0) for sc in data["scenarios"] for s in sc["statements"]}
     results["code_last_used"] = score(data, code)
     if not a.no_llm:
-        for cond, whole, index in (("names_last_fact", False, False), ("whole_folders", True, False), ("whole_folders_plus_index", True, True)):
-            cache = run_condition(data, cond, whole, index)
+        for cond, whole in (("names_last_fact", False), ("whole_folders", True)):
+            cache = run_condition(data, cond, whole)
             results[cond] = score(data, {k: (v["pick"], v["confidence"]) for k, v in cache.items()})
     json.dump(results, open(os.path.join(OUT, "summary.json"), "w"), indent=1, ensure_ascii=False)
     for k, v in results.items():

@@ -359,7 +359,7 @@ one folder (two Rohans, a cat and a friend both called Bella, "my boss" after a 
 model is given the whole of the matching folders plus the new statement and answers with one folder or
 "ask" (ask the user).
 
-Rows (a)-(c) were first run without the index; row (d) adds it (see below).
+The model is given no index in rows (a)-(c). The index variant (d), a card written by a cloud model, is tested separately on long folders (below).
 
 Test set: `data/collision/collision_set.json`, 15 hand-written synthetic scenarios (no private data), each
 with two same-named folders of 3-6 facts and 4-5 new statements (67 in all) whose correct folder is known;
@@ -374,7 +374,6 @@ three rows, so the model only ever sees folders whose name or alias appears in t
 | (a) Code only: most recently used matching folder | 28 (41.8%) | 50.0% | 17/32 · 11/35 | 39 (code never doubts) | 0 |
 | (b) LLM sees names + last fact of each folder | 45 (67.2%) | 69.6% | 26/32 · 19/35 | 6 | 19 (6 / 13) |
 | (c) LLM sees the whole folders | **55 (82.1%)** | **85.7%** | 29/32 · 26/35 | 3 | 13 (7 / 6) |
-| (d) LLM sees the whole folders + the index | 50 (74.6%) | 75.0% | 28/32 · 22/35 | 2 | 22 (8 / 14) |
 
 What this shows:
 - **The whole folders do help here:** +15 points over names + last fact (+40 over code), and fewer
@@ -385,14 +384,6 @@ What this shows:
   congratulations", "Maya asked if she can stay at my place", "Mercury is making a mess"). It also took a
   date clue the wrong way once (a present for Bella before the 21st: the cat), and once picked the wrong Rohan
   with low confidence (0.25).
-- **Adding the index did not help; it made this set worse** (82.1% -> 74.6%, 55 -> 50 of 67). Row (d)
-  prepends an index built by code from the folders: the main index (a card per folder: id, aliases, label,
-  number of facts, date range, latest fact) and a days index (date: folder id). It fixed 6 statements and
-  broke 11, nearly all by making the model say "ask" instead of choosing (22 asks, 14 needless, against 6).
-  Why is not tested; a likely reason is that with two folders the index repeats what the folders already
-  say, and the days index lists folder ids without the facts. The cards are built from the label and the
-  latest fact, not from filed slots (this set has no filing), so this is a weak form of the real index and
-  the result does not say what a slot-filed index would do.
 - Seeing only the last fact (b) made the model over-cautious (13 needless asks) and confidently wrong 6
   times; the code-only "most recent folder" is wrong for nearly every case where the newest folder is the
   wrong one.
@@ -403,7 +394,40 @@ the answers myself; which statements "should ask" is my judgement, and a few har
 second reading. The statements are independent (the code baseline's "last used" is not updated between
 them), they are short, and each folder has under ten facts, so whole-folder context is cheap here and may not
 be at real folder sizes. One run per condition at temperature 0 from one model; the free API rate limit
-(429 retries) did not change any answer. Not compared with a trained filing model on this set. The (d) difference is 5 items of 67 from one run, so it is a direction at most.
+(429 retries) did not change any answer. Not compared with a trained filing model on this set.
+
+### Long folders: a cloud-written index card instead of the whole file
+
+The index is not given to the model by default. The design does include one, written and edited only by a
+cloud model (free/gemini-3.8-flash), meant for long retention and for understanding when folders get long.
+Variant (d) tests it: the cloud model reads one folder's file in date order, 5 facts per call, rewriting a
+card each time (who they are, stable facts, current values, what changed and when, distinguishing details);
+the answering model then gets the card plus only the 8 most recent facts of each candidate folder, instead
+of the whole file (c). Test set: `data/collision/collision_long_set.json`, 5 of the scenarios above (Rohan,
+Bella, "my boss", Leo, Chris; 23 statements, 4 should ask) with each folder padded to 28-33 facts by
+hand-written mundane facts, the key facts left where they were. Script: `pipeline/collision_long_test.py`;
+cards and raw answers in `results/collision/`.
+
+| Condition (23 statements) | Folder right | Confidently wrong | Said "ask" (right / needless) | Prompt tokens per call* |
+|---|---|---|---|---|
+| (a) Code only | 10 (43.5%) | 13 | 0 | - |
+| (b) Names + last fact | 15 (65.2%) | 0 | 10 (3 / 7) | 658 |
+| (c) Whole folder files | 14 (60.9%) | 1 | 8 (2 / 6) | 2045 |
+| (d) Index card + last 8 facts | 14 (60.9%) | 1 | 11 (3 / 8) | 2149 |
+
+*As reported by the API; includes its fixed overhead. Building the 10 cards took **63 calls**
+(69,453 prompt tokens in, 30,384 out) before any statement was answered.
+
+- **(d) is not better than (c) here.** Same folder accuracy (14 of 23), more needless asks (8 vs 6), and
+  slightly MORE tokens per call (2149 vs 2045), not fewer: the cards came out at 120-310 words (the prompt asked
+  for at most 220), so card + 8 facts was no shorter than 30 facts. With the 63 index-building calls added,
+  (d) cost more and gained nothing on this set.
+- **Longer folders did not help either condition.** On the same 5 scenarios with short folders, (c) got 16 of
+  23 right and (b) also 16; with 28-33 facts (c) got 14 and (b) 15. Differences of 1-2 statements.
+- Caveat: 23 statements is far too few to separate 14 from 14 or 15 (an interval is about +/-20 points). It
+  shows that the card did not obviously help at this folder length (about 600 tokens per folder), not that it
+  cannot help at lengths where the whole file no longer fits or distracts the model. The filler facts are my own
+  mundane lines, and a card can lose a detail the whole file keeps.
 
 ## Files
 
@@ -423,7 +447,7 @@ be at real folder sizes. One run per condition at temperature 0 from one model; 
 | `pipeline/identity.py`, `duo.py` | write, audit (two other model families) and vote who-is-who people and two-person pairs |
 | `pipeline/subagent_tasks.py` | the same writes and audits done by Claude Code subagents: one prompt file per task, the validator files the result |
 | `pipeline/build_identity_rows.py`, `assemble_r10.py`, `identity_baseline.py` | voted people → choice rows for the 500M model; the training file; the code-only baseline |
-| `pipeline/collision_test.py`, `data/collision/collision_set.json`, `results/collision/` | name-collision test: code vs LLM given last facts vs LLM given whole folders |
+| `pipeline/collision_test.py`, `collision_long_test.py`, `data/collision/`, `results/collision/` | name-collision test: code vs LLM given last facts vs whole folders; long folders with a cloud-written index card |
 | `pipeline/drive.py` | the agy driver these use (reads the stream and stops agy once its result is in) |
 | `results/round10b/`, `results/round10c/` | every round-10 score: changes, LongMemEval, Dialogue NLI, filing, who-is-who, blind v2 search |
 | `kaggle/primnox-r8-index`, `primnox-r8b-realtalk` | round 8 (head + local clerk) and its follow-up on real chats |

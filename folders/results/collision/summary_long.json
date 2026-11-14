@@ -1,0 +1,351 @@
+{
+ "model": "free/gemini-3.8-flash",
+ "recent_facts_n": 8,
+ "facts_per_card_call": 5,
+ "a_code_last_used": {
+  "statements": 23,
+  "should_ask": 4,
+  "correct": 10,
+  "accuracy": 0.435,
+  "accuracy_resolvable_only": 0.526,
+  "resolvable": 19,
+  "easy": "6/10",
+  "hard": "4/13",
+  "confident_wrong": 13,
+  "asked": 0,
+  "asked_rightly": 0,
+  "asked_needlessly": 0,
+  "wrong_items": [
+   {
+    "id": "rohanL_s1",
+    "text": "Rohan broke the build again just before the on-call handover.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "rohanL_s3",
+    "text": "Rohan told me he is moving to Berlin in January.",
+    "truth": "rohan_colleague",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "rohanL_s4",
+    "text": "Rohan called me last night and sounded really stressed.",
+    "truth": "ask",
+    "pick": "rohan_cousin",
+    "confidence": 1.0
+   },
+   {
+    "id": "bellaL_s1",
+    "text": "Bella is hiding under the bed because of the fireworks.",
+    "truth": "bella_cat",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "bellaL_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "bellaL_s5",
+    "text": "I really miss Bella.",
+    "truth": "ask",
+    "pick": "bella_friend",
+    "confidence": 1.0
+   },
+   {
+    "id": "bossL_s2",
+    "text": "My boss used to read every email I sent to clients, I still flinch.",
+    "truth": "boss_karen",
+    "pick": "boss_dev",
+    "confidence": 1.0
+   },
+   {
+    "id": "bossL_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 1.0
+   },
+   {
+    "id": "leoL_s1",
+    "text": "Leo ate a whole sock and I'm worried.",
+    "truth": "leo_dog",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "leoL_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "leoL_s5",
+    "text": "Leo has gone to sleep early after the long day.",
+    "truth": "ask",
+    "pick": "leo_nephew",
+    "confidence": 1.0
+   },
+   {
+    "id": "chrisL_s2",
+    "text": "Chris cancelled my Thursday session.",
+    "truth": "chris_trainer",
+    "pick": "chris_brother",
+    "confidence": 1.0
+   },
+   {
+    "id": "chrisL_s3",
+    "text": "Chris says I should eat more protein.",
+    "truth": "chris_trainer",
+    "pick": "chris_brother",
+    "confidence": 1.0
+   }
+  ]
+ },
+ "b_names_last_fact": {
+  "statements": 23,
+  "should_ask": 4,
+  "correct": 15,
+  "accuracy": 0.652,
+  "accuracy_resolvable_only": 0.632,
+  "resolvable": 19,
+  "easy": "8/10",
+  "hard": "7/13",
+  "confident_wrong": 0,
+  "asked": 10,
+  "asked_rightly": 3,
+  "asked_needlessly": 7,
+  "wrong_items": [
+   {
+    "id": "rohanL_s3",
+    "text": "Rohan told me he is moving to Berlin in January.",
+    "truth": "rohan_colleague",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "bellaL_s1",
+    "text": "Bella is hiding under the bed because of the fireworks.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "bellaL_s3",
+    "text": "I need to buy a present for Bella before the 21st.",
+    "truth": "bella_friend",
+    "pick": "ask",
+    "confidence": 0.3
+   },
+   {
+    "id": "bossL_s2",
+    "text": "My boss used to read every email I sent to clients, I still flinch.",
+    "truth": "boss_karen",
+    "pick": "ask",
+    "confidence": 0.3
+   },
+   {
+    "id": "bossL_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 0.72
+   },
+   {
+    "id": "leoL_s1",
+    "text": "Leo ate a whole sock and I'm worried.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "leoL_s3",
+    "text": "Leo fell off and scraped his knees, he was so brave.",
+    "truth": "leo_nephew",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "chrisL_s4",
+    "text": "Chris wants to try the new vegetarian place on the high street.",
+    "truth": "chris_brother",
+    "pick": "ask",
+    "confidence": 0.5
+   }
+  ],
+  "mean_prompt_tokens_per_call": 658
+ },
+ "c_whole_folders": {
+  "statements": 23,
+  "should_ask": 4,
+  "correct": 14,
+  "accuracy": 0.609,
+  "accuracy_resolvable_only": 0.632,
+  "resolvable": 19,
+  "easy": "7/10",
+  "hard": "7/13",
+  "confident_wrong": 1,
+  "asked": 8,
+  "asked_rightly": 2,
+  "asked_needlessly": 6,
+  "wrong_items": [
+   {
+    "id": "rohanL_s2",
+    "text": "Rohan wants me at his wedding rehearsal on 11 December.",
+    "truth": "rohan_cousin",
+    "pick": "rohan_colleague",
+    "confidence": 0.3
+   },
+   {
+    "id": "rohanL_s4",
+    "text": "Rohan called me last night and sounded really stressed.",
+    "truth": "ask",
+    "pick": "rohan_colleague",
+    "confidence": 0.95
+   },
+   {
+    "id": "bellaL_s1",
+    "text": "Bella is hiding under the bed because of the fireworks.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "bellaL_s3",
+    "text": "I need to buy a present for Bella before the 21st.",
+    "truth": "bella_friend",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "bellaL_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "bossL_s1",
+    "text": "My boss approved my leave for the week of Diwali.",
+    "truth": "boss_dev",
+    "pick": "ask",
+    "confidence": 0.65
+   },
+   {
+    "id": "bossL_s4",
+    "text": "My boss texted me to say congratulations.",
+    "truth": "ask",
+    "pick": "boss_dev",
+    "confidence": 0.55
+   },
+   {
+    "id": "leoL_s3",
+    "text": "Leo fell off and scraped his knees, he was so brave.",
+    "truth": "leo_nephew",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "leoL_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.65
+   }
+  ],
+  "mean_prompt_tokens_per_call": 2045
+ },
+ "d_card_plus_recent": {
+  "statements": 23,
+  "should_ask": 4,
+  "correct": 14,
+  "accuracy": 0.609,
+  "accuracy_resolvable_only": 0.579,
+  "resolvable": 19,
+  "easy": "8/10",
+  "hard": "6/13",
+  "confident_wrong": 1,
+  "asked": 11,
+  "asked_rightly": 3,
+  "asked_needlessly": 8,
+  "wrong_items": [
+   {
+    "id": "rohanL_s3",
+    "text": "Rohan told me he is moving to Berlin in January.",
+    "truth": "rohan_colleague",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "bellaL_s3",
+    "text": "I need to buy a present for Bella before the 21st.",
+    "truth": "bella_friend",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "bellaL_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.45
+   },
+   {
+    "id": "bellaL_s5",
+    "text": "I really miss Bella.",
+    "truth": "ask",
+    "pick": "bella_friend",
+    "confidence": 0.92
+   },
+   {
+    "id": "bossL_s1",
+    "text": "My boss approved my leave for the week of Diwali.",
+    "truth": "boss_dev",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "leoL_s2",
+    "text": "Leo wants a stegosaurus cake for his birthday.",
+    "truth": "leo_nephew",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "leoL_s3",
+    "text": "Leo fell off and scraped his knees, he was so brave.",
+    "truth": "leo_nephew",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "leoL_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "chrisL_s4",
+    "text": "Chris wants to try the new vegetarian place on the high street.",
+    "truth": "chris_brother",
+    "pick": "ask",
+    "confidence": 0.7
+   }
+  ],
+  "mean_prompt_tokens_per_call": 2149
+ },
+ "d_index_build": {
+  "calls": 63,
+  "folders": 10,
+  "prompt_tokens": 69453,
+  "completion_tokens": 30384
+ }
+}

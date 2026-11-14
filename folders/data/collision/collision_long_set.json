@@ -1,0 +1,1524 @@
+{
+ "description": "Long-folder variant of 5 collision scenarios: same statements, same key facts, each folder padded to 28-35 facts with mundane hand-written facts. Used for the index-card test.",
+ "scenarios": [
+  {
+   "id": "rohanL",
+   "name": "Rohan",
+   "kind": "two people, same first name (colleague vs cousin)",
+   "folders": [
+    {
+     "id": "rohan_colleague",
+     "label": "Rohan, colleague at Kestrel Logistics",
+     "aliases": [
+      "Rohan",
+      "Rohan from work"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-04",
+       "text": "Rohan joined my team at Kestrel Logistics as a backend engineer."
+      },
+      {
+       "date": "2026-03-06",
+       "text": "Rohan showed me how to set up the staging environment."
+      },
+      {
+       "date": "2026-03-12",
+       "text": "Rohan prefers Vim over VS Code."
+      },
+      {
+       "date": "2026-03-25",
+       "text": "Rohan brought samosas for the team on Friday."
+      },
+      {
+       "date": "2026-04-02",
+       "text": "Rohan reviewed my pull request on the payments service."
+      },
+      {
+       "date": "2026-04-10",
+       "text": "Rohan sits next to me and drinks only black coffee."
+      },
+      {
+       "date": "2026-04-16",
+       "text": "Rohan is vegetarian at the office lunches."
+      },
+      {
+       "date": "2026-04-28",
+       "text": "Rohan rides a bicycle to the Kestrel office."
+      },
+      {
+       "date": "2026-05-06",
+       "text": "Rohan gave a lunch talk about database indexes."
+      },
+      {
+       "date": "2026-05-14",
+       "text": "Rohan's standup updates are always under one minute."
+      },
+      {
+       "date": "2026-05-22",
+       "text": "Rohan fixed a flaky integration test in the checkout flow."
+      },
+      {
+       "date": "2026-05-30",
+       "text": "Rohan took a day off for a dentist appointment."
+      },
+      {
+       "date": "2026-06-02",
+       "text": "Rohan led the migration to Postgres at work."
+      },
+      {
+       "date": "2026-06-11",
+       "text": "Rohan and I paired on the retry logic for the shipping API."
+      },
+      {
+       "date": "2026-06-19",
+       "text": "Rohan complained that the open-plan office is too loud."
+      },
+      {
+       "date": "2026-06-27",
+       "text": "Rohan is learning Rust in the evenings."
+      },
+      {
+       "date": "2026-07-03",
+       "text": "Rohan rewrote half of the on-call runbook."
+      },
+      {
+       "date": "2026-07-15",
+       "text": "Rohan was the only one who stayed for the release night."
+      },
+      {
+       "date": "2026-07-24",
+       "text": "Rohan's team lunch pick is always the Thai place."
+      },
+      {
+       "date": "2026-08-02",
+       "text": "Rohan's laptop was replaced with a newer model."
+      },
+      {
+       "date": "2026-08-08",
+       "text": "Rohan writes very detailed commit messages."
+      },
+      {
+       "date": "2026-08-19",
+       "text": "Rohan has been interviewing at a startup in Berlin."
+      },
+      {
+       "date": "2026-08-27",
+       "text": "Rohan asked me for feedback on his design doc for the notifications service."
+      },
+      {
+       "date": "2026-09-04",
+       "text": "Rohan was on call over the long weekend and slept badly."
+      },
+      {
+       "date": "2026-09-09",
+       "text": "Rohan upgraded the CI runners to the faster tier."
+      },
+      {
+       "date": "2026-09-15",
+       "text": "Rohan is on my team's on-call rota every second week."
+      },
+      {
+       "date": "2026-09-22",
+       "text": "Rohan reviewed three of my pull requests in one day."
+      },
+      {
+       "date": "2026-09-29",
+       "text": "Rohan gave a short demo of the new dashboards to the team."
+      },
+      {
+       "date": "2026-10-06",
+       "text": "Rohan fixed the memory leak in the order-sync worker."
+      },
+      {
+       "date": "2026-10-13",
+       "text": "Rohan joined the Friday quiz team at the pub near the office."
+      },
+      {
+       "date": "2026-10-20",
+       "text": "Rohan updated the team wiki with the Postgres migration notes."
+      },
+      {
+       "date": "2026-10-27",
+       "text": "Rohan and I had lunch at the canteen and talked about cricket."
+      }
+     ]
+    },
+    {
+     "id": "rohan_cousin",
+     "label": "Rohan, my cousin in Pune",
+     "aliases": [
+      "Rohan",
+      "my cousin Rohan"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-11",
+       "text": "My cousin Rohan lives in Pune and works as a dentist."
+      },
+      {
+       "date": "2026-02-18",
+       "text": "Rohan the cousin is the youngest of four siblings."
+      },
+      {
+       "date": "2026-02-26",
+       "text": "Cousin Rohan supports Mumbai Indians."
+      },
+      {
+       "date": "2026-03-07",
+       "text": "Rohan (cousin) opened his own dental clinic near Koregaon Park."
+      },
+      {
+       "date": "2026-03-19",
+       "text": "My cousin Rohan drives a blue Honda City."
+      },
+      {
+       "date": "2026-03-30",
+       "text": "Rohan the cousin is allergic to peanuts."
+      },
+      {
+       "date": "2026-04-09",
+       "text": "Cousin Rohan hosted the family Holi lunch."
+      },
+      {
+       "date": "2026-04-21",
+       "text": "Rohan (my cousin) plays badminton every Sunday morning."
+      },
+      {
+       "date": "2026-05-01",
+       "text": "My cousin Rohan met Meera through a friend's wedding."
+      },
+      {
+       "date": "2026-05-07",
+       "text": "Rohan (my cousin) got engaged to Meera."
+      },
+      {
+       "date": "2026-05-12",
+       "text": "Rohan the cousin's mother, my aunt, made puran poli for everyone."
+      },
+      {
+       "date": "2026-05-18",
+       "text": "Rohan (cousin) donated blood at the Pune camp."
+      },
+      {
+       "date": "2026-05-25",
+       "text": "Rohan (cousin) is saving up to buy a flat in Baner."
+      },
+      {
+       "date": "2026-06-06",
+       "text": "My cousin Rohan sent photos from the engagement party."
+      },
+      {
+       "date": "2026-06-15",
+       "text": "Rohan the cousin got a new dental chair for his clinic."
+      },
+      {
+       "date": "2026-06-28",
+       "text": "Cousin Rohan won the family quiz at the cousins' reunion call."
+      },
+      {
+       "date": "2026-07-05",
+       "text": "Rohan (cousin) and Meera visited Goa for a long weekend."
+      },
+      {
+       "date": "2026-07-22",
+       "text": "Rohan's wedding is set for 12 December in Pune."
+      },
+      {
+       "date": "2026-07-30",
+       "text": "My cousin Rohan paid the wedding venue deposit."
+      },
+      {
+       "date": "2026-08-09",
+       "text": "Rohan the cousin chose a cream sherwani for the wedding."
+      },
+      {
+       "date": "2026-08-21",
+       "text": "Cousin Rohan has been asking me for honeymoon ideas."
+      },
+      {
+       "date": "2026-08-30",
+       "text": "My cousin Rohan's clinic now opens on Saturdays."
+      },
+      {
+       "date": "2026-09-03",
+       "text": "Rohan (my cousin) is learning to cook biryani."
+      },
+      {
+       "date": "2026-09-12",
+       "text": "My cousin Rohan hired a wedding photographer."
+      },
+      {
+       "date": "2026-09-20",
+       "text": "Rohan the cousin sent out the save-the-date cards."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "My cousin Rohan is asking the family for photo ideas for the wedding."
+      },
+      {
+       "date": "2026-10-03",
+       "text": "My cousin Rohan said he will never leave Pune."
+      },
+      {
+       "date": "2026-10-08",
+       "text": "Rohan (cousin) booked the caterer for the wedding."
+      },
+      {
+       "date": "2026-10-15",
+       "text": "My cousin Rohan is fitting the wedding outfit next week."
+      },
+      {
+       "date": "2026-10-22",
+       "text": "Rohan the cousin finalised the guest list at 250."
+      },
+      {
+       "date": "2026-10-29",
+       "text": "Cousin Rohan asked everyone for sangeet song ideas."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "rohanL_s1",
+     "date": "2026-11-02",
+     "text": "Rohan broke the build again just before the on-call handover.",
+     "answer": "rohan_colleague",
+     "level": "easy",
+     "why": "work detail"
+    },
+    {
+     "id": "rohanL_s2",
+     "date": "2026-11-03",
+     "text": "Rohan wants me at his wedding rehearsal on 11 December.",
+     "answer": "rohan_cousin",
+     "level": "easy",
+     "why": "wedding"
+    },
+    {
+     "id": "rohanL_s3",
+     "date": "2026-11-04",
+     "text": "Rohan told me he is moving to Berlin in January.",
+     "answer": "rohan_colleague",
+     "level": "hard",
+     "why": "colleague was interviewing in Berlin; cousin said he'd never leave Pune; no explicit marker"
+    },
+    {
+     "id": "rohanL_s4",
+     "date": "2026-11-05",
+     "text": "Rohan called me last night and sounded really stressed.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "nothing separates the two"
+    }
+   ]
+  },
+  {
+   "id": "bellaL",
+   "name": "Bella",
+   "kind": "a cat and a friend with the same name",
+   "folders": [
+    {
+     "id": "bella_cat",
+     "label": "Bella, my grey tabby cat",
+     "aliases": [
+      "Bella"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-05",
+       "text": "I adopted a grey tabby cat called Bella from a shelter."
+      },
+      {
+       "date": "2026-01-12",
+       "text": "Bella spent her first week under the sofa."
+      },
+      {
+       "date": "2026-01-26",
+       "text": "Bella's favourite toy is a feather wand."
+      },
+      {
+       "date": "2026-02-08",
+       "text": "Bella sleeps on my pillow every night."
+      },
+      {
+       "date": "2026-02-21",
+       "text": "Bella learned to open the bathroom door."
+      },
+      {
+       "date": "2026-03-02",
+       "text": "Bella got her first set of vaccinations at the shelter clinic."
+      },
+      {
+       "date": "2026-03-14",
+       "text": "Bella's birthday is 14 March; she turned 3."
+      },
+      {
+       "date": "2026-03-27",
+       "text": "Bella chases the red laser dot until she is exhausted."
+      },
+      {
+       "date": "2026-04-06",
+       "text": "Bella shed so much that I bought a new brush."
+      },
+      {
+       "date": "2026-04-19",
+       "text": "Bella likes sitting in the window to watch the pigeons."
+      },
+      {
+       "date": "2026-05-03",
+       "text": "Bella wakes me at 6 am for breakfast."
+      },
+      {
+       "date": "2026-05-20",
+       "text": "Bella is allergic to chicken-flavoured food, so she eats the salmon kind."
+      },
+      {
+       "date": "2026-05-27",
+       "text": "Bella tried to climb the curtains."
+      },
+      {
+       "date": "2026-06-08",
+       "text": "Bella has a favourite cardboard box."
+      },
+      {
+       "date": "2026-06-21",
+       "text": "Bella purrs very loudly when I scratch her chin."
+      },
+      {
+       "date": "2026-07-01",
+       "text": "Bella got a new scratching post."
+      },
+      {
+       "date": "2026-07-09",
+       "text": "Bella knocked a glass off the shelf and I stepped on it."
+      },
+      {
+       "date": "2026-07-18",
+       "text": "Bella hates the vacuum cleaner."
+      },
+      {
+       "date": "2026-07-29",
+       "text": "Bella drank from my glass of water again."
+      },
+      {
+       "date": "2026-08-05",
+       "text": "Bella lost a whisker."
+      },
+      {
+       "date": "2026-08-16",
+       "text": "Bella follows me from room to room."
+      },
+      {
+       "date": "2026-08-28",
+       "text": "Bella is scared of the doorbell."
+      },
+      {
+       "date": "2026-09-01",
+       "text": "Bella is due her annual vaccination in October."
+      },
+      {
+       "date": "2026-09-10",
+       "text": "Bella got her claws trimmed at the vet."
+      },
+      {
+       "date": "2026-09-17",
+       "text": "Bella has been sleeping on the radiator shelf."
+      },
+      {
+       "date": "2026-09-24",
+       "text": "Bella has a new automatic feeder."
+      },
+      {
+       "date": "2026-10-02",
+       "text": "Bella watched a bird video on the tablet for an hour."
+      },
+      {
+       "date": "2026-10-11",
+       "text": "Bella has started waiting by the front door in the evening."
+      },
+      {
+       "date": "2026-10-19",
+       "text": "Bella brought me a toy mouse as a gift."
+      },
+      {
+       "date": "2026-10-26",
+       "text": "Bella has been chasing shadows on the wall."
+      }
+     ]
+    },
+    {
+     "id": "bella_friend",
+     "label": "Bella, friend in Nairobi",
+     "aliases": [
+      "Bella",
+      "my friend Bella"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-02",
+       "text": "My friend Bella and I did our MBA together."
+      },
+      {
+       "date": "2026-02-10",
+       "text": "Bella used to be my study group partner for finance."
+      },
+      {
+       "date": "2026-02-24",
+       "text": "Bella's favourite coffee is a flat white."
+      },
+      {
+       "date": "2026-03-06",
+       "text": "Bella got promoted to senior analyst at her bank."
+      },
+      {
+       "date": "2026-03-20",
+       "text": "Bella and I planned a joint trip to Cape Town."
+      },
+      {
+       "date": "2026-04-02",
+       "text": "Bella's sister is a doctor in Mombasa."
+      },
+      {
+       "date": "2026-04-18",
+       "text": "Bella lives in Nairobi and works in a bank."
+      },
+      {
+       "date": "2026-04-30",
+       "text": "Bella runs five kilometres before work."
+      },
+      {
+       "date": "2026-05-09",
+       "text": "Bella read three novels last month and recommends them all."
+      },
+      {
+       "date": "2026-05-23",
+       "text": "Bella took up pottery on weekends."
+      },
+      {
+       "date": "2026-06-04",
+       "text": "Bella bought running shoes for the marathon."
+      },
+      {
+       "date": "2026-06-12",
+       "text": "Bella and I swapped meal-prep recipes."
+      },
+      {
+       "date": "2026-06-25",
+       "text": "Bella is training for the Lagos marathon with me over video calls."
+      },
+      {
+       "date": "2026-07-02",
+       "text": "Bella ran 21 km in training this week."
+      },
+      {
+       "date": "2026-07-16",
+       "text": "Bella's bank moved her to a new team."
+      },
+      {
+       "date": "2026-07-28",
+       "text": "Bella complained about the Nairobi traffic again."
+      },
+      {
+       "date": "2026-08-10",
+       "text": "Bella and I compared our marathon training plans."
+      },
+      {
+       "date": "2026-08-22",
+       "text": "Bella is thinking about buying a small flat."
+      },
+      {
+       "date": "2026-08-30",
+       "text": "Bella's birthday is on 21 November."
+      },
+      {
+       "date": "2026-09-05",
+       "text": "Bella adopted a daily stretching routine."
+      },
+      {
+       "date": "2026-09-14",
+       "text": "Bella is learning a bit of French."
+      },
+      {
+       "date": "2026-09-23",
+       "text": "Bella sent me a playlist for long runs."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "Bella finished a 30 km training run."
+      },
+      {
+       "date": "2026-10-05",
+       "text": "Bella's mother visited her for a week."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "Bella is visiting me in the first week of November."
+      },
+      {
+       "date": "2026-10-17",
+       "text": "Bella and I talked about marathon-day pacing."
+      },
+      {
+       "date": "2026-10-24",
+       "text": "Bella booked her flight for the visit."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Bella said she wants to see the river walk when she comes."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "bellaL_s1",
+     "date": "2026-11-02",
+     "text": "Bella is hiding under the bed because of the fireworks.",
+     "answer": "bella_cat",
+     "level": "easy",
+     "why": "pet behaviour"
+    },
+    {
+     "id": "bellaL_s2",
+     "date": "2026-11-03",
+     "text": "Bella and I finished our long run at 7 am.",
+     "answer": "bella_friend",
+     "level": "easy",
+     "why": "running together"
+    },
+    {
+     "id": "bellaL_s3",
+     "date": "2026-11-04",
+     "text": "I need to buy a present for Bella before the 21st.",
+     "answer": "bella_friend",
+     "level": "hard",
+     "why": "only the birthday date separates them (cat's is 14 March)"
+    },
+    {
+     "id": "bellaL_s4",
+     "date": "2026-11-06",
+     "text": "Bella wouldn't touch her dinner tonight.",
+     "answer": "bella_cat",
+     "level": "hard",
+     "why": "pet-like, no explicit marker"
+    },
+    {
+     "id": "bellaL_s5",
+     "date": "2026-11-07",
+     "text": "I really miss Bella.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "nothing separates the two"
+    }
+   ]
+  },
+  {
+   "id": "bossL",
+   "name": "my boss",
+   "kind": "'my boss' after a job change",
+   "folders": [
+    {
+     "id": "boss_karen",
+     "label": "Karen Whitfield, former boss at Nimbus Retail",
+     "aliases": [
+      "my boss",
+      "Karen"
+     ],
+     "facts": [
+      {
+       "date": "2025-11-03",
+       "text": "My boss at Nimbus Retail is Karen Whitfield."
+      },
+      {
+       "date": "2025-11-10",
+       "text": "Karen holds the Monday sales huddle at 8:30."
+      },
+      {
+       "date": "2025-11-24",
+       "text": "Karen drinks green tea and keeps a jar of biscuits on her desk."
+      },
+      {
+       "date": "2025-12-08",
+       "text": "Karen set the targets for the holiday season."
+      },
+      {
+       "date": "2025-12-19",
+       "text": "Karen gave the whole team a small gift card."
+      },
+      {
+       "date": "2026-01-06",
+       "text": "Karen reorganised the shifts for the January sale."
+      },
+      {
+       "date": "2026-01-15",
+       "text": "My boss Karen makes the team work Saturdays during stocktake."
+      },
+      {
+       "date": "2026-01-27",
+       "text": "Karen asked everyone to wear the new uniform."
+      },
+      {
+       "date": "2026-02-09",
+       "text": "Karen is training for a half marathon."
+      },
+      {
+       "date": "2026-02-23",
+       "text": "Karen was on a regional managers' call all morning."
+      },
+      {
+       "date": "2026-03-04",
+       "text": "Karen approved my request to swap Tuesday shifts."
+      },
+      {
+       "date": "2026-03-16",
+       "text": "Karen introduced a daily stock-count checklist."
+      },
+      {
+       "date": "2026-03-30",
+       "text": "Karen visited head office in Leeds for two days."
+      },
+      {
+       "date": "2026-04-07",
+       "text": "Karen held a store meeting about shrinkage numbers."
+      },
+      {
+       "date": "2026-04-20",
+       "text": "Karen reads every email I send to clients before it goes out."
+      },
+      {
+       "date": "2026-05-04",
+       "text": "Karen is always the first to arrive and the last to leave."
+      },
+      {
+       "date": "2026-05-18",
+       "text": "Karen praised my work on the window display."
+      },
+      {
+       "date": "2026-05-29",
+       "text": "Karen went on a week's leave to Spain."
+      },
+      {
+       "date": "2026-06-12",
+       "text": "Karen asked me to train the two summer interns."
+      },
+      {
+       "date": "2026-06-30",
+       "text": "My boss gave me a so-so performance review."
+      },
+      {
+       "date": "2026-07-02",
+       "text": "Karen announced the autumn range launch dates."
+      },
+      {
+       "date": "2026-07-16",
+       "text": "Karen cancelled the team lunch because of a delivery delay."
+      },
+      {
+       "date": "2026-07-27",
+       "text": "Karen asked about my career plans in my one-to-one."
+      },
+      {
+       "date": "2026-08-03",
+       "text": "Karen was irritated when I asked for a day off."
+      },
+      {
+       "date": "2026-08-14",
+       "text": "I resigned from Nimbus Retail; my last day is 30 September."
+      },
+      {
+       "date": "2026-08-24",
+       "text": "Karen asked who would cover my shifts after I leave."
+      },
+      {
+       "date": "2026-09-08",
+       "text": "Karen organised a leaving lunch for me at the Italian place."
+      },
+      {
+       "date": "2026-09-17",
+       "text": "Karen asked me to write a handover document."
+      },
+      {
+       "date": "2026-09-24",
+       "text": "Karen asked me to hand over my keys on the last day."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "Today was my last day at Nimbus; Karen gave me a card."
+      }
+     ]
+    },
+    {
+     "id": "boss_dev",
+     "label": "Dev Malhotra, current boss at Orbit Analytics",
+     "aliases": [
+      "my boss",
+      "Dev"
+     ],
+     "facts": [
+      {
+       "date": "2026-09-01",
+       "text": "I accepted a job at Orbit Analytics starting 5 October."
+      },
+      {
+       "date": "2026-10-05",
+       "text": "First day at Orbit. My boss there is Dev Malhotra."
+      },
+      {
+       "date": "2026-10-06",
+       "text": "Dev introduced me to the rest of the analytics team."
+      },
+      {
+       "date": "2026-10-06",
+       "text": "Dev shared the team's onboarding checklist."
+      },
+      {
+       "date": "2026-10-07",
+       "text": "Dev set up my laptop access and shared drive permissions."
+      },
+      {
+       "date": "2026-10-07",
+       "text": "Dev has a standing meeting with finance on Mondays."
+      },
+      {
+       "date": "2026-10-08",
+       "text": "Dev asked me to shadow the weekly client dashboard review."
+      },
+      {
+       "date": "2026-10-09",
+       "text": "Dev prefers messages on Slack over email."
+      },
+      {
+       "date": "2026-10-09",
+       "text": "Dev said the team uses a four-day review cycle."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "My boss Dev lets us work from home on Wednesdays."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "Dev's team shares a stand-up channel called #orbit-data."
+      },
+      {
+       "date": "2026-10-13",
+       "text": "Dev explained the quarterly planning cycle to me."
+      },
+      {
+       "date": "2026-10-14",
+       "text": "Dev is at the office Tuesdays to Thursdays."
+      },
+      {
+       "date": "2026-10-14",
+       "text": "Dev expects weekly written updates by Friday noon."
+      },
+      {
+       "date": "2026-10-15",
+       "text": "Dev reviewed my first SQL notebook and left comments."
+      },
+      {
+       "date": "2026-10-15",
+       "text": "Dev recommended a book on data storytelling."
+      },
+      {
+       "date": "2026-10-16",
+       "text": "Dev suggested I take the data-quality course."
+      },
+      {
+       "date": "2026-10-19",
+       "text": "Dev is going on a two-day offsite with his own manager."
+      },
+      {
+       "date": "2026-10-19",
+       "text": "Dev invited me to the Thursday team coffee."
+      },
+      {
+       "date": "2026-10-20",
+       "text": "Dev gave me ownership of the weekly churn report."
+      },
+      {
+       "date": "2026-10-20",
+       "text": "Dev asked me to document the churn model assumptions."
+      },
+      {
+       "date": "2026-10-21",
+       "text": "Dev reminded the team to log hours by Friday."
+      },
+      {
+       "date": "2026-10-22",
+       "text": "Dev asked for volunteers for the hackathon."
+      },
+      {
+       "date": "2026-10-22",
+       "text": "Dev reminded us the VPN password rotates monthly."
+      },
+      {
+       "date": "2026-10-23",
+       "text": "Dev praised my churn report in the team channel."
+      },
+      {
+       "date": "2026-10-26",
+       "text": "Dev holds one-to-ones every Thursday and asks for my goals."
+      },
+      {
+       "date": "2026-10-27",
+       "text": "Dev moved the standup to 10:00."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Dev asked me to prepare slides for the monthly review."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Dev corrected a chart axis on my slide."
+      },
+      {
+       "date": "2026-10-29",
+       "text": "Dev said the budget for new tools is frozen until January."
+      },
+      {
+       "date": "2026-10-30",
+       "text": "Dev likes to end meetings five minutes early."
+      },
+      {
+       "date": "2026-10-30",
+       "text": "Dev said the team should reply to client emails within a day."
+      },
+      {
+       "date": "2026-10-31",
+       "text": "Dev wore a Halloween costume to the team call."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "bossL_s1",
+     "date": "2026-11-03",
+     "text": "My boss approved my leave for the week of Diwali.",
+     "answer": "boss_dev",
+     "level": "easy",
+     "why": "current boss"
+    },
+    {
+     "id": "bossL_s2",
+     "date": "2026-11-05",
+     "text": "My boss used to read every email I sent to clients, I still flinch.",
+     "answer": "boss_karen",
+     "level": "hard",
+     "why": "past tense + Karen's habit"
+    },
+    {
+     "id": "bossL_s3",
+     "date": "2026-11-06",
+     "text": "My boss wants the quarterly numbers by Friday.",
+     "answer": "boss_dev",
+     "level": "easy",
+     "why": "current boss"
+    },
+    {
+     "id": "bossL_s4",
+     "date": "2026-11-08",
+     "text": "My boss texted me to say congratulations.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "could be either"
+    }
+   ]
+  },
+  {
+   "id": "leoL",
+   "name": "Leo",
+   "kind": "dog vs nephew",
+   "folders": [
+    {
+     "id": "leo_dog",
+     "label": "Leo, my golden retriever",
+     "aliases": [
+      "Leo"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-01",
+       "text": "I got a golden retriever puppy named Leo."
+      },
+      {
+       "date": "2026-02-05",
+       "text": "Leo slept through his first night in the crate."
+      },
+      {
+       "date": "2026-02-12",
+       "text": "Leo is learning to sit for treats."
+      },
+      {
+       "date": "2026-02-24",
+       "text": "Leo had his first vet check-up."
+      },
+      {
+       "date": "2026-03-08",
+       "text": "Leo discovered the garden hose."
+      },
+      {
+       "date": "2026-03-21",
+       "text": "Leo gets very excited when the postman arrives."
+      },
+      {
+       "date": "2026-04-01",
+       "text": "Leo has started on adult-size kibble sample packs."
+      },
+      {
+       "date": "2026-04-15",
+       "text": "Leo has been chewing my slippers."
+      },
+      {
+       "date": "2026-04-27",
+       "text": "Leo learned the command 'stay'."
+      },
+      {
+       "date": "2026-05-09",
+       "text": "Leo splashed in a stream for the first time."
+      },
+      {
+       "date": "2026-05-22",
+       "text": "Leo met the neighbour's labrador and they became friends."
+      },
+      {
+       "date": "2026-06-02",
+       "text": "Leo got a new red collar."
+      },
+      {
+       "date": "2026-06-09",
+       "text": "Leo finished puppy school."
+      },
+      {
+       "date": "2026-06-20",
+       "text": "Leo learned to give his paw."
+      },
+      {
+       "date": "2026-07-04",
+       "text": "Leo hid under the table during the fireworks practice."
+      },
+      {
+       "date": "2026-07-19",
+       "text": "Leo dug a hole in the flower bed."
+      },
+      {
+       "date": "2026-08-01",
+       "text": "Leo got neutering booked for September."
+      },
+      {
+       "date": "2026-08-15",
+       "text": "Leo loves rolling in the grass after a bath."
+      },
+      {
+       "date": "2026-08-29",
+       "text": "Leo drank from the paddling pool."
+      },
+      {
+       "date": "2026-09-03",
+       "text": "Leo came back from the vet after his check-up."
+      },
+      {
+       "date": "2026-09-12",
+       "text": "Leo weighs 28 kg now and needs a bigger crate."
+      },
+      {
+       "date": "2026-09-20",
+       "text": "Leo learned to fetch the newspaper."
+      },
+      {
+       "date": "2026-09-26",
+       "text": "Leo has a new orthopaedic bed."
+      },
+      {
+       "date": "2026-10-03",
+       "text": "Leo is on twice-daily meals now."
+      },
+      {
+       "date": "2026-10-09",
+       "text": "Leo met a golden retriever at the dog park."
+      },
+      {
+       "date": "2026-10-15",
+       "text": "Leo gets a long walk before breakfast."
+      },
+      {
+       "date": "2026-10-21",
+       "text": "Leo got a new chew toy shaped like a bone."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Leo barks at his reflection in the glass door."
+      },
+      {
+       "date": "2026-10-30",
+       "text": "Leo ate his dinner very fast tonight."
+      }
+     ]
+    },
+    {
+     "id": "leo_nephew",
+     "label": "Leo, my 5-year-old nephew in Bristol",
+     "aliases": [
+      "Leo",
+      "my nephew"
+     ],
+     "facts": [
+      {
+       "date": "2026-03-03",
+       "text": "My nephew Leo is 5 and just started school in Bristol."
+      },
+      {
+       "date": "2026-03-10",
+       "text": "Leo's school bag has a dinosaur on it."
+      },
+      {
+       "date": "2026-03-24",
+       "text": "Leo can write his name now."
+      },
+      {
+       "date": "2026-04-05",
+       "text": "Leo is learning to count to 50."
+      },
+      {
+       "date": "2026-04-18",
+       "text": "Leo drew me a picture of our house."
+      },
+      {
+       "date": "2026-04-29",
+       "text": "Leo had a birthday party with a bouncy castle."
+      },
+      {
+       "date": "2026-05-12",
+       "text": "Leo's favourite colour is orange."
+      },
+      {
+       "date": "2026-05-28",
+       "text": "Leo loves dinosaurs, especially the stegosaurus."
+      },
+      {
+       "date": "2026-06-03",
+       "text": "Leo loves pasta with butter."
+      },
+      {
+       "date": "2026-06-16",
+       "text": "Leo told me his teacher is called Miss Ruth."
+      },
+      {
+       "date": "2026-06-30",
+       "text": "Leo has a goldfish named Bubbles."
+      },
+      {
+       "date": "2026-07-08",
+       "text": "Leo goes swimming on Saturdays."
+      },
+      {
+       "date": "2026-07-21",
+       "text": "Leo built a huge lego castle."
+      },
+      {
+       "date": "2026-08-04",
+       "text": "Leo won a certificate for reading at school."
+      },
+      {
+       "date": "2026-08-12",
+       "text": "Leo and I baked biscuits during his August stay."
+      },
+      {
+       "date": "2026-08-23",
+       "text": "Leo stays with me for a week every August."
+      },
+      {
+       "date": "2026-08-26",
+       "text": "Leo cried when it was time to go home."
+      },
+      {
+       "date": "2026-09-06",
+       "text": "Leo started Year 1 in a new class."
+      },
+      {
+       "date": "2026-09-15",
+       "text": "Leo made a friend called Arjun at school."
+      },
+      {
+       "date": "2026-09-24",
+       "text": "Leo got a new scooter."
+      },
+      {
+       "date": "2026-09-30",
+       "text": "Leo is scared of the school bus horn."
+      },
+      {
+       "date": "2026-10-05",
+       "text": "Leo asked for a stegosaurus sticker book."
+      },
+      {
+       "date": "2026-10-10",
+       "text": "Leo can now ride his scooter very fast."
+      },
+      {
+       "date": "2026-10-14",
+       "text": "Leo's stabilisers were taken off on Saturday."
+      },
+      {
+       "date": "2026-10-18",
+       "text": "Leo is learning to ride a bike without stabilisers."
+      },
+      {
+       "date": "2026-10-22",
+       "text": "Leo showed my sister the bike on a video call."
+      },
+      {
+       "date": "2026-10-25",
+       "text": "Leo is excited about Halloween."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Leo wants to be a dinosaur for Halloween."
+      },
+      {
+       "date": "2026-10-31",
+       "text": "Leo got a candy bag from the neighbours."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "leoL_s1",
+     "date": "2026-11-02",
+     "text": "Leo ate a whole sock and I'm worried.",
+     "answer": "leo_dog",
+     "level": "easy",
+     "why": "chewing"
+    },
+    {
+     "id": "leoL_s2",
+     "date": "2026-11-03",
+     "text": "Leo wants a stegosaurus cake for his birthday.",
+     "answer": "leo_nephew",
+     "level": "easy",
+     "why": "stegosaurus"
+    },
+    {
+     "id": "leoL_s3",
+     "date": "2026-11-05",
+     "text": "Leo fell off and scraped his knees, he was so brave.",
+     "answer": "leo_nephew",
+     "level": "hard",
+     "why": "bike; no explicit marker"
+    },
+    {
+     "id": "leoL_s4",
+     "date": "2026-11-07",
+     "text": "I'm walking Leo around the park for an hour.",
+     "answer": "leo_dog",
+     "level": "hard",
+     "why": "walking suits the dog"
+    },
+    {
+     "id": "leoL_s5",
+     "date": "2026-11-09",
+     "text": "Leo has gone to sleep early after the long day.",
+     "answer": "ask",
+     "level": "hard",
+     "why": "either could"
+    }
+   ]
+  },
+  {
+   "id": "chrisL",
+   "name": "Chris",
+   "kind": "brother vs gym trainer",
+   "folders": [
+    {
+     "id": "chris_brother",
+     "label": "Chris, my brother in Sydney",
+     "aliases": [
+      "Chris",
+      "my brother"
+     ],
+     "facts": [
+      {
+       "date": "2026-01-19",
+       "text": "My brother Chris lives in Sydney."
+      },
+      {
+       "date": "2026-01-25",
+       "text": "Chris works as a marine biologist at the Sydney aquarium."
+      },
+      {
+       "date": "2026-02-07",
+       "text": "Chris cycles to work along the harbour."
+      },
+      {
+       "date": "2026-02-20",
+       "text": "Chris adopted a rescue greyhound named Pepper."
+      },
+      {
+       "date": "2026-03-04",
+       "text": "Chris spent the weekend surfing at Bondi."
+      },
+      {
+       "date": "2026-03-18",
+       "text": "Chris is learning Japanese for his trip."
+      },
+      {
+       "date": "2026-04-04",
+       "text": "Chris has been vegetarian since he was 16."
+      },
+      {
+       "date": "2026-04-13",
+       "text": "Chris sent me photos of the Blue Mountains."
+      },
+      {
+       "date": "2026-04-27",
+       "text": "Chris hosted a barbecue for his colleagues."
+      },
+      {
+       "date": "2026-05-08",
+       "text": "Chris is allergic to shellfish despite working with them."
+      },
+      {
+       "date": "2026-05-21",
+       "text": "Chris's flat in Surry Hills has a great balcony."
+      },
+      {
+       "date": "2026-06-02",
+       "text": "Chris sprained his thumb at climbing."
+      },
+      {
+       "date": "2026-06-15",
+       "text": "Chris was moved to the deep-sea research group."
+      },
+      {
+       "date": "2026-06-28",
+       "text": "Chris said Sydney winter is mild compared to London."
+      },
+      {
+       "date": "2026-07-12",
+       "text": "Chris asked what presents the family wants from Australia."
+      },
+      {
+       "date": "2026-07-20",
+       "text": "Chris is flying to London on 20 November for a week."
+      },
+      {
+       "date": "2026-07-26",
+       "text": "Chris booked his flights to London."
+      },
+      {
+       "date": "2026-08-04",
+       "text": "Chris's mother asked him to bring Vegemite."
+      },
+      {
+       "date": "2026-08-17",
+       "text": "Chris sent a video from his dive trip."
+      },
+      {
+       "date": "2026-08-31",
+       "text": "Chris renewed his passport."
+      },
+      {
+       "date": "2026-09-09",
+       "text": "Chris bought a new camera for the trip."
+      },
+      {
+       "date": "2026-09-18",
+       "text": "Chris called me from the aquarium break room."
+      },
+      {
+       "date": "2026-09-27",
+       "text": "Chris will stay in my spare room when he visits."
+      },
+      {
+       "date": "2026-10-05",
+       "text": "Chris has been packing his suitcase early."
+      },
+      {
+       "date": "2026-10-12",
+       "text": "Chris told me about a new vegetarian cafe he found in Newtown."
+      },
+      {
+       "date": "2026-10-19",
+       "text": "Chris wanted to know the winter weather in London."
+      },
+      {
+       "date": "2026-10-24",
+       "text": "Chris sent his flight itinerary to the family chat."
+      },
+      {
+       "date": "2026-10-28",
+       "text": "Chris said he will land early in the morning."
+      }
+     ]
+    },
+    {
+     "id": "chris_trainer",
+     "label": "Chris, my gym trainer at FitBox",
+     "aliases": [
+      "Chris",
+      "my trainer"
+     ],
+     "facts": [
+      {
+       "date": "2026-02-25",
+       "text": "My gym trainer is Chris at FitBox on Elm Street."
+      },
+      {
+       "date": "2026-03-03",
+       "text": "Chris at FitBox runs the 6 am class."
+      },
+      {
+       "date": "2026-03-17",
+       "text": "Chris corrected my squat form."
+      },
+      {
+       "date": "2026-03-31",
+       "text": "Chris recorded my starting weight."
+      },
+      {
+       "date": "2026-04-14",
+       "text": "Chris added kettlebell swings to my plan."
+      },
+      {
+       "date": "2026-04-28",
+       "text": "Chris told me to stretch before every session."
+      },
+      {
+       "date": "2026-05-15",
+       "text": "Chris has me doing deadlifts on Mondays and Thursdays."
+      },
+      {
+       "date": "2026-05-26",
+       "text": "Chris tracks my progress in a spreadsheet."
+      },
+      {
+       "date": "2026-06-09",
+       "text": "Chris moved my Thursday session to 7 am."
+      },
+      {
+       "date": "2026-06-23",
+       "text": "Chris gave me a resistance band for home."
+      },
+      {
+       "date": "2026-07-07",
+       "text": "Chris said my deadlift improved by 15 kg."
+      },
+      {
+       "date": "2026-07-21",
+       "text": "Chris recommended a new pair of lifting shoes."
+      },
+      {
+       "date": "2026-08-04",
+       "text": "Chris measured my body fat again."
+      },
+      {
+       "date": "2026-08-11",
+       "text": "Chris told me to cut down on sugar."
+      },
+      {
+       "date": "2026-08-25",
+       "text": "Chris asked me to log my meals for a week."
+      },
+      {
+       "date": "2026-08-30",
+       "text": "Chris celebrated one year at FitBox."
+      },
+      {
+       "date": "2026-09-08",
+       "text": "Chris introduced me to the rowing machine."
+      },
+      {
+       "date": "2026-09-15",
+       "text": "Chris is training for a local powerlifting meet."
+      },
+      {
+       "date": "2026-09-22",
+       "text": "Chris wants me to try a 5 am class once."
+      },
+      {
+       "date": "2026-09-29",
+       "text": "Chris said my protein intake looks low on the meal log."
+      },
+      {
+       "date": "2026-10-01",
+       "text": "Chris booked my progress review for November."
+      },
+      {
+       "date": "2026-10-06",
+       "text": "Chris re-did my training plan for autumn."
+      },
+      {
+       "date": "2026-10-08",
+       "text": "Chris suggested adding a weekend walk."
+      },
+      {
+       "date": "2026-10-10",
+       "text": "Chris gave me a new mobility routine."
+      },
+      {
+       "date": "2026-10-13",
+       "text": "Chris said he'd pause sessions for his holiday."
+      },
+      {
+       "date": "2026-10-14",
+       "text": "Chris is away on holiday until the end of November."
+      },
+      {
+       "date": "2026-10-15",
+       "text": "Chris emailed me the autumn schedule."
+      },
+      {
+       "date": "2026-10-16",
+       "text": "Chris and I agreed my sessions restart in December."
+      }
+     ]
+    }
+   ],
+   "statements": [
+    {
+     "id": "chrisL_s1",
+     "date": "2026-11-02",
+     "text": "Chris is bringing me a boomerang from Australia.",
+     "answer": "chris_brother",
+     "level": "easy",
+     "why": "Australia"
+    },
+    {
+     "id": "chrisL_s2",
+     "date": "2026-11-04",
+     "text": "Chris cancelled my Thursday session.",
+     "answer": "chris_trainer",
+     "level": "easy",
+     "why": "session"
+    },
+    {
+     "id": "chrisL_s3",
+     "date": "2026-11-06",
+     "text": "Chris says I should eat more protein.",
+     "answer": "chris_trainer",
+     "level": "hard",
+     "why": "brother is vegetarian; trainer gives diet advice"
+    },
+    {
+     "id": "chrisL_s4",
+     "date": "2026-11-08",
+     "text": "Chris wants to try the new vegetarian place on the high street.",
+     "answer": "chris_brother",
+     "level": "hard",
+     "why": "vegetarian"
+    },
+    {
+     "id": "chrisL_s5",
+     "date": "2026-11-20",
+     "text": "Chris texted to say he's landed.",
+     "answer": "chris_brother",
+     "level": "hard",
+     "why": "brother flies in 20 Nov"
+    }
+   ]
+  }
+ ]
+}
