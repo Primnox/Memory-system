@@ -359,6 +359,8 @@ one folder (two Rohans, a cat and a friend both called Bella, "my boss" after a 
 model is given the whole of the matching folders plus the new statement and answers with one folder or
 "ask" (ask the user).
 
+Rows (a)-(c) were first run without the index; row (d) adds it (see below).
+
 Test set: `data/collision/collision_set.json`, 15 hand-written synthetic scenarios (no private data), each
 with two same-named folders of 3-6 facts and 4-5 new statements (67 in all) whose correct folder is known;
 11 of the 67 should be answered "ask". Mix: easy (a distinguishing detail is present), and hard (pronouns,
@@ -371,7 +373,8 @@ three rows, so the model only ever sees folders whose name or alias appears in t
 |---|---|---|---|---|---|
 | (a) Code only: most recently used matching folder | 28 (41.8%) | 50.0% | 17/32 · 11/35 | 39 (code never doubts) | 0 |
 | (b) LLM sees names + last fact of each folder | 45 (67.2%) | 69.6% | 26/32 · 19/35 | 6 | 19 (6 / 13) |
-| (c) LLM sees the whole folders | **55 (82.1%)** | **85.7%** | 29/32 · 26/35 | **3** | 13 (7 / 6) |
+| (c) LLM sees the whole folders | **55 (82.1%)** | **85.7%** | 29/32 · 26/35 | 3 | 13 (7 / 6) |
+| (d) LLM sees the whole folders + the index | 50 (74.6%) | 75.0% | 28/32 · 22/35 | 2 | 22 (8 / 14) |
 
 What this shows:
 - **The whole folders do help here:** +15 points over names + last fact (+40 over code), and fewer
@@ -382,6 +385,14 @@ What this shows:
   congratulations", "Maya asked if she can stay at my place", "Mercury is making a mess"). It also took a
   date clue the wrong way once (a present for Bella before the 21st: the cat), and once picked the wrong Rohan
   with low confidence (0.25).
+- **Adding the index did not help; it made this set worse** (82.1% -> 74.6%, 55 -> 50 of 67). Row (d)
+  prepends an index built by code from the folders: the main index (a card per folder: id, aliases, label,
+  number of facts, date range, latest fact) and a days index (date: folder id). It fixed 6 statements and
+  broke 11, nearly all by making the model say "ask" instead of choosing (22 asks, 14 needless, against 6).
+  Why is not tested; a likely reason is that with two folders the index repeats what the folders already
+  say, and the days index lists folder ids without the facts. The cards are built from the label and the
+  latest fact, not from filed slots (this set has no filing), so this is a weak form of the real index and
+  the result does not say what a slot-filed index would do.
 - Seeing only the last fact (b) made the model over-cautious (13 needless asks) and confidently wrong 6
   times; the code-only "most recent folder" is wrong for nearly every case where the newest folder is the
   wrong one.
@@ -392,7 +403,7 @@ the answers myself; which statements "should ask" is my judgement, and a few har
 second reading. The statements are independent (the code baseline's "last used" is not updated between
 them), they are short, and each folder has under ten facts, so whole-folder context is cheap here and may not
 be at real folder sizes. One run per condition at temperature 0 from one model; the free API rate limit
-(429 retries) did not change any answer. Not compared with a trained filing model on this set.
+(429 retries) did not change any answer. Not compared with a trained filing model on this set. The (d) difference is 5 items of 67 from one run, so it is a direction at most.
 
 ## Files
 

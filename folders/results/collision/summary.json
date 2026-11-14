@@ -559,5 +559,140 @@
     "confidence": 0.5
    }
   ]
+ },
+ "whole_folders_plus_index": {
+  "statements": 67,
+  "should_ask": 11,
+  "correct": 50,
+  "accuracy": 0.746,
+  "accuracy_resolvable_only": 0.75,
+  "resolvable": 56,
+  "easy": "28/32",
+  "hard": "22/35",
+  "confident_wrong": 2,
+  "asked": 22,
+  "asked_rightly": 8,
+  "asked_needlessly": 14,
+  "wrong_items": [
+   {
+    "id": "bella_s2",
+    "text": "Bella and I finished our long run at 7 am.",
+    "truth": "bella_friend",
+    "pick": "ask",
+    "confidence": 0.6
+   },
+   {
+    "id": "bella_s4",
+    "text": "Bella wouldn't touch her dinner tonight.",
+    "truth": "bella_cat",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "boss_s1",
+    "text": "My boss approved my leave for the week of Diwali.",
+    "truth": "boss_dev",
+    "pick": "ask",
+    "confidence": 0.65
+   },
+   {
+    "id": "boss_s2",
+    "text": "My boss used to read every email I sent to clients, I still flinch.",
+    "truth": "boss_karen",
+    "pick": "ask",
+    "confidence": 0.4
+   },
+   {
+    "id": "maya_s5",
+    "text": "Maya asked if she can stay at my place for the weekend.",
+    "truth": "ask",
+    "pick": "maya_sister",
+    "confidence": 0.9
+   },
+   {
+    "id": "sam_s2",
+    "text": "Sam wants to talk to us about the school trip form.",
+    "truth": "sam_teacher",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "leo_s4",
+    "text": "I'm walking Leo around the park for an hour.",
+    "truth": "leo_dog",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "shah_s1",
+    "text": "Dr Shah says I shouldn't eat anything hard for 24 hours.",
+    "truth": "shah_dentist",
+    "pick": "ask",
+    "confidence": 0.45
+   },
+   {
+    "id": "shah_s4",
+    "text": "I have to be at Dr Shah's at 9 on Monday.",
+    "truth": "ask",
+    "pick": "shah_dentist",
+    "confidence": 0.85
+   },
+   {
+    "id": "landlord_s4",
+    "text": "My landlord messaged me about the rent.",
+    "truth": "landlord_okafor",
+    "pick": "ask",
+    "confidence": 0.55
+   },
+   {
+    "id": "chris_s3",
+    "text": "Chris says I should eat more protein.",
+    "truth": "chris_trainer",
+    "pick": "ask",
+    "confidence": 0.35
+   },
+   {
+    "id": "chris_s5",
+    "text": "Chris texted to say he's landed.",
+    "truth": "chris_brother",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "ahmed_s4",
+    "text": "Ahmed called, he wants me to visit before the op.",
+    "truth": "ahmed_grandfather",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "therapist_s2",
+    "text": "I still use the breathing exercise my therapist taught me for panic.",
+    "truth": "therapist_lena",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "mercury_s3",
+    "text": "Mercury cancelled our Friday call.",
+    "truth": "mercury_client",
+    "pick": "ask",
+    "confidence": 0.5
+   },
+   {
+    "id": "mercury_s4",
+    "text": "Mercury is making a mess and I have to sort it out.",
+    "truth": "ask",
+    "pick": "mercury_cat",
+    "confidence": 0.75
+   },
+   {
+    "id": "alex_s4",
+    "text": "Alex and I finally sorted out the lease termination.",
+    "truth": "alex_ex",
+    "pick": "ask",
+    "confidence": 0.5
+   }
+  ]
  }
 }
