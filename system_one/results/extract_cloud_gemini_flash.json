@@ -1,0 +1,11 @@
+{
+ "tag": "cloud_gemini_flash",
+ "messages": 234,
+ "reference_facts": 309,
+ "statements": 684,
+ "recall": 0.521,
+ "precision": 0.253,
+ "f1": 0.341,
+ "empty_messages": "27/234",
+ "statements_per_message": 2.92
+}
