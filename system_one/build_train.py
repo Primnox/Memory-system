@@ -65,15 +65,16 @@ def embed(texts: list[str]) -> dict:
     import torch
     from transformers import AutoModel, AutoTokenizer
     name = "sentence-transformers/all-MiniLM-L6-v2"
-    tok, model = AutoTokenizer.from_pretrained(name), AutoModel.from_pretrained(name).eval()
+    dev = "cuda" if torch.cuda.is_available() else "cpu"   # local r10b runner: the ROCm wheel's CPU path is very slow
+    tok, model = AutoTokenizer.from_pretrained(name), AutoModel.from_pretrained(name).eval().to(dev)
     out = {}
     with torch.no_grad():
         for i in range(0, len(texts), 64):
             chunk = texts[i:i + 64]
-            enc = tok(chunk, padding=True, truncation=True, return_tensors="pt")
+            enc = tok(chunk, padding=True, truncation=True, return_tensors="pt").to(dev)
             h = model(**enc).last_hidden_state
             m = enc["attention_mask"].unsqueeze(-1).float()
-            out.update(zip(chunk, torch.nn.functional.normalize((h * m).sum(1) / m.sum(1), dim=-1)))
+            out.update(zip(chunk, torch.nn.functional.normalize((h * m).sum(1) / m.sum(1), dim=-1).cpu()))
     return out
 
 
