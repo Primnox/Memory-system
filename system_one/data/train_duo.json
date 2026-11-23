@@ -1,0 +1,6688 @@
+[
+ {
+  "scenario": "lukas-florence-marseille",
+  "speakers": [
+   "Lukas",
+   "Florence"
+  ],
+  "today": "2026-04-08",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-15",
+    "text": "Lukas is a parish priest in a rural part of Hokkaido.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-15",
+    "text": "Florence works as an insurance adjuster in Marseille.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-15",
+    "text": "Lukas worked with Florence at his very first job.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-15",
+    "text": "Florence was colleagues with Lukas early in her career.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-28",
+    "text": "Lukas is 49 years old.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-28",
+    "text": "Florence is 48 years old.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-10",
+    "text": "Lukas lives with his partner Kenji.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-03-10",
+    "text": "Florence is in a long-distance relationship with Julien, who lives in Paris.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-20",
+    "text": "Florence has been struggling with long COVID symptoms, mainly fatigue.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-20",
+    "text": "Florence is currently paying off a large amount of student debt.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-05",
+    "text": "Lukas enjoys reading historical theology books in his free time.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-05",
+    "text": "Florence mentioned she owes about 50,000 euros in student loans.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-12",
+    "text": "Florence corrected her earlier statement and said she actually owes 45,000 euros.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-25",
+    "text": "Lukas started growing tomatoes in a small greenhouse.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-25",
+    "text": "Kenji's daughter Hana is planning to move in with Lukas and Kenji.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-10",
+    "text": "Florence took a weekend trip to Paris to see Julien.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-05-10",
+    "text": "Florence visited the Louvre museum during her trip.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-05-22",
+    "text": "Lukas celebrated his 50th birthday with a small parish gathering.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-22",
+    "text": "Lukas turned 50 years old.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-06-05",
+    "text": "Florence turned 49 years old.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-15",
+    "text": "Kenji's daughter Hana officially moved into the house with Lukas and Kenji.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-06-15",
+    "text": "Lukas now lives with his partner Kenji and Kenji's child Hana.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-06-20",
+    "text": "Lukas broke his favorite coffee mug.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-06-25",
+    "text": "Lukas bought a handmade ceramic mug to replace his broken one.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-06-30",
+    "text": "Florence's long COVID started causing her severe brain fog at work.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-07-10",
+    "text": "Lukas inherited a significant amount of money from a distant aunt.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-07-10",
+    "text": "Lukas feels overwhelmed by the sudden inheritance.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2025-07-20",
+    "text": "Florence began a new physical therapy routine for her long COVID.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-08-01",
+    "text": "Julien got a new job offer in Lyon.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-08-05",
+    "text": "Florence's car was rear-ended and sent to the repair shop.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2025-08-15",
+    "text": "Julien moved from Paris to Lyon for his new job.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-08-15",
+    "text": "Florence is now in a long-distance relationship with Julien, who lives in Lyon.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s33",
+    "date": "2025-08-20",
+    "text": "Florence got her car back from the repair shop fully fixed.",
+    "replaces": [
+     "s30"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2025-08-30",
+    "text": "Lukas bought a used Subaru for driving around the Hokkaido farms.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2025-09-12",
+    "text": "Florence started watercolor painting to help relax in the evenings.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-09-25",
+    "text": "Lukas also started practicing woodworking in his garage.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2025-10-05",
+    "text": "Florence paid off 5,000 euros of her student debt.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2025-10-05",
+    "text": "Florence now owes 40,000 euros in student loans.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2025-10-20",
+    "text": "Lukas used some of his inheritance to renovate the parish hall.",
+    "replaces": []
+   },
+   {
+    "id": "s40",
+    "date": "2025-11-02",
+    "text": "Florence got promoted to Senior Adjuster at her firm in Marseille.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s41",
+    "date": "2025-11-02",
+    "text": "Florence's promotion comes with a small salary increase.",
+    "replaces": []
+   },
+   {
+    "id": "s42",
+    "date": "2025-11-18",
+    "text": "Hana started middle school in the neighboring town.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2025-11-20",
+    "text": "Florence temporarily cut out caffeine to see if it helped her fatigue.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2025-12-05",
+    "text": "Lukas plans to visit Sapporo in February for the snow festival.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2025-12-10",
+    "text": "Florence started drinking coffee again because quitting didn't help her long COVID.",
+    "replaces": [
+     "s43"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2025-12-20",
+    "text": "Florence quit watercolor painting because it frustrated her.",
+    "replaces": [
+     "s35"
+    ]
+   },
+   {
+    "id": "s47",
+    "date": "2025-12-20",
+    "text": "Florence started making pottery instead of painting.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2026-01-10",
+    "text": "Lukas cancelled his planned trip to Sapporo due to a blizzard.",
+    "replaces": [
+     "s44"
+    ]
+   },
+   {
+    "id": "s49",
+    "date": "2026-01-25",
+    "text": "Florence's brain fog from long COVID has slightly improved.",
+    "replaces": []
+   },
+   {
+    "id": "s50",
+    "date": "2026-02-10",
+    "text": "Lukas adopted a stray Shiba Inu puppy that wandered into the church.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-02-10",
+    "text": "Lukas named his new puppy Taro.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-02-28",
+    "text": "Florence paid off another 10,000 euros of her student debt.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-02-28",
+    "text": "Florence's student loan balance is now down to 30,000 euros.",
+    "replaces": [
+     "s38"
+    ]
+   },
+   {
+    "id": "s54",
+    "date": "2026-03-01",
+    "text": "Lukas changed his daily routine to walk Taro every morning at 6 AM.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-03-15",
+    "text": "Taro got sick with a minor stomach infection.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-03-20",
+    "text": "Taro fully recovered from his stomach infection.",
+    "replaces": [
+     "s55"
+    ]
+   },
+   {
+    "id": "s57",
+    "date": "2026-03-25",
+    "text": "Lukas built a new wooden altar for the church using his woodworking skills.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-04-01",
+    "text": "Florence visited Lyon for the first time to spend the weekend with Julien.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-04-02",
+    "text": "Lukas shifted Taro's morning walk to 7 AM because of the cold.",
+    "replaces": [
+     "s54"
+    ]
+   },
+   {
+    "id": "s60",
+    "date": "2026-04-05",
+    "text": "Lukas mentioned he has no known health issues at the moment.",
+    "replaces": []
+   },
+   {
+    "id": "s61",
+    "date": "2026-04-06",
+    "text": "Florence decided she wanted to buy a new smartphone.",
+    "replaces": []
+   },
+   {
+    "id": "s62",
+    "date": "2026-04-07",
+    "text": "Florence bought an iPhone 15 to replace her broken Android.",
+    "replaces": [
+     "s61"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where does Lukas currently work as a parish priest?",
+    "type": "current",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What hobbies does Lukas enjoy doing in his free time?",
+    "type": "current",
+    "answer_ids": [
+     "s11",
+     "s14",
+     "s36"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What is Florence's primary ongoing health condition?",
+    "type": "current",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Who is currently living in the same house as Lukas?",
+    "type": "current",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "How much student debt does Florence have right now?",
+    "type": "current",
+    "answer_ids": [
+     "s53"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where does Florence's boyfriend Julien currently live?",
+    "type": "current",
+    "answer_ids": [
+     "s32"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is Florence's current job role at her firm?",
+    "type": "current",
+    "answer_ids": [
+     "s40"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How much student debt was Florence reported to owe in early April 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2025-04-10"
+   },
+   {
+    "id": "q9",
+    "text": "Where did Florence's boyfriend live in the spring of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": "2025-05-01"
+   },
+   {
+    "id": "q10",
+    "text": "What was Florence's evening hobby in November 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s35"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q11",
+    "text": "What time of day did Lukas take Taro for a walk in early March 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s54"
+    ],
+    "as_of": "2026-03-10"
+   },
+   {
+    "id": "q12",
+    "text": "What jobs has Florence held since the start of her career?",
+    "type": "history",
+    "answer_ids": [
+     "s2",
+     "s40"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What cities did Florence travel to for weekend trips?",
+    "type": "history",
+    "answer_ids": [
+     "s16",
+     "s58"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What did Lukas renovate using his inheritance?",
+    "type": "history",
+    "answer_ids": [
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What happened to Florence's car in August 2025?",
+    "type": "history",
+    "answer_ids": [
+     "s30",
+     "s33"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What were Lukas's travel plans for February 2026?",
+    "type": "history",
+    "answer_ids": [
+     "s44"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What minor health issue did Taro the puppy have?",
+    "type": "history",
+    "answer_ids": [
+     "s55"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "Why did Florence temporarily stop drinking caffeine?",
+    "type": "history",
+    "answer_ids": [
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What electronic device did Florence decide to replace?",
+    "type": "history",
+    "answer_ids": [
+     "s61",
+     "s62"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "What was the name of the previous parish Lukas worked at?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What did Florence study during her time at university?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "Has Lukas ever travelled to France to visit Florence?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s15",
+    "s21"
+   ],
+   [
+    "s23",
+    "s24"
+   ]
+  ]
+ },
+ {
+  "scenario": "rodrigo-mateo-cusco",
+  "speakers": [
+   "Rodrigo",
+   "Mateo"
+  ],
+  "today": "2026-07-20",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-08-10",
+    "text": "Mateo lives alone in a small rented apartment in central Bogotá.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-08-10",
+    "text": "Rodrigo shares a rented apartment in Cusco with his romantic partners Lucía and Tomás.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-08-10",
+    "text": "Mateo raised three children as a single parent after his spouse died decades ago.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-08-10",
+    "text": "Rodrigo works as an inbound customer service agent on the night shift at a Cusco call centre.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-08-25",
+    "text": "Rodrigo must adhere to a strict gluten-free diet due to chronic coeliac disease.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-08-25",
+    "text": "Mateo lives paycheck to paycheck on a minimal municipal crossing guard pension.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-08-25",
+    "text": "Mateo attends weekly cognitive therapy sessions with Dr. Morales to manage severe depression.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-08-25",
+    "text": "Rodrigo plays first board for the Los Cóndores amateur regional chess club.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-09-12",
+    "text": "Rodrigo struggles with thirty thousand soles of debt resulting from his failed catering business.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-09-12",
+    "text": "Mateo wears thick bifocal reading glasses with cracked brown frames.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-09-12",
+    "text": "Mateo takes an hour-long morning walk through Simón Bolívar Park every single day.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-12",
+    "text": "Mateo plays second board for the Los Cóndores chess club alongside Rodrigo.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-10-04",
+    "text": "Rodrigo owns a heavily cracked Motorola phone with a degrading battery.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-10-04",
+    "text": "Rodrigo enjoys playing complex strategic board games with friends on Friday evenings.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-10-04",
+    "text": "Mateo drives a battered 1998 Renault hatchback to get across town in Bogotá.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-10-04",
+    "text": "Rodrigo decided to stop drinking coffee completely to prevent digestive irritation.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-10-22",
+    "text": "Mateo paints delicate watercolour landscapes at a folding table on Sunday afternoons.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-10-22",
+    "text": "Rodrigo arranged a holiday trip to visit his parents in Puno during November.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-10-22",
+    "text": "Rodrigo's partner Lucía started working as a remote freelance graphic designer.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-10-22",
+    "text": "Mateo keeps an elderly singing yellow canary named Sol in his living room.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-11-15",
+    "text": "Mateo previously worked for thirty-five years as a dedicated school crossing guard.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-11-15",
+    "text": "Rodrigo transferred from the night shift to the daytime morning shift at the call centre.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-15",
+    "text": "Rodrigo visited the archaeological ruins of Ollantaytambo on a weekend day excursion.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-11-15",
+    "text": "Mateo developed persistent tendonitis in his right shoulder, causing constant discomfort when lifting objects.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-12-03",
+    "text": "Mateo's eldest daughter Sofía relocated into a newly renovated apartment in northern Bogotá.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-03",
+    "text": "Rodrigo considers the King's Indian Defence the most intellectually challenging chess opening.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-03",
+    "text": "Rodrigo cancelled his scheduled journey to Puno due to mandatory overtime training shifts.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-12-03",
+    "text": "Mateo felt deeply despondent and wept quietly while listening to vintage bolero vinyl records.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2026-01-14",
+    "text": "Mateo announced his inter-club chess match against Tunja will take place on Saturday afternoon.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-01-14",
+    "text": "Rodrigo prepares meals strictly using dedicated gluten-free pots to avoid allergen contamination.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2026-01-14",
+    "text": "Mateo switched his weekly depression therapy sessions to Dr. Silva following Dr. Morales's retirement.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s32",
+    "date": "2026-01-14",
+    "text": "Rodrigo bought a sturdy mountain bicycle for weekend rides across the Sacred Valley.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2026-02-08",
+    "text": "Mateo realized he misread the schedule and confirmed his match against Tunja is Sunday.",
+    "replaces": [
+     "s29"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2026-02-08",
+    "text": "Mateo's son Carlos adopted an energetic rescue shepherd puppy named Trueno.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2026-02-08",
+    "text": "Mateo replaced his cracked reading glasses with new lightweight titanium bifocals from his daughter.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s36",
+    "date": "2026-02-08",
+    "text": "Mateo altered his morning walking route from Simón Bolívar Park to Bogotá's botanical gardens.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s37",
+    "date": "2026-03-02",
+    "text": "Rodrigo won three consecutive rounds representing Los Cóndores at the regional blitz chess tournament.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2026-03-02",
+    "text": "Rodrigo bought a refurbished Samsung smartphone to replace his battered Motorola device.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2026-03-02",
+    "text": "Mateo builds miniature cedar birdhouses on his apartment balcony during sunny mornings.",
+    "replaces": []
+   },
+   {
+    "id": "s40",
+    "date": "2026-03-02",
+    "text": "Rodrigo considers learning conversational Quechua if his weekly schedule ever allows free time.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2026-04-10",
+    "text": "Mateo sold his broken 1998 Renault car and now commutes exclusively using city buses.",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2026-04-10",
+    "text": "Mateo believes that classical acoustic guitar music provides unmatched comfort for troubled souls.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2026-04-10",
+    "text": "Rodrigo resumed drinking a small mug of dark roast coffee each morning.",
+    "replaces": [
+     "s16"
+    ]
+   },
+   {
+    "id": "s44",
+    "date": "2026-04-10",
+    "text": "Rodrigo's younger brother Gabriel finalized the complete repayment of his student loan debts.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2026-05-18",
+    "text": "Rodrigo earned a promotion to morning shift quality monitoring supervisor at the call centre.",
+    "replaces": [
+     "s22"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-05-18",
+    "text": "Mateo attended his ten-year-old grandson's elementary school science fair presentation in Suba.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-05-18",
+    "text": "Mateo buried his beloved yellow canary Sol after the bird died peacefully of old age.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s48",
+    "date": "2026-05-18",
+    "text": "Rodrigo felt thoroughly exhausted and stressed following demanding technical audits at his workplace.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-06-12",
+    "text": "Rodrigo consolidated his catering business debt into a structured five-year municipal bank payment programme.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-06-12",
+    "text": "Mateo bought a warm alpaca wool cardigan to protect himself against chilly Andean evenings.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-06-12",
+    "text": "Rodrigo visited the mountain town of Pisac to compete in an open chess tournament.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-06-12",
+    "text": "Mateo's right shoulder tendonitis has completely resolved following months of targeted physiotherapy exercises.",
+    "replaces": [
+     "s24"
+    ]
+   },
+   {
+    "id": "s53",
+    "date": "2026-07-05",
+    "text": "Mateo's three grown children gathered at his home for their customary monthly family lunch.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-07-05",
+    "text": "Rodrigo participated in a weekend cleanup initiative restoring walking trails near Sacsayhuamán.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-07-05",
+    "text": "Rodrigo now shares the Cusco flat with only Lucía after Tomás moved to Arequipa.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s56",
+    "date": "2026-07-05",
+    "text": "Mateo expressed pride after scoring a draw against a master player in club chess.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-07-16",
+    "text": "Rodrigo continues cooking with corn flour and amaranth to accommodate his lifelong coeliac condition.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-07-16",
+    "text": "Mateo finds steady emotional comfort from his weekly psychological discussions with Dr. Silva.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What creative pastimes and craft activities does Mateo pursue during his free time?",
+    "type": "current",
+    "answer_ids": [
+     "s17",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What recreational pastimes and games does Rodrigo enjoy outside of work?",
+    "type": "current",
+    "answer_ids": [
+     "s14",
+     "s32",
+     "s8"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What financial resource does Mateo rely on to cover his everyday living costs?",
+    "type": "current",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What role and work shift does Rodrigo currently have at the call centre?",
+    "type": "current",
+    "answer_ids": [
+     "s45"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "Where does Mateo go for his daily morning walk nowadays?",
+    "type": "current",
+    "answer_ids": [
+     "s36"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Who shares Rodrigo's apartment in Cusco right now?",
+    "type": "current",
+    "answer_ids": [
+     "s55"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Does Rodrigo currently drink coffee in the mornings?",
+    "type": "current",
+    "answer_ids": [
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What vehicle did Mateo use for his personal transportation around Bogotá in late 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": "2025-11-01"
+   },
+   {
+    "id": "q9",
+    "text": "What shift was Rodrigo working at the call centre in mid-October 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-10-15"
+   },
+   {
+    "id": "q10",
+    "text": "Which mental health professional was treating Mateo for depression in November 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-11-01"
+   },
+   {
+    "id": "q11",
+    "text": "What pet was living in Mateo's apartment toward the end of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": "2025-12-20"
+   },
+   {
+    "id": "q12",
+    "text": "What travels, out-of-town trips, or holiday travel plans did Rodrigo mention over the course of the year?",
+    "type": "history",
+    "answer_ids": [
+     "s18",
+     "s23",
+     "s27",
+     "s51"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What musculoskeletal health issues did Mateo experience with his shoulder?",
+    "type": "history",
+    "answer_ids": [
+     "s24",
+     "s52"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What positions and shifts has Rodrigo held during his time at the call centre?",
+    "type": "history",
+    "answer_ids": [
+     "s22",
+     "s4",
+     "s45"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What was said about the date and scheduling of Mateo's chess match against Tunja?",
+    "type": "history",
+    "answer_ids": [
+     "s29",
+     "s33"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What mobile phones has Rodrigo used or purchased?",
+    "type": "history",
+    "answer_ids": [
+     "s13",
+     "s38"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What was revealed about Rodrigo's financial debt and how it was handled?",
+    "type": "history",
+    "answer_ids": [
+     "s49",
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What tournaments or competitive games did Rodrigo play for the chess club?",
+    "type": "history",
+    "answer_ids": [
+     "s37",
+     "s51"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What musical instrument did Rodrigo learn to play during his childhood?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Which university degree did Mateo complete before becoming a crossing guard?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What make and model of car does Rodrigo drive around Cusco?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "What breeds of pet dogs has Mateo owned during his retirement?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": []
+ },
+ {
+  "scenario": "yumi-ewan-sapporo",
+  "speakers": [
+   "Yumi",
+   "Ewan"
+  ],
+  "today": "2026-03-02",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-01-15",
+    "text": "Yumi, Ewan's cousin, works as a real estate agent in rural Hokkaido.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-01-15",
+    "text": "Ewan is a retired welder living in rural Ireland.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-01-15",
+    "text": "Ewan lives with his wife Siobhan.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-01-15",
+    "text": "Yumi lives alone in a small farmhouse.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-01-20",
+    "text": "Yumi struggles with long COVID symptoms, especially fatigue.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-01-20",
+    "text": "Ewan is currently recovering from prostate cancer.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-01-25",
+    "text": "Yumi constantly worries about living paycheck to paycheck.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-01-25",
+    "text": "Ewan is on a very tight fixed income and struggles financially.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-02-10",
+    "text": "Yumi started knitting scarves to pass the time on low-energy days.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-02-10",
+    "text": "Ewan has to drive to Dublin every Tuesday for cancer checkups.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-02-20",
+    "text": "Ewan's old Ford Fiesta keeps breaking down on the hospital trips.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-03-05",
+    "text": "Yumi was assigned a huge dairy farm to sell for her agency.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-03-05",
+    "text": "Yumi bought a used Suzuki Jimny for showing rural properties.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-03-05",
+    "text": "Ewan said his checkups are actually on Thursdays, not Tuesdays.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-12",
+    "text": "Ewan's son Liam visited them from London for the Easter weekend.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-04-12",
+    "text": "Ewan started carving small wooden animals in his shed.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-04-20",
+    "text": "Yumi experienced a bad long COVID flare-up and had to rest.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-04-20",
+    "text": "Yumi hopes to visit Ireland next year if she sells the farm.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-20",
+    "text": "Ewan's oncologist told him his recovery is going remarkably well.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-05-20",
+    "text": "Yumi successfully sold the dairy farm to a corporate agricultural firm.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-05-25",
+    "text": "Yumi used her commission from the dairy farm to pay off debt.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-06-15",
+    "text": "Yumi's Suzuki Jimny broke its suspension on a dirt road.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-06-15",
+    "text": "Yumi had to rent a Toyota Yaris while her car is repaired.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-06-25",
+    "text": "Ewan and Siobhan adopted a rescue greyhound named Finn.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-06-25",
+    "text": "Ewan's Ford Fiesta finally died completely and was scrapped.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2025-07-02",
+    "text": "Ewan bought a second-hand Volkswagen Golf from his neighbor.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-07-02",
+    "text": "Yumi got her Suzuki Jimny back from the mechanic and returned the rental.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-07-15",
+    "text": "Yumi mentioned she used to be a tour guide in Sapporo.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-08-18",
+    "text": "Ewan finished his cancer treatments and rang the hospital bell.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-08-18",
+    "text": "Ewan's hospital checkups have been reduced to once a month on Thursdays.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s31",
+    "date": "2025-08-25",
+    "text": "Yumi started a small vegetable garden behind her house.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-08-25",
+    "text": "Yumi felt really optimistic that day about her health improving.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2025-09-25",
+    "text": "Ewan's greyhound Finn dug up Siobhan's prized rose bushes.",
+    "replaces": []
+   },
+   {
+    "id": "s34",
+    "date": "2025-09-25",
+    "text": "Yumi was promoted to senior rural agent at her real estate firm.",
+    "replaces": [
+     "s1"
+    ]
+   },
+   {
+    "id": "s35",
+    "date": "2025-09-28",
+    "text": "Yumi got a small raise but still lives paycheck to paycheck.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-09-28",
+    "text": "Ewan sold some of his wooden carvings at the local village fair.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2025-10-30",
+    "text": "Yumi's long COVID symptoms have transitioned into just mild fatigue.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s38",
+    "date": "2025-10-30",
+    "text": "Ewan's neighbor asked him to weld a broken tractor part.",
+    "replaces": []
+   },
+   {
+    "id": "s39",
+    "date": "2025-10-30",
+    "text": "Ewan realized he missed welding and started doing small repair jobs.",
+    "replaces": []
+   },
+   {
+    "id": "s40",
+    "date": "2025-11-15",
+    "text": "Yumi adopted a stray barn cat and named it Mochi.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2025-11-15",
+    "text": "Ewan and Siobhan celebrated their fiftieth wedding anniversary quietly at home.",
+    "replaces": []
+   },
+   {
+    "id": "s42",
+    "date": "2025-11-25",
+    "text": "Yumi is planning to cook a huge Japanese hotpot for New Year's Eve.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2025-12-10",
+    "text": "Yumi's cat Mochi caught three mice in the kitchen this week.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2025-12-10",
+    "text": "Ewan's Volkswagen Golf failed its MOT inspection due to rust.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2025-12-15",
+    "text": "Ewan had to sell the Volkswagen Golf to a scrapyard.",
+    "replaces": [
+     "s26"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-01-05",
+    "text": "Ewan bought an electric bicycle to get around the village.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-01-05",
+    "text": "Yumi left her real estate firm to work as an independent consultant.",
+    "replaces": [
+     "s34"
+    ]
+   },
+   {
+    "id": "s48",
+    "date": "2026-01-10",
+    "text": "Yumi is really enjoying the freedom of being an independent consultant.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-02-12",
+    "text": "Ewan's latest scans showed he is completely cancer-free.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-02-12",
+    "text": "Yumi started practicing watercolor painting of the snowy landscapes.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-02-15",
+    "text": "Ewan's greyhound Finn won a local fun dog show for longest tail.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-02-15",
+    "text": "Yumi also got an electric bicycle to ride around her farm tracks.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-02-18",
+    "text": "Ewan and Siobhan booked a coach tour of Scotland for the spring.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-02-20",
+    "text": "Yumi's cat Mochi ran away into the nearby woods.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-02-24",
+    "text": "Mochi was found hiding in a neighbor's barn and brought home safely.",
+    "replaces": [
+     "s54"
+    ]
+   },
+   {
+    "id": "s56",
+    "date": "2026-02-28",
+    "text": "Ewan's electric bicycle was stolen from outside the village pub.",
+    "replaces": [
+     "s46"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What hobbies does Yumi have?",
+    "type": "current",
+    "answer_ids": [
+     "s31",
+     "s50",
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What are Ewan's hobbies these days?",
+    "type": "current",
+    "answer_ids": [
+     "s16",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What pets do Ewan and Siobhan own?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What is Yumi's current employment situation?",
+    "type": "current",
+    "answer_ids": [
+     "s47"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What is Ewan's current schedule for his hospital checkups?",
+    "type": "current",
+    "answer_ids": [
+     "s30"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where does Yumi currently live?",
+    "type": "current",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is Ewan's most recent cancer status?",
+    "type": "current",
+    "answer_ids": [
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What vehicle does Yumi drive?",
+    "type": "current",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "What was Yumi's job title in October 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s34"
+    ],
+    "as_of": "2025-10-15"
+   },
+   {
+    "id": "q10",
+    "text": "What car was Ewan driving in November 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s26"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q11",
+    "text": "What was Yumi's long COVID situation early last year?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-02-01"
+   },
+   {
+    "id": "q12",
+    "text": "Did Ewan have an electric bicycle in January 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s46"
+    ],
+    "as_of": "2026-01-20"
+   },
+   {
+    "id": "q13",
+    "text": "What was the saga with Yumi's cat Mochi going missing?",
+    "type": "history",
+    "answer_ids": [
+     "s54",
+     "s55"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What has been the history of Ewan's cars and transport since last year?",
+    "type": "history",
+    "answer_ids": [
+     "s11",
+     "s25",
+     "s26",
+     "s44",
+     "s45",
+     "s46",
+     "s56"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What days did Ewan mention going to the hospital for his appointments?",
+    "type": "history",
+    "answer_ids": [
+     "s10",
+     "s14",
+     "s30"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What were all the updates regarding the dairy farm Yumi was assigned to sell?",
+    "type": "history",
+    "answer_ids": [
+     "s12",
+     "s20",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What kind of work did Yumi do in her twenties?",
+    "type": "history",
+    "answer_ids": [
+     "s28"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What has Yumi's job progression been during this period?",
+    "type": "history",
+    "answer_ids": [
+     "s1",
+     "s34",
+     "s47"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "How did Ewan's health and cancer treatments progress over the months?",
+    "type": "history",
+    "answer_ids": [
+     "s19",
+     "s29",
+     "s49",
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "What happened with Yumi's Suzuki Jimny breaking down?",
+    "type": "history",
+    "answer_ids": [
+     "s22",
+     "s23",
+     "s27"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What breed is Yumi's new dog?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "Which specific hospital did Ewan go to in Dublin?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q23",
+    "text": "How much did Yumi earn in commission from selling the dairy farm?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q24",
+    "text": "What does Ewan's son Liam do for a living in London?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s2",
+    "s39"
+   ]
+  ]
+ },
+ {
+  "scenario": "yusuf-harini-dhaka",
+  "speakers": [
+   "Yusuf",
+   "Harini"
+  ],
+  "today": "2026-06-08",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-07-14",
+    "text": "Yusuf lives in an apartment in Dhaka and hosts his young children every other week.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-07-14",
+    "text": "Yusuf spends his spare time carving and assembling wooden miniature birdhouses on his balcony.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-07-14",
+    "text": "Yusuf walks around Dhanmondi Lake every morning at dawn for his cardiovascular health.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-07-14",
+    "text": "Harini lives in Chennai with her partner Karthik and Karthik's young child Avi.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-07-14",
+    "text": "Harini shoots all her wedding assignments using a Sony A7 IV camera body.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-07-14",
+    "text": "Yusuf checks his blood sugar four times a day using disposable finger-prick test strips.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-08-05",
+    "text": "Harini takes amlodipine tablets every night to treat her diagnosed high blood pressure.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-08-05",
+    "text": "Harini drinks three cups of freshly brewed South Indian filter coffee every single morning.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-08-05",
+    "text": "Yusuf uses a second-hand Nokia flip phone with large tactile physical number buttons.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-08-05",
+    "text": "Harini sends a fixed portion of her photography earnings home to her parents every month.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-05",
+    "text": "Harini commutes to local wedding venues and client meetings riding a blue Honda Activa scooter.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-09-12",
+    "text": "Yusuf scheduled his next endocrinology clinic consultation for next Tuesday morning.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-09-12",
+    "text": "Yusuf believes modern digital welding equipment breaks down far more quickly than vintage transformer units.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-09-12",
+    "text": "Yusuf pays his monthly student loan installment by purchasing a postal money order.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-09-12",
+    "text": "Yusuf corrected his previous statement, confirming his endocrinology clinic appointment is on Thursday, not Tuesday.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-10-20",
+    "text": "Yusuf toured the Lalbagh Fort historical museum with his daughter during her school break.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-10-20",
+    "text": "Harini practices contemporary Bharatanatyam dance choreography on Saturday mornings at a neighborhood studio.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-10-20",
+    "text": "Yusuf cares for an elderly three-legged tabby rescue cat named Chobi in his flat.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-10-20",
+    "text": "Yusuf's ex-wife Shirin moved into a newly constructed apartment complex in northern Uttara.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-10-20",
+    "text": "Harini rents a dedicated photo editing desk inside a shared co-working hub in Alwarpet.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-11-18",
+    "text": "Harini photographed a grand three-day coastal wedding celebration at a resort in Mahabalipuram.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-11-18",
+    "text": "Yusuf shifted his daily outdoor walks around Dhanmondi Lake from dawn to late afternoon.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-11-18",
+    "text": "Harini feels that unposed documentary wedding portraits convey genuine emotional depth much better than staged shots.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-11-18",
+    "text": "Harini is resting her sprained right wrist inside a rigid medical support brace.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-11-18",
+    "text": "Harini's partner Karthik accepted a new full-time position working remotely as a UX researcher.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-12-28",
+    "text": "Harini upgraded her primary wedding photography gear from her Sony system to a Nikon Z8.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2025-12-28",
+    "text": "Yusuf completed routine quarterly HbA1c blood tests at the neighborhood diagnostic laboratory.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2025-12-28",
+    "text": "Yusuf plans to travel to Sylhet to visit his younger brother during spring vacation.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-12-28",
+    "text": "Harini eliminated coffee completely from her daily diet to help lower her elevated blood pressure.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s30",
+    "date": "2025-12-28",
+    "text": "Harini attended a scheduled routine cardiology checkup at the neighborhood clinic in Chennai.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2026-01-22",
+    "text": "Yusuf took up practicing Bengali calligraphy on handmade jute paper in the evenings.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2026-01-22",
+    "text": "Harini's partner's child Avi began attending kindergarten classes at a nearby Montessori school.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2026-01-22",
+    "text": "Yusuf switched from his old Nokia flip phone to a touchscreen Samsung Galaxy smartphone.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2026-01-22",
+    "text": "Harini purchased two portable wireless strobe flashes for indoor reception shoots.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2026-01-22",
+    "text": "Yusuf bought a heavy cast-iron bench vise to install on his balcony woodworking table.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2026-02-25",
+    "text": "Yusuf shared that his elderly foster cat Chobi passed away quietly in her sleep.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s37",
+    "date": "2026-02-25",
+    "text": "Yusuf attended an evening classical sitar and sarod recital at Bangladesh Shilpakala Academy.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2026-02-25",
+    "text": "Harini took off her medical wrist brace after her sprained wrist healed completely.",
+    "replaces": [
+     "s24"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2026-02-25",
+    "text": "Yusuf transitioned to paying his monthly student loan bills via recurring automatic bank transfers.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2026-02-25",
+    "text": "Harini is considering offering destination wedding photography packages in Sri Lanka next winter.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2026-03-20",
+    "text": "Yusuf called off his planned trip to Sylhet because his brother had urgent work.",
+    "replaces": [
+     "s28"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2026-03-20",
+    "text": "Harini enrolled in a weekend ceramic pottery throwing course at an arts collective in Besant Nagar.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2026-03-20",
+    "text": "Harini sold her Honda Activa scooter and purchased a used silver Maruti Swift car.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s44",
+    "date": "2026-03-20",
+    "text": "Yusuf replaced his finger-prick testing routine with an arm-mounted continuous glucose monitoring patch.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s45",
+    "date": "2026-03-20",
+    "text": "Harini gave up her rented Alwarpet desk and set up a home editing studio.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-04-16",
+    "text": "Yusuf is thinking about planting a dwarf lemon tree in an earthen pot on his rooftop.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-04-16",
+    "text": "Harini spent a relaxing weekend exploring French bakery cafes and coastal promenades in Pondicherry.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2026-04-16",
+    "text": "Yusuf stopped outdoor lake walks and exercises daily on a compact motorized treadmill indoors.",
+    "replaces": [
+     "s22"
+    ]
+   },
+   {
+    "id": "s49",
+    "date": "2026-04-16",
+    "text": "Harini switched her daily high blood pressure medication from amlodipine tablets to telmisartan.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-04-16",
+    "text": "Yusuf prepares aromatic chicken khichuri whenever his children stay over for their alternate-week visits.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-05-12",
+    "text": "Harini reads Tamil illustrated folklore storybooks with Avi before bedtime every evening.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-05-12",
+    "text": "Harini sold her Nikon camera and switched to a Fujifilm GFX medium format camera.",
+    "replaces": [
+     "s26"
+    ]
+   },
+   {
+    "id": "s53",
+    "date": "2026-05-12",
+    "text": "Yusuf fondly recalled mentoring Harini during their first job together at an industrial printing machinery workshop.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-05-12",
+    "text": "Yusuf noted that he has eleven monthly installments remaining on his university student loan.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-05-12",
+    "text": "Harini resumed drinking a single small cup of morning filter coffee following her physician's approval.",
+    "replaces": [
+     "s29"
+    ]
+   },
+   {
+    "id": "s56",
+    "date": "2026-06-01",
+    "text": "Harini shared that she interned for a wildlife documentary photographer in the Anamalai Hills during college.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-06-01",
+    "text": "Yusuf felt immense joy and pride after watching his daughter receive an academic achievement award.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-06-01",
+    "text": "Harini felt exhausted after photographing back-to-back outdoor wedding ceremonies in humid coastal heat.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-06-01",
+    "text": "Yusuf carved a polished teakwood picture frame as a birthday present for his grandson.",
+    "replaces": []
+   },
+   {
+    "id": "s60",
+    "date": "2026-06-01",
+    "text": "Harini delivered completed leather-bound wedding photo albums to two newly married couples in Mylapore.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What artistic and craft hobbies does Yusuf engage in?",
+    "type": "current",
+    "answer_ids": [
+     "s2",
+     "s31"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What creative activities does Harini practice outside of her wedding photography?",
+    "type": "current",
+    "answer_ids": [
+     "s17",
+     "s42"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What regular financial contribution does Harini make for her family?",
+    "type": "current",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Who shares Harini's home in Chennai?",
+    "type": "current",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What is Yusuf's current daily exercise routine?",
+    "type": "current",
+    "answer_ids": [
+     "s48"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What camera does Harini currently rely on for shooting weddings?",
+    "type": "current",
+    "answer_ids": [
+     "s52"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What vehicle does Harini drive to travel to her work commitments?",
+    "type": "current",
+    "answer_ids": [
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How did Yusuf track his glucose levels back in the autumn of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2025-10-25"
+   },
+   {
+    "id": "q9",
+    "text": "What mobile phone was Yusuf using in the autumn of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2025-11-01"
+   },
+   {
+    "id": "q10",
+    "text": "Where was Yusuf taking his daily walks as of December 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": "2025-12-01"
+   },
+   {
+    "id": "q11",
+    "text": "Where did Harini do her photo editing work in late 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": "2025-11-25"
+   },
+   {
+    "id": "q12",
+    "text": "What camera models has Harini used for her wedding photography work?",
+    "type": "history",
+    "answer_ids": [
+     "s26",
+     "s5",
+     "s52"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What changes has Harini discussed regarding her coffee consumption?",
+    "type": "history",
+    "answer_ids": [
+     "s29",
+     "s55",
+     "s8"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What prescription medications has Harini taken to manage her hypertension?",
+    "type": "history",
+    "answer_ids": [
+     "s49",
+     "s7"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "How has Yusuf handled paying his monthly student loan obligations?",
+    "type": "history",
+    "answer_ids": [
+     "s14",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What happened with Yusuf's pet cat Chobi?",
+    "type": "history",
+    "answer_ids": [
+     "s18",
+     "s36"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What leisure trips or cultural outings has Yusuf taken?",
+    "type": "history",
+    "answer_ids": [
+     "s16",
+     "s37"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What was the progression of Harini's wrist injury?",
+    "type": "history",
+    "answer_ids": [
+     "s24",
+     "s38"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What kind of car did Yusuf drive before he retired from welding?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Which musical instrument did Harini learn to play as a child?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "Where did Yusuf and his ex-wife Shirin go for their wedding anniversary?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "What breed of dog did Harini adopt for her home?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": []
+ },
+ {
+  "scenario": "joko-ignacio-surabaya",
+  "speakers": [
+   "Joko",
+   "Ignacio"
+  ],
+  "today": "2026-06-24",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-05-10",
+    "text": "Joko works as a tea-plantation manager in Surabaya.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-05-10",
+    "text": "Ignacio is a retired crossing guard living in San José, Costa Rica.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-05-10",
+    "text": "Ignacio used to be Joko's next-door neighbour years ago.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-05-15",
+    "text": "Joko lives with his partner Budi and Budi's daughter Sari.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-15",
+    "text": "Ignacio lives with his partner Maria and her son Mateo.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-20",
+    "text": "Joko has been struggling with long COVID symptoms for several months.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-20",
+    "text": "Ignacio also suffers from extreme fatigue due to long COVID.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-05-22",
+    "text": "Joko lives paycheck to paycheck because the plantation wages are very low.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-05-22",
+    "text": "Ignacio is deeply in debt after his bakery business failed last year.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-06-01",
+    "text": "Joko enjoys collecting vintage stamps in his free time.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-06-05",
+    "text": "Ignacio loves listening to classical Spanish guitar music.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-06-10",
+    "text": "Joko recently took up birdwatching on the plantation grounds.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-15",
+    "text": "Joko drives an old Honda Civic to work every day.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-07-02",
+    "text": "Ignacio has a pet parrot named Rico who talks a lot.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-07-10",
+    "text": "Maria got a part-time job at a local grocery store.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-07-20",
+    "text": "Joko is planning to ask for a raise at the tea plantation.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-08-01",
+    "text": "Joko's boss rejected his request for a raise due to poor harvests.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-08-15",
+    "text": "Ignacio sold his television to help pay off some business debt.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-08-20",
+    "text": "Joko's old Honda Civic broke down completely on his way to work.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2025-08-25",
+    "text": "Joko bought a second-hand Honda motorcycle for his daily commute.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-09-05",
+    "text": "Ignacio started taking herbal supplements for his long COVID fatigue.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-09-12",
+    "text": "Sari joined the local middle school soccer team.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-09-15",
+    "text": "Joko sprained his ankle while walking on the plantation.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-10-01",
+    "text": "Joko's sprained ankle has completely healed now.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2025-10-10",
+    "text": "Mateo is studying computer science at the university in San José.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-10-15",
+    "text": "Ignacio feels very optimistic about Mateo's future career prospects.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-11-02",
+    "text": "Joko corrected himself, saying his daily commuter motorcycle is actually a Yamaha.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-11-10",
+    "text": "Ignacio's parrot Rico sadly passed away of old age.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s29",
+    "date": "2025-11-15",
+    "text": "Ignacio adopted a stray cat that wandered into his garden.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-11-20",
+    "text": "Ignacio named his new cat Luna.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2025-12-05",
+    "text": "Joko is taking an online course in agricultural management.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-12-15",
+    "text": "Budi started working night shifts at a nearby hotel.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2025-12-20",
+    "text": "Ignacio's long COVID symptoms have gotten much worse this winter.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2026-01-05",
+    "text": "Joko went on a weekend camping trip to Mount Bromo.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2026-01-10",
+    "text": "Ignacio traveled to Nicaragua frequently in his youth.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2026-01-20",
+    "text": "Joko sold his Yamaha motorcycle to pay for Sari's school fees.",
+    "replaces": [
+     "s27"
+    ]
+   },
+   {
+    "id": "s37",
+    "date": "2026-01-25",
+    "text": "Joko takes the public bus to the tea plantation every day.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2026-02-05",
+    "text": "Maria quit her job at the grocery store because the pay was low.",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2026-02-15",
+    "text": "Ignacio bought a cheap smartphone to make video calls with Joko.",
+    "replaces": []
+   },
+   {
+    "id": "s40",
+    "date": "2026-03-01",
+    "text": "Joko and Budi are planning to move to a smaller apartment.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2026-03-10",
+    "text": "Mateo changed his university major from computer science to graphic design.",
+    "replaces": [
+     "s25"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2026-03-15",
+    "text": "Joko cancelled his online agricultural management course because he lacked free time.",
+    "replaces": [
+     "s31"
+    ]
+   },
+   {
+    "id": "s43",
+    "date": "2026-03-20",
+    "text": "Joko feels very frustrated about having to cancel his studies.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2026-04-05",
+    "text": "Ignacio started a new hobby of painting watercolor landscapes.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2026-04-10",
+    "text": "Joko also tried painting landscapes but found it too messy.",
+    "replaces": []
+   },
+   {
+    "id": "s46",
+    "date": "2026-04-15",
+    "text": "Budi found a daytime receptionist job at a local medical clinic.",
+    "replaces": [
+     "s32"
+    ]
+   },
+   {
+    "id": "s47",
+    "date": "2026-04-20",
+    "text": "Joko and Budi decided not to move to a smaller apartment.",
+    "replaces": [
+     "s40"
+    ]
+   },
+   {
+    "id": "s48",
+    "date": "2026-05-01",
+    "text": "Ignacio's long COVID fatigue has started to improve with a new medication.",
+    "replaces": [
+     "s33"
+    ]
+   },
+   {
+    "id": "s49",
+    "date": "2026-05-10",
+    "text": "Joko bought a bicycle to ride to work instead of taking the bus.",
+    "replaces": [
+     "s37"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-05-15",
+    "text": "Ignacio sold his smartphone because he couldn't afford the monthly data plan.",
+    "replaces": [
+     "s39"
+    ]
+   },
+   {
+    "id": "s51",
+    "date": "2026-05-20",
+    "text": "Ignacio writes physical letters to his friends instead of using a phone.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-05-25",
+    "text": "Sari won a local soccer tournament with her middle school team.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-06-01",
+    "text": "Joko finally received a small wage increase at the tea plantation.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-06-05",
+    "text": "Ignacio's cat Luna caught a mouse in the kitchen yesterday.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-06-10",
+    "text": "Maria started selling homemade empanadas to neighbors to earn extra money.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-06-15",
+    "text": "Joko's long COVID symptoms are mostly gone, leaving only an occasional cough.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s57",
+    "date": "2026-06-20",
+    "text": "Ignacio planted tomatoes and peppers in his small garden.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What does Joko do for fun?",
+    "type": "current",
+    "answer_ids": [
+     "s10",
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "Who shares a home with Ignacio?",
+    "type": "current",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What is Joko's profession?",
+    "type": "current",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "How does Joko currently get to his job?",
+    "type": "current",
+    "answer_ids": [
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What is the current state of Ignacio's long COVID?",
+    "type": "current",
+    "answer_ids": [
+     "s48"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What animals does Ignacio currently keep as pets?",
+    "type": "current",
+    "answer_ids": [
+     "s29",
+     "s30"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Where is Budi employed right now?",
+    "type": "current",
+    "answer_ids": [
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What subject was Mateo majoring in during late 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": "2025-11-01"
+   },
+   {
+    "id": "q9",
+    "text": "How did Joko travel to the plantation in the summer of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s13"
+    ],
+    "as_of": "2025-07-01"
+   },
+   {
+    "id": "q10",
+    "text": "Did Ignacio own a mobile phone around March 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s39"
+    ],
+    "as_of": "2026-03-01"
+   },
+   {
+    "id": "q11",
+    "text": "Where was Maria earning a paycheck in August 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": "2025-08-01"
+   },
+   {
+    "id": "q12",
+    "text": "What different modes of transport has Joko used to get to work?",
+    "type": "history",
+    "answer_ids": [
+     "s13",
+     "s20",
+     "s27",
+     "s37",
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What was Joko's emotional reaction to dropping his studies?",
+    "type": "history",
+    "answer_ids": [
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Which pets has Ignacio talked about having?",
+    "type": "history",
+    "answer_ids": [
+     "s14",
+     "s28",
+     "s29",
+     "s30"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Has Joko attempted to further his education?",
+    "type": "history",
+    "answer_ids": [
+     "s31",
+     "s42"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What are all the ways Maria has tried to bring in income?",
+    "type": "history",
+    "answer_ids": [
+     "s15",
+     "s55"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "How has Ignacio's health fluctuated since they started talking?",
+    "type": "history",
+    "answer_ids": [
+     "s21",
+     "s33",
+     "s48",
+     "s7"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What places have the two men travelled to?",
+    "type": "history",
+    "answer_ids": [
+     "s34",
+     "s35"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What company owns the tea plantation where Joko works?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Has Ignacio mentioned having any brothers or sisters?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "Has Sari received any academic scholarships?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "What activities does Budi do in his free time?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s13",
+    "s20"
+   ],
+   [
+    "s8",
+    "s53"
+   ]
+  ]
+ },
+ {
+  "scenario": "lucas-yolanda-durban",
+  "speakers": [
+   "Lucas",
+   "Yolanda"
+  ],
+  "today": "2026-03-17",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-02-12",
+    "text": "Lucas celebrated his twenty-ninth birthday with a quiet dinner with his new wife Thandi in Durban.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-02-12",
+    "text": "Lucas works as a freelance translator in Durban, translating documents primarily between Portuguese and English.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-02-12",
+    "text": "Yolanda is a seventy-nine-year-old retired librarian living in Valparaíso with her husband Hector.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-02-12",
+    "text": "Yolanda previously lived next door to Lucas for five years on Florida Road in Durban.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-02-25",
+    "text": "Lucas lives paycheck to paycheck because of inconsistent monthly payouts from his freelance clients.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-02-25",
+    "text": "Lucas takes enalapril daily to help manage his diagnosed high blood pressure.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-02-25",
+    "text": "Yolanda and Hector are empty-nesters whose grown children live in Santiago and Mendoza.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-02-25",
+    "text": "Yolanda attends weekly addiction recovery support meetings at the parish hall on Calle Prat.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-03-14",
+    "text": "Yolanda and Hector are saving money diligently toward purchasing a small stone cottage in Cerro Alegre.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-03-14",
+    "text": "Lucas works on an aging Dell laptop for all his daily freelance translation jobs.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-03-14",
+    "text": "Lucas plays acoustic fingerstyle guitar in the living room every evening to relax.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-02",
+    "text": "Yolanda volunteers every Monday morning archiving historic local manuscripts at the community library.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-02",
+    "text": "Yolanda tends to an extensive container garden of herbs and bright geraniums on her terrace.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-04-02",
+    "text": "Lucas jogs three kilometers along the Durban beachfront promenade every morning before work.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-04-20",
+    "text": "Thandi started working as a legal administrative assistant at a local clinic in Durban.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-04-20",
+    "text": "Lucas relies on a cracked Samsung Galaxy smartphone with a flickering display.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-04-20",
+    "text": "Yolanda adopted an elderly calico cat named Paloma from the local animal shelter.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-05-11",
+    "text": "Lucas secured a steady retainer contract translating legal documents for a maritime shipping agency.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-05-11",
+    "text": "Yolanda drinks two cups of strong black tea each morning with breakfast.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-05-11",
+    "text": "Lucas mentioned that he lived in Maputo for two years during his early twenties.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-03",
+    "text": "Yolanda subscribes to a prepaid mobile plan with Entel for her monthly calls.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-06-03",
+    "text": "Lucas took up sourdough bread baking on weekends as a new kitchen hobby.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-06-03",
+    "text": "Lucas replaced his broken Dell laptop with a refurbished MacBook Air for translation work.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-06-22",
+    "text": "Yolanda joined a neighborhood birdwatching group that meets once a month in the botanical reserve.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-06-22",
+    "text": "Hector built a cedar bookshelf for their living room using reclaimed timber.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-06-22",
+    "text": "Lucas attended an outdoor jazz concert at the Durban Botanic Gardens with Thandi.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-07-15",
+    "text": "Yolanda shifted her weekly volunteer shifts from Monday mornings to Thursday afternoons at the library.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-07-15",
+    "text": "Lucas replaced his cracked Samsung smartphone with a second-hand Google Pixel.",
+    "replaces": [
+     "s16"
+    ]
+   },
+   {
+    "id": "s29",
+    "date": "2025-07-15",
+    "text": "Lucas switched to amlodipine for his high blood pressure after enalapril caused persistent coughing.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s30",
+    "date": "2025-08-04",
+    "text": "Yolanda gave up drinking black tea entirely to help improve her restless sleep.",
+    "replaces": [
+     "s19"
+    ]
+   },
+   {
+    "id": "s31",
+    "date": "2025-08-04",
+    "text": "Lucas mentioned that his and Thandi's wedding anniversary dinner was scheduled for October twelfth.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-08-04",
+    "text": "Lucas switched from morning beach jogs to evening stationary cycling because of persistent knee strain.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s33",
+    "date": "2025-08-28",
+    "text": "Lucas corrected that their anniversary dinner is booked for October nineteenth, not the twelfth.",
+    "replaces": [
+     "s31"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2025-08-28",
+    "text": "Yolanda took a scenic boat tour around the working port of Valparaíso with Hector.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2025-08-28",
+    "text": "Yolanda bought a sturdy pair of supportive walking shoes for climbing steep city hills.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-09-19",
+    "text": "Lucas bought a pair of supportive walking shoes for his evening walks with Thandi.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2025-09-19",
+    "text": "Yolanda moved her weekly addiction recovery support meetings to the community center on Avenida Alemania.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s38",
+    "date": "2025-09-19",
+    "text": "Lucas felt overwhelmed by tight translation deadlines and unpaid client invoices today.",
+    "replaces": []
+   },
+   {
+    "id": "s39",
+    "date": "2025-10-12",
+    "text": "Lucas lost his maritime translation retainer contract after the shipping agency downsized its operations.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2025-10-12",
+    "text": "Yolanda celebrated nine years of continuous sobriety in her addiction recovery program.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2025-10-12",
+    "text": "Lucas and Thandi spent a weekend camping and hiking in the Drakensberg mountains.",
+    "replaces": []
+   },
+   {
+    "id": "s42",
+    "date": "2025-11-05",
+    "text": "Yolanda resumed drinking black tea in the mornings after feeling chronically sluggish without it.",
+    "replaces": [
+     "s30"
+    ]
+   },
+   {
+    "id": "s43",
+    "date": "2025-11-05",
+    "text": "Lucas upgraded from his MacBook Air to a custom desktop computer for his translation projects.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s44",
+    "date": "2025-11-05",
+    "text": "Yolanda and Hector decided to buy an apartment in Viña del Mar instead of the cottage.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s45",
+    "date": "2025-11-28",
+    "text": "Yolanda switched her mobile phone carrier from Entel to WOM for a cheaper monthly rate.",
+    "replaces": [
+     "s21"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2025-11-28",
+    "text": "Lucas's younger brother Sibusiso moved to Johannesburg to begin his university engineering studies.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2025-11-28",
+    "text": "Lucas prefers translating historical fiction literature over dry commercial marketing brochures.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2025-12-18",
+    "text": "Yolanda stepped down from volunteering at the community library to prioritize resting at home.",
+    "replaces": [
+     "s27"
+    ]
+   },
+   {
+    "id": "s49",
+    "date": "2025-12-18",
+    "text": "Lucas might enroll in an advanced certification course in legal translation next autumn.",
+    "replaces": []
+   },
+   {
+    "id": "s50",
+    "date": "2025-12-18",
+    "text": "Yolanda's elderly calico cat Paloma passed away peacefully in her sleep.",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s51",
+    "date": "2026-01-14",
+    "text": "Yolanda is considering visiting her adult daughter in Santiago during the upcoming autumn break.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-01-14",
+    "text": "Lucas continues to struggle financially and lives paycheck to paycheck amid fluctuating client assignments.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-01-14",
+    "text": "Yolanda finds modern digital audiobooks far less engaging than reading physical printed paperbacks.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-02-08",
+    "text": "Lucas and Thandi hosted a braai on their balcony for several neighbourhood friends.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-02-08",
+    "text": "Yolanda mentioned that she worked as a university cataloguer in Santiago for thirty years.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-02-08",
+    "text": "Hector retired from his part-time carpentry work at the neighbourhood furniture workshop.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-03-02",
+    "text": "Yolanda felt deeply peaceful watching the evening sunset over the Pacific Ocean from her balcony.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-03-02",
+    "text": "Lucas joined an amateur indoor five-a-side soccer league in Durban with fellow translators.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-03-08",
+    "text": "Yolanda started knitting woollen scarves to donate to a local shelter for winter.",
+    "replaces": []
+   },
+   {
+    "id": "s60",
+    "date": "2026-03-08",
+    "text": "Lucas renewed his annual subscription to an online terminology database for professional linguists.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which hobbies and pastimes does Lucas regularly engage in during his free time?",
+    "type": "current",
+    "answer_ids": [
+     "s11",
+     "s22",
+     "s58"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What leisure pursuits and creative hobbies does Yolanda actively participate in?",
+    "type": "current",
+    "answer_ids": [
+     "s13",
+     "s24",
+     "s59"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Which type of literary translation work does Lucas find most appealing?",
+    "type": "current",
+    "answer_ids": [
+     "s47"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What primary computing device does Lucas presently rely on for his professional translation work?",
+    "type": "current",
+    "answer_ids": [
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What is the status of Yolanda's volunteer commitment at the local library?",
+    "type": "current",
+    "answer_ids": [
+     "s48"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What type of cardiovascular workout does Lucas currently do for fitness?",
+    "type": "current",
+    "answer_ids": [
+     "s32"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What kind of residential real estate do Yolanda and Hector currently intend to purchase?",
+    "type": "current",
+    "answer_ids": [
+     "s44"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What computing hardware was Lucas utilizing for his translation tasks around May 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": "2025-05-01"
+   },
+   {
+    "id": "q9",
+    "text": "On what day of the week did Yolanda carry out her volunteer shifts at the library back in June 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2025-06-01"
+   },
+   {
+    "id": "q10",
+    "text": "Which pharmaceutical drug was Lucas prescribed for his hypertension back in May 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": "2025-05-01"
+   },
+   {
+    "id": "q11",
+    "text": "What was Yolanda's practice concerning black tea consumption during September 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s30"
+    ],
+    "as_of": "2025-09-01"
+   },
+   {
+    "id": "q12",
+    "text": "Which recreational excursions or live music events has Lucas attended alongside Thandi?",
+    "type": "history",
+    "answer_ids": [
+     "s26",
+     "s41"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What changes and habits regarding drinking black tea did Yolanda mention throughout the conversations?",
+    "type": "history",
+    "answer_ids": [
+     "s19",
+     "s30",
+     "s42"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "Which computers has Lucas owned or operated for his freelance work over the course of the chat?",
+    "type": "history",
+    "answer_ids": [
+     "s10",
+     "s23",
+     "s43"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What shifts, schedules, and eventual decisions were described regarding Yolanda's volunteer work at the community library?",
+    "type": "history",
+    "answer_ids": [
+     "s12",
+     "s27",
+     "s48"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What calendar dates were discussed regarding Lucas and Thandi's celebratory anniversary dinner?",
+    "type": "history",
+    "answer_ids": [
+     "s31",
+     "s33"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What life milestones were shared concerning Yolanda's pet cat Paloma?",
+    "type": "history",
+    "answer_ids": [
+     "s17",
+     "s50"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "In which foreign city did Lucas reside for a period during his twenties prior to Durban?",
+    "type": "history",
+    "answer_ids": [
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What forms of regular exercise has Lucas practiced over the course of their friendship?",
+    "type": "history",
+    "answer_ids": [
+     "s14",
+     "s32"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "What vehicle brand does Lucas drive when traveling around Durban?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "Which acoustic musical instrument does Yolanda play when relaxing at home?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "Which foreign language did Yolanda teach students during her earlier professional career?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q23",
+    "text": "What variety of dog did Lucas keep as a family pet while growing up?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": []
+ },
+ {
+  "scenario": "yemi-elias-ibadan",
+  "speakers": [
+   "Yemi",
+   "Elias"
+  ],
+  "today": "2026-06-11",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-05-01",
+    "text": "Yemi works as a parliamentary researcher in Ibadan.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-05-01",
+    "text": "Yemi is 32 years old.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-05-02",
+    "text": "Elias is a retired nail technician living in Kuala Lumpur.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-05-02",
+    "text": "Elias is 74 years old.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-05-05",
+    "text": "Yemi uses a hearing aid due to partial hearing loss.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-05-05",
+    "text": "Yemi is a registered foster parent who takes in children.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-05-08",
+    "text": "Elias has recently been diagnosed with ADHD.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-05-08",
+    "text": "Elias is in a long-distance relationship with a man in Manila.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-05-10",
+    "text": "Yemi earns irregular gig income doing freelance policy writing.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-05-10",
+    "text": "Elias does occasional consulting for local nail salons for extra cash.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-15",
+    "text": "Yemi is fostering a six-year-old boy named Femi.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-15",
+    "text": "Elias's long-distance partner's name is Mateo.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-05-18",
+    "text": "Elias started taking a new medication to manage his ADHD.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-20",
+    "text": "Yemi uses a basic behind-the-ear style hearing aid.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-01",
+    "text": "Yemi switched to a new invisible in-the-canal hearing aid.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-05",
+    "text": "Elias has an upcoming trip planned to Manila in July.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-10",
+    "text": "Yemi is taking up gardening as a new relaxing hobby.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-06-12",
+    "text": "Elias paints tabletop miniatures as his main hobby.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-06-14",
+    "text": "Yemi's freelance policy gig pays about 50,000 Naira per report.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-06-15",
+    "text": "Elias cancelled his July Manila trip due to a visa delay.",
+    "replaces": [
+     "s16"
+    ]
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-20",
+    "text": "Yemi adopted a stray tuxedo cat he found near his office.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-07-02",
+    "text": "Elias does a part-time remote gig mentoring junior nail technicians.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-07-05",
+    "text": "Yemi's foster son Femi moved back to live with his biological aunt.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-07-15",
+    "text": "Yemi celebrated his birthday and turned 33 today.",
+    "replaces": [
+     "s2"
+    ]
+   },
+   {
+    "id": "s25",
+    "date": "2025-07-20",
+    "text": "Elias is actively saving up his gig income to buy a new laptop.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-08-01",
+    "text": "Yemi is taking a break from fostering to focus on his career.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-08-10",
+    "text": "Elias and Mateo are celebrating their one-year anniversary over a video call.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2025-08-15",
+    "text": "Yemi also started painting miniatures after Elias highly recommended it.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-09-01",
+    "text": "Elias's old laptop completely broke down and won't turn on.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-09-05",
+    "text": "Elias bought a refurbished MacBook Air and stopped saving up.",
+    "replaces": [
+     "s25"
+    ]
+   },
+   {
+    "id": "s31",
+    "date": "2025-09-10",
+    "text": "Yemi was assigned to a new legislative committee focusing on public health policy.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-09-20",
+    "text": "Yemi named his newly adopted stray tuxedo cat Whiskers.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2025-10-01",
+    "text": "Elias went on a week-long trip to visit his brother in Penang.",
+    "replaces": []
+   },
+   {
+    "id": "s34",
+    "date": "2025-10-05",
+    "text": "Yemi owns a used Honda Civic to commute to the parliament building.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2025-10-15",
+    "text": "Elias got a new adjusted prescription for his ADHD medication.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-10-20",
+    "text": "Yemi mentioned that his new public health committee meets on Tuesdays.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2025-10-21",
+    "text": "Yemi corrected himself and stated the public health committee actually meets on Thursdays.",
+    "replaces": [
+     "s36"
+    ]
+   },
+   {
+    "id": "s38",
+    "date": "2025-11-01",
+    "text": "Elias finally flew to Manila and visited Mateo for two whole weeks.",
+    "replaces": []
+   },
+   {
+    "id": "s39",
+    "date": "2025-11-15",
+    "text": "Yemi ended his fostering break and is now fostering a teenage girl named Sade.",
+    "replaces": [
+     "s26"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2025-11-20",
+    "text": "Elias quit his remote mentoring gig because the hours were too stressful.",
+    "replaces": [
+     "s22"
+    ]
+   },
+   {
+    "id": "s41",
+    "date": "2025-12-01",
+    "text": "Yemi's used Honda Civic broke down and requires a completely new engine.",
+    "replaces": []
+   },
+   {
+    "id": "s42",
+    "date": "2025-12-10",
+    "text": "Elias bakes sourdough bread at home as a new culinary hobby.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2025-12-25",
+    "text": "Yemi spent the Christmas holiday with Sade and his extended family in Lagos.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2026-01-05",
+    "text": "Elias is seriously considering moving to Manila permanently to be with Mateo.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2026-01-10",
+    "text": "Yemi sold his broken Honda Civic for scrap metal.",
+    "replaces": [
+     "s34"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-01-15",
+    "text": "Yemi takes the city bus to the parliament building every morning now.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-02-01",
+    "text": "Mateo flew to Malaysia and visited Elias in Kuala Lumpur for the first time.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2026-02-15",
+    "text": "Yemi's freelance income has dropped significantly due to fewer clients this month.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-03-01",
+    "text": "Elias was hired for a quick weekend consulting gig at a luxury spa.",
+    "replaces": []
+   },
+   {
+    "id": "s50",
+    "date": "2026-03-10",
+    "text": "Yemi is learning sign language to communicate better with the local hard-of-hearing community.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-03-20",
+    "text": "Elias gave up baking sourdough bread because the starter maintenance was too tedious.",
+    "replaces": [
+     "s42"
+    ]
+   },
+   {
+    "id": "s52",
+    "date": "2026-04-01",
+    "text": "Yemi and his foster daughter Sade started building a small balcony garden.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-04-10",
+    "text": "Elias decided against moving to Manila because he loves living in Kuala Lumpur.",
+    "replaces": [
+     "s44"
+    ]
+   },
+   {
+    "id": "s54",
+    "date": "2026-04-15",
+    "text": "Yemi secured a new freelance contract writing comprehensive reports for a local NGO.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-05-01",
+    "text": "Elias is taking an online introductory course in digital marketing.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-05-10",
+    "text": "Yemi's cat Whiskers caught a mouse in the kitchen yesterday.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-05-20",
+    "text": "Elias started volunteering his time at a local senior community center.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-05-25",
+    "text": "Elias's partner Mateo is officially moving to Kuala Lumpur in August.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-05-26",
+    "text": "Elias and Mateo are planning to move into a new apartment together next month.",
+    "replaces": []
+   },
+   {
+    "id": "s60",
+    "date": "2026-05-28",
+    "text": "Yemi has a badly sprained left ankle from playing football.",
+    "replaces": []
+   },
+   {
+    "id": "s61",
+    "date": "2026-05-30",
+    "text": "Yemi's sprained ankle has completely healed and he can walk normally again.",
+    "replaces": [
+     "s60"
+    ]
+   },
+   {
+    "id": "s62",
+    "date": "2026-05-31",
+    "text": "Elias quit painting miniatures and sold his entire collection to make room for Mateo.",
+    "replaces": [
+     "s18"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Where does Elias currently live?",
+    "type": "current",
+    "answer_ids": [
+     "s3"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What does Yemi do for his primary occupation?",
+    "type": "current",
+    "answer_ids": [
+     "s1"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What is the name of Elias's romantic partner?",
+    "type": "current",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What extra sources of income does Yemi currently have?",
+    "type": "current",
+    "answer_ids": [
+     "s54",
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "How old is Yemi as of today?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Who is Yemi fostering right now?",
+    "type": "current",
+    "answer_ids": [
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is Elias's current stance on moving to Manila?",
+    "type": "current",
+    "answer_ids": [
+     "s53"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "How does Yemi get to work these days?",
+    "type": "current",
+    "answer_ids": [
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q9",
+    "text": "How old was Yemi in mid-May 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s2"
+    ],
+    "as_of": "2025-05-25"
+   },
+   {
+    "id": "q10",
+    "text": "Who was Yemi fostering in late May 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": "2025-05-25"
+   },
+   {
+    "id": "q11",
+    "text": "Where was Elias planning to travel for July 2025 before he canceled?",
+    "type": "past",
+    "answer_ids": [
+     "s16"
+    ],
+    "as_of": "2025-06-10"
+   },
+   {
+    "id": "q12",
+    "text": "What was Yemi using to commute to work in November 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s34"
+    ],
+    "as_of": "2025-11-15"
+   },
+   {
+    "id": "q13",
+    "text": "What side job was Elias doing in August 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s22"
+    ],
+    "as_of": "2025-08-15"
+   },
+   {
+    "id": "q14",
+    "text": "What side gigs has Elias talked about having?",
+    "type": "history",
+    "answer_ids": [
+     "s10",
+     "s22",
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What different ways has Yemi commuted to work since he started at the parliament?",
+    "type": "history",
+    "answer_ids": [
+     "s34",
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What hobbies has Elias engaged in and subsequently given up?",
+    "type": "history",
+    "answer_ids": [
+     "s18",
+     "s42",
+     "s51",
+     "s62"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What is the recent history of Yemi's foster parenting?",
+    "type": "history",
+    "answer_ids": [
+     "s11",
+     "s23",
+     "s26",
+     "s39",
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What trips has Elias taken or planned to take in the last year?",
+    "type": "history",
+    "answer_ids": [
+     "s16",
+     "s20",
+     "s33",
+     "s38"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What was said about the meeting days for Yemi's public health committee?",
+    "type": "history",
+    "answer_ids": [
+     "s36",
+     "s37"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "What happened to Yemi's ankle?",
+    "type": "history",
+    "answer_ids": [
+     "s60",
+     "s61"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "Has Yemi ever traveled to Kuala Lumpur to visit Elias?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "What is the name of Elias's brother in Penang?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q23",
+    "text": "Does Yemi's cat Whiskers have a microchip?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q24",
+    "text": "What university did Yemi graduate from?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s34",
+    "s41"
+   ],
+   [
+    "s41",
+    "s45"
+   ]
+  ]
+ },
+ {
+  "scenario": "rowan-jerome-minneapolis",
+  "speakers": [
+   "Rowan",
+   "Jerome"
+  ],
+  "today": "2026-04-30",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-03-15",
+    "text": "Rowan works as a lead school bus mechanic for the Minneapolis school district depot.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-03-15",
+    "text": "Rowan is thirty-three years old and lives in an apartment in south Minneapolis.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-03-15",
+    "text": "Jerome works as a wholesale fish-market auctioneer at the Port of Spain waterfront docks.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-03-15",
+    "text": "Jerome is sixty-five years old and recently got married to his longtime partner Gemma.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-03-28",
+    "text": "Rowan and Jerome compete together as teammates in the Starlight International Masters Cycling Club.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-03-28",
+    "text": "Rowan must follow a strict gluten-free diet because he was diagnosed with coeliac disease.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-03-28",
+    "text": "Jerome takes amlodipine tablets every morning to manage his high blood pressure.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-04-10",
+    "text": "Rowan sends five hundred dollars to his mother in Duluth using Western Union money transfers each month.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-04-10",
+    "text": "Jerome sends money home every month to help support his retired sister Denise in Tobago.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-04-10",
+    "text": "Rowan drives an old silver Ford Ranger pickup truck to commute to the bus garage.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-04-26",
+    "text": "Jerome conducts noisy seafood auctions starting promptly at four in the morning every weekday.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-04-26",
+    "text": "Rowan is serving as a licensed foster parent to a fourteen-year-old boy named Tariq.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-04-26",
+    "text": "Jerome cares for an affectionate seventeen-year-old domestic shorthair cat named Pepper.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-05-18",
+    "text": "Rowan restores vintage lightweight road bicycles in his spare time during the spring.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-05-18",
+    "text": "Jerome tends to an extensive collection of potted tropical orchids on his backyard patio.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-05-18",
+    "text": "Rowan recalled spending two high school summers rebuilding old diesel tractor engines on a farm.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-04",
+    "text": "Jerome shared fond memories of learning deep-sea handline fishing from his grandfather in Mayaro.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-06-04",
+    "text": "Jerome uses an older Samsung smartphone featuring a badly cracked touch display.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-06-04",
+    "text": "Rowan completed a grueling seventy-mile gravel cycling event around Lake Minnetonka on Saturday.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-06-22",
+    "text": "Jerome and Gemma booked a two-week tropical honeymoon vacation to Barbados for October.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-06-22",
+    "text": "Rowan believes disc brakes offer significantly better stopping power than rim brakes in rain.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2025-07-09",
+    "text": "Rowan purchased a second-hand blue Subaru Outback after the transmission failed in his truck.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s23",
+    "date": "2025-07-09",
+    "text": "Rowan strained his left rotator cuff while lifting a heavy diesel manifold at work.",
+    "replaces": []
+   },
+   {
+    "id": "s24",
+    "date": "2025-07-09",
+    "text": "Jerome attended an energetic evening calypso music showcase at Queen's Park Savannah with Gemma.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-07-28",
+    "text": "Rowan stated that the comprehensive state bus fleet inspection will happen next Tuesday.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-07-28",
+    "text": "Rowan corrected that the state bus fleet inspection is actually on Thursday, not Tuesday.",
+    "replaces": [
+     "s25"
+    ]
+   },
+   {
+    "id": "s27",
+    "date": "2025-07-28",
+    "text": "Jerome switched his daily blood pressure medication to lisinopril after amlodipine caused ankle swelling.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-08-14",
+    "text": "Rowan cancelled his membership at the local powerlifting gym to train solely in his garage.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-08-14",
+    "text": "Jerome's sister Denise moved into a newly renovated ground-floor apartment in Scarborough, Tobago.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-09-02",
+    "text": "Jerome shifted his morning fish auction start time from four o'clock to six o'clock.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s31",
+    "date": "2025-09-02",
+    "text": "Rowan bakes homemade sandwich bread exclusively using certified gluten-free oat flour and sorghum.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2025-09-02",
+    "text": "Jerome and Gemma cancelled their planned Barbados honeymoon trip due to disruptive resort renovations.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s33",
+    "date": "2025-09-25",
+    "text": "Jerome's wife Gemma accepted a new full-time role teaching secondary mathematics in Diego Martin.",
+    "replaces": []
+   },
+   {
+    "id": "s34",
+    "date": "2025-09-25",
+    "text": "Tariq reunited happily with his biological aunt, concluding Rowan's foster care placement with him.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s35",
+    "date": "2025-09-25",
+    "text": "Rowan took up woodworking and began building a solid maple dining table.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-10-18",
+    "text": "Jerome replaced his damaged phone with a brand new black iPhone fifteen.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s37",
+    "date": "2025-10-18",
+    "text": "Rowan's left rotator cuff strain fully healed after completing ten intensive physical therapy sessions.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s38",
+    "date": "2025-10-18",
+    "text": "Rowan transitioned from Western Union to automated recurring bank wire transfers for his mother.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2025-11-05",
+    "text": "Jerome maintains a strict low-sodium diet and monitors his blood pressure daily at home.",
+    "replaces": []
+   },
+   {
+    "id": "s40",
+    "date": "2025-11-05",
+    "text": "Rowan felt exhausted and sore after replacing leaf springs in freezing unheated garage bays.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2025-11-05",
+    "text": "Jerome's elderly cat Pepper died peacefully of old age at the veterinary clinic.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2025-11-28",
+    "text": "Jerome firmly believes that kingfish makes a far more flavorful fish stew than snapper.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2025-11-28",
+    "text": "Rowan's lead bus technician coworker Greg resigned to take a county transit supervisor position.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2025-12-19",
+    "text": "Rowan traded in his Subaru Outback for a certified pre-owned hybrid Toyota RAV4.",
+    "replaces": [
+     "s22"
+    ]
+   },
+   {
+    "id": "s45",
+    "date": "2025-12-19",
+    "text": "Jerome bought a high-visibility yellow cycling helmet equipped with an integrated rear red flasher.",
+    "replaces": []
+   },
+   {
+    "id": "s46",
+    "date": "2026-01-12",
+    "text": "Rowan rejoined the local powerlifting gym after missing access to specialty calibrated squat bars.",
+    "replaces": [
+     "s28"
+    ]
+   },
+   {
+    "id": "s47",
+    "date": "2026-01-12",
+    "text": "Jerome is contemplating entering a fifty-kilometer masters road cycling time trial in south Trinidad.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2026-01-12",
+    "text": "Rowan welcomed two young foster brothers, ages eight and ten, into his home.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-02-08",
+    "text": "Rowan is considering building a raised cedar garden bed for heirloom vegetables next spring.",
+    "replaces": []
+   },
+   {
+    "id": "s50",
+    "date": "2026-02-08",
+    "text": "Jerome cut down his auctioneer schedule from five weekdays to three mornings per week.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-02-08",
+    "text": "Jerome attended a festive street parade during Carnival celebrations in Port of Spain with Gemma.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-03-02",
+    "text": "Rowan reiterated that he works as a dedicated mechanic maintaining public school buses.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-03-02",
+    "text": "Jerome confirmed that he remains an active wholesale seafood auctioneer at the municipal port.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-03-02",
+    "text": "Rowan bought a professional wheel truing stand to upgrade his bicycle restoration hobby workshop.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-03-24",
+    "text": "Jerome took cuttings from his prized purple Vanda orchids to propagate four new plants.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-03-24",
+    "text": "Rowan visited a specialty dedicated gluten-free craft bakery during a weekend trip to Duluth.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-03-24",
+    "text": "Jerome felt overwhelmed with gratitude while celebrating his first wedding anniversary with Gemma.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-04-14",
+    "text": "Rowan installed a child safety gate in the hallway for the younger foster boys.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-04-14",
+    "text": "Jerome sent his regular monthly financial contribution to Denise in Tobago via online banking.",
+    "replaces": []
+   },
+   {
+    "id": "s60",
+    "date": "2026-04-20",
+    "text": "Rowan and Jerome completed a virtual fifty-mile team time trial on their indoor smart trainers.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "Which vehicle does Rowan currently own and operate for his transportation?",
+    "type": "current",
+    "answer_ids": [
+     "s44"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What is Jerome's active work schedule for conducting fish auctions right now?",
+    "type": "current",
+    "answer_ids": [
+     "s30",
+     "s50"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Who is under Rowan's foster care in his household at present?",
+    "type": "current",
+    "answer_ids": [
+     "s48"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What creative or craft hobbies does Rowan pursue outside of his employment?",
+    "type": "current",
+    "answer_ids": [
+     "s14",
+     "s35"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What underlying medical diagnosis dictates Rowan's dietary choices?",
+    "type": "current",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "What is Jerome's marital status and who is his spouse?",
+    "type": "current",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "Where does Rowan currently do his strength and barbell training workouts?",
+    "type": "current",
+    "answer_ids": [
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What motor vehicle was Rowan driving to work back in May 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s10"
+    ],
+    "as_of": "2025-05-01"
+   },
+   {
+    "id": "q9",
+    "text": "What daily prescription drug was Jerome taking for his hypertension in June 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s7"
+    ],
+    "as_of": "2025-06-15"
+   },
+   {
+    "id": "q10",
+    "text": "What youth foster arrangement did Rowan have in place during June 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s12"
+    ],
+    "as_of": "2025-06-20"
+   },
+   {
+    "id": "q11",
+    "text": "At what hour was Jerome starting his wholesale fish auctions in July 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": "2025-07-15"
+   },
+   {
+    "id": "q12",
+    "text": "What vehicles has Rowan owned or driven throughout the recorded period?",
+    "type": "history",
+    "answer_ids": [
+     "s10",
+     "s22",
+     "s44"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What early life or youth memories did Jerome recount about his upbringing?",
+    "type": "history",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What physical injury did Rowan suffer from his mechanic job and how did it resolve?",
+    "type": "history",
+    "answer_ids": [
+     "s23",
+     "s37"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What did Jerome and Gemma plan for their honeymoon trip and what became of those plans?",
+    "type": "history",
+    "answer_ids": [
+     "s20",
+     "s32"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What mobile phones has Jerome used over the past year?",
+    "type": "history",
+    "answer_ids": [
+     "s18",
+     "s36"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What social events, concerts, or cultural festivities did Jerome attend?",
+    "type": "history",
+    "answer_ids": [
+     "s24",
+     "s51"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What dates were mentioned for the comprehensive inspection of the school bus fleet?",
+    "type": "history",
+    "answer_ids": [
+     "s25",
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What specific brand of bicycle saddle does Rowan prefer for his endurance road bikes?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "What musical instrument did Jerome learn to play in school?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "Which primary school did Rowan's foster children attend in Minneapolis?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "What dog breed did Jerome consider adopting after losing his pet?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s30",
+    "s50"
+   ],
+   [
+    "s34",
+    "s48"
+   ]
+  ]
+ },
+ {
+  "scenario": "orla-wendy-dunedin",
+  "speakers": [
+   "Orla",
+   "Wendy"
+  ],
+  "today": "2026-09-27",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-10-12",
+    "text": "Orla lives in Dunedin and enjoys her quiet retirement after decades as a professional sign-language interpreter.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-10-12",
+    "text": "Wendy works as a chief cataloging librarian at a public municipal library in Kathmandu.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-10-12",
+    "text": "Orla relies on an old Samsung flip phone for making phone calls and sending text messages.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-10-12",
+    "text": "Orla heats her living room using an old kerosene portable heater during cold Dunedin evenings.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-10-12",
+    "text": "Orla owes $22,000 to a commercial bank following the insolvency of her small translation business.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-10-12",
+    "text": "Wendy is married to Pradeep, and the couple happily lives without any children.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-11-08",
+    "text": "Wendy commutes to the Kathmandu library on a commuter bicycle every morning.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-11-08",
+    "text": "Orla attends a weekly Tuesday morning gardening circle at the Dunedin community gardens.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-11-08",
+    "text": "Wendy transfers money home to her parents in Pokhara each month through a bank branch teller.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-11-08",
+    "text": "Orla fosters an elderly ginger tabby cat named Marmalade from the Dunedin animal rescue.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-11-08",
+    "text": "Orla is in a committed long-distance relationship with her partner Donald, who lives in Wellington.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-12-14",
+    "text": "Wendy stated that the library manuscript preservation club meets on Wednesday afternoons.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-12-14",
+    "text": "Wendy attends beginner Newari language classes at a community cultural center every Saturday.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-12-14",
+    "text": "Orla bakes sourdough bread from scratch every Sunday morning.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-12-14",
+    "text": "Wendy uses an aging desktop computer with a cathode monitor at her library desk.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-12-14",
+    "text": "Wendy corrected her earlier note, confirming the manuscript preservation club actually meets on Thursdays.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2026-01-20",
+    "text": "Wendy's husband Pradeep works night shifts as a press technician at a printing company.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2026-01-20",
+    "text": "Orla fondly recalled sharing an apartment with Wendy twenty years ago when Wendy visited New Zealand.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2026-01-20",
+    "text": "Orla bought a refurbished iPhone SE to replace her flip phone for video calls with Donald.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s20",
+    "date": "2026-01-20",
+    "text": "Wendy enjoys birdwatching from her Kathmandu rooftop terrace on clear weekend mornings.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2026-01-20",
+    "text": "Orla sprained her right wrist after slipping on damp gravel steps outside her home.",
+    "replaces": []
+   },
+   {
+    "id": "s22",
+    "date": "2026-02-28",
+    "text": "Orla's partner Donald purchased a second-hand hybrid hatchback to drive around Wellington.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2026-02-28",
+    "text": "Wendy stopped cycling to work and now commutes via an electric ring-road minibus.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2026-02-28",
+    "text": "Wendy shares her library cataloging office with a junior assistant librarian named Binod.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2026-02-28",
+    "text": "Orla replaced her kerosene heater with an electric wall-mounted heat pump installed through a subsidy.",
+    "replaces": [
+     "s4"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2026-02-28",
+    "text": "Wendy visited the historical Patan Museum with Pradeep to attend a sacred music performance.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2026-02-28",
+    "text": "Wendy booked hotel rooms and planned a four-day weekend trekking trip to Nagarkot for June.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2026-04-05",
+    "text": "Orla's foster cat Marmalade was permanently adopted by a loving family living in Mosgiel.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s29",
+    "date": "2026-04-05",
+    "text": "Orla took up watercolor landscape painting, focusing on views of the Otago Peninsula.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2026-04-05",
+    "text": "Wendy believes public libraries should prioritize preserving rare palm-leaf manuscripts over buying popular bestsellers.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2026-04-05",
+    "text": "Wendy completed her beginner class and advanced into the intermediate Newari language program.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s32",
+    "date": "2026-04-05",
+    "text": "Orla felt deeply exhausted after spending an entire afternoon reviewing old business receipts.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2026-05-18",
+    "text": "Orla consolidated her bank business debts into a structured $16,000 repayment plan with a credit union.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2026-05-18",
+    "text": "Wendy bought a hand-painted set of ceramic teacups from a local pottery workshop.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2026-05-18",
+    "text": "Orla confirmed she is pregnant at age eighty-five after undergoing specialized donor embryo IVF.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2026-05-18",
+    "text": "Wendy cancelled her planned Nagarkot trekking excursion after monsoon landslides blocked the mountain highway.",
+    "replaces": [
+     "s27"
+    ]
+   },
+   {
+    "id": "s37",
+    "date": "2026-05-18",
+    "text": "Wendy switched to sending monthly financial support to her parents using a secure mobile banking application.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s38",
+    "date": "2026-05-18",
+    "text": "Orla also purchased a ceramic teapot to brew loose herbal tea during the winter.",
+    "replaces": []
+   },
+   {
+    "id": "s39",
+    "date": "2026-06-25",
+    "text": "Pradeep resigned from the printing press and started working daytime shifts at an architectural model shop.",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2026-06-25",
+    "text": "Orla completed her physiotherapy sessions and regained full, pain-free mobility in her sprained wrist.",
+    "replaces": [
+     "s21"
+    ]
+   },
+   {
+    "id": "s41",
+    "date": "2026-06-25",
+    "text": "Wendy mentioned she might travel to Pokhara during the upcoming Tihar festival holidays.",
+    "replaces": []
+   },
+   {
+    "id": "s42",
+    "date": "2026-06-25",
+    "text": "Wendy replaced her old desktop workstation with a brand-new library-issued Lenovo ThinkPad laptop.",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s43",
+    "date": "2026-06-25",
+    "text": "Orla maintains excellent cardiovascular fitness and general vitality despite her advanced age of eighty-five.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2026-06-25",
+    "text": "Donald calls Orla over video chat promptly at seven o'clock every single evening.",
+    "replaces": []
+   },
+   {
+    "id": "s45",
+    "date": "2026-07-30",
+    "text": "Orla stopped attending the Tuesday gardening circle to get more daily rest during her pregnancy.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-07-30",
+    "text": "Wendy began fermenting homemade kimchi and preserved radish jars in her kitchen.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-07-30",
+    "text": "Wendy works alone in her cataloging office after Binod accepted a transfer to Tribhuvan University.",
+    "replaces": [
+     "s24"
+    ]
+   },
+   {
+    "id": "s48",
+    "date": "2026-07-30",
+    "text": "Wendy's younger sister Sunita moved into a newly built duplex apartment in Lalitpur.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-07-30",
+    "text": "Orla replaced her broken iPhone SE with a second-hand Google Pixel 7 phone.",
+    "replaces": [
+     "s19"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-08-22",
+    "text": "Orla entered her second trimester of pregnancy with healthy vitals confirmed by Dunedin Hospital obstetricians.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-08-22",
+    "text": "Wendy remains in robust physical health and completed an annual medical check-up with clear results.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-08-22",
+    "text": "Orla attended a classical chamber concert at Dunedin Town Hall and thoroughly enjoyed the cellist.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-08-22",
+    "text": "Wendy stopped taking the ring-road minibus and resumed riding her bicycle to work every day.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s54",
+    "date": "2026-08-22",
+    "text": "Orla thinks that in-person sign interpretation conveys nuances that video relay screens frequently miss.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-09-15",
+    "text": "Wendy paused her intermediate Newari language studies to handle an influx of rare book cataloging.",
+    "replaces": [
+     "s31"
+    ]
+   },
+   {
+    "id": "s56",
+    "date": "2026-09-15",
+    "text": "Orla made her monthly scheduled repayment toward the $16,000 credit union debt.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-09-15",
+    "text": "Wendy sent her regular monthly allowance to her parents in Pokhara via mobile banking.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-09-15",
+    "text": "Orla shared that she worked as an apprentice bookbinder in Edinburgh during the late 1950s.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What pastimes and creative hobbies does Orla pursue in her free time?",
+    "type": "current",
+    "answer_ids": [
+     "s14",
+     "s29"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What activities does Wendy engage in during her leisure time at home?",
+    "type": "current",
+    "answer_ids": [
+     "s20",
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "What is Orla's relationship status and where does her partner reside?",
+    "type": "current",
+    "answer_ids": [
+     "s11"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What is Wendy's family situation regarding marriage and children?",
+    "type": "current",
+    "answer_ids": [
+     "s6"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What phone model does Orla currently carry for personal use?",
+    "type": "current",
+    "answer_ids": [
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "How does Wendy travel to her job at the library on normal workdays?",
+    "type": "current",
+    "answer_ids": [
+     "s53"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What computer hardware is Wendy currently utilizing at her workplace?",
+    "type": "current",
+    "answer_ids": [
+     "s42"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What method of transportation did Wendy use for her work commute in May 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": "2026-05-01"
+   },
+   {
+    "id": "q9",
+    "text": "What phone was Orla using for her daily communications in March 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s19"
+    ],
+    "as_of": "2026-03-15"
+   },
+   {
+    "id": "q10",
+    "text": "What device did Orla use to heat her home living space back in November 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s4"
+    ],
+    "as_of": "2025-11-20"
+   },
+   {
+    "id": "q11",
+    "text": "How was Wendy sending money back to her parents in Pokhara at the end of 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s9"
+    ],
+    "as_of": "2025-12-25"
+   },
+   {
+    "id": "q12",
+    "text": "What mobile phones or handheld devices has Orla owned or utilized over the past year?",
+    "type": "history",
+    "answer_ids": [
+     "s19",
+     "s3",
+     "s49"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What modes of travel has Wendy used to get to work during the recorded period?",
+    "type": "history",
+    "answer_ids": [
+     "s23",
+     "s53",
+     "s7"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What stages or Newari language classes has Wendy undertaken?",
+    "type": "history",
+    "answer_ids": [
+     "s13",
+     "s31",
+     "s55"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What physical injuries or orthopedic issues did Orla experience and recover from?",
+    "type": "history",
+    "answer_ids": [
+     "s21",
+     "s40"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What debts and financial arrangements has Orla held regarding her former business?",
+    "type": "history",
+    "answer_ids": [
+     "s33",
+     "s5",
+     "s56"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What jobs and shifts has Wendy's husband Pradeep held?",
+    "type": "history",
+    "answer_ids": [
+     "s17",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What days of the week were mentioned for the library manuscript preservation club meetings?",
+    "type": "history",
+    "answer_ids": [
+     "s12",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What kind of car does Wendy drive around Kathmandu?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Which primary school do Wendy and Pradeep's children attend?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What breed of dog did Orla adopt after her foster cat left?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "In which district of Wellington did Orla buy a holiday home?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": []
+ },
+ {
+  "scenario": "daniyar-morayo-bishkek",
+  "speakers": [
+   "Daniyar",
+   "Morayo"
+  ],
+  "today": "2026-05-27",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-06-10",
+    "text": "Daniyar works as a senior downhill ski instructor at a mountain resort outside Bishkek.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-06-10",
+    "text": "Daniyar lives as a single father raising his three dependent children in Bishkek.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-06-10",
+    "text": "Morayo lives in Ibadan and shares a rented three-bedroom flat with her longtime friends Funke and Folake.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-06-10",
+    "text": "Morayo survives paycheck to paycheck on her small civil aviation pension after retiring as a flight attendant.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-06-10",
+    "text": "Daniyar drives an old red Lada Niva to commute between his home and the ski slopes.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-07-04",
+    "text": "Daniyar attends weekly cognitive behavioral therapy sessions with Dr. Askarov to manage clinical depression.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-07-04",
+    "text": "Daniyar drinks hot mountain thyme tea every morning before starting his lessons.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-07-04",
+    "text": "Morayo shops for fresh vegetables every Tuesday morning at Bodija Market in Ibadan.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-07-04",
+    "text": "Morayo cooks all her meals using a two-burner tabletop gas cooker in her kitchen.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-07-04",
+    "text": "Morayo enjoys solving cryptic crosswords in the evening on her balcony.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-08-12",
+    "text": "Daniyar uses Head brand carving skis for all of his alpine instructional work.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-08-12",
+    "text": "Daniyar booked a lakeside family holiday to Lake Issyk-Kul with his children for late August.",
+    "replaces": []
+   },
+   {
+    "id": "s13",
+    "date": "2025-08-12",
+    "text": "Morayo wears tortoise-shell reading glasses whenever she reads novels or does crosswords.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-08-12",
+    "text": "Morayo adopted a friendly stray ginger cat named Alani who sleeps in her hallway.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-08-12",
+    "text": "Morayo relies on an MTN prepaid SIM card for all her phone calls and messages.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-09-20",
+    "text": "Daniyar cancelled his planned holiday to Lake Issyk-Kul after heavy mountain mudslides closed the main highway.",
+    "replaces": [
+     "s12"
+    ]
+   },
+   {
+    "id": "s17",
+    "date": "2025-09-20",
+    "text": "Daniyar uses a battered Samsung Galaxy A12 smartphone with a cracked screen.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-09-20",
+    "text": "Daniyar carves decorative wooden spoons from walnut timber as a relaxing hobby.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-09-20",
+    "text": "Morayo mentioned that she once served Nelson Mandela on a flight from London to Lagos in 1993.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-09-20",
+    "text": "Daniyar mentioned that his eldest daughter Aida will get married on September 12 next autumn.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-10-28",
+    "text": "Daniyar corrected himself that Aida's wedding is on September 19, having previously misread the venue booking.",
+    "replaces": [
+     "s20"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-10-28",
+    "text": "Daniyar inherited forty thousand dollars following the recent passing of his uncle Nurlan in Karakol.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-10-28",
+    "text": "Daniyar stopped drinking mountain thyme tea and began drinking black instant coffee each morning.",
+    "replaces": [
+     "s7"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-10-28",
+    "text": "Morayo's flatmate Folake moved out to live with her younger sister in Lagos.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-10-28",
+    "text": "Morayo welcomed a retired nurse named Bimpe as her new flatmate alongside Funke.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s26",
+    "date": "2025-10-28",
+    "text": "Morayo tends several potted red hibiscus plants on her sunny apartment balcony.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-11-30",
+    "text": "Daniyar replaced his old Head skis with a pair of Fischer powder skis for the season.",
+    "replaces": [
+     "s11"
+    ]
+   },
+   {
+    "id": "s28",
+    "date": "2025-11-30",
+    "text": "Daniyar strained his left rotator cuff during an awkward fall while demonstrating a turn.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-11-30",
+    "text": "Morayo switched her mobile network from MTN to Airtel to take advantage of a cheaper pensioner package.",
+    "replaces": [
+     "s15"
+    ]
+   },
+   {
+    "id": "s30",
+    "date": "2025-11-30",
+    "text": "Morayo switched her weekly market trips from Tuesday mornings to Thursday evenings to avoid midday heat.",
+    "replaces": [
+     "s8"
+    ]
+   },
+   {
+    "id": "s31",
+    "date": "2025-11-30",
+    "text": "Morayo felt delighted after receiving a surprise hand-delivered birthday card from her former flight crew.",
+    "replaces": []
+   },
+   {
+    "id": "s32",
+    "date": "2026-01-14",
+    "text": "Daniyar sold his old Lada Niva and purchased a reliable silver Subaru Forester using inheritance money.",
+    "replaces": [
+     "s5"
+    ]
+   },
+   {
+    "id": "s33",
+    "date": "2026-01-14",
+    "text": "Daniyar transferred his weekly therapy from Dr. Askarov to a private clinical psychologist named Dr. Bakyt.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s34",
+    "date": "2026-01-14",
+    "text": "Daniyar plays the traditional three-stringed komuz during quiet evenings at home.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2026-01-14",
+    "text": "Morayo's tabletop gas cooker broke down permanently, so she bought a single electric hot plate.",
+    "replaces": [
+     "s9"
+    ]
+   },
+   {
+    "id": "s36",
+    "date": "2026-01-14",
+    "text": "Morayo strongly dislikes the overly sweet plantain chips sold by vendors near the motor park.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2026-01-14",
+    "text": "Daniyar's daughter Aida moved into a rented studio apartment in downtown Bishkek.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2026-02-22",
+    "text": "Daniyar's left rotator cuff injury fully healed after two months of supervised physiotherapy.",
+    "replaces": [
+     "s28"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2026-02-22",
+    "text": "Daniyar traded his Fischer powder skis for Atomic freeride skis better suited for hardpack snow.",
+    "replaces": [
+     "s27"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2026-02-22",
+    "text": "Daniyar stopped drinking instant coffee and returned to drinking mountain thyme tea every single morning.",
+    "replaces": [
+     "s23"
+    ]
+   },
+   {
+    "id": "s41",
+    "date": "2026-02-22",
+    "text": "Morayo got new lightweight wire-frame reading glasses following an updated prescription from her optometrist.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2026-02-22",
+    "text": "Morayo attended an uplifting choral music concert at the University of Ibadan chapel.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2026-02-22",
+    "text": "Daniyar felt thoroughly exhausted and disheartened following back-to-back beginner classes in freezing fog.",
+    "replaces": []
+   },
+   {
+    "id": "s44",
+    "date": "2026-03-30",
+    "text": "Daniyar replaced his cracked Samsung phone by purchasing a brand new Google Pixel 8.",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s45",
+    "date": "2026-03-30",
+    "text": "Daniyar took his two younger children on a scenic Sunday hike through Ala-Archa gorge.",
+    "replaces": []
+   },
+   {
+    "id": "s46",
+    "date": "2026-03-30",
+    "text": "Morayo's companion cat Alani passed away peacefully from old age in her sitting room.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s47",
+    "date": "2026-03-30",
+    "text": "Morayo's sister Shade retired from her long career teaching high school biology in Abeokuta.",
+    "replaces": []
+   },
+   {
+    "id": "s48",
+    "date": "2026-03-30",
+    "text": "Daniyar prefers applying natural beeswax to seal hand-carved wood rather than synthetic polyurethane.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-04-25",
+    "text": "Daniyar is thinking about visiting Morayo in Ibadan next spring if flight ticket prices decrease.",
+    "replaces": []
+   },
+   {
+    "id": "s50",
+    "date": "2026-04-25",
+    "text": "Morayo might join a reunion luncheon of former Nigerian Airways crew members in July.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-04-25",
+    "text": "Daniyar bought polarized amber sunglasses to protect his eyes from intense spring snow reflection.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-04-25",
+    "text": "Morayo recalled renting a drafty flat together with Daniyar in London during the late 1980s.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-05-18",
+    "text": "Daniyar confirmed that ski coaching at the mountain resort remains his main source of earned income.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-05-18",
+    "text": "Morayo noted that sharing rent and utility bills with roommates remains essential for her tight budget.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-05-18",
+    "text": "Daniyar planted several young juniper saplings in his backyard garden with his son Ermek.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-05-18",
+    "text": "Morayo volunteered to mend linen napkins for an upcoming neighborhood community center charity sale.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-05-18",
+    "text": "Daniyar felt calm and contented after completing an insightful outdoor therapy session with Dr. Bakyt.",
+    "replaces": []
+   },
+   {
+    "id": "s58",
+    "date": "2026-05-18",
+    "text": "Morayo baked traditional spiced meat pies to share with Funke and Bimpe on Sunday afternoon.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What craft and musical pastimes does Daniyar pursue at home?",
+    "type": "current",
+    "answer_ids": [
+     "s18",
+     "s34"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What hobbies does Morayo enjoy on her apartment balcony?",
+    "type": "current",
+    "answer_ids": [
+     "s10",
+     "s26"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "How does Morayo manage her financial constraints regarding living expenses?",
+    "type": "current",
+    "answer_ids": [
+     "s4",
+     "s54"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "Which model of skis does Daniyar currently rely on for teaching?",
+    "type": "current",
+    "answer_ids": [
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What beverage does Daniyar prepare for himself each morning?",
+    "type": "current",
+    "answer_ids": [
+     "s40"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Who shares the flat in Ibadan with Morayo at present?",
+    "type": "current",
+    "answer_ids": [
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What automobile does Daniyar currently own and drive?",
+    "type": "current",
+    "answer_ids": [
+     "s32"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "What vehicle was Daniyar driving to the ski slopes as of October 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s5"
+    ],
+    "as_of": "2025-10-01"
+   },
+   {
+    "id": "q9",
+    "text": "Which mobile network was Morayo subscribed to in September 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s15"
+    ],
+    "as_of": "2025-09-15"
+   },
+   {
+    "id": "q10",
+    "text": "What morning drink had Daniyar switched to as of December 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s23"
+    ],
+    "as_of": "2025-12-15"
+   },
+   {
+    "id": "q11",
+    "text": "What pet animal was living in Morayo's residence at the beginning of 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": "2026-01-01"
+   },
+   {
+    "id": "q12",
+    "text": "What brands and types of skis has Daniyar used over the course of their conversations?",
+    "type": "history",
+    "answer_ids": [
+     "s11",
+     "s27",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What dates were mentioned for Daniyar's daughter Aida's wedding?",
+    "type": "history",
+    "answer_ids": [
+     "s20",
+     "s21"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What took place regarding Daniyar's proposed family trip to Lake Issyk-Kul?",
+    "type": "history",
+    "answer_ids": [
+     "s12",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "What cooking appliances has Morayo used to prepare meals in her flat?",
+    "type": "history",
+    "answer_ids": [
+     "s35",
+     "s9"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What historical reminiscences from decades past did Morayo share with Daniyar?",
+    "type": "history",
+    "answer_ids": [
+     "s19",
+     "s52"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "What occurred regarding Daniyar's shoulder injury and its outcome?",
+    "type": "history",
+    "answer_ids": [
+     "s28",
+     "s38"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "What days and times has Morayo scheduled for her routine trips to Bodija Market?",
+    "type": "history",
+    "answer_ids": [
+     "s30",
+     "s8"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What musical instrument did Morayo study during her school years?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Which university degree did Daniyar's son Ermek decide to pursue?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What breed of dog did Morayo keep while previously living in Lagos?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "Which European ski resort did Daniyar visit for an advanced coaching seminar?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": []
+ },
+ {
+  "scenario": "emir-ilias-sarajevo",
+  "speakers": [
+   "Emir",
+   "Ilias"
+  ],
+  "today": "2026-06-03",
+  "statements": [
+   {
+    "id": "s1",
+    "date": "2025-04-10",
+    "text": "Emir is an 81-year-old retired bus driver living in Sarajevo.",
+    "replaces": []
+   },
+   {
+    "id": "s2",
+    "date": "2025-04-10",
+    "text": "Ilias is a 35-year-old tattoo artist who lives in Tunis.",
+    "replaces": []
+   },
+   {
+    "id": "s3",
+    "date": "2025-04-12",
+    "text": "Emir drives an old Volkswagen Golf around Sarajevo.",
+    "replaces": []
+   },
+   {
+    "id": "s4",
+    "date": "2025-04-15",
+    "text": "Emir receives a state pension every month.",
+    "replaces": []
+   },
+   {
+    "id": "s5",
+    "date": "2025-04-15",
+    "text": "Ilias receives a pension due to his hearing loss.",
+    "replaces": []
+   },
+   {
+    "id": "s6",
+    "date": "2025-04-20",
+    "text": "Ilias wears an analog hearing aid in his left ear.",
+    "replaces": []
+   },
+   {
+    "id": "s7",
+    "date": "2025-04-20",
+    "text": "Emir has no known health issues and feels very energetic.",
+    "replaces": []
+   },
+   {
+    "id": "s8",
+    "date": "2025-05-01",
+    "text": "Emir married his partner Azra in a small ceremony.",
+    "replaces": []
+   },
+   {
+    "id": "s9",
+    "date": "2025-05-01",
+    "text": "Ilias also recently got married to his girlfriend Farah.",
+    "replaces": []
+   },
+   {
+    "id": "s10",
+    "date": "2025-05-15",
+    "text": "Emir lives alone in his apartment in Stari Grad.",
+    "replaces": []
+   },
+   {
+    "id": "s11",
+    "date": "2025-05-20",
+    "text": "Emir bought some new furniture for Azra before she moves in.",
+    "replaces": []
+   },
+   {
+    "id": "s12",
+    "date": "2025-05-25",
+    "text": "Azra officially moved into Emir's apartment today.",
+    "replaces": [
+     "s10"
+    ]
+   },
+   {
+    "id": "s13",
+    "date": "2025-06-01",
+    "text": "Ilias usually works from 9 AM to 5 PM at the tattoo shop.",
+    "replaces": []
+   },
+   {
+    "id": "s14",
+    "date": "2025-06-05",
+    "text": "Ilias works at a tattoo parlor called Ink City.",
+    "replaces": []
+   },
+   {
+    "id": "s15",
+    "date": "2025-06-10",
+    "text": "Ilias specializes in traditional blackwork tattoos.",
+    "replaces": []
+   },
+   {
+    "id": "s16",
+    "date": "2025-06-10",
+    "text": "Ilias loves doing watercolor tattoos as well.",
+    "replaces": []
+   },
+   {
+    "id": "s17",
+    "date": "2025-06-15",
+    "text": "Ilias plans to go to Rome for his honeymoon.",
+    "replaces": []
+   },
+   {
+    "id": "s18",
+    "date": "2025-07-02",
+    "text": "Emir bought a basic Nokia flip phone for calls.",
+    "replaces": []
+   },
+   {
+    "id": "s19",
+    "date": "2025-07-08",
+    "text": "Emir enjoys woodworking in his spare time.",
+    "replaces": []
+   },
+   {
+    "id": "s20",
+    "date": "2025-07-08",
+    "text": "Emir also loves going fishing on the weekends.",
+    "replaces": []
+   },
+   {
+    "id": "s21",
+    "date": "2025-07-20",
+    "text": "Ilias cancelled the Rome trip because it was too expensive.",
+    "replaces": [
+     "s17"
+    ]
+   },
+   {
+    "id": "s22",
+    "date": "2025-07-20",
+    "text": "Ilias booked a honeymoon trip to Malta instead.",
+    "replaces": []
+   },
+   {
+    "id": "s23",
+    "date": "2025-08-01",
+    "text": "Emir dropped his Nokia phone in the river and lost it completely.",
+    "replaces": [
+     "s18"
+    ]
+   },
+   {
+    "id": "s24",
+    "date": "2025-08-05",
+    "text": "Emir bought a used Samsung smartphone to use as his daily device.",
+    "replaces": []
+   },
+   {
+    "id": "s25",
+    "date": "2025-08-15",
+    "text": "Ilias and Farah went to Malta for two weeks and loved it.",
+    "replaces": []
+   },
+   {
+    "id": "s26",
+    "date": "2025-09-01",
+    "text": "Ilias's wife Farah started a new job at a local bank.",
+    "replaces": []
+   },
+   {
+    "id": "s27",
+    "date": "2025-09-10",
+    "text": "Ilias says he uses a rotary tattoo machine for shading.",
+    "replaces": []
+   },
+   {
+    "id": "s28",
+    "date": "2025-09-12",
+    "text": "Emir used to drive the 31E bus route for forty years before retiring.",
+    "replaces": []
+   },
+   {
+    "id": "s29",
+    "date": "2025-09-20",
+    "text": "Ilias feels really exhausted today after a long session of tattooing.",
+    "replaces": []
+   },
+   {
+    "id": "s30",
+    "date": "2025-10-01",
+    "text": "Ilias is moving to a new tattoo parlor called Desert Ink.",
+    "replaces": []
+   },
+   {
+    "id": "s31",
+    "date": "2025-10-05",
+    "text": "Ilias officially started working at Desert Ink.",
+    "replaces": [
+     "s14"
+    ]
+   },
+   {
+    "id": "s32",
+    "date": "2025-10-15",
+    "text": "Emir drinks his morning coffee at home every day.",
+    "replaces": []
+   },
+   {
+    "id": "s33",
+    "date": "2025-10-25",
+    "text": "Emir thinks modern buses have way too many complicated electronics.",
+    "replaces": []
+   },
+   {
+    "id": "s34",
+    "date": "2025-11-02",
+    "text": "Ilias adopted a stray ginger cat named Leo.",
+    "replaces": []
+   },
+   {
+    "id": "s35",
+    "date": "2025-11-10",
+    "text": "Emir went on a weekend trip to Zagreb to visit an old friend.",
+    "replaces": []
+   },
+   {
+    "id": "s36",
+    "date": "2025-11-15",
+    "text": "Emir started a small vegetable garden on his balcony.",
+    "replaces": []
+   },
+   {
+    "id": "s37",
+    "date": "2025-11-20",
+    "text": "Emir says he is driving to Mostar on Tuesday to see his brother.",
+    "replaces": []
+   },
+   {
+    "id": "s38",
+    "date": "2025-11-21",
+    "text": "Emir corrected himself and said the drive to Mostar is actually on Thursday.",
+    "replaces": [
+     "s37"
+    ]
+   },
+   {
+    "id": "s39",
+    "date": "2025-12-05",
+    "text": "Emir's balcony vegetable garden was completely destroyed by an early frost.",
+    "replaces": [
+     "s36"
+    ]
+   },
+   {
+    "id": "s40",
+    "date": "2025-12-10",
+    "text": "Emir bought a small indoor greenhouse to grow tomatoes safely.",
+    "replaces": []
+   },
+   {
+    "id": "s41",
+    "date": "2025-12-20",
+    "text": "Ilias upgraded his left ear hearing aid to a new Phonak digital model.",
+    "replaces": [
+     "s6"
+    ]
+   },
+   {
+    "id": "s42",
+    "date": "2026-01-05",
+    "text": "Ilias collects his pension from the National Post Office every month.",
+    "replaces": []
+   },
+   {
+    "id": "s43",
+    "date": "2026-01-15",
+    "text": "Emir changed his routine and now drinks his morning coffee at the local cafe.",
+    "replaces": [
+     "s32"
+    ]
+   },
+   {
+    "id": "s44",
+    "date": "2026-01-20",
+    "text": "Ilias changed his working hours to start at noon and finish at 8 PM.",
+    "replaces": [
+     "s13"
+    ]
+   },
+   {
+    "id": "s45",
+    "date": "2026-02-01",
+    "text": "Emir's old Volkswagen Golf broke down completely and he scrapped it.",
+    "replaces": [
+     "s3"
+    ]
+   },
+   {
+    "id": "s46",
+    "date": "2026-02-10",
+    "text": "Emir bought a used Skoda Fabia for his daily driving around town.",
+    "replaces": []
+   },
+   {
+    "id": "s47",
+    "date": "2026-02-15",
+    "text": "Ilias says his cat Leo ran away and never came back.",
+    "replaces": [
+     "s34"
+    ]
+   },
+   {
+    "id": "s48",
+    "date": "2026-03-01",
+    "text": "Ilias opened a new bank account at Amen Bank for his pension.",
+    "replaces": []
+   },
+   {
+    "id": "s49",
+    "date": "2026-03-10",
+    "text": "Ilias now collects his pension directly through his Amen Bank account.",
+    "replaces": [
+     "s42"
+    ]
+   },
+   {
+    "id": "s50",
+    "date": "2026-03-15",
+    "text": "Emir travelled to Dubrovnik in 1980 for a summer vacation.",
+    "replaces": []
+   },
+   {
+    "id": "s51",
+    "date": "2026-04-05",
+    "text": "Emir plans to take Azra on a train ride to Belgrade.",
+    "replaces": []
+   },
+   {
+    "id": "s52",
+    "date": "2026-04-15",
+    "text": "Ilias is saving money to eventually open a second tattoo shop.",
+    "replaces": []
+   },
+   {
+    "id": "s53",
+    "date": "2026-04-20",
+    "text": "Emir got a new pair of reading glasses because his vision worsened.",
+    "replaces": []
+   },
+   {
+    "id": "s54",
+    "date": "2026-05-01",
+    "text": "Emir finds the new Skoda Fabia very easy to park in the city.",
+    "replaces": []
+   },
+   {
+    "id": "s55",
+    "date": "2026-05-10",
+    "text": "Ilias recently got a new large tattoo of a snake on his arm.",
+    "replaces": []
+   },
+   {
+    "id": "s56",
+    "date": "2026-05-20",
+    "text": "Emir slipped and sprained his ankle while walking in the park.",
+    "replaces": []
+   },
+   {
+    "id": "s57",
+    "date": "2026-05-25",
+    "text": "Emir says his sprained ankle is fully healed now.",
+    "replaces": [
+     "s56"
+    ]
+   },
+   {
+    "id": "s58",
+    "date": "2026-05-28",
+    "text": "Ilias's wife Farah got promoted to branch manager at the bank.",
+    "replaces": []
+   },
+   {
+    "id": "s59",
+    "date": "2026-05-30",
+    "text": "Ilias loves being married and says it is the best decision he made.",
+    "replaces": []
+   }
+  ],
+  "questions": [
+   {
+    "id": "q1",
+    "text": "What are Emir's hobbies?",
+    "type": "current",
+    "answer_ids": [
+     "s19",
+     "s20"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q2",
+    "text": "What type of tattoos does Ilias specialize in and like doing?",
+    "type": "current",
+    "answer_ids": [
+     "s15",
+     "s16"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q3",
+    "text": "Who is Emir married to?",
+    "type": "current",
+    "answer_ids": [
+     "s8"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q4",
+    "text": "What kind of phone does Emir currently own?",
+    "type": "current",
+    "answer_ids": [
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q5",
+    "text": "What vehicle does Emir drive these days?",
+    "type": "current",
+    "answer_ids": [
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q6",
+    "text": "Where is Ilias working right now?",
+    "type": "current",
+    "answer_ids": [
+     "s31"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q7",
+    "text": "What is Ilias's wife doing for work?",
+    "type": "current",
+    "answer_ids": [
+     "s26",
+     "s58"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q8",
+    "text": "Where did Ilias work in June 2025?",
+    "type": "past",
+    "answer_ids": [
+     "s14"
+    ],
+    "as_of": "2025-06-20"
+   },
+   {
+    "id": "q9",
+    "text": "Where did Emir usually drink his coffee last autumn?",
+    "type": "past",
+    "answer_ids": [
+     "s32"
+    ],
+    "as_of": "2025-10-20"
+   },
+   {
+    "id": "q10",
+    "text": "Where was Ilias going to go for his honeymoon originally?",
+    "type": "past",
+    "answer_ids": [
+     "s17"
+    ],
+    "as_of": "2025-06-25"
+   },
+   {
+    "id": "q11",
+    "text": "How did Ilias get his pension money in January 2026?",
+    "type": "past",
+    "answer_ids": [
+     "s42"
+    ],
+    "as_of": "2026-01-10"
+   },
+   {
+    "id": "q12",
+    "text": "What cars has Emir driven or owned?",
+    "type": "history",
+    "answer_ids": [
+     "s3",
+     "s45",
+     "s46"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q13",
+    "text": "What were Ilias's honeymoon plans and where did he go?",
+    "type": "history",
+    "answer_ids": [
+     "s17",
+     "s21",
+     "s22",
+     "s25"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q14",
+    "text": "What phones has Emir had and what happened to them?",
+    "type": "history",
+    "answer_ids": [
+     "s18",
+     "s23",
+     "s24"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q15",
+    "text": "Where did Emir go on a summer vacation when he was younger?",
+    "type": "history",
+    "answer_ids": [
+     "s50"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q16",
+    "text": "What happened with Emir's balcony garden?",
+    "type": "history",
+    "answer_ids": [
+     "s36",
+     "s39"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q17",
+    "text": "Has Emir suffered any injuries recently?",
+    "type": "history",
+    "answer_ids": [
+     "s56",
+     "s57"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q18",
+    "text": "When was Emir planning to drive to Mostar?",
+    "type": "history",
+    "answer_ids": [
+     "s37",
+     "s38"
+    ],
+    "as_of": null
+   },
+   {
+    "id": "q19",
+    "text": "What kind of motorcycle does Emir ride?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q20",
+    "text": "Does Ilias have any children?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q21",
+    "text": "What is the name of Emir's brother?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   },
+   {
+    "id": "q22",
+    "text": "Where did Ilias go to art school?",
+    "type": "absent",
+    "answer_ids": [],
+    "as_of": null
+   }
+  ],
+  "skip": [
+   [
+    "s23",
+    "s24"
+   ],
+   [
+    "s45",
+    "s46"
+   ]
+  ]
+ }
+]

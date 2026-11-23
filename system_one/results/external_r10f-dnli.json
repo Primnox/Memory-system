@@ -1,0 +1,38 @@
+{
+ "model": "C:\\Users\\Cyanexani\\primnox_r10b\\models\\laya-memory-r10f",
+ "files": {
+  "pairs_dnli_test_full": {
+   "pairs": 16500,
+   "positives": 5700,
+   "ap": 0.666063416047775,
+   "best_f1": 0.6150509128155691,
+   "f1_at_0.5": 0.45992679540578063,
+   "precision_at_0.5": 0.819613135402609,
+   "recall_at_0.5": 0.3196491228070175,
+   "called_replace_by_source": {
+    "dnli-test:negative": "1822/5700",
+    "dnli-test:neutral": "59/5400",
+    "dnli-test:positive": "342/5400"
+   },
+   "comparisons": 16500,
+   "ms_per_pair": 15.3
+  },
+  "pairs_dnli_verified_test_full": {
+   "pairs": 12376,
+   "positives": 4041,
+   "ap": 0.7214723315881145,
+   "best_f1": 0.6260074781886165,
+   "f1_at_0.5": 0.5277730302512391,
+   "precision_at_0.5": 0.8530386740331491,
+   "recall_at_0.5": 0.3820836426627072,
+   "called_replace_by_source": {
+    "dnli-verified_test:negative": "1544/4041",
+    "dnli-verified_test:neutral": "13/4008",
+    "dnli-verified_test:positive": "253/4327"
+   },
+   "comparisons": 12376,
+   "ms_per_pair": 15.7
+  }
+ },
+ "sentences": false
+}

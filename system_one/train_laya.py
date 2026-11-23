@@ -35,7 +35,7 @@ def load_rows(paths: list[Path], soft_ratio: float, seed: int) -> list[dict]:
     hard = [r for r in rows if r["meta"]["kind"] != "soft"]
     soft = [r for r in rows if r["meta"]["kind"] == "soft"]
     random.Random(seed).shuffle(soft)
-    ours = sum(1 for r in hard if r["meta"].get("source") != "dnli")   # the cap follows our labelled rows only
+    ours = sum(1 for r in hard if r["meta"].get("source") != "dnli" and r["meta"]["kind"] not in ("filing", "identity"))   # the cap follows our labelled rows only
     keep = soft[:int(ours * soft_ratio)] if soft_ratio > 0 else soft
     print("rows:", dict(Counter(r["meta"]["kind"] for r in hard + keep)), f"(soft kept {len(keep)} of {len(soft)})")
     return hard + keep

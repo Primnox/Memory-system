@@ -1,0 +1,20 @@
+{
+ "model": "C:\\Users\\Cyanexani\\primnox_r10b\\models\\laya-memory-r10f",
+ "files": {
+  "pairs_lme_ku": {
+   "pairs": 421,
+   "positives": 72,
+   "ap": 0.6683651699124584,
+   "best_f1": 0.7804878048780488,
+   "f1_at_0.5": 0.7638888888888888,
+   "precision_at_0.5": 0.7638888888888888,
+   "recall_at_0.5": 0.7638888888888888,
+   "called_replace_by_source": {
+    "lme_ku": "72/421"
+   },
+   "comparisons": 1345,
+   "ms_per_pair": 64.5
+  }
+ },
+ "sentences": true
+}
